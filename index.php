@@ -12,6 +12,8 @@
   <link href="css/style.css?v1" rel="stylesheet">
   <link href="css/icon-styles.css" rel="stylesheet">
 
+  <?php wp_head(); ?>
+
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
