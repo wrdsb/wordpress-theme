@@ -26,7 +26,11 @@
                 <a href="#"><span class="icon-twitter" title="Twitter"></span></a>
                 <a href="#"><span class="icon-youtube" title="YouTube"></span></a>
               </div>
-
+              <h4>Links for Staff</h4>
+              <ul class="footer-links">
+                <li><?php wp_loginout(); ?></li>
+              </ul>
+             
             </div>
             <div class="col-sm-6 col-md-3">
               <h4>Campaigns</h4>
