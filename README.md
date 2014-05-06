@@ -1,2 +1,5 @@
 wordpress-theme
 ===============
+Official WordPress theme for the WRDSB.
+
+Something.
