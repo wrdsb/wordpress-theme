@@ -64,6 +64,29 @@ function wrdsb_setup() {
     'right' => __('Right Sidebar Menu Region', 'wrdsb'),
   ) );
 
+  // Add ID and CLASS attributes to the first <ul> occurence in wp_page_menu
+  function add_menuclass( $ulclass ) {
+    return preg_replace( '/<ul>/', '<ul class="nav nav-justified">', $ulclass, 1 );
+  }
+  add_filter( 'wp_page_menu', 'add_menuclass' );
+
+  if(!function_exists('get_post_top_ancestor_id')){
+  /**
+   * Gets the id of the topmost ancestor of the current page. Returns the current
+   * page's id if there is no parent.
+   * 
+   * @uses object $post
+   * @return int 
+   */
+  function get_post_top_ancestor_id(){
+      global $post;
+      if($post->post_parent){
+          $ancestors = array_reverse(get_post_ancestors($post->ID));
+          return $ancestors[0];
+      }
+      return $post->ID;
+  }}
+
   /*
    * Switch default core markup for search form, comment form, and comments
    * to output valid HTML5.
@@ -155,46 +178,46 @@ function wrdsb_widgets_init() {
     'name'          => __( 'Sidebar Left', 'wrdsb' ),
     'id'            => 'sidebar-left',
     'description'   => __( 'Main sidebar that appears on the left.', 'wrdsb' ),
-    //'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-    //'after_widget'  => '</aside>',
-    //'before_title'  => '<h1 class="widget-title">',
-    //'after_title'   => '</h1>',
+    'before_widget' => '',
+    'after_widget'  => '',
+    'before_title'  => '<div class="sub-menu-heading"><span>',
+    'after_title'   => '</span></div>',
   ) );
   register_sidebar( array(
     'name'          => __( 'Sidebar Right', 'wrdsb' ),
     'id'            => 'sidebar-right',
     'description'   => __( 'Additional sidebar that appears on the right.', 'wrdsb' ),
-    //'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-    //'after_widget'  => '</aside>',
-    //'before_title'  => '<h1 class="widget-title">',
-    //'after_title'   => '</h1>',
+    'before_widget' => '',
+    'after_widget'  => '',
+    'before_title'  => '<div class="sub-menu-heading"><span>',
+    'after_title'   => '</span></div>',
   ) );
   register_sidebar( array(
     'name'          => __( 'Footer Left', 'wrdsb' ),
     'id'            => 'footer-left',
     'description'   => __( 'Appears in the footer section of the site.', 'wrdsb' ),
-    //'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-    //'after_widget'  => '</aside>',
-    //'before_title'  => '<h1 class="widget-title">',
-    //'after_title'   => '</h1>',
+    'before_widget' => '',
+    'after_widget'  => '',
+    'before_title'  => '<h4>',
+    'after_title'   => '</h4>',
   ) );
   register_sidebar( array(
-        'name'          => __( 'Footer Centre', 'wrdsb' ),
-        'id'            => 'footer-centre',
-        'description'   => __( 'Appears in the footer section of the site.', 'wrdsb' ),
-        //'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-        //'after_widget'  => '</aside>',
-        //'before_title'  => '<h1 class="widget-title">',
-        //'after_title'   => '</h1>',
+    'name'          => __( 'Footer Centre', 'wrdsb' ),
+    'id'            => 'footer-centre',
+    'description'   => __( 'Appears in the footer section of the site.', 'wrdsb' ),
+    'before_widget' => '',
+    'after_widget'  => '',
+    'before_title'  => '<h4>',
+    'after_title'   => '</h4>',
   ) );
   register_sidebar( array(
     'name'          => __( 'Footer Right', 'wrdsb' ),
     'id'            => 'footer-right',
     'description'   => __( 'Appears in the footer section of the site.', 'wrdsb' ),
-    //'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-    //'after_widget'  => '</aside>',
-    //'before_title'  => '<h1 class="widget-title">',
-    //'after_title'   => '</h1>',
+    'before_widget' => '',
+    'after_widget'  => '',
+    'before_title'  => '<h4>',
+    'after_title'   => '</h4>',
   ) );
   register_sidebar( array(
     'name'          => __( 'Content Left', 'wrdsb' ),

@@ -33,42 +33,19 @@
              
             </div>
             <div class="col-sm-6 col-md-3">
-              <h4>Campaigns</h4>
-
-              <ul class="footer-links">
-                <li><a href="#">Back to School</a></li>
-                <li><a href="#">How to Register</a></li>
-                <li><a href="#">Kindergarten Registration</a></li>
-                <li><a href="#">Tutors in the Classroom</a></li>
-                <li><a href="#">Welcome Centre for Newcommers</a></li>
-              </ul>
-
+              <?php if ( is_active_sidebar( 'footer-left' ) ) : ?>
+                <?php dynamic_sidebar( 'footer-left' ); ?>
+              <?php endif; ?>
             </div>
             <div class="col-sm-6 col-md-3">
-              <h4>Quick Links</h4>
-
-              <ul class="footer-links">
-                <li><a href="#">Elementary Registration</a></li>
-                <li><a href="#">French Immersion Registration</a></li>
-                <li><a href="#">Secondary Registration</a></li>
-                <li><a href="#">Special Education</a></li>
-                <li><a href="#">Success for Students (S4S)</a></li>
-                <li><a href="#">WCSSAA????</a></li>
-                <li><a href="#">Web Attendance</a></li>
-              </ul>
+              <?php if ( is_active_sidebar( 'footer-centre' ) ) : ?>
+                <?php dynamic_sidebar( 'footer-centre' ); ?>
+              <?php endif; ?>
             </div>
             <div class="col-sm-12 col-md-3">
-              <h4>Latest Tweets</h4>
-
-              <div class="tweet">
-                We love a good bake sale! <a href="#">#nomnomnom</a> "@QueensmountSPS:Bake Sale
-                  Friday February 21st to Support our Grad Tree fundraising.",14 hours ago
-              </div>
-
-              <div class="tweet">
-                RT @RandyCTV: Forest Heights @ fhcitrojans wins @WCSSAA sinor girls volleyball over @JacobHespeler
-                  <a href="#">http://t.co/1Wy8Z5uOmg</a> via @CTVKitchener <a href="#">#localsports</a>, 18 hours ago
-              </div>
+              <?php if ( is_active_sidebar( 'footer-right' ) ) : ?>
+                <?php dynamic_sidebar( 'footer-right' ); ?>
+              <?php endif; ?>
             </div>
           </div>
 

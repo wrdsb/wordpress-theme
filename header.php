@@ -16,10 +16,10 @@
   <title>WRDSB</title>
 
   <!-- Bootstrap -->
-  <link href="http://soundwave.wrdsb.ca/css/bootstrap.css" rel="stylesheet">
-  <link href="http://soundwave.wrdsb.ca/css/bootstrap-theme.css" rel="stylesheet">
-  <link href="http://soundwave.wrdsb.ca/css/style.css" rel="stylesheet">
-  <link href="http://soundwave.wrdsb.ca/css/icon-styles.css" rel="stylesheet">
+  <link href="http://sandbox.wrdsb.ca/css/bootstrap.css" rel="stylesheet">
+  <link href="http://sandbox.wrdsb.ca/css/bootstrap-theme.css" rel="stylesheet">
+  <link href="http://sandbox.wrdsb.ca/css/style.css" rel="stylesheet">
+  <link href="http://sandbox.wrdsb.ca/css/icon-styles.css" rel="stylesheet">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -88,16 +88,20 @@
           <p class="text-center"><input type="text" class="" /><span class="icon-search"></span></p>
         </div>
 
-        <div class="collapse navbar-collapse">
-          <ul class="nav nav-justified">
-            <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="#">Learning</a></li>
-          <li><a href="#">Schools</a></li>
-          <li><a href="#">Community</a></li>
-          <li><a href="trustees.html">Trustees</a></li>
-          <li><a href="careers.html">Careers</a></li>
-          <li><a href="about.html">About</a></li>
-          </ul>
-        </div><!-- /.nav-collapse -->
+        <?php if (has_nav_menu('top')) {
+          wp_nav_menu(array('theme_location' => 'top', 'menu_class' => 'nav nav-justified', 'container_class' => 'collapse navbar-collapse'));
+        } else {
+          wp_page_menu(array('depth' => 1, 'show_home' => true, 'menu_class' => 'collapse navbar-collapse' ));
+        } ?>
     </div><!-- /.navbar -->
   </div>
+
+  <?php if (!is_front_page()) { ?>
+    <div class="container container-breadcrumb">
+      <ol class="breadcrumb">
+        <li><a href="">Breadcrumbs</a></li>
+        <li><a href="">Go</a></li>
+        <li class="active">Here</li>
+      </ol>
+    </div>
+  <?php } ?>

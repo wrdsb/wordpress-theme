@@ -20,21 +20,9 @@
       <div class="col-sm-9 col-lg-10">
     <?php endif ?>
 
-    <img src="images/planning_banner.jpg" class="img-responsive" alt="planning banner">
-
-    <?php
-      // Start the Loop.
-      while ( have_posts() ) : the_post();
-      
-        // Include the page content template.
-        get_template_part( 'content', 'page' );
-
-        // If comments are open or we have at least one comment, load up the comment template.
-        if ( comments_open() || get_comments_number() ) {
-          comments_template();
-        }
-      endwhile;
-    ?>
+      <h1>404 - Not found</h1>
+      <p>Sorry, we can't find that. Maybe you'd like to try a search.</p>
+      <?php get_search_form(); ?>
 
     </div> <!-- end content area -->
 

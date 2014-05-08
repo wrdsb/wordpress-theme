@@ -1,30 +1,24 @@
-<?php
-/*
-Template Name: Empty Sidebars
-*/
-?>
 <?php get_header(); ?>
 
 <div class="container">
   <div class="row">
 
-    <?php if (is_active_sidebar('sidebar-right')): ?>
+    <?php if (is_active_sidebar('sidebar-right') || has_nav_menu('right')): ?>
       <div class="col-sm-3 col-md-2 col-lg-2">
     <?php else: ?>
       <div class="col-sm-3 col-lg-2">
     <?php endif ?>
 
+      <?php get_sidebar('lmenu'); ?>
       <?php get_sidebar('left'); ?>
 
     </div> <!-- end sidebar div -->
 
-    <?php if (is_active_sidebar('sidebar-right')): ?>
+    <?php if (is_active_sidebar('sidebar-right') || has_nav_menu('right')): ?>
       <div class="col-sm-6 col-md-7 col-lg-8">
     <?php else: ?>
       <div class="col-sm-9 col-lg-10">
     <?php endif ?>
-
-    <img src="images/planning_banner.jpg" class="img-responsive" alt="planning banner">
 
     <?php
       // Start the Loop.
@@ -42,8 +36,9 @@ Template Name: Empty Sidebars
 
     </div> <!-- end content area -->
 
-    <?php if (is_active_sidebar('sidebar-right')): ?>
+    <?php if (is_active_sidebar('sidebar-right') || has_nav_menu('right')): ?>
       <div class="col-sm-3 col-md-3 col-lg-2">
+        <?php get_sidebar('rmenu'); ?>
         <?php get_sidebar('right'); ?>
       </div>
     <?php endif ?>
