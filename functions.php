@@ -365,7 +365,7 @@ add_action( 'widgets_init', 'wrdsb_widgets_init' );
 //require get_template_directory() . '/inc/custom-header.php';
 
 // Custom template tags for this theme.
-//require get_template_directory() . '/inc/template-tags.php';
+require get_template_directory() . '/inc/template-tags.php';
 
 // Add Theme Customizer functionality.
 //require get_template_directory() . '/inc/customizer.php';

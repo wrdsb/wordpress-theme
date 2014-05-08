@@ -16,10 +16,10 @@
   <title>WRDSB</title>
 
   <!-- Bootstrap -->
-  <link href="http://sandbox.wrdsb.ca/css/bootstrap.css" rel="stylesheet">
-  <link href="http://sandbox.wrdsb.ca/css/bootstrap-theme.css" rel="stylesheet">
-  <link href="http://sandbox.wrdsb.ca/css/style.css" rel="stylesheet">
-  <link href="http://sandbox.wrdsb.ca/css/icon-styles.css" rel="stylesheet">
+  <link href="http://spectro.wrdsb.ca/css/bootstrap.css" rel="stylesheet">
+  <link href="http://spectro.wrdsb.ca/css/bootstrap-theme.css" rel="stylesheet">
+  <link href="http://spectro.wrdsb.ca/css/style.css" rel="stylesheet">
+  <link href="http://spectro.wrdsb.ca/css/icon-styles.css" rel="stylesheet">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -52,7 +52,7 @@
 
           <div class="staff-shortcuts">
             <div class="staff-shortcut-list">
-              <a href="#">Contact</a>
+              <!--<a href="#">Contact</a>-->
             </div>
             <div class="searchbox"><input type="text" placeholder="Search" />
               <span class="icon-search"></span>
@@ -103,5 +103,19 @@
         <li><a href="">Go</a></li>
         <li class="active">Here</li>
       </ol>
+    </div>
+  <?php } ?>
+
+  <?php if (is_front_page()) { ?>
+    <!-- Include the featured content template. -->
+    <!-- // get_template_part( 'featured-content' ); -->
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Jumbotron!</h1>
+        <p>
+          This massive space is reserved for a featured post. We'll get this finished up before release.
+          When finished, users can mark a post as 'featured' and it will be put here automatically.
+        </p>
+      </div>
     </div>
   <?php } ?>

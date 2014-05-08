@@ -9,7 +9,9 @@
       <div class="col-sm-3 col-lg-2">
     <?php endif ?>
 
-      <?php get_sidebar('lmenu'); ?>
+      <?php if (!is_front_page()) {
+        get_sidebar('lmenu');
+      } ?>
       <?php get_sidebar('left'); ?>
 
     </div> <!-- end sidebar div -->
@@ -40,7 +42,9 @@
 
     <?php if (is_active_sidebar('sidebar-right') || has_nav_menu('right')): ?>
       <div class="col-sm-3 col-md-3 col-lg-2">
-        <?php get_sidebar('rmenu'); ?>
+        <?php if (!is_front_page()) {
+          get_sidebar('rmenu');
+        } ?>
         <?php get_sidebar('right'); ?>
       </div>
     <?php endif ?>

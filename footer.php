@@ -26,10 +26,6 @@
                 <a href="#"><span class="icon-twitter" title="Twitter"></span></a>
                 <a href="#"><span class="icon-youtube" title="YouTube"></span></a>
               </div>
-              <h4>Links for Staff</h4>
-              <ul class="footer-links">
-                <li><?php wp_loginout(); ?></li>
-              </ul>
              
             </div>
             <div class="col-sm-6 col-md-3">
@@ -50,11 +46,14 @@
           </div>
 
           <div class="row">
-            <div class="col-sm-6">
-              <h6 class="copyright">&copy; Waterloo Region District School Board, 2014</h6>
+            <div class="col-sm-4">
+              <h6 class="copyright">A WRDSB-ITS Solution</h6>
             </div>
-            <div class="col-sm-6">
-              <h6 class="copyright text-right">A WRDSB-ITS Solution</h6>
+            <div class="col-sm-4">
+              <h6 class="copyright">Staff Login &nbsp;&nbsp; | &nbsp;&nbsp; WRDSB Staff Website &nbsp;&nbsp; | &nbsp;&nbsp; Staff Handbook</h6>
+            </div>
+            <div class="col-sm-4">
+              <h6 class="copyright text-right">&copy; Waterloo Region District School Board, 2014</h6>
             </div>
           </div>
         </div>
@@ -63,7 +62,7 @@
       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
       <!-- Include all compiled plugins (below), or include individual files as needed -->
-      <script src="js/bootstrap.min.js"></script>
+      <script src="http://spectro.wrdsb.ca/js/bootstrap.min.js"></script>
     <?php wp_footer(); ?>
     </body>
     </html>
