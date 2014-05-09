@@ -50,7 +50,13 @@
               <h6 class="copyright">A WRDSB-ITS Solution</h6>
             </div>
             <div class="col-sm-4">
-              <h6 class="copyright">Staff Login &nbsp;&nbsp; | &nbsp;&nbsp; WRDSB Staff Website &nbsp;&nbsp; | &nbsp;&nbsp; Staff Handbook</h6>
+              <h6 class="copyright">
+                <?php wp_loginout(); ?>
+                &nbsp;&nbsp; | &nbsp;&nbsp;
+                <a href="http://staff.wrdsb.ca">WRDSB Staff Website</a>
+                &nbsp;&nbsp; | &nbsp;&nbsp;
+                <a href="http://staff.wrdsb.ca/<?php $fulldomain = explode('.',$_SERVER['HTTP_HOST']); echo $fulldomain[0]; ?>">Staff Handbook</a>
+              </h6>
             </div>
             <div class="col-sm-4">
               <h6 class="copyright text-right">&copy; Waterloo Region District School Board, 2014</h6>

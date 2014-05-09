@@ -37,9 +37,9 @@
       <div class="row">
         <div class="col-md-9 col-sm-8">
           <div id="logo">
-            <a href="/"><span>Waterloo Region District School Board</span>
-              <h2>Waterloo Region District School Board</h2>
-              <h3>Inspired Learners - Tomorrow's Leaders</h3>
+            <a href="/"><span><?php echo get_bloginfo('name'); ?></span>
+              <h2><?php echo get_bloginfo('name'); ?></h2>
+              <h3><?php echo get_bloginfo('description'); ?></h3>
             </a>
           </div>
         </div>
@@ -114,7 +114,7 @@
         <h1>Jumbotron!</h1>
         <p>
           This massive space is reserved for a featured post. We'll get this finished up before release.
-          When finished, users can mark a post as 'featured' and it will be put here automatically.
+          When finished, users can mark a post as 'featured' and it will be embiggened and put here automatically.
         </p>
       </div>
     </div>

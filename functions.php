@@ -104,9 +104,9 @@ function wrdsb_setup() {
   ) );
 
   // This theme allows users to set a custom background.
-  add_theme_support( 'custom-background', apply_filters( 'wrdsb_custom_background_args', array(
-    'default-color' => 'f5f5f5',
-  ) ) );
+  //add_theme_support( 'custom-background', apply_filters( 'wrdsb_custom_background_args', array(
+    //'default-color' => 'f5f5f5',
+  //) ) );
 
   // Add support for featured content.
   add_theme_support( 'featured-content', array(
@@ -368,7 +368,7 @@ add_action( 'widgets_init', 'wrdsb_widgets_init' );
 require get_template_directory() . '/inc/template-tags.php';
 
 // Add Theme Customizer functionality.
-//require get_template_directory() . '/inc/customizer.php';
+require get_template_directory() . '/inc/customizer.php';
 
 /*
  * Add Featured Content functionality.
