@@ -24,8 +24,6 @@ Template Name: Empty Sidebars
       <div class="col-sm-9 col-lg-10">
     <?php endif ?>
 
-    <img src="images/planning_banner.jpg" class="img-responsive" alt="planning banner">
-
     <?php
       // Start the Loop.
       while ( have_posts() ) : the_post();

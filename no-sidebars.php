@@ -8,8 +8,6 @@ Template Name: No Sidebars
 <div class="container">
   <div class="row">
     <div class="col-sm-12">
-      <img src="images/planning_banner.jpg" class="img-responsive" alt="planning banner">
-
       <?php
         // Start the Loop.
         while ( have_posts() ) : the_post();
