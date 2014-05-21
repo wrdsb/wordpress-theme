@@ -45,9 +45,9 @@
         </div>
         <div class="col-md-3 col-sm-4">
           <div class="social-icons">
-            <a href="#"><span class="icon-facebook" title="Facebook"></span></a>
-            <a href="#"><span class="icon-twitter" title="Twitter"></span></a>
-            <a href="#"><span class="icon-youtube" title="Youtube"></span></a>
+            <!--<a href="#"><span class="icon-facebook" title="Facebook"></span></a>-->
+            <!--<a href="#"><span class="icon-twitter" title="Twitter"></span></a>-->
+            <!--<a href="#"><span class="icon-youtube" title="Youtube"></span></a>-->
           </div>
 
           <div class="staff-shortcuts">
@@ -59,8 +59,8 @@
             </div>
 
             <div class="accessability">
-              <span class="increase-font" title="Increase Font Size">A</span>
-              <span class="decrease-font" title="Decrease Font Size">A</span>
+              <!--<span class="increase-font" title="Increase Font Size">A</span>-->
+              <!--<span class="decrease-font" title="Decrease Font Size">A</span>-->
             </div>
           </div>
         </div>
