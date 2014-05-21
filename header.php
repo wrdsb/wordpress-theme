@@ -109,13 +109,13 @@
   <?php if (is_front_page()) { ?>
     <!-- Include the featured content template. -->
     <!-- // get_template_part( 'featured-content' ); -->
-    <div class="container">
-      <div class="jumbotron">
-        <h1>Jumbotron!</h1>
-        <p>
-          This massive space is reserved for a featured post. We'll get this finished up before release.
-          When finished, users can mark a post as 'featured' and it will be embiggened and put here automatically.
-        </p>
-      </div>
-    </div>
+    <!--<div class="container">-->
+      <!--<div class="jumbotron">-->
+        <!--<h1>Jumbotron!</h1>-->
+        <!--<p>-->
+          <!--This massive space is reserved for a featured post. We'll get this finished up before release.-->
+          <!--When finished, users can mark a post as 'featured' and it will be embiggened and put here automatically.-->
+        <!--</p>-->
+      <!--</div>-->
+    <!--</div>-->
   <?php } ?>
