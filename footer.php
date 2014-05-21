@@ -54,8 +54,13 @@
                 <?php wp_loginout(); ?>
                 &nbsp;&nbsp; | &nbsp;&nbsp;
                 <a href="http://staff.wrdsb.ca">WRDSB Staff Website</a>
-                &nbsp;&nbsp; | &nbsp;&nbsp;
-                <a href="http://staff.wrdsb.ca/<?php $fulldomain = explode('.',$_SERVER['HTTP_HOST']); echo $fulldomain[0]; ?>">Staff Handbook</a>
+                <?php 
+                  $parsed_url = parse_url(network_site_url());
+                  $host = explode('.', $parsed_url['host']);
+                  if ($host[0] == 'schools') { ?>
+                    &nbsp;&nbsp; | &nbsp;&nbsp;
+                    <a href="http://staff.wrdsb.ca/<?php $fulldomain = explode('.',$_SERVER['HTTP_HOST']); echo $fulldomain[0]; ?>">Staff Handbook</a>
+                  <?php } ?>
               </h6>
             </div>
             <div class="col-sm-4">
