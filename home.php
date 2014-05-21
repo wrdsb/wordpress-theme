@@ -26,6 +26,7 @@
 
           </div>
           <div class="col-sm-4">
+            <!--
             <h2><strong>Events</strong></h2>
 
             <div class="event">
@@ -65,6 +66,7 @@
             </div>
 
             <p class="text-right"><button type="button" class="btn btn-xs mybutton">View Calendar <span class="glyphicon glyphicon-arrow-right"></span></button></p>
+            -->
           </div>
         </div>
       </div>
