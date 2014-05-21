@@ -22,9 +22,9 @@
               </address>
 
               <div class="social-icons">
-                <a href="#"><span class="icon-facebook" title="Facebook"></span></a>
-                <a href="#"><span class="icon-twitter" title="Twitter"></span></a>
-                <a href="#"><span class="icon-youtube" title="YouTube"></span></a>
+                <!--<a href="#"><span class="icon-facebook" title="Facebook"></span></a>-->
+                <!--<a href="#"><span class="icon-twitter" title="Twitter"></span></a>-->
+                <!--<a href="#"><span class="icon-youtube" title="YouTube"></span></a>-->
               </div>
              
             </div>
