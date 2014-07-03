@@ -13,7 +13,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>WRDSB</title>
+  <title><?php bloginfo('name'); ?></title>
 
   <!-- Bootstrap -->
   <link href="http://spectro.wrdsb.ca/css/bootstrap.css" rel="stylesheet">
