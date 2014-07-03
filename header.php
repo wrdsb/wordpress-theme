@@ -97,13 +97,7 @@
   </div>
 
   <?php if (!is_front_page()) { ?>
-    <div class="container container-breadcrumb">
-      <ol class="breadcrumb">
-        <li><a href="">Breadcrumbs</a></li>
-        <li><a href="">Go</a></li>
-        <li class="active">Here</li>
-      </ol>
-    </div>
+    <?php the_breadcrumb(); ?>
   <?php } ?>
 
   <?php if (is_front_page()) { ?>
