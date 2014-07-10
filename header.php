@@ -25,6 +25,14 @@
   <link href="http://spectro.wrdsb.ca/css/style.css" rel="stylesheet">
   <link href="http://spectro.wrdsb.ca/css/icon-styles.css" rel="stylesheet">
 
+  <link href="<?php echo get_template_directory_uri(); ?>/images/icon-60x60.png" rel="apple-touch-icon" />
+  <link href="<?php echo get_template_directory_uri(); ?>/images/icon-76x76.png" rel="apple-touch-icon" sizes="76x76" />
+  <link href="<?php echo get_template_directory_uri(); ?>/images/icon-120x120.png" rel="apple-touch-icon" sizes="120x120" />
+  <link href="<?php echo get_template_directory_uri(); ?>/images/icon-152x152.png" rel="apple-touch-icon" sizes="152x152" />
+
+  <link href="<?php echo get_template_directory_uri(); ?>/css/addtohomescreen.css" rel="stylesheet">
+  <script src="<?php echo get_template_directory_uri(); ?>/js/addtohomescreen.min.js"></script>
+
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -32,6 +40,18 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
   <![endif]-->
 
+  <script>
+    // addToHomescreen.removeSession();     // use this to remove the localStorage variable
+    var ath = addToHomescreen({
+        debug: 'ios',           // activate debug mode in ios emulation
+        skipFirstVisit: false,  // show at first access
+        startDelay: 0,          // display the message right away
+        lifespan: 0,            // do not automatically kill the call out
+        displayPace: 0,         // do not obey the display pace
+        maxDisplayCount: 0      // do not obey the max display count
+    });
+    // ath.clearSession();      // reset the user session
+    </script>
   <?php wp_head(); ?>
 </head>
 
