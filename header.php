@@ -63,7 +63,7 @@
       <div class="row">
         <div class="col-md-9 col-sm-8">
           <div id="logo">
-            <a href="/"><span><?php echo get_bloginfo('name'); ?></span>
+            <a href="<?php echo home_url(); ?>/"><span><?php echo get_bloginfo('name'); ?></span>
               <h2><?php echo get_bloginfo('name'); ?></h2>
               <h3><?php echo get_bloginfo('description'); ?></h3>
             </a>
@@ -80,8 +80,13 @@
             <div class="staff-shortcut-list">
               <!--<a href="#">Contact</a>-->
             </div>
-            <div class="searchbox"><input type="text" placeholder="Search" />
+            <div class="searchbox">
+              <form action="<?php echo home_url(); ?>/" method="get">
+                <fieldset>
+                  <input type="text" name="s" id="search" value="<?php the_search_query(); ?>" placeholder="Search" />
+                </fieldset>
               <span class="icon-search"></span>
+              </form>
             </div>
 
             <div class="accessability">
