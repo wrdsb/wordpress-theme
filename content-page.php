@@ -9,3 +9,4 @@
   edit_post_link('Edit');
 ?>
 <p>Categories: <?php the_category(','); ?></p>
+<p><?php the_tags(); ?></p>
