@@ -13,7 +13,11 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>WRDSB</title>
+  <?php if (is_front_page()) { ?> 
+    <title><?php bloginfo('name'); ?></title>
+  <?php } else { ?>
+    <title><?php wp_title(''); ?> (<?php bloginfo('name'); ?>)</title>
+  <?php } ?>
 
   <!-- Bootstrap -->
   <link href="http://spectro.wrdsb.ca/css/bootstrap.css" rel="stylesheet">
@@ -97,13 +101,7 @@
   </div>
 
   <?php if (!is_front_page()) { ?>
-    <div class="container container-breadcrumb">
-      <ol class="breadcrumb">
-        <li><a href="">Breadcrumbs</a></li>
-        <li><a href="">Go</a></li>
-        <li class="active">Here</li>
-      </ol>
-    </div>
+    <?php the_breadcrumb(); ?>
   <?php } ?>
 
   <?php if (is_front_page()) { ?>
