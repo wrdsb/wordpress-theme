@@ -8,3 +8,4 @@
   the_content();
   edit_post_link('Edit');
 ?>
+<p>Categories: <?php the_category(','); ?></p>
