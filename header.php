@@ -85,7 +85,7 @@
                 <fieldset>
                   <input type="text" name="s" id="search" value="<?php the_search_query(); ?>" placeholder="Search" />
                 </fieldset>
-              <span class="icon-search"></span>
+              <!--<span class="icon-search"></span>-->
               </form>
             </div>
 
