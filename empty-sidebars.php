@@ -74,7 +74,7 @@ Template Name: Empty Sidebars
     # Both sidebars
     if (($has_left == TRUE) and ($has_right == TRUE)):
       echo '<div class="col-sm-3 col-md-2 col-lg-2">';
-      get_sidebar('left');
+      get_sidebar('right');
       echo '</div>';
 
     # Just left sidebar
