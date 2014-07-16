@@ -56,7 +56,11 @@ a {
 .nav >li > a:hover, .nav >li > a:focus {
 	background-color:#669ecc;
 }
-.nav >li.active {
+.nav >li.active, 
+.nav >li.current-page-ancestor, 
+.nav >li.current_page_ancestor,
+.nav >li.current-menu-item, 
+.nav >li.current_page_item {
 	background-color:#669ecc;
 }
 .jumbotron {
