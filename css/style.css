@@ -260,7 +260,7 @@ h6.copyright {
 .sub-menu-items ul li {
 	margin-bottom:6px;
 }
-.sub-menu-heading {
+.sub-menu-heading, .sub-menu-heading a {
 	background-color:#005daa;
 	color:#fff;
 	padding:8px;
