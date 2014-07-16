@@ -3,22 +3,57 @@
 <div class="container">
   <div class="row">
 
-    <?php if (is_active_sidebar('sidebar-right') || has_nav_menu('right')): ?>
-      <div class="col-sm-3 col-md-2 col-lg-2">
-    <?php else: ?>
-      <div class="col-sm-3 col-lg-2">
-    <?php endif ?>
+    <?php $has_left = FALSE; ?>
+    <?php $has_right = FALSE; ?>
+    <?php if (is_active_sidebar('sidebar-left') || has_nav_menu('left')) {$has_left = TRUE;} ?>
+    <?php if (is_active_sidebar('sidebar-right') || has_nav_menu('right')) {$has_right = TRUE;} ?>
 
-      <?php get_sidebar('lmenu'); ?>
-      <?php get_sidebar('left'); ?>
+    <?php
+    # Both sidebars
+    if (($has_left == TRUE) and ($has_right == TRUE)):
+      echo '<div class="col-sm-3 col-md-2 col-lg-2">';
+      if (!is_front_page()) {
+        get_sidebar('lmenu');
+      }
+      get_sidebar('left');
+      echo '</div>';
 
-    </div> <!-- end sidebar div -->
+    # Just left sidebar
+    elseif (($has_left == TRUE) and ($has_right == FALSE)):
+      echo '<div class="col-sm-3 col-lg-2">';
+      if (!is_front_page()) {
+        get_sidebar('lmenu');
+      }
+      get_sidebar('left');
+      echo '</div>';
 
-    <?php if (is_active_sidebar('sidebar-right') || has_nav_menu('right')): ?>
-      <div class="col-sm-6 col-md-7 col-lg-8">
-    <?php else: ?>
-      <div class="col-sm-9 col-lg-10">
-    <?php endif ?>
+    # Just right sidebar
+      # Nothing to do
+
+    # No sidebars
+      # Nothing to do
+    endif
+    ?>
+
+    <?php
+    # Both sidebars
+    if (($has_left == TRUE) and ($has_right == TRUE)):
+      echo '<div class="col-sm-6 col-md-7 col-lg-8">';
+
+    # Just left sidebar
+    elseif (($has_left == TRUE) and ($has_right == FALSE)):
+      echo '<div class="col-sm-9 col-lg-10">';
+
+    # Just right sidebar
+    elseif (($has_left == FALSE) and ($has_right == TRUE)):
+      echo '<div class="col-sm-8">';
+
+    # No sidebars
+    elseif (($has_left == FALSE) and ($has_right == FALSE)):
+      echo '<div class="col-sm-12 col-lg-12">';
+
+    endif
+    ?>
 
     <?php
       // Start the Loop.
@@ -36,13 +71,33 @@
 
     </div> <!-- end content area -->
 
-    <?php if (is_active_sidebar('sidebar-right') || has_nav_menu('right')): ?>
-      <div class="col-sm-3 col-md-3 col-lg-2">
-        <?php get_sidebar('rmenu'); ?>
-        <?php get_sidebar('right'); ?>
-      </div>
-    <?php endif ?>
+    <?php
+    # Both sidebars
+    if (($has_left == TRUE) and ($has_right == TRUE)):
+      echo '<div class="col-sm-3 col-md-2 col-lg-2">';
+      if (!is_front_page()) {
+        get_sidebar('rmenu');
+      }
+      get_sidebar('right');
+      echo '</div>';
 
+    # Just left sidebar
+      # Nothing to do
+
+    # Just right sidebar
+    elseif (($has_left == TRUE) and ($has_right == FALSE)):
+      echo '<div class="col-sm-4"">';
+      if (!is_front_page()) {
+        get_sidebar('rmenu');
+      }
+      get_sidebar('right');
+      echo '</div>';
+
+    # No sidebars
+      # Nothing to do
+
+    endif
+    ?>
 
   </div>
 </div>
