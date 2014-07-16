@@ -39,15 +39,15 @@
       echo '<div class="col-sm-6 col-md-7 col-lg-8">';
 
     # Just left sidebar
-    if (($has_left == TRUE) and ($has_right == FALSE)):
+    elseif (($has_left == TRUE) and ($has_right == FALSE)):
       echo '<div class="col-sm-9 col-lg-10">';
 
     # Just right sidebar
-    if (($has_left == FALSE) and ($has_right == TRUE)):
+    elseif (($has_left == FALSE) and ($has_right == TRUE)):
       echo '<div class="col-sm-8">';
 
     # No sidebars
-    if (($has_left == FALSE) and ($has_right == FALSE)):
+    elseif (($has_left == FALSE) and ($has_right == FALSE)):
       echo '<div class="col-sm-12 col-lg-12">';
 
     endif
