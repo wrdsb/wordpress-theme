@@ -264,6 +264,10 @@ h6.copyright {
 .sub-menu-items ul li {
 	margin-bottom:6px;
 }
+.sub-menu-items ul li ul {
+        padding-top:6px;
+        padding-left:10px;
+}
 .sub-menu-heading, .sub-menu-heading a {
 	background-color:#005daa;
 	color:#fff;
