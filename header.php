@@ -20,10 +20,10 @@
   <?php } ?>
 
   <!-- Bootstrap -->
-  <link href="http://spectro.wrdsb.ca/css/bootstrap.css" rel="stylesheet">
-  <link href="http://spectro.wrdsb.ca/css/bootstrap-theme.css" rel="stylesheet">
-  <link href="http://spectro.wrdsb.ca/css/style.css" rel="stylesheet">
-  <link href="http://spectro.wrdsb.ca/css/icon-styles.css" rel="stylesheet">
+  <link href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.css" rel="stylesheet">
+  <link href="<?php echo get_template_directory_uri(); ?>/css/bootstrap-theme.css" rel="stylesheet">
+  <link href="<?php echo get_template_directory_uri(); ?>/css/style.css" rel="stylesheet">
+  <link href="<?php echo get_template_directory_uri(); ?>/css/icon-styles.css" rel="stylesheet">
 
   <link href="<?php echo get_template_directory_uri(); ?>/images/icon-60x60.png" rel="apple-touch-icon" />
   <link href="<?php echo get_template_directory_uri(); ?>/images/icon-76x76.png" rel="apple-touch-icon" sizes="76x76" />

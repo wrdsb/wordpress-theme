@@ -266,9 +266,14 @@ h6.copyright {
 	padding:8px;
 	font-weight:bold;
 	font-size:20px;
+	margin-bottom:6px;
+	margin-top:16px;
 }
 .breadcrumb {
 	margin-bottom:6px;
+}
+.navbar li.current_page_item a {
+	background-color: #669ecc;
 }
 @media (max-width: 768px) {
 	.header {
