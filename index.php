@@ -7,6 +7,7 @@
     <?php $has_right = FALSE; ?>
     <?php if (is_active_sidebar('sidebar-left') || has_nav_menu('left')) {$has_left = TRUE;} ?>
     <?php if (is_active_sidebar('sidebar-right') || has_nav_menu('right')) {$has_right = TRUE;} ?>
+    <?php if (!is_front_page()) {$has_left = TRUE;} ?>
 
     <?php
     # Both sidebars
