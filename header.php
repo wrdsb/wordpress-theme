@@ -43,11 +43,13 @@
   <script>
     // addToHomescreen.removeSession();     // use this to remove the localStorage variable
     var ath = addToHomescreen({
+        appID: 'local/newwrdsb/',
+        message: 'To add this website to Home Screen: tap %icon and then <strong>Add to Home Screen</strong>',
         debug: 'ios',           // activate debug mode in ios emulation
-        skipFirstVisit: false,  // show at first access
-        startDelay: 0,          // display the message right away
-        lifespan: 0,            // do not automatically kill the call out
-        displayPace: 0,         // do not obey the display pace
+        skipFirstVisit: true,  // show at first access
+        //startDelay: 1,          // display the message right away
+        //lifespan: 15,            // do not automatically kill the call out
+        //displayPace: 0,         // do not obey the display pace
         maxDisplayCount: 0      // do not obey the max display count
     });
     // ath.clearSession();      // reset the user session
