@@ -80,7 +80,7 @@ Template Name: Search Page
       # Nothing to do
 
     # Just right sidebar
-    elseif (($has_left == TRUE) and ($has_right == FALSE)):
+    elseif (($has_left == FALSE) and ($has_right == TRUE)):
       echo '<div class="col-sm-4"">';
       get_sidebar('right');
       echo '</div>';
