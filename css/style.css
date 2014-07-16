@@ -276,9 +276,10 @@ h6.copyright {
 .breadcrumb {
 	margin-bottom:6px;
 }
+/* Makes side menu ugly - JRS
 .navbar li.current_page_item a {
 	background-color: #669ecc;
-}
+}*/
 .widget-area ul {
 	padding:0;
 	list-style-position: inside;
