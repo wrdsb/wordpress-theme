@@ -56,7 +56,11 @@ a {
 .nav >li > a:hover, .nav >li > a:focus {
 	background-color:#669ecc;
 }
-.nav >li.active {
+.nav >li.active, 
+.nav >li.current-page-ancestor, 
+.nav >li.current_page_ancestor,
+.nav >li.current-menu-item, 
+.nav >li.current_page_item {
 	background-color:#669ecc;
 }
 .jumbotron {
@@ -260,15 +264,38 @@ h6.copyright {
 .sub-menu-items ul li {
 	margin-bottom:6px;
 }
+.sub-menu-items ul li ul {
+        padding-top:6px;
+        padding-left:10px;
+}
 .sub-menu-heading, .sub-menu-heading a {
 	background-color:#005daa;
 	color:#fff;
 	padding:8px;
 	font-weight:bold;
 	font-size:20px;
+	margin-bottom:6px;
+	margin-top:16px;
 }
 .breadcrumb {
 	margin-bottom:6px;
+}
+/* Makes side menu ugly - JRS
+.navbar li.current_page_item a {
+	background-color: #669ecc;
+}*/
+.widget-area ul {
+	padding:0;
+	list-style-position: inside;
+	list-style:none;
+}
+.widget-area ul li {
+	margin:0;
+	padding:4px 0;
+}
+.widget-area ul li:before {
+	content: '> ';
+	color:#005daa;
 }
 @media (max-width: 768px) {
 	.header {
