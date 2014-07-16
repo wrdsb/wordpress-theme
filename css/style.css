@@ -275,6 +275,19 @@ h6.copyright {
 .navbar li.current_page_item a {
 	background-color: #669ecc;
 }
+.widget-area ul {
+	padding:0;
+	list-style-position: inside;
+	list-style:none;
+}
+.widget-area ul li {
+	margin:0;
+	padding:4px 0;
+}
+.widget-area ul li:before {
+	content: '> ';
+	color:#005daa;
+}
 @media (max-width: 768px) {
 	.header {
 		display:none;
