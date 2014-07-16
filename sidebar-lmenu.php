@@ -28,22 +28,32 @@
       <?php if (has_nav_menu('left')) {
         wp_nav_menu(array('theme_location' => 'left', 'menu_class' => '', 'container' => false));
       } else {
-        // todo: this is temporary. we need to talk about pages menu.
-        $ancestor_id=get_post_top_ancestor_id();
-        $descendants = get_pages(array('child_of' => $ancestor_id));
-        $incl = "";
+        #$ancestor_id=get_post_top_ancestor_id();
+        #$descendants = get_pages(array('child_of' => $ancestor_id));
+        #$incl = "";
 
-        foreach ($descendants as $page) {
-          if (($page->post_parent == $ancestor_id) ||
-              ($page->post_parent == $post->post_parent) ||
-              ($page->post_parent == $post->ID)) {
-            $incl .= $page->ID . ",";
-          }
-        }
-        echo '<ul>';
-        wp_list_pages(array("child_of" => $ancestor_id, "include" => $incl, "link_before" => "", "title_li" => "", "sort_column" => "menu_order"));
-        echo '</ul>';
-      } ?>
+        #foreach ($descendants as $page) {
+          #if (($page->post_parent == $ancestor_id) ||
+              #($page->post_parent == $post->post_parent) ||
+              #($page->post_parent == $post->ID)) {
+            #$incl .= $page->ID . ",";
+          #}
+        #}
+        #echo '<ul>';
+        #wp_list_pages(array("child_of" => $ancestor_id, "include" => $incl, "link_before" => "", "title_li" => "", "sort_column" => "menu_order"));
+        #echo '</ul>';
+if (!$post->post_parent) {
+  $children = wp_list_pages("title_li=&child_of=".$post->ID."&echo=0");
+}else{
+  if($post->ancestors) {
+    $ancestors = end($post->ancestors);
+    $children = wp_list_pages("title_li=&child_of=".$ancestors."&echo=0");
+  }
+}
+if ($children) {
+  echo '<ul>'.$children.'</ul>';
+}
+      }
     </div>
   </div>
 </div> <!-- end navigation -->
