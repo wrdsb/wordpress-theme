@@ -295,9 +295,14 @@ a#inc_font, a#dec_font {
 .widget-area ul li {
 	margin:0;
 	padding:4px 0;
+	border-bottom:1px dashed #999;
+}
+.widget-area ul li:last-child {
+	border-bottom:none;
+	padding-bottom:0;
 }
 .widget-area ul li:before {
-	content: '> ';
+	/*content: '> ';*/
 	color:#005daa;
 }
 @media (max-width: 768px) {
