@@ -287,21 +287,25 @@ a#inc_font, a#dec_font {
 .navbar li.current_page_item a {
 	background-color: #669ecc;
 }*/
-.widget-area ul {
+.widget-area ul, 
+.really_simple_twitter_widget ul {
 	padding:0;
 	list-style-position: inside;
 	list-style:none;
 }
-.widget-area ul li {
+.widget-area ul li,
+.really_simple_twitter_widget ul li {
 	margin:0;
 	padding:4px 0;
 	border-bottom:1px dashed #999;
 }
-.widget-area ul li:last-child {
+.widget-area ul li:last-child,
+.really_simple_twitter_widget ul li:last-child {
 	border-bottom:none;
 	padding-bottom:0;
 }
-.widget-area ul li:before {
+.widget-area ul li:before,
+.really_simple_twitter_widget ul li:before {
 	/*content: '> ';*/
 	color:#005daa;
 }
