@@ -56,7 +56,11 @@ a {
 .nav >li > a:hover, .nav >li > a:focus {
 	background-color:#669ecc;
 }
-.nav >li.active {
+.nav >li.active, 
+.nav >li.current-page-ancestor, 
+.nav >li.current_page_ancestor,
+.nav >li.current-menu-item, 
+.nav >li.current_page_item {
 	background-color:#669ecc;
 }
 .jumbotron {
@@ -263,7 +267,11 @@ a#inc_font, a#dec_font {
 .sub-menu-items ul li {
 	margin-bottom:6px;
 }
-.sub-menu-heading {
+.sub-menu-items ul li ul {
+        padding-top:6px;
+        padding-left:10px;
+}
+.sub-menu-heading, .sub-menu-heading a {
 	background-color:#005daa;
 	color:#fff;
 	padding:8px;
@@ -275,9 +283,10 @@ a#inc_font, a#dec_font {
 .breadcrumb {
 	margin-bottom:6px;
 }
+/* Makes side menu ugly - JRS
 .navbar li.current_page_item a {
 	background-color: #669ecc;
-}
+}*/
 .widget-area ul {
 	padding:0;
 	list-style-position: inside;

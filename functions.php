@@ -384,7 +384,7 @@ function the_breadcrumb() {
   global $post;
   echo '<div class="container container-breadcrumb">';
   echo '<ol class="breadcrumb">';
-  if (!is_home()) {
+  if (!is_front_page()) {
     echo '<li>';
     echo '<a href="';
     echo get_option('home');
@@ -413,6 +413,8 @@ function the_breadcrumb() {
       } else {
         echo '<li>'.get_the_title().'</li>';
       }
+    } elseif (is_home()) {
+      echo '<li>News &amp; Announcements</li>';
     }
   }
   elseif (is_tag()) {single_tag_title();}
