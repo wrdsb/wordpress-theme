@@ -202,16 +202,19 @@ h6.copyright {
 	line-height:28px;
 	padding-left:36px;
 }
-.accessability span {
-	margin-right:4px; 
+a#inc_font, a#dec_font {
+	margin:0 8px; 
 	cursor:pointer;
+	font-size:24px;
 }
+/*
 .accessability span.increase-font {
 	font-size:24px;
 }
 .accessability span.decrease-font {
 	font-size:16px;
 }
+*/
 .event {
 	margin-bottom:12px;
 	padding-bottom:8px;

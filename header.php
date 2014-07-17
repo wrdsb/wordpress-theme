@@ -90,8 +90,8 @@
             </div>
 
             <div class="accessability">
-              <!--<span class="increase-font" title="Increase Font Size">A</span>-->
-              <!--<span class="decrease-font" title="Decrease Font Size">A</span>-->
+              <!--<a href="#" id="inc_font" title="Increase Font Size">A</a>-->
+              <!--<a href="#" id="dec_font" title="Decrease Font Size">A</a>-->
             </div>
           </div>
         </div>
