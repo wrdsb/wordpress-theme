@@ -309,6 +309,9 @@ a#inc_font, a#dec_font {
 	/*content: '> ';*/
 	color:#005daa;
 }
+ul.sbe-widget-error {
+	list-style:none;
+}
 @media (max-width: 768px) {
 	.header {
 		display:none;
