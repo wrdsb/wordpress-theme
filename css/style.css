@@ -277,8 +277,11 @@ a#inc_font, a#dec_font {
 	padding:8px;
 	font-weight:bold;
 	font-size:20px;
-	margin-bottom:6px;
+	/*margin-bottom:6px;*/
 	margin-top:16px;
+}
+.sub-menu-heading + ul {
+	margin-top:6px;
 }
 .breadcrumb {
 	margin-bottom:6px;
