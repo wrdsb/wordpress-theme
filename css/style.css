@@ -496,3 +496,218 @@ ul.sbe-widget-error {
 		height:110px;
 	}
 }
+
+/*** __content ***/
+ 
+	/** __definition lists **/
+	/* .dl-horizontal applied to default dl */
+ 
+	dl {
+		line-height: 150%;
+		margin-top: 0;
+		margin-bottom: 20px;
+	}
+ 
+	dt {
+		font-weight: bold;
+		line-height: 150%;
+	}
+ 
+	dd {
+		line-height: 150%;
+		margin-left: 0;
+		margin-bottom: 1.5em;
+	}
+ 
+	@media (min-width: 768px) {
+		dt {
+			float: left;
+			width: 200px;
+			overflow: hidden;
+			clear: left;
+			text-align: right;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			}
+		dd {
+			margin-left: 220px;
+		}
+	}
+	
+	/** __tables **/
+	/* .table-striped and .table-hover combined and adapted for the WRDSB */
+	/* .table-responsive needs to be in a wrapping div applied to all tables */
+ 
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+		border-bottom: 1px solid #eee;
+	}
+ 
+	tr {
+		background-color: #fff;
+	}
+ 
+	tr:hover {
+		background-color: #d9ecc2;
+	}
+ 
+	tbody > tr:nth-child(odd) {
+		background-color: #f9f9f9;
+	}
+ 
+	tbody > tr:nth-child(odd):hover {
+		background-color: #d9ecc2;
+	}
+ 
+	th, td {
+		vertical-align: top;
+		padding: 1.1em;
+		border-collapse: collapse;
+		border-bottom: 1px solid #eee;
+		color: #000;
+	}
+ 
+	th {
+		font-weight: bold;
+		text-align: center;
+		font-size: 1.2em;
+		background-color: #e6eff6;
+		color: #666;
+	}
+ 
+	tfoot > tr > td {
+		font-weight: bold;
+		font-size: 1.2em;
+		background-color: #eee;
+		color: #666;
+		border-top: 2px solid #ccc;
+	}
+	
+	thead > tr > th {
+		border-bottom: 2px solid #b3cee6;
+	}
+ 
+	caption {
+		font-size: 1.2em;
+		text-align: left;
+		padding: 1em 0;
+	}
+ 
+ 
+/*** __special ***/
+ 
+.left, .alignleft {
+	float: left;
+	margin: 1.5em 1.5em 1.5em 0;
+}
+ 
+.right, .alignright {
+	float: right;
+	margin: 1.5em 0 1.5em 1.5em;
+}
+ 
+.center, .aligncenter {
+	margin: 1.5em auto;
+}
+ 
+.alert {
+	background-color: #ff0;
+	border: 3px solid red;
+	color: #000;
+	font-weight: bold;
+	-webkit-box-shadow: 4px 4px 13px 0 rgba(255, 0, 0, 0.3);
+	-moz-box-shadow:    4px 4px 13px 0 rgba(255, 0, 0, 0.3);
+	box-shadow:         4px 4px 13px 0 rgba(255, 0, 0, 0.3);
+}
+ 
+span.alert {
+	background-color: #ff0;
+	border-bottom: 1px solid red;
+	color: #000;
+	font-weight: bold;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+ 
+.note {
+	background-color: #ffc;
+	border: 3px dashed #eee;
+	color: #666;
+	padding: .5em;
+	margin: .5em;
+	font-weight: normal;
+	font-style: italic;
+	-webkit-border-radius: 1.2em;
+	-moz-border-radius: 1.2em;
+	border-radius: 1.2em;
+	-webkit-box-shadow: 4px 4px 13px 0 rgba(50, 50, 50, 0.3);
+	-moz-box-shadow:    4px 4px 13px 0 rgba(50, 50, 50, 0.3);
+	box-shadow:         4px 4px 13px 0 rgba(50, 50, 50, 0.3);
+}
+ 
+span.note, li.note {
+	background-color: #ffc;
+	border: 0;
+	color: #000;
+	font-weight: normal;
+	font-style: normal;
+}
+ 
+.announcement { /* for special announcements that expire */
+	background-color: #d9ecc2;
+	border: 5px solid #a0cf67;
+	color: #000;
+}
+ 
+p.reference { /* for quotations and references */
+	text-align: right;
+}
+ 
+p.reference:before {
+	content: "~ ";
+}
+ 
+p.promo {
+	font-size: 2.5em;
+}
+ 
+/*** __widths ***/
+ 
+.quarter {
+	width: 16.96em;
+}
+ 
+.half {
+	width: 33.92em;
+}
+ 
+.threequarters {
+	width: 50.88em;
+}
+ 
+.full {
+	/* width: 67.84em; */
+	/* this is pushing full size past the sidebars */
+	width: 95%;
+}
+ 
+/*** __documentation ***/
+ 
+#palette ul {
+	margin: auto;
+	padding: 2.5em 0;
+}
+ 
+#palette ul li {
+	border: 1px solid #eee;
+	padding: .5em;
+	display: inline;
+	width: 4em;
+	height: 4em;
+	color: #fff;
+}
+ 
+#palette p {
+	
+}
