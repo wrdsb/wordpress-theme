@@ -20,7 +20,7 @@
   <?php } ?>
 
   <!-- Bootstrap -->
-  <link href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.css" rel="stylesheet">
+  <link href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.css" rel="stylesheet" media="all">
   <link href="<?php echo get_template_directory_uri(); ?>/css/bootstrap-theme.css" rel="stylesheet">
   <link href="<?php echo get_template_directory_uri(); ?>/css/style.css" rel="stylesheet">
   <link href="<?php echo get_template_directory_uri(); ?>/css/icon-styles.css" rel="stylesheet">
@@ -45,7 +45,7 @@
     var ath = addToHomescreen({
         appID: 'local/newwrdsb/',
         message: 'To add this website to Home Screen: tap %icon and then <strong>Add to Home Screen</strong>',
-        debug: 'ios',           // activate debug mode in ios emulation
+        //debug: 'ios',           // activate debug mode in ios emulation
         skipFirstVisit: true,  // show at first access
         //startDelay: 1,          // display the message right away
         //lifespan: 15,            // do not automatically kill the call out
@@ -61,14 +61,6 @@
   <div class="container container-top">
     <div class="header">
       <div class="row">
-        <div class="col-md-9 col-sm-8">
-          <div id="logo">
-            <a href="<?php echo home_url(); ?>/"><span><?php echo get_bloginfo('name'); ?></span>
-              <h2><?php echo get_bloginfo('name'); ?></h2>
-              <h3><?php echo get_bloginfo('description'); ?></h3>
-            </a>
-          </div>
-        </div>
         <div class="col-md-3 col-sm-4">
           <div class="social-icons">
             <!--<a href="#"><span class="icon-facebook" title="Facebook"></span></a>-->
@@ -95,6 +87,16 @@
             </div>
           </div>
         </div>
+        
+        <div class="col-md-9 col-sm-8">
+          <div id="logo">
+            <a href="<?php echo home_url(); ?>/"><span><?php echo get_bloginfo('name'); ?></span>
+              <h2><?php echo get_bloginfo('name'); ?></h2>
+              <h3><?php echo get_bloginfo('description'); ?></h3>
+            </a>
+          </div>
+        </div>
+        
       </div>
     </div>
 
