@@ -55,6 +55,8 @@
     // ath.clearSession();      // reset the user session
     </script>
   <?php wp_head(); ?>
+
+  <?php wrdsb_secondary_school_colours(); ?>
 </head>
 
 <body>
