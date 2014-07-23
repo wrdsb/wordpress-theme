@@ -432,7 +432,7 @@ function wrdsb_secondary_school_colours() {
   $parsed_url = parse_url(site_url());
   $host = explode('.', $parsed_url['host']);
   $site = $parsed_url['path'];
-  echo '<!-- Site specific styles for '.$host[0].' - '.$site.' -->';
+  echo '<!-- Site specific styles for '.$host[0].' - '.$site.' -->\n';
   if ($host[0] == 'schools') {
   switch ($site) {
     case "/bci":
