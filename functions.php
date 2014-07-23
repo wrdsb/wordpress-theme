@@ -429,11 +429,11 @@ function the_breadcrumb() {
 }
 
 function wrdsb_secondary_school_colours() {
-  echo '<!-- Site specific styles -->';
   $parsed_url = parse_url(network_site_url());
   $host = explode('.', $parsed_url['host']);
+  $site = $parsed_url['path'];
+  echo '<!-- Site specific styles for '.$host[0].' - '.$site.' -->';
   if ($host[0] == 'schools') {
-    $site = $parsed_url['path'];
   switch ($site) {
     case "/bci":
       echo get_template_directory_uri().'/css/bci.css';
