@@ -429,6 +429,7 @@ function the_breadcrumb() {
 }
 
 function wrdsb_secondary_school_colours() {
+  echo '<!-- Site specific styles -->';
   $parsed_url = parse_url(network_site_url());
   $host = explode('.', $parsed_url['host']);
   if ($host[0] == 'schools') {
