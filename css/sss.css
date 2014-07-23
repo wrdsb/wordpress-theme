@@ -1,0 +1,43 @@
+/*	Stylesheet: BCI
+	primary: #4B0102
+	primary opacity #936767: 
+	secondary #ffc100:
+	light: #DBCCCC;
+*/ 
+/*navigation*/
+.my-navbar {
+	background-color:#4B0102; /*primary*/
+	border-top-color:#ffc100; /*secondary*/
+}
+.nav >li > a:hover, .nav >li > a:focus {
+	background-color:#936767; /*opacity*/
+}
+.nav >li.active, 
+.nav >li.current-page-ancestor, 
+.nav >li.current_page_ancestor,
+.nav >li.current-menu-item, 
+.nav >li.current_page_item {
+	background-color:#936767; /*opacity*/
+}
+/*sub navigation*/
+.sub-menu-heading, .sub-menu-heading a {
+	background-color:#4B0102; /*primary*/
+}
+.sub-menu-items {
+	background-color:#DBCCCC; /*light*/
+}
+/*headings*/
+h1, h2, h3, h4, h5, h6 {
+	color:#4B0102; /*primary*/
+}
+
+/*links*/
+a {
+	color:#4B0102; /*primary*/
+}
+
+/*footer*/
+.footer {
+	background-color:#4B0102; /*primary*/
+	border-top-color:#ffc100; /*secondary*/
+}

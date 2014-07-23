@@ -1,0 +1,43 @@
+/*	Stylesheet: KCI
+	primary: #660202
+	primary opacity #A36767: 
+	secondary #d5a63a:
+	light: #E0CCCC;
+*/ 
+/*navigation*/
+.my-navbar {
+	background-color:#660202; /*primary*/
+	border-top-color:#d5a63a; /*secondary*/
+}
+.nav >li > a:hover, .nav >li > a:focus {
+	background-color:#A36767; /*opacity*/
+}
+.nav >li.active, 
+.nav >li.current-page-ancestor, 
+.nav >li.current_page_ancestor,
+.nav >li.current-menu-item, 
+.nav >li.current_page_item {
+	background-color:#660202; /*opacity*/
+}
+/*sub navigation*/
+.sub-menu-heading, .sub-menu-heading a {
+	background-color:#660202; /*primary*/
+}
+.sub-menu-items {
+	background-color:#E0CCCC; /*light*/
+}
+/*headings*/
+h1, h2, h3, h4, h5, h6 {
+	color:#660202; /*primary*/
+}
+
+/*links*/
+a {
+	color:#660202; /*primary*/
+}
+
+/*footer*/
+.footer {
+	background-color:#660202; /*primary*/
+	border-top-color:#d5a63a; /*secondary*/
+}

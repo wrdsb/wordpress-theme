@@ -1,0 +1,43 @@
+/*	Stylesheet: CHC
+	primary: #515A45
+	primary opacity #979C8F
+	secondary #666666
+	light: #DCDEDA
+*/ 
+/*navigation*/
+.my-navbar {
+	background-color:#515A45; /*primary*/
+	border-top-color:#666666; /*secondary*/
+}
+.nav >li > a:hover, .nav >li > a:focus {
+	background-color:#979C8F; /*opacity*/
+}
+.nav >li.active, 
+.nav >li.current-page-ancestor, 
+.nav >li.current_page_ancestor,
+.nav >li.current-menu-item, 
+.nav >li.current_page_item {
+	background-color:#979C8F; /*opacity*/
+}
+/*sub navigation*/
+.sub-menu-heading, .sub-menu-heading a {
+	background-color:#515A45; /*primary*/
+}
+.sub-menu-items {
+	background-color:#DCDEDA; /*light*/
+}
+/*headings*/
+h1, h2, h3, h4, h5, h6 {
+	color:#515A45; /*primary*/
+}
+
+/*links*/
+a {
+	color:#515A45; /*primary*/
+}
+
+/*footer*/
+.footer {
+	background-color:#515A45; /*primary*/
+	border-top-color:#666666; /*secondary*/
+}

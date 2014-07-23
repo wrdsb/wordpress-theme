@@ -1,0 +1,43 @@
+/*	Stylesheet: PHS
+	primary: #29090C
+	primary opacity #7F6B6D: 
+	secondary #666666:
+	light: #D4CECE;
+*/ 
+/*navigation*/
+.my-navbar {
+	background-color:#29090C; /*primary*/
+	border-top-color:#666666; /*secondary*/
+}
+.nav >li > a:hover, .nav >li > a:focus {
+	background-color:#7F6B6D; /*opacity*/
+}
+.nav >li.active, 
+.nav >li.current-page-ancestor, 
+.nav >li.current_page_ancestor,
+.nav >li.current-menu-item, 
+.nav >li.current_page_item {
+	background-color:#7F6B6D; /*opacity*/
+}
+/*sub navigation*/
+.sub-menu-heading, .sub-menu-heading a {
+	background-color:#29090C; /*primary*/
+}
+.sub-menu-items {
+	background-color:#D4CECE; /*light*/
+}
+/*headings*/
+h1, h2, h3, h4, h5, h6 {
+	color:#29090C; /*primary*/
+}
+
+/*links*/
+a {
+	color:#29090C; /*primary*/
+}
+
+/*footer*/
+.footer {
+	background-color:#29090C; /*primary*/
+	border-top-color:#666666; /*secondary*/
+}

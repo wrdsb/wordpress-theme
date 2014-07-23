@@ -1,0 +1,43 @@
+/*	Stylesheet: ECI
+	primary: #670001
+	primary opacity #A46667: 
+	secondary #666666:
+	light: #E1CCCC;
+*/ 
+/*navigation*/
+.my-navbar {
+	background-color:#670001; /*primary*/
+	border-top-color:#666666; /*secondary*/
+}
+.nav >li > a:hover, .nav >li > a:focus {
+	background-color:#A46667; /*opacity*/
+}
+.nav >li.active, 
+.nav >li.current-page-ancestor, 
+.nav >li.current_page_ancestor,
+.nav >li.current-menu-item, 
+.nav >li.current_page_item {
+	background-color:#A46667; /*opacity*/
+}
+/*sub navigation*/
+.sub-menu-heading, .sub-menu-heading a {
+	background-color:#670001; /*primary*/
+}
+.sub-menu-items {
+	background-color:#E1CCCC; /*light*/
+}
+/*headings*/
+h1, h2, h3, h4, h5, h6 {
+	color:#670001; /*primary*/
+}
+
+/*links*/
+a {
+	color:#670001; /*primary*/
+}
+
+/*footer*/
+.footer {
+	background-color:#670001; /*primary*/
+	border-top-color:#666666; /*secondary*/
+}
