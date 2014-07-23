@@ -427,3 +427,59 @@ function the_breadcrumb() {
   echo '</ol>';
   echo '</div>';
 }
+
+function wrdsb_secondary_school_colours() {
+  $parsed_url = parse_url(network_site_url());
+  $host = explode('.', $parsed_url['host']);
+  switch ($host[0]) {
+    case "bci":
+      echo get_template_directory_uri().'/css/bci.css';
+      break;
+    case "chc":
+      echo get_template_directory_uri().'/css/chc.css';
+      break;
+    case "eci":
+      echo get_template_directory_uri().'/css/eci.css';
+      break;
+    case "eds":
+      echo get_template_directory_uri().'/css/eds.css';
+      break;
+    case "fhc":
+      echo get_template_directory_uri().'/css/fhc.css';
+      break;
+    case "gci":
+      echo get_template_directory_uri().'/css/gci.css';
+      break;
+    case "gps":
+      echo get_template_directory_uri().'/css/gps.css';
+      break;
+    case "grc":
+      echo get_template_directory_uri().'/css/grc.css';
+      break;
+    case "hrh":
+      echo get_template_directory_uri().'/css/hrh.css';
+      break;
+    case "jam":
+      echo get_template_directory_uri().'/css/jam.css';
+      break;
+    case "jhs":
+      echo get_template_directory_uri().'/css/jhs.css';
+      break;
+    case "kci":
+      echo get_template_directory_uri().'/css/kci.css';
+      break;
+    case "phs":
+      echo get_template_directory_uri().'/css/phs.css';
+      break;
+    case "sss":
+      echo get_template_directory_uri().'/css/sss.css';
+      break;
+    case "wci":
+      echo get_template_directory_uri().'/css/wci.css';
+      break;
+    case "wod":
+      echo get_template_directory_uri().'/css/wod.css';
+      break;
+
+  }
+}

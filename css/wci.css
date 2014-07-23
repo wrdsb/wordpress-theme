@@ -1,0 +1,43 @@
+/*	Stylesheet: WCI
+	primary: #0A1241
+	primary opacity #6C718D: 
+	secondary #A30001:
+	light: #CED0D9;
+*/ 
+/*navigation*/
+.my-navbar {
+	background-color:#0A1241; /*primary*/
+	border-top-color:#A30001; /*secondary*/
+}
+.nav >li > a:hover, .nav >li > a:focus {
+	background-color:#6C718D; /*opacity*/
+}
+.nav >li.active, 
+.nav >li.current-page-ancestor, 
+.nav >li.current_page_ancestor,
+.nav >li.current-menu-item, 
+.nav >li.current_page_item {
+	background-color:#6C718D; /*opacity*/
+}
+/*sub navigation*/
+.sub-menu-heading, .sub-menu-heading a {
+	background-color:#0A1241; /*primary*/
+}
+.sub-menu-items {
+	background-color:#CED0D9; /*light*/
+}
+/*headings*/
+h1, h2, h3, h4, h5, h6 {
+	color:#0A1241; /*primary*/
+}
+
+/*links*/
+a {
+	color:#0A1241; /*primary*/
+}
+
+/*footer*/
+.footer {
+	background-color:#0A1241; /*primary*/
+	border-top-color:#A30001; /*secondary*/
+}

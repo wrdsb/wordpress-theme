@@ -1,0 +1,43 @@
+/*	Stylesheet: JHS
+	primary: #6B8AA7
+	primary opacity #A6B9CA: 
+	secondary #1C2F74:
+	light: #E1E8ED;
+*/ 
+/*navigation*/
+.my-navbar {
+	background-color:#6B8AA7; /*primary*/
+	border-top-color:#1C2F74; /*secondary*/
+}
+.nav >li > a:hover, .nav >li > a:focus {
+	background-color:#A6B9CA; /*opacity*/
+}
+.nav >li.active, 
+.nav >li.current-page-ancestor, 
+.nav >li.current_page_ancestor,
+.nav >li.current-menu-item, 
+.nav >li.current_page_item {
+	background-color:#A6B9CA; /*opacity*/
+}
+/*sub navigation*/
+.sub-menu-heading, .sub-menu-heading a {
+	background-color:#6B8AA7; /*primary*/
+}
+.sub-menu-items {
+	background-color:#E1E8ED; /*light*/
+}
+/*headings*/
+h1, h2, h3, h4, h5, h6 {
+	color:#6B8AA7; /*primary*/
+}
+
+/*links*/
+a {
+	color:#6B8AA7; /*primary*/
+}
+
+/*footer*/
+.footer {
+	background-color:#6B8AA7; /*primary*/
+	border-top-color:#1C2F74; /*secondary*/
+}

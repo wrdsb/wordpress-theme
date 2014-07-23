@@ -1,0 +1,43 @@
+/*	Stylesheet: GRC
+	primary: #1B2B9C
+	primary opacity #7680C4: 
+	secondary #999999:
+	light: #D1D5EB;
+*/ 
+/*navigation*/
+.my-navbar {
+	background-color:#1B2B9C; /*primary*/
+	border-top-color:#999999; /*secondary*/
+}
+.nav >li > a:hover, .nav >li > a:focus {
+	background-color:#7680C4; /*opacity*/
+}
+.nav >li.active, 
+.nav >li.current-page-ancestor, 
+.nav >li.current_page_ancestor,
+.nav >li.current-menu-item, 
+.nav >li.current_page_item {
+	background-color:#7680C4; /*opacity*/
+}
+/*sub navigation*/
+.sub-menu-heading, .sub-menu-heading a {
+	background-color:#1B2B9C; /*primary*/
+}
+.sub-menu-items {
+	background-color:#D1D5EB; /*light*/
+}
+/*headings*/
+h1, h2, h3, h4, h5, h6 {
+	color:#1B2B9C; /*primary*/
+}
+
+/*links*/
+a {
+	color:#1B2B9C; /*primary*/
+}
+
+/*footer*/
+.footer {
+	background-color:#1B2B9C; /*primary*/
+	border-top-color:#999999; /*secondary*/
+}
