@@ -436,49 +436,49 @@ function wrdsb_secondary_school_colours() {
       echo get_template_directory_uri().'/css/bci.css';
       break;
     case "chc":
-      echo "";
+      echo get_template_directory_uri().'/css/chc.css';
       break;
     case "eci":
-      echo "";
+      echo get_template_directory_uri().'/css/eci.css';
       break;
     case "eds":
-      echo "";
+      echo get_template_directory_uri().'/css/eds.css';
       break;
     case "fhc":
-      echo "";
+      echo get_template_directory_uri().'/css/fhc.css';
       break;
     case "gci":
-      echo "";
+      echo get_template_directory_uri().'/css/gci.css';
       break;
     case "gps":
-      echo "";
+      echo get_template_directory_uri().'/css/gps.css';
       break;
     case "grc":
-      echo "";
+      echo get_template_directory_uri().'/css/grc.css';
       break;
     case "hrh":
-      echo "";
+      echo get_template_directory_uri().'/css/hrh.css';
       break;
     case "jam":
-      echo "";
+      echo get_template_directory_uri().'/css/jam.css';
       break;
     case "jhs":
-      echo "";
+      echo get_template_directory_uri().'/css/jhs.css';
       break;
     case "kci":
-      echo "";
+      echo get_template_directory_uri().'/css/kci.css';
       break;
     case "phs":
-      echo "";
+      echo get_template_directory_uri().'/css/phs.css';
       break;
     case "sss":
-      echo "";
+      echo get_template_directory_uri().'/css/sss.css';
       break;
     case "wci":
-      echo "";
+      echo get_template_directory_uri().'/css/wci.css';
       break;
     case "wod":
-      echo "";
+      echo get_template_directory_uri().'/css/wod.css';
       break;
 
   }
