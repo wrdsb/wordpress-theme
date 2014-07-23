@@ -316,7 +316,13 @@ ul.sbe-widget-error {
 	list-style:none;
 }
 .sidebar-left {
-	margin-top:20px;
+	margin-top:10px;
+}
+.sidebar-left > .sub-menu-heading {
+	margin-top:10px;
+}
+.search-form {
+	margin-top:10px;
 }
 @media (max-width: 768px) {
 	.header {
