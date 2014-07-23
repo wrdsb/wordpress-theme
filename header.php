@@ -61,6 +61,16 @@
   <div class="container container-top">
     <div class="header">
       <div class="row">
+        
+        <div class="col-md-9 col-sm-8">
+          <div id="logo">
+            <a href="<?php echo home_url(); ?>/"><span><?php echo get_bloginfo('name'); ?></span>
+              <h2><?php echo get_bloginfo('name'); ?></h2>
+              <h3><?php echo get_bloginfo('description'); ?></h3>
+            </a>
+          </div>
+        </div>
+        
         <div class="col-md-3 col-sm-4">
           <div class="social-icons">
             <!--<a href="#"><span class="icon-facebook" title="Facebook"></span></a>-->
@@ -87,16 +97,6 @@
             </div>
           </div>
         </div>
-        
-        <div class="col-md-9 col-sm-8">
-          <div id="logo">
-            <a href="<?php echo home_url(); ?>/"><span><?php echo get_bloginfo('name'); ?></span>
-              <h2><?php echo get_bloginfo('name'); ?></h2>
-              <h3><?php echo get_bloginfo('description'); ?></h3>
-            </a>
-          </div>
-        </div>
-        
       </div>
     </div>
 

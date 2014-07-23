@@ -315,6 +315,9 @@ a#inc_font, a#dec_font {
 ul.sbe-widget-error {
 	list-style:none;
 }
+.sidebar-left {
+	margin-top:20px;
+}
 @media (max-width: 768px) {
 	.header {
 		display:none;
@@ -411,7 +414,9 @@ ul.sbe-widget-error {
 	.navbar-toggle .icon-search {
 		font-size:20px;
 	}
-	
+	.sub-navbar-collapse > .sub-menu-heading {
+		margin-top:0px;
+	}
 }
 @media (min-width: 768px) and (max-width: 991px) {
 	#logo a h2 {

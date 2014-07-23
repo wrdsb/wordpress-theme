@@ -36,6 +36,7 @@ Template Name: Empty Sidebars
 
     <?php
     # Both sidebars
+    # content area
     if (($has_left == TRUE) and ($has_right == TRUE)):
       echo '<div class="col-sm-6 col-md-7 col-lg-8">';
 
@@ -72,6 +73,7 @@ Template Name: Empty Sidebars
 
     <?php
     # Both sidebars
+    # right column
     if (($has_left == TRUE) and ($has_right == TRUE)):
       echo '<div class="col-sm-3 col-md-2 col-lg-2">';
       get_sidebar('right');

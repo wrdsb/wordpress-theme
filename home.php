@@ -10,6 +10,7 @@
 
     <?php
     # Both sidebars
+    # left column
     if (($has_left == TRUE) and ($has_right == TRUE)):
       echo '<div class="col-sm-3 col-md-2 col-lg-3">';
       if (!is_front_page()) {
@@ -37,6 +38,7 @@
 
     <?php
     # Both sidebars
+    # content area
     if (($has_left == TRUE) and ($has_right == TRUE)):
       echo '<div class="col-sm-6 col-md-7 col-lg-7">';
 
@@ -79,6 +81,7 @@
 
     <?php
     # Both sidebars
+    # right column
     if (($has_left == TRUE) and ($has_right == TRUE)):
       echo '<div class="col-sm-3 col-md-2 col-lg-3">';
       if (!is_front_page()) {

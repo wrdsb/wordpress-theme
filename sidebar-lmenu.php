@@ -10,6 +10,10 @@
 */
 ?>
 <div class="navbar my-sub-navbar" role="navigation">
+  
+
+  <?php # If we have a menu in the 'left' menu location ... ?>
+  <?php if (has_nav_menu('left')): ?>
   <div class="sub-navbar-header">
     <button type="button" class="navbar-toggle toggle-subnav" data-toggle="collapse" data-target=".sub-navbar-collapse">
       <span class="sr-only">Toggle navigation</span>
@@ -19,9 +23,6 @@
     </button>
     <span class="navbar-brand">Subnav</span>
   </div>
-
-  <?php # If we have a menu in the 'left' menu location ... ?>
-  <?php if (has_nav_menu('left')): ?>
     <div class="collapse navbar-collapse sub-navbar-collapse">
       <div class="sub-menu-heading">
         <?php $menu_locations = get_nav_menu_locations(); ?>
@@ -53,6 +54,15 @@
     ));
   ?>
     <?php if ($post->post_parent != 0) { ?>
+    <div class="sub-navbar-header">
+    <button type="button" class="navbar-toggle toggle-subnav" data-toggle="collapse" data-target=".sub-navbar-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <span class="navbar-brand">Subnav</span>
+  </div>
       <div class="collapse navbar-collapse sub-navbar-collapse">
         <div class="sub-menu-heading">
           <span><a href="<?php echo get_permalink($post->post_parent); ?>"><?php echo get_the_title($post->post_parent); ?></a></span>
@@ -82,6 +92,15 @@
         </div>
       </div>
     <?php } elseif (($post->post_parent == 0) and ($children)) { ?>
+    <div class="sub-navbar-header">
+    <button type="button" class="navbar-toggle toggle-subnav" data-toggle="collapse" data-target=".sub-navbar-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <span class="navbar-brand">Subnav</span>
+  </div>
       <div class="collapse navbar-collapse sub-navbar-collapse">
         <div class="sub-menu-heading">
           <span><a href="<?php echo get_permalink($post->post_parent); ?>"><?php echo get_the_title($post->post_parent); ?></a></span>
