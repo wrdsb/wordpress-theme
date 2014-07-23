@@ -427,3 +427,59 @@ function the_breadcrumb() {
   echo '</ol>';
   echo '</div>';
 }
+
+function wrdsb_secondary_school_colours() {
+  $parsed_url = parse_url(network_site_url());
+  $host = explode('.', $parsed_url['host']);
+  switch ($host[0]) {
+    case "bci":
+      echo get_template_directory_uri().'/css/bci.css';
+      break;
+    case "chc":
+      echo "";
+      break;
+    case "eci":
+      echo "";
+      break;
+    case "eds":
+      echo "";
+      break;
+    case "fhc":
+      echo "";
+      break;
+    case "gci":
+      echo "";
+      break;
+    case "gps":
+      echo "";
+      break;
+    case "grc":
+      echo "";
+      break;
+    case "hrh":
+      echo "";
+      break;
+    case "jam":
+      echo "";
+      break;
+    case "jhs":
+      echo "";
+      break;
+    case "kci":
+      echo "";
+      break;
+    case "phs":
+      echo "";
+      break;
+    case "sss":
+      echo "";
+      break;
+    case "wci":
+      echo "";
+      break;
+    case "wod":
+      echo "";
+      break;
+
+  }
+}
