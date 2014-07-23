@@ -436,52 +436,52 @@ function wrdsb_secondary_school_colours() {
   if ($host[0] == 'schools') {
   switch ($site) {
     case "/bci":
-      echo get_template_directory_uri().'/css/bci.css';
+      echo '<link href="'.get_template_directory_uri().'/css/bci.css" rel="stylesheet">';
       break;
     case "/chc":
-      echo get_template_directory_uri().'/css/chc.css';
+      echo '<link href="'.get_template_directory_uri().'/css/chc.css" rel="stylesheet">';
       break;
     case "/eci":
-      echo get_template_directory_uri().'/css/eci.css';
+      echo '<link href="'.get_template_directory_uri().'/css/eci.css" rel="stylesheet">';
       break;
     case "/eds":
-      echo get_template_directory_uri().'/css/eds.css';
+      echo '<link href="'.get_template_directory_uri().'/css/eds.css" rel="stylesheet">';
       break;
     case "/fhc":
-      echo get_template_directory_uri().'/css/fhc.css';
+      echo '<link href="'.get_template_directory_uri().'/css/fhc.css" rel="stylesheet">';
       break;
     case "/gci":
-      echo get_template_directory_uri().'/css/gci.css';
+      echo '<link href="'.get_template_directory_uri().'/css/gci.css" rel="stylesheet">';
       break;
     case "/gps":
-      echo get_template_directory_uri().'/css/gps.css';
+      echo '<link href="'.get_template_directory_uri().'/css/gps.css" rel="stylesheet">';
       break;
     case "/grc":
-      echo get_template_directory_uri().'/css/grc.css';
+      echo '<link href="'.get_template_directory_uri().'/css/grc.css" rel="stylesheet">';
       break;
     case "/hrh":
-      echo get_template_directory_uri().'/css/hrh.css';
+      echo '<link href="'.get_template_directory_uri().'/css/hrh.css" rel="stylesheet">';
       break;
     case "/jam":
-      echo get_template_directory_uri().'/css/jam.css';
+      echo '<link href="'.get_template_directory_uri().'/css/jam.css" rel="stylesheet">';
       break;
     case "/jhs":
-      echo get_template_directory_uri().'/css/jhs.css';
+      echo '<link href="'.get_template_directory_uri().'/css/jhs.css" rel="stylesheet">';
       break;
     case "/kci":
-      echo get_template_directory_uri().'/css/kci.css';
+      echo '<link href="'.get_template_directory_uri().'/css/kci.css" rel="stylesheet">';
       break;
     case "/phs":
-      echo get_template_directory_uri().'/css/phs.css';
+      echo '<link href="'.get_template_directory_uri().'/css/phs.css" rel="stylesheet">';
       break;
     case "/sss":
-      echo get_template_directory_uri().'/css/sss.css';
+      echo '<link href="'.get_template_directory_uri().'/css/sss.css" rel="stylesheet">';
       break;
     case "/wci":
-      echo get_template_directory_uri().'/css/wci.css';
+      echo '<link href="'.get_template_directory_uri().'/css/wci.css" rel="stylesheet">';
       break;
     case "/wod":
-      echo get_template_directory_uri().'/css/wod.css';
+      echo '<link href="'.get_template_directory_uri().'/css/wod.css" rel="stylesheet">';
       break;
     }
   }
