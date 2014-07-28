@@ -746,3 +746,40 @@ ul.checklist li {
 	color: #fff;
 }
  
+/*** __file type icons ***/
+
+.post a[href $='pdf']  {
+	background-image: url(../images/icons_filetype/icon_pdf_small.gif);
+	background-repeat: no-repeat;
+	padding-left: 18px;
+}
+
+.post a[href $='xls']  {
+	background-image: url(../images/icons_filetype/icon_xls_small.gif);
+	background-repeat: no-repeat;
+	padding-left: 18px;
+}
+
+.post a[href $='xlsx']  {
+	background-image: url(../images/icons_filetype/icon_xls_small.gif);
+	background-repeat: no-repeat;
+	padding-left: 18px;
+}
+
+.post a[href $='doc']  {
+	background-image: url(../images/icons_filetype/icon_doc_small.gif);
+	background-repeat: no-repeat;
+	padding-left: 18px;
+}
+
+.post a[href $='docx']  {
+	background-image: url(../images/icons_filetype/icon_doc_small.gif);
+	background-repeat: no-repeat;
+	padding-left: 18px;
+}
+
+/*.post a[href ^="http"]  {
+	background-image: url(images/icon_external_small.gif);
+	background-repeat: no-repeat;
+	padding-left: 16px;
+}*/
