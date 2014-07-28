@@ -703,7 +703,7 @@ p.promo {
 /** custom lists **/
 
 ul.checklist li {
-	list-style: square url(images/checkbox_11x11.gif);
+	list-style: square url(../images/checkbox_11x11.gif);
 	line-height: 2em;
 	list-style-position: outside;
 	vertical-align: top;
