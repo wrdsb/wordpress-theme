@@ -748,25 +748,25 @@ ul.checklist li {
  
 /*** __file type icons ***/
 
-.post a[href $='pdf']  {
+.row a[href $='pdf']  {
 	background-image: url(../images/icons_filetype/icon_pdf_small.gif);
 	background-repeat: no-repeat;
 	padding-left: 18px;
 }
 
-.post a[href $='xls']  {
+.row a[href $='xls']  {
 	background-image: url(../images/icons_filetype/icon_xls_small.gif);
 	background-repeat: no-repeat;
 	padding-left: 18px;
 }
 
-.post a[href $='xlsx']  {
+.row a[href $='xlsx']  {
 	background-image: url(../images/icons_filetype/icon_xls_small.gif);
 	background-repeat: no-repeat;
 	padding-left: 18px;
 }
 
-.post a[href $='doc']  {
+.row a[href $='doc']  {
 	background-image: url(../images/icons_filetype/icon_doc_small.gif);
 	background-repeat: no-repeat;
 	padding-left: 18px;
