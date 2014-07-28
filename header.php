@@ -109,7 +109,7 @@
             <span class="icon-search"></span>
           </button>
 
-          <button type="button" class="navbar-toggle togglenav" data-toggle="collapse" data-target=".navbar-collapse">
+          <button type="button" class="navbar-toggle togglenav" data-toggle="collapse" data-target=".main-navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -124,9 +124,9 @@
         </div>
 
         <?php if (has_nav_menu('top')) {
-          wp_nav_menu(array('theme_location' => 'top', 'menu_class' => 'nav nav-justified', 'container_class' => 'collapse navbar-collapse'));
+          wp_nav_menu(array('theme_location' => 'top', 'menu_class' => 'nav nav-justified', 'container_class' => 'collapse main-navbar-collapse'));
         } else {
-          wp_page_menu(array('depth' => 1, 'show_home' => true, 'menu_class' => 'collapse navbar-collapse' ));
+          wp_page_menu(array('depth' => 1, 'show_home' => true, 'menu_class' => 'collapse main-navbar-collapse' ));
         } ?>
     </div><!-- /.navbar -->
   </div>
