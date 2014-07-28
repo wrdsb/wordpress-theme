@@ -542,6 +542,9 @@ ul.sbe-widget-error {
 		border-collapse: collapse;
 		border-spacing: 0;
 		border-bottom: 1px solid #eee;
+		border-left: 0;
+		border-right: 0;
+		border-top: 0;
 	}
  
 	tr {
@@ -611,6 +614,11 @@ ul.sbe-widget-error {
 	margin: 1.5em auto;
 }
  
+.none, .alignnone {
+	float: none;
+	margin: 0;
+}
+ 
 .alert {
 	background-color: #ff0;
 	border: 3px solid red;
@@ -632,19 +640,37 @@ span.alert {
  
 .note {
 	background-color: #ffc;
-	border: 3px dashed #eee;
+	/*border: 3px dashed #eee;*/
+	/*border: 1px solid #eee;*/
 	color: #666;
 	padding: .5em;
-	margin: .5em;
+	margin: .5em auto;
 	font-weight: normal;
 	font-style: italic;
-	-webkit-border-radius: 1.2em;
+/*	-webkit-border-radius: 1.2em;
 	-moz-border-radius: 1.2em;
 	border-radius: 1.2em;
 	-webkit-box-shadow: 4px 4px 13px 0 rgba(50, 50, 50, 0.3);
 	-moz-box-shadow:    4px 4px 13px 0 rgba(50, 50, 50, 0.3);
-	box-shadow:         4px 4px 13px 0 rgba(50, 50, 50, 0.3);
+	box-shadow:         4px 4px 13px 0 rgba(50, 50, 50, 0.3); */
 }
+ 
+/* from original WRDSB site 
+ 
+.note {
+color: #666666;
+font-size: 14px;
+padding-left: 40px;
+background-image: url(images/asterix.jpg);
+background-repeat: no-repeat;
+display: block;
+padding-top: 10px;
+padding-right: 10px;
+padding-bottom: 10px;
+background-position: 7px 12px;
+border: 1px solid #CCCCCC;
+position: relative;
+} */
  
 span.note, li.note {
 	background-color: #ffc;
@@ -656,7 +682,9 @@ span.note, li.note {
  
 .announcement { /* for special announcements that expire */
 	background-color: #d9ecc2;
-	border: 5px solid #a0cf67;
+	border: 1px solid #a0cf67;
+	padding: .5em;
+	margin: .5em auto;
 	color: #000;
 }
  
@@ -708,6 +736,3 @@ p.promo {
 	color: #fff;
 }
  
-#palette p {
-	
-}
