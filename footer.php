@@ -12,7 +12,15 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-6 col-md-3">
-              <h4>Waterloo Region District School Board</h4>
+              <!-- automate address -->
+
+              <?php 
+                if (function_exists('wrdsb_school_info_display')) {
+
+                }
+                else {
+                  ?>
+                  <h4>Waterloo Region District School Board</h4>
               <address>51 Ardelt Avenue<br />
                 Kitchener, ON N2C 2R5<br />
               </address>
@@ -20,6 +28,10 @@
                 Phone: 519-570-0003<br />
                 Email: <a href="mailto:info@wrdsb.on.ca">info@wrdsb.on.ca</a>
               </address>
+              <?php  
+                }
+              ?>
+              
 
               <div class="social-icons">
                 <!--<a href="#"><span class="icon-facebook" title="Facebook"></span></a>-->
