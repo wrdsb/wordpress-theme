@@ -362,7 +362,24 @@ add_action( 'widgets_init', 'wrdsb_widgets_init' );
 //add_filter( 'wp_title', 'wrdsb_wp_title', 10, 2 );
 
 // Implement Custom Header features.
+// http://codex.wordpress.org/Custom_Headers
 //require get_template_directory() . '/inc/custom-header.php';
+$custom_header_options = array(
+  'width'                  => 980,
+  'flex-width'             => true,
+  'height'                 => 60,
+  'flex-height'            => true,
+  //'default-image'        => get_template_directory_uri() . '/images/header.jpg',
+  'default-image'          => '',
+  'uploads'                => true,
+  'random-default'         => false,
+  'default-text-color'     => '',
+  'header-text'            => false,
+  'wp-head-callback'       => '',
+  'admin-head-callback'    => '',
+  'admin-preview-callback' => '',
+);
+add_theme_support('custom-header', $custom_header_options);
 
 // Custom template tags for this theme.
 require get_template_directory() . '/inc/template-tags.php';
