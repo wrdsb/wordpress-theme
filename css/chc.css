@@ -32,14 +32,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*links*/
-a, .footer a {
+a {
 	color:#515A45; /*primary*/
 }
-a:hover, a:focus, .footer a:hover, .footer a:focus {
+.footer a {
+	color:#979C8F; /*opacity*/
+}
+a:hover, a:focus {
 	color:#515A45; /*primary*/
+}
+.footer a:hover, .footer a:focus {
+	color:#979C8F; /*opacity*/
 }
 /*footer*/
 .footer {
 	background-color:#515A45; /*primary*/
 	border-top-color:#666666; /*secondary*/
+	color:#fff;
 }
