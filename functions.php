@@ -52,10 +52,12 @@ function wrdsb_setup() {
   // Add RSS feed links to <head> for posts and comments.
   add_theme_support( 'automatic-feed-links' );
 
-  // Enable support for Post Thumbnails in pages and posts, and declare two sizes.
+  // Enable support for Post Thumbnails in pages and posts, and declare sizes.
   add_theme_support( 'post-thumbnails', array( 'post', 'page' ) );
-  //set_post_thumbnail_size( 672, 372, true );
-  //add_image_size( 'wrdsb-full-width', 1038, 576, true );
+  set_post_thumbnail_size( 165, 9999);
+  add_image_size( 'wrdsb-full-width', 1140, 9999);
+  add_image_size( 'wrdsb-two-columns', 945, 9999);
+  add_image_size( 'wrdsb-content-width', 750, 9999);
 
   // This theme uses wp_nav_menu() in two locations.
   register_nav_menus( array(
