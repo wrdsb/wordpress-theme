@@ -19,6 +19,12 @@ endif; ?>
   <small class="gray-dark">Posted <?php echo get_the_date(); ?></small>
 <?php } ?>
 
+<?php // check if the post has a Post Thumbnail assigned to it.
+  if ( has_post_thumbnail() ) {
+    the_post_thumbnail('wrdsb-full-width');
+  }
+?>
+
 <?php the_excerpt(); ?>
 
 <?php
