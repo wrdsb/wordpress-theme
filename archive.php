@@ -38,7 +38,7 @@
     <?php
     # Both sidebars
     if (($has_left == TRUE) and ($has_right == TRUE)):
-      echo '<div class="col-sm-6 col-md-7 col-lg-8">';
+      echo '<div class="col-sm-6 col-md-8 col-lg-8">';
 
     # Just left sidebar
     elseif (($has_left == TRUE) and ($has_right == FALSE)):
@@ -59,8 +59,8 @@
       // Start the Loop.
       while ( have_posts() ) : the_post();
       
-        // Include the page content template.
-        get_template_part( 'content', 'page' );
+        // Include the post format-specific content template.
+        get_template_part( 'content', get_post_format() );
 
         // If comments are open or we have at least one comment, load up the comment template.
         if ( comments_open() || get_comments_number() ) {

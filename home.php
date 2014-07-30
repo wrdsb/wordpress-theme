@@ -12,7 +12,7 @@
     # Both sidebars
     # left column
     if (($has_left == TRUE) and ($has_right == TRUE)):
-      echo '<div class="col-sm-3 col-md-2 col-lg-3">';
+      echo '<div class="col-sm-3 col-md-2 col-lg-2">';
       if (!is_front_page()) {
         get_sidebar('lmenu');
       }
@@ -40,7 +40,7 @@
     # Both sidebars
     # content area
     if (($has_left == TRUE) and ($has_right == TRUE)):
-      echo '<div class="col-sm-6 col-md-7 col-lg-7">';
+      echo '<div class="col-sm-6 col-md-8 col-lg-8">';
 
     # Just left sidebar
     elseif (($has_left == TRUE) and ($has_right == FALSE)):
@@ -83,7 +83,7 @@
     # Both sidebars
     # right column
     if (($has_left == TRUE) and ($has_right == TRUE)):
-      echo '<div class="col-sm-3 col-md-2 col-lg-3">';
+      echo '<div class="col-sm-3 col-md-2 col-lg-2">';
       if (!is_front_page()) {
         get_sidebar('rmenu');
       }
