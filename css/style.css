@@ -797,3 +797,11 @@ a[href $='docx']  {
 	#palette p {
 		
 	}
+}
+
+/*** __Visual Branding Requirements for Typography ***/
+
+h1 {
+	font-family: Georgia, serif !important;
+	-webkit-font-smoothing: antialiased;
+}
