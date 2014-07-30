@@ -52,12 +52,12 @@ function wrdsb_setup() {
   // Add RSS feed links to <head> for posts and comments.
   add_theme_support( 'automatic-feed-links' );
 
-  // Enable support for Post Thumbnails in pages and posts, and declare sizes.
+  // Enable support for Featured Images (Post Thumbnails) in pages and posts, and declare sizes.
   add_theme_support( 'post-thumbnails', array( 'post', 'page' ) );
   set_post_thumbnail_size( 165, 9999);
   add_image_size( 'wrdsb-full-width', 1140, 9999);
-  add_image_size( 'wrdsb-two-columns', 945, 9999);
-  add_image_size( 'wrdsb-content-width', 750, 9999);
+  add_image_size( 'wrdsb-one-sidebar', 945, 9999);
+  add_image_size( 'wrdsb-two-sidebars', 750, 9999);
 
   // This theme uses wp_nav_menu() in two locations.
   register_nav_menus( array(
@@ -104,11 +104,6 @@ function wrdsb_setup() {
   add_theme_support( 'post-formats', array(
     'aside', 'image', 'video', 'audio', 'quote', 'link', 'gallery',
   ) );
-
-  // This theme allows users to set a custom background.
-  //add_theme_support( 'custom-background', apply_filters( 'wrdsb_custom_background_args', array(
-    //'default-color' => 'f5f5f5',
-  //) ) );
 
   // Add support for featured content.
   add_theme_support( 'featured-content', array(
@@ -166,7 +161,7 @@ add_action( 'after_setup_theme', 'wrdsb_setup' );
 //}
 
 /**
- * Register three WRDSB widget areas.
+ * Register WRDSB widget areas.
  *
  * @since WRDSB 1.0
  *
@@ -399,6 +394,7 @@ require get_template_directory() . '/inc/customizer.php';
   //require get_template_directory() . '/inc/featured-content.php';
 //}
 
+
 function the_breadcrumb() {
   global $post;
   echo '<div class="container container-breadcrumb">';
@@ -446,6 +442,7 @@ function the_breadcrumb() {
   echo '</ol>';
   echo '</div>';
 }
+
 
 function wrdsb_secondary_school_colours() {
   $parsed_url = parse_url(site_url());

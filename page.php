@@ -13,7 +13,7 @@
     # Both sidebars
     # left column
     if (($has_left == TRUE) and ($has_right == TRUE)):
-      echo '<div class="col-sm-3 col-md-2 col-lg-3">';
+      echo '<div class="col-sm-3 col-md-2 col-lg-2">';
       if (!is_front_page()) {
         get_sidebar('lmenu');
       }
@@ -34,30 +34,39 @@
 
     # No sidebars
       # Nothing to do
-    endif
+    endif;
     ?>
 
     <?php
     # Both sidebars
     # content area
     if (($has_left == TRUE) and ($has_right == TRUE)):
-      echo '<div class="col-sm-6 col-md-7 col-lg-9">';
-
+      echo '<div class="col-sm-6 col-md-8 col-lg-8">';
     # Just left sidebar
     elseif (($has_left == TRUE) and ($has_right == FALSE)):
       echo '<div class="col-sm-9 col-lg-9">';
-
     # Just right sidebar
     elseif (($has_left == FALSE) and ($has_right == TRUE)):
       echo '<div class="col-sm-8">';
-
     # No sidebars
     elseif (($has_left == FALSE) and ($has_right == FALSE)):
       echo '<div class="col-sm-12 col-lg-12">';
-
-    endif
+    endif;
     ?>
 
+    <?php // check if the post has a Post Thumbnail assigned to it.
+      if (has_post_thumbnail()):
+        if (($has_left == TRUE) and ($has_right == TRUE)):
+          the_post_thumbnail('wrdsb-two-sidebars');
+        elseif (($has_left == TRUE) and ($has_right == FALSE)):
+          the_post_thumbnail('wrdsb-one-sidebar');
+        elseif (($has_left == FALSE) and ($has_right == TRUE)):
+          the_post_thumbnail('wrdsb-one-sidebar');
+        elseif (($has_left == FALSE) and ($has_right == FALSE)):
+          the_post_thumbnail('wrdsb-full-width');
+        endif;
+      endif;
+    ?>
     <?php
       // Start the Loop.
       while ( have_posts() ) : the_post();
@@ -78,7 +87,7 @@
     # Both sidebars
     # right column
     if (($has_left == TRUE) and ($has_right == TRUE)):
-      echo '<div class="col-sm-3 col-md-2 col-lg-3">';
+      echo '<div class="col-sm-3 col-md-2 col-lg-2">';
       if (!is_front_page()) {
         get_sidebar('rmenu');
       }
@@ -100,7 +109,7 @@
     # No sidebars
       # Nothing to do
 
-    endif
+    endif;
     ?>
   </div>
 </div>
