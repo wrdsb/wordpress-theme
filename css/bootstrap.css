@@ -307,6 +307,7 @@ figure {
 img {
   vertical-align: middle;
 }
+img,
 .img-responsive,
 .thumbnail > img,
 .thumbnail a > img,

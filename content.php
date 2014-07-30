@@ -20,5 +20,26 @@ endif; ?>
 <?php } ?>
 
 <?php the_excerpt(); ?>
-<p>Categories: <?php the_category(','); ?></p>
-<p><?php the_tags(); ?></p>
+
+<?php
+	$igc=0;
+	foreach((get_the_category()) as $category) {
+	    if (strtolower($category->cat_name) != 'uncategorized') {
+			$igc = 1;
+		}
+	}
+
+	if ($igc == 1) {
+		echo '<p>Categories: ';
+		the_category(',');
+		echo '</p>';
+	}
+?>
+
+<?php 
+	$number_of_tags = count(get_terms('post_tags'));
+
+	if ($number_of_tags > 0) {
+		the_tags();
+	}
+?>
