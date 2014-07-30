@@ -23,7 +23,7 @@
     </button>
     <span class="navbar-brand">Subnav</span>
   </div>
-    <div class="collapse navbar-collapse sub-navbar-collapse">
+    <div class="collapse sub-navbar-collapse">
       <div class="sub-menu-heading">
         <?php $menu_locations = get_nav_menu_locations(); ?>
         <?php $menus = wp_get_nav_menus(); ?>
@@ -63,7 +63,7 @@
     </button>
     <span class="navbar-brand">Subnav</span>
   </div>
-      <div class="collapse navbar-collapse sub-navbar-collapse">
+      <div class="collapse sub-navbar-collapse">
         <div class="sub-menu-heading">
           <span><a href="<?php echo get_permalink($post->post_parent); ?>"><?php echo get_the_title($post->post_parent); ?></a></span>
         </div>
@@ -101,7 +101,7 @@
     </button>
     <span class="navbar-brand">Subnav</span>
   </div>
-      <div class="collapse navbar-collapse sub-navbar-collapse">
+      <div class="collapse sub-navbar-collapse">
         <div class="sub-menu-heading">
           <span><a href="<?php echo get_permalink($post->post_parent); ?>"><?php echo get_the_title($post->post_parent); ?></a></span>
         </div>
