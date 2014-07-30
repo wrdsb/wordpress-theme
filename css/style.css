@@ -783,3 +783,10 @@ a[href $='docx']  {
 	background-repeat: no-repeat;
 	padding-left: 16px;
 }*/
+
+/*** __Visual Branding Requirements for Typography ***/
+
+h1 {
+	font-family: Georgia, serif !important;
+	-webkit-font-smoothing: antialiased;
+}
