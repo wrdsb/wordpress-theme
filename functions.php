@@ -365,9 +365,9 @@ add_action( 'widgets_init', 'wrdsb_widgets_init' );
 // http://codex.wordpress.org/Custom_Headers
 //require get_template_directory() . '/inc/custom-header.php';
 $custom_header_options = array(
-  'width'                  => 980,
+  'width'                  => 1140,
   'flex-width'             => true,
-  'height'                 => 60,
+  'height'                 => 300,
   'flex-height'            => true,
   //'default-image'        => get_template_directory_uri() . '/images/header.jpg',
   'default-image'          => '',
