@@ -15,7 +15,7 @@
               <!-- automate address -->
 
               <?php 
-                if (function_exists('wrdsb_school_info_display')) {
+                if (function_exists('wrdsb_school_info_display_new')) {
 
                 }
                 else {
