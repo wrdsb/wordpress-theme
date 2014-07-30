@@ -6,29 +6,29 @@
 */ 
 /*navigation*/
 .my-navbar {
-	background-color:#006699; /*primary*/
+	background-color:#010A59; /*primary*/
 	border-top-color:#d1b317; /*secondary*/
 }
 .nav >li > a:hover, .nav >li > a:focus {
-	background-color:#66A3C2; /*opacity*/
+	background-color:#676C9B; /*opacity*/
 }
 .nav >li.active, 
 .nav >li.current-page-ancestor, 
 .nav >li.current_page_ancestor,
 .nav >li.current-menu-item, 
 .nav >li.current_page_item {
-	background-color:#66A3C2; /*opacity*/
+	background-color:#676C9B; /*opacity*/
 }
 /*sub navigation*/
 .sub-menu-heading, .sub-menu-heading a {
-	background-color:#006699; /*primary*/
+	background-color:#010A59; /*primary*/
 }
 .sub-menu-items {
-	background-color:#CCE0EB; /*light*/
+	background-color:#CCCEDE; /*light*/
 }
 /*headings*/
 h1, h2, h3, h4, h5, h6 {
-	color:#006699; /*primary*/
+	color:#010A59; /*primary*/
 }
 h6.copyright {
 	color:#fff;
