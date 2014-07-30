@@ -30,14 +30,25 @@
 h1, h2, h3, h4, h5, h6 {
 	color:#0A1241; /*primary*/
 }
-
+h6.copyright {
+	color:#fff;
+}
 /*links*/
 a {
 	color:#0A1241; /*primary*/
 }
-
+.footer a {
+	color:#6C718D; /*opacity*/
+}
+a:hover, a:focus {
+	color:#0A1241; /*primary*/
+}
+.footer a:hover, .footer a:focus {
+	color:#6C718D; /*opacity*/
+}
 /*footer*/
 .footer {
 	background-color:#0A1241; /*primary*/
 	border-top-color:#A30001; /*secondary*/
+	color:#fff;
 }
