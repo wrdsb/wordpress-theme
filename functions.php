@@ -407,14 +407,11 @@ function the_breadcrumb() {
     echo 'Home';
     echo '</a>';
     echo '</li>';
-    if (is_category() || is_single()) {
+    if (is_single()) {
+      echo '<li><a href="'.wrdsb_posts_page_url().'">News</a></li>';
       echo '<li>';
-      the_category(' </li><li> ');
-      if (is_single()) {
-        echo '</li><li>';
-        the_title();
-        echo '</li>';
-      }
+      the_title();
+      echo '</li>';
     } elseif (is_page()) {
       if($post->post_parent){
         $anc = get_post_ancestors( $post->ID );
@@ -433,6 +430,7 @@ function the_breadcrumb() {
     }
   }
   elseif (is_tag()) {single_tag_title();}
+  elseif (is_category()) {echo"<li>"; the_category(); echo'</li>';}
   elseif (is_day()) {echo"<li>Archive for "; the_time('F jS, Y'); echo'</li>';}
   elseif (is_month()) {echo"<li>Archive for "; the_time('F, Y'); echo'</li>';}
   elseif (is_year()) {echo"<li>Archive for "; the_time('Y'); echo'</li>';}
@@ -506,4 +504,12 @@ function wrdsb_secondary_school_colours() {
 add_action ('init', 'wrdsb_add_excerpts_to_pages');
 function wrdsb_add_excerpts_to_pages() {
   add_post_type_support('page', 'excerpt');
+}
+
+function wrdsb_posts_page_url() {
+  if (get_option('show_on_front') == 'page') {
+    return get_permalink(get_option('page_for_posts'));
+  } else {
+    return get_bloginfo('url');
+  }
 }
