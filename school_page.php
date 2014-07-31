@@ -9,9 +9,14 @@ Template Name: School List
 	<div class="row">
 		<div class="col-md-12">
 
-        <h3><?php the_title(); ?></h3>
+        <?php
+              // Start the Loop.
+              while ( have_posts() ) : the_post();
 
-        <p><?php the_content();?></p>
+                // Include the post format-specific content template.
+                get_template_part( 'content', 'page' );
+              endwhile;
+            ?>
 
 			<div class="table-responsive">
 				<table class="table table-striped table-bordered">
