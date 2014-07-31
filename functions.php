@@ -502,3 +502,8 @@ function wrdsb_secondary_school_colours() {
     }
   }
 }
+
+add_action ('init', 'wrdsb_add_excerpts_to_pages');
+function wrdsb_add_excerpts_to_pages() {
+  add_post_type_support('page', 'excerpt');
+}
