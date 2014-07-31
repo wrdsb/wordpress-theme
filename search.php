@@ -20,6 +20,7 @@ Template Name: Search Page
           <?php } ?>
           <?php the_excerpt(); ?>
         <?php endwhile; ?>
+        <?php wrdsb_paging_nav(); ?>
       <?php else: ?>
         <?php get_template_part( 'content', 'none' ); ?>
       <?php endif; ?>
