@@ -1,67 +1,13 @@
 <?php
 /*
-Template Name: Schools List
+Template Name: No Sidebars
 */
-global $wpdb;
 ?>
-<?php
-//table dept_info
-if ($_GET['src'] == 'rwd')
-	{
-	?>
-    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
-    <head>
-      <style type="text/css">
-  <!--
-  body {
-	  font-family: Verdana, Arial, Helvetica, sans-serif;
-	  font-size: 12px;
-	  color: #FFFFFF;
-	  margin: 0px;
-	  padding: 0px;
-		  background-color: #01499a;
-  }
-  p {
-	  padding: 0px;
-	  margin-top: 0px;
-	  margin-right: 0px;
-	  margin-bottom: 7px;
-	  margin-left: 0px;
-  }
-  a {
-	color: #FFF;	  
-  }
-  -->
-      </style>
+<?php get_header(); ?>
 
-</head>
-    <body>
-    <?php
-	$liveposts = $wpdb->get_results( $wpdb->prepare("SELECT * FROM depts_info WHERE alpha_code LIKE '".strtoupper($_GET['id'])."'"));
-	$granular_title = $_GET['id'];
-	echo '<strong>'.$liveposts['0']->full_name.'</strong><br />';
-	echo $liveposts['0']->address.'<br />';
-	echo $liveposts['0']->city.', '.$liveposts['0']->province.'<br />';
-	echo $liveposts['0']->postal_code.'<br /><br />';
-	echo '<strong>(T): </strong>'.$liveposts['0']->phone_no.'<br />';
-	echo '<strong>(F): </strong>519 '.$liveposts['0']->fax_no.'<br /><br />';
-	echo '<strong>Superintendent: <br /></strong>'.substr($liveposts['0']->super,0,strpos($liveposts['0']->super,'[')).'<br /><br />';
-	echo '<strong>Principal: <br /></strong>'.$liveposts['0']->principal.'<br />';
-	if ($liveposts['0']->vp != '' ) echo '<strong>Vice Principal(s): </strong>'.$liveposts['0']->vp.'<br />';
-	?>
-    </body>
-    </html>
-    <?php
-	}
-else
-	{
-?>
-
-<?php get_header();?>
-  <div id="page-feature"> </div>
-  <div id="content-wrapper">
-    <div id="content-block"> <a name="content" id="content"></a>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
       <?php $meta = get_post_custom($page_id); ?>
               <?php 
 		$page_class = "front-page";
@@ -70,7 +16,8 @@ else
 			$page_class = "the-post";
 			}
 		?>
-<div class="post regpost post-<?php echo $post->ID; ?> <?php echo $page_class; ?>">
+
+		<div class="post regpost post-<?php echo $post->ID; ?> <?php echo $page_class; ?>">
 <h2><?php bloginfo('name'); ?></h2>
 <?php edit_post_link('Edit'); ?>
 <div class="breadcrumbs">
@@ -179,55 +126,10 @@ elseif (isset($_GET['tag']))
 	
 ?>
 </div>
-		<?php
-        ob_start();
-        dynamic_sidebar('content-left');
-        $content_left = ob_get_contents();
-        ob_end_clean();
-        ob_start();
-        dynamic_sidebar('content-right');
-        $content_right = ob_get_contents();
-        ob_end_clean();
-        ?>
-                                <?php
-	  if ($content_wide != "")
-	  	{
 
-				echo $content_wide;
 
-		}
-	  ?>
-          <?php if ($content_left != "" OR $content_right !="" ) {?>
-                  <div id="ccolumns">
-
-      <div id="cleft-widget">              
-	  		<?php 
-			if (is_active_sidebar('content-left'))
-				{
-				echo $content_left;
-				}
-			?>
-            </div>
-      <div id="cright-widget">
-      	  		<?php 
-			if (is_active_sidebar('content-right'))
-				{
-				echo $content_right;
-				}
-			?>
-      </div>
-      
-      </div>
-	  
-	  <?php } ?>
     </div>
   </div>
-  <?php get_sidebar();?>
-  <?php get_footer(); ?>
 </div>
-</div>
-</body>
-</html>
-<?php
-	}
-?>
+
+<?php get_footer(); ?>
