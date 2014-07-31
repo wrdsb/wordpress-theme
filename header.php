@@ -132,16 +132,41 @@
   </div>
 
   <?php if (is_front_page()) { ?>
-    <?php $featured_posts = get_posts(array('meta_key' => '_is_ns_featured_post', 'meta_value' => 'yes')); ?>
-    <?php if ($featured_posts): ?>
+    <?php if (wrdsb_has_featured_posts()): ?>
+      <?php $featured_posts = wrdsb_get_featured_posts(); ?>
       <div class="container">
         <div class="jumbotron">
-          <?php foreach ($featured_posts as $featured_post) { ?>
-            <h1><?php echo $featured_post->post_title; ?></h1>
-            <p>
-              <?php echo $featured_post->post_content; ?>
-              <a href="">Read More</a>
-            </p>
+          <?php if (count($featured_posts) == 1) { ?>
+            <?php $post = $featured_posts[0]; ?>
+              <?php setup_postdata($post); ?>
+              <?php get_template_part('content', get_post_format()); ?>
+            <?php wp_reset_postdata(); ?>
+          <?php } else { ?>
+            <div id="carousel-jumbotron" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <?php for ($i = 0; $i < count($featured_posts); $i++) { ?>
+                  <li data-target="#carousel-jumbotron" data-slide-to="<?php echo $i; ?>"></li>
+                <?php } ?>
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <?php for ($i = 0; $i < count($featured_posts); $i++) { ?>
+                  <div class="item">
+                    <img src="..." alt="...">
+                    <div class="carousel-caption">
+                      <h3>Caption!</h3>
+                      <p>Text goes here. Coolio.</p>
+                    </div>
+                  </div>
+                <?php } ?>
+              </div>
+
+              <!-- Controls -->
+              <a class="left carousel-control" href="#carousel-jumbotron" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+              <a class="right carousel-control" href="#carousel-jumbotron" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
           <?php } ?>
         </div>
       </div>

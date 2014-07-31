@@ -102,13 +102,7 @@ function wrdsb_setup() {
    * See http://codex.wordpress.org/Post_Formats
    */
   add_theme_support( 'post-formats', array(
-    'aside', 'image', 'video', 'audio', 'quote', 'link', 'gallery',
-  ) );
-
-  // Add support for featured content.
-  add_theme_support( 'featured-content', array(
-    'featured_content_filter' => 'wrdsb_get_featured_posts',
-    'max_posts' => 6,
+    'status'
   ) );
 
   // This theme uses its own gallery styles.
@@ -132,22 +126,28 @@ add_action( 'after_setup_theme', 'wrdsb_setup' );
 //add_action( 'template_redirect', 'wrdsb_content_width' );
 
 /**
- * Getter function for Featured Content Plugin.
+ * Getter function for Featured Content
  *
  * @since WRDSB 1.0
  *
- * @return array An array of WP_Post objects.
+ * @return an array of WP_Post objects.
  */
-//function wrdsb_get_featured_posts() {
-  /**
-   * Filter the featured posts to return in WRDSB.
-   *
-   * @since WRDSB 1.0
-   *
-   * @param array|bool $posts Array of featured posts, otherwise false.
-   */
-  //return apply_filters( 'wrdsb_get_featured_posts', array() );
-//}
+function wrdsb_get_featured_posts() {
+  $featured_posts_attributes = array(
+    'post_type'=> 'post',
+    'post_status' => 'publish',
+    'order' => 'DESC',
+    'tax_query' => array(
+      array(
+        'taxonomy' => 'post_format',
+        'field' => 'slug',
+        'terms' => array( 'post-format-status' )
+      )
+    )
+  );
+  $featured_posts = get_posts($featured_posts_attributes);
+  return $featured_posts;
+}
 
 /**
  * A helper conditional function that returns a boolean value.
@@ -156,9 +156,13 @@ add_action( 'after_setup_theme', 'wrdsb_setup' );
  *
  * @return bool Whether there are featured posts.
  */
-//function wrdsb_has_featured_posts() {
-  //return ! is_paged() && (bool) wrdsb_get_featured_posts();
-//}
+function wrdsb_has_featured_posts() {
+  if (count(wrdsb_get_featured_posts()) > 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 /**
  * Register WRDSB widget areas.
@@ -216,33 +220,33 @@ function wrdsb_widgets_init() {
     'before_title'  => '<h4>',
     'after_title'   => '</h4>',
   ) );
-  register_sidebar( array(
-    'name'          => __( 'Content Left', 'wrdsb' ),
-    'id'            => 'content-left',
-    'description'   => __( 'Appears at the bottom of the page/post content.', 'wrdsb' ),
+  //register_sidebar( array(
+    //'name'          => __( 'Content Left', 'wrdsb' ),
+    //'id'            => 'content-left',
+    //'description'   => __( 'Appears at the bottom of the page/post content.', 'wrdsb' ),
     //'before_widget' => '<aside id="%1$s" class="widget %2$s">',
     //'after_widget'  => '</aside>',
     //'before_title'  => '<h1 class="widget-title">',
     //'after_title'   => '</h1>',
-  ) );
-  register_sidebar( array(
-    'name'          => __( 'Content Right', 'wrdsb' ),
-    'id'            => 'content-right',
-    'description'   => __( 'Appears at the bottom of the page/post content.', 'wrdsb' ),
+  //) );
+  //register_sidebar( array(
+    //'name'          => __( 'Content Right', 'wrdsb' ),
+    //'id'            => 'content-right',
+    //'description'   => __( 'Appears at the bottom of the page/post content.', 'wrdsb' ),
     //'before_widget' => '<aside id="%1$s" class="widget %2$s">',
     //'after_widget'  => '</aside>',
     //'before_title'  => '<h1 class="widget-title">',
     //'after_title'   => '</h1>',
-  ) );
-  register_sidebar( array(
-    'name'          => __( 'Content Feature', 'wrdsb' ),
-    'id'            => 'content-feature',
-    'description'   => __( 'Appears at the top of the page/post content.', 'wrdsb' ),
+  //) );
+  //register_sidebar( array(
+    //'name'          => __( 'Content Feature', 'wrdsb' ),
+    //'id'            => 'content-feature',
+    //'description'   => __( 'Appears at the top of the page/post content.', 'wrdsb' ),
     //'before_widget' => '<aside id="%1$s" class="widget %2$s">',
     //'after_widget'  => '</aside>',
     //'before_title'  => '<h1 class="widget-title">',
     //'after_title'   => '</h1>',
-  ) );
+  //) );
 }
 add_action( 'widgets_init', 'wrdsb_widgets_init' );
 
@@ -303,60 +307,6 @@ add_action( 'widgets_init', 'wrdsb_widgets_init' );
 //}
 //add_filter( 'body_class', 'wrdsb_body_classes' );
 
-/**
- * Extend the default WordPress post classes.
- *
- * Adds a post class to denote:
- * Non-password protected page with a post thumbnail.
- *
- * @since WRDSB 1.0
- *
- * @param array $classes A list of existing post class values.
- * @return array The filtered post class list.
- */
-//function wrdsb_post_classes( $classes ) {
-  //if ( ! post_password_required() && has_post_thumbnail() ) {
-    //$classes[] = 'has-post-thumbnail';
-  //}
-
-  //return $classes;
-//}
-//add_filter( 'post_class', 'wrdsb_post_classes' );
-
-/**
- * Create a nicely formatted and more specific title element text for output
- * in head of document, based on current view.
- *
- * @since WRDSB 1.0
- *
- * @param string $title Default title text for current view.
- * @param string $sep Optional separator.
- * @return string The filtered title.
- */
-//function wrdsb_wp_title( $title, $sep ) {
-  //global $paged, $page;
-
-  //if ( is_feed() ) {
-    //return $title;
-  //}
-
-  // Add the site name.
-  //$title .= get_bloginfo( 'name' );
-
-  // Add the site description for the home/front page.
-  //$site_description = get_bloginfo( 'description', 'display' );
-  //if ( $site_description && ( is_home() || is_front_page() ) ) {
-    //$title = "$title $sep $site_description";
-  //}
-
-  // Add a page number if necessary.
-  //if ( $paged >= 2 || $page >= 2 ) {
-    //$title = "$title $sep " . sprintf( __( 'Page %s', 'wrdsb' ), max( $paged, $page ) );
-  //}
-
-  //return $title;
-//}
-//add_filter( 'wp_title', 'wrdsb_wp_title', 10, 2 );
 
 // Implement Custom Header features.
 // http://codex.wordpress.org/Custom_Headers
@@ -383,16 +333,6 @@ require get_template_directory() . '/inc/template-tags.php';
 
 // Add Theme Customizer functionality.
 require get_template_directory() . '/inc/customizer.php';
-
-/*
- * Add Featured Content functionality.
- *
- * To overwrite in a plugin, define your own Featured_Content class on or
- * before the 'setup_theme' hook.
- */
-//if ( ! class_exists( 'Featured_Content' ) && 'plugins.php' !== $GLOBALS['pagenow'] ) {
-  //require get_template_directory() . '/inc/featured-content.php';
-//}
 
 
 function the_breadcrumb() {
@@ -501,10 +441,12 @@ function wrdsb_secondary_school_colours() {
   }
 }
 
+
 add_action ('init', 'wrdsb_add_excerpts_to_pages');
 function wrdsb_add_excerpts_to_pages() {
   add_post_type_support('page', 'excerpt');
 }
+
 
 function wrdsb_posts_page_url() {
   if (get_option('show_on_front') == 'page') {
