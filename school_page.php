@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: No Sidebars
+Template Name: School List
 */
 ?>
 <?php get_header(); ?>
