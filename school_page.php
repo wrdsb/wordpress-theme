@@ -24,7 +24,7 @@ Template Name: School List
 						<th class="text-left">School, Website</th>
 						<th class="text-left">Address</th>
 						<th class="text-left">Phone</th>
-						<th class="text-left">Email</th>
+						<!--<th class="text-left">Email</th>-->
 					</tr>
 
 					<?php
@@ -41,9 +41,9 @@ Template Name: School List
 								(<?php echo'<a href="http://maps.google.com/maps?f=q&hl=en&q='.$school->street_address.'+'.$school->city.'+Ontario" target="_blank">Map</a>' ?>)
 							</td>
 							<td><?php $phone=$school->phone; echo '('.substr($phone,0,3).') '.substr($phone,3,3).'-'.substr($phone,6,4) ?></td>
-							<td><?php $code=$school->alpha_code; $code=strtolower($code); ?>
+							<!--<td><?php $code=$school->alpha_code; $code=strtolower($code); ?>
 								<a href="mailto:<?php echo $code; ?>@wrdsb.on.ca"><?php echo $code; ?>@wrdsb.on.ca</a>
-							</td>
+							</td>-->
 						</tr>
 					<?php	
 						}
