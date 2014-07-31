@@ -1,12 +1,15 @@
 <?php get_header(); ?>
-
+<?php
+  $has_right = FALSE;
+  if (is_active_sidebar('sidebar-right') || has_nav_menu('right')) {$has_right = TRUE;}
+?>
 <div class="container">
   <div class="row">
     <?php
     # Both sidebars
     # content area
     if ($has_right == TRUE):
-      echo '<div class="col-sm-6 col-md-8 col-lg-8">';
+      echo '<div class="col-sm-6 col-md-8 col-lg-9">';
     elseif ($has_right == FALSE):
       echo '<div class="col-sm-12 col-lg-12">';
     endif;
@@ -70,13 +73,10 @@
       <?php trackback_rdf(); ?> 
     </div>
 
-    
-</div> <!-- end content area -->
-
-<?php
+    <?php
     
 if ($has_right == TRUE):
-  echo '<div class="col-sm-4">';
+  echo '<div class="col-sm-3">';
 if (!is_front_page()) {
   get_sidebar('rmenu');
 }
@@ -85,6 +85,9 @@ echo '</div>';
 
 endif;
 ?>
+</div> <!-- end content area -->
+
+
 </div>
 </div>
 
