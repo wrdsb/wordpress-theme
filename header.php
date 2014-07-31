@@ -131,27 +131,25 @@
     </div><!-- /.navbar -->
   </div>
 
-  <?php if (is_front_page()) { 
-    // if we have featured content, include the featured content template
-    // get_template_part( 'featured-content' ); ?>
-    <!--<div class="container">-->
-      <!--<div class="jumbotron">-->
-        <!--<h1>Jumbotron!</h1>-->
-        <!--<p>-->
-          <!--This massive space is reserved for a featured post. We'll get this finished up before release.-->
-          <!--When finished, users can mark a post as 'featured' and it will be embiggened and put here automatically.-->
-        <!--</p>-->
-      <!--</div>-->
-    <!--</div>-->
-
-    <!-- elseif we have a header image, include that -->
-    <?php if (get_header_image()) { ?>
+  <?php if (is_front_page()) { ?>
+    <?php $featured_posts = get_posts(array('meta_key' => '_is_ns_featured_post', 'meta_value' => 'yes')); ?>
+    <?php if ($featured_posts): ?>
+      <div class="container">
+        <div class="jumbotron">
+          <?php foreach ($featured_posts as $featured_post) { ?>
+            <h1><?php echo $featured_post->post_title; ?></h1>
+            <p>
+              <?php echo $featured_post->post_content; ?>
+              <a href="">Read More</a>
+            </p>
+          <?php } ?>
+        </div>
+      </div>
+    <?php elseif (get_header_image()): ?>
       <div class="container">
         <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
       </div>
-    <?php } ?>
-
-    <!-- and if we have neither featured content nor a header image, do nothing at all -->
+    <?php endif; ?>
   <?php } ?>
 
   <?php if (!is_front_page()) { ?>
