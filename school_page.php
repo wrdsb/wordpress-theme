@@ -35,7 +35,7 @@ Template Name: School List
 					?>
 						<tr>
 							<td><strong><?php echo $school->full_name ?></strong><br />
-								<a href="<?php echo $school->website ?>"><?php $website = $school->website; echo strtolower($website); ?></a>
+								<a href="<?php echo $school->website ?>" target="_blank"><?php $website = $school->website; echo strtolower($website); ?></a>
 							</td>
 							<td><?php echo $school->street_address.', '.$school->city.' '.$school->postal_code?>
 								(<?php echo'<a href="http://maps.google.com/maps?f=q&hl=en&q='.$school->street_address.'+'.$school->city.'+Ontario" target="_blank">Map</a>' ?>)
