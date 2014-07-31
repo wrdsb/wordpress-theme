@@ -91,6 +91,7 @@ a {
 .footer h4 {
 	font-weight:bold;
 	margin-bottom:20px;
+	color:#fff;
 }
 ul.footer-links {
 	margin-left:0;
@@ -795,10 +796,6 @@ a[href $='docx']  {
 	padding-left: 16px;
 	}*/
 
-	#palette p {
-		
-	}
-}
 
 /*** __Visual Branding Requirements for Typography ***/
 
