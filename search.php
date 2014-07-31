@@ -7,90 +7,24 @@ Template Name: Search Page
 
 <div class="container">
   <div class="row">
+    <div class="col-sm-12 col-lg-12">
 
-    <?php $has_left = FALSE; ?>
-    <?php $has_right = FALSE; ?>
-    <?php if (is_active_sidebar('sidebar-left')) {$has_left = TRUE;} ?>
-    <?php if (is_active_sidebar('sidebar-right')) {$has_right = TRUE;} ?>
+      <?php get_search_form(); ?>
+      <h1><?php printf(__( 'Search Results for: %s' ), '<span>' . get_search_query() . '</span>'); ?></h1>
 
-    <?php
-    # Both sidebars
-    if (($has_left == TRUE) and ($has_right == TRUE)):
-      echo '<div class="col-sm-3 col-md-2 col-lg-3">';
-      get_sidebar('left');
-      echo '</div>';
-
-    # Just left sidebar
-    elseif (($has_left == TRUE) and ($has_right == FALSE)):
-      echo '<div class="col-sm-3 col-lg-3">';
-      get_sidebar('left');
-      echo '</div>';
-
-    # Just right sidebar
-      # Nothing to do
-
-    # No sidebars
-      # Nothing to do
-    endif
-    ?>
-
-    <?php
-    # Both sidebars
-    if (($has_left == TRUE) and ($has_right == TRUE)):
-      echo '<div class="col-sm-6 col-md-7 col-lg-7">';
-
-    # Just left sidebar
-    elseif (($has_left == TRUE) and ($has_right == FALSE)):
-      echo '<div class="col-sm-9 col-lg-9">';
-
-    # Just right sidebar
-    elseif (($has_left == FALSE) and ($has_right == TRUE)):
-      echo '<div class="col-sm-8">';
-
-    # No sidebars
-    elseif (($has_left == FALSE) and ($has_right == FALSE)):
-      echo '<div class="col-sm-12 col-lg-12">';
-
-    endif
-    ?>
-
-    <?php get_search_form(); ?>
-    <h2><?php printf(__( 'Search Results for: %s' ), '<span>' . get_search_query() . '</span>'); ?></h2>
-
-    <?php
-      // Start the Loop.
-      while ( have_posts() ) : the_post();
-
-        // Include the page content template.
-        get_template_part( 'content', 'page' );
-
-      endwhile;
-    ?>
+      <?php if (have_posts()): ?>
+        <?php while (have_posts()): the_post(); ?>
+          <h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
+          <?php if ('post' == get_post_type()) { ?>
+            <small class="gray-dark">Posted <?php echo get_the_date(); ?></small>
+          <?php } ?>
+          <?php the_excerpt(); ?>
+        <?php endwhile; ?>
+      <?php else: ?>
+        <?php get_template_part( 'content', 'none' ); ?>
+      <?php endif; ?>
 
     </div> <!-- end content area -->
-
-    <?php
-    # Both sidebars
-    if (($has_left == TRUE) and ($has_right == TRUE)):
-      echo '<div class="col-sm-3 col-md-2 col-lg-3">';
-      get_sidebar('right');
-      echo '</div>';
-
-    # Just left sidebar
-      # Nothing to do
-
-    # Just right sidebar
-    elseif (($has_left == FALSE) and ($has_right == TRUE)):
-      echo '<div class="col-sm-4"">';
-      get_sidebar('right');
-      echo '</div>';
-
-    # No sidebars
-      # Nothing to do
-
-    endif
-    ?>
-
   </div>
 </div>
 
