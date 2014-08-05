@@ -131,8 +131,18 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-              
-          <a class="navbar-brand" href="<?php echo home_url(); ?>/"><?php bloginfo('name'); ?></a>
+              <?php $strl = get_bloginfo('name');
+                $tempstrl = explode(" ", $strl);
+                $newstrl;
+
+                foreach($tempstrl as $a) {
+                  if ($a=='District' or $a=='Public' or $a=='Collegiate' or $a=='Secondary' or $a=='High') {
+                    $newstrl.= "<br />";
+                  }
+                  $newstrl.=" ".$a;
+                }
+              ?>
+          <a class="navbar-brand" href="<?php echo home_url(); ?>/"><?php echo $newstrl; ?></a>
         </div>
             
         <div class="collapse navbar-search">
