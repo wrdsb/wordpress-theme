@@ -19,7 +19,7 @@ Template Name: School List
             ?>
 
 			<div class="table-responsive hidden-xs" >
-				<table class="table table-striped table-bordered">
+				<table class="table table-striped table-bordered school-table">
 					<thead>
 					<tr>
 						<th class="text-left">School, Website</th>
