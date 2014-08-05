@@ -62,7 +62,7 @@
     // ath.clearSession();      // reset the user session
 
     $(document).ready(function(){
-      $('table.school-table').floatThead({
+      $('table.table-fixed-head').floatThead({
         useAbsolutePositioning: false
       });
     });

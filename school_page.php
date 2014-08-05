@@ -19,7 +19,7 @@ Template Name: School List
             ?>
 
 			<div class="table-responsive hidden-xs" >
-				<table class="table table-striped table-bordered school-table">
+				<table class="table table-striped table-bordered table-fixed-head">
 					<thead>
 					<tr>
 						<th class="text-left">School, Website</th>
@@ -55,7 +55,7 @@ Template Name: School List
 			</div>
 
 			<div class="visible-xs">
-				<ul class="school-list">
+				<ul class="table-list">
 					<?php
 						$json = file_get_contents('http://ec-iappsrv1.wrdsb.ca/api/school');
 						$schools = json_decode($json);

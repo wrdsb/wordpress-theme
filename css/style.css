@@ -326,11 +326,11 @@ ul.sbe-widget-error {
 .search-form {
 	margin-top:10px;
 }
-ul.school-list {
+ul.table-list {
 	list-style:none;
 	margin-top:30px;
 }
-ul.school-list li {
+ul.table-list li {
 	margin-bottom:10px;
 	border-bottom:1px solid #005daa;
 }
