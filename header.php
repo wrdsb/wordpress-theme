@@ -31,6 +31,12 @@
   <link href="<?php echo get_template_directory_uri(); ?>/images/icon-152x152.png" rel="apple-touch-icon" sizes="152x152" />
 
   <link href="<?php echo get_template_directory_uri(); ?>/css/addtohomescreen.css" rel="stylesheet">
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="http://spectro.wrdsb.ca/js/bootstrap.min.js"></script>
+
   <script src="<?php echo get_template_directory_uri(); ?>/js/addtohomescreen.min.js"></script>
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -43,7 +49,7 @@
   <script>
     // addToHomescreen.removeSession();     // use this to remove the localStorage variable
     var ath = addToHomescreen({
-        appID: 'local/newwrdsb/',
+        appID: 'ca.wrdsb',
         message: 'To add this website to Home Screen: tap %icon and then <strong>Add to Home Screen</strong>',
         //debug: 'ios',           // activate debug mode in ios emulation
         skipFirstVisit: true,  // show at first access
@@ -53,6 +59,9 @@
         maxDisplayCount: 0      // do not obey the max display count
     });
     // ath.clearSession();      // reset the user session
+
+    $("table").addClass("table table-striped table-bordered");
+    $("table").wrap("<div class='table-responsive'></div>");
     </script>
   <?php wp_head(); ?>
 

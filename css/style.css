@@ -326,6 +326,13 @@ ul.sbe-widget-error {
 .search-form {
 	margin-top:10px;
 }
+ul.school-list {
+	list-style:none;
+}
+ul.school-list li {
+	margin-bottom:10px;
+	border-bottom:1px solid #005daa;
+}
 	@media (max-width: 768px) {
 		.header {
 			display:none;
