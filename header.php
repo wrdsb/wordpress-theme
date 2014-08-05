@@ -38,6 +38,7 @@
   <script src="http://spectro.wrdsb.ca/js/bootstrap.min.js"></script>
 
   <script src="<?php echo get_template_directory_uri(); ?>/js/addtohomescreen.min.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.floatThead.min.js"></script>
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -59,6 +60,12 @@
         maxDisplayCount: 0      // do not obey the max display count
     });
     // ath.clearSession();      // reset the user session
+
+    $(document).ready(function(){
+      $('table').floatThead({
+        useAbsolutePositioning: false
+      });
+    });
 
     $("table").addClass("table table-striped table-bordered");
     $("table").wrap("<div class='table-responsive'></div>");
