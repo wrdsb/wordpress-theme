@@ -16,21 +16,6 @@ Template Name: Staff List
             // Include the post format-specific content template.
             get_template_part( 'content', 'page' );
           endwhile;
-
-          $url = home_url();
-			$parsedUrl = parse_url($url);
-			$host = explode('.', $parsedUrl['host']);
-			$subdomain = $host[0];
-			$json = file_get_contents('http://ec-iappsrv1.wrdsb.ca/api/person/'.$subdomain);
-			// deserialize data from JSON
-			$contacts = json_decode($json);
-			global $phone_num;
-
-			foreach($contacts as $cont) {
-		        if ($cont->job_desc == "Head Custodian") {
-                    $phone_num = $cont->phone_no;
-                };
-		    };
         ?>
 
 			<div class="table-responsive hidden-xs" >
@@ -40,11 +25,25 @@ Template Name: Staff List
 						<th class="text-left">Name</th>
 						<th class="text-left">Role</th>
 						<th class="text-left">Voicemail</th>
-						<!--<th class="text-left">Email</th>-->
 					</tr>
 				</thead>
 				<tbody>
 					<?php
+						$url = home_url();
+						$parsedUrl = parse_url($url);
+						$host = explode('.', $parsedUrl['host']);
+						$subdomain = $host[0];
+						$json = file_get_contents('http://ec-iappsrv1.wrdsb.ca/api/person/'.$subdomain);
+						// deserialize data from JSON
+						$contacts = json_decode($json);
+						global $phone_num;
+
+						foreach($contacts as $cont) {
+					        if ($cont->job_desc == "Head Custodian") {
+			                    $phone_num = $cont->phone_no;
+			                };
+					    };
+
 						foreach($contacts as $contact) {
 					?>
 						<tr>
@@ -57,9 +56,6 @@ Template Name: Staff List
 							</td>
 							<td><em><?php echo $contact->job_desc ?></em></td>
 							<td><?php echo $contact->extension ?></td>
-							<!--<td><?php $code=$school->alpha_code; $code=strtolower($code); ?>
-								<a href="mailto:<?php echo $code; ?>@wrdsb.on.ca"><?php echo $code; ?>@wrdsb.on.ca</a>
-							</td>-->
 						</tr>
 					<?php	
 						}
@@ -82,7 +78,7 @@ Template Name: Staff List
 				            </a></strong>
 							<br />
 							<em><?php echo $contact->job_desc ?></em><br />
-							<td><?php echo $contact->extension ?></p>
+							<td>Ext: <?php echo $contact->extension ?></p>
 					</li>
 					<?php	
 						}
