@@ -132,7 +132,7 @@
             <span class="icon-bar"></span>
           </button>
               
-          <a class="navbar-brand" href="#">Waterloo Region<br />District School Board</a>
+          <a class="navbar-brand" href="#"><?php bloginfo('name'); ?></a>
         </div>
             
         <div class="collapse navbar-search">
