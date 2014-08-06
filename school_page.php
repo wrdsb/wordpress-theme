@@ -38,7 +38,8 @@ Template Name: School List
 								($school->alpha_code != 'NSS') and ($school->alpha_code != 'SEO') and
 								($school->alpha_code != 'SES') and ($school->alpha_code != 'SCC') and
 								($school->alpha_code != 'SCO') and ($school->alpha_code != 'SCN') and
-								($school->alpha_code !=  'SCS') and ($school->alpha_code != 'NSC')) {
+								($school->alpha_code !=  'SCS') and ($school->alpha_code != 'NSC') and
+								($school->alpha_code != 'INL')) {
 					?>
 						<tr>
 							<td><strong><?php echo $school->full_name ?></strong><br />
@@ -71,7 +72,8 @@ Template Name: School List
 								($school->alpha_code != 'NSS') and ($school->alpha_code != 'SEO') and
 								($school->alpha_code != 'SES') and ($school->alpha_code != 'SCC') and
 								($school->alpha_code != 'SCO') and ($school->alpha_code != 'SCN') and
-								($school->alpha_code !=  'SCS') and ($school->alpha_code != 'NSC')) {
+								($school->alpha_code !=  'SCS') and ($school->alpha_code != 'NSC') and
+								($school->alpha_code != 'INL')) {
 					?>
 					<li>
 						<p><strong><?php echo $school->full_name ?></strong><br />
