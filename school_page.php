@@ -37,7 +37,8 @@ Template Name: School List
 							if(($school->alpha_code != 'INS') and ($school->alpha_code != 'INE') and 
 								($school->alpha_code != 'NSS') and ($school->alpha_code != 'SEO') and
 								($school->alpha_code != 'SES') and ($school->alpha_code != 'SCC') and
-								($school->alpha_code != 'SCO')) {
+								($school->alpha_code != 'SCO') and ($school->alpha_code != 'SCN') and
+								($school->alpha_code !=  'SCS') and ($school->alpha_code != 'NSC')) {
 					?>
 						<tr>
 							<td><strong><?php echo $school->full_name ?></strong><br />
@@ -66,6 +67,11 @@ Template Name: School List
 						$schools = json_decode($json);
 
 						foreach($schools as $school) {
+							if(($school->alpha_code != 'INS') and ($school->alpha_code != 'INE') and 
+								($school->alpha_code != 'NSS') and ($school->alpha_code != 'SEO') and
+								($school->alpha_code != 'SES') and ($school->alpha_code != 'SCC') and
+								($school->alpha_code != 'SCO') and ($school->alpha_code != 'SCN') and
+								($school->alpha_code !=  'SCS') and ($school->alpha_code != 'NSC')) {
 					?>
 					<li>
 						<p><strong><?php echo $school->full_name ?></strong><br />
@@ -75,6 +81,7 @@ Template Name: School List
 						<p><?php $phone=$school->phone; echo '('.substr($phone,0,3).') '.substr($phone,3,3).'-'.substr($phone,6,4) ?></p>
 					</li>
 					<?php	
+							}
 						}
 					?>
 				</ul>
