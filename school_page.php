@@ -34,6 +34,10 @@ Template Name: School List
 						$schools = json_decode($json);
 
 						foreach($schools as $school) {
+							if(($school->alpha_code != 'INS') and ($school->alpha_code != 'INE') and 
+								($school->alpha_code != 'NSS') and ($school->alpha_code != 'SEO') and
+								($school->alpha_code != 'SES') and ($school->alpha_code != 'SCC') and
+								($school->alpha_code != 'SCO')) {
 					?>
 						<tr>
 							<td><strong><?php echo $school->full_name ?></strong><br />
@@ -48,6 +52,7 @@ Template Name: School List
 							</td>-->
 						</tr>
 					<?php	
+							}
 						}
 					?>
 				</tbody>
