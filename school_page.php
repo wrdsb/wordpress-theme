@@ -50,7 +50,7 @@ Template Name: School List
 							<td><strong><?php echo $school->full_name ?></strong><br />
 								<a href="<?php echo $school->website ?>" target="_blank"><?php $website = $school->website; echo strtolower($website); ?></a>
 							</td>
-							<td><?php echo $school->street_address.', '.$school->city.' '.$school->postal_code?>
+							<td><?php echo $school->street_address.'<br />'.$school->city.' '.$school->postal_code?>
 								(<?php echo'<a href="http://maps.google.com/maps?f=q&hl=en&q='.$school->street_address.'+'.$school->city.'+Ontario" target="_blank">Map</a>' ?>)
 								<br />
 								Phone: <?php $phone=$school->phone; echo '('.substr($phone,0,3).') '.substr($phone,3,3).'-'.substr($phone,6,4) ?>
@@ -99,7 +99,7 @@ Template Name: School List
 							<td><strong><?php echo $school->full_name ?></strong><br />
 								<a href="<?php echo $school->website ?>" target="_blank"><?php $website = $school->website; echo strtolower($website); ?></a>
 							</td>
-							<td><?php echo $school->street_address.', '.$school->city.' '.$school->postal_code?>
+							<td><?php echo $school->street_address.'<br />'.$school->city.' '.$school->postal_code?>
 								(<?php echo'<a href="http://maps.google.com/maps?f=q&hl=en&q='.$school->street_address.'+'.$school->city.'+Ontario" target="_blank">Map</a>' ?>)
 								<br />
 								Phone: <?php $phone=$school->phone; echo '('.substr($phone,0,3).') '.substr($phone,3,3).'-'.substr($phone,6,4) ?>
