@@ -329,6 +329,7 @@ ul.sbe-widget-error {
 ul.table-list {
 	list-style:none;
 	margin-top:30px;
+	padding-left:10px;
 }
 ul.table-list li {
 	margin-bottom:10px;
