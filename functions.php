@@ -447,57 +447,55 @@ function wrdsb_secondary_school_colours() {
   $host = explode('.', $parsed_url['host']);
   $site = $parsed_url['path'];
   echo '<!-- Site specific styles for '.$host[0].' - '.$site.' -->';
-  if ($host[0] == 'schools') {
-  switch ($site) {
-    case "/bci":
+  switch ($host[0]) {
+    case "bci":
       echo '<link href="'.get_template_directory_uri().'/css/bci.css" rel="stylesheet">';
       break;
-    case "/chc":
+    case "chc":
       echo '<link href="'.get_template_directory_uri().'/css/chc.css" rel="stylesheet">';
       break;
-    case "/eci":
+    case "eci":
       echo '<link href="'.get_template_directory_uri().'/css/eci.css" rel="stylesheet">';
       break;
-    case "/eds":
+    case "eds":
       echo '<link href="'.get_template_directory_uri().'/css/eds.css" rel="stylesheet">';
       break;
-    case "/fhc":
+    case "fhc":
       echo '<link href="'.get_template_directory_uri().'/css/fhc.css" rel="stylesheet">';
       break;
-    case "/gci":
+    case "gci":
       echo '<link href="'.get_template_directory_uri().'/css/gci.css" rel="stylesheet">';
       break;
-    case "/gps":
+    case "gps":
       echo '<link href="'.get_template_directory_uri().'/css/gps.css" rel="stylesheet">';
       break;
-    case "/grc":
+    case "grc":
       echo '<link href="'.get_template_directory_uri().'/css/grc.css" rel="stylesheet">';
       break;
-    case "/hrh":
+    case "hrh":
       echo '<link href="'.get_template_directory_uri().'/css/hrh.css" rel="stylesheet">';
       break;
-    case "/jam":
+    case "jam":
       echo '<link href="'.get_template_directory_uri().'/css/jam.css" rel="stylesheet">';
       break;
-    case "/jhs":
+    case "jhs":
       echo '<link href="'.get_template_directory_uri().'/css/jhs.css" rel="stylesheet">';
       break;
-    case "/kci":
+    case "kci":
       echo '<link href="'.get_template_directory_uri().'/css/kci.css" rel="stylesheet">';
       break;
-    case "/phs":
+    case "phs":
       echo '<link href="'.get_template_directory_uri().'/css/phs.css" rel="stylesheet">';
       break;
-    case "/sss":
+    case "sss":
       echo '<link href="'.get_template_directory_uri().'/css/sss.css" rel="stylesheet">';
       break;
-    case "/wci":
+    case "wci":
       echo '<link href="'.get_template_directory_uri().'/css/wci.css" rel="stylesheet">';
       break;
-    case "/wod":
+    case "wod":
       echo '<link href="'.get_template_directory_uri().'/css/wod.css" rel="stylesheet">';
       break;
-    }
   }
 }
 
