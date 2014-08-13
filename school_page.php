@@ -99,7 +99,8 @@ Template Name: School List
 									($school->alpha_code != 'ALU') and ($school->alpha_code != 'ANC') and
 									($school->alpha_code != 'ALR') and ($school->alpha_code != 'ELE') and
 									($school->alpha_code != 'ALR') and ($school->alpha_code != 'ALC') and
-									($school->alpha_code != 'XSS') and
+									($school->alpha_code != 'XSS') and ($school->alpha_code != 'UTR') and
+									($school->alpha_code != 'WSS') and
 									($school->school_type_code=='Sec')) {
 						?>
 						<tr>
@@ -177,7 +178,8 @@ Template Name: School List
 									($school->alpha_code != 'ALU') and ($school->alpha_code != 'ANC') and
 									($school->alpha_code != 'ALR') and ($school->alpha_code != 'ELE') and
 									($school->alpha_code != 'ALR') and ($school->alpha_code != 'ALC') and
-									($school->alpha_code != 'XSS') and
+									($school->alpha_code != 'XSS') and ($school->alpha_code != 'UTR') and
+									($school->alpha_code != 'WSS') and
 									($school->school_type_code=='Sec')) {
 				?>
 				<li>
