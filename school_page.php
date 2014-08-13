@@ -48,6 +48,7 @@ Template Name: School List
 									($school->alpha_code != 'LAF') and ($school->alpha_code != 'HMR') and
 									($school->alpha_code != 'XSE') and ($school->alpha_code != 'CAS') and
 									($school->alpha_code != 'BLV') and ($school->alpha_code != 'LNA') and
+									($school->alpha_code != 'LUC') and
 									($school->school_type_code=='Elem')) {
 						?>
 						<tr>
@@ -130,15 +131,16 @@ Template Name: School List
 
 					foreach($schools as $school) {
 						if(($school->alpha_code != 'TBR') and 
-							($school->alpha_code != 'DKS') and ($school->alpha_code != 'LNA') and
-							($school->alpha_code != 'SBL') and ($school->alpha_code != 'SBM') and
-							($school->alpha_code != 'SMH') and ($school->alpha_code != 'PYS') and
-							($school->alpha_code != 'CLC') and ($school->alpha_code != 'MBR') and
-							($school->alpha_code != 'LUT') and ($school->alpha_code != 'LIN') and
-							($school->alpha_code != 'LAF') and ($school->alpha_code != 'HMR') and
-							($school->alpha_code != 'XSE') and ($school->alpha_code != 'CAS') and
-							($school->alpha_code != 'BLV') and ($school->alpha_code != 'LNA') and
-							($school->school_type_code=='Elem')) {
+									($school->alpha_code != 'DKS') and ($school->alpha_code != 'LNA') and
+									($school->alpha_code != 'SBL') and ($school->alpha_code != 'SBM') and
+									($school->alpha_code != 'SMH') and ($school->alpha_code != 'PYS') and
+									($school->alpha_code != 'CLC') and ($school->alpha_code != 'MBR') and
+									($school->alpha_code != 'LUT') and ($school->alpha_code != 'LIN') and
+									($school->alpha_code != 'LAF') and ($school->alpha_code != 'HMR') and
+									($school->alpha_code != 'XSE') and ($school->alpha_code != 'CAS') and
+									($school->alpha_code != 'BLV') and ($school->alpha_code != 'LNA') and
+									($school->alpha_code != 'LUC') and
+									($school->school_type_code=='Elem')) {
 				?>
 				<li>
 					<p><strong><?php echo $school->full_name ?></strong><br />
