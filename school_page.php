@@ -46,7 +46,7 @@ Template Name: School List
 									($school->alpha_code !=  'SCS') and ($school->alpha_code != 'NSC') and
 									($school->alpha_code != 'INL') and ($school->alpha_code != 'TBR') and 
 									($school->alpha_code != 'DKS') and ($school->alpha_code != 'LNA') and
-									($school->panel=='Elem')) {
+									($school->school_type_code=='Elem')) {
 						?>
 						<tr>
 							<td><strong><?php echo $school->full_name ?></strong><br />
@@ -95,7 +95,7 @@ Template Name: School List
 									($school->alpha_code != 'SES') and ($school->alpha_code != 'SCC') and
 									($school->alpha_code != 'SCO') and ($school->alpha_code != 'SCN') and
 									($school->alpha_code !=  'SCS') and ($school->alpha_code != 'NSC') and
-									($school->alpha_code != 'INL') and ($school->panel=='Sec')) {
+									($school->alpha_code != 'INL') and ($school->school_type_code=='Sec')) {
 						?>
 						<tr>
 							<td><strong><?php echo $school->full_name ?></strong><br />
@@ -137,7 +137,7 @@ Template Name: School List
 							($school->alpha_code != 'SES') and ($school->alpha_code != 'SCC') and
 							($school->alpha_code != 'SCO') and ($school->alpha_code != 'SCN') and
 							($school->alpha_code !=  'SCS') and ($school->alpha_code != 'NSC') and
-							($school->alpha_code != 'INL') and ($school->panel=='Elem')) {
+							($school->alpha_code != 'INL') and ($school->school_type_code=='Elem')) {
 				?>
 				<li>
 					<p><strong><?php echo $school->full_name ?></strong><br />
@@ -166,7 +166,7 @@ Template Name: School List
 							($school->alpha_code != 'SES') and ($school->alpha_code != 'SCC') and
 							($school->alpha_code != 'SCO') and ($school->alpha_code != 'SCN') and
 							($school->alpha_code !=  'SCS') and ($school->alpha_code != 'NSC') and
-							($school->alpha_code != 'INL') and ($school->panel=='Sec')) {
+							($school->alpha_code != 'INL') and ($school->school_type_code=='Sec')) {
 				?>
 				<li>
 					<p><strong><?php echo $school->full_name ?></strong><br />
