@@ -44,7 +44,9 @@ Template Name: School List
 									($school->alpha_code != 'SES') and ($school->alpha_code != 'SCC') and
 									($school->alpha_code != 'SCO') and ($school->alpha_code != 'SCN') and
 									($school->alpha_code !=  'SCS') and ($school->alpha_code != 'NSC') and
-									($school->alpha_code != 'INL') and ($school->panel=='E')) {
+									($school->alpha_code != 'INL') and ($school->alpha_code != 'TBR') and 
+									($school->alpha_code != 'DKS') and ($school->alpha_code != 'LNA') and
+									($school->panel=='E')) {
 						?>
 						<tr>
 							<td><strong><?php echo $school->full_name ?></strong><br />
