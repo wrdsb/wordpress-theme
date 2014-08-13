@@ -57,7 +57,7 @@
         //startDelay: 1,          // display the message right away
         //lifespan: 15,            // do not automatically kill the call out
         //displayPace: 0,         // do not obey the display pace
-        maxDisplayCount: 0      // do not obey the max display count
+        maxDisplayCount: 1      // do not obey the max display count
     });
     // ath.clearSession();      // reset the user session
 
