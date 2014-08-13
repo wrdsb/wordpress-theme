@@ -39,12 +39,7 @@ Template Name: School List
 							$schools = json_decode($json);
 
 							foreach($schools as $school) {
-								if(($school->alpha_code != 'INS') and ($school->alpha_code != 'INE') and 
-									($school->alpha_code != 'NSS') and ($school->alpha_code != 'SEO') and
-									($school->alpha_code != 'SES') and ($school->alpha_code != 'SCC') and
-									($school->alpha_code != 'SCO') and ($school->alpha_code != 'SCN') and
-									($school->alpha_code != 'SCS') and ($school->alpha_code != 'NSC') and
-									($school->alpha_code != 'INL') and ($school->alpha_code != 'TBR') and 
+								if(($school->alpha_code != 'TBR') and 
 									($school->alpha_code != 'DKS') and ($school->alpha_code != 'LNA') and
 									($school->alpha_code != 'SBL') and ($school->alpha_code != 'SBM') and
 									($school->alpha_code != 'SMH') and ($school->alpha_code != 'PYS') and
@@ -134,21 +129,16 @@ Template Name: School List
 					$schools = json_decode($json);
 
 					foreach($schools as $school) {
-						if(($school->alpha_code != 'INS') and ($school->alpha_code != 'INE') and 
-									($school->alpha_code != 'NSS') and ($school->alpha_code != 'SEO') and
-									($school->alpha_code != 'SES') and ($school->alpha_code != 'SCC') and
-									($school->alpha_code != 'SCO') and ($school->alpha_code != 'SCN') and
-									($school->alpha_code != 'SCS') and ($school->alpha_code != 'NSC') and
-									($school->alpha_code != 'INL') and ($school->alpha_code != 'TBR') and 
-									($school->alpha_code != 'DKS') and ($school->alpha_code != 'LNA') and
-									($school->alpha_code != 'SBL') and ($school->alpha_code != 'SBM') and
-									($school->alpha_code != 'SMH') and ($school->alpha_code != 'PYS') and
-									($school->alpha_code != 'CLC') and ($school->alpha_code != 'MBR') and
-									($school->alpha_code != 'LUT') and ($school->alpha_code != 'LIN') and
-									($school->alpha_code != 'LAF') and ($school->alpha_code != 'HMR') and
-									($school->alpha_code != 'XSE') and ($school->alpha_code != 'CAS') and
-									($school->alpha_code != 'BLV') and ($school->alpha_code != 'LNA') and
-									($school->school_type_code=='Elem')) {
+						if(($school->alpha_code != 'TBR') and 
+							($school->alpha_code != 'DKS') and ($school->alpha_code != 'LNA') and
+							($school->alpha_code != 'SBL') and ($school->alpha_code != 'SBM') and
+							($school->alpha_code != 'SMH') and ($school->alpha_code != 'PYS') and
+							($school->alpha_code != 'CLC') and ($school->alpha_code != 'MBR') and
+							($school->alpha_code != 'LUT') and ($school->alpha_code != 'LIN') and
+							($school->alpha_code != 'LAF') and ($school->alpha_code != 'HMR') and
+							($school->alpha_code != 'XSE') and ($school->alpha_code != 'CAS') and
+							($school->alpha_code != 'BLV') and ($school->alpha_code != 'LNA') and
+							($school->school_type_code=='Elem')) {
 				?>
 				<li>
 					<p><strong><?php echo $school->full_name ?></strong><br />
