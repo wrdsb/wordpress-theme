@@ -95,7 +95,11 @@ Template Name: School List
 							$schools = json_decode($json);
 
 							foreach($schools as $school) {
-								if(($school->school_type_code=='Sec')) {
+								if(($school->alpha_code != 'ALR') and ($school->alpha_code != 'ALC') and
+									($school->alpha_code != 'ALU') and ($school->alpha_code != 'ANC') and
+									($school->alpha_code != 'ALR') and ($school->alpha_code != 'ELE') and
+									($school->alpha_code != 'ALR') and ($school->alpha_code != 'ALC') and
+									($school->school_type_code=='Sec')) {
 						?>
 						<tr>
 							<td><strong><?php echo $school->full_name ?></strong><br />
@@ -168,7 +172,11 @@ Template Name: School List
 					$schools = json_decode($json);
 
 					foreach($schools as $school) {
-						if(($school->school_type_code=='Sec')) {
+						if(($school->alpha_code != 'ALR') and ($school->alpha_code != 'ALC') and
+									($school->alpha_code != 'ALU') and ($school->alpha_code != 'ANC') and
+									($school->alpha_code != 'ALR') and ($school->alpha_code != 'ELE') and
+									($school->alpha_code != 'ALR') and ($school->alpha_code != 'ALC') and
+									($school->school_type_code=='Sec')) {
 				?>
 				<li>
 					<p><strong><?php echo $school->full_name ?></strong><br />
