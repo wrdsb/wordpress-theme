@@ -39,14 +39,19 @@ Template Name: School List
 							$schools = json_decode($json);
 
 							foreach($schools as $school) {
-								if(($school->alpha_code != 'INS') and ($school->alpha_code != 'INE') and 
-									($school->alpha_code != 'NSS') and ($school->alpha_code != 'SEO') and
-									($school->alpha_code != 'SES') and ($school->alpha_code != 'SCC') and
-									($school->alpha_code != 'SCO') and ($school->alpha_code != 'SCN') and
-									($school->alpha_code !=  'SCS') and ($school->alpha_code != 'NSC') and
-									($school->alpha_code != 'INL') and ($school->alpha_code != 'TBR') and 
+								if(($school->alpha_code != 'TBR') and 
 									($school->alpha_code != 'DKS') and ($school->alpha_code != 'LNA') and
-									($school->panel=='E')) {
+									($school->alpha_code != 'SBL') and ($school->alpha_code != 'SBM') and
+									($school->alpha_code != 'SMH') and ($school->alpha_code != 'PYS') and
+									($school->alpha_code != 'CLC') and ($school->alpha_code != 'MBR') and
+									($school->alpha_code != 'LUT') and ($school->alpha_code != 'LIN') and
+									($school->alpha_code != 'LAF') and ($school->alpha_code != 'HMR') and
+									($school->alpha_code != 'XSE') and ($school->alpha_code != 'CAS') and
+									($school->alpha_code != 'BLV') and ($school->alpha_code != 'LNA') and
+									($school->alpha_code != 'LUC') and ($school->alpha_code != 'WSR') and
+									($school->alpha_code != 'ALI') and ($school->alpha_code != 'BAD') and
+									($school->alpha_code != 'BRI') and ($school->alpha_code != 'HAR') and
+									($school->school_type_code=='Elem')) {
 						?>
 						<tr>
 							<td><strong><?php echo $school->full_name ?></strong><br />
@@ -90,12 +95,13 @@ Template Name: School List
 							$schools = json_decode($json);
 
 							foreach($schools as $school) {
-								if(($school->alpha_code != 'INS') and ($school->alpha_code != 'INE') and 
-									($school->alpha_code != 'NSS') and ($school->alpha_code != 'SEO') and
-									($school->alpha_code != 'SES') and ($school->alpha_code != 'SCC') and
-									($school->alpha_code != 'SCO') and ($school->alpha_code != 'SCN') and
-									($school->alpha_code !=  'SCS') and ($school->alpha_code != 'NSC') and
-									($school->alpha_code != 'INL') and ($school->panel=='S')) {
+								if(($school->alpha_code != 'ALR') and ($school->alpha_code != 'ALC') and
+									($school->alpha_code != 'ALU') and ($school->alpha_code != 'ANC') and
+									($school->alpha_code != 'ALR') and ($school->alpha_code != 'ELE') and
+									($school->alpha_code != 'ALR') and ($school->alpha_code != 'ALC') and
+									($school->alpha_code != 'XSS') and ($school->alpha_code != 'UTR') and
+									($school->alpha_code != 'WSS') and
+									($school->school_type_code=='Sec')) {
 						?>
 						<tr>
 							<td><strong><?php echo $school->full_name ?></strong><br />
@@ -132,12 +138,19 @@ Template Name: School List
 					$schools = json_decode($json);
 
 					foreach($schools as $school) {
-						if(($school->alpha_code != 'INS') and ($school->alpha_code != 'INE') and 
-							($school->alpha_code != 'NSS') and ($school->alpha_code != 'SEO') and
-							($school->alpha_code != 'SES') and ($school->alpha_code != 'SCC') and
-							($school->alpha_code != 'SCO') and ($school->alpha_code != 'SCN') and
-							($school->alpha_code !=  'SCS') and ($school->alpha_code != 'NSC') and
-							($school->alpha_code != 'INL') and ($school->panel=='E')) {
+						if(($school->alpha_code != 'TBR') and 
+									($school->alpha_code != 'DKS') and ($school->alpha_code != 'LNA') and
+									($school->alpha_code != 'SBL') and ($school->alpha_code != 'SBM') and
+									($school->alpha_code != 'SMH') and ($school->alpha_code != 'PYS') and
+									($school->alpha_code != 'CLC') and ($school->alpha_code != 'MBR') and
+									($school->alpha_code != 'LUT') and ($school->alpha_code != 'LIN') and
+									($school->alpha_code != 'LAF') and ($school->alpha_code != 'HMR') and
+									($school->alpha_code != 'XSE') and ($school->alpha_code != 'CAS') and
+									($school->alpha_code != 'BLV') and ($school->alpha_code != 'LNA') and
+									($school->alpha_code != 'LUC') and ($school->alpha_code != 'WSR') and
+									($school->alpha_code != 'ALI') and ($school->alpha_code != 'BAD') and
+									($school->alpha_code != 'BRI') and ($school->alpha_code != 'HAR') and
+									($school->school_type_code=='Elem')) {
 				?>
 				<li>
 					<p><strong><?php echo $school->full_name ?></strong><br />
@@ -161,12 +174,13 @@ Template Name: School List
 					$schools = json_decode($json);
 
 					foreach($schools as $school) {
-						if(($school->alpha_code != 'INS') and ($school->alpha_code != 'INE') and 
-							($school->alpha_code != 'NSS') and ($school->alpha_code != 'SEO') and
-							($school->alpha_code != 'SES') and ($school->alpha_code != 'SCC') and
-							($school->alpha_code != 'SCO') and ($school->alpha_code != 'SCN') and
-							($school->alpha_code !=  'SCS') and ($school->alpha_code != 'NSC') and
-							($school->alpha_code != 'INL') and ($school->panel=='S')) {
+						if(($school->alpha_code != 'ALR') and ($school->alpha_code != 'ALC') and
+									($school->alpha_code != 'ALU') and ($school->alpha_code != 'ANC') and
+									($school->alpha_code != 'ALR') and ($school->alpha_code != 'ELE') and
+									($school->alpha_code != 'ALR') and ($school->alpha_code != 'ALC') and
+									($school->alpha_code != 'XSS') and ($school->alpha_code != 'UTR') and
+									($school->alpha_code != 'WSS') and
+									($school->school_type_code=='Sec')) {
 				?>
 				<li>
 					<p><strong><?php echo $school->full_name ?></strong><br />
