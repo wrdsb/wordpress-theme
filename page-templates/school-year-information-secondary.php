@@ -97,7 +97,7 @@ Template Name: SYI - Secondary
   </li>
   <li>
     The form is available for translation using Google Translator: 
-    <a href="" target="_blank">Release of Student Information &#8211; IS-09-L-S</a>
+    <a href="http://www.wrdsb.ca/is-09-l-s/" target="_blank">Release of Student Information &#8211; IS-09-L-S</a>
   </li>
 </ul>
 

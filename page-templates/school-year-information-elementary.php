@@ -98,7 +98,7 @@ Template Name: SYI - Elementary
   </li>
   <li>
     The form is available for translation using Google Translator: 
-    <a href="" target="_blank">Release of Student Information &#8211; IS-09-L-E</a>
+    <a href="http://www.wrdsb.ca/is-09-l-e/" target="_blank">Release of Student Information &#8211; IS-09-L-E</a>
   </li>
 </ul>
 
