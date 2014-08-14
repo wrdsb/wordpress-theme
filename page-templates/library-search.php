@@ -79,7 +79,7 @@ function $(id) {
 return document.getElementById(id);
 }
 
-var strURL = "https://www.insigniasoftware.com/Library/discovery/";
+var strURL = "https://cat.library.wrdsb.ca/Library/discovery/";
 var streVideoLibraryID = "0004";
 var selectedLibraryID = "All";
 var strRMLibraryID = "";
