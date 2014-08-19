@@ -51,6 +51,8 @@ Template Name: School List
 									($school->alpha_code != 'LUC') and ($school->alpha_code != 'WSR') and
 									($school->alpha_code != 'ALI') and ($school->alpha_code != 'BAD') and
 									($school->alpha_code != 'BRI') and ($school->alpha_code != 'HAR') and
+									($school->alpha_code != 'WNB') and ($school->alpha_code != 'NWL') and
+									($school->alpha_code != 'MCQ') and
 									($school->school_type_code=='Elem')) {
 						?>
 						<tr>
@@ -150,6 +152,8 @@ Template Name: School List
 									($school->alpha_code != 'LUC') and ($school->alpha_code != 'WSR') and
 									($school->alpha_code != 'ALI') and ($school->alpha_code != 'BAD') and
 									($school->alpha_code != 'BRI') and ($school->alpha_code != 'HAR') and
+									($school->alpha_code != 'WNB') and ($school->alpha_code != 'NWL') and
+									($school->alpha_code != 'MCQ') and
 									($school->school_type_code=='Elem')) {
 				?>
 				<li>
