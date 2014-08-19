@@ -14,6 +14,10 @@
     # left column
     if (($has_left == TRUE) and ($has_right == TRUE)):
       echo '<div class="col-sm-3 col-md-2 col-lg-2">';
+      if (is_front_page()) {
+        echo '<a href="http://myway.wrdsb.ca"><img src="http://www.wrdsb.ca/wp-content/uploads/myway_banner_344x100.jpg" alt="MyWay Logo"/></a>';
+        echo '<a href="/about/school-year-information"><img src="http://www.wrdsb.ca/wp-content/uploads/schoolyearinformation.jpg" alt="School Year Information Logo"/></a>';
+      }
       if (!is_front_page()) {
         get_sidebar('lmenu');
       }
@@ -23,6 +27,10 @@
     # Just left sidebar
     elseif (($has_left == TRUE) and ($has_right == FALSE)):
       echo '<div class="col-sm-3 col-lg-3">';
+      if (is_front_page()) {
+        echo '<a href="http://myway.wrdsb.ca"><img src="http://www.wrdsb.ca/wp-content/uploads/myway_banner_344x100.jpg" alt="MyWay Logo"/></a>';
+        echo '<a href="/about/school-year-information"><img src="http://www.wrdsb.ca/wp-content/uploads/schoolyearinformation_344x100.jpg" alt="School Year Information Logo"/></a>';
+      }
       if (!is_front_page()) {
         get_sidebar('lmenu');
       }
@@ -30,10 +38,13 @@
       echo '</div>';
 
     # Just right sidebar
+    elseif (($has_left == FALSE) and ($has_right == TRUE)):
       # Nothing to do
 
     # No sidebars
+    elseif (($has_left == FALSE) and ($has_right == FALSE)):
       # Nothing to do
+
     endif;
     ?>
 
