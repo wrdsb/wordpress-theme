@@ -576,7 +576,7 @@ ul.table-list li {
 	
 	th, td {
 		vertical-align: top;
-		padding: 1.1em;
+		padding: 1.1em !important;
 		border-collapse: collapse;
 		border-bottom: 1px solid #eee;
 		color: #000;
