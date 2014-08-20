@@ -1,13 +1,13 @@
 /*	Stylesheet: CHC
-	primary: #515A45
+	primary: #060 (changed from #515A45 20140820 SZC)
 	primary opacity #979C8F
-	secondary #666666
+	secondary #666
 	light: #DCDEDA
 */ 
 /*navigation*/
 .my-navbar {
-	background-color:#515A45; /*primary*/
-	border-top-color:#666666; /*secondary*/
+	background-color:#060; /*primary*/
+	border-top-color:#666; /*secondary*/
 }
 .nav >li > a:hover, .nav >li > a:focus {
 	background-color:#979C8F; /*opacity*/
@@ -21,34 +21,34 @@
 }
 /*sub navigation*/
 .sub-menu-heading, .sub-menu-heading a {
-	background-color:#515A45; /*primary*/
+	background-color:#060; /*primary*/
 }
 .sub-menu-items {
 	background-color:#DCDEDA; /*light*/
 }
 /*headings*/
 h1, h2, h3, h4, h5, h6 {
-	color:#515A45; /*primary*/
+	color:#060; /*primary*/
 }
 h6.copyright {
 	color:#fff;
 }
 /*links*/
 a {
-	color:#515A45; /*primary*/
+	color:#060; /*primary*/
 }
 .footer a {
 	color:#979C8F; /*opacity*/
 }
 a:hover, a:focus {
-	color:#515A45; /*primary*/
+	color:#060; /*primary*/
 }
 .footer a:hover, .footer a:focus {
 	color:#979C8F; /*opacity*/
 }
 /*footer*/
 .footer {
-	background-color:#515A45; /*primary*/
+	background-color:#060; /*primary*/
 	border-top-color:#666666; /*secondary*/
 	color:#fff;
 }
