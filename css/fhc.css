@@ -35,13 +35,15 @@ h6.copyright {
 }
 /*links*/
 a {
-	color:#221B13; /*primary*/
+	/*color:#221B13; changed 2014-08-20 SZC to differentiate between text and links */ /*primary*/
+	color: #846a00;
 }
 .footer a {
 	color:#7A7671; /*opacity*/
 }
 a:hover, a:focus {
-	color:#221B13; /*primary*/
+	/*color:#221B13; changed 2014-08-20 SZC to differentiate between text and links */ /*primary*/
+	color: #846a00;
 }
 .footer a:hover, .footer a:focus {
 	color:#7A7671; /*opacity*/
