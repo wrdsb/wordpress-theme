@@ -812,3 +812,46 @@ h1 {
 	font-family: Georgia, serif !important;
 	-webkit-font-smoothing: antialiased;
 }
+
+
+/*** __Advisory Board and Staff Profile Pages ***/
+
+ .biocard {
+	width: 600px;
+	font-family: calibri, sans-serif;
+	padding: 15px;
+	margin: 15px;
+	font-size: 15px;
+	background-color: #fff;
+	border-bottom: 1px dotted #eee;
+ }
+ 
+ .biocard:last-child {
+	border-bottom: 0;
+}
+ 
+ .biocard > h2 {
+	font-family: Georgia, serif;
+	margin-top: 0;
+}
+ 
+ .biocard > .headshot img {
+	float: left;
+	margin-right: 25px;
+	margin-bottom: 15px;
+-webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.09);
+-moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.09);
+box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 0.09);
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+ }
+ 
+ .biocard > h3.details {
+	font-size: 14px;
+	line-height: 130%;
+}
+ 
+ .biocard > h3.details strong {
+	text-transform: uppercase;
+ }
