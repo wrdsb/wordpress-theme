@@ -22,7 +22,7 @@ Template Name: SYI - Secondary
 
     # Just left sidebar
     elseif (($has_left == TRUE) and ($has_right == FALSE)):
-      echo '<div class="col-sm-3 col-lg-2">';
+      echo '<div class="col-sm-3 col-lg-3">';
       get_sidebar('left');
       echo '</div>';
 
@@ -42,7 +42,7 @@ Template Name: SYI - Secondary
 
     # Just left sidebar
     elseif (($has_left == TRUE) and ($has_right == FALSE)):
-      echo '<div class="col-sm-9 col-lg-10">';
+      echo '<div class="col-sm-9 col-lg-9">';
 
     # Just right sidebar
     elseif (($has_left == FALSE) and ($has_right == TRUE)):
