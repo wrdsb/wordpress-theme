@@ -23,6 +23,9 @@
 .sub-menu-heading, .sub-menu-heading a {
 	background-color:#4480B2; /*primary*/
 }
+.sub-menu-heading, .sub-menu-heading a:hover {
+	color: #dae6f0;
+}
 .sub-menu-items {
 	background-color:#DAE6F0; /*light*/
 }
