@@ -523,6 +523,10 @@ ul.table-list li {
 		font-weight: bold;
 		line-height: 150%;
 	}
+
+	dt > img {
+		margin: 5px 0 0 0;
+	}
 	
 	dd {
 		line-height: 150%;
@@ -718,6 +722,14 @@ p.reference:before {
 	content: "~ ";
 }
 
+blockquote > p.reference {
+	font-size: .8em;
+}
+
+blockquote > p.reference:before {
+	font-size: .8em;
+}
+
 p.promo {
 	font-size: 2.5em;
 }
@@ -797,6 +809,11 @@ a[href $='docx']  {
 	background-image: url(../images/icons_filetype/icon_doc_small.gif);
 	background-repeat: no-repeat;
 	padding-left: 18px;
+}
+
+a[href $='pdf'] > img {
+	background-image: none;
+	padding-left: 0;
 }
 
 /*.post a[href ^="http"]  {
