@@ -35,13 +35,15 @@ h6.copyright {
 }
 /*links*/
 a {
-	color:#12180A; /*primary*/
+	/*color:#12180A; removed 20140821 SZC */ /*primary*/
+	color: #515A45;
 }
 .footer a {
 	color:#71746C; /*opacity*/
 }
 a:hover, a:focus {
-	color:#12180A; /*primary*/
+	/*color:#12180A; removed 20140821 SZC */ /*primary*/
+	color: #515A45;
 }
 .footer a:hover, .footer a:focus {
 	color:#71746C; /*opacity*/
