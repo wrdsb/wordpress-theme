@@ -15,8 +15,8 @@
     if (($has_left == TRUE) and ($has_right == TRUE)):
       echo '<div class="col-sm-3 col-md-2 col-lg-2">';
       if (is_front_page() && wrdsb_i_am_a_school()) {
-        echo '<a href="http://myway.wrdsb.ca"><img src="http://www.wrdsb.ca/wp-content/uploads/myway_banner_344x100.jpg" alt="MyWay Logo"/></a>';
-        echo '<a href="/about/school-year-information"><img src="http://www.wrdsb.ca/wp-content/uploads/schoolyearinformation.jpg" alt="School Year Information Logo"/></a>';
+        echo '<p><a href="http://myway.wrdsb.ca"><img src="http://www.wrdsb.ca/wp-content/uploads/myway_banner_344x100.jpg" alt="MyWay Logo"/></a></p>';
+        echo '<p><a href="/about/school-year-information"><img src="http://www.wrdsb.ca/wp-content/uploads/schoolyearinformation.jpg" alt="School Year Information Logo"/></a></p>';
       }
       if (!is_front_page()) {
         get_sidebar('lmenu');
@@ -28,8 +28,8 @@
     elseif (($has_left == TRUE) and ($has_right == FALSE)):
       echo '<div class="col-sm-3 col-lg-3">';
       if (is_front_page() && wrdsb_i_am_a_school()) {
-        echo '<a href="http://myway.wrdsb.ca"><img src="http://www.wrdsb.ca/wp-content/uploads/myway_banner_344x100.jpg" alt="MyWay Logo"/></a>';
-        echo '<a href="/about/school-year-information"><img src="http://www.wrdsb.ca/wp-content/uploads/schoolyearinformation_344x100.jpg" alt="School Year Information Logo"/></a>';
+        echo '<p><a href="http://myway.wrdsb.ca"><img src="http://www.wrdsb.ca/wp-content/uploads/myway_banner_344x100.jpg" alt="MyWay Logo"/></a></p>';
+        echo '<p><a href="/about/school-year-information"><img src="http://www.wrdsb.ca/wp-content/uploads/schoolyearinformation_344x100.jpg" alt="School Year Information Logo"/></a></p>';
       }
       if (!is_front_page()) {
         get_sidebar('lmenu');
@@ -112,8 +112,8 @@
     elseif (($has_left == FALSE) and ($has_right == TRUE)):
       echo '<div class="col-sm-4">';
       if (is_front_page() && wrdsb_i_am_a_school()) {
-        echo '<a href="http://myway.wrdsb.ca"><img src="http://www.wrdsb.ca/wp-content/uploads/myway_banner_344x100.jpg" alt="MyWay Logo"/></a>';
-        echo '<a href="/about/school-year-information"><img src="http://www.wrdsb.ca/wp-content/uploads/schoolyearinformation_344x100.jpg" alt="School Year Information Logo"/></a>';
+        echo '<p><a href="http://myway.wrdsb.ca"><img src="http://www.wrdsb.ca/wp-content/uploads/myway_banner_344x100.jpg" alt="MyWay Logo"/></a></p>';
+        echo '<p><a href="/about/school-year-information"><img src="http://www.wrdsb.ca/wp-content/uploads/schoolyearinformation_344x100.jpg" alt="School Year Information Logo"/></a></p>';
       }
       if (!is_front_page()) {
         get_sidebar('rmenu');
