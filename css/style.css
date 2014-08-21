@@ -781,7 +781,7 @@ ul.checklist li {
 
 /*** __file type icons ***/
 
-a[href $='pdf']  {
+a[href $='pdf'] :not(img) {
 	background-image: url(../images/icons_filetype/icon_pdf_small.gif);
 	background-repeat: no-repeat;
 	padding-left: 18px;
@@ -809,11 +809,6 @@ a[href $='docx']  {
 	background-image: url(../images/icons_filetype/icon_doc_small.gif);
 	background-repeat: no-repeat;
 	padding-left: 18px;
-}
-
-a[href $='pdf'] :not(img) {
-	background-image: none;
-	padding-left: 0;
 }
 
 /*.post a[href ^="http"]  {
