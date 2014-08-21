@@ -787,6 +787,11 @@ a[href $='pdf'] {
 	padding-left: 18px;
 }
 
+a.noicon[href $='pdf'] {
+	background: none;
+	padding-left: 0;
+}
+
 a[href $='xls'] {
 	background-image: url(../images/icons_filetype/icon_xls_small.gif);
 	background-repeat: no-repeat;
