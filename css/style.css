@@ -811,7 +811,7 @@ a[href $='docx']  {
 	padding-left: 18px;
 }
 
-a[href $='pdf'] img {
+a[href $='pdf'] :not(img) {
 	background-image: none;
 	padding-left: 0;
 }
