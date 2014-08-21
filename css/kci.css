@@ -30,6 +30,10 @@
 h1, h2, h3, h4, h5, h6 {
 	color:#660202; /*primary*/
 }
+
+h2 {
+	font-weight: bold;	
+}
 h6.copyright {
 	color:#fff;
 }
