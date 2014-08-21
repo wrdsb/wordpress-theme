@@ -44,7 +44,7 @@ Template Name: School List
 									($school->alpha_code != 'SBL') and ($school->alpha_code != 'SBM') and
 									($school->alpha_code != 'SMH') and ($school->alpha_code != 'PYS') and
 									($school->alpha_code != 'CLC') and ($school->alpha_code != 'MBR') and
-									($school->alpha_code != 'LUT') and ($school->alpha_code != 'LIN') and
+									($school->alpha_code != 'LUT') and 
 									($school->alpha_code != 'LAF') and ($school->alpha_code != 'HMR') and
 									($school->alpha_code != 'XSE') and ($school->alpha_code != 'CAS') and
 									($school->alpha_code != 'BLV') and ($school->alpha_code != 'LNA') and
@@ -145,7 +145,7 @@ Template Name: School List
 									($school->alpha_code != 'SBL') and ($school->alpha_code != 'SBM') and
 									($school->alpha_code != 'SMH') and ($school->alpha_code != 'PYS') and
 									($school->alpha_code != 'CLC') and ($school->alpha_code != 'MBR') and
-									($school->alpha_code != 'LUT') and ($school->alpha_code != 'LIN') and
+									($school->alpha_code != 'LUT') and 
 									($school->alpha_code != 'LAF') and ($school->alpha_code != 'HMR') and
 									($school->alpha_code != 'XSE') and ($school->alpha_code != 'CAS') and
 									($school->alpha_code != 'BLV') and ($school->alpha_code != 'LNA') and
