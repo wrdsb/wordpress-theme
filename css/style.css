@@ -781,31 +781,31 @@ ul.checklist li {
 
 /*** __file type icons ***/
 
-a[href $='pdf'] :not(img):before {
+a[href $='pdf'] > :not(img) {
 	background-image: url(../images/icons_filetype/icon_pdf_small.gif);
 	background-repeat: no-repeat;
 	padding-left: 18px;
 }
 
-a[href $='xls']  {
+a[href $='xls'] {
 	background-image: url(../images/icons_filetype/icon_xls_small.gif);
 	background-repeat: no-repeat;
 	padding-left: 18px;
 }
 
-a[href $='xlsx']  {
+a[href $='xlsx'] {
 	background-image: url(../images/icons_filetype/icon_xls_small.gif);
 	background-repeat: no-repeat;
 	padding-left: 18px;
 }
 
-a[href $='doc']  {
+a[href $='doc'] {
 	background-image: url(../images/icons_filetype/icon_doc_small.gif);
 	background-repeat: no-repeat;
 	padding-left: 18px;
 }
 
-a[href $='docx']  {
+a[href $='docx'] {
 	background-image: url(../images/icons_filetype/icon_doc_small.gif);
 	background-repeat: no-repeat;
 	padding-left: 18px;
