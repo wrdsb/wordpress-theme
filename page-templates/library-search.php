@@ -14,6 +14,20 @@ Template Name: Library Search
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+  $('#myTab a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+  </script>
+  <style type="text/css">
+  ul#library_services > li.active {
+    background-color:#fff;
+  }
+  ul#library_services > li > a:hover {
+    background-color: #eee;
+  }
+  </style>
   <?php if (is_front_page()) { ?> 
     <title><?php bloginfo('name'); ?></title>
   <?php } else { ?>
@@ -485,6 +499,26 @@ window.open(url);
           <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE1OTUyODUzNjdkZANnJN3XWgQX3KmHTMsltWjBkIU8" />
         </div>
 
+        <!--Rizwan Code Start-->
+        <!-- Nav tabs -->
+          <ul id="library_services" class="nav nav-tabs" role="tablist">
+            <li class="active"><a href="#home" role="tab" data-toggle="tab">Library</a></li>
+            <li><a href="#profile" role="tab" data-toggle="tab">eVideo Library</a></li>
+            <li><a href="#messages" role="tab" data-toggle="tab">Virtual Lilbrary</a></li>
+            <li><a href="#settings" role="tab" data-toggle="tab">Online Resources</a></li>
+          </ul>
+
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div class="tab-pane active" id="home">Library</div>
+            <div class="tab-pane" id="profile">eVideo Library</div>
+            <div class="tab-pane" id="messages">Virtual Lilbrary</div>
+            <div class="tab-pane" id="settings">Online Resources</div>
+          </div>
+
+        <!--Rizwan Code End-->
+
+    
         <div class="ilsEmbeddedHeader">
           <a id="tabLibraryHeader" class="headerSelected" href="#" onclick="tabChanged('Library'); return false;" style="display:">Library</a>
           <a id="tabVideoHeader" class="" href="#" onclick="tabChanged('Video'); return false;" style="display:">eVideo Library</a>
