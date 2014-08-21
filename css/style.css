@@ -524,8 +524,8 @@ ul.table-list li {
 		line-height: 150%;
 	}
 
-	dt > img {
-		margin: 5px 0 0 0;
+	dt img {
+		margin: 5px 0 0 0 !important;
 	}
 	
 	dd {
@@ -811,7 +811,7 @@ a[href $='docx']  {
 	padding-left: 18px;
 }
 
-a[href $='pdf'] > img {
+a[href $='pdf'] img {
 	background-image: none;
 	padding-left: 0;
 }
