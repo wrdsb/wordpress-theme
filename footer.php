@@ -71,7 +71,7 @@
                   $host = explode('.', $parsed_url['host']);
                   if ($host[0] == 'schools') { ?>
                     &nbsp;&nbsp; | &nbsp;&nbsp;
-                    <a href="http://staff.wrdsb.ca/<?php $fulldomain = explode('.',$_SERVER['HTTP_HOST']); echo $fulldomain[0]; ?>">Staff Handbook</a>
+                    <a href="http://staff.wrdsb.ca/<?php $fulldomain = explode('.',$_SERVER['HTTP_HOST']); echo $fulldomain[0]; ?>">Log in to Staff Handbook</a>
                   <?php } ?>
               </h6>
             </div>
