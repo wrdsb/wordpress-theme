@@ -65,7 +65,7 @@
               <h6 class="copyright">
                 <?php wp_loginout(); ?>
                 &nbsp;&nbsp; | &nbsp;&nbsp;
-                <a href="http://staff.wrdsb.ca">WRDSB Staff Website</a>
+                <a href="http://staff.wrdsb.ca">Log in to WRDSB Staff Website</a>
                 <?php 
                   $parsed_url = parse_url(network_site_url());
                   $host = explode('.', $parsed_url['host']);
