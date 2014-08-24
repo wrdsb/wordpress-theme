@@ -738,6 +738,13 @@ p.fineprint {
 	font-size: .8em;
 	color: #444;
 }
+
+.permissionbox {
+	border: 1px solid #444;
+	padding: 2em;
+	margin: 2em;
+}
+
 /** custom lists **/
 
 ul.checklist li {
