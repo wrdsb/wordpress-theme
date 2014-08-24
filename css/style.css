@@ -734,6 +734,10 @@ p.promo {
 	font-size: 2.5em;
 }
 
+p.fineprint {
+	font-size: .8em;
+	color: #444;
+}
 /** custom lists **/
 
 ul.checklist li {
