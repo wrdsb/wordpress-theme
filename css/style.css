@@ -335,6 +335,22 @@ ul.table-list li {
 	margin-bottom:10px;
 	border-bottom:1px solid #005daa;
 }
+
+ul#library_services > li.active {
+background-color:#fff;
+}
+ul#library_services > li > a:hover {
+background-color: #eee;
+}
+.libBtnSearch {
+width:50px;
+height:35px;
+border:none;
+background-image: url('../images/btnSearch.png');
+cursor:pointer;
+vertical-align: middle;
+}
+
 	@media (max-width: 768px) {
 		.header {
 			display:none;

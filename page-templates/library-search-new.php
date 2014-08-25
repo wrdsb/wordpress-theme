@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Library Search
+Template Name: New Library Search
 */
 ?>
 <?php $has_left = FALSE; ?>
@@ -20,14 +20,7 @@ Template Name: Library Search
   $(this).tab('show')
 })
   </script>
-  <style type="text/css">
-  ul#library_services > li.active {
-    background-color:#fff;
-  }
-  ul#library_services > li > a:hover {
-    background-color: #eee;
-  }
-  </style>
+
   <?php if (is_front_page()) { ?> 
     <title><?php bloginfo('name'); ?></title>
   <?php } else { ?>
@@ -86,247 +79,55 @@ Template Name: Library Search
 
     $("table").addClass("table table-striped table-bordered");
     $("table").wrap("<div class='table-responsive'></div>");
+
+    ////Last modified by futao 2014-7-18 ver:6.4.0 add type
+    function btnSearchClicked(type) {
+       var url = "https://www.insigniasoftware.com/Library/discovery/";
+       var streVideoLibraryID = "0004";
+
+       if (type == 1) {
+          var strKeyword = $('#txtKeyword').val();
+          var strLibraryID = $('#ddlLibrary :selected').val();
+          
+          if ($('#optKids').prop('checked',true)) {
+             url += 'kids.aspx';
+             url += '?keyword=' + encodeURIComponent(strKeyword);
+             url += '&libraryID=' + encodeURIComponent(strLibraryID);
+          } else if ($('#optSimple').prop('checked',true)) {
+             url += 'DoSearch.ashx';
+             url += '?l=' + encodeURIComponent(strLibraryID);
+             url += '&k=' + encodeURIComponent(strKeyword);
+          }
+       } else if (type == 2) {
+          strLibraryID = encodeURIComponent(streVideoLibraryID);
+          var strKeyword = $('#txtKeywordVideo').val();
+          url += 'DoSearch.ashx';
+          url += '?l=' + encodeURIComponent(strLibraryID);
+          url += '&k=' + encodeURIComponent(strKeyword);
+       } else if (type == 3) {
+          strLibraryID = "All";
+          var strKeyword = $('#txtKeywordVirtual').val();
+          url += 'DoSearch.ashx';
+          url += '?l=' + encodeURIComponent(strLibraryID);
+          url += '&k=' + encodeURIComponent(strKeyword);
+          url += '&ifs=1';
+       }else if(type == 5){ //huanglidan add at 2014-08-04,Ver 6.4.0
+          var strKeyword= $('txtKeywordInStaff').val();
+          url += 'DoSearch.ashx';
+          url += '?l=' + encodeURIComponent(strRMLibraryID);
+          url += '&k=' + encodeURIComponent(strKeyword);
+       }         
+       window.open(url);
+    } 
+
     </script>
-
-<script type="text/javascript" language="javascript">
-function $(id) {
-return document.getElementById(id);
-}
-
-var strURL = "https://cat.library.wrdsb.ca/Library/discovery/";
-var streVideoLibraryID = "0004";
-var selectedLibraryID = "All";
-var strRMLibraryID = "";
-
-function pageload() {
-var sEventName = '';
-var bIsIe = false;
-if (document.body.onpropertychange === null) {
-sEventName = 'propertychange';
-var bIsIe = true;
-} else {
-sEventName = 'input';
-fCheckAlways();
-}
-var el = document.createElement('div');
-el.setAttribute('oninput', 'return;')
-if (typeof el.oninput === 'function') {
-sEventName = 'input';
-if (bIsIe) {
-fCheckAlways();
-}
-}
-fEventListen($("txtKeyWord"), sEventName, fIdInputEvent);
-fEventListen($("txtKeywordInVideo"), sEventName, fIdInputEvent);
-fEventListen($("txtKeywordInVirtual"), sEventName, fIdInputEvent);
-fEventListen($("txtKeywordInStaff"), sEventName, fIdInputEvent);
-fIdInputEvent();
-
-var libraryList = {items:[{'id':'All','value':'All Libraries'},{'id':'0004','value':'eVideo Library'},{'id':'0002','value':'Gondor Library'},{'id':'0005','value':'Resource Manager'},{'id':'0001','value':'Rivendell Library'}]};
-var onlineResources = {items:[{'No':1,'t531Identifier':'1','t531Url':'http:\/\/www.biographi.ca\/en\/index.php'},{'No':2,'t531Identifier':'2','t531Url':'http:\/\/kids.nationalgeographic.com\/'},{'No':3,'t531Identifier':'3','t531Url':'http:\/\/discoverykids.com\/'}]};
-var virtualContent = {items:[{'No':1,'t530Identifier':'1','t530Url':'https:\/\/www.nfb.ca\/'},{'No':2,'t530Identifier':'2','t530Url':'http:\/\/curio.ca\/en\/'},{'No':3,'t530Identifier':'3','t530Url':'http:\/\/school.eb.co.uk\/'},{'No':4,'t530Identifier':'4','t530Url':'https:\/\/search.ebscohost.com\/'},{'No':5,'t530Identifier':'5','t530Url':'http:\/\/auth.go.galegroup.com\/auth\/capmAuthentication.do?&origURL=http%3A%2F%2Fgo.galegroup.com%2Fps%2Fstart.do%3FprodId%3DGVRL%26authCount%3D1&productShortName=GVRL&isStartUrlRequest=true'},{'No':6,'t530Identifier':'6','t530Url':'http:\/\/www.learn360.com\/index.aspx'}]};
-
-if (libraryList) {
-setCboData($('cboLibrary'), libraryList);
-}
-if (onlineResources) {
-buildHTMLForOnlineResources(onlineResources);
-}
-if (virtualContent) {
-buildHTMLForVirtualContent(virtualContent);
-}
-}
-
-function fCheckAlways() {
-window.oIntervalCheckAlways = setInterval(
-function() {
-if (document.getElementById("txtKeyWord").value != '') {
-document.getElementById("txtKeyWordPlaceholder").style.visibility = "hidden";
-} else {
-document.getElementById("txtKeyWordPlaceholder").style.visibility = "visible";
-}
-if (document.getElementById("txtKeywordInVideo").value != '') {
-document.getElementById("txtKeyWordPlaceholderInVideo").style.visibility = "hidden";
-} else {
-document.getElementById("txtKeyWordPlaceholderInVideo").style.visibility = "visible";
-}
-if (document.getElementById("txtKeywordInVirtual").value != '') {
-document.getElementById("txtKeyWordPlaceholderInVirtual").style.visibility = "hidden";
-} else {
-document.getElementById("txtKeyWordPlaceholderInVirtual").style.visibility = "visible";
-}
-if (document.getElementById("txtKeywordInStaff").value != '') {
-document.getElementById("txtKeyWordPlaceholderInStaff").style.visibility = "hidden";
-} else {
-document.getElementById("txtKeyWordPlaceholderInStaff").style.visibility = "visible";
-}
-}, 500);
-}
-
-function fIdInputEvent() {
-if ($("txtKeyWord").value == "") {
-$("txtKeyWordPlaceholder").style.visibility = "visible";
-}
-else {
-$("txtKeyWordPlaceholder").style.visibility = "hidden";
-}
-if ($("txtKeywordInVideo").value == "") {
-$("txtKeyWordPlaceholderInVideo").style.visibility = "visible";
-}
-else {
-$("txtKeyWordPlaceholderInVideo").style.visibility = "hidden";
-}
-if ($("txtKeywordInVirtual").value == "") {
-$("txtKeyWordPlaceholderInVirtual").style.visibility = "visible";
-}
-else {
-$("txtKeyWordPlaceholderInVirtual").style.visibility = "hidden";
-}
-if ($("txtKeywordInStaff").value == "") {
-$("txtKeyWordPlaceholderInStaff").style.visibility = "visible";
-}
-else {
-$("txtKeyWordPlaceholderInStaff").style.visibility = "hidden";
-}
-}
-
-//binding event listen
-function fEventListen(oElement, sName, fObserver, bUseCapture) {
-bUseCapture = !!bUseCapture;
-if (oElement.addEventListener) {
-oElement.addEventListener(sName, fObserver, bUseCapture);
-} else if (oElement.attachEvent) {
-oElement.attachEvent('on' + sName, fObserver);
-}
-}
-
-function setCboData(oSelect, data) {
-if (oSelect && data && data.items) {
-oSelect.options.length = data.items.length;
-for (var i = 0; i < data.items.length; i++) {
-oSelect.options[i] = new Option(data.items[i].value, data.items[i].id);
-if (selectedLibraryID == data.items[i].id) oSelect.options[i].selected = true;
-}
-}
-}
-
-function buildHTMLForOnlineResources(data) {
-var strHTML = '';
-if (data && data.items && data.items.length > 0) {
-for (var i = 0; i < data.items.length; i++) {
-var row = data.items[i];
-strHTML += '<a href="' + row.t531Url + '" target="_blank"><img src="../getImg.aspx?type=EmbeddedOnlineResources&id=' + row.t531Identifier + '" title="" alt=""/></a>';
-}
-}
-$('onlineResourceList').innerHTML = strHTML;
-}
-
-function buildHTMLForVirtualContent(data) {
-var strHTML = '';
-if (data && data.items && data.items.length > 0) {
-for (var i = 0; i < data.items.length; i++) {
-var row = data.items[i];
-strHTML += '<a href="' + row.t530Url + '" target="_blank"><img src="../getImg.aspx?type=embeddedvirtual&id=' + row.t530Identifier + '" title="" alt=""/></a>';
-}
-}
-$('virtualContentList').innerHTML = strHTML;
-}
-
-function tabChanged(strType) {
-clearHeaderStyle();
-hideAlltabs();
-$('tab' + strType + 'Header').className = 'headerSelected';
-$('tab' + strType + 'Content').style.display = '';
-setFocus(strType);
-}
-
-function setFocus(strType) {
-switch (strType) {
-case 'Library':
-$('txtKeyWord').focus();
-break;
-case 'Video':
-$('txtKeywordInVideo').focus();
-break;
-case 'Virtual':
-$('txtKeywordInVirtual').focus();
-break;
-case 'Staff':
-$('txtKeywordInStaff').focus();
-break;
-default:
-break;
-}
-}
-
-function clearHeaderStyle() {
-$('tabLibraryHeader').className = '';
-$('tabVideoHeader').className = '';
-$('tabVirtualHeader').className = '';
-$('tabOnlineHeader').className = '';
-$('tabStaffHeader').className = '';
-$('tabEverythingHeader').className = '';
-}
-
-function hideAlltabs() {
-$('tabLibraryContent').style.display = 'none';
-$('tabVideoContent').style.display = 'none';
-$('tabVirtualContent').style.display = 'none';
-$('tabOnlineContent').style.display = 'none';
-$('tabStaffContent').style.display = 'none';
-$('tabEverythingContent').style.display = 'none';
-}
-
-function txtOnKeyDown(type) {
-if (event.keyCode == 13) { //enter
-btnSearchClicked(type);
-}
-}
-
-////Last modified by futao 2014-7-18 ver:6.4.0 add type
-function btnSearchClicked(type) {
-var url = strURL;
-if (type == 1) {
-var strKeyword = $('txtKeyWord').value;
-var strLibraryID = $('cboLibrary').value;
-if ($('optKids').checked) {
-url += 'kids.aspx';
-url += '?keyword=' + encodeURIComponent(strKeyword);
-url += '&libraryID=' + encodeURIComponent(strLibraryID);
-} else if ($('optSimple').checked) {//add by futao 2014-7-17 ver:6.4.0
-url += 'DoSearch.ashx';
-url += '?l=' + encodeURIComponent(strLibraryID);
-url += '&k=' + encodeURIComponent(strKeyword);
-}
-} else if (type == 2) {
-strLibraryID = encodeURIComponent(streVideoLibraryID);
-var strKeyword = $('txtKeywordInVideo').value;
-url += 'DoSearch.ashx';
-url += '?l=' + encodeURIComponent(strLibraryID);
-url += '&k=' + encodeURIComponent(strKeyword);
-} else if (type == 3) {
-strLibraryID = "All";
-var strKeyword = $('txtKeywordInVirtual').value;
-url += 'DoSearch.ashx';
-url += '?l=' + encodeURIComponent(strLibraryID);
-url += '&k=' + encodeURIComponent(strKeyword);
-url += '&ifs=1';
-}else if(type == 5){ //huanglidan add at 2014-08-04,Ver 6.4.0
-var strKeyword= $('txtKeywordInStaff').value;
-url += 'DoSearch.ashx';
-url += '?l=' + encodeURIComponent(strRMLibraryID);
-url += '&k=' + encodeURIComponent(strKeyword);
-}
-window.open(url);
-}
-</script>
 
   <?php wp_head(); ?>
 
   <?php wrdsb_secondary_school_colours(); ?>
 </head>
 
-<body onload="pageload(); return false;">
+<body>
   <div class="container container-top">
     <div class="header">
       <div class="row">
@@ -502,139 +303,103 @@ window.open(url);
         <!--Rizwan Code Start-->
         <!-- Nav tabs -->
           <ul id="library_services" class="nav nav-tabs" role="tablist">
-            <li class="active"><a href="#home" role="tab" data-toggle="tab">Library</a></li>
-            <li><a href="#profile" role="tab" data-toggle="tab">eVideo Library</a></li>
-            <li><a href="#messages" role="tab" data-toggle="tab">Virtual Lilbrary</a></li>
-            <li><a href="#settings" role="tab" data-toggle="tab">Online Resources</a></li>
+            <li class="active"><a href="#library" role="tab" data-toggle="tab">Library</a></li>
+            <li><a href="#evideoLibrary" role="tab" data-toggle="tab">eVideo Library</a></li>
+            <li><a href="#virtualLibrary" role="tab" data-toggle="tab">Virtual Lilbrary</a></li>
+            <li><a href="#onlineResources" role="tab" data-toggle="tab">Online Resources</a></li>
           </ul>
 
           <!-- Tab panes -->
           <div class="tab-content">
-            <div class="tab-pane active" id="home">Library</div>
-            <div class="tab-pane" id="profile">eVideo Library</div>
-            <div class="tab-pane" id="messages">Virtual Lilbrary</div>
-            <div class="tab-pane" id="settings">Online Resources</div>
+            <div class="tab-pane active" id="library">
+              <p>
+                <input type="text" id="txtKeyword" style="width:80%; padding:4px 8px;"
+                placeholder="Search the Library">
+                <input type="button" class="libBtnSearch" 
+                onclick="btnSearchClicked(1); return false;">
+                <br />
+                <select id="ddlLibrary">
+                  <option value="All">All Libraries</option>
+                  <option value="0004">eVideo Library</option>
+                  <option value="0002">Gondor Library</option>
+                  <option value="0005">Resource Manager</option>
+                  <option value="0001">Rivendell Library</option>
+                </select>
+
+                <input type="radio" name="optSearchPage" id="optKids">
+                 <label>Kids</label>
+                 <input type="radio" name="optSearchPage" id="optSimple" checked="checked">
+                 <label>Simple</label>
+
+              </p>
+            </div>
+            
+            <div class="tab-pane" id="evideoLibrary">
+              <p>
+                <input type="text" id="txtKeywordVideo" style="width:80%; padding:4px 8px;"
+                placeholder="Search the eVideo Library for online video conent">
+                <input type="button" class="libBtnSearch" 
+                onclick="btnSearchClicked(2); return false;">
+              </p>
+            </div>
+            <div class="tab-pane" id="virtualLibrary">
+              
+              <p>
+                <input type="text" id="txtKeywordVirtual" style="width:80%; padding:4px 8px;"
+                placeholder="Search the Virtual Library for digital content">
+                <input type="button" class="libBtnSearch" 
+                onclick="btnSearchClicked(3); return false;">
+              </p>
+
+              <h4>OR...</h4>
+
+              <p>Click on a link below to search that database:</p>
+
+              <a href="http://www.nfb.ca/" target="_blank">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/one-nfb-logo.png" 
+                style="width:164px; height:70px; display:inline-block;" />
+              </a>
+              <a href="http://curio.ca/en/" target="_blank">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/curio-logo.png" 
+                style="width:164px; height:70px; display:inline-block;" />
+              </a>
+              <a href="http://school.eb.co.uk/" target="_blank">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/britannica-school-logo.png" 
+                style="width:164px; height:70px; display:inline-block;" />
+              </a>
+              <a href="https://search.ebscohost.com/" target="_blank">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/ebsco-logo.png" 
+                style="width:164px; height:70px; display:inline-block;" />
+              </a>
+              <a href="http://auth.go.galegroup.com/auth/capmAuthentication.do?&origURL=http%3A%2F%2Fgo.galegroup.com%2Fps%2Fstart.do%3FprodId%3DGVRL%26authCount%3D1&productShortName=GVRL&isStartUrlRequest=true" target="_blank">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/gvrl-logo.png" 
+                style="width:164px; height:70px; display:inline-block;" />
+              </a>
+              <a href="http://www.learn360.com/index.aspx" target="_blank">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/learn360-logo.png" 
+                style="width:164px; height:70px; display:inline-block;" />
+              </a>
+            </div>
+
+            <div class="tab-pane" id="onlineResources">
+              <p>Click on a link below to search that database:</p>
+
+              <a href="http://www.biographi.ca/en/index.php" target="_blank">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/biographi-logo.png" 
+                style="width:164px; height:70px; display:inline-block;" />
+              </a>
+              <a href="http://www.biographi.ca/en/index.php" target="_blank">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/discovery-kids-logo.png" 
+                style="width:164px; height:70px; display:inline-block;" />
+              </a>
+              <a href="http://www.biographi.ca/en/index.php" target="_blank">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/national-geographic-logo.png" 
+                style="width:164px; height:70px; display:inline-block;" />
+              </a>
+            </div>
           </div>
 
         <!--Rizwan Code End-->
-
-    
-        <div class="ilsEmbeddedHeader">
-          <a id="tabLibraryHeader" class="headerSelected" href="#" onclick="tabChanged('Library'); return false;" style="display:">Library</a>
-          <a id="tabVideoHeader" class="" href="#" onclick="tabChanged('Video'); return false;" style="display:">eVideo Library</a>
-          <a id="tabVirtualHeader" class="" href="#" onclick="tabChanged('Virtual'); return false;" style="display:">Virtual Library</a>
-          <a id="tabOnlineHeader" class="" href="#" onclick="tabChanged('Online'); return false;" style="display:">Online Resources</a>
-          <a id="tabStaffHeader" class="" href="#" onclick="tabChanged('Staff'); return false;" style="display:none">Staff Resources</a>
-          <a id="tabEverythingHeader" class="" href="#" onclick="tabChanged('Everything'); return false;" style="display:none">Everything!</a>
-        </div>
-
-        <!-- Library -->
-        <div id="tabLibraryContent" class="ilsEmbeddedContborder" style="display:">
-          <div class="ilsEmbeddedContent">
-            <div class="ilsEmbeddedSearchBorder" style="width:54%;">
-              <table width="100%">
-                <tr>
-                  <td style="width:100%; position:relative;">
-                    <input type="text" id="txtKeyWord" class="ilstext" onkeydown="txtOnKeyDown(1); return true;"/>
-                    <label for="txtKeyWord" id="txtKeyWordPlaceholder" class="ilsEmbeddedtxtPlaceHolder">Search the Library</label>
-                  </td>
-                  <td width="55">
-                    <input type="button" id="btnSearch" class="ilsbtnSearch" onclick="btnSearchClicked(1); return false;" />
-                  </td>
-                </tr>
-              </table>
-            </div>
-
-            <div class="ilsEmbeddedSearchBorder" style=" width:43%; margin:0 0 0 0.2%;">
-              <select id="cboLibrary" class="ilsCombo" style="width:98%; margin:5px 0 0 0;"></select>
-            </div>
-
-            <div style="width:200px; height:30px; padding:12px 0 0 5px; clear:both;">
-              <input type="radio" name="optSearchPage" id="optKids" checked="checked"/>
-              <label>Kids</label>
-              <input type="radio" name="optSearchPage" id="optSimple"/>
-              <label>Simple</label>
-            </div>
-          </div>
-        </div>
-
-        <!-- eVideo Library -->
-        <div id="tabVideoContent" class="ilsEmbeddedContborder"  style="display:none">
-        <div class="ilsEmbeddedContent" style="width:70%;">
-        <div class="ilsEmbeddedSearchBorder"  style="width:80%;">
-        <table width="100%">
-        <tr>
-        <td style="width:100%; text-align:center; position:relative;">
-        <input type="text" id="txtKeywordInVideo" class="ilstext" onkeydown="txtOnKeyDown(2); return true;" style="display:block"/>
-        <label for="txtKeywordInVideo" id="txtKeyWordPlaceholderInVideo" class="ilsEmbeddedtxtPlaceHolder">Search the eVideo Library for online video content</label>
-        </td>
-        <td width="55">
-        <input type="button" id="btnSearchInVideo" onclick="btnSearchClicked(2); return false;" class="ilsbtnSearch" style="display:block"/>
-        </td>
-        </tr>
-        </table>
-        </div>
-        </div>
-        </div>
-
-        <!-- Virtual Library -->
-        <div id="tabVirtualContent" class="ilsEmbeddedContborder" style="display:none">
-        <div class="ilsEmbeddedContent" style="width:70%;">
-        <div class="ilsEmbeddedSearchBorder"   style="width:80%;">
-        <table width="100%">
-        <tr>
-        <td style="width:100%; position:relative;">
-        <input type="text" id="txtKeywordInVirtual" class="ilstext" onkeydown="txtOnKeyDown(3); return true;"/>
-        <label for="txtKeywordInVirtual" id="txtKeyWordPlaceholderInVirtual" class="ilsEmbeddedtxtPlaceHolder">Search the Virtual Library for digital content</label>
-        </td>
-        <td width="55">
-        <input type="button" id="btnSearchInVirtual" class="ilsbtnSearch" onclick="btnSearchClicked(3); return false;"/>
-        </td>
-        </tr>
-        </table>
-        </div>
-        <div class="blue bold clear" style="height:16px; padding:10px 0 0 10px;"><label>OR...</label></div>
-        <div class="clear" style=" line-height:30px; padding-left:10px;"><label>Click on a link below to search that database:</label></div>
-        <div class="clear ilsImgList" id="virtualContentList"></div>
-        </div>
-        </div>
-
-        <!-- Online Resources -->
-        <div id="tabOnlineContent" class="ilsEmbeddedContborder" style="display:none">
-        <div class="ilsEmbeddedContent" style="width:70%;">
-        <div style=" padding:5px 0 5px 10px;">
-        <label>Click on a link below to search that database:</label>
-        </div>
-        <div class="clear ilsImgList" id="onlineResourceList"></div>
-        </div>
-        </div>
-
-        <!-- Staff Resources -->
-        <div id="tabStaffContent" class="ilsEmbeddedContborder"  style="display:none">
-        <div class="ilsEmbeddedContent" style="width:70%;">
-        <div class="ilsEmbeddedSearchBorder"  style="width:80%;">
-        <table width="100%">
-        <tr>
-        <td style="width:100%; position:relative;">
-        <input type="text" id="txtKeywordInStaff" class="ilstext" onkeydown="txtOnKeyDown(5); return true;"/>
-        <label for="txtKeywordInStaff" id="txtKeyWordPlaceholderInStaff" class="ilsEmbeddedtxtPlaceHolder">Search the Resource Centre for Books, Kids, and DVD's</label>
-        </td>
-        <td width="55">
-        <input type="button" id="btnSearchInStaff" class="ilsbtnSearch" onclick="btnSearchClicked(5); return false;" />
-        </td>
-        </tr>
-        </table>
-        </div>
-        </div>
-        </div>
-
-        <!-- Everything! -->
-        <div id="tabEverythingContent" class="ilsEmbeddedContborder"  style="display:none">
-        <div class="ilsEmbeddedContent">
-        Everything!
-        </div>
-        </div>
-        </form>
 
 <?php
 // Start the Loop.
