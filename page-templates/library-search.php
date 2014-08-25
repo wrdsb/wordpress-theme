@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: New Library Search
+Template Name: Library Search
 */
 ?>
 <?php $has_left = FALSE; ?>
