@@ -388,11 +388,11 @@ Template Name: Library Search
                 <img src="<?php echo get_template_directory_uri(); ?>/images/biographi-logo.png" 
                 style="width:164px; height:70px; display:inline-block;" />
               </a>
-              <a href="http://www.biographi.ca/en/index.php" target="_blank">
+              <a href="http://discoverykids.com/" target="_blank">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/discovery-kids-logo.png" 
                 style="width:164px; height:70px; display:inline-block;" />
               </a>
-              <a href="http://www.biographi.ca/en/index.php" target="_blank">
+              <a href="http://kids.nationalgeographic.com/" target="_blank">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/national-geographic-logo.png" 
                 style="width:164px; height:70px; display:inline-block;" />
               </a>
