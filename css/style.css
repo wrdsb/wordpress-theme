@@ -750,6 +750,17 @@ p.promo {
 	font-size: 2.5em;
 }
 
+p.fineprint {
+	font-size: .8em;
+	color: #444;
+}
+
+.permissionbox {
+	border: 1px solid #444;
+	padding: 2em;
+	margin: 2em;
+}
+
 /** custom lists **/
 
 ul.checklist li {
@@ -801,6 +812,11 @@ a[href $='pdf'] {
 	background-image: url(../images/icons_filetype/icon_pdf_small.gif);
 	background-repeat: no-repeat;
 	padding-left: 18px;
+}
+
+a.noicon[href $='pdf'] {
+	background: none;
+	padding-left: 0;
 }
 
 a[href $='xls'] {

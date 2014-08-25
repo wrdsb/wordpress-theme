@@ -65,13 +65,13 @@
               <h6 class="copyright">
                 <?php wp_loginout(); ?>
                 &nbsp;&nbsp; | &nbsp;&nbsp;
-                <a href="http://staff.wrdsb.ca">WRDSB Staff Website</a>
+                <a href="http://staff.wrdsb.ca">Log in to Staff Website</a>
                 <?php 
                   $parsed_url = parse_url(network_site_url());
                   $host = explode('.', $parsed_url['host']);
                   if ($host[0] == 'schools') { ?>
                     &nbsp;&nbsp; | &nbsp;&nbsp;
-                    <a href="http://staff.wrdsb.ca/<?php $fulldomain = explode('.',$_SERVER['HTTP_HOST']); echo $fulldomain[0]; ?>">Staff Handbook</a>
+                    <a href="http://staff.wrdsb.ca/<?php $fulldomain = explode('.',$_SERVER['HTTP_HOST']); echo $fulldomain[0]; ?>">Log in to School Handbook</a>
                   <?php } ?>
               </h6>
             </div>
