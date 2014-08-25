@@ -89,11 +89,11 @@ Template Name: Library Search
           var strKeyword = $('#txtKeyword').val();
           var strLibraryID = $('#ddlLibrary :selected').val();
           
-          if ($('#optKids').prop('checked',true)) {
+          if ($('#optKids').prop('checked') == true) {
              url += 'kids.aspx';
              url += '?keyword=' + encodeURIComponent(strKeyword);
              url += '&libraryID=' + encodeURIComponent(strLibraryID);
-          } else if ($('#optSimple').prop('checked',true)) {
+          } else {
              url += 'DoSearch.ashx';
              url += '?l=' + encodeURIComponent(strLibraryID);
              url += '&k=' + encodeURIComponent(strKeyword);
