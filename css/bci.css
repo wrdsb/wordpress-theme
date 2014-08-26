@@ -46,5 +46,9 @@ a {
 
 .footer > .sbe-widget-email-field {
 	background-color: #fff;
-	background-color: #000;
+	color: #666;
+}
+
+.footer > .sbe-widget-form-submit {
+	color: #666;
 }
