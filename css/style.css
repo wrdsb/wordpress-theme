@@ -903,3 +903,14 @@ border-radius: 10px;
  .biocard > h3.details strong {
 	text-transform: uppercase;
  }
+
+/* subscribe by email form colours SZC 2014-08-26 */
+
+.footer > .sbe-widget-email-field {
+	background-color: #fff;
+	color: #666;
+}
+
+.footer > .sbe-widget-form-submit {
+	color: #666;
+}
