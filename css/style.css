@@ -351,6 +351,10 @@ cursor:pointer;
 vertical-align: middle;
 }
 
+select {
+	height:30px;
+}
+
 	@media (max-width: 768px) {
 		.header {
 			display:none;
