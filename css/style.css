@@ -862,7 +862,7 @@ h1 {
 
  .biocard {
 	width: 600px;
-	font-family: calibri, sans-serif;
+	/*font-family: calibri, sans-serif;*/
 	padding: 15px;
 	margin: 15px;
 	font-size: 15px;
