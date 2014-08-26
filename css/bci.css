@@ -41,3 +41,10 @@ a {
 	background-color:#006699; /*primary*/
 	border-top-color:#666666; /*secondary*/
 }
+
+/* subscribe by email form colours SZC 2014-08-26 */
+
+.footer > .sbe-widget-email-field {
+	background-color: #fff;
+	background-color: #000;
+}
