@@ -692,7 +692,7 @@ Template Name: Library Search
 
           </div>
 
-          <div class="tab-pane active" id="staffResources">
+          <div class="tab-pane" id="staffResources">
             <ul class="library-icons">
               <li>
                 <a href="http://web.a.ebscohost.com/ehost/search/advanced?sid=1d12556e-1158-4f7b-a60c-60e2cd9cf117%40sessionmgr4005&vid=0&hid=4204" target="_blank">
