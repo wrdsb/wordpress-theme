@@ -355,6 +355,28 @@ select {
 	height:30px;
 }
 
+.library-icons {
+	padding:0;
+	list-style:none;
+	height:auto;
+}
+
+.library-icons li {
+	display:inline-block;
+	margin:10px;
+	text-align:center;
+	padding:6px;
+	border:1px solid #eee;
+}
+
+.library-icons li a img {
+	max-width:164px;
+	display:inline-block;
+}
+.library-icons li a span {
+	font-weight: bold;
+	display:block;
+}
 	@media (max-width: 768px) {
 		.header {
 			display:none;
