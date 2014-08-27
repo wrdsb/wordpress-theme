@@ -308,6 +308,7 @@ Template Name: Library Search
             <li><a href="#evideoLibrary" role="tab" data-toggle="tab">eVideo Library</a></li>
             <li><a href="#virtualLibrary" role="tab" data-toggle="tab">Virtual Lilbrary</a></li>
             <li><a href="#onlineResources" role="tab" data-toggle="tab">Online Resources</a></li>
+            <li><a href="#staffResources" role="tab" data-toggle="tab">Staff Resources</a></li>
           </ul>
 
           <!-- Tab panes -->
@@ -461,7 +462,34 @@ Template Name: Library Search
                 <input type="button" class="libBtnSearch" 
                 onclick="btnSearchClicked(2); return false;">
               </p>
+
+              <ul class="library-icons">
+                <li>
+                  <a href="http://www.learn360.com/index.aspx?site=canada" target="_blank">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/library/L360 Canada High ResEDIT.jpg" 
+                    style="width:164px; display:inline-block" alt="Learn360 logo">
+                    <span>LEARN360</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="http://curio.ca/en/" target="_blank">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/library/curio-logo.png" 
+                      style="width:164px; display:inline-block" alt="CBC Curio Logo">
+                      <span>CURIO.CA</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.nfb.ca/education/" target="_blank">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/library/one-nfb-logo.png" 
+                      style="width:164px; display:inline-block" alt="NFB Campus Logo">
+                      <span>ONF NFB</span>
+                  </a>
+                  
+                </li>
+              </ul>
+
             </div>
+
             <div class="tab-pane" id="virtualLibrary">
               
               <p>
@@ -475,50 +503,240 @@ Template Name: Library Search
 
               <p>Click on a link below to search that database:</p>
 
-              <a href="http://www.nfb.ca/" target="_blank">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/one-nfb-logo.png" 
-                style="width:164px; height:70px; display:inline-block;" />
+              <h3>Elementary</h3>
+
+              <ul class="library-icons">
+                <li>
+              <a href="http://web.a.ebscohost.com/srck5/search?sid=9ee4a966-bbd2-4f5b-96b3-6637fce93f58%40sessionmgr4002&vid=0&hid=4204" target="_blank">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/library/srck5_logo.gif" alt="Ebsco Kids Search Logo" />
+                <span>Ebsco Kids Search</span>
               </a>
-              <a href="http://curio.ca/en/" target="_blank">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/curio-logo.png" 
-                style="width:164px; height:70px; display:inline-block;" />
+              </li>
+              <li>
+              <a href="http://web.b.ebscohost.com/sas/search?sid=708d65fe-4aea-43fd-aa22-9fd0e1607111%40sessionmgr115&vid=0&hid=114" target="_blank">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/library/sas_logo.gif" alt="Searchasaurus Logo" />
+                <span>Searchasaurus</span>
               </a>
-              <a href="http://school.eb.co.uk/" target="_blank">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/britannica-school-logo.png" 
-                style="width:164px; height:70px; display:inline-block;" />
+            </li>
+            <li>
+              <a href="http://web.b.ebscohost.com/novpk8/search/novbasic?sid=d1baa937-848e-4fae-9328-cbbe58f6c68e%40sessionmgr113&vid=0&hid=114" target="_blank">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/library/novpk8_logo.gif" alt="K-8 NoveList Plus Logo" />
+                <span>K-8 NoveList Plus</span>
               </a>
-              <a href="https://search.ebscohost.com/" target="_blank">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/ebsco-logo.png" 
-                style="width:164px; height:70px; display:inline-block;" />
+              </li>
+              
+            <li>
+              <a href="http://asp.tumblebooks.com/library/asp/home_tumblebooks.asp" target="_blank">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/library/tumbleBookLibrary.gif" alt="Tumblebook Library Logo" />
+                <span>Tumblebook Library</span>
               </a>
-              <a href="http://auth.go.galegroup.com/auth/capmAuthentication.do?&origURL=http%3A%2F%2Fgo.galegroup.com%2Fps%2Fstart.do%3FprodId%3DGVRL%26authCount%3D1&productShortName=GVRL&isStartUrlRequest=true" target="_blank">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/gvrl-logo.png" 
-                style="width:164px; height:70px; display:inline-block;" />
+            </li>
+            <li>
+              <a href="http://auth.grolier.com/cgi-bin/go_up_login?formu=wateregio&formp=wate0979&link=bkflix.grolier.com" target="_blank">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/library/bkflix.gif" alt="" />
+                <span>BookFlix</span>
               </a>
-              <a href="http://www.learn360.com/index.aspx" target="_blank">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/learn360-logo.png" 
-                style="width:164px; height:70px; display:inline-block;" />
+            </li>
+          </ul>
+
+          <h3>General</h3>
+
+          <ul class="library-icons">
+            <li>
+              <a href="http://web.b.ebscohost.com/ehost/search/selectdb?sid=147167f4-ff0e-439a-a92e-7ab14df2478f%40sessionmgr115&vid=0&hid=114" target="_blank">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/library/ehost200.gif" alt="EbscoHost Logo" />
+                <span>EbscoHost</span>
               </a>
+              </li>
+
+              <li>
+              <a href="http://www.cengage.com/search/showresults.do?N=197+4294904997" target="_blank">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/library/GVRL5_lg.gif" alt="Gale Virtual Reference Library Logo" />
+                <span>Gale Virtual Reference Library</span>
+              </a>
+              </li>
+
+              <li>
+              <a href="http://web.b.ebscohost.com/novp/search/novbasic?sid=08995f5c-f3c4-47c7-8282-afdd124e7429%40sessionmgr111&vid=0&hid=114" target="_blank">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/library/novp_logo.gif" alt="NoveList Plus Logo" />
+                <span>NoveList Plus</span>
+              </a>
+              </li>
+
+              <li>
+              <a href="http://wrdsb.naxosmusiclibrary.com/" target="_blank">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/library/naxos.gif" alt="Naxos Music Logo" />
+                <span>Naxos Music</span>
+              </a>
+              </li>
+
+              <li>
+              <a href="http://web.b.ebscohost.com/pov/search/basic?sid=d028bac3-84d6-4d4b-b790-073e09c86c4e%40sessionmgr113&vid=0&hid=114" target="_blank">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/library/povcan_logo.gif" alt="Canadian Points of View Logo" />
+                <span>Canadian Points of View</span>
+              </a>
+              </li>
+
+              <li>
+              <a href="http://web.b.ebscohost.com/lrc/search/basic?sid=8932afef-692c-44d5-820f-e9fb403f42dd%40sessionmgr110&vid=0&hid=114" target="_blank">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/library/lrcplus_logo.gif" alt="Literary Reference Centre Plus Logo" />
+                <span>Literary Reference Centre Plus</span>
+              </a>
+              </li>
+
+              <li>
+              <a href="http://web.b.ebscohost.com/scirc/search/basic?sid=873cc5c4-7ecf-44b4-977c-7d3b177f3e29%40sessionmgr113&vid=0&hid=114" target="_blank">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/library/scirc_logo.gif" alt="Science Reference Centre Logo" />
+                <span>Science Reference Centre</span>
+              </a>
+              </li>
+
+              <li>
+              <a href="http://web.b.ebscohost.com/hrc/search/basic?sid=a75fa83f-7745-4825-95e3-37ea659ad7ed%40sessionmgr110&vid=0&hid=114" target="_blank">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/library/hrc_logo.gif" alt="History Reference Centre Logo" />
+                <span>History Reference Centre</span>
+              </a>
+              </li>
+
+              <li>
+              <a href="http://web.a.ebscohost.com/ehost/search/advanced?sid=5cc68023-71ee-43ab-b403-04360067da4a%40sessionmgr4001&vid=0&hid=4204" target="_blank">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/library/crc200.gif" alt="Canadian Reference Centre Logo" />
+                <span>Canadian Reference Centre</span>
+              </a>
+              </li>
+
+              <li>
+              <a href="http://web.b.ebscohost.com/src/search?sid=b303ca5d-b056-457e-9ac1-9c8eba7b9157%40sessionmgr115&vid=0&hid=114" target="_blank">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/library/srccan_logo.gif" alt="Canadian Student Research Centre Logo" />
+                <span>Canadian Student Research Centre</span>
+              </a>
+              </li>
+          </ul>
             </div>
 
             <div class="tab-pane" id="onlineResources">
               <p>Click on a link below to search that database:</p>
 
-              <a href="http://www.biographi.ca/en/index.php" target="_blank">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/biographi-logo.png" 
-                style="width:164px; height:70px; display:inline-block;" />
+              <h3>Elementary</h3>
+
+              <ul class="library-icons">
+                <li>
+              <a href="http://www.pebblego.com/login/index.html?sqs=8d3a7ac1a7cbb242656a84fa543e4decf68524a6b7fd0c9ef79285c044ebaec0" target="_blank">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/library/pebblego-logo-header.png" alt="PebbleGo Logo" />
+                <span>PebbleGo</span>
               </a>
-              <a href="http://discoverykids.com/" target="_blank">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/discovery-kids-logo.png" 
-                style="width:164px; height:70px; display:inline-block;" />
+              </li>
+
+              <li>
+              <a href="http://school.eb.com/levels/elementary" target="_blank">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/library/SchoolElem_btn.jpg" alt="Britannica School Elementary Logo" />
+                <span>Britannica School Elementary</span>
               </a>
-              <a href="http://kids.nationalgeographic.com/" target="_blank">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/national-geographic-logo.png" 
-                style="width:164px; height:70px; display:inline-block;" />
+              </li>
+
+              <li>
+              <a href="http://school.eb.com/levels/middle" target="_blank">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/library/SchoolMiddle_btn.jpg" alt="Britannica School Middle Logo" />
+                <span>Britannica School Middle</span>
               </a>
+              </li>
+
+              <li>
+              <a href="http://galenet.galegroup.com/servlet/KidsInfoBits;jsessionid=4418D16591EB359242016565EBB34227?locID=ko_k12elm_d68" target="_blank">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/library/kids_infobits_lg.gif" alt="Kids InfoBits Logo" />
+                <span>Kids InfoBits</span>
+              </a>
+              </li>
+
+              </ul>
+
+              <h3>General</h3>
+
+              <ul class="library-icons">
+                <li>
+              <a href="http://www.thecanadianencyclopedia.ca/en/" target="_blank">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/library/TheCanEn2.jpg" alt="The Canadian Encyclopedia Logo" />
+                <span>The Canadian Encyclopedia</span>
+              </a>
+              </li>
+
+              <li>
+              <a href="http://www.thecanadianencyclopedia.ca/fr/" target="_blank">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/library/Encyclopedie.jpg" alt="L'Encyclopédie Canadienne Logo" />
+                <span>L'Encyclopédie Canadienne</span>
+              </a>
+              </li>
+
+              <li>
+              <a href="http://school.eb.com/levels/high" target="_blank">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/library/SchoolHigh_btn.jpg" alt="Britannica School High Logo" />
+                <span>Britannica School High</span>
+              </a>
+              </li>
+
+              <li>
+              <a href="http://www.ourontario.ca/" target="_blank">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/library/our_ontario.gif" alt="OurOntario Logo" />
+                <span>OurOntario</span>
+              </a>
+              </li>
+
+              <li>
+              <a href="http://www.teenhealthandwellness.com/" target="_blank">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/library/teen_health.gif" alt="Teen Health and Wellness Logo" />
+                <span>Teen Health and Wellness</span>
+              </a>
+              </li>
+
+              </ul>
+
+            </div>
+            <div class="tab-pane active" id="staffResources">
+              <ul class="library-icons">
+                <li>
+              <a href="http://web.a.ebscohost.com/ehost/search/advanced?sid=1d12556e-1158-4f7b-a60c-60e2cd9cf117%40sessionmgr4005&vid=0&hid=4204" target="_blank">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/library/ERCButton_150x75.gif" alt="Education Research Complete Logo" />
+                <span>Education Research Complete</span>
+              </a>
+              </li>
+
+              <li>
+              <a href="http://web.a.ebscohost.com/ehost/search/advanced?sid=6c70d618-11d6-4bc1-b7d4-c096968c55d9%40sessionmgr4001&vid=0&hid=4204" target="_blank">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/library/ERIC-button150x75.gif" alt="ERIC Logo" />
+                <span>ERIC</span>
+              </a>
+              </li>
+
+              <li>
+              <a href="http://go.galegroup.com/ps/start.do?p=PROF&u=ko_k12hs_d68&authCount=1" target="_blank">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/library/educators_reference_complete_lg.gif" alt="Educators Reference Complete Logo" />
+                <span>Educators Reference Complete</span>
+              </a>
+              </li>
+              <li>
+              <a href="http://galesites.com/portals/ascd/kitc10262" target="_blank">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/library/eBooks_Educators.jpg" alt="GVRL eBook Collection Logo" />
+                <span>GVRL eBook Collection</span>
+              </a>
+              </li>
+              <li>
+              <a href="https://resources.elearningontario.ca/" target="_blank">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/library/oerb.jpg" alt="Ontario Educational Resource Bank Logo" />
+                <span>Ontario Educational Resource Bank</span>
+              </a>
+              </li>
+              <li>
+              <a href="http://www.learnontario.ca/search;jsessionid=B56CFBD226083AFF6303A923639C4BF3" target="_blank">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/library/learn_ontario.gif" alt="LearnOntario Logo" />
+                <span>LearnOntario</span>
+              </a>
+              </li>
+
+
+              </ul>
             </div>
           </div>
-
+          <div class="clear"></div>
         <!--Rizwan Code End-->
 
 <?php
