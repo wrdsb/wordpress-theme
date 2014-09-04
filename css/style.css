@@ -377,6 +377,9 @@ select {
 	font-weight: bold;
 	display:block;
 }
+h6.copyright > a {
+	display:inline-block;
+}
 	@media (max-width: 768px) {
 		.header {
 			display:none;
