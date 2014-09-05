@@ -441,16 +441,12 @@ function the_breadcrumb() {
   echo '</div>';
 }
 
-
 function wrdsb_secondary_school_colours() {
   $parsed_url = parse_url(site_url());
   $host = explode('.', $parsed_url['host']);
   $site = $parsed_url['path'];
   echo '<!-- Site specific styles for '.$host[0].' - '.$site.' -->';
   switch ($host[0]) {
-    case "bipsa":
-      echo '<link href="'.get_template_directory_uri().'/css/bipsa.css" rel="stylesheet">';
-      break;
     case "bci":
       echo '<link href="'.get_template_directory_uri().'/css/bci.css" rel="stylesheet">';
       break;
