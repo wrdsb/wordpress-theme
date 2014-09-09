@@ -890,7 +890,7 @@ h1 {
 /*** __Advisory Board and Staff Profile Pages ***/
 
  .biocard {
-	width: 600px;
+	/*width: 600px;*/
 	/*font-family: calibri, sans-serif;*/
 	padding: 15px;
 	margin: 15px;
