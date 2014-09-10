@@ -243,7 +243,7 @@ Template Name: SYI - Secondary
   </li>
 </ul>
 
-<p><a href="http://www.wrdsb.ca/wp-content/uploads/E-Learning-Course-Offerings.pdf" target="_blank">e-Learning &#8211; 2014-2015 Course Selection</a></p>
+<p><a href="http://www.wrdsb.ca/wp-content/uploads/E-Learning-Course-Offerings.pdf" target="_blank">e-Learning &#8211; 2014-2015 Course Offerings</a></p>
 <ul>
   <li>
     The Waterloo Region District School Board’s online courses 
