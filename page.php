@@ -17,6 +17,7 @@
       if (is_front_page() && wrdsb_i_am_a_school()) {
         echo '<p><a href="http://myway.wrdsb.ca"><img src="http://www.wrdsb.ca/wp-content/uploads/myway_banner_344x100.jpg" alt="MyWay Logo"/></a></p>';
         echo '<p><a href="/about/school-year-information"><img src="http://www.wrdsb.ca/wp-content/uploads/schoolyearinformation.jpg" alt="School Year Information Logo"/></a></p>';
+        echo '<p><a href="http://www.wrdsb.ca/wefi/"><img src="http://www.wrdsb.ca/wp-content/uploads/wefi_banner.jpg" alt="Waterloo Education Foundation Inc. (WEFI)"/></a></p>';
       }
       if (!is_front_page()) {
         get_sidebar('lmenu');
@@ -30,6 +31,7 @@
       if (is_front_page() && wrdsb_i_am_a_school()) {
         echo '<p><a href="http://myway.wrdsb.ca"><img src="http://www.wrdsb.ca/wp-content/uploads/myway_banner_344x100.jpg" alt="MyWay Logo"/></a></p>';
         echo '<p><a href="/about/school-year-information"><img src="http://www.wrdsb.ca/wp-content/uploads/schoolyearinformation_344x100.jpg" alt="School Year Information Logo"/></a></p>';
+        echo '<p><a href="http://www.wrdsb.ca/wefi/"><img src="http://www.wrdsb.ca/wp-content/uploads/wefi_banner.jpg" alt="Waterloo Education Foundation Inc. (WEFI)"/></a></p>';
       }
       if (!is_front_page()) {
         get_sidebar('lmenu');
@@ -114,6 +116,7 @@
       if (is_front_page() && wrdsb_i_am_a_school()) {
         echo '<p><a href="http://myway.wrdsb.ca"><img src="http://www.wrdsb.ca/wp-content/uploads/myway_banner_344x100.jpg" alt="MyWay Logo"/></a></p>';
         echo '<p><a href="/about/school-year-information"><img src="http://www.wrdsb.ca/wp-content/uploads/schoolyearinformation_344x100.jpg" alt="School Year Information Logo"/></a></p>';
+        echo '<p><a href="http://www.wrdsb.ca/wefi/"><img src="http://www.wrdsb.ca/wp-content/uploads/wefi_banner.jpg" alt="Waterloo Education Foundation Inc. (WEFI)"/></a></p>';
       }
       if (!is_front_page()) {
         get_sidebar('rmenu');
