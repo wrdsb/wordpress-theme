@@ -37,7 +37,7 @@ h6.copyright {
 a {
 	/*color:#12180A; removed 20140821 SZC */ /*primary*/
 	/*color: #515A45; removed 20140922 SZC per Savio Wong */
-	color: #360;
+	color: #690;
 }
 .footer a {
 	color:#71746C; /*opacity*/
@@ -45,7 +45,7 @@ a {
 a:hover, a:focus {
 	/*color:#12180A; removed 20140821 SZC */ /*primary*/
 	/*color: #515A45; removed 20140922 SZC per Savio Wong */
-	color: #360;
+	color: #690;
 }
 .footer a:hover, .footer a:focus {
 	color:#71746C; /*opacity*/
