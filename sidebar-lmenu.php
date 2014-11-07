@@ -88,7 +88,11 @@
                   }
                 }
                 if ($sibling->ID == $post->ID && $children) {
-                  echo '<ul style="background-color:#e6eff6;">';
+                  if ($post->post_parent != 0) {
+                    echo '<ul style="background-color:#e6eff6;">';
+                  } else {
+                    echo '<ul>';
+                  }
                   foreach ($children as $child) {
                     echo '<li><a href="'.get_permalink($child->ID).'">'.$child->post_title.'</a></li>';
                   }
