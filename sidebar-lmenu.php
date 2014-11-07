@@ -40,20 +40,21 @@
 
   <?php # Else we display a pages menu by default ?>
   <?php else:
-    $exclude = "";
     $siblings = get_pages(array(
+      'sort_order' => 'ASC',
+      'sort_column' => 'menu_order',
+      'hierarchical' => 0,
       'parent' => $post->post_parent,
-      'exclude' => $post->ID, 
       'post_type' => 'page',
     ));
     $children = get_pages(array(
       'sort_order' => 'ASC',
       'sort_column' => 'menu_order',
+      'hierarchical' => 0,
       'parent' => $post->ID,
       'post_type' => 'page',
     ));
   ?>
-    <?php if ($post->post_parent != 0) { ?>
     <div class="sub-navbar-header">
     <button type="button" class="navbar-toggle toggle-subnav" data-toggle="collapse" data-target=".sub-navbar-collapse">
       <span class="sr-only">Toggle navigation</span>
@@ -65,61 +66,33 @@
   </div>
       <div class="collapse sub-navbar-collapse">
         <div class="sub-menu-heading">
-          <span><a href="<?php echo get_permalink($post->post_parent); ?>"><?php echo get_the_title($post->post_parent); ?></a></span>
+          <?php if ($post->post_parent != 0) { ?>
+            <span><a href="<?php echo get_permalink($post->post_parent); ?>"><?php echo get_the_title($post->post_parent); ?></a></span>
+          <?php } else { ?>
+            <span><a href="<?php echo get_permalink($post->ID); ?>"><?php echo get_the_title($post->ID); ?></a></span>
+          <?php } ?>
         </div>
         <div class="sub-menu-items">
           <ul>
             <?php 
               foreach ($siblings as $sibling) {
-                # Get children of sibling
-                $nieces = get_pages(array(
-                  'parent' => $sibling->ID
-                ));
-                # Exclude those children
-                foreach ($nieces as $niece) {
-                  $exclude .= $niece->ID . ",";
+                if ($sibling->post_parent != 0) {
+                  echo '<li><a href="'.get_permalink($sibling->ID).'">'.$sibling->post_title.'</a>';
+                }
+                if ($sibling->ID == $post->ID && $children) {
+                  echo '<ul>';
+                  foreach ($children as $child) {
+                    echo '<li><a href="'.get_permalink($child->ID).'">'.$child->post_title.'</a></li>';
+                  }
+                  echo '</ul>';
+                }
+                if ($sibling->post_parent != 0) {
+                  echo '</li>';
                 }
               }
-              wp_list_pages(array(
-                "child_of" => $post->post_parent,
-                "exclude" => $exclude,
-                "link_before" => "",
-                "title_li" => "",
-                "sort_column" => "menu_order"
-              ));
             ?>
           </ul>
         </div>
       </div>
-    <?php } elseif (($post->post_parent == 0) and ($children)) { ?>
-    <div class="sub-navbar-header">
-    <button type="button" class="navbar-toggle toggle-subnav" data-toggle="collapse" data-target=".sub-navbar-collapse">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-    <span class="navbar-brand">Subnav</span>
-  </div>
-      <div class="collapse sub-navbar-collapse">
-        <div class="sub-menu-heading">
-          <span><a href="<?php echo get_permalink($post->post_parent); ?>"><?php echo get_the_title($post->post_parent); ?></a></span>
-        </div>
-        <div class="sub-menu-items">
-          <ul>
-            <?php
-              wp_list_pages(array(
-                "child_of" => $post->ID,
-                "depth" => 1,
-                "link_before" => "",
-                "title_li" => "",
-                "sort_column" => "menu_order"
-              ));
-            ?>
-          </ul>
-        </div>
-      </div>
-    <?php } ?>
-
   <?php endif ?>
 </div> <!-- end navigation -->
