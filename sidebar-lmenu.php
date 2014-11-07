@@ -80,7 +80,7 @@
                   echo '<li><a href="'.get_permalink($sibling->ID).'">'.$sibling->post_title.'</a>';
                 }
                 if ($sibling->ID == $post->ID && $children) {
-                  echo '<ul>';
+                  echo '<ul style="background-color:#b2cee6;">';
                   foreach ($children as $child) {
                     echo '<li><a href="'.get_permalink($child->ID).'">'.$child->post_title.'</a></li>';
                   }
