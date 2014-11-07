@@ -77,16 +77,27 @@
             <?php 
               foreach ($siblings as $sibling) {
                 if ($sibling->post_parent != 0) {
-                  echo '<li><a href="'.get_permalink($sibling->ID).'">'.$sibling->post_title.'</a>';
+                  if ($sibling->ID == $post->ID) {
+                    echo '<li>';
+                    echo '<strong>';
+                    echo '<a href="'.get_permalink($sibling->ID).'">'.$sibling->post_title.'</a>';
+                    echo '</strong>';
+                  } else {
+                    echo '<li>';
+                    echo '<a href="'.get_permalink($sibling->ID).'">'.$sibling->post_title.'</a>';
+                  }
                 }
                 if ($sibling->ID == $post->ID && $children) {
-                  echo '<ul style="background-color:#b2cee6;">';
+                  echo '<ul style="background-color:#e6eff6;">';
                   foreach ($children as $child) {
                     echo '<li><a href="'.get_permalink($child->ID).'">'.$child->post_title.'</a></li>';
                   }
                   echo '</ul>';
                 }
                 if ($sibling->post_parent != 0) {
+                  if ($sibling->ID == $post->ID) {
+                    echo '</strong>';
+                  }
                   echo '</li>';
                 }
               }
