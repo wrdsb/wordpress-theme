@@ -22,8 +22,12 @@
 /*sub navigation*/
 .sub-menu-heading, .sub-menu-heading a {
 	background-color:#0A1241; /*primary*/
+}
+
+.sub-menu-heading a:hover {
 	color: #6C718D; /* SZC 2014-11-10 */
 }
+
 .sub-menu-items {
 	background-color:#CED0D9; /*light*/
 }
