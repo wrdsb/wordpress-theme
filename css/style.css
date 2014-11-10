@@ -63,6 +63,11 @@ a {
 .nav >li.current_page_item {
 	background-color:#669ecc;
 }
+
+.nav_current_page_children_container {
+	background-color:#e6eff6;
+}
+
 .jumbotron {
 	padding:32px 24px;
 	padding-bottom:48px;
