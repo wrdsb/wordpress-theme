@@ -35,10 +35,11 @@ h6.copyright {
 }
 /*links*/
 a {
-	color:#0A1241; /*primary*/
+	/*color:#0A1241; SZC 2014-11-10 */ /*primary*/
+	color: #6C718D;
 }
 .footer a {
-	color:#6C718D; /*opacity*/
+	color: #B6B8C6; /* SZC 2014-11-10 #6C718D; */ /*opacity*/
 }
 a:hover, a:focus {
 	color:#0A1241; /*primary*/
