@@ -24,11 +24,11 @@
 	background-color:#660202; /*primary*/
 }
 .sub-menu-items {
-	background-color:#E0CCCC; /*light*/
+	background-color:#E6CA89; /*light*/
 }
 /*headings*/
 h1, h2, h3, h4, h5, h6 {
-	color:#660202; /*primary*/
+	color:#6A531D; /*primary*/
 }
 
 h6.copyright {
@@ -36,13 +36,13 @@ h6.copyright {
 }
 /*links*/
 a {
-	color:#660202; /*primary*/
+	color:#6A531D; /*primary*/
 }
 .footer a {
 	color:#A36767; /*opacity*/
 }
 a:hover, a:focus {
-	color:#660202; /*primary*/
+	color:#6A531D; /*primary*/
 }
 .footer a:hover, .footer a:focus {
 	color:#A36767; /*opacity*/
