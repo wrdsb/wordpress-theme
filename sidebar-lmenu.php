@@ -89,7 +89,7 @@
                 }
                 if ($sibling->ID == $post->ID && $children) {
                   if ($post->post_parent != 0) {
-                    echo '<ul style="background-color:#e6eff6;">';
+                    echo '<ul class="nav_current_page_children_container">';
                   } else {
                     echo '<ul>';
                   }
