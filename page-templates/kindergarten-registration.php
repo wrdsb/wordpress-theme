@@ -91,8 +91,8 @@ Template Name: Kindergarten Reg
   </li>
   <li>
     <p>Download, print and complete the form/s below required for student registration.</p>
-    <p><a href="http://staff.wrdsb.ca/policyprocedure/?page_id=443">Student Registration Form (IS-09-H)</a> – be sure to complete both sides and provide your signature at the bottom of the second page.</p>
-    <p><a href="http://staff.wrdsb.ca/policyprocedure/?page_id=347">Confirmation of Pupil Eligibility for ESL Funding - (FS-09-ESL)</a> – this form is only to be completed if your child was born in a country outside of Canada</p>
+    <p><a href="http://staff.wrdsb.ca/policyprocedure/files/2010/08/Student_Reg.pdf">Student Registration Form (IS-09-H)</a> – be sure to complete both sides and provide your signature at the bottom of the second page.</p>
+    <p><a href="http://staff.wrdsb.ca/policyprocedure/files/2012/07/FS-09-ESL.pdf">Confirmation of Pupil Eligibility for ESL Funding - (FS-09-ESL)</a> – this form is only to be completed if your child was born in a country outside of Canada</p>
     <p>Student Immunization Information Form – you may <a href="https://e-immunization.regionofwaterloo.ca/">submit your child’s immunization information online</a> directly to the Region of Waterloo Public Health.</p>
     <p>Form families unable to submit the immunization information electronically, a paper copy of the form may be obtained from your school office at the time of registration</p>
   </li>
