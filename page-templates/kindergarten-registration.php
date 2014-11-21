@@ -149,10 +149,24 @@ Template Name: Kindergarten Reg
     <?php
       // Start the Loop.
       while ( have_posts() ) : the_post();
-      
-        // Include the page content template.
-        get_template_part( 'content', 'page' );
-
+        the_title('<h1>', '</h1>');
+        the_content();
+        edit_post_link('Edit');
+        $igc=0;
+        foreach((get_the_category()) as $category) {
+          if (strtolower($category->cat_name) != 'uncategorized') {
+            $igc = 1;
+          }
+        }
+        if ($igc == 1) {
+          echo '<p>Categories: ';
+          the_category(',');
+          echo '</p>';
+        }
+        $number_of_tags = count(get_terms('post_tags'));
+        if ($number_of_tags > 0) {
+          the_tags();
+        }
         // If comments are open or we have at least one comment, load up the comment template.
         if ( comments_open() || get_comments_number() ) {
           comments_template();
