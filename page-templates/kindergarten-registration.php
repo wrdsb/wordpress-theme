@@ -69,7 +69,7 @@ Template Name: Kindergarten Reg
       }
     ?>
 
-<h1>Kindergarten Registration</h1>
+<h1>How to Register for Kindergarten</h1>
 <p>
   We are pleased to provide new Kindergarten parents with an opportunity 
   to access the forms required for student registration and review 
@@ -98,14 +98,14 @@ Template Name: Kindergarten Reg
   </li>
   <li>
     <p>Bring your completed forms and required documentation to the registration appointment.</p>
-    <p>Proof of Birth – You are required to bring only one of the following acceptable documents.</p>
+    <p>Proof of Birth – You are required to bring only one of the following acceptable documents:</p>
     <ul>
       <li>Canadian Birth Certificate</li>
       <li>Baptismal Certificate</li>
       <li>Statement of Live Birth</li>
       <li>Canadian Passport</li>
     </ul>
-    <p>Proof of Address – You are required to bring only one of the following acceptable documents.</p>
+    <p>Proof of Address – You are required to bring only one of the following acceptable documents:</p>
     <ul>
       <li>Lease/Rental Agreement</li>
       <li>Real Estate Document</li>
@@ -114,7 +114,7 @@ Template Name: Kindergarten Reg
       <li>Bank Statement</li>
       <li>Credit Card Statement</li>
     </ul>
-    <p>Canadian Citizenship or Immigration Status (only for students born outside of Canada)</p>
+    <p>Canadian Citizenship or Immigration Status (only for students born outside of Canada):</p>
     <ul>
       <li>Canadian Passport</li>
       <li>Certificate of Canadian Citizenship</li>
