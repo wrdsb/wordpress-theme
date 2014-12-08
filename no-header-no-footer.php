@@ -36,6 +36,12 @@ Template Name: No Header/Footer
 h1 {
   display:none;
 }
+iframe {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    border: none; padding-top: 32px;
+    box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+}
   </style>
 </head>
 <body>
