@@ -19,10 +19,21 @@ endif; ?>
   <small class="gray-dark">Posted <?php echo get_the_date(); ?></small>
 <?php } ?>
 
-<?php // check if the post has a Post Thumbnail assigned to it.
-  if ( has_post_thumbnail() ) {
-    the_post_thumbnail('wrdsb-full-width');
-  }
+<?php
+// check if the full news item
+if (is_single()) :
+	// check if the post has a Post Thumbnail assigned to it.
+	if ( has_post_thumbnail() ) :
+ 		the_post_thumbnail('wrdsb-full-width');
+// else if part of news stream
+else :
+	// check if the post has a Post Thumbnail assigned to it.
+	if ( has_post_thumbnail()) :
+		// link Post Thumbnail to Post
+		// $post is from functions.php ?>
+		<a href="<?php echo get_permalink($post->ID) ?>"><?php echo the_post_thumbnail('wrdsb-full-width') ?></a>
+<?php
+endif;
 ?>
 
 <?php the_excerpt(); ?>
