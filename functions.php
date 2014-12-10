@@ -503,6 +503,13 @@ function wrdsb_add_excerpts_to_pages() {
   add_post_type_support('page', 'excerpt');
 }
 
+// Replaces the excerpt "[..]" more text with a link
+function new_excerpt_more($more) {
+  global $post;
+  return ' <a class="readmore" href="'. get_permalink($post->ID) . '">Read more about '. get_the_title($post->ID) .' &#133;</a>';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
+
 function wrdsb_posts_page_url() {
   if (get_option('show_on_front') == 'page') {
     return get_permalink(get_option('page_for_posts'));
