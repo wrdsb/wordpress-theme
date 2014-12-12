@@ -25,8 +25,8 @@
                 Kitchener, ON N2C 2R5<br />
               </address>
               <address>
-                Phone: 519-570-0003<br />
-                Email: <a href="mailto:info@wrdsb.on.ca">info@wrdsb.on.ca</a>
+                Switchboard: 519-570-0003<br />
+                <a href="http://www.wrdsb.ca/about-the-wrdsb/contact/">Contact Information</a>
               </address>
               <?php  
                 }
