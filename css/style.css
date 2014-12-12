@@ -356,7 +356,9 @@ background-image: url('../images/btnSearch.png');
 cursor:pointer;
 vertical-align: middle;
 }
-
+.panel-collapse ul {
+	margin-top:10px;
+}
 select {
 	height:30px;
 }
