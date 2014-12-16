@@ -59,6 +59,6 @@ endif;
 	$number_of_tags = count(get_terms('post_tags'));
 
 	if ($number_of_tags > 0) {
-		the_tags('<p class="tags">Tags: ',',','</p>');
+		the_tags('<p class="tags">Tags: ',' &bull; ','</p>');
 	}
 ?>
