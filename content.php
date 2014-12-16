@@ -49,16 +49,20 @@ endif;
 	}
 
 	if ($igc == 1) {
-		echo '<p class="categories gray-dark small">Categories: ';
-		the_category(' &bull; ');
-		echo '</p>';
+		$display_cats = the_category(' &bull; ');
 	}
-?>
 
-<?php 
 	$number_of_tags = count(get_terms('post_tags'));
 
 	if ($number_of_tags > 0) {
-		the_tags('<p class="tags gray-dark small">Tags: ',' &bull; ','</p>');
+		$display_tags = the_tags('',' &bull; ','');
+	}
+
+	if (!isset($display_cats) && isset($display_tags)) {
+		echo '<p class="categories gray-dark small">Tags: ' . $display_tags . '</p>';
+	} elseif (isset($display_cats) && !isset($display_tags)) {
+		echo '<p class="categories gray-dark small">Categories: ' . $display_cats . '</p>';
+	} elseif (isset($display_cats) && isset($display_tags)) {
+		echo '<p class="categories gray-dark small">Categories: ' . $display_cats . ' Tags: ' . $display_tags . '</p>';
 	}
 ?>
