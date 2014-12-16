@@ -16,7 +16,7 @@ else :
 endif; ?>
 
 <?php if ('post' == get_post_type()) { ?>
-  <small class="gray-dark">Posted <?php echo get_the_date(); ?></small>
+  <p class="gray-dark small">Posted <?php echo get_the_date(); ?></p>
 <?php } ?>
 
 <?php
@@ -49,7 +49,7 @@ endif;
 	}
 
 	if ($igc == 1) {
-		echo '<p class="categories">Categories: ';
+		echo '<p class="categories gray-dark small">Categories: ';
 		the_category(' &bull; ');
 		echo '</p>';
 	}
@@ -59,6 +59,6 @@ endif;
 	$number_of_tags = count(get_terms('post_tags'));
 
 	if ($number_of_tags > 0) {
-		the_tags('<p class="tags">Tags: ',' &bull; ','</p>');
+		the_tags('<p class="tags gray-dark small">Tags: ',' &bull; ','</p>');
 	}
 ?>
