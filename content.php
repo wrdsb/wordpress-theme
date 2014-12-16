@@ -49,7 +49,7 @@ endif;
 	}
 
 	if ($igc == 1) {
-		echo '<p>Categories: ';
+		echo '<p class="categories">Categories: ';
 		the_category(',');
 		echo '</p>';
 	}
