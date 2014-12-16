@@ -50,7 +50,7 @@ endif;
 
 	if ($igc == 1) {
 		echo '<p class="categories">Categories: ';
-		the_category(',');
+		the_category(' &bull; ');
 		echo '</p>';
 	}
 ?>
@@ -59,6 +59,6 @@ endif;
 	$number_of_tags = count(get_terms('post_tags'));
 
 	if ($number_of_tags > 0) {
-		the_tags();
+		the_tags('<p class="tags">Tags: ',',','</p>');
 	}
 ?>
