@@ -16,7 +16,7 @@ else :
 endif; ?>
 
 <?php if ('post' == get_post_type()) { ?>
-  <p class="gray-dark small">Posted <?php echo get_the_date(); ?></p>
+  <p class="postdate gray-dark small">Posted <?php echo get_the_date(); ?></p>
 <?php } ?>
 
 <?php
