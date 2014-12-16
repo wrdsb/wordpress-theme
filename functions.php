@@ -506,7 +506,7 @@ function wrdsb_add_excerpts_to_pages() {
 // Replaces the excerpt "[..]" more text with a link
 function new_excerpt_more($more) {
   global $post;
-  return ' <a class="readmore" href="'. get_permalink($post->ID) . '">Read more about '. get_the_title($post->ID) .' &#133;</a>';
+  return ' [...]<p class="readmore"><a href="'. get_permalink($post->ID) . '"><strong>Read more about</strong> <cite>'. get_the_title($post->ID) .'</cite> &#187;</a></p>';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 

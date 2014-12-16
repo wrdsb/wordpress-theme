@@ -16,7 +16,7 @@ else :
 endif; ?>
 
 <?php if ('post' == get_post_type()) { ?>
-  <small class="gray-dark">Posted <?php echo get_the_date(); ?></small>
+  <p class="postdate gray-dark small">Posted <?php echo get_the_date(); ?></p>
 <?php } ?>
 
 <?php
@@ -49,16 +49,29 @@ endif;
 	}
 
 	if ($igc == 1) {
-		echo '<p>Categories: ';
-		the_category(',');
-		echo '</p>';
+		$display_cats = 1;
 	}
-?>
 
-<?php 
-	$number_of_tags = count(get_terms('post_tags'));
+	$number_of_tags = count(get_the_tags());
 
-	if ($number_of_tags > 0) {
-		the_tags();
+	//if ($number_of_tags > 0) {
+	if (get_the_tags()) {
+		$display_tags = 1;
+	}
+
+	if (!isset($display_cats) && isset($display_tags)) {
+		echo '<p class="categories gray-dark small">Tags: ';
+                the_tags('',' &bull; ','');
+                echo '</p>';
+	} elseif (isset($display_cats) && !isset($display_tags)) {
+		echo '<p class="categories gray-dark small">Categories: ';
+                the_category(' &bull; ');
+                echo '</p>';
+	} elseif (isset($display_cats) && isset($display_tags)) {
+		echo '<p class="categories gray-dark small">Categories: ';
+                the_category(' &bull; ');
+                echo ' Tags: ';
+                the_tags('',' &bull; ','');
+                echo '</p>';
 	}
 ?>
