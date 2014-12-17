@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Kindergarten Reg
+Template Name: Kindergarten Registration
 */
 ?>
 <?php get_header(); ?>
@@ -82,65 +82,69 @@ Template Name: Kindergarten Reg
 </p>
 <ol>
   <li>
-    <p>Determine which school your child at should attend.</p>
-    <p>To determine boundary eligibility visit the <a href="https://bpweb.stswr.ca/">Student Transportation Services of Waterloo Region (STSWR) website</a>.</p>
+    <p>Determine which school your child should attend.</p>
+    <p><a target="_blank" href="https://bpweb.stswr.ca/">Which school do I attend?</a>.</p>
   </li>
   <li>
     <p>Contact your child’s school to set up an appointment for registration.</p>
-    <p><a href="http://www.wrdsb.ca/our-schools/schools/">WRDSB Schools</a></p>
+    <p><a target="_blank" href="http://www.wrdsb.ca/our-schools/schools/">WRDSB Schools</a></p>
   </li>
   <li>
-    <p>Download, print and complete the form/s below required for student registration.</p>
-    <p><a href="http://www.wrdsb.ca/wp-content/uploads/Student_Reg.pdf">Student Registration Form (IS-09-H)</a> – be sure to complete both sides and provide your signature at the bottom of the second page.</p>
-    <p><a href="http://www.wrdsb.ca/wp-content/uploads/FS-09-ESL.pdf">Confirmation of Pupil Eligibility for ESL Funding - (FS-09-ESL)</a> – this form is only to be completed if your child was born in a country outside of Canada</p>
-    <p>Student Immunization Information Form – you may <a href="https://e-immunization.regionofwaterloo.ca/">submit your child’s immunization information online</a> directly to the Region of Waterloo Public Health.</p>
-    <p>Form families unable to submit the immunization information electronically, a paper copy of the form may be obtained from your school office at the time of registration</p>
+    <p>You may download, print and complete the form(s) below in preparation for your registration appointment.</p>
+    <p><a target="_blank" href="http://www.wrdsb.ca/wp-content/uploads/Student_Reg.pdf">Student Registration Form (IS-09-H)</a> – be sure to complete both sides and provide your signature at the bottom of the second page.</p>
+    <p><a target="_blank" href="http://www.wrdsb.ca/wp-content/uploads/FS-09-ESL.pdf">Confirmation of Pupil Eligibility for ESL Funding - (FS-09-ESL)</a> – this form is only to be completed if your child was born in a country outside of Canada.</p>
+    <p><a target="_blank" href="https://e-immunization.regionofwaterloo.ca/">Student Immunization Information</a> - submit your child's immunization information online</a> directly to the Region of Waterloo Public Health.</p>
+    <p><a target="_blank" href="http://www.wrdsb.ca/wp-content/uploads/Transportation-Do-Not-Ride-Form-final.pdf">Do Not Ride Form</a> - This form is to be completed by parents whose children qualify for bussing but who will not ride because the parent has made alternative arrangements.</p>
+    <p>For families unable to submit the immunization information electronically, a paper copy of the form may be obtained from your school office at the time of registration</p>
+    <p>Families unable to complete the above forms electronically may obtain paper copies from their school office at time of registration.</p>
   </li>
   <li>
-    <p>Bring your completed forms and required documentation to the registration appointment.</p>
-    <p>Proof of Birth – You are required to bring only one of the following acceptable documents:</p>
+    <p>In addition to the above forms please bring the following documentation to your registration appointment.</p>
+    <p>Proof of Birth – You are required to bring <strong>one</strong> of the following documents:</p>
     <ul>
       <li>Canadian Birth Certificate</li>
       <li>Baptismal Certificate</li>
       <li>Statement of Live Birth</li>
       <li>Canadian Passport</li>
     </ul>
-    <p>Proof of Address – You are required to bring only one of the following acceptable documents:</p>
+    <p>Proof of Address – You are required to bring <strong>one</strong> of the following documents:</p>
     <ul>
       <li>Lease/Rental Agreement</li>
       <li>Real Estate Document</li>
-      <li>Driver’s License</li>
-      <li>Utility Bill (gas, hydro, water, ect.)</li>
+      <li>Driver's License</li>
+      <li>Utility Bill (gas, hydro, water, etc.)</li>
       <li>Bank Statement</li>
       <li>Credit Card Statement</li>
     </ul>
-    <p>Canadian Citizenship or Immigration Status (only for students born outside of Canada):</p>
+    <p>Canadian Citizenship or Immigration Status - If your child was born outside of Canada, you are required to bring <strong>one</strong> of the following documents:</p>
     <ul>
       <li>Canadian Passport</li>
       <li>Certificate of Canadian Citizenship</li>
       <li>Confirmation of Permanent Residence</li>
       <li>Permanent Resident Card</li>
       <li>Certificate of Indian Status Card</li>
-      <li>Letter of Admission assigned by the WRDSB enrolment officer</li>
+      <li>Letter of Admission assigned by the WRDSB enrolment officer, 519-570-0003 ext. 4350</li>
     </ul>
   </li>
   <li>
-    <p>Review the following Kindergarten Parent Information Package inserts for important information:</p>
+    <p>For more information about kindergarten parents are encouraged to review the following:</p>
     <ul>
-      <li>Off to School Booklet</li>
-      <li>Extended Day Registration Flyer</li>
-      <li>Welcome to your School Library</li>
-      <li>Waterloo Region Referral List</li>
-      <li>Eye See.....Eye Learn</li>
+      <li><a target="_blank" href="http://www.wrdsb.ca/wp-content/uploads/Off-to-School-Booklet.pdf">Off to School Booklet</a></li>
+      <li><a target="_blank" href="http://www.wrdsb.ca/wp-content/uploads/Before_After-Programs-2015-web.pdf">Before and After School Programs</a></li>
+      <li><a target="_blank" href="http://www.wrdsb.ca/wp-content/uploads/Kindergarten_Library_Flyer.pdf">Welcome to your School Library</a></li>
+      <li><a target="_blank" href="http://www.wrdsb.ca/wp-content/uploads/Referral-List-2014-15.pdf">Region of Waterloo Referral List</a></li>
+      <li><a target="_blank" href="">Public health letter regarding Nipissing Screen</a></li>
+      <li><a target="_blank" href="">Nutri-eStep program information</a></li>
+      <li><a target="_blank" href="http://www.wrdsb.ca/wp-content/uploads/Eye-See-Eye-Learn.pdf">Eye See.....Eye Learn</a></li>
     </ul>
   </li>
   <li>
-    <p>A Welcome to Kindergarten – Orientation Event will be offered at your child’s school in the spring. Be sure to ask for these details at the time of your registration appointment.</p>
+    <p>Spring Family Orientation Event - schools will offer an opportunity for families to be welcomed and learn more about the Kindergarten experience. Be sure to ask for these details at the time of your registration appointment.</p>
   </li>
   <li>
     <p>To receive ongoing communications throughout the school year:</p>
     <ul>
-      <li>Subscribe by email on the school’s website</li>
+      <li>Subscribe by email on your school's website</li>
       <li>Register for School-Day if your school uses School-Day</li>
     </ul>
   </li>
