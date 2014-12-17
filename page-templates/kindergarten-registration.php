@@ -83,7 +83,7 @@ Template Name: Kindergarten Registration
 <ol>
   <li>
     <p>Determine which school your child should attend.</p>
-    <p><a target="_blank" href="https://bpweb.stswr.ca/">Which school do I attend?</a>.</p>
+    <p><a target="_blank" href="https://bpweb.stswr.ca/">Which school do I attend?</a></p>
   </li>
   <li>
     <p>Contact your child’s school to set up an appointment for registration.</p>
