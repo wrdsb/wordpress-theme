@@ -133,8 +133,8 @@ Template Name: Kindergarten Registration
       <li><a target="_blank" href="http://www.wrdsb.ca/wp-content/uploads/Before_After-Programs-2015-web.pdf">Before and After School Programs</a></li>
       <li><a target="_blank" href="http://www.wrdsb.ca/wp-content/uploads/Kindergarten_Library_Flyer.pdf">Welcome to your School Library</a></li>
       <li><a target="_blank" href="http://www.wrdsb.ca/wp-content/uploads/Referral-List-2014-15.pdf">Region of Waterloo Referral List</a></li>
-      <li><a target="_blank" href="">Public health letter regarding Nipissing Screen</a></li>
-      <li><a target="_blank" href="">Nutri-eStep program information</a></li>
+      <li><a target="_blank" href="http://www.wrdsb.ca/wp-content/uploads/Nipissing-Letter-3-year-WRDSB_letteronly.pdf">Public health letter regarding Nipissing Screen</a></li>
+      <li><a target="_blank" href="http://www.wrdsb.ca/wp-content/uploads/Nutri-eSTEP-flyerE_2014.pdf">Nutri-eStep program information</a></li>
       <li><a target="_blank" href="http://www.wrdsb.ca/wp-content/uploads/Eye-See-Eye-Learn.pdf">Eye See.....Eye Learn</a></li>
     </ul>
   </li>
