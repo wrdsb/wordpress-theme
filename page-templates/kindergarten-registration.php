@@ -70,16 +70,8 @@ Template Name: Kindergarten Registration
     ?>
 
 <h1>How to Register for Kindergarten</h1>
-<p>
-  We are pleased to provide new Kindergarten parents with an opportunity 
-  to access the forms required for student registration and review 
-  pertinent information online. Links to the forms and a list of documents 
-  you will need to bring to your registration appointment can be 
-  found on this page.
-</p>
-<p>
-  How to Register:
-</p>
+<p>We are pleased to provide new Kindergarten parents with an opportunity to access the forms required for student registration and review pertinent information online. Links to the forms and a list of documents you will need to bring to your registration appointment can be found on this page.</p>
+<h2>How to Register:</h2>
 <ol>
   <li>
     <p>Determine which school your child should attend.</p>
@@ -127,7 +119,7 @@ Template Name: Kindergarten Registration
     </ul>
   </li>
   <li>
-    <p>For more information about kindergarten parents are encouraged to review the following:</p>
+    <p>For more information about Kindergarten, Before and After School Programs, and other important information, parents are encouraged to review the following:</p>
     <ul>
       <li><a target="_blank" href="http://www.wrdsb.ca/wp-content/uploads/Off-to-School-Booklet.pdf">Off to School Booklet</a></li>
       <li><a target="_blank" href="http://www.wrdsb.ca/wp-content/uploads/Before_After-Programs-2015-web.pdf">Before and After School Programs</a></li>
@@ -139,7 +131,7 @@ Template Name: Kindergarten Registration
     </ul>
   </li>
   <li>
-    <p>Spring Family Orientation Event - schools will offer an opportunity for families to be welcomed and learn more about the Kindergarten experience. Be sure to ask for these details at the time of your registration appointment.</p>
+    <p>Spring Family Orientation Event - schools may offer an opportunity for families to be welcomed and learn more about the Kindergarten experience. Be sure to ask for these details at the time of your registration appointment.</p>
   </li>
   <li>
     <p>To receive ongoing communications throughout the school year:</p>
