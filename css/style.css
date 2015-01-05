@@ -434,6 +434,31 @@ h6.copyright > a {
 .s {
 	color: #d44950;
 }
+.bs-example {
+border: 1px solid #ccc;
+padding: 45px 15px 15px;;
+position:relative;
+}
+.highlight {
+border-left: 1px solid #ccc;
+border-right: 1px solid #ccc;
+border-bottom: 1px solid #ccc;
+}
+.highlight > pre {
+border:none;
+border-radius:none;
+}
+.bs-example:after {
+position:absolute;
+top:15px;
+left:15px;
+font-size:12px;
+font-weight:700px;
+color:#959595;
+text-transform: uppercase;
+letter-spacing:1px;
+content: "Example";
+}
 	@media (max-width: 768px) {
 		.header {
 			display:none;
