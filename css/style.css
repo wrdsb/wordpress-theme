@@ -425,6 +425,15 @@ select {
 h6.copyright > a {
 	display:inline-block;
 }
+.nt {
+	color:#2f6f9f;
+}
+.na {
+	color: #4f9fcf;
+}
+.s {
+	color: #d44950;
+}
 	@media (max-width: 768px) {
 		.header {
 			display:none;
