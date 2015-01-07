@@ -9,17 +9,8 @@
  * @since WRDSB 1.0
  */
 ?>
-<?php if (is_single()) :
-  the_title( '<h3>', '</h3>' );
-else :
-  the_title( '<h3><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h3>' );
-endif; ?>
 
-<?php if ('post' == get_post_type()) { ?>
-  <p class="postdate gray-dark small">Posted <?php echo get_the_date(); ?></p>
-<?php } ?>
-
-<?php
+<?php //Featured Image
 // check if the full news item
 if (is_single()) :
 	// check if the post has a Post Thumbnail assigned to it.
@@ -37,6 +28,16 @@ else :
         endif;
 endif;
 ?>
+
+<?php if (is_single()) :
+  the_title( '<h3>', '</h3>' );
+else :
+  the_title( '<h3><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h3>' );
+endif; ?>
+
+<?php if ('post' == get_post_type()) { ?>
+  <p class="postdate gray-dark small">Posted <?php echo get_the_date(); ?></p>
+<?php } ?>
 
 <?php the_excerpt(); ?>
 
