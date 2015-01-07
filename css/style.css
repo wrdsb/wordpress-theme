@@ -9,6 +9,7 @@
 	border-top: 1px solid #eee;
 	margin-top: .5em;
 	padding-top: .5em;
+	margin-bottom: 1em;
 }
 
 p.categories + p.tags {
