@@ -76,7 +76,7 @@
     endif
     ?>
 
-            <h2>News & Announcements</h2>
+            <h2>News &amp; Announcements</h2>
             <?php
               // Start the Loop.
               while ( have_posts() ) : the_post();
