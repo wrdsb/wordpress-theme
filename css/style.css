@@ -2,7 +2,22 @@
 
 /* unused
 .postdate {}
-.tags {}
+.nocomments {}
+.post-edit-link {
+	position: absolute;
+	top: 1em;
+	right: 1em;
+	padding: 0 1em;
+	text-transform: lowercase;
+	background-color: #7ac143;
+	border: 2px solid #c6e2a4;
+	color: #fff;
+}
+.post-edit-link:hover {
+	background-color: #005daa;
+	border: 2px solid #669ecc;
+	color: #fff;
+}
 */
 
 .categories {
