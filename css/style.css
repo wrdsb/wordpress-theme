@@ -12,11 +12,6 @@
 	margin-bottom: 3em;
 }
 
-p.categories + p.tags {
-	margin-top: 0;
-	padding-top: .5em;
-}
-
 /*** General Styles ***/
 
 /* Cite APA Style */
