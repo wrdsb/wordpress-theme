@@ -942,6 +942,12 @@ a.noicon[href $='pdf'] {
 	padding-left: 0;
 }
 
+/* remove the icon from images in the sidebar that link to a PDF  */
+.sidebar-left.widget-area a[href $='pdf'] {
+	background: none;
+	padding-left: 0;
+}
+
 a[href $='xls'] {
 	background-image: url(../images/icons_filetype/icon_xls_small.gif);
 	background-repeat: no-repeat;
