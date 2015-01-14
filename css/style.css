@@ -1048,7 +1048,7 @@ margin: 0 auto;
 width: 656px;
 height: 656px;
 font-style:normal;
-font-family: Arial Rounded MT Bold, Arial Rounded, 'Nunito', Arial, Sans-serif;
+font-family: Arial Rounded MT Bold, Arial Rounded, 'Nunito', Arial, Sans-serif !important;
 font-weight:normal;
 font-size: 10px;
 line-height:12px;
@@ -1072,6 +1072,7 @@ z-index:10;
 
 .bipsa-container img {
 position: absolute;
+top: 0;
 z-index: 1;
 }
 
@@ -1087,6 +1088,7 @@ height: 85px;
 width: 95px;
 top: 145px;
 left: 279px;
+font-family: Arial Rounded MT Bold, Arial Rounded, 'Nunito', Arial, Sans-serif !important;
 }
 
 .bipsa-container .triangle.two {
@@ -1094,6 +1096,7 @@ height: 60px;
 width: 185px;
 top: 236px;
 left: 234px;
+font-family: Arial Rounded MT Bold, Arial Rounded, 'Nunito', Arial, Sans-serif !important;
 }
 
 .bipsa-container .triangle.three {
@@ -1101,6 +1104,7 @@ height: 63px;
 width: 252px;
 top: 290px;
 left: 200px;
+font-family: Arial Rounded MT Bold, Arial Rounded, 'Nunito', Arial, Sans-serif !important;
 }
 
 .bipsa-container .triangle.four {
@@ -1108,6 +1112,7 @@ height: 80px;
 width: 340px;
 top: 355px;
 left: 155px;
+font-family: Arial Rounded MT Bold, Arial Rounded, 'Nunito', Arial, Sans-serif !important;
 }
 
 .bipsa-container .triangle.four a, .bipsa-container .triangle.five a {
@@ -1125,15 +1130,18 @@ height: 40px;
 width: 375px;
 top: 450px;
 left: 135px;
+font-family: Arial Rounded MT Bold, Arial Rounded, 'Nunito', Arial, Sans-serif !important;
 }
 
 .bipsa-container .triangle span {
+font-family: Arial Rounded MT Bold, Arial Rounded, 'Nunito', Arial, Sans-serif !important;
 font-size: 12px;
 margin-bottom: 5px;
 display: block;
 }
 
 .bipsa-container .triangle span.nolink {
+font-family: Arial Rounded MT Bold, Arial Rounded, 'Nunito', Arial, Sans-serif !important;
 text-decoration: none;
 font-size: 10px;
 color: #042eaa;
@@ -1142,6 +1150,7 @@ margin-top:3px;
 }
 
 .bipsa-container .triangle .assessment {
+font-family: Arial Rounded MT Bold, Arial Rounded, 'Nunito', Arial, Sans-serif !important;
 font-style: italic;
 font-size: 11px;
 }
