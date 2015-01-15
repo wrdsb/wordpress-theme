@@ -236,7 +236,7 @@ ul.footer-links li {
 .tweet {
 	margin-bottom:18px;
 }
-p.copyright { /* was h6.copyright */
+p.copyright, h6.copyright { /* was h6.copyright */
 	color:#669ECC;
 	font-size: 12px;
 }
@@ -434,7 +434,7 @@ select {
 	font-weight: bold;
 	display:block;
 }
-h6.copyright > a {
+h6.copyright > a, p.copyright > a {
 	display:inline-block;
 }
 .nt {
@@ -500,7 +500,7 @@ content: "Example";
 		background-size:50px 50px;
 		padding-left:60px;
 		}*/
-		h6.copyright {
+		h6.copyright, p.copyright {
 			text-align:left;
 		}
 		.navbar-header {
