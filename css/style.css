@@ -236,7 +236,7 @@ ul.footer-links li {
 .tweet {
 	margin-bottom:18px;
 }
-p.copyright, h6.copyright { /* was h6.copyright */
+p.copyright { /* was h6.copyright */
 	color:#669ECC;
 	font-size: 12px;
 }
