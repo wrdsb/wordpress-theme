@@ -59,11 +59,19 @@
 
           <div class="row">
             <div class="col-sm-4">
-              <h6 class="copyright">A WRDSB-ITS Solution</h6>
+              <p class="copyright">A WRDSB-ITS Solution</p>
             </div>
             <div class="col-sm-4">
-              <h6 class="copyright">
-                <?php wp_loginout(); ?>
+              <p class="copyright">
+                  <?php 
+                  $parsed_url = parse_url(network_site_url());
+                  $host = explode('.', $parsed_url['host']);
+                  if ($host[0] == 'schools') { ?>
+                        <a target="_blank" href="http://schools.wrdsb.ca/<?php $fulldomain = explode('.',$_SERVER['HTTP_HOST']); echo $fulldomain[0]; ?>/wp-login.php">Log in</a>
+                  <?php } else {
+                  wp_loginout(); 
+                  }?>
+                
                 &nbsp;&nbsp; | &nbsp;&nbsp;
                 <a href="http://staff.wrdsb.ca">Log in to Staff Website</a>
                 <?php 
@@ -73,10 +81,10 @@
                     &nbsp;&nbsp; | &nbsp;&nbsp;
                     <a target="_blank" href="http://staff.wrdsb.ca/<?php $fulldomain = explode('.',$_SERVER['HTTP_HOST']); echo $fulldomain[0]; ?>">Log in to School Handbook</a>
                   <?php } ?>
-              </h6>
+              </p>
             </div>
             <div class="col-sm-4">
-              <h6 class="copyright text-right">&copy; Waterloo Region District School Board, 2014</h6>
+              <p class="copyright text-right">&copy; WRDSB 2015</p>
             </div>
           </div>
         </div>
