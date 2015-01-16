@@ -86,6 +86,7 @@ Template Name: Kindergarten Registration
     <p><a target="_blank" href="http://www.wrdsb.ca/wp-content/uploads/Student_Reg.pdf">Student Registration Form (IS-09-H)</a> – be sure to complete both sides and provide your signature at the bottom of the second page.</p>
     <p><a target="_blank" href="http://www.wrdsb.ca/wp-content/uploads/FS-09-ESL.pdf">Confirmation of Pupil Eligibility for ESL Funding - (FS-09-ESL)</a> – this form is only to be completed if your child was born in a country outside of Canada.</p>
     <p><a target="_blank" href="https://e-immunization.regionofwaterloo.ca/">Student Immunization Information</a> - submit your child's immunization information online</a> directly to the Region of Waterloo Public Health.</p>
+    <p><a target="_blank" href="http://www.wrdsb.ca/wp-content/uploads/DOCS_ADMIN-1786732-v1-VACCINE_PREVENTABLE_DISEASE_TRANSLAT.pdf">Translation Document</a> - This document provides instruction for parents submitting student immunization information in several languages</p>
     <p><a target="_blank" href="http://www.wrdsb.ca/wp-content/uploads/Transportation-Do-Not-Ride-Form-final.pdf">Do Not Ride Form</a> - This form is to be completed by parents whose children qualify for bussing but who will not ride because the parent has made alternative arrangements.</p>
     <p>Families unable to complete the above forms electronically may obtain paper copies from their school office at time of registration.</p>
   </li>
