@@ -70,10 +70,9 @@
   <?php endwhile; else: ?>
   <p> <?php _e('Sorry, no posts matched your criteria.'); ?> </p>
 <?php endif; ?>
-<p><?php previous_post_link('&laquo; Previous Post: %link'); ?> <?php if(!get_adjacent_post(false, '', true)) { echo ''; } // if there are no older articles ?></p>
-<p><?php next_post_link('Next Post: %link &raquo;'); ?> <?php if(!get_adjacent_post(false, '', false)) { echo ''; } // if there are no newer articles ?> </p>
-
-        <?php edit_post_link(__('<strong>Edit</strong>'));?>
+<?php previous_post_link('<p class="prevpost">&laquo; Previous Post: %link</p>'); ?> <?php if(!get_adjacent_post(false, '', true)) { echo ''; } // if there are no older articles ?>
+<?php next_post_link('<p class="nextpost">Next Post: %link &raquo;</p>'); ?> <?php if(!get_adjacent_post(false, '', false)) { echo ''; } // if there are no newer articles ?>
+<?php edit_post_link(__('<p class="editpost">Edit</p>'));?>
       </div>
 
       <?php trackback_rdf(); ?> 
