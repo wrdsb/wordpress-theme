@@ -6,7 +6,6 @@
 <?php the_title('<h1>', '</h1>'); ?>
 <?php
   the_content();
-  edit_post_link('Edit');
 ?>
 <?php
 	$igc=0;
@@ -39,3 +38,5 @@
                 echo '</p>';
 	}
 ?>
+
+<p class="editpost"><?php edit_post_link(__('Edit'));?></p>
