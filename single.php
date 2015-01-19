@@ -72,7 +72,7 @@
 <?php endif; ?>
 <?php previous_post_link('<p class="prevpost">&laquo; Previous Post: %link</p>'); ?> <?php if(!get_adjacent_post(false, '', true)) { echo ''; } // if there are no older articles ?>
 <?php next_post_link('<p class="nextpost">Next Post: %link &raquo;</p>'); ?> <?php if(!get_adjacent_post(false, '', false)) { echo ''; } // if there are no newer articles ?>
-<?php edit_post_link(__('<p class="editpost">Edit</p>'));?>
+<p class="editpost"><?php edit_post_link(__('Edit'));?></p>
       </div>
 
       <?php trackback_rdf(); ?> 
