@@ -63,7 +63,7 @@
             </div>
             <div class="col-sm-4">
               <p class="copyright">
-                wp_loginout(); 
+                <?php wp_loginout(); ?>
                 &nbsp;&nbsp; | &nbsp;&nbsp;
                 <a href="http://staff.wrdsb.ca">Log in to Staff Website</a>
                 <?php 
