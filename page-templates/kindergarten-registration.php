@@ -70,25 +70,28 @@ Template Name: Kindergarten Registration
     ?>
 
 <h1>How to Register for Kindergarten</h1>
-<p>We are pleased to provide new Kindergarten parents with an opportunity to access the forms required for student registration and review pertinent information online. Links to the forms and a list of documents you will need to bring to your registration appointment can be found on this page.</p>
+<p>Welcome Kindergarten Parents! When you're ready to register, please follow the steps below:</p>
 <h2>How to Register:</h2>
 <ol>
   <li>
-    <p>Determine which school your child should attend.</p>
-    <p><a target="_blank" href="https://bpweb.stswr.ca/">Which school do I attend?</a></p>
+    <p>Confirm which school your child should attend.</p>
+    <p><a target="_blank" href="https://bpweb.stswr.ca/Eligibility.aspx?Page=School">Which school do I attend?</a></p>
   </li>
   <li>
-    <p>Contact your child’s school to set up an appointment for registration.</p>
-    <p><a target="_blank" href="http://www.wrdsb.ca/our-schools/schools/">WRDSB Schools</a></p>
+    <p>Phone your child’s school to set up an appointment for registration.</p>
+    <p>Contact information is available at the <a href="#contact">bottom of every page</a> in every school website.</p>
   </li>
   <li>
-    <p>You may download, print and complete the form(s) below in preparation for your registration appointment.</p>
+    <p>Parents are asked to print and complete the form(s) below prior to their registration appointment.</p>
+    <h3>All students require these forms:</h3>
     <p><a target="_blank" href="http://www.wrdsb.ca/wp-content/uploads/Student_Reg.pdf">Student Registration Form (IS-09-H)</a> – be sure to complete both sides and provide your signature at the bottom of the second page.</p>
-    <p><a target="_blank" href="http://www.wrdsb.ca/wp-content/uploads/FS-09-ESL.pdf">Confirmation of Pupil Eligibility for ESL Funding - (FS-09-ESL)</a> – this form is only to be completed if your child was born in a country outside of Canada.</p>
     <p><a target="_blank" href="https://e-immunization.regionofwaterloo.ca/">Student Immunization Information</a> - submit your child's immunization information online</a> directly to the Region of Waterloo Public Health.</p>
+    <h3>Children whose first language is not English require these forms:</h3>
+    <p><a target="_blank" href="http://www.wrdsb.ca/wp-content/uploads/FS-09-ESL.pdf">Confirmation of Pupil Eligibility for ESL Funding - (FS-09-ESL)</a> – this form is only to be completed if your child was born in a country outside of Canada.</p>
     <p><a target="_blank" href="http://www.wrdsb.ca/wp-content/uploads/DOCS_ADMIN-1786732-v1-VACCINE_PREVENTABLE_DISEASE_TRANSLAT.pdf">Translation Document</a> - This document provides instruction for parents submitting student immunization information in several languages</p>
-    <p><a target="_blank" href="http://www.wrdsb.ca/wp-content/uploads/Transportation-Do-Not-Ride-Form-final.pdf">Do Not Ride Form</a> - This form is to be completed by parents whose children qualify for bussing but who will not ride because the parent has made alternative arrangements.</p>
-    <p>Families unable to complete the above forms electronically may obtain paper copies from their school office at time of registration.</p>
+    <h3>Optional Form</h3>
+    <p><a target="_blank" href="http://www.wrdsb.ca/wp-content/uploads/Transportation-Do-Not-Ride-Form-final.pdf">Do Not Ride Form</a> - This form is to be completed by parents whose children <a target="_blank" href="https://bpweb.stswr.ca/Eligibility.aspx?Page=Transportation">qualify for bussing</a> but who will not ride because the parent has made alternative arrangements.</p>
+    <p class="note">Families unable to complete the above forms electronically may obtain paper copies from their school office at time of registration.</p>
   </li>
   <li>
     <p>In addition to the above forms please bring the following documentation to your registration appointment.</p>
@@ -122,7 +125,7 @@ Template Name: Kindergarten Registration
     <p>For more information about Kindergarten, Before and After School Programs, and other important information, parents are encouraged to review the following:</p>
     <ul>
       <li><a target="_blank" href="http://www.wrdsb.ca/wp-content/uploads/Off-to-School-Booklet.pdf">Off to School Booklet</a></li>
-      <li><a target="_blank" href="http://www.wrdsb.ca/wp-content/uploads/Before_After-Programs-2015-web.pdf">Before and After School Programs</a></li>
+      <li><a target="_blank" href="http://www.wrdsb.ca/beforeafter/">Before and After School Programs</a></li>
       <li><a target="_blank" href="http://www.wrdsb.ca/wp-content/uploads/Kindergarten_Library_Flyer.pdf">Welcome to your School Library</a></li>
       <li><a target="_blank" href="http://www.wrdsb.ca/wp-content/uploads/Referral-List-2014-15.pdf">Region of Waterloo Referral List</a></li>
       <li><a target="_blank" href="http://www.wrdsb.ca/wp-content/uploads/Nipissing-Letter-3-year-WRDSB_letteronly.pdf">Public health letter regarding Nipissing Screen</a></li>
@@ -132,13 +135,6 @@ Template Name: Kindergarten Registration
   </li>
   <li>
     <p>Spring Family Orientation Event - schools may offer an opportunity for families to be welcomed and learn more about the Kindergarten experience. Be sure to ask for these details at the time of your registration appointment.</p>
-  </li>
-  <li>
-    <p>To receive ongoing communications throughout the school year:</p>
-    <ul>
-      <li>Subscribe by email on your school's website</li>
-      <li>Register for School-Day if your school uses School-Day</li>
-    </ul>
   </li>
 </ol>
 
