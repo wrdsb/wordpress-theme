@@ -79,7 +79,7 @@ Template Name: Kindergarten Registration
   </li>
   <li>
     <p>Phone your child’s school to set up an appointment for registration.</p>
-    <p>Contact information is available at the <a href="#footer">bottom of every page</a> in every school website.</p>
+    <p>Contact information is available at the <a href="#contact">bottom of every page</a> in every school website.</p>
   </li>
   <li>
     <p>Parents are asked to print and complete the form(s) below prior to their registration appointment.</p>
