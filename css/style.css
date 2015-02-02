@@ -1032,12 +1032,12 @@ border-radius: 10px;
 
 /* subscribe by email form colours SZC 2014-08-26 */
 
-.footer > .sbe-widget-email-field {
+.footer .sbe-widget-email-field {
 	background-color: #fff !important;
 	color: #666 !important;
 }
 
-.footer > .sbe-widget-form-submit {
+.footer .sbe-widget-form-submit {
 	color: #666 !important;
 }
 
