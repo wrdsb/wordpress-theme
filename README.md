@@ -1,19 +1,24 @@
 wordpress-theme
 ===
 
-Official WordPress theme for the WRDSB.
----
+## About This Software
 
-> This WordPress Theme is used for all WRDSB Websites using WordPress. All websites refer to this instance of the Theme (it is the cardinal copy).
+This WordPress Theme is the Official WordPress theme for the WRDSB.
+
+It is used for all WRDSB Websites using WordPress. All websites refer to this instance of the Theme (it is the cardinal copy).
+
+## Report issues
 
 Public comments and issues are welcome in the issue queue!
 * https://github.com/wrdsb/wordpress-theme/issues
 
-***
+## Documentation
 
-> Documentation and credentials for editing, upgrading, and deploying 
-> the WRDSB WordPress Theme within the WRDSB Networks are available 
-> in the Software Development Handbook.
+Documentation and credentials for editing, upgrading, and deploying 
+the WRDSB WordPress Theme within the WRDSB Networks are available 
+in the Software Development Handbook.
+
+## Installation and Upgrading
 
 Information on how to install a theme into WordPress can be found at
 * http://codex.wordpress.org/Using_Themes
