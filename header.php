@@ -98,7 +98,7 @@
 
           <div class="staff-shortcuts">
             <div class="staff-shortcut-list">
-              <!--<a href="#">Contact</a>-->
+              <a href="#contact">Contact</a>
             </div>
             <div class="searchbox">
               <form action="<?php echo home_url(); ?>/" method="get">
