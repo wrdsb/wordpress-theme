@@ -50,7 +50,6 @@
             </div>
             <div class="col-sm-6 col-md-3">
             <h1>Stay Connected</h1>
-            <h2>Get News from this Website</h2>
             <?php the_widget( 'WRDSB_Subscribe_By_Email_Widget' ); ?>
             <p>You will need to subscribe to get the news feeds from each website separately.</p>
             <h2>Get News from the WRDSB</h2>
