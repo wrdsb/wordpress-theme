@@ -20,7 +20,7 @@
                 }
                 else {
                   ?>
-                  <h4>Waterloo Region District School Board</h4>
+                  <h1>Waterloo Region District School Board</h1>
               <address>51 Ardelt Avenue<br />
                 Kitchener, ON N2C 2R5<br />
               </address>
@@ -41,14 +41,21 @@
              
             </div>
             <div class="col-sm-6 col-md-3">
-              <?php if ( is_active_sidebar( 'footer-left' ) ) : ?>
-                <?php dynamic_sidebar( 'footer-left' ); ?>
-              <?php endif; ?>
+            <h1>Let Us Email You!</h1>
+            <p>Families and students, with <a href="http://www.wrdsb.ca/about-the-wrdsb/communications-engagement-department/casl/" target="_blank">CASL</a> we need to get your permission to email you about your child. Here is how!</p>
+            <h2>Parents/Guardians</h2>
+            <p><a href="https://secure.wrdsb.ca/subscribe/">Add your email address</a> to your contact record in our student information system!</p>
+            <h2>Students 18+</h2>
+            <p><a href="https://secure.wrdsb.ca/subscribe/over_eighteen.aspx">Add your email address</a> to your contact record in our student information system!</p>
             </div>
             <div class="col-sm-6 col-md-3">
-              <?php if ( is_active_sidebar( 'footer-centre' ) ) : ?>
-                <?php dynamic_sidebar( 'footer-centre' ); ?>
-              <?php endif; ?>
+            <h1>Stay Connected</h1>
+            <?php the_widget( 'WRDSB_Subscribe_By_Email_Widget' ); ?>
+            <p>You will need to subscribe to get the news feeds from each website separately.</p>
+            <h2>Get News from the WRDSB</h2>
+            <p>Would you like periodic, general news from the WRDSB? <a href="https://secure.wrdsb.ca/subscribe/publicform.aspx">Add your email address</a> to our public database!</p>
+            <h2>Other Ways to Get News</h2>
+            <p><a href="http://www.wrdsb.ca/our-schools/communicating-with-your-school/subscribing/" target="_blank">See all subscription options</a>.</p>
             </div>
             <div class="col-sm-12 col-md-3">
               <?php if ( is_active_sidebar( 'footer-right' ) ) : ?>
