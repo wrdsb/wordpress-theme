@@ -887,6 +887,13 @@ p.wp-caption-text {
 	margin-top: .25em;
 }
 
+div.wp-content {
+	padding: 1em 1em 0 1em;
+	border: 1px solid #ebebeb;
+	margin-bottom: 1em;
+	background-color: #f5f5f5;
+}
+
 blockquote > p.reference {
 	font-size: .8em;
 }
