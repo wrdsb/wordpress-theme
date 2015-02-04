@@ -895,7 +895,7 @@ p.promo {
 	padding: 1em;
 }
 
-p.fineprint {
+p.fineprint, .fineprint {
 	font-size: .9em;
 	color: #aaa;
 }
