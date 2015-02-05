@@ -70,8 +70,13 @@ Template Name: Kindergarten Registration
     ?>
 
 <h1>How to Register for Kindergarten</h1>
-<p>Welcome Kindergarten Parents! When you're ready to register, please follow the steps below:</p>
-<h2>How to Register:</h2>
+<p>Welcome Kindergarten Parents! When you're ready to register, please <a href="#howtoregister">follow the steps below</a>:</p>
+
+<h2>See a Day in Kindergarten!</h2>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fC7ZkyI3Zlg" frameborder="0" allowfullscreen></iframe>
+
+<h2 id="howtoregister">How to Register:</h2>
 <ol>
   <li>
     <p>Confirm which school your child should attend.</p>
@@ -147,9 +152,6 @@ Template Name: Kindergarten Registration
   </li>
 </ol>
 
-<h2>See a Day in Kindergarten!</h2>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/fC7ZkyI3Zlg" frameborder="0" allowfullscreen></iframe>
 
     <?php
       // Start the Loop.
