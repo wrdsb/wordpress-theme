@@ -93,9 +93,13 @@ Template Name: Kindergarten Registration
     	</li>
     </ul>
     <h3>Children born in a country other than Canada require this form (ESL)</h3>
-    <p><a target="_blank" href="http://www.wrdsb.ca/wp-content/uploads/FS-09-ESL.pdf">Confirmation of Pupil Eligibility for ESL Funding - (FS-09-ESL)</a> – this form is only to be completed if your child was born in a country outside of Canada.</p>
+    <ul>
+    	<li><a target="_blank" href="http://www.wrdsb.ca/wp-content/uploads/FS-09-ESL.pdf">Confirmation of Pupil Eligibility for ESL Funding - (FS-09-ESL)</a> – this form is only to be completed if your child was born in a country outside of Canada.</li>
+    </ul>
     <h3>Optional Form</h3>
-    <p><a target="_blank" href="http://www.wrdsb.ca/wp-content/uploads/Transportation-Do-Not-Ride-Form-final.pdf">Do Not Ride Form</a> - This form is to be completed by parents whose children <a target="_blank" href="https://bpweb.stswr.ca/Eligibility.aspx?Page=Transportation">qualify for bussing</a> but who will not ride because the parent has made alternative arrangements.</p>
+    <ul>
+    	<li><a target="_blank" href="http://www.wrdsb.ca/wp-content/uploads/Transportation-Do-Not-Ride-Form-final.pdf">Do Not Ride Form</a> - This form is to be completed by parents whose children <a target="_blank" href="https://bpweb.stswr.ca/Eligibility.aspx?Page=Transportation">qualify for bussing</a> but who will not ride because the parent has made alternative arrangements.</li>
+    </ul>
     <p class="note">Families unable to complete the above forms electronically may obtain paper copies from their school office at time of registration.</p>
   </li>
   <li>
