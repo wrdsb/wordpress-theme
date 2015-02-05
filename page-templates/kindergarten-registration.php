@@ -80,7 +80,7 @@ Template Name: Kindergarten Registration
 <ol>
   <li>
     <p>Confirm which school your child should attend.</p>
-    <p><a target="_blank" href="https://bpweb.stswr.ca/Eligibility.aspx?Page=School">Which school do I attend?</a></p>
+    <p>Which school do I attend? [ <a target="_blank" href="https://bpweb.stswr.ca/Eligibility.aspx?Page=School&DBGUID=b53615ba-ea92-4ec5-acca-022e511b568e">2014-2015 School Year</a> | <a target="_blank" href="https://bpweb.stswr.ca/Eligibility.aspx?Page=School&DBGUID=e203f9f5-e885-472c-945b-5e011c680374">2015-2016 School Year</a> ]</p>
   </li>
   <li>
     <p><a href="#contact">Phone your child’s school</a> to set up an appointment for registration.</p>
