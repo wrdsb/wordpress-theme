@@ -78,15 +78,20 @@ Template Name: Kindergarten Registration
     <p><a target="_blank" href="https://bpweb.stswr.ca/Eligibility.aspx?Page=School">Which school do I attend?</a></p>
   </li>
   <li>
-    <p>Phone your child’s school to set up an appointment for registration.</p>
+    <p><a href="#contact">Phone your child’s school</a> to set up an appointment for registration.</p>
     <p>Contact information is available at the <a href="#contact">bottom of every page</a> in every school website.</p>
   </li>
   <li>
     <p>Parents are asked to print and complete the form(s) below prior to their registration appointment.</p>
     <h3>All students require these forms:</h3>
-    <p><a target="_blank" href="http://www.wrdsb.ca/wp-content/uploads/Student_Reg.pdf">Student Registration Form (IS-09-H)</a> – be sure to complete both sides and provide your signature at the bottom of the second page.</p>
-    <p><a target="_blank" href="https://e-immunization.regionofwaterloo.ca/">Student Immunization Information</a> - submit your child's immunization information online</a> directly to the Region of Waterloo Public Health.</p>
-    <p><a target="_blank" href="http://www.wrdsb.ca/wp-content/uploads/DOCS_ADMIN-1786732-v1-VACCINE_PREVENTABLE_DISEASE_TRANSLAT.pdf">Translation Document</a> - This document provides instruction for parents submitting student immunization information in several languages</p>
+    <ul>
+    	<li><a target="_blank" href="http://www.wrdsb.ca/wp-content/uploads/Student_Reg.pdf">Student Registration Form (IS-09-H)</a> – be sure to complete both sides and provide your signature at the bottom of the second page.</li>
+    	<li><a target="_blank" href="https://e-immunization.regionofwaterloo.ca/">Student Immunization Information</a> - submit your child's immunization information online</a> directly to the Region of Waterloo Public Health.
+    		<ul>
+    			<li><a target="_blank" href="http://www.wrdsb.ca/wp-content/uploads/DOCS_ADMIN-1786732-v1-VACCINE_PREVENTABLE_DISEASE_TRANSLAT.pdf">Translation Document</a> - This document provides instruction for parents submitting student immunization information in several languages</li>
+    		</ul>
+    	</li>
+    </ul>
     <h3>Children born in a country other than Canada require this form (ESL)</h3>
     <p><a target="_blank" href="http://www.wrdsb.ca/wp-content/uploads/FS-09-ESL.pdf">Confirmation of Pupil Eligibility for ESL Funding - (FS-09-ESL)</a> – this form is only to be completed if your child was born in a country outside of Canada.</p>
     <h3>Optional Form</h3>
@@ -95,14 +100,14 @@ Template Name: Kindergarten Registration
   </li>
   <li>
     <p>In addition to the above forms please bring the following documentation to your registration appointment.</p>
-    <p>Proof of Birth – You are required to bring <strong>one</strong> of the following documents:</p>
+    <p><strong>Proof of Birth</strong> – You are required to bring <strong>one</strong> of the following documents:</p>
     <ul>
       <li>Canadian Birth Certificate</li>
       <li>Baptismal Certificate</li>
       <li>Statement of Live Birth</li>
       <li>Canadian Passport</li>
     </ul>
-    <p>Proof of Address – You are required to bring <strong>one</strong> of the following documents:</p>
+    <p><strong>Proof of Address</strong> – You are required to bring <strong>one</strong> of the following documents:</p>
     <ul>
       <li>Lease/Rental Agreement</li>
       <li>Real Estate Document</li>
@@ -111,7 +116,7 @@ Template Name: Kindergarten Registration
       <li>Bank Statement</li>
       <li>Credit Card Statement</li>
     </ul>
-    <p>Canadian Citizenship or Immigration Status - If your child was born outside of Canada, you are required to bring <strong>one</strong> of the following documents:</p>
+    <p><strong>Canadian Citizenship or Immigration Status</strong> - If your child was born outside of Canada, you are required to bring <strong>one</strong> of the following documents:</p>
     <ul>
       <li>Canadian Passport</li>
       <li>Certificate of Canadian Citizenship</li>
@@ -134,9 +139,13 @@ Template Name: Kindergarten Registration
     </ul>
   </li>
   <li>
-    <p>Spring Family Orientation Event - schools may offer an opportunity for families to be welcomed and learn more about the Kindergarten experience. Be sure to ask for these details at the time of your registration appointment.</p>
+    <p><strong>Spring Family Orientation Event</strong> - schools may offer an opportunity for families to be welcomed and learn more about the Kindergarten experience. Be sure to ask for these details at the time of your registration appointment.</p>
   </li>
 </ol>
+
+<h2>See a Day in Kindergarten!</h2>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fC7ZkyI3Zlg" frameborder="0" allowfullscreen></iframe>
 
     <?php
       // Start the Loop.
