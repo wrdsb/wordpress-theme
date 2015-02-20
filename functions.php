@@ -752,3 +752,15 @@ function wrdsb_i_am_a_school_with_kindergarten() {
     return TRUE;
   }
 }
+
+add_filter('upload_mimes', 'custom_upload_mimes');
+function custom_upload_mimes ( $existing_mimes=array() ) {
+  // add your extension to the array
+  $existing_mimes['gsp'] = 'application/x-gsp';
+  // add as many as you like
+  // removing existing file types
+  // unset( $existing_mimes['exe'] );
+  // add as many as you like
+  // and return the new full result
+  return $existing_mimes;
+}
