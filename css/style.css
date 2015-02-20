@@ -1075,6 +1075,10 @@ border-radius: 10px;
 	color: #666 !important;
 }
 
+.footer .sbe-widget-updated {
+	color: #666 !important;
+}
+
 /******** BIPSA Diagram Map Styles ********/
 
 .bipsa-container {
