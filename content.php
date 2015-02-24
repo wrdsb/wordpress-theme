@@ -42,7 +42,7 @@ endif; ?>
 <?php 
 if ( has_excerpt ()) {
 	the_excerpt();
-	echo "<p>custom stuff</p>";
+	echo '<p class="readmore"><a href="'. get_permalink($post->ID) . '"><strong>Read full details about</strong> <cite>'. get_the_title($post->ID) .'</cite> &#187;</a></p>';
 } else {
 	the_excerpt();
 }
