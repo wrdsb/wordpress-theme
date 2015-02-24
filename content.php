@@ -43,7 +43,7 @@ endif; ?>
   if (has_excerpt($post->ID) ) {
     return '<p><a href="'. get_permalink($post->ID) .'"><strong>Read more about</strong> <cite>'. get_the_title($post->ID) .'</cite> &#187;</a></p>';
   } else {
-  	return '<p>no luck</p>'
+  	return '<p>no luck</p>';
   }
 ?>
 
