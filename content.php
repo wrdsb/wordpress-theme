@@ -39,13 +39,7 @@ endif; ?>
   <p class="postdate gray-dark small">Posted <?php echo get_the_date(); ?></p>
 <?php } ?>
 
-<?php the_excerpt(); 
-  if (has_excerpt($post->ID) ) {
-    return '<p><a href="'. get_permalink($post->ID) .'"><strong>Read more about</strong> <cite>'. get_the_title($post->ID) .'</cite> &#187;</a></p>';
-  } else {
-  	return '<p>no luck</p>';
-  }
-?>
+<?php the_excerpt(); ?>
 
 <?php
 	$igc=0;
