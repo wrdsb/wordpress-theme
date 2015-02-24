@@ -39,7 +39,13 @@ endif; ?>
   <p class="postdate gray-dark small">Posted <?php echo get_the_date(); ?></p>
 <?php } ?>
 
-<?php the_excerpt(); ?>
+<?php 
+if ( has_excerpt ()) {
+	the_excerpt();	
+} else {
+	echo "no love";
+}
+ ?>
 
 <?php
 	$igc=0;
