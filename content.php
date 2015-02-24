@@ -41,7 +41,8 @@ endif; ?>
 
 <?php 
 if ( has_excerpt ()) {
-	echo "what goes here?";
+	the excerpt;
+	echo "<p>custom stuff</p>";
 } else {
 	the_excerpt();
 }
