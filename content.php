@@ -41,9 +41,9 @@ endif; ?>
 
 <?php 
 if ( has_excerpt ()) {
-	the_excerpt();	
+	echo "what goes here?"
 } else {
-	echo "no love";
+	the_excerpt();
 }
  ?>
 
