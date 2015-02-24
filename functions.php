@@ -510,6 +510,15 @@ function new_excerpt_more($more) {
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 
+// Adds a custom link for custom excerpts
+function new_custom_excerpt_more($more) {
+  global $post;
+  if ( has_excerpt( $post->ID ) ) {
+    return '<p class="readmore"><a href="'. get_permalink($post->ID) . '"><strong>Read full details about</strong> <cite>'. get_the_title($post->ID) .'</cite> &#187;</a></p>';
+  }
+}
+add_filter('custom_excerpt_more','new_custom_excerpt_more');
+
 function wrdsb_posts_page_url() {
   if (get_option('show_on_front') == 'page') {
     return get_permalink(get_option('page_for_posts'));
