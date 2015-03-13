@@ -757,6 +757,8 @@ add_filter('upload_mimes', 'custom_upload_mimes');
 function custom_upload_mimes ( $existing_mimes=array() ) {
   // add your extension to the array
   $existing_mimes['gsp'] = 'application/x-gsp';
+  $existing_mimes['svg'] = 'image/svg+xml';
+  $existing_mimes['svgz'] = 'image/svg+xml';
   // add as many as you like
   // removing existing file types
   // unset( $existing_mimes['exe'] );
