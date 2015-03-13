@@ -503,7 +503,7 @@ function wrdsb_add_excerpts_to_pages() {
   add_post_type_support('page', 'excerpt');
 }
 
-// Replaces the excerpt "[..]" more text with a link
+// Replaces the excerpt "[...]" more text with a link
 function new_excerpt_more($more) {
   global $post;
   return ' [...]<p class="readmore"><a href="'. get_permalink($post->ID) . '"><strong>Read more about</strong> <cite>'. get_the_title($post->ID) .'</cite> &#187;</a></p>';
