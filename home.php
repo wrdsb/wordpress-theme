@@ -14,7 +14,7 @@
     if (($has_left == TRUE) and ($has_right == TRUE)):
       echo '<div class="col-sm-3 col-md-2 col-lg-2">';
       if (is_front_page() && wrdsb_i_am_a_school_with_kindergarten()) {
-        echo '<p><a href="/about/how-to-register-for-kindergarten/"><img src="http://www.wrdsb.ca/wp-content/uploads/register_for_kindergarten_2.jpg" alt="Kindergarten Registration button"/></a></p>';
+        echo '<p><a href="http://www.wrdsb.ca/beforeafter/"><img src="http://www.wrdsb.ca/wp-content/uploads/beforeafter_banner.jpg" alt="Before &amp; After School Program Information"/></a></p>';
       }
       if (is_front_page() && wrdsb_i_am_a_school()) {
         echo '<p><a href="https://secure.wrdsb.ca/subscribe/" target="_blank"><img src="http://www.wrdsb.ca/wp-content/uploads/parent_email_trillium_3.jpg" alt="Parents/Guardians: Add your email address to the contact record for your child." /></a></p>';
@@ -32,7 +32,7 @@
     elseif (($has_left == TRUE) and ($has_right == FALSE)):
       echo '<div class="col-sm-3 col-lg-3">';
       if (is_front_page() && wrdsb_i_am_a_school_with_kindergarten()) {
-        echo '<p><a href="/about/how-to-register-for-kindergarten/"><img src="http://www.wrdsb.ca/wp-content/uploads/register_for_kindergarten_2.jpg" alt="Kindergarten Registration button"/></a></p>';
+        echo '<p><a href="http://www.wrdsb.ca/beforeafter/"><img src="http://www.wrdsb.ca/wp-content/uploads/beforeafter_banner.jpg" alt="Before &amp; After School Program Information"/></a></p>';
       }
       if (is_front_page() && wrdsb_i_am_a_school()) {
         echo '<p><a href="https://secure.wrdsb.ca/subscribe/" target="_blank"><img src="http://www.wrdsb.ca/wp-content/uploads/parent_email_trillium_3.jpg" alt="Parents/Guardians: Add your email address to the contact record for your child." /></a></p>';
