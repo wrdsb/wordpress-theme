@@ -518,6 +518,18 @@ function wrdsb_posts_page_url() {
   }
 }
 
+function wrdsb_i_am_a_corporate_site() {
+  $parsed_url = parse_url(site_url());
+  $host = explode('.', $parsed_url['host']);
+  $site = $parsed_url['path'];
+  $my_domains = array(
+    "www",
+  );
+  if (in_array(($host[0]), $my_domains)) {
+    return TRUE;
+  }
+}
+
 function wrdsb_i_am_a_staff_site() {
   $parsed_url = parse_url(site_url());
   $host = explode('.', $parsed_url['host']);
