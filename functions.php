@@ -523,6 +523,7 @@ function wrdsb_i_am_a_school() {
   $host = explode('.', $parsed_url['host']);
   $site = $parsed_url['path'];
   $alpha_codes = array(
+    "schools",
     "abe",
     "alp",
     "ark",
