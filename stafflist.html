@@ -1,0 +1,75 @@
+<html>
+<head>
+	<title>Staff list Example</title>
+		<link rel="stylesheet" href="css/blue/style.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="jquery/jquery.tablesorter.js"></script>
+		<script>
+$(document).ready(function() { 
+    $("table").tablesorter({ 
+    	theme: 'blue',
+        headers: { 
+
+            1: { sorter: false }, 
+            2: { sorter: false }, 
+            3: { sorter: false },
+            4: { sorter: false } 
+        } 
+    }); 
+});
+		</script>
+</head>
+
+<body>
+	<table class="tablesorter">
+		<thead>
+		  <tr>
+		    <th>Name</th>
+		    <th>Position</th>
+		    <th>Email</th>
+		    <th>Websites</th>
+		    <th>VoiceMail</th>
+		  </tr>
+		</thead>
+		<tbody>
+		  <tr>
+		  	<!--Will want to do a link check to see if it is valid before making it a link-->
+		    <td><a href="Profile Page.html">D. Twardus</a></td>
+		    <!--All teachers regarless of crazy hr names should just have "teacher" appear here-->
+		    <td>Master of the Universe</td>
+		    <td>dorian_twardus@googleapps.wrdsb.ca</td>
+		    <td>
+		 		<ul>
+		 			<li><a href="http://teachers.wrdsb.ca/hunnifr">Math</a></li>
+		 		</ul>
+		    </td>
+		    <td>519-578-1337</td>
+		  </tr>
+		  <tr>
+		    <td>S. Carter</td>
+		    <td>Developer</td>
+		    <td>suzanne_carter@googleapps.wrdsb.ca</td>
+		    <td>
+		    	 <ul>
+		 			<li><a href="http://teachers.wrdsb.ca/hunnifr">Math</a></li>
+		 			<li><a href="http://teachers.wrdsb.ca/hunnifr">Science</a></li>
+		 			<li><a href="http://teachers.wrdsb.ca/hunnifr">Geography</a></li>
+		 		</ul>
+		    </td>
+		    <td>519-578-5555</td>
+		  </tr>
+		  <tr>
+		    <td>J. Schumann</td>
+		    <td>Developer</td>
+		    <td>james_schumann@googleapps.wrdsb.ca</td>
+		    <td>
+		    	 <ul>
+		 			<li><a href="http://teachers.wrdsb.ca/hunnifr">Religion</a></li>
+		 		</ul>
+		    </td>
+		    <td>519-578-5555</td>
+		  </tr>
+		</tbody>
+	</table>
+</body>
+</html>
