@@ -22,9 +22,9 @@
         echo '<p><a href="/about/school-year-information"><img src="http://www.wrdsb.ca/wp-content/uploads/schoolyearinformation.jpg" alt="School Year Information Logo"/></a></p>';
         echo '<p><a href="http://www.wrdsb.ca/wefi/"><img src="http://www.wrdsb.ca/wp-content/uploads/wefi_banner_344x100.gif" alt="Waterloo Education Foundation Inc. (WEFI)"/></a></p>';
       }
-      if (!is_front_page()) {
-        get_sidebar('lmenu');
-      }
+      /*if (!is_front_page()) {
+        //get_sidebar('lmenu');
+      }*/
       get_sidebar('left');
       echo '</div>';
 
@@ -40,9 +40,9 @@
         echo '<p><a href="/about/school-year-information"><img src="http://www.wrdsb.ca/wp-content/uploads/schoolyearinformation_344x100.jpg" alt="School Year Information Logo"/></a></p>';
         echo '<p><a href="http://www.wrdsb.ca/wefi/"><img src="http://www.wrdsb.ca/wp-content/uploads/wefi_banner_344x100.gif" alt="Waterloo Education Foundation Inc. (WEFI)"/></a></p>';
       }
-      if (!is_front_page()) {
-        get_sidebar('lmenu');
-      }
+      /*if (!is_front_page()) {
+       // get_sidebar('lmenu');
+      }*/
       get_sidebar('left');
       echo '</div>';
 
@@ -105,9 +105,9 @@
     # right column
     if (($has_left == TRUE) and ($has_right == TRUE)):
       echo '<div class="col-sm-3 col-md-2 col-lg-2">';
-      if (!is_front_page()) {
-        get_sidebar('rmenu');
-      }
+      /*if (!is_front_page()) {
+        //get_sidebar('rmenu');
+      } */
       get_sidebar('right');
       echo '</div>';
 
@@ -125,9 +125,9 @@
         echo '<p><a href="/about/school-year-information"><img src="http://www.wrdsb.ca/wp-content/uploads/schoolyearinformation_344x100.jpg" alt="School Year Information Logo"/></a></p>';
         echo '<p><a href="http://www.wrdsb.ca/wefi/"><img src="http://www.wrdsb.ca/wp-content/uploads/wefi_banner_344x100.gif" alt="Waterloo Education Foundation Inc. (WEFI)"/></a></p>';
      }
-      if (!is_front_page()) {
+      /*if (!is_front_page()) {
         get_sidebar('rmenu');
-      }
+      }*/
       get_sidebar('right');
       echo '</div>';
 
