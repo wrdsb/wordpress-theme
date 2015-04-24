@@ -9,7 +9,7 @@
   <div class="row">
     <?php
     # Both sidebars
-    # left column
+   # left column
     if (($has_left == TRUE) and ($has_right == TRUE)):
       echo '<div class="col-sm-3 col-md-2 col-lg-2">';
       get_sidebar('left');
@@ -27,9 +27,9 @@
     # No sidebars
       # Nothing to do
     endif;
- 
-     # content area
-    if (($has_left == TRUE) and ($has_right == TRUE)):
+
+    # content area
+     if (($has_left == TRUE) and ($has_right == TRUE)):
       echo '<div class="col-sm-6 col-md-8 col-lg-8">';
 
     # Just left sidebar
@@ -57,6 +57,7 @@
         the_post_thumbnail('wrdsb-one-sidebar');
       elseif (($has_left == FALSE) and ($has_right == FALSE)):
         the_post_thumbnail('wrdsb-full-width');
+      endif;
       endif;
       ?>
       <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
