@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <?php
-	$has_left = FALSE;
+  $has_left = FALSE;
   $has_right = FALSE;
   if (is_active_sidebar('sidebar-left') || has_nav_menu('left')) {$has_left = TRUE;}
   if (is_active_sidebar('sidebar-right') || has_nav_menu('right')) {$has_right = TRUE;}
@@ -57,7 +57,6 @@
         the_post_thumbnail('wrdsb-one-sidebar');
       elseif (($has_left == FALSE) and ($has_right == FALSE)):
         the_post_thumbnail('wrdsb-full-width');
-      endif;
       endif;
       ?>
       <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
