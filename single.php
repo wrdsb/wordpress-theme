@@ -1,18 +1,50 @@
 <?php get_header(); ?>
 <?php
+	$has_left = FALSE;
   $has_right = FALSE;
+  if (is_active_sidebar('sidebar-left') || has_nav_menu('left')) {$has_left = TRUE;}
   if (is_active_sidebar('sidebar-right') || has_nav_menu('right')) {$has_right = TRUE;}
 ?>
 <div class="container">
   <div class="row">
     <?php
     # Both sidebars
-    # content area
-    if ($has_right == TRUE):
-      echo '<div class="col-sm-6 col-md-8 col-lg-9">';
-    elseif ($has_right == FALSE):
+    # left column
+    if (($has_left == TRUE) and ($has_right == TRUE)):
+      echo '<div class="col-sm-3 col-md-2 col-lg-2">';
+      get_sidebar('left');
+      echo '</div>';
+
+    # Just left sidebar
+    elseif (($has_left == TRUE) and ($has_right == FALSE)):
+      echo '<div class="col-sm-3 col-lg-3">';
+      get_sidebar('left');
+      echo '</div>';
+
+    # Just right sidebar
+      # Nothing to do
+
+    # No sidebars
+      # Nothing to do
+    endif
+ 
+     # content area
+    if (($has_left == TRUE) and ($has_right == TRUE)):
+      echo '<div class="col-sm-6 col-md-8 col-lg-8">';
+
+    # Just left sidebar
+    elseif (($has_left == TRUE) and ($has_right == FALSE)):
+      echo '<div class="col-sm-9 col-lg-9">';
+
+    # Just right sidebar
+    elseif (($has_left == FALSE) and ($has_right == TRUE)):
+      echo '<div class="col-sm-8">';
+
+    # No sidebars
+    elseif (($has_left == FALSE) and ($has_right == FALSE)):
       echo '<div class="col-sm-12 col-lg-12">';
-    endif;
+
+    endif
     ?>
 
     <?php // check if the post has a Post Thumbnail assigned to it.
