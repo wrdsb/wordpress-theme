@@ -26,7 +26,7 @@
 
     # No sidebars
       # Nothing to do
-    endif
+    endif;
  
      # content area
     if (($has_left == TRUE) and ($has_right == TRUE)):
@@ -44,7 +44,7 @@
     elseif (($has_left == FALSE) and ($has_right == FALSE)):
       echo '<div class="col-sm-12 col-lg-12">';
 
-    endif
+    endif;
     ?>
 
     <?php // check if the post has a Post Thumbnail assigned to it.
