@@ -111,17 +111,29 @@
     </div>
 
     <?php
-    
-if ($has_right == TRUE):
-  echo '<div class="col-sm-3">';
-if (!is_front_page()) {
-  get_sidebar('rmenu');
-}
-get_sidebar('right');
-echo '</div>';
-
-endif;
-?>
+    # Both sidebars
+    # right column
+    if (($has_left == TRUE) and ($has_right == TRUE)):
+      echo '<div class="col-sm-3 col-md-2 col-lg-2">';
+      if (!is_front_page()) {
+        get_sidebar('rmenu');
+      }
+      get_sidebar('right');
+      echo '</div>';
+    # Just left sidebar
+      # Nothing to do
+    # Just right sidebar
+    elseif (($has_left == FALSE) and ($has_right == TRUE)):
+      echo '<div class="col-sm-4">';
+      if (!is_front_page()) {
+        get_sidebar('rmenu');
+      }
+      get_sidebar('right');
+      echo '</div>';
+    # No sidebars
+      # Nothing to do
+    endif
+    ?>
 </div> <!-- end content area -->
 
 
