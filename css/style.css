@@ -5,7 +5,7 @@
 .nocomments {}
 .post-edit-link {
 	position: absolute;
-	top: 1em;
+	top: 1em;n
 	right: 1em;
 	padding: 0 1em;
 	text-transform: lowercase;
@@ -842,6 +842,43 @@ content: "Example";
 		font-weight: bold;
 		padding: 0 !important;
 		margin: 0 !important;
+	}
+	
+	.tip:before {
+		content: "TIP! ";
+		font-weight: bold;
+		font-size: 2em;
+		color: #7D0552;
+		text-shadow: 0 0 5px #E38AAE;
+	}
+	
+	span.tip:before {
+		content: "TIP! ";
+		font-weight: bold;
+		color: #7d0552;
+		text-shadow: none;
+		font-size: inherit;
+	}
+	
+	.tip {
+		line-height: 150%;
+		background-color: #FCDFFF;
+		padding: 1em;
+		margin: 1em;
+		color: #000;
+		border: 3px solid #7D0552;
+		-webkit-border-radius: 1.2em;
+		font-style: normal;
+		-moz-border-radius: 1.2em;
+	}
+	
+	span.tip {
+		background-color: #FCDFFF;
+		color: #000;
+		border: 1px solid #7D0552;
+		-webkit-border-radius: .2em;
+		font-style: normal;
+		-moz-border-radius: .2em;
 	}
 	
 	.note {
