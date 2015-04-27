@@ -17,12 +17,18 @@ Template Name: SYI - Elementary
     # Both sidebars
     if (($has_left == TRUE) and ($has_right == TRUE)):
       echo '<div class="col-sm-3 col-md-2 col-lg-2">';
+      if (!is_front_page()) {
+        get_sidebar('lmenu');
+      }
       get_sidebar('left');
       echo '</div>';
 
     # Just left sidebar
     elseif (($has_left == TRUE) and ($has_right == FALSE)):
       echo '<div class="col-sm-3 col-lg-3">';
+      if (!is_front_page()) {
+        get_sidebar('lmenu');
+      }
       get_sidebar('left');
       echo '</div>';
 
@@ -312,6 +318,9 @@ Template Name: SYI - Elementary
     # right column
     if (($has_left == TRUE) and ($has_right == TRUE)):
       echo '<div class="col-sm-3 col-md-2 col-lg-2">';
+      if (!is_front_page()) {
+        get_sidebar('rmenu');
+      }
       get_sidebar('right');
       echo '</div>';
 
@@ -321,6 +330,9 @@ Template Name: SYI - Elementary
     # Just right sidebar
     elseif (($has_left == FALSE) and ($has_right == TRUE)):
       echo '<div class="col-sm-4"">';
+      if (!is_front_page()) {
+        get_sidebar('rmenu');
+      }
       get_sidebar('right');
       echo '</div>';
 
