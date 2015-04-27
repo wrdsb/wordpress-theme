@@ -875,10 +875,10 @@ content: "Example";
 	span.tip {
 		background-color: #FCDFFF;
 		color: #000;
-		border: 1px solid #7D0552;
-		-webkit-border-radius: .2em;
+		border: 1px solid #B048B5;
+		-webkit-border-radius: .4em;
 		font-style: normal;
-		-moz-border-radius: .2em;
+		-moz-border-radius: .4em;
 	}
 	
 	.note {
