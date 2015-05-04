@@ -5,7 +5,7 @@
 .nocomments {}
 .post-edit-link {
 	position: absolute;
-	top: 1em;n
+	top: 1em;
 	right: 1em;
 	padding: 0 1em;
 	text-transform: lowercase;
@@ -733,7 +733,6 @@ content: "Example";
 			clear: left;
 			text-align: right;
 			text-overflow: ellipsis;
-			white-space: nowrap;
 		}
 		dd {
 			margin-left: 220px;
