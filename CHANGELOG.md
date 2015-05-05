@@ -1,4 +1,34 @@
-= 0.3.0
+## 0.3.7
+Fixes
++ clearfix for categories/tags so floated content will not display it (requires a category or tag be set)
++ .tip added as a floating block type
++ dl display fix so dt content will wrap
+
+## 0.3.6
+Fixes
++ left sidebar added to all custom page templates
++ removed page templates no longer in use (will default to default template)
+
+## 0.3.5
+Fixes
++ adjusted right sidebar on single.php when left sidebar in use
+
+## 0.3.4
+Fixes
++ add left sidebar to single.php template
+ 
+## 0.3.3
+Fixes
++ add SCIS survey button (corporate area)
+
+## 0.3.2
+Fixes
++ removed automated left menu from news pages, resolving error in display
+
+## 0.3.1
++ removed automated left menu from archive.php
+
+## 0.3.0
 Features
 * Add Google Analytics tracking code for www.wrdsb.ca
 * Add Google Analytics tracking code for staff.wrdsb.ca

@@ -68,14 +68,17 @@ if ( has_excerpt ()) {
 	}
 
 	if (!isset($display_cats) && isset($display_tags)) {
+		echo '<div class="clearfix"></div>';
 		echo '<p class="categories gray-dark small">Tags: ';
                 the_tags('',' &bull; ','');
                 echo '</p>';
 	} elseif (isset($display_cats) && !isset($display_tags)) {
+		echo '<div class="clearfix"></div>';
 		echo '<p class="categories gray-dark small">Categories: ';
                 the_category(' &bull; ');
                 echo '</p>';
 	} elseif (isset($display_cats) && isset($display_tags)) {
+		echo '<div class="clearfix"></div>';
 		echo '<p class="categories gray-dark small">Categories: ';
                 the_category(' &bull; ');
                 echo ' Tags: ';
