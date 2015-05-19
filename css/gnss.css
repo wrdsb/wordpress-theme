@@ -4,7 +4,10 @@
 	secondary: #aa5d00
 	secondary-light: #ddbe99
 	primary-light: #D9B2D9
+	primary-extra-light: #ECD8EC
 */ 
+
+
 /*navigation*/
 .my-navbar {
 	background-color:#550055; /*primary*/
@@ -21,11 +24,15 @@
 	background-color: #800080; /*opacity*/
 }
 /*sub navigation*/
-.sub-menu-heading, .sub-menu-heading a {
-	background-color:#550055; /*primary*/
+.sub-menu-heading {
+	background-color: #800080; /*opacity*/
+}
+
+.sub-menu-heading a {
+	background-color: #800080; /*opacity*/
 }
 .sub-menu-items {
-	background-color:#D9B2D9; /*light*/
+	background-color: #ECD8EC; /*primary-extra-light*/
 }
 /*headings*/
 h1, h2, h3, h4, h5, h6 {
@@ -47,20 +54,22 @@ a:hover, a:focus {
 .footer a:hover, .footer a:focus {
 	color:#d9b2d9; /*light*/
 }
+
 /*footer*/
+
 .footer {
 	background-color:#550055; /*primary*/
 	border-top-color:#aa5d00; /*secondary*/
 	color:#fff;
 }
 
-th {
-	background-color: #d9b2d9; /*light*/
-}
+thead > tr > th {
+        border-bottom: 2px solid #aa5d00; /*secondary*/
+        }
 
-tr:hover {
-	background-color: #ddbe99; /*secondary-light*/
-}
+thead > tr > th {
+        border-bottom: 2px solid #aa5d00;
+        }
 
 .copyright {
 	color:#fff;
