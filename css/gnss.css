@@ -64,15 +64,19 @@ a:hover, a:focus {
 }
 
 th {
-	background-color: #d9b2d9; /*light*/
+	background-color: #ECD8EC; /*primary-extra-light*/
 }
 
 thead > tr > th {
         border-bottom: 2px solid #aa5d00; /*secondary*/
         }
 
-tr:hover {
+tr:hover, tr:nth-child(odd):hover, tr:nth-child(even):hover {
 	background-color: #ddbe99; /*secondary-light*/
+}
+
+th {
+	color: #550055; /*primary*/
 }
 
 .copyright {
