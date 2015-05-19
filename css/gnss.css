@@ -58,7 +58,7 @@ th {
 	background-color: #d9b2d9; /*light*/
 }
 
-td:hover {
+tr:hover {
 	background-color: #ddbe99; /*secondary-light*/
 }
 
