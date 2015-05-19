@@ -63,13 +63,17 @@ a:hover, a:focus {
 	color:#fff;
 }
 
+th {
+	background-color: #d9b2d9; /*light*/
+}
+
 thead > tr > th {
         border-bottom: 2px solid #aa5d00; /*secondary*/
         }
 
-thead > tr > th {
-        border-bottom: 2px solid #aa5d00;
-        }
+tr:hover {
+	background-color: #ddbe99; /*secondary-light*/
+}
 
 .copyright {
 	color:#fff;
