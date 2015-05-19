@@ -465,6 +465,9 @@ function wrdsb_secondary_school_colours() {
     case "gci":
       echo '<link href="'.get_template_directory_uri().'/css/gci.css" rel="stylesheet">';
       break;
+    case "gnss":
+      echo '<link href="'.get_template_directory_uri().'/css/gnss.css" rel="stylesheet">';
+      break;
     case "gps":
       echo '<link href="'.get_template_directory_uri().'/css/gps.css" rel="stylesheet">';
       break;
