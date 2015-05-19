@@ -1,8 +1,9 @@
 /*	Stylesheet: GNSS
 	primary: #550055
-	primary opacity #800080: 
-	secondary #aa5d00:
-	light: #D9B2D9;
+	primary opacity: #800080 
+	secondary: #aa5d00
+	secondary-light: #ddbe99
+	primary-light: #D9B2D9
 */ 
 /*navigation*/
 .my-navbar {
@@ -44,11 +45,23 @@ a:hover, a:focus {
 	color:#550055; /*primary*/
 }
 .footer a:hover, .footer a:focus {
-	color:#800080; /*opacity*/
+	color:#d9b2d9; /*light*/
 }
 /*footer*/
 .footer {
 	background-color:#550055; /*primary*/
 	border-top-color:#aa5d00; /*secondary*/
+	color:#fff;
+}
+
+th {
+	background-color: #d9b2d9; /*light*/
+}
+
+td:hover {
+	background-color: #ddbe99; /*secondary-light*/
+}
+
+.copyright {
 	color:#fff;
 }
