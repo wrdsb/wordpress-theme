@@ -82,3 +82,7 @@ th {
 .copyright {
 	color:#fff;
 }
+
+#logo a h2, #logo a h3 {
+	color:#aa5d00;
+}
