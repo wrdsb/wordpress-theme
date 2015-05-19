@@ -1,0 +1,54 @@
+/*	Stylesheet: GNSS
+	primary: #550055
+	primary opacity #800080: 
+	secondary #aa5d00:
+	light: #D9B2D9;
+*/ 
+/*navigation*/
+.my-navbar {
+	background-color:#550055; /*primary*/
+	border-top-color:#aa5d00; /*secondary*/
+}
+.nav >li > a:hover, .nav >li > a:focus {
+	background-color: #800080; /*opacity*/
+}
+.nav >li.active, 
+.nav >li.current-page-ancestor, 
+.nav >li.current_page_ancestor,
+.nav >li.current-menu-item, 
+.nav >li.current_page_item {
+	background-color: #800080; /*opacity*/
+}
+/*sub navigation*/
+.sub-menu-heading, .sub-menu-heading a {
+	background-color:#550055; /*primary*/
+}
+.sub-menu-items {
+	background-color:#D9B2D9; /*light*/
+}
+/*headings*/
+h1, h2, h3, h4, h5, h6 {
+	color:#550055; /*primary*/
+}
+h6.copyright {
+	color:#fff;
+}
+/*links*/
+a {
+	color:#550055; /*primary*/
+}
+.footer a {
+	color:#800080; /*opacity*/
+}
+a:hover, a:focus {
+	color:#550055; /*primary*/
+}
+.footer a:hover, .footer a:focus {
+	color:#800080; /*opacity*/
+}
+/*footer*/
+.footer {
+	background-color:#550055; /*primary*/
+	border-top-color:#aa5d00; /*secondary*/
+	color:#fff;
+}
