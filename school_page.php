@@ -24,7 +24,7 @@ Template Name: School List
         	<p class="hidden-xs hidden-md hidden-lg"><a href="#secondaryschools">Secondary Schools</a></p>
         	<h2>Elementary Schools</h2>
 			<div class="table-responsive" >
-				<table class="table table-striped table-bordered table-fixed-head">
+				<table class="table table-striped table-fixed-head">
 					<thead>
 						<tr>
 							<th class="text-left">School/Website</th>
@@ -82,7 +82,7 @@ Template Name: School List
 			<p class="hidden-xs hidden-md hidden-lg"><a href="#elementaryschools">Elementary Schools</a></p>
 			<h2>Secondary Schools</h2>
 			<div class="table-responsive" >
-				<table class="table table-striped table-bordered table-fixed-head">
+				<table class="table table-striped table-fixed-head">
 					<thead>
 						<tr>
 							<th class="text-left">School/Website</th>
