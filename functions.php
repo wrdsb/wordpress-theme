@@ -498,9 +498,6 @@ function wrdsb_secondary_school_colours() {
     case "wod":
       echo '<link href="'.get_template_directory_uri().'/css/wod.css" rel="stylesheet">';
       break;
-    case "gnss":
-      echo '<link href="'.get_template_directory_uri().'/css/gnss.css" rel="stylesheet">';
-      break;
   }
 }
 
