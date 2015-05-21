@@ -2,7 +2,7 @@
 /**
  * The template for displaying the footer
  *
- * Displays all of the <head> section and everything up till <div id="main">
+ * Displays from <div class="footer"> to </html>
  *
  * @package WordPress
  * @subpackage WRDSB
