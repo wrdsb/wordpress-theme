@@ -1,3 +1,11 @@
+## 0.3.8
+Fixes 
++ remove borders from school table
++ gnss.css added
++ gnss and dsps added to school lists in functions
++ fixed description of footer file
++ added padding to navigation menu for .nav_current_page_children_container
+
 ## 0.3.7
 Fixes
 + clearfix for categories/tags so floated content will not display it (requires a category or tag be set)
