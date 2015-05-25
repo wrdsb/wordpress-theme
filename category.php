@@ -48,7 +48,7 @@
 
 <?php
 	if ( is_category() ) : ?>
-	<h2 id="category-name-header"><?php echo $cache_categories[$cat]->cat_name ?></h2>
+	<h2 id="category-name-header"><?php echo $category; ?></h2>
 	<?php add_filter('category_description', 'wpautop'); ?>
 	<?php add_filter('category_description', 'wptexturize'); ?>
 	<div id="category-description">
@@ -78,7 +78,6 @@
     # right column
     if (($has_left == TRUE) and ($has_right == TRUE)):
       echo '<div class="col-sm-3 col-md-2 col-lg-2">';
-      
       get_sidebar('right');
       echo '</div>';
     # Just left sidebar
@@ -86,16 +85,6 @@
     # Just right sidebar
     elseif (($has_left == FALSE) and ($has_right == TRUE)):
       echo '<div class="col-sm-4">';
-      if (is_front_page() && wrdsb_i_am_a_school_with_kindergarten()) {
-        echo '<p><a href="/about/how-to-register-for-kindergarten/"><img src="http://www.wrdsb.ca/wp-content/uploads/register_for_kindergarten_2.jpg" alt="Kindergarten Registration button"/></a></p>';
-      }
-      if (is_front_page() && wrdsb_i_am_a_school()) {
-	echo '<p><a href="http://www.wrdsb.ca/campaigns/scis-parent-survey-2015.html" target="_blank"><img src="http://www.wrdsb.ca/wp-content/uploads/SCIS_button-344x100.png" alt="Safe, Caring, Inclusive Schools Survey for Parents" /></a></p>';
-        echo '<p><a href="http://myway.wrdsb.ca"><img src="http://www.wrdsb.ca/wp-content/uploads/myway_banner_344x100.jpg" alt="MyWay Logo"/></a></p>';
-        echo '<p><a href="/about/school-year-information"><img src="http://www.wrdsb.ca/wp-content/uploads/schoolyearinformation_344x100.jpg" alt="School Year Information Logo"/></a></p>';
-        echo '<p><a href="http://www.wrdsb.ca/wefi/"><img src="http://www.wrdsb.ca/wp-content/uploads/wefi_banner_344x100.gif" alt="Waterloo Education Foundation Inc. (WEFI)"/></a></p>';
-     }
-      
       get_sidebar('right');
       echo '</div>';
     # No sidebars
