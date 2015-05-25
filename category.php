@@ -48,7 +48,7 @@
 
 <?php
 	if ( is_category() ) : ?>
-	<h2 id="category-name-header"><?php echo $category; ?></h2>
+	<h1><?php single_cat_title('Currently browsing '); ?></h1>
 	<?php add_filter('category_description', 'wpautop'); ?>
 	<?php add_filter('category_description', 'wptexturize'); ?>
 	<div id="category-description">
