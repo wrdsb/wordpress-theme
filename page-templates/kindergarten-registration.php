@@ -63,6 +63,7 @@ Template Name: Kindergarten Registration
 
     <?php // check if the post has a Post Thumbnail assigned to it.
       if ( has_post_thumbnail() ) {
+        echo '<div class="featuredimage">';
         if (($has_left == TRUE) and ($has_right == TRUE)):
           the_post_thumbnail('wrdsb-two-sidebars');
         elseif (($has_left == TRUE) and ($has_right == FALSE)):
@@ -72,8 +73,10 @@ Template Name: Kindergarten Registration
         elseif (($has_left == FALSE) and ($has_right == FALSE)):
           the_post_thumbnail('wrdsb-full-width');
         endif;
+        echo '</div>';
       }
     ?>
+
 
 <h1>How to Register for Kindergarten</h1>
 <p>Welcome Kindergarten Parents! When you're ready to register, please <a href="#howtoregister">follow the steps below</a>:</p>
