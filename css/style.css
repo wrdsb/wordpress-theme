@@ -360,7 +360,7 @@ a#inc_font, a#dec_font {
 	font-weight:bold;
 	font-size:20px;
 	/*margin-bottom:6px;*/
-	margin-top:16px;
+	margin-top:17px;
 }
 .sub-menu-heading a {
 	color:#fff;
@@ -438,9 +438,9 @@ ul.sbe-widget-error {
 .sidebar-left {
 	margin-top:10px;
 }
-/*.sidebar-left > .sub-menu-heading {
-	margin-top:16px;
-}*/
+.sidebar-left > .sub-menu-heading {
+	margin-top: 16px;
+}
 .search-form {
 	margin-top:10px;
 }
