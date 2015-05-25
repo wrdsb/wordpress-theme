@@ -13,34 +13,12 @@
     # left column
     if (($has_left == TRUE) and ($has_right == TRUE)):
       echo '<div class="col-sm-3 col-md-2 col-lg-2">';
-      if (is_front_page() && wrdsb_i_am_a_school_with_kindergarten()) {
-        echo '<p><a href="http://www.wrdsb.ca/beforeafter/"><img src="http://www.wrdsb.ca/wp-content/uploads/beforeafter_banner.jpg" alt="Before &amp; After School Program Information"/></a></p>';
-      }
-      if (is_front_page() && wrdsb_i_am_a_school()) {
-	echo '<p><a href="http://www.wrdsb.ca/campaigns/scis-parent-survey-2015.html" target="_blank"><img src="http://www.wrdsb.ca/wp-content/uploads/SCIS_button-344x100.png" alt="Safe, Caring, Inclusive Schools Survey for Parents" /></a></p>';
-        echo '<p><a href="https://secure.wrdsb.ca/subscribe/" target="_blank"><img src="http://www.wrdsb.ca/wp-content/uploads/parent_email_trillium_3.jpg" alt="Parents/Guardians: Add your email address to the contact record for your child." /></a></p>';
-        echo '<p><a href="http://myway.wrdsb.ca"><img src="http://www.wrdsb.ca/wp-content/uploads/myway_banner_344x100.jpg" alt="MyWay Logo"/></a></p>';
-        echo '<p><a href="/about/school-year-information"><img src="http://www.wrdsb.ca/wp-content/uploads/schoolyearinformation.jpg" alt="School Year Information Logo"/></a></p>';
-        echo '<p><a href="http://www.wrdsb.ca/wefi/"><img src="http://www.wrdsb.ca/wp-content/uploads/wefi_banner_344x100.gif" alt="Waterloo Education Foundation Inc. (WEFI)"/></a></p>';
-      }
-      
       get_sidebar('left');
       echo '</div>';
     # Just left sidebar
     elseif (($has_left == TRUE) and ($has_right == FALSE)):
       echo '<div class="col-sm-3 col-lg-3">';
-      if (is_front_page() && wrdsb_i_am_a_school_with_kindergarten()) {
-        echo '<p><a href="http://www.wrdsb.ca/beforeafter/"><img src="http://www.wrdsb.ca/wp-content/uploads/beforeafter_banner.jpg" alt="Before &amp; After School Program Information"/></a></p>';
-      }
-      if (is_front_page() && wrdsb_i_am_a_school()) {
-	echo '<p><a href="http://www.wrdsb.ca/campaigns/scis-parent-survey-2015.html" target="_blank"><img src="http://www.wrdsb.ca/wp-content/uploads/SCIS_button-344x100.png" alt="Safe, Caring, Inclusive Schools Survey for Parents" /></a></p>';
-        echo '<p><a href="https://secure.wrdsb.ca/subscribe/" target="_blank"><img src="http://www.wrdsb.ca/wp-content/uploads/parent_email_trillium_3.jpg" alt="Parents/Guardians: Add your email address to the contact record for your child." /></a></p>';
-        echo '<p><a href="http://myway.wrdsb.ca"><img src="http://www.wrdsb.ca/wp-content/uploads/myway_banner_344x100.jpg" alt="MyWay Logo"/></a></p>';
-        echo '<p><a href="/about/school-year-information"><img src="http://www.wrdsb.ca/wp-content/uploads/schoolyearinformation_344x100.jpg" alt="School Year Information Logo"/></a></p>';
-        echo '<p><a href="http://www.wrdsb.ca/wefi/"><img src="http://www.wrdsb.ca/wp-content/uploads/wefi_banner_344x100.gif" alt="Waterloo Education Foundation Inc. (WEFI)"/></a></p>';
-      }
-     
-     get_sidebar('left');
+      get_sidebar('left');
       echo '</div>';
     # Just right sidebar
     elseif (($has_left == FALSE) and ($has_right == TRUE)):
@@ -80,23 +58,17 @@
 <?php } else { // Do stuff specific to non-first page ?>
 <?php } ?>
 
-<?php while (have_posts()) : the_post(); ?>
-<div class="excerpt-post">
-<h2 id="post-<?php the_ID(); ?>">
-<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>">
-<?php the_title(); ?></a></h2>
-<div class="catslist"><?php the_category(' and '); ?></div>
-    <div class="entry">
-        <?php the_excerpt('Continue Reading...') ?>
-    </div>
-<!--
-<?php trackback_rdf(); ?>
--->
-</div>
-<?php endwhile; ?>
+           <?php
+              // Start the Loop.
+              while ( have_posts() ) : the_post();
+                // Include the post format-specific content template.
+                get_template_part( 'content', get_post_format() );
+                // If comments are open or we have at least one comment, load up the comment template.
+                if ( comments_open() || get_comments_number() ) {
+                  comments_template();
+                }
+              endwhile;
 
-
-            <?php
               // Previous/next post navigation.
               wrdsb_paging_nav();
             ?>
