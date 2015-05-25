@@ -438,8 +438,8 @@ ul.sbe-widget-error {
 .sidebar-left {
 	margin-top:10px;
 }
-.sidebar-left .sub-menu-heading {
-	margin-top: 16px;
+.sidebar-left > .sub-menu-heading {
+	margin-top: 16px !important;
 }
 .search-form {
 	margin-top:10px;
