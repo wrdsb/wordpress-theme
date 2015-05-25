@@ -46,28 +46,24 @@
     endif
     ?>
 
-<?php
-	if ( is_category() ) : ?>
 	<h1><?php single_cat_title('Category: '); ?></h1>
 	<div id="category-description">
 	<?php echo category_description(); ?> 
 	</div>
-	<?php endif; ?>
+ <?php
+    // Start the Loop.
+    while ( have_posts() ) : the_post();
+      // Include the post format-specific content template.
+      get_template_part( 'content', get_post_format() );
+      // If comments are open or we have at least one comment, load up the comment template.
+      if ( comments_open() || get_comments_number() ) {
+        comments_template();
+      }
+    endwhile;
 
-           <?php
-              // Start the Loop.
-              while ( have_posts() ) : the_post();
-                // Include the post format-specific content template.
-                get_template_part( 'content', get_post_format() );
-                // If comments are open or we have at least one comment, load up the comment template.
-                if ( comments_open() || get_comments_number() ) {
-                  comments_template();
-                }
-              endwhile;
-
-              // Previous/next post navigation.
-              wrdsb_paging_nav();
-            ?>
+    // Previous/next post navigation.
+    wrdsb_paging_nav();
+  ?>
 
     </div> <!-- end content area -->
 
