@@ -131,6 +131,10 @@ a {
 	font-weight: 200;
 	margin-bottom:15px;
 }
+
+.featuredimage {
+	margin-top: 17px;
+}
 .footer {
 	background-color: #005daa;
 	color:#fff;
@@ -356,7 +360,7 @@ a#inc_font, a#dec_font {
 	font-weight:bold;
 	font-size:20px;
 	/*margin-bottom:6px;*/
-	margin-top:16px;
+	margin-top:17px;
 }
 .sub-menu-heading a {
 	color:#fff;
