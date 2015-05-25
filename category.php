@@ -68,17 +68,33 @@
     endif
     ?>
 
-
-
-
+<?php if ( $paged < 2 ) { // Do stuff specific to first page?>
 <?php if ( is_category() ) : ?>
-<h1 id="category-name-header">Category: <?php echo $cache_categories[$cat]->cat_name ?></h1>
+<h2 id="category-name-header"><?php echo $cache_categories[$cat]->cat_name ?></h2>
 <?php add_filter('category_description', 'wpautop'); ?>
 <?php add_filter('category_description', 'wptexturize'); ?>
 <div id="category-description">
 <?php echo category_description(); ?>
 </div>
 <?php endif; ?>
+<?php } else { // Do stuff specific to non-first page ?>
+<?php } ?>
+
+<?php while (have_posts()) : the_post(); ?>
+<div class="excerpt-post">
+<h2 id="post-<?php the_ID(); ?>">
+<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>">
+<?php the_title(); ?></a></h2>
+<div class="catslist"><?php the_category(' and '); ?></div>
+    <div class="entry">
+        <?php the_excerpt('Continue Reading...') ?>
+    </div>
+<!--
+<?php trackback_rdf(); ?>
+-->
+</div>
+<?php endwhile; ?>
+
 
             <?php
               // Previous/next post navigation.
