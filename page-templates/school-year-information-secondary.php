@@ -63,6 +63,7 @@ Template Name: SYI - Secondary
 
     <?php // check if the post has a Post Thumbnail assigned to it.
       if ( has_post_thumbnail() ) {
+        echo '<div class="featuredimage">';
         if (($has_left == TRUE) and ($has_right == TRUE)):
           the_post_thumbnail('wrdsb-two-sidebars');
         elseif (($has_left == TRUE) and ($has_right == FALSE)):
@@ -72,6 +73,7 @@ Template Name: SYI - Secondary
         elseif (($has_left == FALSE) and ($has_right == FALSE)):
           the_post_thumbnail('wrdsb-full-width');
         endif;
+        echo '</div>';
       }
     ?>
 <h1>School Year Information</h1>
