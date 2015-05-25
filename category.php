@@ -48,11 +48,9 @@
 
 <?php
 	if ( is_category() ) : ?>
-	<h1><?php single_cat_title('Currently browsing '); ?></h1>
-	<?php add_filter('category_description', 'wpautop'); ?>
-	<?php add_filter('category_description', 'wptexturize'); ?>
+	<h1><?php single_cat_title('Category: '); ?></h1>
 	<div id="category-description">
-	<?php echo category_description(); ?>
+	<?php echo category_description(); ?> 
 	</div>
 	<?php endif; ?>
 
