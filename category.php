@@ -46,10 +46,15 @@
     endif
     ?>
 
+<?php if ( $paged < 2 ) : ?>
 	<h1><?php single_cat_title('Category: '); ?></h1>
 	<div id="category-description">
 	<?php echo category_description(); ?> 
 	</div>
+<?php else : ?>
+	<h1><?php single_cat_title('Category: '); ?></h1>
+<?php endif; ?>
+
  <?php
     // Start the Loop.
     while ( have_posts() ) : the_post();
