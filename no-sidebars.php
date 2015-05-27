@@ -10,7 +10,9 @@ Template Name: No Sidebars
     <div class="col-sm-12">
       <?php // check if the post has a Post Thumbnail assigned to it.
         if ( has_post_thumbnail() ) {
-	  the_post_thumbnail('wrdsb-full-width');
+          echo '<div class="featuredimage">';
+          the_post_thumbnail('wrdsb-full-width');
+          echo '</div>';
         }
       ?>
       <?php

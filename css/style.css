@@ -131,6 +131,10 @@ a {
 	font-weight: 200;
 	margin-bottom:15px;
 }
+
+.featuredimage {
+	margin-top: 17px;
+}
 .footer {
 	background-color: #005daa;
 	color:#fff;
@@ -435,7 +439,7 @@ ul.sbe-widget-error {
 	margin-top:10px;
 }
 .sidebar-left > .sub-menu-heading {
-	margin-top:10px;
+	margin-top: 16px !important;
 }
 .search-form {
 	margin-top:10px;
