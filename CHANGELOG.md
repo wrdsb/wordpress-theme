@@ -1,3 +1,24 @@
+## 0.4.2
+Fixes
++ remembered to update the Changelog again
++ 
+
+## 0.4.1
++ tag.php
+
+## 0.4.0
+Feature Added
++ category.php (with descriptions now displaying)
++ minor layout fixes
+
+## 0.3.10
+Fixes
++ fixed typography for lmenu/sidebar headers
+
+## 0.3.9
+Fixes 
++ remembered to update the Changelog...
+
 ## 0.3.8
 Fixes 
 + remove borders from school table
