@@ -1,7 +1,8 @@
 ## 0.4.2
 Fixes
 + remembered to update the Changelog again
-+ 
++ changed WEFI button (new logo)
++ removed SCIS button (expired May 31)
 
 ## 0.4.1
 + tag.php
