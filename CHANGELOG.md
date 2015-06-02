@@ -1,3 +1,7 @@
+## 0.4.3
+Content
++ added Website Feedback Form link to footer
+
 ## 0.4.2
 Fixes
 + remembered to update the Changelog again

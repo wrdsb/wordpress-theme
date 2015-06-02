@@ -26,7 +26,8 @@
               </address>
               <address>
                 Switchboard: 519-570-0003<br />
-                <a href="http://www.wrdsb.ca/about-the-wrdsb/contact/">Contact Information</a>
+                <a href="http://www.wrdsb.ca/about-the-wrdsb/contact/">Contact Information</a><br />
+                <a href="http://www.wrdsb.ca/about-the-wrdsb/contact/website-feedback/">Website Feedback Form</a>
               </address>
               <?php  
                 }
