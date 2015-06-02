@@ -1,3 +1,7 @@
+## 0.4.4
+Content
++ added announcement information to SYI page templates
+
 ## 0.4.3
 Content
 + added Website Feedback Form link to footer
