@@ -78,6 +78,9 @@ Template Name: SYI - Elementary
     ?>
 
 <h1>School Year Information</h1>
+
+<p class="announcement">Updated information for the 2015-2016 School Year will be posted in early August, 2015.</p>
+
 <p>
   Back to school is an exciting time for students. September ushers 
   in a new year, with many new experiences to look forward to.
