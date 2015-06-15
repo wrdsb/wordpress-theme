@@ -1,4 +1,4 @@
-## 0.4.5
+## 0.5.0
 + changed function for address to work with new plugin
 
 ## 0.4.4
