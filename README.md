@@ -26,3 +26,7 @@ Information on how to install a theme into WordPress can be found at
 Information on how to install, upgrade WordPress can be found at
 * http://codex.wordpress.org/Installing_WordPress
 * http://codex.wordpress.org/Updating_WordPress
+
+## Code Climate
+
+[![Code Climate](https://codeclimate.com/github/wrdsb/wordpress-theme/badges/gpa.svg)](https://codeclimate.com/github/wrdsb/wordpress-theme)

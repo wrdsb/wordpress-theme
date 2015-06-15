@@ -1,3 +1,44 @@
+## 0.5.0
++ changed function for address to work with new plugin
+
+## 0.4.4
+Content
++ added announcement information to SYI page templates
+
+## 0.4.3
+Content
++ added Website Feedback Form link to footer
+
+## 0.4.2
+Fixes
++ remembered to update the Changelog again
++ changed WEFI button (new logo)
++ removed SCIS button (expired May 31)
+
+## 0.4.1
++ tag.php
+
+## 0.4.0
+Feature Added
++ category.php (with descriptions now displaying)
++ minor layout fixes
+
+## 0.3.10
+Fixes
++ fixed typography for lmenu/sidebar headers
+
+## 0.3.9
+Fixes 
++ remembered to update the Changelog...
+
+## 0.3.8
+Fixes 
++ remove borders from school table
++ gnss.css added
++ gnss and dsps added to school lists in functions
++ fixed description of footer file
++ added padding to navigation menu for .nav_current_page_children_container
+
 ## 0.3.7
 Fixes
 + clearfix for categories/tags so floated content will not display it (requires a category or tag be set)

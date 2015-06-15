@@ -15,8 +15,9 @@
               <!-- automate address -->
 
               <?php 
-                if (function_exists('wrdsb_school_info_display_new')) {
-                  wrdsb_school_info_display_new();
+                // from plugin wrdsb_schools_contact.php
+                if (function_exists('wrdsb_school_info_display')) {
+                  wrdsb_school_info_display();
                 }
                 else {
                   ?>
@@ -32,7 +33,6 @@
                 }
               ?>
               
-
               <div class="social-icons">
                 <!--<a href="#"><span class="icon-facebook" title="Facebook"></span></a>-->
                 <!--<a href="#"><span class="icon-twitter" title="Twitter"></span></a>-->
