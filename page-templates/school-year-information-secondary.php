@@ -63,6 +63,7 @@ Template Name: SYI - Secondary
 
     <?php // check if the post has a Post Thumbnail assigned to it.
       if ( has_post_thumbnail() ) {
+        echo '<div class="featuredimage">';
         if (($has_left == TRUE) and ($has_right == TRUE)):
           the_post_thumbnail('wrdsb-two-sidebars');
         elseif (($has_left == TRUE) and ($has_right == FALSE)):
@@ -72,13 +73,15 @@ Template Name: SYI - Secondary
         elseif (($has_left == FALSE) and ($has_right == FALSE)):
           the_post_thumbnail('wrdsb-full-width');
         endif;
+        echo '</div>';
       }
     ?>
 <h1>School Year Information</h1>
-<p>
-  Back to school is an exciting time for students. September ushers
-  in a new year, with many new experiences to look forward to.
-</p>
+
+<p class="announcement">Updated information for the 2015-2016 School Year will be posted in early August, 2015.</p>
+
+<p>Back to school is an exciting time for students. September ushers in a new year, with many new experiences to look forward to.</p>
+
 <p>
   But there's one thing that doesn't change and that is the
   key information we send home to parents in the "September Home

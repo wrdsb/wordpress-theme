@@ -15,7 +15,9 @@
 if (is_single()) :
 	// check if the post has a Post Thumbnail assigned to it.
 	if ( has_post_thumbnail() ) :
+		echo '<div class="featuredimage">';
  		the_post_thumbnail('wrdsb-full-width');
+ 		echo '</div>';
         endif;
 // else if part of news stream
 else :
