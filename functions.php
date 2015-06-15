@@ -465,6 +465,9 @@ function wrdsb_secondary_school_colours() {
     case "gci":
       echo '<link href="'.get_template_directory_uri().'/css/gci.css" rel="stylesheet">';
       break;
+    case "gnss":
+      echo '<link href="'.get_template_directory_uri().'/css/gnss.css" rel="stylesheet">';
+      break;
     case "gps":
       echo '<link href="'.get_template_directory_uri().'/css/gps.css" rel="stylesheet">';
       break;
@@ -576,6 +579,7 @@ function wrdsb_i_am_a_school() {
     "dks",
     "doo",
     "dpk",
+    "dsps",
     "eci",
     "eds",
     "elg",
@@ -592,6 +596,7 @@ function wrdsb_i_am_a_school() {
     "gci",
     "gcp",
     "german",
+    "gnss",
     "gps",
     "greek",
     "grc",
@@ -706,6 +711,7 @@ function wrdsb_i_am_a_school_with_kindergarten() {
     "cre",
     "ctr",
     "dpk",
+    "dsps",
     "elg",
     "elz",
     "emp",
