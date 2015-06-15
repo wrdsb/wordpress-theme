@@ -15,7 +15,7 @@
               <!-- automate address -->
 
               <?php 
-                // from plugin wrdsb_schools_contact_information.php
+                // from plugin wrdsb_schools_contact.php
                 if (function_exists('wrdsb_school_info_display')) {
                   wrdsb_school_info_display();
                 }
