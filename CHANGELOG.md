@@ -1,3 +1,6 @@
+## 0.5.0
++ changed function for address to work with new plugin
+
 ## 0.4.4
 Content
 + added announcement information to SYI page templates
