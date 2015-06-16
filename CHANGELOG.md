@@ -1,3 +1,6 @@
+## 0.5.1
++ ensuring the school list is accurate
+
 ## 0.5.0
 + changed function for address to work with new plugin
 
