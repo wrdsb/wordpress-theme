@@ -39,7 +39,7 @@ Template Name: School List
 							$schools = json_decode($json);
 
 							foreach($schools as $school) {
-								if(($school->alpha_code != 'TBR') and 
+								if(($school->alpha_code != 'RMT') and ($school->alpha_code != 'TBR') and 
 									($school->alpha_code != 'DKS') and ($school->alpha_code != 'LNA') and
 									($school->alpha_code != 'SBL') and ($school->alpha_code != 'SBM') and
 									($school->alpha_code != 'SMH') and ($school->alpha_code != 'PYS') and
@@ -97,7 +97,7 @@ Template Name: School List
 							$schools = json_decode($json);
 
 							foreach($schools as $school) {
-								if(($school->alpha_code != 'ALR') and ($school->alpha_code != 'ALC') and
+								if(($school->alpha_code != 'RMT') and ($school->alpha_code != 'ALR') and ($school->alpha_code != 'ALC') and
 									($school->alpha_code != 'ALU') and ($school->alpha_code != 'ANC') and
 									($school->alpha_code != 'ALR') and ($school->alpha_code != 'ELE') and
 									($school->alpha_code != 'ALR') and ($school->alpha_code != 'ALC') and
@@ -140,7 +140,7 @@ Template Name: School List
 					$schools = json_decode($json);
 
 					foreach($schools as $school) {
-						if(($school->alpha_code != 'TBR') and 
+						if(($school->alpha_code != 'RMT') and ($school->alpha_code != 'TBR') and 
 									($school->alpha_code != 'DKS') and ($school->alpha_code != 'LNA') and
 									($school->alpha_code != 'SBL') and ($school->alpha_code != 'SBM') and
 									($school->alpha_code != 'SMH') and ($school->alpha_code != 'PYS') and
@@ -178,7 +178,7 @@ Template Name: School List
 					$schools = json_decode($json);
 
 					foreach($schools as $school) {
-						if(($school->alpha_code != 'ALR') and ($school->alpha_code != 'ALC') and
+						if(($school->alpha_code != 'RMT') and ($school->alpha_code != 'ALR') and ($school->alpha_code != 'ALC') and
 									($school->alpha_code != 'ALU') and ($school->alpha_code != 'ANC') and
 									($school->alpha_code != 'ALR') and ($school->alpha_code != 'ELE') and
 									($school->alpha_code != 'ALR') and ($school->alpha_code != 'ALC') and
