@@ -77,231 +77,6 @@ Template Name: SYI - Elementary
       }
     ?>
 
-<h1>School Year Information</h1>
-
-<p class="announcement">Updated information for the 2015-2016 School Year will be posted in early August, 2015.</p>
-
-<p>
-  Back to school is an exciting time for students. September ushers 
-  in a new year, with many new experiences to look forward to.
-</p>
-<p>
-  But there's one thing that doesn't change and that is the 
-  key information we send home to parents in the "September Home 
-  Package" envelope. This year, we have posted much of that 
-  information here so that parents may access it at any time.
-</p>
-<p>
-  Have a great year!
-</p>
-
-<p>
-  Parents/guardians are requested to read the following 
-  documents by clicking on the links provided below:
-</p>
-
-<p><a href="http://www.wrdsb.ca/wp-content/uploads/IS-09-L-E.pdf" target="_blank">Release of Student Information Form &#8211; IS-09-L-E</a></p>
-<ul>
-  <li>
-    The Standard Release form will be sent home by the school with each 
-    student in paper form.  Parents/guardians are requested to complete, 
-    sign and return the Standard Release Form  to your school  office.
-  </li>
-  <li>
-    The form is available for translation using Google Translator: 
-
-    <a href="http://www.wrdsb.ca/is-09-l-e/" target="_blank">Release of Student Information &#8211; IS-09-L-E</a>
-
-  </li>
-</ul>
-
-<p><a href="http://www.wrdsb.ca/wp-content/uploads/Welcome-Letter-Chairperson-Director.pdf" target="_blank">Welcome Letter</a></p>
-<ul>
-  <li>Chairperson Ted Martin, and Director of Education John Bryant welcome you and your child(ren) to the 2014-15 school year.</li>
-</ul>
-
-<p><a href="http://www.wrdsb.ca/wp-content/uploads/2014-15-School-Year-Information.pdf" target="_blank">2014-15 School Year Calendar Information</a></p>
-<ul>
-  <li>
-    The school year calendar information provides parents 
-    with a list of important dates, such as PD Days and holidays.
-  </li>
-</ul>
-
-<p><a href="http://www.wrdsb.ca/wp-content/uploads/Elementary-2014-2015-5-day-cycle.pdf" target="_blank">Elementary School Year Calendar &#8211; JK &#8211; 6</a></p>
-<ul>
-  <li>For Parents of students in JK &#8211; 6 schools</li>
-  <li>1 &#8211; 5 cycle days have been included</li>
-</ul>
-
-<p><a href="http://www.wrdsb.ca/wp-content/uploads/SYC-Elementary-2014-2015.pdf" target="_blank">Elementary School Year Calendar &#8211; JK &#8211; 8, 7 &#8211; 8</a></p>
-<ul>
-  <li>For Parents of students in JK &#8211; 8, 7 &#8211; 8 schools</li>
-</ul>
-
-<p><a href="http://www.wrdsb.ca/wp-content/uploads/School-Community-Standards-of-Behaviour.pdf" target="_blank">School Community Standards of Behaviour</a></p>
-<ul>
-  <li>
-    These standards are in place to ensure that all members of our school communities 
-    are treated with dignity and respect, and follow the Ontario Ministry of Educations' 
-    Code of Conduct. The process for resolving parent/guardian concerns is also
-    outlined in this document.
-  </li>
-</ul>
-
-<p><a href="http://www.wrdsb.ca/wp-content/uploads/Student-Accident-Insurance-Letter.pdf" target="_blank">Student Accident Insurance Letter</a></p>
-<ul>
-  <li>
-    This insurance program available through Staebler Insurance, 
-    offers a variety of plans and benefits that may not be covered 
-    by Provincial or employer group insurance plans.
-  </li>
-  <li>
-    Parents/guardians are encouraged to subscribe on-line at: 
-    <a href="http://www.staebler.com/student-accident-insurance" target="_blank">www.staebler.com/student-accident-insurance</a>
-  </li>
-</ul>
-
-<p><a href="http://www.wrdsb.ca/wp-content/uploads/Safe-Arrival-Program-and-Emergency-Closures.pdf" target="_blank">Safe Arrival &#8211; Emergency School Closures</a></p>
-<ul>
-  <li>
-    Information on the Safe Arrival Program, why it’s in place 
-    and how it works, as well as what happens when there is an 
-    emergency school closure can be found in this handout.
-  </li>
-  <li>
-    A list of radio stations is also provided for inclement 
-    weather information.
-  </li>
-</ul>
-
-<p><a href="http://www.wrdsb.ca/wp-content/uploads/Character-Development.pdf" target="_blank">Character Development</a></p>
-<ul>
-  <li>
-    Character Development connects caring to knowing, 
-    feeling and doing. There are eight (8) character attributes, 
-    defined in this document, that help guide character 
-    development in the WRDSB.
-  </li>
-</ul>
-
-<p><a href="http://www.wrdsb.ca/wp-content/uploads/Code-of-Digital-Conduct-Junior.pdf" target="_blank">Code of Digital Conduct &#8211; Junior</a></p>
-<ul>
-  <li>
-    The code of digital conduct teaches students how to safely 
-    use online technology in the classroom.
-  </li>
-</ul>
-
-<p><a href="http://www.wrdsb.ca/wp-content/uploads/Digital-Citizenship.pdf" target="_blank">Digital Citizenship</a></p>
-<ul>
-  <li>
-    Digital citizenship connects the eight character attributes of 
-    character development to online tools used in the classroom.
-  </li>
-</ul>
-
-<p><a href="http://www.wrdsb.ca/wp-content/uploads/Safe-Caring-and-Inclusive-Schools.pdf" target="_blank">Safe, Caring and Inclusive Schools</a></p>
-<ul>
-  <li>
-    This handout explains the changes as a result of legislation 
-    (Bill 157), and Board Policy that requires all board employees 
-    to report behaviours that typically lead to suspension or expulsion.
-  </li>
-  <li>
-    These behaviours include inappropriate jokes/comments, acts 
-    of vandalism and acts of violence.
-  </li>
-</ul>
-
-<p><a href="http://www.wrdsb.ca/wp-content/uploads/Threat-Risk-Assessment.pdf" target="_blank">Threat Risk Assessment Fair Notice Process</a></p>
-<ul>
-  <li>
-    The Waterloo Region District School Board recognizes that all 
-    members of the school community have the right to be safe and 
-    feel safe in their school community.
-  </li>
-  <li>
-    Under certain conditions, students may undergo a "Threat Risk 
-    Assessment". This assessment determines the level of risk to 
-    others and themselves.
-  </li>
-  <li>
-    This document outlines the process of a Threat Risk Assessment.
-  </li>
-</ul>
-
-<p><a href="http://www.wrdsb.ca/wp-content/uploads/Parent-Engagement.pdf" target="_blank">Parent Engagement: School Councils</a></p>
-<ul>
-  <li>
-    The roles and responsibilities of school councils are outlined in this 
-    document. For information on your child’s school council, please contact 
-    the school Principal.
-  </li>
-</ul>
-
-<p><a href="http://www.wrdsb.ca/wp-content/uploads/International-Languages.pdf" target="_blank">International Languages</a></p>
-<ul>
-  <li>
-    The international languages program provides students 
-    with opportunities to learn a new language, at various schools 
-    throughout the region.
-  </li>
-  <li>
-    Information on languages offered and how to register 
-    can be found in this document.
-  </li>
-</ul>
-
-<p><a href="http://www.wrdsb.ca/wp-content/uploads/Elementary-School-Bus-Safety.pdf" target="_blank">Elementary School Bus Safety</a></p>
-<ul>
-  <li>
-    Every day, thousands of students are taken to school by 
-    Student Transportation Services of Waterloo Region (STSWR).
-  </li>
-  <li>
-    This document outlines student safety while riding school buses, 
-    including getting on and off the vehicle, bus patrols and 
-    what to do at the bus stop.
-  </li>
-</ul>
-
-<p><a href="http://www.wrdsb.ca/wp-content/uploads/STSWR-Information-Insert.pdf" target="_blank">STSWR Information Insert</a></p>
-<ul>
-  <li>
-    Transportation is provided by Student Transportation Services of 
-    Waterloo Region. This information sheet provides contact information, 
-    as well as how to find out your child’s bus route and transportation 
-    eligibility.
-  </li>
-</ul>
-
-<p><a href="http://www.wrdsb.ca/wp-content/uploads/Voluntary-First-Nation-Pamphlet.pdf" target="_blank">Voluntary First Nation Pamphlet</a></p>
-<ul>
-  <li>
-    If your child(ren) are of First Nation, Metis or Inuit ancestry, 
-    we encourage you to consider participating in the voluntary 
-    self-identification information collection process, when registering 
-    for school or updating student information.
-  </li>
-  <li>
-    Information on the self-identification process is found in this brochure.
-  </li>
-</ul>
-<!--
-<p><a href="http://backtoschool.wrdsb.ca/files/2013/07/ImmunizationPostcard2013.pdf" target="_blank">Protect Your Child &#8211; Immunize</a></p>
-<ul>
-  <li>Immunization leads to improved individual and population health. It also helps save lives and prevent serious illnesses.</li>
-  <li>Parents are encouraged to contact Public Health when your child receives any immunizations.</li>
-  <li>Information for reporting immunizations is found in this document.</li>
-</ul>
-
-<p>Walking to School Maps</p>
-<ul>
-  <li><a href="http://www.wrdsb.ca/school-year-information/?page_id=267" target="_blank">Kitchener Schools</a></li>
-  <li><a href="http://www.wrdsb.ca/school-year-information/?page_id=355" target="_blank">Waterloo Schools</a></li>
-</ul>
--->
     <?php
       // Start the Loop.
       while ( have_posts() ) : the_post();
@@ -315,6 +90,143 @@ Template Name: SYI - Elementary
         }
       endwhile;
     ?>
+
+<h1>General School Year Information</h1>
+
+<p class="announcement">Updated information for the 2015-2016 School Year will be posted in early August, 2015.</p>
+
+<p>Back to school is an exciting time for students. September ushers in a new year, with many new experiences to look forward to.</p>
+
+<p>But there&rsquo;s one thing that doesn&rsquo;t change and that is the key information we send home to parents in the "September Home Package" envelope. This year, we have posted much of that information here so that parents may access it at any time.</p>
+
+<p>Have a great year!</p>
+
+<h2>Signature Required</h2>
+
+<p>These items come home with each student in paper form. <strong>Please complete, sign and return them to your child&rsquo;s school office when you receive them.</strong></p>
+
+<p>You can also request them from your child&rsquo;s school office, or print them where provided and send them in.</p>
+
+<ul>
+  <li><strong>Data Verification Form (DVF)</strong>
+    <p>This form verifies your child&rsquo;s personal information, as well as your contact and emergency contact preferences.</p>
+  </li>
+  <li><strong><a href="http://www.wrdsb.ca/wp-content/uploads/IS-09-L-E.pdf" target="_blank">Release of Student Information Form &#8211; IS-09-L-E</a></strong>
+    <p>The form is available for translation using Google Translator: <a href="http://www.wrdsb.ca/is-09-l-e/" target="_blank">Release of Student Information &#8211; IS-09-L-E</a></p>
+  </li>
+  <li><strong><a target="_blank" href="http://www.stswr.ca/wp-content/uploads/Do-Not-Ride-Form1.pdf">Do Not Ride Form</a></strong>
+    <p>This form must be completed annually by parents of children who qualify for busing but will not ride because the parent has made alternative arrangements.</p>
+  </li>
+  <li><strong><a target="_blank" href="https://e-immunization.regionofwaterloo.ca">Form E &ndash; Student Immunization Form</a></strong>
+    <p>For JK/SK students, and any students new to the Region from outside of the province of Ontario. You are encouraged to submit this information using the <a target="_blank" href="https://e-immunization.regionofwaterloo.ca">online form</a>.</p>
+  </li>
+  <li><strong>Public Health consent forms</strong>
+    <ul>
+      <li>Hepatitis B Vaccination (Grade 7 students)</li>
+      <li>Meningococcal Vaccination (Grade 7 students)</li>
+      <li>HPV Vaccination (Grade 8 female students)</li>
+    </ul>
+  </li>
+</ul>
+
+<h2>For Your Information</h2>
+
+<p><strong>Parents/guardians</strong>, please read the following documents:</p>
+
+<h3>Welcome!</h3>
+
+<ul>
+  <li><strong><a href="http://www.wrdsb.ca/wp-content/uploads/Welcome-Back.pdf" target="_blank">Welcome Letter</a></strong>
+    <p>Chairperson Kathleen Woodcock, and Director of Education John Bryant welcome you and your child(ren) to the 2015-2016 school year.</p>
+  </li>
+</ul>
+
+<h3>Calendars and Important Dates</h3>
+
+<ul>
+  <li><strong><a href="http://www.wrdsb.ca/wp-content/uploads/school-year-information-2015-2016.pdf" target="_blank">2015-2016 School Year Calendar Information</a></strong>
+    <p>The school year calendar information provides parents with a list of important dates, such as PD Days and holidays.</p>
+  </li>
+  
+  <li><strong><a href="http://www.wrdsb.ca/wp-content/uploads/calendar-elementary-2015-2016.pdf" target="_blank">Elementary School Year Calendar</a></strong></li>
+</ul>
+
+<h3>Expectations</h3>
+
+<ul>
+  <li><strong><a href="http://www.wrdsb.ca/wp-content/uploads/School-Community-Standards-of-Behaviour.pdf" target="_blank">School Community Standards of Behaviour</a></strong>
+    <p>These standards ensure all members of our school communities are treated with dignity and respect, and follow the Ontario Ministry of Educations&rsquo; Code of Conduct. This document also outlines the process for resolving parent/guardian concerns.</p>
+  </li>
+  <li><strong><a href="http://www.wrdsb.ca/wp-content/uploads/Character-Development.pdf" target="_blank">Character Development</a></strong>
+    <p>Character Development connects caring to knowing, feeling and doing. The eight (8) defined character attributes help guide character development in the WRDSB.</p>
+  </li>
+  <li><strong><a href="http://www.wrdsb.ca/wp-content/uploads/Code-of-Digital-Conduct-Junior.pdf" target="_blank">Code of Digital Conduct &#8211; Junior</a></strong>
+    <p>The code of digital conduct teaches students how to safely use online technology in the classroom.</p>
+  </li>
+  <li><strong><a href="http://www.wrdsb.ca/wp-content/uploads/Digital-Citizenship.pdf" target="_blank">Digital Citizenship</a></strong>
+    <p>Digital citizenship connects the eight character attributes of character development to online tools used in the classroom.</p>
+  </li>
+</ul>
+
+<h3>School Safety</h3>
+
+<ul>
+  <li><strong><a href="http://www.wrdsb.ca/wp-content/uploads/2015-Student-Accident-Insurance-Letter.pdf" target="_blank">Student Accident Insurance Letter</a></strong>
+    <p>Some injuries may incur medical, dental or other expenses that are not covered by provincial health care or employer group plans. The WRDSB encourages you to consider <a href="http://www.insuremykids.com/" target="_blank">Insurekids&reg; Protection Plan</a> for students through Old Republic Insurance Company of Canada.</p>
+    <p>Parents requesting a paper pamphlet to subscribe should contact Old Republic Insurance Company of Canada at 1-800-463-5437.</p>
+  </li>
+  <li><strong>You asked us: How to Avoid School Suspension</strong> (because of missing vaccinations)
+  <p>From Region of Waterloo: Public Health and Emergency Services to raise awareness of the new mandatory vaccination requirements.</p>
+  </li>
+  <li><strong><a href="http://www.wrdsb.ca/wp-content/uploads/Safe-Caring-and-Inclusive-Schools.pdf" target="_blank">Safe, Caring and Inclusive Schools</a></strong>
+    <p>This handout explains the changes as a result of legislation (Bill 157), and Board Policy that requires all board employees to report behaviours that typically lead to suspension or expulsion.</p>
+
+    <p>These behaviours include inappropriate jokes/comments, acts of vandalism and acts of violence.</p>
+  </li>
+  <li><strong><a href="http://www.wrdsb.ca/wp-content/uploads/Safe-Arrival-Program-and-Emergency-Closures.pdf" target="_blank">Safe Arrival &#8211; Emergency School Closures</a></strong>
+    <p>Information on the Safe Arrival Program, why it is in place and how it works, as well as what happens when there is an emergency school closure.</p>
+
+    <p>It also includes a list of radio stations which provide inclement weather information.</p>
+  </li>
+  <li><strong><a href="http://www.wrdsb.ca/wp-content/uploads/Threat-Risk-Assessment.pdf" target="_blank">Threat Risk Assessment Fair Notice Process</a></strong>
+    <p>All members of the school community have the right to be safe and feel safe in their school community. Under certain conditions, students may undergo a "Threat Risk Assessment". This assessment determines the level of risk to others and themselves.</p>
+
+    <p>This document outlines the process of a Threat Risk Assessment.</p>
+  </li>
+</ul>
+
+<h3>Get Involved</h3>
+
+<ul>
+  <li><strong><a href="http://www.wrdsb.ca/wp-content/uploads/Parent-Engagement2015.pdf" target="_blank">Parent Engagement: School Councils</a></strong>
+    <p>This document outlines the roles and responsibilities of school councils. For information on your child&rsquo;s school council, please contact the school Principal.</p>
+  </li>
+  <li><strong><a href="http://www.wrdsb.ca/pic/">Parent Involvement Committee (PIC)</a></strong>
+    <p>The purpose of PIC is to support, encourage and enhance the engagement of parents/guardians of the WRDSB in their children&rsquo;s education, to improve student achievement and well-being.</p>
+  </li>
+  <li><strong><a href="http://www.wrdsb.ca/our-schools/get-involved/wrapsc/">Waterloo Region Assembly of Public School Councils (WRAPSC)</a></strong>
+    <p>The purpose of the Assembly is to assist all School Councils of the WRDSB to further their support of student achievement through parent engagement.</p>
+  </li>
+  <li><strong><a href="http://www.wrdsb.ca/wp-content/uploads/Voluntary-First-Nation-Pamphlet.pdf" target="_blank">Voluntary First Nation, M&eacute;tis and Inuit Self-Identification Information for Families</a></strong>
+    <p>The voluntary First Nation, M&eacute;tis and Inuit self-identification process allows us to work toward the goal of improving Aboriginal student achievement through specific programming, targeted initiatives, resource support and increased family and community involvement with the Board.</p>
+
+    <p>If your child(ren) are of First Nation, M&eacute;tis or Inuit ancestry, we encourage you to consider participating in the voluntary self-identification information collection process, when registering for school or updating student information.</p>
+  </li>
+  <li><strong><a href="http://www.wrdsb.ca/wp-content/uploads/international-languages-poster-8.5x11.pdf" target="_blank">International Languages</a></strong>
+    <p>The international languages program provides students with opportunities to learn a new language, at various schools throughout the region.</p>
+  </li>
+</ul>
+
+<h3>Busing</h3>
+
+<ul>
+  <li><strong><a href="http://www.wrdsb.ca/wp-content/uploads/STSWR-Information-Insert.pdf" target="_blank">STSWR Information Insert</a></strong>
+    <p>Student Transportation Services of Waterloo Region (STSWR) provides transportation. This information sheet provides contact information, as well as how to find out your child&rsquo;s bus route and transportation eligibility.</p>
+  </li>
+  <li><strong><a href="http://www.wrdsb.ca/wp-content/uploads/Elementary-School-Bus-Safety.pdf" target="_blank">Elementary School Bus Safety</a></strong>
+    <p>This document outlines student safety while riding school buses, including getting on and off the vehicle, bus patrols and what to do at the bus stop.</p>
+  </li>
+</ul>
 
     </div> <!-- end content area -->
 
