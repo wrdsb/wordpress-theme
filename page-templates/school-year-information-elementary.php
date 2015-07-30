@@ -175,7 +175,7 @@ Template Name: SYI - Elementary
     <p>Some injuries may incur medical, dental or other expenses that are not covered by provincial health care or employer group plans. The WRDSB encourages you to consider <a href="http://www.insuremykids.com/" target="_blank">Insurekids&reg; Protection Plan</a> for students through Old Republic Insurance Company of Canada.</p>
     <p>Parents requesting a paper pamphlet to subscribe should contact Old Republic Insurance Company of Canada at 1-800-463-5437.</p>
   </li>
-  <li><strong>You asked us: How to Avoid School Suspension</strong> (because of missing vaccinations)
+  <li><strong><a target="_blank" href="http://www.wrdsb.ca/wp-content/uploads/1841605-Immunization-Postcard_access.pdf">You asked us: How to Avoid School Suspension</a></strong> (because of missing vaccinations)
   <p>From Region of Waterloo: Public Health and Emergency Services to raise awareness of the new mandatory vaccination requirements.</p>
   </li>
   <li><strong><a href="http://www.wrdsb.ca/wp-content/uploads/Safe-Caring-and-Inclusive-Schools.pdf" target="_blank">Safe, Caring and Inclusive Schools</a></strong>
