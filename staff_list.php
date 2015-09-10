@@ -57,8 +57,14 @@ Template Name: Staff List
                       case 'Teacher':
                         echo '51';
                         break;
-                      case 'Educational Assistant':
+                      case 'DECE':
                         echo '70';
+                        break;
+                      case 'Educational Assistant':
+                        echo '71';
+                        break;
+                      case 'Library Clerk':
+                        echo '72';
                         break;
                       case 'Custodian':
                         echo '80';
