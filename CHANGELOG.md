@@ -1,3 +1,6 @@
+## 0.5.5
+* exclude user id 1 from staff list
+
 ## 0.5.4
 * fix user query and display conditional in staff_list.php
 

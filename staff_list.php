@@ -31,7 +31,7 @@ Template Name: Staff List
             </thead>
             <tbody>
               <?php foreach($user_query->results as $user) { ?>
-                <?php if (get_user_option('wrdsb_display_in_staff_list', $user->ID) == 1) { ?>
+                <?php if ((get_user_option('wrdsb_display_in_staff_list', $user->ID) == 1) && ($user->ID != 1)) { ?>
                   <?php $wrdsb_contact_options = get_user_option('wrdsb_contact_options', $user->ID); ?>
                   <?php $wrdsb_voicemail = get_user_option('wrdsb_voicemail', $user->ID); ?>
                   <?php $wrdsb_website_url = get_user_option('wrdsb_website_url', $user->ID); ?>
