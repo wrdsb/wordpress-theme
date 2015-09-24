@@ -1,3 +1,6 @@
+## 0.5.3
+* pulled in changes to staff_list.php template to remove vanity sort prefix
+
 ## 0.5.1
 + ensuring the school list is accurate
 
@@ -31,11 +34,11 @@ Fixes
 + fixed typography for lmenu/sidebar headers
 
 ## 0.3.9
-Fixes 
+Fixes
 + remembered to update the Changelog...
 
 ## 0.3.8
-Fixes 
+Fixes
 + remove borders from school table
 + gnss.css added
 + gnss and dsps added to school lists in functions
@@ -60,7 +63,7 @@ Fixes
 ## 0.3.4
 Fixes
 + add left sidebar to single.php template
- 
+
 ## 0.3.3
 Fixes
 + add SCIS survey button (corporate area)

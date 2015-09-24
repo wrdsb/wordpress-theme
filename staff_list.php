@@ -3,7 +3,8 @@
 Template Name: Staff List
 */
 ?>
-<?php $user_query = new WP_User_Query(array('meta_key' => 'wrdsb_display_in_staff_list', 'meta_value' => 1)); ?>
+<?php $blog_prefix = $wpdb->get_blog_prefix(); ?>
+<?php $user_query = new WP_User_Query(array('meta_key' => $blog_prefix.'wrdsb_display_in_staff_list', 'meta_value' => 1)); ?>
 <?php get_header(); ?>
 
 <div class="container">
@@ -31,65 +32,26 @@ Template Name: Staff List
             </thead>
             <tbody>
               <?php foreach($user_query->results as $user) { ?>
+                <?php $wrdsb_contact_options = get_user_option('wrdsb_contact_options', $user->ID); ?>
+                <?php $wrdsb_voicemail = get_user_option('wrdsb_voicemail', $user->ID); ?>
+                <?php $wrdsb_website_url = get_user_option('wrdsb_website_url', $user->ID); ?>
                 <tr>
                   <td><?php echo $user->last_name; ?>, <?php echo $user->first_name; ?></td>
                   <td>
-                    <span class="hidden">
-                    <?php switch($user->wrdsb_job_title) {
-                      case 'Principal':
-                        echo '1';
-                        break;
-                      case 'Vice-Principal':
-                        echo '2';
-                        break;
-                      case 'Office Manager':
-                        echo '10';
-                        break;
-                      case 'Head Secretary':
-                        echo '11';
-                        break;
-                      case 'Secretary':
-                        echo '12';
-                        break;
-                      case 'Department Head':
-                        echo '50';
-                        break;
-                      case 'Teacher':
-                        echo '51';
-                        break;
-                      case 'DECE':
-                        echo '70';
-                        break;
-                      case 'CYW':
-                        echo '71';
-                        break;
-                      case 'Educational Assistant':
-                        echo '72';
-                        break;
-                      case 'Library Clerk':
-                        echo '75';
-                        break;
-                      case 'Custodian':
-                        echo '80';
-                        break;
-                      default:
-                        echo '99';
-                    } ?>
-                    </span>
-                    <?php echo $user->wrdsb_job_title; ?>
+                    <?php echo get_user_option('wrdsb_job_title', $user->ID); ?>
                   </td>
-                  <?php if ($user->wrdsb_contact_options == 'Email') { ?>
+                  <?php if ($wrdsb_contact_options == 'Email') { ?>
                     <td><?php echo $user->user_email; ?></td>
                     <td>&nbsp;</td>
-                  <?php } elseif ($user->wrdsb_contact_options == 'Voicemail') { ?>
+                  <?php } elseif ($wrdsb_contact_options == 'Voicemail') { ?>
                     <td>&nbsp;</td>
-                    <td><?php echo $user->wrdsb_voicemail; ?></td>
+                    <td><?php echo $wrdsb_voicemail; ?></td>
                   <?php } else { ?>
                     <td><?php echo $user->user_email; ?></td>
-                    <td><?php echo $user->wrdsb_voicemail; ?></td>
+                    <td><?php echo $wrdsb_voicemail; ?></td>
                   <?php } ?>
-                  <?php if (strpos($user->wrdsb_website_url, 'wrdsb.ca') !== FALSE) { ?>
-                    <td><a href="<?php echo $user->wrdsb_website_url; ?>"><?php echo $user->wrdsb_website_url; ?></a></td>
+                  <?php if (strpos($wrdsb_website_url, 'wrdsb.ca') !== FALSE) { ?>
+                    <td><a href="<?php echo $wrdsb_website_url; ?>"><?php echo $wrdsb_website_url; ?></a></td>
                   <?php } else { ?>
                     <td>&nbsp;</td>
                   <?php } ?>
