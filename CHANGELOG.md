@@ -1,3 +1,6 @@
+## 0.5.4
+* fix user query and display conditional in staff_list.php
+
 ## 0.5.3
 * pulled in changes to staff_list.php template to remove vanity sort prefix
 

@@ -3,8 +3,7 @@
 Template Name: Staff List
 */
 ?>
-<?php $blog_prefix = $wpdb->get_blog_prefix(); ?>
-<?php $user_query = new WP_User_Query(array('meta_key' => $blog_prefix.'wrdsb_display_in_staff_list', 'meta_value' => 1)); ?>
+<?php $user_query = new WP_User_Query(array('blog_id' => $GLOBALS['blog_id'])); ?>
 <?php get_header(); ?>
 
 <div class="container">
@@ -32,30 +31,32 @@ Template Name: Staff List
             </thead>
             <tbody>
               <?php foreach($user_query->results as $user) { ?>
-                <?php $wrdsb_contact_options = get_user_option('wrdsb_contact_options', $user->ID); ?>
-                <?php $wrdsb_voicemail = get_user_option('wrdsb_voicemail', $user->ID); ?>
-                <?php $wrdsb_website_url = get_user_option('wrdsb_website_url', $user->ID); ?>
-                <tr>
-                  <td><?php echo $user->last_name; ?>, <?php echo $user->first_name; ?></td>
-                  <td>
-                    <?php echo get_user_option('wrdsb_job_title', $user->ID); ?>
-                  </td>
-                  <?php if ($wrdsb_contact_options == 'Email') { ?>
-                    <td><?php echo $user->user_email; ?></td>
-                    <td>&nbsp;</td>
-                  <?php } elseif ($wrdsb_contact_options == 'Voicemail') { ?>
-                    <td>&nbsp;</td>
-                    <td><?php echo $wrdsb_voicemail; ?></td>
-                  <?php } else { ?>
-                    <td><?php echo $user->user_email; ?></td>
-                    <td><?php echo $wrdsb_voicemail; ?></td>
-                  <?php } ?>
-                  <?php if (strpos($wrdsb_website_url, 'wrdsb.ca') !== FALSE) { ?>
-                    <td><a href="<?php echo $wrdsb_website_url; ?>"><?php echo $wrdsb_website_url; ?></a></td>
-                  <?php } else { ?>
-                    <td>&nbsp;</td>
-                  <?php } ?>
-                </tr>
+                <?php if (get_user_option('wrdsb_display_in_staff_list', $user->ID) == 1) { ?>
+                  <?php $wrdsb_contact_options = get_user_option('wrdsb_contact_options', $user->ID); ?>
+                  <?php $wrdsb_voicemail = get_user_option('wrdsb_voicemail', $user->ID); ?>
+                  <?php $wrdsb_website_url = get_user_option('wrdsb_website_url', $user->ID); ?>
+                  <tr>
+                    <td><?php echo $user->last_name; ?>, <?php echo $user->first_name; ?></td>
+                    <td>
+                      <?php echo get_user_option('wrdsb_job_title', $user->ID); ?>
+                    </td>
+                    <?php if ($wrdsb_contact_options == 'Email') { ?>
+                      <td><?php echo $user->user_email; ?></td>
+                      <td>&nbsp;</td>
+                    <?php } elseif ($wrdsb_contact_options == 'Voicemail') { ?>
+                      <td>&nbsp;</td>
+                      <td><?php echo $wrdsb_voicemail; ?></td>
+                    <?php } else { ?>
+                      <td><?php echo $user->user_email; ?></td>
+                      <td><?php echo $wrdsb_voicemail; ?></td>
+                    <?php } ?>
+                    <?php if (strpos($wrdsb_website_url, 'wrdsb.ca') !== FALSE) { ?>
+                      <td><a href="<?php echo $wrdsb_website_url; ?>"><?php echo $wrdsb_website_url; ?></a></td>
+                    <?php } else { ?>
+                      <td>&nbsp;</td>
+                    <?php } ?>
+                  </tr>
+                <?php } ?>
               <?php } ?>
             </tbody>
           </table>
