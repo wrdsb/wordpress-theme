@@ -70,7 +70,7 @@
               <p class="copyright">A WRDSB-ITS Solution</p>
             </div>
             <div class="col-sm-8">
-              <p class="copyright aligncenter">
+              <p class="copyright" style="text-align: center;">
                 <?php wp_loginout(); ?> to <?php echo get_bloginfo('name'); ?>
                 &nbsp;&nbsp; | &nbsp;&nbsp;Go to 
                 <a href="http://staff.wrdsb.ca">Staff Website</a>
