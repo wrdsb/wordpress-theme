@@ -75,13 +75,13 @@ a {
 	opacity:0.135;
 }
 
-div.login { /* contains log in/out, Staff Website and sometimes School Handbook links */
+#loginbar { /* contains log in/out, Staff Website and sometimes School Handbook links */
 	background-color: #a0cf67 !important; 
 	border-top: 3px solid #7ac143;
 	width:100%;
 }
 
-div.login p.copyright {
+#loginbar p.copyright {
 	color: #666;
 }
 
