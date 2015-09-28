@@ -71,7 +71,7 @@
             </div>
             <div class="col-sm-4">
               <p class="copyright">
-                <?php wp_loginout(); ?> (this website)
+                <?php wp_loginout(); ?> to <?php echo get_bloginfo('name'); ?>
                 &nbsp;&nbsp; | &nbsp;&nbsp;Go to 
                 <a href="http://staff.wrdsb.ca">Staff Website</a>
                 <?php 
@@ -79,7 +79,7 @@
                   $host = explode('.', $parsed_url['host']);
                   if ($host[0] == 'schools') { ?>
                     &nbsp;&nbsp; | &nbsp;&nbsp;
-                    Go to <a target="_blank" href="http://staff.wrdsb.ca/<?php $fulldomain = explode('.',$_SERVER['HTTP_HOST']); echo $fulldomain[0]; ?>">School Handbook</a>
+                    Go to <a target="_blank" href="http://staff.wrdsb.ca/<?php $fulldomain = explode('.',$_SERVER['HTTP_HOST']); echo $fulldomain[0]; ?>"><?php echo get_bloginfo('name'); ?> School Handbook</a>
                   <?php } ?>
               </p>
             </div>
