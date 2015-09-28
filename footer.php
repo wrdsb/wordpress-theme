@@ -65,8 +65,9 @@
             </div>
           </div>
 
-          <div class="row">
-            <div class="col-sm-12">
+        </div>
+      </div>
+          <div class="container" id="loginbar">
               <p class="copyright" style="text-align: center;">
             	<?php if ( is_user_logged_in() ) 
             	{
@@ -88,11 +89,7 @@
                     Go to <a target="_blank" href="http://staff.wrdsb.ca/<?php echo $fulldomain[0]; ?>/"><?php echo strtoupper($fulldomain[0]); ?> School Handbook</a>
             		<?php } ?>
               </p>
-            </div>
           </div>
-        </div>
-      </div>
-
     <?php wp_footer(); ?>
     </body>
     </html>
