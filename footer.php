@@ -84,8 +84,7 @@
                 	if ($host[0] == 'schools') { 
                 		$fulldomain = explode('.',$_SERVER['HTTP_HOST']);
                   	?>
-                    &nbsp;&nbsp; | &nbsp;&nbsp;
-                    Go to <a target="_blank" href="http://staff.wrdsb.ca/<?php echo $fulldomain[0]; ?>/"><?php echo strtoupper($fulldomain[0]); ?> School Handbook</a>
+                        &middot; Go to <a target="_blank" href="http://staff.wrdsb.ca/<?php echo $fulldomain[0]; ?>/"><?php echo strtoupper($fulldomain[0]); ?> School Handbook</a>
             		<?php } ?>
               </p>
           </div>
