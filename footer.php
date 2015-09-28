@@ -66,10 +66,10 @@
           </div>
 
           <div class="row">
-            <div class="col-sm-4">
+            <div class="col-sm-2">
               <p class="copyright">A WRDSB-ITS Solution</p>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-8">
               <p class="copyright">
                 <?php wp_loginout(); ?> to <?php echo get_bloginfo('name'); ?>
                 &nbsp;&nbsp; | &nbsp;&nbsp;Go to 
@@ -83,7 +83,7 @@
                   <?php } ?>
               </p>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-2">
               <p class="copyright text-right">&copy; WRDSB 2015</p>
             </div>
           </div>
