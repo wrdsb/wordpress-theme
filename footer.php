@@ -74,7 +74,7 @@
             	} 
             	else 
             	{ ?>
-            		<a href="<?php echo '/wp-login.php';?>">Log into <?php echo get_bloginfo('name'); ?></a>
+            		<a href="<?php echo site_url(); echo '/wp-login.php';?>">Log into <?php echo get_bloginfo('name'); ?></a>
             	<?php }?> 
                 &nbsp;&nbsp; | &nbsp;&nbsp; 
                 Go to <a href="http://staff.wrdsb.ca">Staff Website</a>
