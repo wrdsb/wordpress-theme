@@ -70,11 +70,11 @@
               <p class="copyright" style="text-align: center;">
             	<?php if ( is_user_logged_in() ) 
             	{
-            		wp_logout();
+            		wp_loginout();
             	} 
             	else 
             	{ ?>
-            		<a href="<?php echo $_SERVER['HTTP_HOST'].'wp-login.php';?>">Log into <?php echo get_bloginfo('name'); ?></a>
+            		<a href="<?php echo $_SERVER['HTTP_HOST'].'/wp-login.php';?>">Log into <?php echo get_bloginfo('name'); ?></a>
             	<?php }?> 
                 &nbsp;&nbsp; | &nbsp;&nbsp; 
                 Go to <a href="http://staff.wrdsb.ca">Staff Website</a>
