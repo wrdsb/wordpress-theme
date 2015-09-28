@@ -72,14 +72,14 @@
             <div class="col-sm-4">
               <p class="copyright">
                 <?php wp_loginout(); ?> (this website)
-                &nbsp;&nbsp; | &nbsp;&nbsp;
-                <a href="http://staff.wrdsb.ca">Go to Staff Website</a>
+                &nbsp;&nbsp; | Go to &nbsp;&nbsp;
+                <a href="http://staff.wrdsb.ca">Staff Website</a>
                 <?php 
                   $parsed_url = parse_url(network_site_url());
                   $host = explode('.', $parsed_url['host']);
                   if ($host[0] == 'schools') { ?>
                     &nbsp;&nbsp; | &nbsp;&nbsp;
-                    <a target="_blank" href="http://staff.wrdsb.ca/<?php $fulldomain = explode('.',$_SERVER['HTTP_HOST']); echo $fulldomain[0]; ?>">Go to School Handbook</a>
+                    Go to <a target="_blank" href="http://staff.wrdsb.ca/<?php $fulldomain = explode('.',$_SERVER['HTTP_HOST']); echo $fulldomain[0]; ?>">School Handbook</a>
                   <?php } ?>
               </p>
             </div>
