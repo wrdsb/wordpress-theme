@@ -76,7 +76,6 @@
             	{ ?>
             		<a href="<?php echo $_SERVER['HTTP_HOST'].'wp-login.php';?>">Log into <?php echo get_bloginfo('name'); ?></a>
             	<?php }?> 
-                <?php //wp_loginout(); ?>: <?php echo get_bloginfo('name'); ?>
                 &nbsp;&nbsp; | &nbsp;&nbsp; 
                 Go to <a href="http://staff.wrdsb.ca">Staff Website</a>
                 <?php 
