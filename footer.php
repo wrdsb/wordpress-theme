@@ -77,8 +77,7 @@
             	{ ?>
             		<a href="<?php echo site_url(); echo '/wp-login.php';?>">Log into <?php echo get_bloginfo('name'); ?></a>
             	<?php }?> 
-                &nbsp;&nbsp; | &nbsp;&nbsp; 
-                Go to <a href="http://staff.wrdsb.ca">Staff Website</a>
+                 | Go to <a href="http://staff.wrdsb.ca">Staff Website</a>
                 <?php 
                 $parsed_url = parse_url(network_site_url());
                 $host = explode('.', $parsed_url['host']);
