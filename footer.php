@@ -66,25 +66,29 @@
           </div>
 
           <div class="row">
-            <div class="col-sm-2">
-              <p class="copyright">A WRDSB-ITS Solution</p>
-            </div>
-            <div class="col-sm-8">
+            <div class="col-sm-12">
               <p class="copyright" style="text-align: center;">
-                <?php wp_loginout(); ?>: <?php echo get_bloginfo('name'); ?>
-                &nbsp;&nbsp; | &nbsp;&nbsp;Go to 
-                <a href="http://staff.wrdsb.ca">Staff Website</a>
+            	<?php if ( is_user_logged_in() ) 
+            	{
+            		wp_logout();
+            	} 
+            	else 
+            	{ ?>
+            		<a href="<?php echo $_SERVER['HTTP_HOST'].'wp-login.php';?>">Log into <?php echo get_bloginfo('name'); ?></a>
+            	<?php }?> 
+                <?php //wp_loginout(); ?>: <?php echo get_bloginfo('name'); ?>
+                &nbsp;&nbsp; | &nbsp;&nbsp; 
+                Go to <a href="http://staff.wrdsb.ca">Staff Website</a>
                 <?php 
-                  $parsed_url = parse_url(network_site_url());
-                  $host = explode('.', $parsed_url['host']);
-                  if ($host[0] == 'schools') { ?>
+                $parsed_url = parse_url(network_site_url());
+                $host = explode('.', $parsed_url['host']);
+                	if ($host[0] == 'schools') { 
+                		$fulldomain = explode('.',$_SERVER['HTTP_HOST']);
+                  	?>
                     &nbsp;&nbsp; | &nbsp;&nbsp;
-                    Go to <a target="_blank" href="http://staff.wrdsb.ca/<?php $fulldomain = explode('.',$_SERVER['HTTP_HOST']); echo $fulldomain[0]; ?>"><?php echo get_bloginfo('name'); ?> School Handbook</a>
-                  <?php } ?>
+                    Go to <a target="_blank" href="http://staff.wrdsb.ca/<?php echo $fulldomain[0]; ?>/"><?php echo strtoupper($fulldomain[0]); ?> School Handbook</a>
+            		<?php } ?>
               </p>
-            </div>
-            <div class="col-sm-2">
-              <p class="copyright text-right">&copy; WRDSB 2015</p>
             </div>
           </div>
         </div>
