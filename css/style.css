@@ -85,6 +85,11 @@ a {
 	color: #666;
 }
 
+#loginbar a {
+	color: #000;
+	font-weight: bold;
+}
+
 .my-navbar {
 	background-color:#005daa;
 	border-radius:0px;
