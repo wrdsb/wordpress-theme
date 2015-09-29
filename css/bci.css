@@ -4,6 +4,16 @@
 	secondary #666666:
 	light: #CCE0EB;
 */ 
+
+/* login bar */
+
+#loginbar { /* contains log in/out, Staff Website and sometimes School Handbook links */
+	background-color: #069 !important; 
+	border-top: 3px solid #666;
+	width:100%;
+}
+
+
 /*navigation*/
 .my-navbar {
 	background-color:#006699; /*primary*/
