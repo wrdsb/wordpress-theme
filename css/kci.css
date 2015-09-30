@@ -1,4 +1,4 @@
-/*	Stylesheet: KCI
+d/*	Stylesheet: KCI
 	primary: #660202
 	primary opacity #A36767: 
 	secondary #d5a63a:
@@ -7,7 +7,7 @@
 
 /* login bar */
 #loginbar { /* contains log in/out, Staff Website and sometimes School Handbook links */
-	background-color: #e0cccc !important; 
+	background-color: #eedbb0 !important; 
 	border-top: 3px solid #d5a63a;
 	width:100%;
 }
