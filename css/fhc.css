@@ -3,7 +3,15 @@
 	primary opacity #7A7671: 
 	secondary #666666:
 	light: #D3D1D0;
-*/ 
+*/
+
+/* login bar */
+#loginbar { /* contains log in/out, Staff Website and sometimes School Handbook links */
+	background-color: #ccc !important; 
+	border-top: 3px solid #666;
+	width:100%;
+}
+
 /*navigation*/
 .my-navbar {
 	background-color:#221B13; /*primary*/
