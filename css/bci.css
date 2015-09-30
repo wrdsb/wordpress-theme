@@ -8,7 +8,7 @@
 /* login bar */
 
 #loginbar { /* contains log in/out, Staff Website and sometimes School Handbook links */
-	background-color: #069 !important; 
+	background-color: #ccc !important; 
 	border-top: 3px solid #666;
 	width:100%;
 }
