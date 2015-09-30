@@ -8,6 +8,12 @@
 	primary-faint: #f6ecf6;
 */ 
 
+/* login bar */
+#loginbar { /* contains log in/out, Staff Website and sometimes School Handbook links */
+	background-color: #d4ae80 !important; 
+	border-top: 3px solid #aa5d00;
+	width:100%;
+}
 
 /*navigation*/
 .my-navbar {
