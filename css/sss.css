@@ -4,6 +4,14 @@
 	secondary #ffc100:
 	light: #DBCCCC;
 */ 
+
+/* login bar */
+#loginbar { /* contains log in/out, Staff Website and sometimes School Handbook links */
+	background-color: #ffe699 !important; 
+	border-top: 3px solid #ffc100;
+	width:100%;
+}
+
 /*navigation*/
 .my-navbar {
 	background-color:#4B0102; /*primary*/
