@@ -13,6 +13,19 @@
     # left column
     if (($has_left == TRUE) and ($has_right == TRUE)):
       echo '<div class="col-sm-3 col-md-2 col-lg-2">';
+
+   //testing
+    if (is_front_page()) {
+     	echo <<<TESTLINKS
+        <p><a href="http://www.wrdsb.ca/beforeafter/"><img src="http://www.wrdsb.ca/wp-content/uploads/beforeafter_banner.jpg" alt="Before &amp; After School Program Information"/></a></p>
+        <p><a href="http://myway.wrdsb.ca"><img src="http://www.wrdsb.ca/wp-content/uploads/myway_banner_344x100.jpg" alt="MyWay Logo"/></a></p>
+        <p><a href="/about/school-year-information"><img src="http://www.wrdsb.ca/wp-content/uploads/schoolyearinformation_344x100.jpg" alt="School Year Information Logo"/></a></p>
+        <p><a href="https://www.canadahelps.org/dn/15506" target="_blank" onclick="trackOutboundLink('https://www.canadahelps.org/dn/15506');"><img src="http://www.wrdsb.ca/wefi/wp-content/uploads/sites/19/wefi_donate.jpg" alt="Donate Online! Waterloo Education Foundation Inc. (WEFI)"></a></p>
+        <p><a href="/about/school-day/"><img src="http://www.wrdsb.ca/wp-content/uploads/school_day_button.gif" alt="school-day: pay for school activities, events and other fees"/></a></p>
+TESTLINKS;
+      }
+    //end testing
+ 
       if (is_front_page() && wrdsb_i_am_a_school_with_kindergarten()) {
         echo '<p><a href="http://www.wrdsb.ca/beforeafter/"><img src="http://www.wrdsb.ca/wp-content/uploads/beforeafter_banner.jpg" alt="Before &amp; After School Program Information"/></a></p>';
       }
@@ -29,7 +42,22 @@
     # Just left sidebar
     elseif (($has_left == TRUE) and ($has_right == FALSE)):
       echo '<div class="col-sm-3 col-lg-3">';
-      if (is_front_page() && wrdsb_i_am_a_school_with_kindergarten()) {
+
+   //testing
+    if (is_front_page()) {
+     	echo <<<TESTLINKS
+        <p><a href="http://www.wrdsb.ca/beforeafter/"><img src="http://www.wrdsb.ca/wp-content/uploads/beforeafter_banner.jpg" alt="Before &amp; After School Program Information"/></a></p>
+        <p><a href="http://myway.wrdsb.ca"><img src="http://www.wrdsb.ca/wp-content/uploads/myway_banner_344x100.jpg" alt="MyWay Logo"/></a></p>
+        <p><a href="/about/school-year-information"><img src="http://www.wrdsb.ca/wp-content/uploads/schoolyearinformation_344x100.jpg" alt="School Year Information Logo"/></a></p>
+        <p><a href="https://www.canadahelps.org/dn/15506" target="_blank" onclick="trackOutboundLink('https://www.canadahelps.org/dn/15506');"><img src="http://www.wrdsb.ca/wefi/wp-content/uploads/sites/19/wefi_donate.jpg" alt="Donate Online! Waterloo Education Foundation Inc. (WEFI)"></a></p>
+        <p><a href="/about/school-day/"><img src="http://www.wrdsb.ca/wp-content/uploads/school_day_button.gif" alt="school-day: pay for school activities, events and other fees"/></a></p>
+TESTLINKS;
+      }
+    //end testing
+  
+
+
+     if (is_front_page() && wrdsb_i_am_a_school_with_kindergarten()) {
         echo '<p><a href="http://www.wrdsb.ca/beforeafter/"><img src="http://www.wrdsb.ca/wp-content/uploads/beforeafter_banner.jpg" alt="Before &amp; After School Program Information"/></a></p>';
       }
       if (is_front_page() && wrdsb_i_am_a_school()) {
@@ -111,7 +139,22 @@
     # Just right sidebar
     elseif (($has_left == FALSE) and ($has_right == TRUE)):
       echo '<div class="col-sm-4">';
-      if (is_front_page() && wrdsb_i_am_a_school_with_kindergarten()) {
+ 
+   //testing
+    if (is_front_page()) {
+     	echo <<<TESTLINKS
+        <p><a href="http://www.wrdsb.ca/beforeafter/"><img src="http://www.wrdsb.ca/wp-content/uploads/beforeafter_banner.jpg" alt="Before &amp; After School Program Information"/></a></p>
+        <p><a href="http://myway.wrdsb.ca"><img src="http://www.wrdsb.ca/wp-content/uploads/myway_banner_344x100.jpg" alt="MyWay Logo"/></a></p>
+        <p><a href="/about/school-year-information"><img src="http://www.wrdsb.ca/wp-content/uploads/schoolyearinformation_344x100.jpg" alt="School Year Information Logo"/></a></p>
+        <p><a href="https://www.canadahelps.org/dn/15506" target="_blank" onclick="trackOutboundLink('https://www.canadahelps.org/dn/15506');"><img src="http://www.wrdsb.ca/wefi/wp-content/uploads/sites/19/wefi_donate.jpg" alt="Donate Online! Waterloo Education Foundation Inc. (WEFI)"></a></p>
+        <p><a href="/about/school-day/"><img src="http://www.wrdsb.ca/wp-content/uploads/school_day_button.gif" alt="school-day: pay for school activities, events and other fees"/></a></p>
+TESTLINKS;
+      }
+    //end testing
+ 
+
+
+     if (is_front_page() && wrdsb_i_am_a_school_with_kindergarten()) {
         echo '<p><a href="/about/how-to-register-for-kindergarten/"><img src="http://www.wrdsb.ca/wp-content/uploads/register_for_kindergarten_2.jpg" alt="Kindergarten Registration button"/></a></p>';
       }
       if (is_front_page() && wrdsb_i_am_a_school()) {
