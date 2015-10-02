@@ -784,6 +784,69 @@ function wrdsb_i_am_a_school_with_kindergarten() {
   }
 }
 
+function wrdsb_i_am_a_school_with_schoolday() {
+  $parsed_url = parse_url(site_url());
+  $host = explode('.', $parsed_url['host']);
+  $site = $parsed_url['path'];
+  $alpha_codes = array(
+    "schools",
+    "abe",
+    "ave",
+    "ayr",
+    "bci",
+    "bdn",
+    "bgd",
+    "blr",
+    "brp",
+    "cdc",
+    "cha",
+    "cle",
+    "cnc",
+    "con",
+    "cre",
+    "elg",
+    "elz",
+    "fra",
+    "grc",
+    "gvc",
+    "gvn",
+    "hes",
+    "hil",
+    "jdp",
+    "ked",
+    "lbp",
+    "lex",
+    "lin",
+    "lnh",
+    "lrw",
+    "mil",
+    "mjp",
+    "mof",
+    "ndd",
+    "nlw",
+    "riv",
+    "rye",
+    "sab",
+    "sag",
+    "she",
+    "shl",
+    "smi",
+    "snd",
+    "sss",
+    "stj",
+    "sun",
+    "wel",
+    "wgd",
+    "wlm",
+    "wpk",
+    "wsv",
+    "wtt",
+  );
+  if (in_array(($host[0]), $alpha_codes)) {
+    return TRUE;
+  }
+}
+
 add_filter('upload_mimes', 'custom_upload_mimes');
 function custom_upload_mimes ( $existing_mimes=array() ) {
   // add your extension to the array
