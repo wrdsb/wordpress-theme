@@ -145,7 +145,7 @@ Template Name: school-day
 		</ul>
 	</li>
 </ol>
-<!-- end content area -->
+</div><!-- end content area -->
 
     <?php
     # Both sidebars
