@@ -79,6 +79,8 @@ Template Name: school-day
 
 <h1>School-Day</h1>
 
+<h2>Log in to School-Day</h2>
+
 <iframe frameborder="0" id="school-day" class="login" src ="https://www.school-day.com/pg/school/sso/index.php?height=190&amp;width=185" width="185px" height="190px"></iframe>
 
 <h2>What is School-Day?</h2>
