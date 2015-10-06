@@ -1,3 +1,15 @@
+## 0.6.0
++ changed to middot from bullet for demarcating categories and tags
++ added #loginbar to footer
++ customized #loginbar for all highschool websites
++ removed redundant copyright and creator information
++ added school-day page template
++ adjusted columns to make right column only pages same ratio as left column only pages
++ added school-day school banner
++ added school banner tracking
++ changed WEFI school banner to link directly to donation site
++ adjusted headings for SYI page templates
+
 ## 0.5.5
 * exclude user id 1 from staff list
 
