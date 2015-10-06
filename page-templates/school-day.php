@@ -163,7 +163,7 @@ Template Name: school-day
 
     # Just right sidebar
     elseif (($has_left == FALSE) and ($has_right == TRUE)):
-      echo '<div class="col-sm-3"">';
+      echo '<div class="col-sm-3">';
       if (!is_front_page()) {
         get_sidebar('rmenu');
       }
