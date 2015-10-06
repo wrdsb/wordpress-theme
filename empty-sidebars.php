@@ -42,11 +42,11 @@ Template Name: Empty Sidebars
 
     # Just left sidebar
     elseif (($has_left == TRUE) and ($has_right == FALSE)):
-      echo '<div class="col-sm-9 col-lg-10">';
+      echo '<div class="col-sm-9 col-lg-9">';
 
     # Just right sidebar
     elseif (($has_left == FALSE) and ($has_right == TRUE)):
-      echo '<div class="col-sm-8">';
+      echo '<div class="col-sm-9">';
 
     # No sidebars
     elseif (($has_left == FALSE) and ($has_right == FALSE)):
@@ -100,7 +100,7 @@ Template Name: Empty Sidebars
 
     # Just right sidebar
     elseif (($has_left == FALSE) and ($has_right == TRUE)):
-      echo '<div class="col-sm-4"">';
+      echo '<div class="col-sm-3"">';
       get_sidebar('right');
       echo '</div>';
 
@@ -113,4 +113,4 @@ Template Name: Empty Sidebars
   </div>
 </div>
 
-<?php get_footer(); ?>
+<?php get_footer();
