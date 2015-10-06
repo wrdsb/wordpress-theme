@@ -260,4 +260,4 @@ Template Name: SYI - Elementary
   </div>
 </div>
 
-<?php get_footer(); ?>
+<?php get_footer();
