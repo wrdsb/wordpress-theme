@@ -91,7 +91,7 @@ Template Name: SYI - Secondary
       endwhile;
     ?>
 
-<h1>General School Year Information</h1>
+<h2>General School Year Information</h2>
 
 <p>Back to school is an exciting time for students. September ushers in a new year, with many new experiences to look forward to.</p>
 
@@ -99,7 +99,7 @@ Template Name: SYI - Secondary
 
 <p>Have a great year!</p>
 
-<h2>Signature Required</h2>
+<h3>Signature Required</h3>
 
 <p>These items come home with each student in paper form. <strong>Please complete, sign and return them to your child&rsquo;s school office when you receive them.</strong></p>
 
@@ -119,11 +119,11 @@ Template Name: SYI - Secondary
     <p>For students aged 14-16, and any students new to the Region from outside of the province of Ontario. You are encouraged to submit this information using the <a target="_blank" href="https://e-immunization.regionofwaterloo.ca">online form</a>.</p>
   </li>
 </ul>
-<h2>For Your Information</h2>
+<h3>For Your Information</h3>
 
 <p><strong>Parents/guardians</strong>, please read the following documents:</p>
 
-<h3>Welcome!</h3>
+<h4>Welcome!</h4>
 
 <ul>
   <li><strong><a href="http://www.wrdsb.ca/wp-content/uploads/Welcome-Back.pdf" target="_blank">Welcome Letter</a></strong>
@@ -131,7 +131,7 @@ Template Name: SYI - Secondary
   </li>
 </ul>
 
-<h3>Calendars and Important Dates</h3>
+<h4>Calendars and Important Dates</h4>
 
 <ul>
   <li><strong><a href="http://www.wrdsb.ca/wp-content/uploads/school-year-information-2015-2016.pdf" target="_blank">2015-2016 School Year Calendar Information</a></strong>
@@ -139,7 +139,7 @@ Template Name: SYI - Secondary
   </li>
 </ul>
 
-<h3>Expectations</h3>
+<h4>Expectations</h4>
 
 <ul>
   <li><strong><a href="http://www.wrdsb.ca/wp-content/uploads/School-Community-Standards-of-Behaviour.pdf" target="_blank">School Community Standards of Behaviour</a></strong>
@@ -156,7 +156,7 @@ Template Name: SYI - Secondary
   </li>
 </ul>
 
-<h3>School Safety</h3>
+<h4>School Safety</h4>
 
 <ul>
   <li><strong><a href="http://www.wrdsb.ca/wp-content/uploads/2015-Student-Accident-Insurance-Letter.pdf" target="_blank">Student Accident Insurance Letter</a></strong>
@@ -168,22 +168,19 @@ Template Name: SYI - Secondary
   </li>
   <li><strong><a href="http://www.wrdsb.ca/wp-content/uploads/Safe-Caring-and-Inclusive-Schools.pdf" target="_blank">Safe, Caring and Inclusive Schools</a></strong>
     <p>This handout explains the changes as a result of legislation (Bill 157), and Board Policy that requires all board employees to report behaviours that typically lead to suspension or expulsion.</p>
-
     <p>These behaviours include inappropriate jokes/comments, acts of vandalism and acts of violence.</p>
   </li>
   <li><strong><a href="http://www.wrdsb.ca/wp-content/uploads/Safe-Arrival-Program-and-Emergency-Closures.pdf" target="_blank">Safe Arrival &#8211; Emergency School Closures</a></strong>
     <p>Information on the Safe Arrival Program, why it is in place and how it works, as well as what happens when there is an emergency school closure.</p>
-
     <p>It also includes a list of radio stations which provide inclement weather information.</p>
   </li>
   <li><strong><a href="http://www.wrdsb.ca/wp-content/uploads/Threat-Risk-Assessment.pdf" target="_blank">Threat Risk Assessment Fair Notice Process</a></strong>
     <p>All members of the school community have the right to be safe and feel safe in their school community. Under certain conditions, students may undergo a "Threat Risk Assessment". This assessment determines the level of risk to others and themselves.</p>
-
     <p>This document outlines the process of a Threat Risk Assessment.</p>
   </li>
 </ul>
 
-<h3>Get Involved</h3>
+<h4>Get Involved</h4>
 
 <ul>
   <li><strong><a href="http://www.wrdsb.ca/wp-content/uploads/Parent-Engagement2015.pdf" target="_blank">Parent Engagement: School Councils</a></strong>
@@ -197,7 +194,6 @@ Template Name: SYI - Secondary
   </li>
   <li><strong><a href="http://www.wrdsb.ca/wp-content/uploads/Voluntary-First-Nation-Pamphlet.pdf" target="_blank">Voluntary First Nation, M&eacute;tis and Inuit Self-Identification Information for Families</a></strong>
     <p>The voluntary First Nation, M&eacute;tis and Inuit self-identification process allows us to work toward the goal of improving Aboriginal student achievement through specific programming, targeted initiatives, resource support and increased family and community involvement with the Board.</p>
-
     <p>If your child(ren) are of First Nation, M&eacute;tis or Inuit ancestry, we encourage you to consider participating in the voluntary self-identification information collection process, when registering for school or updating student information.</p>
   </li>
   <li><strong><a href="http://www.wrdsb.ca/wp-content/uploads/international-languages-poster-8.5x11.pdf" target="_blank">International Languages</a></strong>
@@ -205,7 +201,7 @@ Template Name: SYI - Secondary
   </li>
 </ul>
 
-<h3>Busing</h3>
+<h4>Busing</h4>
 
 <ul>
   <li><strong><a href="http://www.wrdsb.ca/wp-content/uploads/STSWR-Information-Insert.pdf" target="_blank">STSWR Information Insert</a></strong>
