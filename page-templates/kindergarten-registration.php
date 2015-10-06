@@ -52,7 +52,7 @@ Template Name: Kindergarten Registration
 
     # Just right sidebar
     elseif (($has_left == FALSE) and ($has_right == TRUE)):
-      echo '<div class="col-sm-8">';
+      echo '<div class="col-sm-9">';
 
     # No sidebars
     elseif (($has_left == FALSE) and ($has_right == FALSE)):
@@ -210,7 +210,7 @@ Template Name: Kindergarten Registration
 
     # Just right sidebar
     elseif (($has_left == FALSE) and ($has_right == TRUE)):
-      echo '<div class="col-sm-4"">';
+      echo '<div class="col-sm-3">';
       if (!is_front_page()) {
         get_sidebar('rmenu');
       }
@@ -226,4 +226,4 @@ Template Name: Kindergarten Registration
   </div>
 </div>
 
-<?php get_footer(); ?>
+<?php get_footer();
