@@ -1,3 +1,6 @@
+## 0.6.1
++ added heading to log in form for School-Day in /page-templates/school-day/
+
 ## 0.6.0
 + changed to middot from bullet for demarcating categories and tags
 + added #loginbar to footer
