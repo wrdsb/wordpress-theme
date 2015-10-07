@@ -121,7 +121,7 @@ Template Name: SYI - Elementary
   </li>
 </ul>
 
-<h3>For Your Information</h3>
+<h3>Required Reading and Resources</h3>
 
 <p><strong>Parents/guardians</strong>, please read the following documents:</p>
 
