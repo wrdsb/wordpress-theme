@@ -91,13 +91,7 @@ Template Name: SYI - Secondary
       endwhile;
     ?>
 
-<h2>General School Year Information</h2>
-
-<p>Back to school is an exciting time for students. September ushers in a new year, with many new experiences to look forward to.</p>
-
-<p>But there&rsquo;s one thing that doesn&rsquo;t change and that is the key information we send home to parents in the "September Home Package" envelope. This year, we have posted much of that information here so that parents may access it at any time.</p>
-
-<p>Have a great year!</p>
+<h2>Boardwide Information</h2>
 
 <h3>Signature Required</h3>
 
@@ -119,7 +113,8 @@ Template Name: SYI - Secondary
     <p>For students aged 14-16, and any students new to the Region from outside of the province of Ontario. You are encouraged to submit this information using the <a target="_blank" href="https://e-immunization.regionofwaterloo.ca">online form</a>.</p>
   </li>
 </ul>
-<h3>For Your Information</h3>
+
+<h3>Required Reading and Resources</h3>
 
 <p><strong>Parents/guardians</strong>, please read the following documents:</p>
 
@@ -169,6 +164,9 @@ Template Name: SYI - Secondary
   <li><strong><a href="http://www.wrdsb.ca/wp-content/uploads/Safe-Caring-and-Inclusive-Schools.pdf" target="_blank">Safe, Caring and Inclusive Schools</a></strong>
     <p>This handout explains the changes as a result of legislation (Bill 157), and Board Policy that requires all board employees to report behaviours that typically lead to suspension or expulsion.</p>
     <p>These behaviours include inappropriate jokes/comments, acts of vandalism and acts of violence.</p>
+  </li>
+  <li><strong><a href="http://www.wrdsb.ca/our-schools/health-and-wellness/mental-health-well-being/" target="_blank">Mental Health &amp; Well-Being</a></strong>
+  <p>The WRDSB recognizes the importance of student and staff mental health as it relates to achievement, social‐emotional development and personal well‐being. We know that mental wellness supports both learning and teaching.</p>
   </li>
   <li><strong><a href="http://www.wrdsb.ca/wp-content/uploads/Safe-Arrival-Program-and-Emergency-Closures.pdf" target="_blank">Safe Arrival &#8211; Emergency School Closures</a></strong>
     <p>Information on the Safe Arrival Program, why it is in place and how it works, as well as what happens when there is an emergency school closure.</p>

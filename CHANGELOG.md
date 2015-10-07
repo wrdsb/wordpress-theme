@@ -1,3 +1,6 @@
+## 0.6.2
++ Mental Health link added to SYI page templates
+
 ## 0.6.1
 + added heading to log in form for School-Day in /page-templates/school-day/
 
