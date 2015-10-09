@@ -8,7 +8,7 @@
     $has_right = FALSE;
     if (is_active_sidebar('sidebar-left') || has_nav_menu('left')) {$has_left = TRUE;}
     if (is_active_sidebar('sidebar-right') || has_nav_menu('right')) {$has_right = TRUE;}
-    if (is_front_page() && !wrdsb_is_corp_site()) {
+    if (is_front_page() && !wrdsb_i_am_a_corporate_site()) {
       $has_left = TRUE;
       }
 
