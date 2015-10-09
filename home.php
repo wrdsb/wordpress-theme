@@ -8,6 +8,9 @@
     $has_right = FALSE;
     if (is_active_sidebar('sidebar-left') || has_nav_menu('left')) {$has_left = TRUE;}
     if (is_active_sidebar('sidebar-right') || has_nav_menu('right')) {$has_right = TRUE;}
+    if (is_front_page() && !wrdsb_is_corp_site()) {
+      $has_left = TRUE;
+      }
 
     # Both sidebars
     # left column
@@ -30,7 +33,6 @@
         <p><a href="<?php echo site_url();?>/about/school-day/" onclick="ga('send', 'event', 'school-banners', 'click-banner', 'school-day', '/about/school-day',{'nonInteraction':1});"><img src="http://www.wrdsb.ca/wp-content/uploads/school_day_button.gif" alt="school-day: pay for school activities, events and other fees"/></a></p>
       <?php 
       }
-
       get_sidebar('left');
       echo '</div>';
     # Just left sidebar
