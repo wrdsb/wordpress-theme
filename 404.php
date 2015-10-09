@@ -15,9 +15,9 @@
     </div> <!-- end sidebar div -->
 
     <?php if (is_active_sidebar('sidebar-right') || has_nav_menu('right')): ?>
-      <div class="col-sm-6 col-md-7 col-lg-8">
+      <div class="col-sm-6 col-md-8 col-lg-8">
     <?php else: ?>
-      <div class="col-sm-9 col-lg-10">
+      <div class="col-sm-9 col-lg-9">
     <?php endif ?>
 
       <h1>404 - Not found</h1>
@@ -27,7 +27,7 @@
     </div> <!-- end content area -->
 
     <?php if (is_active_sidebar('sidebar-right') || has_nav_menu('right')): ?>
-      <div class="col-sm-3 col-md-3 col-lg-2">
+      <div class="col-sm-3 col-md-3 col-lg-3">
         <?php get_sidebar('rmenu'); ?>
         <?php get_sidebar('right'); ?>
       </div>
