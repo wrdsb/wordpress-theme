@@ -9,6 +9,34 @@
  * @since WRDSB 1.0
 */
 ?>
-<?php if (has_nav_menu('right')) {
-  wp_nav_menu(array('theme_location' => 'right', 'menu_class' => '', 'container' => false));
-} ?>
+
+  <?php # If we have a menu in the 'right' menu location ... ?>
+  <?php if (has_nav_menu('right')) {
+  //wp_nav_menu(array('theme_location' => 'right', 'menu_class' => '', 'container' => false));
+  ?>
+<div class="navbar my-sub-navbar" role="navigation">
+  <div class="sub-navbar-header">
+    <button type="button" class="navbar-toggle toggle-subnav" data-toggle="collapse" data-target=".sub-navbar-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <span class="navbar-brand">Subnav</span>
+  </div>
+    <div class="collapse sub-navbar-collapse">
+      <div class="sub-menu-heading">
+        <?php $menu_locations = get_nav_menu_locations(); ?>
+        <?php $menus = wp_get_nav_menus(); ?>
+        <?php foreach ($menus as $menu) {
+          if ($menu->term_id == $menu_locations['right']) {
+            echo '<span>'.$menu->name.'</span>';
+          }
+        } ?>
+      </div>
+      <div class="sub-menu-items">
+        <?php wp_nav_menu(array('theme_location' => 'right', 'menu_class' => 'rmenu', 'container' => false)); ?>
+      </div>
+    </div>
+</div> <!-- end navigation -->
+<?php }

@@ -790,6 +790,8 @@ function wrdsb_i_am_a_school_with_schoolday() {
   $site = $parsed_url['path'];
   $alpha_codes = array(
     "schools",
+    "gnss",
+    "dsps",
     "abe",
     "ave",
     "ayr",
