@@ -11,7 +11,7 @@
 
     # Both sidebars
     # left column
-    if (($has_left == TRUE) and ($has_right == TRUE)):
+    if (($has_left === TRUE) and ($has_right === TRUE)):
       echo '<div class="col-sm-3 col-md-2 col-lg-2">';
       if (is_front_page()) {
         get_sidebar('left');
@@ -22,7 +22,7 @@
       echo '</div>';
 
     # Just left sidebar
-    elseif (($has_left == TRUE) and ($has_right == FALSE)):
+    elseif (($has_left === TRUE) and ($has_right === FALSE)):
       echo '<div class="col-sm-3 col-lg-3">';
       if (is_front_page()) {
         get_sidebar('left');
@@ -33,11 +33,11 @@
       echo '</div>';
 
     # Just right sidebar
-    elseif (($has_left == FALSE) and ($has_right == TRUE)):
+    elseif (($has_left === FALSE) and ($has_right === TRUE)):
       # Nothing to do
 
     # No sidebars
-    elseif (($has_left == FALSE) and ($has_right == FALSE)):
+    elseif (($has_left === FALSE) and ($has_right === FALSE)):
       # Nothing to do
 
     endif;
@@ -46,16 +46,16 @@
     <?php
     # Both sidebars
     # content area
-    if (($has_left == TRUE) and ($has_right == TRUE)):
+    if (($has_left === TRUE) and ($has_right === TRUE)):
       echo '<div class="col-sm-6 col-md-8 col-lg-8">';
     # Just left sidebar
-    elseif (($has_left == TRUE) and ($has_right == FALSE)):
+    elseif (($has_left === TRUE) and ($has_right === FALSE)):
       echo '<div class="col-sm-9 col-lg-9">';
     # Just right sidebar
-    elseif (($has_left == FALSE) and ($has_right == TRUE)):
+    elseif (($has_left === FALSE) and ($has_right === TRUE)):
       echo '<div class="col-sm-9">';
     # No sidebars
-    elseif (($has_left == FALSE) and ($has_right == FALSE)):
+    elseif (($has_left === FALSE) and ($has_right === FALSE)):
       echo '<div class="col-sm-12 col-lg-12">';
     endif;
     ?>
@@ -63,13 +63,13 @@
     <?php // check if the post has a Post Thumbnail assigned to it.
       if ( has_post_thumbnail() ) {
         echo '<div class="featuredimage">';
-        if (($has_left == TRUE) and ($has_right == TRUE)):
+        if (($has_left === TRUE) and ($has_right === TRUE)):
           the_post_thumbnail('wrdsb-two-sidebars');
-        elseif (($has_left == TRUE) and ($has_right == FALSE)):
+        elseif (($has_left === TRUE) and ($has_right === FALSE)):
           the_post_thumbnail('wrdsb-one-sidebar');
-        elseif (($has_left == FALSE) and ($has_right == TRUE)):
+        elseif (($has_left === FALSE) and ($has_right === TRUE)):
           the_post_thumbnail('wrdsb-one-sidebar');
-        elseif (($has_left == FALSE) and ($has_right == FALSE)):
+        elseif (($has_left === FALSE) and ($has_right === FALSE)):
           the_post_thumbnail('wrdsb-full-width');
         endif;
         echo '</div>';
@@ -95,7 +95,7 @@
     <?php
     # Both sidebars
     # right column
-    if (($has_left == TRUE) and ($has_right == TRUE)):
+    if (($has_left === TRUE) and ($has_right === TRUE)):
       echo '<div class="col-sm-3 col-md-2 col-lg-2">';
       if (is_front_page()) {
         get_sidebar('right');
@@ -109,7 +109,7 @@
       # Nothing to do
 
     # Just right sidebar
-    elseif (($has_left == FALSE) and ($has_right == TRUE)):
+    elseif (($has_left === FALSE) and ($has_right === TRUE)):
       echo '<div class="col-sm-3">';
       if (is_front_page()) {
         get_sidebar('right');
