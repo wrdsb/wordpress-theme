@@ -1,3 +1,6 @@
+## 0.6.3
++ adjusting left sidebar to fix display when no widgets are displaying
+
 ## 0.6.2
 + Mental Health link added to SYI page templates
 
