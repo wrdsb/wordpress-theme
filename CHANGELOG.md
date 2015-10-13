@@ -28,6 +28,9 @@
 ## 0.5.3
 * pulled in changes to staff_list.php template to remove vanity sort prefix
 
+## 0.5.2 
++added tags and text domain for WRDSB Theme
+
 ## 0.5.1
 + ensuring the school list is accurate
 
