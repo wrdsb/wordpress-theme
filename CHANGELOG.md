@@ -1,5 +1,6 @@
 ## 0.6.3
 + adjusting left sidebar to fix display when no widgets are displaying
++ fixing right sidebar list display and menu display
 
 ## 0.6.2
 + Mental Health link added to SYI page templates
@@ -29,7 +30,7 @@
 * pulled in changes to staff_list.php template to remove vanity sort prefix
 
 ## 0.5.2 
-+added tags and text domain for WRDSB Theme
++ added tags and text domain for WRDSB Theme
 
 ## 0.5.1
 + ensuring the school list is accurate
