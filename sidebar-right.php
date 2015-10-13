@@ -8,5 +8,7 @@
 */
 ?>
 <?php if ( is_active_sidebar( 'sidebar-right' ) ) : ?>
+  <div class="sidebar-right widget-area" role="complementary">
   <?php dynamic_sidebar( 'sidebar-right' ); ?>
+  </div>
 <?php endif; ?>
