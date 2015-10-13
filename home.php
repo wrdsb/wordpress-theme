@@ -8,7 +8,7 @@
     $has_right = FALSE;
     if (is_active_sidebar('sidebar-left') || has_nav_menu('left')) {$has_left = TRUE;}
     if (is_active_sidebar('sidebar-right') || has_nav_menu('right')) {$has_right = TRUE;}
-    if (is_front_page() && !wrdsb_i_am_a_corporate_site()) {
+    if (is_front_page() && wrdsb_i_am_a_school()) {
       $has_left = TRUE;
       }
 
@@ -117,25 +117,6 @@
     # Just right sidebar
     elseif (($has_left == FALSE) and ($has_right == TRUE)):
       echo '<div class="col-sm-4">';
-
-      if (is_front_page() && wrdsb_i_am_a_school_with_kindergarten()) { ?>
-        <p><a href="http://www.wrdsb.ca/beforeafter/" onclick="ga('send', 'event', 'school-banners', 'click-banner', 'beforeafter', 'http://www.wrdsb.ca/beforeafter/',{'nonInteraction':1});"><img src="http://www.wrdsb.ca/wp-content/uploads/beforeafter_banner.jpg" alt="Before &amp; After School Program Information"/></a></p>
-      <?php
-      }
-
-      if (is_front_page() && wrdsb_i_am_a_school()) { ?>
-
-        <p><a href="http://myway.wrdsb.ca/" onclick="ga('send', 'event', 'school-banners', 'click-banner', 'myway', 'http://myway.wrdsb.ca/',{'nonInteraction':1});"><img src="http://www.wrdsb.ca/wp-content/uploads/myway_banner_344x100.jpg" alt="MyWay Logo"/></a></p>
-        <p><a href="/about/school-year-information" onclick="ga('send', 'event', 'school-banners', 'click-banner', 'syi', '/about/school-year-information',{'nonInteraction':1});"><img src="http://www.wrdsb.ca/wp-content/uploads/schoolyearinformation_344x100.jpg" alt="School Year Information Logo"/></a></p>
-        <p><a href="https://www.canadahelps.org/dn/15506" target="_blank" onclick="ga('send', 'event', 'school-banners', 'click-banner', 'wefi', 'https://www.canadahelps.org/dn/15506',{'nonInteraction':1});"><img src="http://www.wrdsb.ca/wefi/wp-content/uploads/sites/19/wefi_donate.jpg" alt="Donate Online! Waterloo Education Foundation Inc. (WEFI)"></a></p>
-      <?php 
-      }
-
-      if (is_front_page() && wrdsb_i_am_a_school_with_schoolday()) { ?>
-        <p><a href="/about/school-day/" onclick="ga('send', 'event', 'school-banners', 'click-banner', 'school-day', '/about/school-day',{'nonInteraction':1});"><img src="http://www.wrdsb.ca/wp-content/uploads/school_day_button.gif" alt="school-day: pay for school activities, events and other fees"/></a></p>
-      <?php 
-      }
-
       get_sidebar('right');
       echo '</div>';
     # No sidebars
