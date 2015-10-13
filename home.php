@@ -84,7 +84,7 @@
     endif
     ?>
 
-            <h2>News &amp; Announcements</h2>
+            <h1>News &amp; Announcements</h1>
             <?php
               // Start the Loop.
               while ( have_posts() ) : the_post();
