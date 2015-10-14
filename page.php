@@ -3,11 +3,12 @@
 <div class="container">
   <div class="row">
 
-    <?php 
+    <?php
     $has_left = FALSE;
     $has_right = FALSE;
     if (is_active_sidebar('sidebar-left') || has_nav_menu('left')) {$has_left = TRUE;}
     if (is_active_sidebar('sidebar-right') || has_nav_menu('right')) {$has_right = TRUE;}
+    if (!is_front_page()) {$has_left = TRUE;}
 
     # Both sidebars
     # left column
@@ -71,7 +72,7 @@
     <?php
       // Start the Loop.
       while ( have_posts() ) : the_post();
-      
+
         // Include the page content template.
         get_template_part( 'content', 'page' );
 
