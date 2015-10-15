@@ -8,10 +8,10 @@ Template Name: SYI - Elementary
 <div class="container">
   <div class="row">
 
-    <?php $has_left = FALSE; ?>
-    <?php $has_right = FALSE; ?>
-    <?php if (is_active_sidebar('sidebar-left')) {$has_left = TRUE;} ?>
-    <?php if (is_active_sidebar('sidebar-right')) {$has_right = TRUE;} ?>
+    <?php
+    $has_left = TRUE;
+	  $has_right = FALSE;
+    if (is_active_sidebar('sidebar-right') || has_nav_menu('right')) {$has_right = TRUE;} ?>
 
     <?php
     # Both sidebars
