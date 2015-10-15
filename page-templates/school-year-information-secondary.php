@@ -9,8 +9,8 @@ Template Name: SYI - Secondary
   <div class="row">
 
     <?php
-    $has_left = TRUE;
-	  $has_right = FALSE;
+	$has_left = TRUE;
+	$has_right = FALSE;
     if (is_active_sidebar('sidebar-right') || has_nav_menu('right')) {$has_right = TRUE;} ?>
 
     <?php
