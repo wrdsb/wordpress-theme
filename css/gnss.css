@@ -1,10 +1,10 @@
 /*	Stylesheet: GNSS
-	primary: #550055
-	primary opacity: #800080 
-	secondary: #aa5d00
-	secondary-light: #ddbe99
-	primary-light: #D9B2D9
-	primary-extra-light: #ECD8EC
+	primary: #550055;
+	primary opacity: #800080;
+	secondary: #aa5d00;
+	secondary-light: #ddbe99;
+	primary-light: #D9B2D9;
+	primary-extra-light: #ecd8ec;
 	primary-faint: #f6ecf6;
 */ 
 
@@ -91,5 +91,5 @@ th {
 }
 
 #logo a h2, #logo a h3 {
-	color:#aa5d00;
+	color:#aa5d00; /*secondary*/
 }
