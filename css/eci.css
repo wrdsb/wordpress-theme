@@ -39,7 +39,6 @@
 }
 
 /* children in sub-nav */
-
 .nav_current_page_children_container {
 	background-color: #faf8f8; /*primary-faint*/
 }
@@ -87,5 +86,5 @@ th {
 }
 
 #logo a h2, #logo a h3 {
-	color:#670001; /*primary*/
+	color:#666; /*secondary*/
 }
