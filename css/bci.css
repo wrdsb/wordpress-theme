@@ -2,7 +2,9 @@
 	primary: #006699
 	primary opacity #66A3C2: 
 	secondary #666666:
+	secondary-light: #ccc;
 	light: #CCE0EB;
+	primary-extra-light: #E6F0F5;
 */ 
 
 /* login bar */
@@ -41,11 +43,40 @@ h1, h2, h3, h4, h5, h6 {
 
 /*links*/
 a {
-	color:#006699; /*primary*/
+	color:#069; /*primary*/
+}
+.footer a {
+	color:#cce0eb; /*light*/
+}
+a:hover, a:focus {
+	color:#069; /*primary*/
+}
+.footer a:hover, .footer a:focus {
+	color:#cce0eb; /*light*/
+}
+
+th {
+	background-color: #e6f0f5; /*primary-extra-light*/
+}
+
+thead > tr > th {
+        border-bottom: 2px solid #666; /*secondary*/
+        }
+
+tr:hover, tr:nth-child(odd):hover, tr:nth-child(even):hover {
+	background-color: #ccc !important; /*secondary-light*/
+}
+
+th {
+	color: #069; /*primary*/
+}
+
+#logo a h2, #logo a h3 {
+	color:#069; /*primary*/
 }
 
 /*footer*/
 .footer {
-	background-color:#006699; /*primary*/
-	border-top-color:#666666; /*secondary*/
+	background-color:#069; /*primary*/
+	border-top-color:#666; /*secondary*/
 }
