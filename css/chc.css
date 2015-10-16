@@ -2,7 +2,10 @@
 	primary: #060 (changed from #515A45 20140820 SZC)
 	primary opacity #979C8F
 	secondary #666
+	secondary-light: #ccc;
 	light: #DCDEDA
+	primary-faint: #f1f2f0;
+	primary-extra-light: #979c8f;
 */ 
 
 /* login bar */
@@ -32,8 +35,15 @@
 	background-color:#060; /*primary*/
 }
 .sub-menu-items {
-	background-color:#DCDEDA; /*light*/
+	background-color:#dcdeda; /*light*/
 }
+
+/* children in sub-nav */
+
+.nav_current_page_children_container {
+	background-color: #f1f2f0; /*primary-faint*/
+}
+
 /*headings*/
 h1, h2, h3, h4, h5, h6 {
 	color:#060; /*primary*/
@@ -46,17 +56,37 @@ a {
 	color:#060; /*primary*/
 }
 .footer a {
-	color:#979C8F; /*opacity*/
+	color:#979c8f; /*opacity*/
 }
 a:hover, a:focus {
 	color:#060; /*primary*/
 }
 .footer a:hover, .footer a:focus {
-	color:#979C8F; /*opacity*/
+	color:#979c8f; /*opacity*/
 }
 /*footer*/
 .footer {
 	background-color:#060; /*primary*/
-	border-top-color:#666666; /*secondary*/
+	border-top-color:#666; /*secondary*/
 	color:#fff;
+}
+
+th {
+	background-color: #979c8f; /*primary-extra-light*/
+}
+
+thead > tr > th {
+        border-bottom: 2px solid #666; /*secondary*/
+        }
+
+tr:hover, tr:nth-child(odd):hover, tr:nth-child(even):hover {
+	background-color: #ccc !important; /*secondary-light*/
+}
+
+th {
+	color: #060; /*primary*/
+}
+
+#logo a h2, #logo a h3 {
+	color:#060; /*primary*/
 }
