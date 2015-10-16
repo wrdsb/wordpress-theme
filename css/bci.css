@@ -1,7 +1,7 @@
 /*	Stylesheet: BCI
 	primary: #006699
 	primary opacity #66A3C2: 
-	secondary #666666:
+	secondary #666:
 	secondary-light: #ccc;
 	light: #CCE0EB;
 	primary-extra-light: #E6F0F5;
@@ -39,7 +39,6 @@
 }
 
 /* children in sub-nav */
-
 .nav_current_page_children_container {
 	background-color: #f8fafc; /*primary-faint*/
 }
@@ -80,7 +79,7 @@ th {
 }
 
 #logo a h2, #logo a h3 {
-	color:#069; /*primary*/
+	color:#666; /*secondary*/
 }
 
 /*footer*/
