@@ -1,9 +1,9 @@
 /*	Stylesheet: CHC
-	primary: #060 (changed from #515A45 20140820 SZC)
-	primary opacity #979C8F
-	secondary #666
+	primary: #060;
+	primary opacity #979C8F;
+	secondary #666;
 	secondary-light: #ccc;
-	light: #DCDEDA
+	light: #DCDEDA;
 	primary-faint: #f1f2f0;
 	primary-extra-light: #979c8f;
 */ 
@@ -39,7 +39,6 @@
 }
 
 /* children in sub-nav */
-
 .nav_current_page_children_container {
 	background-color: #f1f2f0; /*primary-faint*/
 }
@@ -48,9 +47,7 @@
 h1, h2, h3, h4, h5, h6 {
 	color:#060; /*primary*/
 }
-h6.copyright {
-	color:#fff;
-}
+
 /*links*/
 a {
 	color:#060; /*primary*/
@@ -88,5 +85,5 @@ th {
 }
 
 #logo a h2, #logo a h3 {
-	color:#060; /*primary*/
+	color:#666; /*secondar*/
 }
