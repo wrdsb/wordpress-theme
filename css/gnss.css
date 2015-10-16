@@ -42,6 +42,7 @@
 	background-color: #ECD8EC; /*primary-extra-light*/
 }
 
+/* children in sub-nav */
 .nav_current_page_children_container {
 	background-color: #f6ecf6; /*primary-faint*/
 }
@@ -50,9 +51,7 @@
 h1, h2, h3, h4, h5, h6 {
 	color:#550055; /*primary*/
 }
-h6.copyright {
-	color:#fff;
-}
+
 /*links*/
 a {
 	color:#550055; /*primary*/
