@@ -1,9 +1,12 @@
 /*	Stylesheet: SSS
-	primary: #4B0102
-	primary opacity #936767: 
-	secondary #ffc100:
+	primary: #4B0102;
+	primary opacity: #936767;
+	secondary: #ffc100;
 	light: #DBCCCC;
-*/ 
+	secondary-light: #ffe699;
+	primary-light: #dbcccc;
+	primary-extra-light: #ede6e6;
+	primary-faint: #f6f2f2;*/ 
 
 /* login bar */
 #loginbar { /* contains log in/out, Staff Website and sometimes School Handbook links */
@@ -34,13 +37,17 @@
 .sub-menu-items {
 	background-color:#DBCCCC; /*light*/
 }
+
+/* children in sub-nav */
+.nav_current_page_children_container {
+	background-color: #f6f2f2; /*primary-faint*/
+}
+
 /*headings*/
 h1, h2, h3, h4, h5, h6 {
 	color:#4B0102; /*primary*/
 }
-h6.copyright {
-	color:#fff;
-}
+
 /*links*/
 a {
 	color:#4B0102; /*primary*/
@@ -59,4 +66,24 @@ a:hover, a:focus {
 	background-color:#4B0102; /*primary*/
 	border-top-color:#ffc100; /*secondary*/
 	color:#fff;
+}
+
+th {
+	background-color: #ede6e6; /*primary-extra-light*/
+}
+
+thead > tr > th {
+        border-bottom: 2px solid #ffc100; /*secondary*/
+        }
+
+tr:hover, tr:nth-child(odd):hover, tr:nth-child(even):hover {
+	background-color: #ffe699 !important; /*secondary-light*/
+}
+
+th {
+	color: #4B0102; /*primary*/
+}
+
+#logo a h2, #logo a h3 {
+	color:#ffc100; /*secondary*/
 }
