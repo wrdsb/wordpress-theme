@@ -5,6 +5,7 @@
 	secondary-light: #ccc;
 	light: #CCE0EB;
 	primary-extra-light: #E6F0F5;
+	primary-faint: #F8FAFC;
 */ 
 
 /* login bar */
@@ -36,9 +37,16 @@
 .sub-menu-items {
 	background-color:#CCE0EB; /*light*/
 }
+
+/* children in sub-nav */
+
+.nav_current_page_children_container {
+	background-color: #f8fafc; /*primary-faint*/
+}
+
 /*headings*/
 h1, h2, h3, h4, h5, h6 {
-	color:#006699; /*primary*/
+	color:#069; /*primary*/
 }
 
 /*links*/
