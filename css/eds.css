@@ -38,6 +38,7 @@
 	background-color:#CDDACF; /*light*/
 }
 
+/* children showing in sub navigation */
 .nav_current_page_children_container {
 	background-color: #fafbfa; /*primary-faint*/
 }
