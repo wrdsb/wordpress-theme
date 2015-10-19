@@ -4,8 +4,9 @@
   <div class="row">
 
     <?php
-    $has_left = TRUE;
+    $has_left = !is_front_page() ? TRUE: FALSE; // if not front page, has a left sidebar
     $has_right = FALSE;
+    if (is_active_sidebar('sidebar-left') || has_nav_menu('left')) {$has_left = TRUE;}
     if (is_active_sidebar('sidebar-right') || has_nav_menu('right')) {$has_right = TRUE;}
 
     # Both sidebars
