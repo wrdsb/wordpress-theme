@@ -1,6 +1,8 @@
 ## 0.6.3
 + adjusting left sidebar to fix display when no widgets are displaying
 + fixing right sidebar list display and menu display
++ updating all high school css files to be consistent with their colours in sub-sub navigation
++ add spacing above internal targets so they are fully visible when admin bar showing
 
 ## 0.6.2
 + Mental Health link added to SYI page templates
