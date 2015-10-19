@@ -1,3 +1,6 @@
+## 0.6.4
++ removing fade from specific #contactinformation internal target
+
 ## 0.6.3
 + adjusting left sidebar to fix display when no widgets are displaying
 + fixing right sidebar list display and menu display

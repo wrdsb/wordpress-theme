@@ -49,6 +49,12 @@
 	100% { background-color: rgba(0,0,0,0); }
 }
 
+#contact:target {
+	padding-top: 0 !important;
+	-webkit-animation: target-fade 0s 0;
+	-moz-animation: target-fade 0s 0;
+}
+
 /* Cite APA Style */
 cite {
 	font-style: italic;
