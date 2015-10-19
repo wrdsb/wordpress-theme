@@ -8,18 +8,16 @@ Template Name: school-day
 <div class="container">
   <div class="row">
 
-    <?php $has_left = FALSE; ?>
-    <?php $has_right = FALSE; ?>
-    <?php if (is_active_sidebar('sidebar-left')) {$has_left = TRUE;} ?>
-    <?php if (is_active_sidebar('sidebar-right')) {$has_right = TRUE;} ?>
+    <?php
+    $has_left = TRUE;
+	$has_right = FALSE;
+    if (is_active_sidebar('sidebar-right') || has_nav_menu('right')) {$has_right = TRUE;} ?>
 
     <?php
     # Both sidebars
     if (($has_left == TRUE) and ($has_right == TRUE)):
       echo '<div class="col-sm-3 col-md-2 col-lg-2">';
-      if (!is_front_page()) {
-        get_sidebar('lmenu');
-      }
+      get_sidebar('lmenu');
       get_sidebar('left');
       echo '</div>';
 

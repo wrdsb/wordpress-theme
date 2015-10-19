@@ -1,3 +1,9 @@
+## 0.6.3
++ adjusting left sidebar to fix display when no widgets are displaying
++ fixing right sidebar list display and menu display
++ updating all high school css files to be consistent with their colours in sub-sub navigation
++ add spacing above internal targets so they are fully visible when admin bar showing
+
 ## 0.6.2
 + Mental Health link added to SYI page templates
 
@@ -24,6 +30,9 @@
 
 ## 0.5.3
 * pulled in changes to staff_list.php template to remove vanity sort prefix
+
+## 0.5.2 
++ added tags and text domain for WRDSB Theme
 
 ## 0.5.1
 + ensuring the school list is accurate

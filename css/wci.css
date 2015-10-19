@@ -3,6 +3,10 @@
 	primary opacity #6C718D: 
 	secondary #A30001:
 	light: #CED0D9;
+	secondary-light: #e3b2b3;
+	primary-light: #9da0b3;
+	primary-extra-light: #e6e7ec;
+	primary-faint: #f8f8f9;
 */ 
 
 /* login bar */
@@ -39,13 +43,17 @@
 .sub-menu-items {
 	background-color:#CED0D9; /*light*/
 }
+
+/* children in sub-nav */
+.nav_current_page_children_container {
+	background-color: #f8f8f9; /*primary-faint*/
+}
+
 /*headings*/
 h1, h2, h3, h4, h5, h6 {
 	color:#0A1241; /*primary*/
 }
-h6.copyright {
-	color:#fff;
-}
+
 /*links*/
 a {
 	/*color:#0A1241; SZC 2014-11-10 */ /*primary*/
@@ -65,4 +73,24 @@ a:hover, a:focus {
 	background-color:#0A1241; /*primary*/
 	border-top-color:#A30001; /*secondary*/
 	color:#fff;
+}
+
+th {
+	background-color: #e6e7ec; /*primary-extra-light*/
+}
+
+thead > tr > th {
+        border-bottom: 2px solid #A30001; /*secondary*/
+        }
+
+tr:hover, tr:nth-child(odd):hover, tr:nth-child(even):hover {
+	background-color: #e3b2b3 !important; /*secondary-light*/
+}
+
+th {
+	color: #0A1241; /*primary*/
+}
+
+#logo a h2, #logo a h3 {
+	color:#A30001; /*secondary*/
 }

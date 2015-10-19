@@ -1,8 +1,12 @@
 /*	Stylesheet: WOD
-	primary: #12180A
-	primary opacity #71746C: 
-	secondary #666666:
+	primary: #12180A;
+	primary opacity: #71746C;
+	secondary: #666:
 	light: #D0D1CE;
+	secondary-light: #ccc;
+	primary-light: #d0d1ce;
+	primary-extra-light: #e7e8e6;
+	primary-faint: #f5f6f5;
 */ 
 
 /* login bar */
@@ -32,15 +36,19 @@
 	background-color:#12180A; /*primary*/
 }
 .sub-menu-items {
-	background-color:#D0D1CE; /*light*/
+	background-color:#e7e8e6; /*primary-extra-light*/
 }
+
+/* children in sub-nav */
+.nav_current_page_children_container {
+	background-color: #f5f6f5; /*primary-faint*/
+}
+
 /*headings*/
 h1, h2, h3, h4, h5, h6 {
 	color:#12180A; /*primary*/
 }
-h6.copyright {
-	color:#fff;
-}
+
 /*links*/
 a {
 	/*color:#12180A; removed 20140821 SZC */ /*primary*/
@@ -61,6 +69,26 @@ a:hover, a:focus {
 /*footer*/
 .footer {
 	background-color:#12180A; /*primary*/
-	border-top-color:#666666; /*secondary*/
+	border-top-color:#666; /*secondary*/
 	color:#fff;
+}
+
+th {
+	background-color: #e7e8e6; /*primary-extra-light*/
+}
+
+thead > tr > th {
+        border-bottom: 2px solid #666; /*secondary*/
+        }
+
+tr:hover, tr:nth-child(odd):hover, tr:nth-child(even):hover {
+	background-color: #ccc !important; /*secondary-light*/
+}
+
+th {
+	color: #12180A; /*primary*/
+}
+
+#logo a h2, #logo a h3 {
+	color:#666; /*secondary*/
 }

@@ -1,8 +1,12 @@
 /*	Stylesheet: HRH
-	primary: #543C76 
-	primary opacity #988AAD: 
-	secondary #999999:
+	primary: #543C76;
+	primary opacity: #988AAD;
+	secondary: #999;
 	light: #DDD8E4;
+	secondary-light: #d6d6d6;
+	primary-light: #ddd8e4;
+	primary-extra-light: #eeecf1;
+	primary-faint: #f6f6f8;
 */ 
 
 /* login bar */
@@ -34,13 +38,17 @@
 .sub-menu-items {
 	background-color:#DDD8E4; /*light*/
 }
+
+/* children in sub-nav */
+.nav_current_page_children_container {
+	background-color: #f6f6f8; /*primary-faint*/
+}
+
 /*headings*/
 h1, h2, h3, h4, h5, h6 {
 	color:#543C76; /*primary*/
 }
-h6.copyright {
-	color:#fff;
-}
+
 /*links*/
 a {
 	color:#543C76; /*primary*/
@@ -57,6 +65,26 @@ a:hover, a:focus {
 /*footer*/
 .footer {
 	background-color:#543C76; /*primary*/
-	border-top-color:#999999; /*secondary*/
+	border-top-color:#999; /*secondary*/
 	color:#fff;
+}
+
+th {
+	background-color: #eeecf1; /*primary-extra-light*/
+}
+
+thead > tr > th {
+        border-bottom: 2px solid #999; /*secondary*/
+        }
+
+tr:hover, tr:nth-child(odd):hover, tr:nth-child(even):hover {
+	background-color: #d6d6d6 !important; /*secondary-light*/
+}
+
+th {
+	color: #543C76; /*primary*/
+}
+
+#logo a h2, #logo a h3 {
+	color:#999; /*secondary*/
 }
