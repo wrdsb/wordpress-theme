@@ -29,6 +29,26 @@
 
 /*** General Styles ***/
 
+/** Internal Targets
++ protect internal targets from being hidden by admin bar
++ display attention getting fade on the key content
+**/
+
+:target {
+	padding-top: 50px !important;
+	-webkit-animation: target-fade 3s 1;
+	-moz-animation: target-fade 3s 1;
+}
+
+@-webkit-keyframes target-fade {
+	0% { background-color: rgba(0,0,0,.1); }
+	100% { background-color: rgba(0,0,0,0); }
+}
+@-moz-keyframes target-fade {
+	0% { background-color: rgba(0,0,0,.1); }
+	100% { background-color: rgba(0,0,0,0); }
+}
+
 /* Cite APA Style */
 cite {
 	font-style: italic;
@@ -47,9 +67,6 @@ cite::after {
 }
 */
 
-.clear {
-	clear:both;
-}
 a {
 	color:#005daa;
 }

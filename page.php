@@ -4,35 +4,37 @@
   <div class="row">
 
     <?php
-    $has_left = FALSE;
+    $has_left = TRUE;
     $has_right = FALSE;
-    if (is_active_sidebar('sidebar-left') || has_nav_menu('left')) {$has_left = TRUE;}
     if (is_active_sidebar('sidebar-right') || has_nav_menu('right')) {$has_right = TRUE;}
-    if (!is_front_page()) {$has_left = TRUE;}
 
     # Both sidebars
     # left column
     if (($has_left === TRUE) and ($has_right === TRUE)):
       echo '<div class="col-sm-3 col-md-2 col-lg-2">';
-      get_sidebar('lmenu');
-      get_sidebar('left');
+      if (is_front_page()) {
+        get_sidebar('left');
+      } else {
+        get_sidebar('lmenu');
+        get_sidebar('left');
+      }
       echo '</div>';
-
     # Just left sidebar
     elseif (($has_left === TRUE) and ($has_right === FALSE)):
       echo '<div class="col-sm-3 col-lg-3">';
-      get_sidebar('lmenu');
-      get_sidebar('left');
+      if (is_front_page()) {
+        get_sidebar('left');
+      } else {
+        get_sidebar('lmenu');
+        get_sidebar('left');
+      }
       echo '</div>';
-
     # Just right sidebar
     elseif (($has_left === FALSE) and ($has_right === TRUE)):
       # Nothing to do
-
     # No sidebars
     elseif (($has_left === FALSE) and ($has_right === FALSE)):
       # Nothing to do
-
     endif;
     ?>
 
@@ -75,7 +77,6 @@
 
         // Include the page content template.
         get_template_part( 'content', 'page' );
-
         // If comments are open or we have at least one comment, load up the comment template.
         if ( comments_open() || get_comments_number() ) {
           comments_template();
@@ -90,23 +91,27 @@
     # right column
     if (($has_left === TRUE) and ($has_right === TRUE)):
       echo '<div class="col-sm-3 col-md-2 col-lg-2">';
-      get_sidebar('rmenu');
-      get_sidebar('right');
+      if (is_front_page()) {
+        get_sidebar('right');
+      } else {
+        get_sidebar('rmenu');
+        get_sidebar('right');
+      }
       echo '</div>';
-
     # Just left sidebar
       # Nothing to do
-
     # Just right sidebar
     elseif (($has_left === FALSE) and ($has_right === TRUE)):
       echo '<div class="col-sm-3">';
-      get_sidebar('rmenu');
-      get_sidebar('right');
+      if (is_front_page()) {
+        get_sidebar('right');
+      } else {
+        get_sidebar('rmenu');
+        get_sidebar('right');
+      }
       echo '</div>';
-
     # No sidebars
       # Nothing to do
-
     endif;
     ?>
   </div>

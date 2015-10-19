@@ -10,7 +10,7 @@
     if (is_active_sidebar('sidebar-right') || has_nav_menu('right')) {$has_right = TRUE;}
     if (is_front_page() && wrdsb_i_am_a_school()) {
       $has_left = TRUE;
-      }
+    }
 
     # Both sidebars
     # left column
