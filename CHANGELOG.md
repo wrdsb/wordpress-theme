@@ -1,5 +1,8 @@
+## 0.6.5
++ set conditional to have left sidebar not show unless there are menus/widgets if the non-news page is the front page (teacher sites)
+
 ## 0.6.4
-+ removing fade from specific #contactinformation internal target
++ fix fade to not impact #contact
 
 ## 0.6.3
 + adjusting left sidebar to fix display when no widgets are displaying
