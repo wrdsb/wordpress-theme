@@ -203,12 +203,14 @@
 
     <?php
     // if we have an alert
-    if (stswr_alerts_get_current_alert('id') !== '0') {
-      echo '<div class="container alerts">';
-      echo '<h1>'.stswr_alerts_get_current_alert('title').'</h1>';
-      echo stswr_alerts_get_current_alert('body-html');
-      echo '</div>';
-    } 
+    if (stswr_alerts_get_current_alert()) {
+      if (stswr_alerts_get_current_alert('id') !== '0') {
+        echo '<div class="container alerts">';
+        echo '<h1>'.stswr_alerts_get_current_alert('title').'</h1>';
+        echo stswr_alerts_get_current_alert('body-html');
+        echo '</div>';
+      } 
+    }
     // if there is no alert, but a header image
     elseif (get_header_image()) { ?>
       <div class="container">
