@@ -201,15 +201,25 @@
       <!--</div>-->
     <!--</div>-->
 
-    <!-- elseif we have a header image, include that -->
-    <?php if (get_header_image()) { ?>
+    <?php
+    // if we have an alert
+    if (stswr_alerts_get_current_alert('id') !== '0') {
+      echo '<div class="container alerts">';
+      echo '<h1>'.stswr_alerts_get_current_alert('title').'</h1>';
+      echo stswr_alerts_get_current_alert('body-html');
+      echo '</div>';
+    } 
+    // if there is no alert, but a header image
+    elseif (get_header_image()) { ?>
       <div class="container">
         <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
       </div>
-    <?php } ?>
-
-    <!-- and if we have neither featured content nor a header image, do nothing at all -->
-  <?php } ?>
+    <?php   
+    }
+    // and if we have neither featured content nor a header image, do nothing at all
+    else {
+    }
+  } ?>
 
   <?php if (!is_front_page()) { ?>
     <?php the_breadcrumb(); ?>
