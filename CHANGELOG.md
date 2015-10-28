@@ -1,3 +1,6 @@
+## 0.7.0
++ add alert function condition and styles
+
 ## 0.6.5
 + set conditional to have left sidebar not show unless there are menus/widgets if the non-news page is the front page (teacher sites)
 

@@ -1379,3 +1379,20 @@ color: #709820;
 }
 .gallery dl, .gallery dt { margin: 0; }
 .gallery br+br { display: none; }
+
+/*** ALERTS ***/
+
+.alerts {
+	width: 1140px;
+	border: 10px dashed #900; 
+	padding: 25px; 
+	margin: 25px auto;
+	background-color: #ffffe6;
+}
+
+.alerts h1 {
+	font-weight: 700; 
+	text-align: center;
+}
+
+/* .alerts p {} */
