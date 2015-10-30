@@ -1,3 +1,6 @@
+## 0.7.1
++ adjust colours for SS
+
 ## 0.7.0
 + add alert function condition and styles
 
