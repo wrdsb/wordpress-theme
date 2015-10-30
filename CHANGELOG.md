@@ -1,3 +1,6 @@
+## 0.7.1
++ adjust colours for SS
+
 ## 0.7.0
 + add alert function condition and styles
 
@@ -6,6 +9,7 @@
 
 ## 0.6.4
 + fix fade to not impact #contact
+>>>>>>> refs/remotes/origin/default-template
 
 ## 0.6.3
 + adjusting left sidebar to fix display when no widgets are displaying
