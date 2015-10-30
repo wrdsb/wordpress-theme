@@ -1,89 +1,89 @@
 /*	Stylesheet: SSS
-	primary: #4B0102;
-	primary opacity: #936767;
-	secondary: #ffc100;
-	light: #DBCCCC;
-	secondary-light: #ffe699;
-	primary-light: #dbcccc;
-	primary-extra-light: #ede6e6;
-	primary-faint: #f6f2f2;*/ 
+	primary: #ef3e33;
+	primary opacity: #99140c;
+	secondary: #333;
+	light: #f2665d;
+	secondary-light: #999;
+	primary-light: #f2665d;
+	primary-extra-light: #fbc9c6;
+	primary-faint: #fef1f0;*/ 
 
 /* login bar */
 #loginbar { /* contains log in/out, Staff Website and sometimes School Handbook links */
-	background-color: #ffe699 !important; 
-	border-top: 3px solid #ffc100;
+	background-color: #fef1f0 !important; /*primary faint*/
+	border-top: 3px solid #ef3e33; /*primary*/
 	width:100%;
 }
 
 /*navigation*/
 .my-navbar {
-	background-color:#4B0102; /*primary*/
-	border-top-color:#ffc100; /*secondary*/
+	background-color:#ef3e33; /*primary*/
+	border-top-color:#333; /*secondary*/
 }
 .nav >li > a:hover, .nav >li > a:focus {
-	background-color:#936767; /*opacity*/
+	background-color:#99140c; /*opacity*/
 }
 .nav >li.active, 
 .nav >li.current-page-ancestor, 
 .nav >li.current_page_ancestor,
 .nav >li.current-menu-item, 
 .nav >li.current_page_item {
-	background-color:#936767; /*opacity*/
+	background-color:#99140c; /*opacity*/
 }
 /*sub navigation*/
 .sub-menu-heading, .sub-menu-heading a {
-	background-color:#4B0102; /*primary*/
+	background-color:#ef3e33; /*primary*/
 }
 .sub-menu-items {
-	background-color:#DBCCCC; /*light*/
+	background-color:#f2665d; /*light*/
 }
 
 /* children in sub-nav */
 .nav_current_page_children_container {
-	background-color: #f6f2f2; /*primary-faint*/
+	background-color: #fef1f0; /*primary-faint*/
 }
 
 /*headings*/
 h1, h2, h3, h4, h5, h6 {
-	color:#4B0102; /*primary*/
+	color:#ef3e33; /*primary*/
 }
 
 /*links*/
 a {
-	color:#4B0102; /*primary*/
+	color:#ef3e33; /*primary*/
 }
 .footer a {
 	color:#936767; /*opacity*/
 }
 a:hover, a:focus {
-	color:#4B0102; /*primary*/
+	color:#ef3e33; /*primary*/
 }
 .footer a:hover, .footer a:focus {
-	color:#936767; /*opacity*/
+	color:#99140c; /*opacity*/
 }
 /*footer*/
 .footer {
-	background-color:#4B0102; /*primary*/
-	border-top-color:#ffc100; /*secondary*/
+	background-color:#ef3e33; /*primary*/
+	border-top-color:#333; /*secondary*/
 	color:#fff;
 }
 
 th {
-	background-color: #ede6e6; /*primary-extra-light*/
+	background-color: #fbc9c6; /*primary-extra-light*/
 }
 
 thead > tr > th {
-        border-bottom: 2px solid #ffc100; /*secondary*/
+        border-bottom: 2px solid #333; /*secondary*/
         }
 
 tr:hover, tr:nth-child(odd):hover, tr:nth-child(even):hover {
-	background-color: #ffe699 !important; /*secondary-light*/
+	background-color: #999 !important; /*secondary-light*/
 }
 
 th {
-	color: #4B0102; /*primary*/
+	color: #ef3e33; /*primary*/
 }
 
 #logo a h2, #logo a h3 {
-	color:#ffc100; /*secondary*/
+	color:#333; /*secondary*/
 }
