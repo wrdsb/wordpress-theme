@@ -1,5 +1,8 @@
+## 0.7.2
++ fix width of alert
+
 ## 0.7.1
-+ adjust colours for SS
++ adjust colours for SSS
 
 ## 0.7.0
 + add alert function condition and styles
