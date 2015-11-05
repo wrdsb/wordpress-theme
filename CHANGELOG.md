@@ -1,3 +1,14 @@
+## 0.7.3
++ change login logo
++ replace lost password link with MyPassword
++ replace lost password wording
+
+## 0.7.2
++ fix width of alert
+
+## 0.7.1
++ adjust colours for SSS
+
 ## 0.7.0
 + add alert function condition and styles
 
