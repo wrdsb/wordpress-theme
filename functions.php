@@ -823,7 +823,7 @@ add_filter( 'login_headerurl', 'my_login_logo_url' );
 // Change the Lost Password Text from the WordPress Login
 function change_lostpassword_text ( $text ) {  
      $lostpassword_words = "Lost your password?";
-     if ($lostpassword_newtext === $lostpassword_words){$lostpassword_newtext = 'Forgot your password? Change it with MyPassword!';}
+     if ($lostpassword_newtext == $lostpassword_words){$lostpassword_newtext = 'Forgot your password? Change it with MyPassword!';}
         return $lostpassword_newtext;
      }
 
