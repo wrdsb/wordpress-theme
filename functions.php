@@ -820,3 +820,7 @@ function my_login_logo_url() {
 }
 add_filter( 'login_headerurl', 'my_login_logo_url' );
 
+add_filter( 'lostpassword_url', 'my_lost_password_page', 10, 2 );
+function my_lost_password_page( $lostpassword_url, $redirect ) {
+    return home_url( 'https://mypassword.wrdsb.ca/?redirect_to=' . $redirect );
+}
