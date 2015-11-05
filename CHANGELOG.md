@@ -1,3 +1,60 @@
+## 0.7.3
++ change login logo
++ replace lost password link with MyPassword
++ replace lost password wording
+
+## 0.7.2
++ fix width of alert
+
+## 0.7.1
++ adjust colours for SSS
+
+## 0.7.0
++ add alert function condition and styles
+
+## 0.6.5
++ set conditional to have left sidebar not show unless there are menus/widgets if the non-news page is the front page (teacher sites)
+
+## 0.6.4
++ fix fade to not impact #contact
+>>>>>>> refs/remotes/origin/default-template
+
+## 0.6.3
++ adjusting left sidebar to fix display when no widgets are displaying
++ fixing right sidebar list display and menu display
++ updating all high school css files to be consistent with their colours in sub-sub navigation
++ add spacing above internal targets so they are fully visible when admin bar showing
+
+## 0.6.2
++ Mental Health link added to SYI page templates
+
+## 0.6.1
++ added heading to log in form for School-Day in /page-templates/school-day/
+
+## 0.6.0
++ changed to middot from bullet for demarcating categories and tags
++ added #loginbar to footer
++ customized #loginbar for all highschool websites
++ removed redundant copyright and creator information
++ added school-day page template
++ adjusted columns to make right column only pages same ratio as left column only pages
++ added school-day school banner
++ added school banner tracking
++ changed WEFI school banner to link directly to donation site
++ adjusted headings for SYI page templates
+
+## 0.5.5
+* exclude user id 1 from staff list
+
+## 0.5.4
+* fix user query and display conditional in staff_list.php
+
+## 0.5.3
+* pulled in changes to staff_list.php template to remove vanity sort prefix
+
+## 0.5.2 
++ added tags and text domain for WRDSB Theme
+
 ## 0.5.1
 + ensuring the school list is accurate
 
@@ -31,11 +88,11 @@ Fixes
 + fixed typography for lmenu/sidebar headers
 
 ## 0.3.9
-Fixes 
+Fixes
 + remembered to update the Changelog...
 
 ## 0.3.8
-Fixes 
+Fixes
 + remove borders from school table
 + gnss.css added
 + gnss and dsps added to school lists in functions
@@ -60,7 +117,7 @@ Fixes
 ## 0.3.4
 Fixes
 + add left sidebar to single.php template
- 
+
 ## 0.3.3
 Fixes
 + add SCIS survey button (corporate area)
