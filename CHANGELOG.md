@@ -1,36 +1,46 @@
 ## 0.7.3
+Fixes
 + change login logo
 + replace lost password link with MyPassword
 + replace lost password wording
 
 ## 0.7.2
+Fixes
 + fix width of alert
 
 ## 0.7.1
+Fixes
 + adjust colours for SSS
 
 ## 0.7.0
+Featured Added
 + add alert function condition and styles
 
 ## 0.6.5
+Fixes
 + set conditional to have left sidebar not show unless there are menus/widgets if the non-news page is the front page (teacher sites)
 
 ## 0.6.4
+Fixes
 + fix fade to not impact #contact
 
 ## 0.6.3
+Fixes
 + adjusting left sidebar to fix display when no widgets are displaying
 + fixing right sidebar list display and menu display
 + updating all high school css files to be consistent with their colours in sub-sub navigation
 + add spacing above internal targets so they are fully visible when admin bar showing
 
 ## 0.6.2
+Content Update
 + Mental Health link added to SYI page templates
 
 ## 0.6.1
+Content Update
 + added heading to log in form for School-Day in /page-templates/school-day/
 
 ## 0.6.0
+Fixes
 + changed to middot from bullet for demarcating categories and tags
 + added #loginbar to footer
 + customized #loginbar for all highschool websites
@@ -43,9 +53,11 @@
 + adjusted headings for SYI page templates
 
 ## 0.5.5
+Fixes
 * exclude user id 1 from staff list
 
 ## 0.5.4
+
 * fix user query and display conditional in staff_list.php
 
 ## 0.5.3
