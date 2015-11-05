@@ -827,8 +827,9 @@ function change_lostpassword_text ( $text ) {
         return $lostpassword_newtext;
      }
 
-add_filter( 'gettext', 'remove_lostpassword_text' );  
-/* redirecting the lost password link to My Password */
+add_filter( 'gettext', 'change_lostpassword_text' );  
+
+/* Redirect the lost password link to My Password */
 
 add_filter( 'lostpassword_url', 'my_lost_password_page', 10, 2 );
 function my_lost_password_page( $lostpassword_url, $redirect ) {
