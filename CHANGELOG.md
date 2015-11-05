@@ -1,3 +1,8 @@
+## 0.7.3
++ change login logo
++ replace lost password link with MyPassword
++ replace lost password wording
+
 ## 0.7.2
 + fix width of alert
 
@@ -12,7 +17,6 @@
 
 ## 0.6.4
 + fix fade to not impact #contact
->>>>>>> refs/remotes/origin/default-template
 
 ## 0.6.3
 + adjusting left sidebar to fix display when no widgets are displaying
