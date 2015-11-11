@@ -1,3 +1,6 @@
+## 0.7.4
++ adjusting login function to work with child themes
+
 ## 0.7.3
 Fixes
 + change login logo
