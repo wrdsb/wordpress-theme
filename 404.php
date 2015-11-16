@@ -2,38 +2,14 @@
 
 <div class="container">
   <div class="row">
+    <div class="col-sm-12 col-lg-12">
 
-    <?php if (is_active_sidebar('sidebar-right') || has_nav_menu('right')): ?>
-      <div class="col-sm-3 col-md-2 col-lg-2">
-    <?php else: ?>
-      <div class="col-sm-3 col-lg-2">
-    <?php endif ?>
-
-      <?php get_sidebar('lmenu'); ?>
-      <?php get_sidebar('left'); ?>
-
-    </div> <!-- end sidebar div -->
-
-    <?php if (is_active_sidebar('sidebar-right') || has_nav_menu('right')): ?>
-      <div class="col-sm-6 col-md-8 col-lg-8">
-    <?php else: ?>
-      <div class="col-sm-9 col-lg-9">
-    <?php endif ?>
-
-      <h1>404 - Not found</h1>
-      <p>Sorry, we can't find that. Maybe you'd like to try a search.</p>
+      <h1>404 Page Not Found</h1>
+      <p>The information you were looking for may have been moved, deleted or doesn't exist.</p>
+      <p>Please search to find the information, or go back to our <a href="/">home page</a>.</p>
       <?php get_search_form(); ?>
 
-    </div> <!-- end content area -->
-
-    <?php if (is_active_sidebar('sidebar-right') || has_nav_menu('right')): ?>
-      <div class="col-sm-3 col-md-3 col-lg-3">
-        <?php get_sidebar('rmenu'); ?>
-        <?php get_sidebar('right'); ?>
-      </div>
-    <?php endif ?>
-
-
+    </div>
   </div>
 </div>
 
