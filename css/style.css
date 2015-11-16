@@ -1395,3 +1395,10 @@ color: #709820;
 }
 
 /* .alerts p {} */
+
+/* Prev/Next Block */
+
+.prevnext-container {
+	font-size: .85em;
+	opacity: .75;
+}
