@@ -1,5 +1,6 @@
 ## 0.7.5
 + added div.pagination to prev/next/edit links
++ updated 404 page content and layout
 
 ## 0.7.4
 + adjusting login function to work with child themes
