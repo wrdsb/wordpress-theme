@@ -1,3 +1,6 @@
+## 0.7.5
++ added div.pagination to prev/next/edit links
+
 ## 0.7.4
 + adjusting login function to work with child themes
 
