@@ -109,7 +109,7 @@
   <p> <?php _e('Sorry, no posts matched your criteria.'); ?> </p>
 <?php endif; ?>
 
-	<div class="pagination-container">
+	<div class="prevnext-container">
 	<?php previous_post_link('<p class="prevpost">&laquo; Older: %link</p>'); ?> <?php if(!get_adjacent_post(false, '', true)) { echo ''; } // if there are no older articles ?>
 	<?php next_post_link('<p class="nextpost">Newer: %link &raquo;</p>'); ?> <?php if(!get_adjacent_post(false, '', false)) { echo ''; } // if there are no newer articles ?>
 	<p class="editpost"><?php edit_post_link(__('Edit'));?></p>
