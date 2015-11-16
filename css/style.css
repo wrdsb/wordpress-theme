@@ -1396,9 +1396,9 @@ color: #709820;
 
 /* .alerts p {} */
 
-/* Pagination Block */
+/* Prev/Next Block */
 
-.pagination-container {
+.prevnext-container {
 	font-size: .85em;
 	opacity: .75;
 }
