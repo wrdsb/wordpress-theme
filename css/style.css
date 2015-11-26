@@ -99,7 +99,7 @@ a {
 }
 
 #loginbar { /* contains log in/out, Staff Website and sometimes School Handbook links */
-	background-color: #a0cf67 !important; 
+	background-color: #a0cf67 !important;
 	border-top: 3px solid #7ac143;
 	width:100%;
 }
@@ -143,10 +143,10 @@ a {
 .nav >li > a:hover, .nav >li > a:focus {
 	background-color:#669ecc;
 }
-.nav >li.active, 
-.nav >li.current-page-ancestor, 
+.nav >li.active,
+.nav >li.current-page-ancestor,
 .nav >li.current_page_ancestor,
-.nav >li.current-menu-item, 
+.nav >li.current-menu-item,
 .nav >li.current_page_item {
 	background-color:#669ecc;
 }
@@ -328,7 +328,7 @@ p.copyright, h6.copyright { /* was h6.copyright */
 	padding-left:36px;
 }
 a#inc_font, a#dec_font {
-	margin:0 8px; 
+	margin:0 8px;
 	cursor:pointer;
 	font-size:24px;
 }
@@ -416,7 +416,7 @@ a#inc_font, a#dec_font {
 .navbar li.current_page_item a {
 	background-color: #669ecc;
 	}*/
-.widget-area ul, 
+.widget-area ul,
 .really_simple_twitter_widget ul {
 	padding:0;
 	list-style-position: inside;
@@ -439,7 +439,7 @@ a#inc_font, a#dec_font {
 	color:#005daa;
 }
 
-.widget-area ul li ul, 
+.widget-area ul li ul,
 .really_simple_twitter_widget ul li ul {
 	padding:0;
 	list-style-position: inside;
@@ -749,16 +749,16 @@ content: "Example";
 	}
 
 	/*** __content ***/
-	
+
 	/** __definition lists **/
 	/* .dl-horizontal applied to default dl */
-	
+
 	dl {
 		line-height: 150%;
 		margin-top: 0;
 		margin-bottom: 20px;
 	}
-	
+
 	dt {
 		font-weight: bold;
 		line-height: 150%;
@@ -767,13 +767,13 @@ content: "Example";
 	dt img {
 		margin: 5px 0 0 0 !important;
 	}
-	
+
 	dd {
 		line-height: 150%;
 		margin-left: 0;
 		margin-bottom: 1.5em;
 	}
-	
+
 	@media (min-width: 768px) {
 		dt {
 			float: left;
@@ -787,11 +787,11 @@ content: "Example";
 			margin-left: 220px;
 		}
 	}
-	
+
 	/** __tables **/
 	/* .table-striped and .table-hover combined and adapted for the WRDSB */
 	/* .table-responsive needs to be in a wrapping div applied to all tables */
-	
+
 	table {
 		border-collapse: collapse;
 		border-spacing: 0;
@@ -800,23 +800,23 @@ content: "Example";
 		border-right: 0;
 		border-top: 0;
 	}
-	
+
 	tr {
 		background-color: #fff;
 	}
-	
+
 	tr:hover {
 		background-color: #d9ecc2;
 	}
-	
+
 	tbody > tr:nth-child(odd) {
 		background-color: #f9f9f9;
 	}
-	
+
 	tbody > tr:nth-child(odd):hover {
 		background-color: #d9ecc2;
 	}
-	
+
 	th, td {
 		vertical-align: top;
 		padding: 1.1em !important;
@@ -824,7 +824,7 @@ content: "Example";
 		border-bottom: 1px solid #eee;
 		color: #000;
 	}
-	
+
 	th {
 		font-weight: bold;
 		text-align: center;
@@ -832,7 +832,7 @@ content: "Example";
 		background-color: #e6eff6;
 		color: #666;
 	}
-	
+
 	tfoot > tr > td {
 		font-weight: bold;
 		font-size: 1.2em;
@@ -840,30 +840,30 @@ content: "Example";
 		color: #666;
 		border-top: 2px solid #ccc;
 	}
-	
+
 	thead > tr > th {
 		border-bottom: 2px solid #b3cee6;
 	}
-	
+
 	caption {
 		font-size: 1.2em;
 		text-align: left;
 		padding: 1em 0;
 	}
-	
-	
+
+
 	/*** __special ***/
-	
+
 	.left, .alignleft {
 		float: left;
 		margin: 1.5em 1.5em 1.5em 0;
 	}
-	
+
 	.right, .alignright {
 		float: right;
 		margin: 1.5em 0 1.5em 1.5em;
 	}
-	
+
 	.center, .aligncenter {
 		margin: 1.5em auto;
 	}
@@ -872,7 +872,7 @@ content: "Example";
 		float: none;
 		margin: 0;
 	}
-	
+
 	.alert {
 		background-color: #ff0;
 		border: 3px solid red;
@@ -882,7 +882,7 @@ content: "Example";
 		-moz-box-shadow:    4px 4px 13px 0 rgba(255, 0, 0, 0.3);
 		box-shadow:         4px 4px 13px 0 rgba(255, 0, 0, 0.3);
 	}
-	
+
 	span.alert {
 		background-color: #ff0;
 		border-bottom: 1px solid red;
@@ -891,7 +891,7 @@ content: "Example";
 		padding: 0 !important;
 		margin: 0 !important;
 	}
-	
+
 	.tip:before {
 		content: "TIP! ";
 		font-weight: bold;
@@ -899,7 +899,7 @@ content: "Example";
 		color: #7D0552;
 		text-shadow: 0 0 5px #E38AAE;
 	}
-	
+
 	span.tip:before {
 		content: "TIP! ";
 		font-weight: bold;
@@ -907,7 +907,7 @@ content: "Example";
 		text-shadow: none;
 		font-size: inherit;
 	}
-	
+
 	.tip {
 		line-height: 150%;
 		background-color: #FCDFFF;
@@ -919,7 +919,7 @@ content: "Example";
 		font-style: normal;
 		-moz-border-radius: 1.2em;
 	}
-	
+
 	span.tip {
 		background-color: #FCDFFF;
 		color: #000;
@@ -928,7 +928,7 @@ content: "Example";
 		font-style: normal;
 		-moz-border-radius: .4em;
 	}
-	
+
 	.note {
 		background-color: #ffc;
 		/*border: 3px dashed #eee;*/
@@ -953,8 +953,8 @@ content: "Example";
 	box-shadow:         4px 4px 13px 0 rgba(50, 50, 50, 0.3); */
 }
 
-/* from original WRDSB site 
- 
+/* from original WRDSB site
+
 .note {
 color: #666666;
 font-size: 14px;
@@ -968,8 +968,8 @@ padding-bottom: 10px;
 background-position: 7px 12px;
 border: 1px solid #CCCCCC;
 position: relative;
-} 
- 
+}
+
 	box-shadow:         4px 4px 13px 0 rgba(50, 50, 50, 0.3);
 }
 */
@@ -1150,16 +1150,16 @@ h1 {
 	background-color: #fff;
 	border-bottom: 1px dotted #eee;
  }
- 
+
  .biocard:last-child {
 	border-bottom: 0;
 }
- 
+
  .biocard > h2 {
 	font-family: Georgia, serif;
 	margin-top: 0;
 }
- 
+
  .biocard > .headshot img {
 	float: left;
 	margin-right: 25px;
@@ -1171,12 +1171,12 @@ box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 0.09);
 -moz-border-radius: 10px;
 border-radius: 10px;
  }
- 
+
  .biocard > h3.details {
 	font-size: 14px;
 	line-height: 130%;
 }
- 
+
  .biocard > h3.details strong {
 	text-transform: uppercase;
  }
@@ -1194,6 +1194,17 @@ border-radius: 10px;
 
 .footer .sbe-widget-updated {
 	color: #666 !important;
+}
+
+/* form elements in the footer */
+
+.footer input[type=text] {
+background-color: #fff !important;
+color: #666 !important;
+}
+
+.footer input[type=submit] {
+color: #666 !important;
 }
 
 /******** BIPSA Diagram Map Styles ********/
@@ -1383,14 +1394,14 @@ color: #709820;
 /*** ALERTS ***/
 
 .alerts {
-	border: 10px dashed #900; 
-	padding: 25px; 
+	border: 10px dashed #900;
+	padding: 25px;
 	margin: 25px auto;
 	background-color: #ffffe6;
 }
 
 .alerts h1 {
-	font-weight: 700; 
+	font-weight: 700;
 	text-align: center;
 }
 
