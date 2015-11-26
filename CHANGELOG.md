@@ -1,3 +1,6 @@
+## 0.7.6
++ added conditional to footer-centre to selectively replace subscribe by email widget with new mailgun subscription widget, if available
+
 ## 0.7.5
 + added div.pagination to prev/next/edit links
 + updated 404 page content and layout
@@ -58,7 +61,7 @@
 ## 0.5.3
 * pulled in changes to staff_list.php template to remove vanity sort prefix
 
-## 0.5.2 
+## 0.5.2
 + added tags and text domain for WRDSB Theme
 
 ## 0.5.1
