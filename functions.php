@@ -839,6 +839,7 @@ function wrdsb_i_am_a_school_with_schoolday() {
     "sss",
     "stj",
     "sun",
+    "vis",
     "wel",
     "wgd",
     "wlm",
