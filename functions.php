@@ -622,7 +622,6 @@ function wrdsb_i_am_a_school() {
     "lex",
     "lin",
     "lkw",
-    "lna",
     "lnh",
     "lrw",
     "man",
