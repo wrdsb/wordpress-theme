@@ -73,6 +73,10 @@ cite::after {
 }
 */
 
+h2.news {
+	font-size: 24px;
+}
+
 a {
 	color:#005daa;
 }

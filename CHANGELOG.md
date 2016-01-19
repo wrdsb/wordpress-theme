@@ -1,3 +1,9 @@
+## 0.7.7
++ added new schools
++ removed closed school
++ adjusted headings for news posts in stream and alone (accessibility)
++ adjusted stylings for headings for news posts in stream (visual appearance)
+
 ## 0.7.6
 + added conditional to footer-centre to selectively replace subscribe by email widget with new mailgun subscription widget, if available
 
