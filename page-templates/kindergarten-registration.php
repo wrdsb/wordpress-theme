@@ -114,8 +114,10 @@ Template Name: Kindergarten Registration
       <li><a target="_blank" href="http://www.wrdsb.ca/kindergarten/">Kindergarten at the WRDSB</a></li>
       <li><a target="_blank" href="http://www.wrdsb.ca/beforeafter/">Before and After School Programs</a></li>
       <li><a target="_blank" href="http://www.wrdsb.ca/wp-content/uploads/Kindergarten_Library_Flyer.pdf">Welcome to your School Library</a></li>
-      <li><a target="_blank" href="http://www.wrdsb.ca/wp-content/uploads/Referral-List-2014-15.pdf">Region of Waterloo Referral List</a> for support services such as speech &amp; language/hearing assessments, vision assessments, developmental concerns, etc.</li>
-      <li><a target="_blank" href="http://www.wrdsb.ca/wp-content/uploads/Eye-See-Eye-Learn.pdf">Eye See...Eye Learn&reg;</a> &ndash; how well can your child see?</li>
+      <li><a target="_blank" href="[ http://chd.region.waterloo.on.ca/en/childfamilyhealth/resources/referrallist_servicepathway.pdf ]http://chd.region.waterloo.on.ca/en/childfamilyhealth/resources/referrallist_servicepathway.pdf">Service Pathway for Children Ages 0-6 in Region of Waterloo</a> for support services such as speech &amp; language/hearing assessments, vision assessments, developmental concerns, etc.</li>
+      <li><a target="_blank" href="http://www.ndds.ca/ontario">Nipissing District Developmental Screen (ndds)</a> is an innovative developmental checklist for infants and children up to 6 years of age, to be completed by a parent or health/child care professional.</li>
+      <li><a target="_blank" href="http://www.eatrightontario.ca/en/Children.aspx">Eat Right Ontario</a> articles on children and the nutri-estep program</li>
+      <li><a target="_blank" href="http://www.optom.on.ca/OAO/ESEL/AboutESEL.aspx">Eye See...Eye Learn&reg;</a> &ndash; how well can your child see? Eye exams and glasses are complimentary for JK kids!</li>
     </ul>
 
 <h2>See a Day in Kindergarten!</h2>
