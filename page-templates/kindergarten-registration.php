@@ -131,7 +131,7 @@ Template Name: Kindergarten Registration
       while ( have_posts() ) : the_post();
         $sitename = get_bloginfo('name');
         if ($post->post_content != "") {
-          the_title('<h2>', ': $sitename Information</h2><p>The following information applies to this school only.</p>');
+          the_title('<h2>', ':'.$sitename.' Information</h2><p>The following information applies to this school only.</p>');
           the_content();
         }
         edit_post_link('Edit');
