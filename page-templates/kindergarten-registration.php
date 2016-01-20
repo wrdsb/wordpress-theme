@@ -107,10 +107,6 @@ Template Name: Kindergarten Registration
   </li>
 </ol>
 
-<h2>See a Day in Kindergarten!</h2>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/fC7ZkyI3Zlg" frameborder="0" allowfullscreen></iframe>
-
 <h2>Learn More!</h2>
     <p>For more information about Kindergarten, Before and After School Programs, and other important information, you are encouraged to review the following:</p>
     <ul>
@@ -122,11 +118,13 @@ Template Name: Kindergarten Registration
       <li><a target="_blank" href="http://www.wrdsb.ca/wp-content/uploads/Eye-See-Eye-Learn.pdf">Eye See...Eye Learn&reg;</a> &ndash; how well can your child see?</li>
     </ul>
 
+<h2>See a Day in Kindergarten!</h2>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fC7ZkyI3Zlg" frameborder="0" allowfullscreen></iframe>
 
 <h2>Spring Family Orientation Event</h2>
 
 <p>Some schools offer an opportunity for families to be welcomed and learn more about the Kindergarten experience. Be sure to ask for these details when you complete the registration with the school!</p>
-
 
     <?php
       // Start the Loop.
