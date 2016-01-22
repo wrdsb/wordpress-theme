@@ -81,43 +81,53 @@ Template Name: Kindergarten Registration
 <h1>How to Register for Kindergarten</h1>
 
 <ol>
-  <li>
-    <p><strong>Confirm your child's school</strong>. Look up the school by boundary for students starting <a target="_blank" href="https://bpweb.stswr.ca/Eligibility.aspx?Page=School&amp;DBGUID=e203f9f5-e885-472c-945b-5e011c680374">this year (2015-2016)</a>, or <a target="_blank" href="https://bpweb.stswr.ca/Eligibility.aspx?Page=School&amp;">next year (2016-2017)</a>.</p>
-  </li>
-  <li>
-    <p><strong>Start the registration process</strong> <a href="https://etrillium.wrdsb.ca/onlinereg">online</a> now!</p>
-    <p>Learn more about the <a href="http://www.wrdsb.ca/register/">registration process</a> before starting.</p>
-  </li>
-  <li>
-    <p>Please <strong>bring the following documents</strong> when you meet with your child's school to complete the registration:</p>
-    <ul>
-      <li><strong>Proof of Address</strong>
-        <p>Utility bill, proof of Ontario Property Assessment Notice, or lease agreement.</p>
-      </li>
-      <li><strong>Proof of Birth</strong>
-        <p>Birth Certificate, Canadian Passport, birth registration, citizenship card or statement of live birth.</p>
-      </li>
-      <li><strong>Proof of Custody</strong> where applicable
-        <p>Custody orders, court-ordered Guardianship</p>
-      </li>
-      <li><a target="_blank" href="https://e-immunization.regionofwaterloo.ca/"><strong>Student Immunization Information</strong></a>
-      <p>Submit your child's immunization information online directly to the <a target="_blank" href="https://e-immunization.regionofwaterloo.ca/">Region of Waterloo Public Health</a>.</p>
-      </li>
-    </ul>
-  </li>
+<li><strong>Confirm your child’s school</strong>.
+<ul>
+<li>Look up the school by boundary for students starting <a href="http://schoolfinder.stswr.ca/" target="_blank">this year (2015-2016)</a>, or <a href="http://schoolfinder.stswr.ca/nextyear/" target="_blank">next year (2016-2017)</a>.</li>
+</ul>
+</li>
+<li><strong>Start the registration process</strong>
+<ul>
+<li><a href="http://register.wrdsb.ca/kindergarten" target="_blank">Register</a>&nbsp;online now!</li>
+<li>See a <a href="https://www.youtube.com/watch?v=qkFE3NXpTzk" target="_blank" javascript="ga('send', 'event', 'YouTube Video', 'Open', 'Kindergarten Registration 2016';">video walk-through</a> if you need help!</li>
+</ul>
+</li>
+<li><strong>Attend the follow-up appointment</strong>
+<ul>
+<li>After you register online, your school will contact you to arrange an appointment. You will need to <strong>bring the following documents</strong> when you meet with your child’s school to complete the registration:
+<ul>
+<li><strong>Proof of Address</strong>
+<ul>
+<li>Utility bill, proof of Ontario Property Assessment Notice, or lease agreement.</li>
+</ul>
+</li>
+<li><strong>Proof of Birth</strong>
+<ul>
+<li>Birth Certificate, Canadian Passport, birth registration, citizenship card or statement of live birth.</li>
+</ul>
+</li>
+<li><strong>Proof of Custody</strong> where applicable
+<ul>
+<li>Custody orders, court-ordered Guardianship</li>
+</ul>
+</li>
+<li><strong><a href="https://e-immunization.regionofwaterloo.ca/" target="_blank">Student Immunization Information</a></strong>
+<ul>
+<li>Submit your child’s immunization information online directly to the <a href="https://e-immunization.regionofwaterloo.ca/" target="_blank">Region of Waterloo Public Health</a>.</li>
+</ul>
+</li>
+<li>Immigration Documents where required</li>
+</ul>
+</li>
+</ul>
+</li>
 </ol>
 
 <h2>Learn More!</h2>
     <p>For more information about Kindergarten, Before and After School Programs, and other important information, you are encouraged to review the following:</p>
     <ul>
-      <li><a target="_blank" href="http://www.wrdsb.ca/wp-content/uploads/Off-to-School-Booklet.pdf">Off to School Booklet</a></li>
       <li><a target="_blank" href="http://www.wrdsb.ca/kindergarten/">Kindergarten at the WRDSB</a></li>
       <li><a target="_blank" href="http://www.wrdsb.ca/beforeafter/">Before and After School Programs</a></li>
-      <li><a target="_blank" href="http://www.wrdsb.ca/wp-content/uploads/Kindergarten_Library_Flyer.pdf">Welcome to your School Library</a></li>
-      <li><a target="_blank" href="[ http://chd.region.waterloo.on.ca/en/childfamilyhealth/resources/referrallist_servicepathway.pdf ]http://chd.region.waterloo.on.ca/en/childfamilyhealth/resources/referrallist_servicepathway.pdf">Service Pathway for Children Ages 0-6 in Region of Waterloo</a> for support services such as speech &amp; language/hearing assessments, vision assessments, developmental concerns, etc.</li>
-      <li><a target="_blank" href="http://www.ndds.ca/ontario">Nipissing District Developmental Screen (ndds)</a> is an innovative developmental checklist for infants and children up to 6 years of age, to be completed by a parent or health/child care professional.</li>
-      <li><a target="_blank" href="http://www.eatrightontario.ca/en/Children.aspx">Eat Right Ontario</a> articles on children and the nutri-estep program</li>
-      <li><a target="_blank" href="http://www.optom.on.ca/OAO/ESEL/AboutESEL.aspx">Eye See...Eye Learn&reg;</a> &ndash; how well can your child see? Eye exams and glasses are complimentary for JK kids!</li>
     </ul>
 
 <h2>See a Day in Kindergarten!</h2>
