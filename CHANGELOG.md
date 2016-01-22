@@ -1,17 +1,29 @@
+## 0.7.8
+Content
++ adjusted content in How to Register for Kindergarten page template
++ added button for Kindergarten Registration to home.php for schools with kindergarten
+Fixes
++ added .intro as a style
++ fine-tuned table cell hover effect
+
 ## 0.7.7
+Fixes
 + added new schools
 + removed closed school
 + adjusted headings for news posts in stream and alone (accessibility)
 + adjusted stylings for headings for news posts in stream (visual appearance)
 
 ## 0.7.6
+Fixes
 + added conditional to footer-centre to selectively replace subscribe by email widget with new mailgun subscription widget, if available
 
 ## 0.7.5
+Fixes
 + added div.pagination to prev/next/edit links
 + updated 404 page content and layout
 
 ## 0.7.4
+Fixes
 + adjusting login function to work with child themes
 
 ## 0.7.3
