@@ -833,6 +833,10 @@ content: "Example";
 		background-color: #d9ecc2;
 	}
 
+	tbody > tr:nth-child(even):hover {
+		background-color: #d9ecc2;
+	}
+
 	th, td {
 		vertical-align: top;
 		padding: 1.1em !important;
