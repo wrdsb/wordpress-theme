@@ -18,6 +18,7 @@
       echo '<div class="col-sm-3 col-md-2 col-lg-2">';
 
       if (is_front_page() && wrdsb_i_am_a_school_with_kindergarten()) { ?>
+        <p><a href="http://www.wrdsb.ca/kindergarten/its-time-to-register/" onclick="ga('send', 'event', 'school-banners', 'click-banner', 'kindiereg', 'http://www.wrdsb.ca/kindergarten/its-time-to-register/',{'nonInteraction':1});"><img src="http://www.wrdsb.ca/wp-content/uploads/register_for_kindergarten_2.jpg" alt="Register for Kindergarten at the WRDSB"/></a></p>
         <p><a href="http://www.wrdsb.ca/beforeafter/" onclick="ga('send', 'event', 'school-banners', 'click-banner', 'beforeafter', 'http://www.wrdsb.ca/beforeafter/',{'nonInteraction':1});"><img src="http://www.wrdsb.ca/wp-content/uploads/beforeafter_banner.jpg" alt="Before &amp; After School Program Information"/></a></p>
       <?php
       }
@@ -40,6 +41,7 @@
       echo '<div class="col-sm-3 col-lg-3">';
 
       if (is_front_page() && wrdsb_i_am_a_school_with_kindergarten()) { ?>
+        <p><a href="http://www.wrdsb.ca/kindergarten/its-time-to-register/" onclick="ga('send', 'event', 'school-banners', 'click-banner', 'kindiereg', 'http://www.wrdsb.ca/kindergarten/its-time-to-register/',{'nonInteraction':1});"><img src="http://www.wrdsb.ca/wp-content/uploads/register_for_kindergarten_2.jpg" alt="Register for Kindergarten at the WRDSB"/></a></p>
         <p><a href="http://www.wrdsb.ca/beforeafter/" onclick="ga('send', 'event', 'school-banners', 'click-banner', 'beforeafter', 'http://www.wrdsb.ca/beforeafter/',{'nonInteraction':1});"><img src="http://www.wrdsb.ca/wp-content/uploads/beforeafter_banner.jpg" alt="Before &amp; After School Program Information"/></a></p>
       <?php
       }
