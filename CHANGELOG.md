@@ -1,6 +1,10 @@
 ## 0.7.8
 Content
 + adjusted content in How to Register for Kindergarten page template
++ added button for Kindergarten Registration to home.php for schools with kindergarten
+Fixes
++ added .intro as a style
++ fine-tuned table cell hover effect
 
 ## 0.7.7
 Fixes
