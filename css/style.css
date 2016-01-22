@@ -55,6 +55,14 @@
 	-moz-animation: target-fade 0s 0;
 }
 
+/* introductory paragraphs */
+
+p.intro {
+    font-weight: 700;
+    font-size: 20px;
+    padding: 15px 0;
+}
+
 /* Cite APA Style */
 cite {
 	font-style: italic;
@@ -811,6 +819,10 @@ content: "Example";
 
 	tr:hover {
 		background-color: #d9ecc2;
+	}
+	
+	td:hover {
+		background-color: #e7f3d8 !important;
 	}
 
 	tbody > tr:nth-child(odd) {
