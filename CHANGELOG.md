@@ -1,3 +1,7 @@
+## 0.7.9
+Fixes
++ remove How to Register for Kindergarten page template
+
 ## 0.7.8
 Content
 + adjusted content in How to Register for Kindergarten page template
