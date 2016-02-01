@@ -444,7 +444,7 @@ function the_breadcrumb() {
 function wrdsb_secondary_school_colours() {
   $parsed_url = parse_url(site_url());
   $host = explode('.', $parsed_url['host']);
-  echo '<!-- Site specific styles for '.$host[0].' -->';
+  echo '<!-- Site specific styles for '.$host[0].' -->'."\r\n";
   switch ($host[0]) {
     case "bci":
       echo '<link href="'.get_template_directory_uri().'/css/bci.css" rel="stylesheet">';
