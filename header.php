@@ -164,7 +164,7 @@
           </button>
               <?php $strl = get_bloginfo('name');
                 $tempstrl = explode(" ", $strl);
-                $newstrl;
+                $newstrl = '';
 
                 foreach($tempstrl as $a) {
                   if ($a=='District' or $a=='Public' or $a=='Collegiate' or $a=='Secondary' or $a=='High') {
