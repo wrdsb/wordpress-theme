@@ -444,8 +444,7 @@ function the_breadcrumb() {
 function wrdsb_secondary_school_colours() {
   $parsed_url = parse_url(site_url());
   $host = explode('.', $parsed_url['host']);
-  $site = $parsed_url['path'];
-  echo '<!-- Site specific styles for '.$host[0].' - '.$site.' -->';
+  echo '<!-- Site specific styles for '.$host[0].' -->';
   switch ($host[0]) {
     case "bci":
       echo '<link href="'.get_template_directory_uri().'/css/bci.css" rel="stylesheet">';
@@ -524,7 +523,6 @@ function wrdsb_posts_page_url() {
 function wrdsb_i_am_a_corporate_site() {
   $parsed_url = parse_url(site_url());
   $host = explode('.', $parsed_url['host']);
-  $site = $parsed_url['path'];
   $my_domains = array(
     "www",
   );
@@ -536,7 +534,6 @@ function wrdsb_i_am_a_corporate_site() {
 function wrdsb_i_am_a_staff_site() {
   $parsed_url = parse_url(site_url());
   $host = explode('.', $parsed_url['host']);
-  $site = $parsed_url['path'];
   $my_domains = array(
     "staff",
   );
@@ -548,7 +545,6 @@ function wrdsb_i_am_a_staff_site() {
 function wrdsb_i_am_a_school() {
   $parsed_url = parse_url(site_url());
   $host = explode('.', $parsed_url['host']);
-  $site = $parsed_url['path'];
   $alpha_codes = array(
     "schools",
     "abe",
@@ -688,7 +684,6 @@ function wrdsb_i_am_a_school() {
 function wrdsb_i_am_a_school_with_kindergarten() {
   $parsed_url = parse_url(site_url());
   $host = explode('.', $parsed_url['host']);
-  $site = $parsed_url['path'];
   $alpha_codes = array(
     "abe",
     "alp",
@@ -788,7 +783,6 @@ function wrdsb_i_am_a_school_with_kindergarten() {
 function wrdsb_i_am_a_school_with_schoolday() {
   $parsed_url = parse_url(site_url());
   $host = explode('.', $parsed_url['host']);
-  $site = $parsed_url['path'];
   $alpha_codes = array(
     "schools",
     "gnss",
