@@ -1,3 +1,7 @@
+## 0.7.10
+Fixes
++ repair undefined index and undefined variables in functions.php and header.php
+
 ## 0.7.9
 Fixes
 + remove How to Register for Kindergarten page template
