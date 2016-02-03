@@ -81,37 +81,37 @@ include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
           <div class="container" id="loginbar">
               <p class="copyright" style="text-align: center;">
             	<?php
-            	// Get all the information about the site
+        		// Get all the information about the site
             	$sitename = get_bloginfo('name');
             	$siteurl = site_url();
           		$parsed_url = parse_url(network_site_url());
-                  $host = explode('.', $parsed_url['host']);
+        		$host = explode('.', $parsed_url['host']);
 
-                  // create link text
+                // create link text
           		$admin_link  = '<a href="'.$siteurl.'/wp-login.php">Log into '.$sitename.'</a>';
           		$staff_admin_link = ' &middot; Go to <a href="http://staff.wrdsb.ca">Staff Website</a> ';
           		$school_handbook_link = '';
 
-                  // customize links for school network
-                	if ($host[0] == 'schools') {
-                		$fulldomain = explode('.',$_SERVER['HTTP_HOST']);
-                		$admin_link  = '<a href="'.$fulldomain[0].'.wrdsb.ca/wp-login.php">Log into '.$sitename.'</a>';
-                		$school_handbook_link = ' &middot; Go to <a target="_blank" href="http://staff.wrdsb.ca/' .$fulldomain[0].'">'.strtoupper($fulldomain[0]).'School Handbook</a>"';
-                	}
+                // customize links for school network
+                if ($host[0] == 'schools') {
+                	$fulldomain = explode('.',$_SERVER['HTTP_HOST']);
+                	$admin_link  = '<a href="'.$fulldomain[0].'.wrdsb.ca/wp-login.php">Log into '.$sitename.'</a>';
+                	$school_handbook_link = ' &middot; Go to <a target="_blank" href="http://staff.wrdsb.ca/' .$fulldomain[0].'">'.strtoupper($fulldomain[0]).'School Handbook</a>"';
+                }
       
-                  // customize links for staff network
-                	if ($host[0] == 'staff') {
-                	      $staff_admin_link = '';
-                	}
+                // customize links for staff network
+                if ($host[0] == 'staff') {
+                	$staff_admin_link = '';
+                }
 
-                  // display the links
+                // display the links
             	if ( is_user_logged_in() )
             	{
             		wp_loginout();
             	}
             	else
             	{ 
-            	      echo $admin_link . $staff_admin_link . $school_handbook_link; 
+            		echo $admin_link . $staff_admin_link . $school_handbook_link; 
             	} ?>
               </p>
           </div>
