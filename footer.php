@@ -96,7 +96,7 @@ include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
                 	if ($host[0] == 'schools') {
                 		$fulldomain = explode('.',$_SERVER['HTTP_HOST']);
                 		$admin_link  = '<a href="'.$fulldomain[0].'.wrdsb.ca/wp-login.php">Log into '.$sitename.'</a>';
-                		$school_handbook_link = '&middot; Go to <a target="_blank" href="http://staff.wrdsb.ca/' .$fulldomain[0].'">'.strtoupper($fulldomain[0]).'School Handbook</a>"';
+                		$school_handbook_link = ' &middot; Go to <a target="_blank" href="http://staff.wrdsb.ca/' .$fulldomain[0].'">'.strtoupper($fulldomain[0]).'School Handbook</a>"';
                 	}
       
                   // customize links for staff network
@@ -111,7 +111,7 @@ include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
             	}
             	else
             	{ 
-            	      echo $admin_link $staff_admin_link $school_handbook_link; 
+            	      echo $admin_link . $staff_admin_link . $school_handbook_link; 
             	} ?>
               </p>
           </div>
