@@ -110,7 +110,7 @@ include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 			wp_loginout();
 		}
 		else {
-			echo $admin_link
+			echo $admin_link;
 		}
 	
 		// display the auxilliary links
