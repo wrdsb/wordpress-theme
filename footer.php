@@ -81,16 +81,16 @@ include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
           <div class="container" id="loginbar">
               <p class="copyright" style="text-align: center;">
             	<?php
-        		// Get all the information about the site
-				$sitename = get_bloginfo('name');
-				$siteurl = site_url();
-				$parsed_url = parse_url(network_site_url());
-				$host = explode('.', $parsed_url['host']);
+        	// Get all the information about the site
+			$sitename = get_bloginfo('name');
+			$siteurl = site_url();
+			$parsed_url = parse_url(network_site_url());
+			$host = explode('.', $parsed_url['host']);
 
                 // create link text
-				$admin_link  = '<a href="'.$siteurl.'/wp-login.php">Log into '.$sitename.'</a>';
-				$staff_admin_link = ' &middot; Go to <a href="http://staff.wrdsb.ca">Staff Website</a>';
-				$school_handbook_link = '';
+			$admin_link  = '<a href="'.$siteurl.'/wp-login.php">Log into '.$sitename.'</a>';
+			$staff_admin_link = ' &middot; Go to <a href="http://staff.wrdsb.ca">Staff Website</a>';
+			$school_handbook_link = '';
 
                 // customize links for school network
                 if ($host[0] == 'schools') {
