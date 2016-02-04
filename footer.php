@@ -64,8 +64,6 @@ include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
               the_widget( 'WRDSB_Subscribe_By_Email_Widget' );
             } ?>
             <p>You will need to subscribe to get the news feeds from each website separately.</p>
-            <h2>Get News from the WRDSB</h2>
-            <p>Would you like periodic, general news from the WRDSB? <a href="https://secure.wrdsb.ca/subscribe/publicform.aspx">Add your email address</a> to our public database!</p>
             <h2>Other Ways to Get News</h2>
             <p><a href="http://www.wrdsb.ca/our-schools/communicating-with-your-school/subscribing/" target="_blank">See all subscription options</a>.</p>
             </div>
@@ -80,23 +78,42 @@ include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
       </div>
           <div class="container" id="loginbar">
               <p class="copyright" style="text-align: center;">
-            	<?php if ( is_user_logged_in() )
-            	{
-            		wp_loginout();
-            	}
-            	else
-            	{ ?>
-            		<a href="<?php echo site_url(); echo '/wp-login.php';?>">Log into <?php echo get_bloginfo('name'); ?></a>
-            	<?php }?>
-                 &middot; Go to <a href="http://staff.wrdsb.ca">Staff Website</a>
-                <?php
-                $parsed_url = parse_url(network_site_url());
-                $host = explode('.', $parsed_url['host']);
-                	if ($host[0] == 'schools') {
-                		$fulldomain = explode('.',$_SERVER['HTTP_HOST']);
-                  	?>
-                        &middot; Go to <a target="_blank" href="http://staff.wrdsb.ca/<?php echo $fulldomain[0]; ?>/"><?php echo strtoupper($fulldomain[0]); ?> School Handbook</a>
-            		<?php } ?>
+            	<?php
+            	// Get all the information about the site
+		$sitename = get_bloginfo('name');
+		$siteurl = site_url();
+		$parsed_url = parse_url(network_site_url());
+		$host = explode('.', $parsed_url['host']);
+
+                // create link text
+		$admin_link  = '<a href="'.$siteurl.'/wp-login.php">Log into '.$sitename.'</a>';
+		$staff_admin_link = ' &middot; Go to <a href="http://staff.wrdsb.ca/">Staff Intranet</a>';
+		$school_handbook_link = '';
+
+                // customize links for school network
+                if ($host[0] == 'schools') {
+			$fulldomain = explode('.',$_SERVER['HTTP_HOST']);
+			$admin_link  = '<a href="http://schools.wrdsb.ca/'.$fulldomain[0].'/wp-login.php">Log into '.$sitename.'</a>';
+			$school_handbook_link = ' &middot; Go to <a target="_blank" href="http://staff.wrdsb.ca/' .$fulldomain[0].'">'.strtoupper($fulldomain[0]).' School Handbook</a>';
+                }
+      
+                // customize links for staff network
+                if ($host[0] == 'staff') {
+			$staff_admin_link = '';
+                }
+
+                // display the login/logout link
+		if ( is_user_logged_in() )
+		{
+			wp_loginout();
+		}
+		else {
+			echo $admin_link;
+		}
+	
+		// display the auxilliary links
+		echo $staff_admin_link . $school_handbook_link; 
+		?>
               </p>
           </div>
     <?php wp_footer(); ?>
