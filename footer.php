@@ -89,7 +89,7 @@ include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 
                 // create link text
 		$admin_link  = '<a href="'.$siteurl.'/wp-login.php">Log into '.$sitename.'</a>';
-		$staff_admin_link = ' &middot; Go to <a href="http://staff.wrdsb.ca">Staff Website</a>';
+		$staff_admin_link = ' &middot; Go to <a href="http://staff.wrdsb.ca/">Staff Intranet</a>';
 		$school_handbook_link = '';
 
                 // customize links for school network
