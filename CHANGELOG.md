@@ -5,6 +5,7 @@ Fixes
 + repaired login links to work with single login for schools
 + removed login for staff intranet from staff intranet
 + renamed "Staff Website" to "Staff Intranet"
++ removed public subscription form link from footer
 
 ## 0.7.10
 Fixes
