@@ -1,6 +1,7 @@
 ## 0.7.11
 Content
 + added Phase 8 school-day schools to school-day function
+
 Fixes
 + repaired login links to work with single login for schools
 + removed login for staff intranet from staff intranet
