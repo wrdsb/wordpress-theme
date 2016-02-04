@@ -1,3 +1,13 @@
+## 0.7.11
+Content
++ added Phase 8 school-day schools to school-day function
+
+Fixes
++ repaired login links to work with single login for schools
++ removed login for staff intranet from staff intranet
++ renamed "Staff Website" to "Staff Intranet"
++ removed public subscription form link from footer
+
 ## 0.7.10
 Fixes
 + repair undefined index and undefined variables in functions.php and header.php
