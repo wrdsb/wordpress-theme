@@ -94,25 +94,28 @@ include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 
                 // customize links for school network
                 if ($host[0] == 'schools') {
-					$fulldomain = explode('.',$_SERVER['HTTP_HOST']);
-					$admin_link  = '<a href="'.$fulldomain[0].'.wrdsb.ca/wp-login.php">Log into '.$sitename.'</a>';
-					$school_handbook_link = ' &middot; Go to <a target="_blank" href="http://staff.wrdsb.ca/' .$fulldomain[0].'">'.strtoupper($fulldomain[0]).'School Handbook</a>';
+			$fulldomain = explode('.',$_SERVER['HTTP_HOST']);
+			$admin_link  = '<a href="'.$fulldomain[0].'.wrdsb.ca/wp-login.php">Log into '.$sitename.'</a>';
+			$school_handbook_link = ' &middot; Go to <a target="_blank" href="http://staff.wrdsb.ca/' .$fulldomain[0].'">'.strtoupper($fulldomain[0]).' School Handbook</a>';
                 }
       
                 // customize links for staff network
                 if ($host[0] == 'staff') {
-					$staff_admin_link = '';
+			$staff_admin_link = '';
                 }
 
-                // display the links
-				if ( is_user_logged_in() )
-				{
-					wp_loginout();
-				}
-				else
-				{ 
-					echo $admin_link . $staff_admin_link . $school_handbook_link; 
-				} ?>
+                // display the login/logout link
+		if ( is_user_logged_in() )
+		{
+			wp_loginout();
+		}
+		else {
+			echo $admin_link
+		}
+	
+		// display the auxilliary links
+		echo $staff_admin_link . $school_handbook_link; 
+		?>
               </p>
           </div>
     <?php wp_footer(); ?>
