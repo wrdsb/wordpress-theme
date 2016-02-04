@@ -64,8 +64,6 @@ include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
               the_widget( 'WRDSB_Subscribe_By_Email_Widget' );
             } ?>
             <p>You will need to subscribe to get the news feeds from each website separately.</p>
-            <h2>Get News from the WRDSB</h2>
-            <p>Would you like periodic, general news from the WRDSB? <a href="https://secure.wrdsb.ca/subscribe/publicform.aspx">Add your email address</a> to our public database!</p>
             <h2>Other Ways to Get News</h2>
             <p><a href="http://www.wrdsb.ca/our-schools/communicating-with-your-school/subscribing/" target="_blank">See all subscription options</a>.</p>
             </div>
