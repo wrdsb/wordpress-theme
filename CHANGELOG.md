@@ -1,3 +1,7 @@
+## 0.7.12
+Content
++ added SIL to school-day function
+
 ## 0.7.11
 Content
 + added Phase 8 school-day schools to school-day function
