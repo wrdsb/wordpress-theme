@@ -847,6 +847,7 @@ function wrdsb_i_am_a_school_with_schoolday() {
     "sag",
     "she",
     "shl",
+    "sil",
     "smi",
     "snd",
     "srg",
