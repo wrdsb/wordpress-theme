@@ -830,7 +830,6 @@ function wrdsb_i_am_a_school_with_schoolday() {
     "how",
     "jdp",
     "ked",
-    "lau",
     "lbp",
     "lex",
     "lin",
