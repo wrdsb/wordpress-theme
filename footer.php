@@ -38,7 +38,7 @@ include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
                 </address>
               <div class="social-icons">
                 <a href="https://www.facebook.com/wrdsb/" target="_blank"><span class="icon-facebook" title="Facebook"></span></a>
-                <div class="fb-follow" data-href="https://www.facebook.com/wrdsb/" data-layout="button" data-show-faces="false"></div>
+                <div class="fb-follow" data-href="https://www.facebook.com/wrdsb/" data-layout="button" data-show-faces="false" data-colorscheme="light" data-kid-directed-site="false"></div>
                 <!--<a href="#"><span class="icon-twitter" title="Twitter"></span></a>-->
                 <!--<a href="#"><span class="icon-youtube" title="YouTube"></span></a>-->
               </div>
