@@ -26,25 +26,25 @@ include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
                 }
                 else {
                   ?>
-                  <h1>Waterloo Region District School Board</h1>
-              <address>51 Ardelt Avenue<br />
-                Kitchener, ON N2C 2R5<br />
-              </address>
-              <address>
-                Switchboard: 519-570-0003<br />
-                <a href="http://www.wrdsb.ca/about-the-wrdsb/contact/">Contact Information</a><br />
-                <a href="http://www.wrdsb.ca/about-the-wrdsb/contact/website-feedback/">Website Feedback Form</a>
-              </address>
-              <?php
-                }
-              ?>
+                <address>
+                <h1>Waterloo Region District School Board</h1>
+              	<p>51 Ardelt Avenue<br />
+                Kitchener, ON N2C 2R5</p>
 
+                <p>Switchboard: 519-570-0003<br />
+                <a href="http://www.wrdsb.ca/about-the-wrdsb/contact/">Contact Information</a></p>
+
+                <p><a href="http://www.wrdsb.ca/about-the-wrdsb/contact/website-feedback/">Website Feedback Form</a></p>
+                </address>
               <div class="social-icons">
-                <!--<a href="#"><span class="icon-facebook" title="Facebook"></span></a>-->
+                <a href="https://www.facebook.com/wrdsb/" target="_blank"><span class="icon-facebook" title="Facebook"></span></a>
                 <!--<a href="#"><span class="icon-twitter" title="Twitter"></span></a>-->
                 <!--<a href="#"><span class="icon-youtube" title="YouTube"></span></a>-->
               </div>
 
+              <?php
+                }
+              ?>
             </div>
             <div class="col-sm-6 col-md-3">
             <h1>Let Us Email You!</h1>
