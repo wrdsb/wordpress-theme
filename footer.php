@@ -37,10 +37,11 @@ include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
                 <p><a href="http://www.wrdsb.ca/about-the-wrdsb/contact/website-feedback/">Website Feedback Form</a></p>
                 </address>
               <div class="social-icons">
-                <a href="https://www.facebook.com/wrdsb/" target="_blank"><span class="icon-facebook" title="Facebook"></span></a>
+<!--                <a href="https://www.facebook.com/wrdsb/" target="_blank"><span class="icon-facebook" title="Facebook"></span></a> -->
                 <div class="fb-follow" data-href="https://www.facebook.com/wrdsb/" data-layout="button" data-show-faces="false" data-colorscheme="light" data-kid-directed-site="false"></div>
-                <!--<a href="#"><span class="icon-twitter" title="Twitter"></span></a>-->
-                <!--<a href="#"><span class="icon-youtube" title="YouTube"></span></a>-->
+                <a href="https://twitter.com/wrdsb" class="twitter-follow-button" data-show-count="false" data-dnt="true">Follow @wrdsb</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+		<!--<a href="#"><span class="icon-youtube" title="YouTube"></span></a>-->
               </div>
 
               <?php
