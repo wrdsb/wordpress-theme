@@ -26,25 +26,27 @@ include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
                 }
                 else {
                   ?>
-                  <h1>Waterloo Region District School Board</h1>
-              <address>51 Ardelt Avenue<br />
-                Kitchener, ON N2C 2R5<br />
-              </address>
-              <address>
-                Switchboard: 519-570-0003<br />
-                <a href="http://www.wrdsb.ca/about-the-wrdsb/contact/">Contact Information</a><br />
-                <a href="http://www.wrdsb.ca/about-the-wrdsb/contact/website-feedback/">Website Feedback Form</a>
-              </address>
+                <address>
+                <h1>Waterloo Region District School Board</h1>
+              	<p>51 Ardelt Avenue<br />
+                Kitchener, ON N2C 2R5</p>
+
+                <p>Switchboard: 519-570-0003<br />
+                <a href="http://www.wrdsb.ca/about-the-wrdsb/contact/">Contact Information</a></p>
+
+                <p><a href="http://www.wrdsb.ca/about-the-wrdsb/contact/website-feedback/">Website Feedback Form</a></p>
+                </address>
+              <div class="social-icons">
+<!--                <a href="https://www.facebook.com/wrdsb/" target="_blank"><span class="icon-facebook" title="Facebook"></span></a> -->
+                <div class="fb-follow" data-href="https://www.facebook.com/wrdsb/" data-layout="button" data-show-faces="false" data-colorscheme="light" data-kid-directed-site="false"></div>
+                <a href="https://twitter.com/wrdsb" class="twitter-follow-button" data-show-count="false" data-dnt="true">Follow @wrdsb</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+		<!--<a href="#"><span class="icon-youtube" title="YouTube"></span></a>-->
+              </div>
+
               <?php
                 }
               ?>
-
-              <div class="social-icons">
-                <!--<a href="#"><span class="icon-facebook" title="Facebook"></span></a>-->
-                <!--<a href="#"><span class="icon-twitter" title="Twitter"></span></a>-->
-                <!--<a href="#"><span class="icon-youtube" title="YouTube"></span></a>-->
-              </div>
-
             </div>
             <div class="col-sm-6 col-md-3">
             <h1>Let Us Email You!</h1>
