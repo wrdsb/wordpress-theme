@@ -1,3 +1,7 @@
+## 0.7.13
+Content
++ added Facebook and Twitter to the footer for the corporate network
+
 ## 0.7.12
 Content
 + added SIL to school-day function
