@@ -111,6 +111,9 @@ function wrdsb_setup() {
     'max_posts' => 6,
   ) );
 
+  // add support for post thumbnails for Badges
+  add_theme_support( 'post-thumbnails' );
+
   // This theme uses its own gallery styles.
   add_filter( 'use_default_gallery_style', '__return_false' );
 }
