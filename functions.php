@@ -53,7 +53,7 @@ function wrdsb_setup() {
   add_theme_support( 'automatic-feed-links' );
 
   // Enable support for Featured Images (Post Thumbnails) in pages and posts, and declare sizes.
-  add_theme_support( 'post-thumbnails', array( 'post', 'page' ) );
+  add_theme_support( 'post-thumbnails' );
   set_post_thumbnail_size( 165, 9999);
   add_image_size( 'wrdsb-full-width', 1140, 9999);
   add_image_size( 'wrdsb-one-sidebar', 945, 9999);
@@ -110,9 +110,6 @@ function wrdsb_setup() {
     'featured_content_filter' => 'wrdsb_get_featured_posts',
     'max_posts' => 6,
   ) );
-
-  // add support for post thumbnails for Badges
-  add_theme_support( 'post-thumbnails' );
 
   // This theme uses its own gallery styles.
   add_filter( 'use_default_gallery_style', '__return_false' );
