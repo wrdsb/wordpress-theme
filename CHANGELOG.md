@@ -1,3 +1,8 @@
+## 0.7.14
+Content 
++ removed Kindergarten Button
++ added SCIS 2016 Survey Button
+
 ## 0.7.13
 Content
 + added Facebook and Twitter to the footer for the corporate network
