@@ -1,3 +1,7 @@
+## 0.7.15
+Content
++ added Phase 9 schools to school-day function
+
 ## 0.7.14
 Content 
 + removed Kindergarten Button
