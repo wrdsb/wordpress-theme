@@ -1,3 +1,8 @@
+## 0.7.16
+Fixes
++ open Featured Image access to all custom post types
++ remove styling conflict for th padding and Ninja Forms Table Editor
+
 ## 0.7.15
 Content
 + added Phase 9 schools to school-day function

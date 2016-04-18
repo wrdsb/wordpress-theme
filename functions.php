@@ -53,7 +53,7 @@ function wrdsb_setup() {
   add_theme_support( 'automatic-feed-links' );
 
   // Enable support for Featured Images (Post Thumbnails) in pages and posts, and declare sizes.
-  add_theme_support( 'post-thumbnails', array( 'post', 'page' ) );
+  add_theme_support( 'post-thumbnails' );
   set_post_thumbnail_size( 165, 9999);
   add_image_size( 'wrdsb-full-width', 1140, 9999);
   add_image_size( 'wrdsb-one-sidebar', 945, 9999);
