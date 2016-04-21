@@ -1,3 +1,16 @@
+## 0.7.17
+Fixes
++ fixed spelling and postal code formatting for display of school list
++ fixed telephone format for display of school list
++ fixed mobile display for school list
++ refactored the code for the school list
++ moved school list template to /page-templates/ directory (CAUTION: Any pages using this template will need to have the template reset.)
++ added Continuing Education to exclude list
+
+Content
++ added button for student trustees to secondary school sites
++ added new school year calendar to both School Year Information page templates
+
 ## 0.7.16
 Fixes
 + open Featured Image access to all custom post types
