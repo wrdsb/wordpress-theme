@@ -55,6 +55,13 @@
 	-moz-animation: target-fade 0s 0;
 }
 
+/* small caps display */
+
+.smallcaps {
+	text-transform: uppercase;
+	font-size: .8em;
+}
+
 /* introductory paragraphs */
 
 p.intro {
