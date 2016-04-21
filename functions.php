@@ -689,7 +689,33 @@ function wrdsb_i_am_a_school() {
     "wsh",
     "wsm",
     "wsv",
-    "wtt",
+    "wtt"
+  );
+  if (in_array(($host[0]), $alpha_codes)) {
+    return TRUE;
+  }
+}
+
+function wrdsb_i_am_a_school_secondary() {
+  $parsed_url = parse_url(site_url());
+  $host = explode('.', $parsed_url['host']);
+  $alpha_codes = array(
+    "bci",
+    "chc",
+    "eci",
+    "eds",
+    "fhc",
+    "gci",
+    "gps",
+    "grc",
+    "hrh",
+    "jam",
+    "jhs",
+    "kci",
+    "phs",
+    "sss",
+    "wci",
+    "wod"
   );
   if (in_array(($host[0]), $alpha_codes)) {
     return TRUE;

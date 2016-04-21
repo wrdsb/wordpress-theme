@@ -22,7 +22,7 @@
       <?php
       }
 
-      if (is_front_page() && wrdsb_i_am_a_school()) { ?>
+       if (is_front_page() && wrdsb_i_am_a_school()) { ?>
         <p><a href="https://www.surveymonkey.com/r/SCISParent_Guardian" target="_blank" javascript="ga('send', 'event', 'school-banners', 'click-banner', 'SCIS Survey 2016');"><img src="http://www.wrdsb.ca/wp-content/uploads/scis_2016.jpg" width="263" height="100" /></a></p>
         <p><a href="http://myway.wrdsb.ca/" onclick="ga('send', 'event', 'school-banners', 'click-banner', 'myway', 'http://myway.wrdsb.ca/',{'nonInteraction':1});"><img src="http://www.wrdsb.ca/wp-content/uploads/myway_banner_344x100.jpg" alt="MyWay Logo"/></a></p>
         <p><a href="<?php echo site_url();?>/about/school-year-information" onclick="ga('send', 'event', 'school-banners', 'click-banner', 'syi', '/about/school-year-information',{'nonInteraction':1});"><img src="http://www.wrdsb.ca/wp-content/uploads/schoolyearinformation_344x100.jpg" alt="School Year Information Logo"/></a></p>
@@ -34,6 +34,12 @@
         <p><a href="<?php echo site_url();?>/about/school-day/" onclick="ga('send', 'event', 'school-banners', 'click-banner', 'school-day', '/about/school-day',{'nonInteraction':1});"><img src="http://www.wrdsb.ca/wp-content/uploads/school_day_button.gif" alt="school-day: pay for school activities, events and other fees"/></a></p>
       <?php
       }
+
+      if (is_front_page() && wrdsb_i_am_a_school_secondary()) { ?>
+        <p><a href="http://www.wrdsb.ca/board-meetings/student-trustees/becoming-a-student-trustee/" onclick="ga('send', 'event', 'school-banner', 'click-banner', 'Student Trustee Application 2016');"><img src="http://www.wrdsb.ca/wp-content/uploads/become-a-student-trustee.png" height="100" width="263" alt="Become a Student Trustee!" /></a></p>
+      <?php
+      }
+
       get_sidebar('left');
       echo '</div>';
     # Just left sidebar
@@ -55,6 +61,11 @@
 
       if (is_front_page() && wrdsb_i_am_a_school_with_schoolday()) { ?>
         <p><a href="/about/school-day/" onclick="ga('send', 'event', 'school-banners', 'click-banner', 'school-day', '/about/school-day',{'nonInteraction':1});"><img src="http://www.wrdsb.ca/wp-content/uploads/school_day_button.gif" alt="school-day: pay for school activities, events and other fees"/></a></p>
+      <?php
+      }
+
+      if (is_front_page() && wrdsb_i_am_a_school_secondary()) { ?>
+        <p><a href="http://www.wrdsb.ca/board-meetings/student-trustees/becoming-a-student-trustee/" onclick="ga('send', 'event', 'school-banner', 'click-banner', 'Student Trustee Application 2016');"><img src="http://www.wrdsb.ca/wp-content/uploads/become-a-student-trustee.png" height="100" width="263" alt="Become a Student Trustee!" /></a></p>
       <?php
       }
 
