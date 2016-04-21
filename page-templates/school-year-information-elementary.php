@@ -136,10 +136,14 @@ Template Name: SYI - Elementary
 <h4>Calendars and Important Dates</h4>
 
 <ul>
-  <li><strong><a href="http://www.wrdsb.ca/wp-content/uploads/school-year-information-2015-2016.pdf" target="_blank">2015-2016 School Year Calendar Information</a></strong>
+  <li><strong>School Year Calendar Information</strong>
     <p>The school year calendar information provides parents with a list of important dates, such as PD Days and holidays.</p>
+    <ul>
+      <li><a href="http://www.wrdsb.ca/wp-content/uploads/school-year-information-2015-2016.pdf" target="_blank">2015-2016 School Year Calendar Information</a></li>
+      <li><a href="http://www.wrdsb.ca/wp-content/uploads/2016-17-school-year-info.pdf" target="_blank">2016-2017 School Year Calendar Information</a></li>
+      <li><a href="http://www.wrdsb.ca/wp-content/uploads/calendar-elementary-2015-2016.pdf" target="_blank">2015-2016 Elementary School Year Calendar</a></li>
+    </ul>
   </li>
-  <li><strong><a href="http://www.wrdsb.ca/wp-content/uploads/calendar-elementary-2015-2016.pdf" target="_blank">Elementary School Year Calendar</a></strong></li>
 </ul>
 
 <h4>Expectations</h4>
