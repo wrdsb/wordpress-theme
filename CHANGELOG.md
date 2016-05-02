@@ -1,6 +1,6 @@
 ## 0.8.1
 Content
-+ removed EDC 2016 button
++ removed Before & After button
 
 ## 0.8.0
 Feature
