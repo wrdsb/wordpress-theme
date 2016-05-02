@@ -1,3 +1,7 @@
+## 0.7.18
+Content
++ removed button for student trustees from secondary school sites
+
 ## 0.7.17
 Fixes
 + fixed spelling and postal code formatting for display of school list

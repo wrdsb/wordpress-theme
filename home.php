@@ -35,10 +35,7 @@
       <?php
       }
 
-      if (is_front_page() && wrdsb_i_am_a_school_secondary()) { ?>
-        <p><a href="http://www.wrdsb.ca/board-meetings/student-trustees/becoming-a-student-trustee/" onclick="ga('send', 'event', 'school-banner', 'click-banner', 'Student Trustee Application 2016');"><img src="http://www.wrdsb.ca/wp-content/uploads/become-a-student-trustee.png" height="100" width="263" alt="Become a Student Trustee!" /></a></p>
-      <?php
-      }
+      //if (is_front_page() && wrdsb_i_am_a_school_secondary()) { }
 
       get_sidebar('left');
       echo '</div>';
@@ -64,10 +61,7 @@
       <?php
       }
 
-      if (is_front_page() && wrdsb_i_am_a_school_secondary()) { ?>
-        <p><a href="http://www.wrdsb.ca/board-meetings/student-trustees/becoming-a-student-trustee/" onclick="ga('send', 'event', 'school-banner', 'click-banner', 'Student Trustee Application 2016');"><img src="http://www.wrdsb.ca/wp-content/uploads/become-a-student-trustee.png" height="100" width="263" alt="Become a Student Trustee!" /></a></p>
-      <?php
-      }
+      //if (is_front_page() && wrdsb_i_am_a_school_secondary()) { }
 
      get_sidebar('left');
       echo '</div>';
