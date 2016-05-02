@@ -1,3 +1,7 @@
+## 0.8.1
+Content
++ removed Before & After button
+
 ## 0.8.0
 Feature
 + added tracking code for SiteInsight to corporate network
