@@ -17,10 +17,7 @@
     if (($has_left === TRUE) and ($has_right === TRUE)):
       echo '<div class="col-sm-3 col-md-2 col-lg-2">';
 
-      if (is_front_page() && wrdsb_i_am_a_school_with_kindergarten()) { ?>
-        <p><a href="http://www.wrdsb.ca/beforeafter/" onclick="ga('send', 'event', 'school-banners', 'click-banner', 'beforeafter', 'http://www.wrdsb.ca/beforeafter/',{'nonInteraction':1});"><img src="http://www.wrdsb.ca/wp-content/uploads/beforeafter_banner.jpg" alt="Before &amp; After School Program Information"/></a></p>
-      <?php
-      }
+      //if (is_front_page() && wrdsb_i_am_a_school_with_kindergarten()) { }
 
        if (is_front_page() && wrdsb_i_am_a_school()) { ?>
         <p><a href="https://www.surveymonkey.com/r/SCISParent_Guardian" target="_blank" javascript="ga('send', 'event', 'school-banners', 'click-banner', 'SCIS Survey 2016');"><img src="http://www.wrdsb.ca/wp-content/uploads/scis_2016.jpg" width="263" height="100" /></a></p>
@@ -43,10 +40,7 @@
     elseif (($has_left === TRUE) and ($has_right === FALSE)):
       echo '<div class="col-sm-3 col-lg-3">';
 
-      if (is_front_page() && wrdsb_i_am_a_school_with_kindergarten()) { ?>
-        <p><a href="http://www.wrdsb.ca/beforeafter/" onclick="ga('send', 'event', 'school-banners', 'click-banner', 'beforeafter', 'http://www.wrdsb.ca/beforeafter/',{'nonInteraction':1});"><img src="http://www.wrdsb.ca/wp-content/uploads/beforeafter_banner.jpg" alt="Before &amp; After School Program Information"/></a></p>
-      <?php
-      }
+      //if (is_front_page() && wrdsb_i_am_a_school_with_kindergarten()) { }
 
       if (is_front_page() && wrdsb_i_am_a_school()) { ?>
         <p><a href="https://www.surveymonkey.com/r/SCISParent_Guardian" target="_blank" javascript="ga('send', 'event', 'school-banners', 'click-banner', 'SCIS Survey 2016');"><img src="http://www.wrdsb.ca/wp-content/uploads/scis_2016.jpg" width="263" height="100" /></a></p>
