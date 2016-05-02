@@ -1,5 +1,5 @@
-## 0.7.19
-Function
+## 0.8.0
+Feature
 + added tracking code for SiteInsight to corporate network
 
 ## 0.7.18
