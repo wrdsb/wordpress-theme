@@ -29,6 +29,39 @@
 
 /*** General Styles ***/
 
+/** Register Button **/
+
+div.register {
+	padding: 10px; 
+	background-color: #7ac143; 
+	text-align: center; 
+	border-radius: 10px; 
+	-webkit-box-shadow: 5px 5px 20px -7px rgba(122,193,67,1); 
+	-moz-box-shadow: 5px 5px 20px -7px rgba(122,193,67,1); 
+	box-shadow: 5px 5px 20px -7px rgba(122,193,67,1);
+}
+
+div.register a {
+	color: #fff;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+/** Ninja Forms Styles **/
+
+#ninja_forms_manage_subs {
+margin: 45px 50px 75px 25px;
+}
+
+#ninja_forms_manage_subs th, #ninja_forms_manage_subs td {
+padding: 5px !important;
+font-size: .9em;
+}
+
+.ninja-forms-cont h4 {
+margin-top: 25px;
+}
+
 /** Internal Targets
 + protect internal targets from being hidden by admin bar
 + display attention getting fade on the key content
