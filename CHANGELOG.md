@@ -1,3 +1,8 @@
+## 0.8.2
+Feature
++ div.register css added for registration buttons
++ ninja form styles for updates
+
 ## 0.8.1
 Content
 + removed Before & After button
