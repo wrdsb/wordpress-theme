@@ -39,6 +39,7 @@ div.register {
 	-webkit-box-shadow: 5px 5px 20px -7px rgba(122,193,67,1); 
 	-moz-box-shadow: 5px 5px 20px -7px rgba(122,193,67,1); 
 	box-shadow: 5px 5px 20px -7px rgba(122,193,67,1);
+	max-width: 350px;
 }
 
 div.register a {
