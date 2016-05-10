@@ -67,12 +67,16 @@ margin-top: 25px;
 .ninja-forms-req {
 }
 
-.ninja-forms-required-items {
+.ninja-forms-error-msg {
 	margin: 1em 0;
 	font-size: .9em;
 	background-color: #fee7ef;
 	padding: 1em;
 	text-transform: uppercase;
+}
+
+.ninja-forms-required-items {
+	display: none;
 }
 
 /** Internal Targets
