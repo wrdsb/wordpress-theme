@@ -64,6 +64,17 @@ font-size: .9em;
 margin-top: 25px;
 }
 
+.ninja-forms-req {
+}
+
+.ninja-forms-required-items {
+	margin: 1em 0;
+	font-size: .9em;
+	background-color: #fee7ef;
+	padding: 1em;
+	text-transform: uppercase;
+}
+
 /** Internal Targets
 + protect internal targets from being hidden by admin bar
 + display attention getting fade on the key content
