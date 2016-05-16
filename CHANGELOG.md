@@ -1,3 +1,7 @@
+## 0.8.3
+Content
++ removed SCIS survey
+
 ## 0.8.2
 Feature
 + div.register css added for registration buttons
