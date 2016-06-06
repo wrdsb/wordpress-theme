@@ -970,3 +970,9 @@ function my_lost_password_page( $lostpassword_url, $redirect ) {
     $lostpassword_url = 'https://mypassword.wrdsb.ca/';
     return $lostpassword_url;
 }
+
+// Favicon
+function favicon_link() {
+    echo '<link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />' . "\n";
+}
+add_action( 'wp_head', 'favicon_link' );
