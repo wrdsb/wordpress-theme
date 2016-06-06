@@ -973,6 +973,8 @@ function my_lost_password_page( $lostpassword_url, $redirect ) {
 
 // Favicon
 function favicon_link() {
-    echo '<link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />' . "\n";
+    echo '<link rel="shortcut icon" type="image/x-icon" href="';
+    bloginfo('stylesheet_directory');
+    echo '/favicon.png" />' . "\n";
 }
 add_action( 'wp_head', 'favicon_link' );
