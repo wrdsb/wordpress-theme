@@ -1,3 +1,7 @@
+## 0.8.4
+Feature
++ favicon added
+
 ## 0.8.3
 Content
 + removed SCIS survey
