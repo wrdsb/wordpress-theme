@@ -47,22 +47,6 @@
     endif;
     ?>
 
-    <?php // check if the post has a Post Thumbnail assigned to it.
-      if ( has_post_thumbnail() ) {
-        echo '<div class="featuredimage">';
-        if (($has_left == TRUE) and ($has_right == TRUE)):
-          the_post_thumbnail('wrdsb-two-sidebars');
-        elseif (($has_left == TRUE) and ($has_right == FALSE)):
-          the_post_thumbnail('wrdsb-one-sidebar');
-        elseif (($has_left == FALSE) and ($has_right == TRUE)):
-          the_post_thumbnail('wrdsb-one-sidebar');
-        elseif (($has_left == FALSE) and ($has_right == FALSE)):
-          the_post_thumbnail('wrdsb-full-width');
-        endif;
-        echo '</div>';
-      }
-    ?>
-
       <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
       <div <?php if(is_home() && $post==$posts[0] && !is_paged()) echo ' firstpost';?>>
         <h1><?php the_title(); ?></h1>
