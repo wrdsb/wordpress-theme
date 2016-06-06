@@ -50,7 +50,6 @@
       <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
       <div <?php if(is_home() && $post==$posts[0] && !is_paged()) echo ' firstpost';?>>
         <h1><?php the_title(); ?></h1>
-        <small class="gray-dark"> <?php the_time('F jS') ?>, <?php the_time('Y') ?></small>
 
         <p><?php the_content(__('Read more'));?></p>
 
