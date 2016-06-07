@@ -396,6 +396,7 @@ require get_template_directory() . '/inc/customizer.php';
 
 
 function the_breadcrumb() {
+  if (is_singular('sfwd-lessons') or is_singular('sfwd-quiz')) {return;}
   global $post;
   echo '<div class="container container-breadcrumb">';
   echo '<ol class="breadcrumb">';
