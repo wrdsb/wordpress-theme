@@ -427,6 +427,11 @@ function the_breadcrumb() {
       echo '<li>';
       the_title();
       echo '</li>';
+    } elseif (is_singular('sfwd-courses')) {
+      echo '<li>Courses</li>';
+      echo '<li>';
+      the_title();
+      echo '</li>';
     } elseif (is_page()) {
       if($post->post_parent){
         $anc = get_post_ancestors( $post->ID );
