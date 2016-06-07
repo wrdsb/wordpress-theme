@@ -32,12 +32,12 @@
 /** Register Button **/
 
 div.register {
-	padding: 10px; 
-	background-color: #7ac143; 
-	text-align: center; 
-	border-radius: 10px; 
-	-webkit-box-shadow: 5px 5px 20px -7px rgba(122,193,67,1); 
-	-moz-box-shadow: 5px 5px 20px -7px rgba(122,193,67,1); 
+	padding: 10px;
+	background-color: #7ac143;
+	text-align: center;
+	border-radius: 10px;
+	-webkit-box-shadow: 5px 5px 20px -7px rgba(122,193,67,1);
+	-moz-box-shadow: 5px 5px 20px -7px rgba(122,193,67,1);
 	box-shadow: 5px 5px 20px -7px rgba(122,193,67,1);
 	max-width: 350px;
 	margin-bottom: 10px;
@@ -877,7 +877,7 @@ content: "Example";
 	tr:hover {
 		background-color: #d9ecc2;
 	}
-	
+
 	td:hover {
 		background-color: #e7f3d8 !important;
 	}
@@ -1481,4 +1481,15 @@ color: #709820;
 .prevnext-container {
 	font-size: .85em;
 	opacity: .75;
+}
+
+#badgeos-achievements-container {
+	border-top: none !important;
+}
+.badgeos-achievements-list-item {
+	border-bottom: none !important;
+	border-top: 1px dotted #aaa !important;
+}
+input[name="badgeos_backpack_issues[]"] {
+	display: none !important;
 }
