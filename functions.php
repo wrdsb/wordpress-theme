@@ -76,9 +76,9 @@ function wrdsb_setup() {
   /**
    * Gets the id of the topmost ancestor of the current page. Returns the current
    * page's id if there is no parent.
-   * 
+   *
    * @uses object $post
-   * @return int 
+   * @return int
    */
   function get_post_top_ancestor_id(){
       global $post;
@@ -396,6 +396,7 @@ require get_template_directory() . '/inc/customizer.php';
 
 
 function the_breadcrumb() {
+  if (is_singular('sfwd-lessons') or is_singular('sfwd-quiz')) {return;}
   global $post;
   echo '<div class="container container-breadcrumb">';
   echo '<ol class="breadcrumb">';
@@ -407,8 +408,28 @@ function the_breadcrumb() {
     echo 'Home';
     echo '</a>';
     echo '</li>';
-    if (is_single()) {
+    if (is_singular('post')) {
       echo '<li><a href="'.wrdsb_posts_page_url().'">News</a></li>';
+      echo '<li>';
+      the_title();
+      echo '</li>';
+    } elseif (is_singular('certification')) {
+      echo '<li>Certifications</li>';
+      echo '<li>';
+      the_title();
+      echo '</li>';
+    } elseif (is_singular('co-op-certification')) {
+      echo '<li>Co-op Certifications</li>';
+      echo '<li>';
+      the_title();
+      echo '</li>';
+    } elseif (is_singular('shsm')) {
+      echo '<li>SHSM</li>';
+      echo '<li>';
+      the_title();
+      echo '</li>';
+    } elseif (is_singular('sfwd-courses')) {
+      echo '<li>Courses</li>';
       echo '<li>';
       the_title();
       echo '</li>';
@@ -956,12 +977,12 @@ function my_login_logo_url() {
 add_filter( 'login_headerurl', 'my_login_logo_url' );
 
 // Change the Lost Password Text from the WordPress Login
-function change_lostpassword_text ( $lostpassword_newtext ) {  
+function change_lostpassword_text ( $lostpassword_newtext ) {
      $lostpassword_words = "Lost your password?";
      if ($lostpassword_newtext == $lostpassword_words){$lostpassword_newtext = 'Forgot your password? Change it with MyPassword!';}
         return $lostpassword_newtext;
      }
-add_filter( 'gettext', 'change_lostpassword_text' );  
+add_filter( 'gettext', 'change_lostpassword_text' );
 
 /* Redirect the lost password link to My Password */
 add_filter( 'lostpassword_url', 'my_lost_password_page', 10, 2 );
