@@ -973,7 +973,7 @@ function my_lost_password_page( $lostpassword_url, $redirect ) {
 
 // Favicon
 if ( ! function_exists ('favicon_link' ) ) {
-  function favicon_link() {}
+  function favicon_link() {
     echo '<link rel="shortcut icon" type="image/x-icon" href="';
     bloginfo('stylesheet_directory');
     echo '/favicon.png" />' . "\n";
