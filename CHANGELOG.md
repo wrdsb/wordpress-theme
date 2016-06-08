@@ -1,3 +1,7 @@
+## 0.8.5
+Fix
++ favicon function extended for child theme support
+
 ## 0.8.4
 Feature
 + favicon added
