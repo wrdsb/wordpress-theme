@@ -1,10 +1,6 @@
-## 0.8.7
-Content
-+ add kindergarten link back onto school websites
-
 ## 0.8.6
 Content
-+ updated School Year Information for Elementary & Secondary schools page templates
++ add kindergarten link back onto school websites
 
 ## 0.8.5
 Fix
