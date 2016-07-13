@@ -1,3 +1,11 @@
+## 0.8.8
+Fix
++ pull images for SYI page templates from corp site instead of dev site
+
+## 0.8.7
+Content
++ updated SYI page templates to remove PDFs and dated information
+
 ## 0.8.6
 Content
 + add kindergarten link back onto school websites
