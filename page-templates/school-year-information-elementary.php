@@ -93,7 +93,7 @@ Template Name: SYI - Elementary
 
 <h2>Boardwide Information</h2>
 
-<h3 style="vertical-align: middle;"><img style="display: inline; padding-right: 15px; width: 75px;" src="http://wplabs.wrdsb.ca/theme/wp-content/uploads/sites/13/2016/07/1466544194_compose.png" alt="" desc="A round icon with a green background, flat design, featuring a stylized piece of paper with rounded corners and a large stylized pencil diagonally across it." />Signature Required</h3>
+<h3 style="vertical-align: middle;"><img style="display: inline; padding-right: 15px; width: 75px;" src="http://www.wrdsb.ca/wp-content/uploads/1466544194_compose.png" alt="" desc="A round icon with a green background, flat design, featuring a stylized piece of paper with rounded corners and a large stylized pencil diagonally across it." />Signature Required</h3>
 
 <p class="note">These items come home with each student in paper form. <strong>Please complete, sign and return them to your child&rsquo;s school office when you receive them.</strong> You can also request these documents from your child&rsquo;s school office, or print them where provided and send them in.</p>
 
@@ -121,7 +121,7 @@ Template Name: SYI - Elementary
   </li>
 </ul>
 
-<h3 style="vertical-align: middle;"><img style="display: inline; padding-right: 15px; width: 75px;" src="http://wplabs.wrdsb.ca/theme/wp-content/uploads/sites/13/2016/07/1466542370_calendar.png" alt="" desc="A round icon with a blue background, flat design, featuring a stylized flip day calendar with the number 7 on it." />Calendars and Important Dates</h3>
+<h3 style="vertical-align: middle;"><img style="display: inline; padding-right: 15px; width: 75px;" src="http://www.wrdsb.ca/wp-content/uploads/1466542370_calendar.png" alt="" desc="A round icon with a blue background, flat design, featuring a stylized flip day calendar with the number 7 on it." />Calendars and Important Dates</h3>
 
 <p>The school year <a href="/calendar/">calendar</a> information provides parents with a list of important dates, such as PD Days and holidays. Subscribe to your school's <a href="/calendar/">calendar</a> and always know what's happening at the school!</p>
 
@@ -140,7 +140,7 @@ Template Name: SYI - Elementary
   <li><a href="http://www.wrdsb.ca/important-dates/" target="_blank">Important Dates</a></li>
 </ul>
 
-<h3 style="vertical-align: middle;"><img style="display: inline; padding-right: 15px; width: 75px;" src="http://wplabs.wrdsb.ca/theme/wp-content/uploads/sites/13/2016/07/1466544261_news.png" alt="" desc="A round icon with a red background, flat design, featuring a stylized newspaper." />Required Reading and Resources</h3>
+<h3 style="vertical-align: middle;"><img style="display: inline; padding-right: 15px; width: 75px;" src="http://www.wrdsb.ca/wp-content/uploads/1466544261_news.png" alt="" desc="A round icon with a red background, flat design, featuring a stylized newspaper." />Required Reading and Resources</h3>
 
 <div class="clearfix"></div>
 
@@ -162,7 +162,7 @@ Template Name: SYI - Elementary
   </li>
 </ul>
 
-<h3 style="vertical-align: middle;"><img style="display: inline; padding-right: 15px; width: 75px;" src="http://wplabs.wrdsb.ca/theme/wp-content/uploads/sites/13/2016/07/1466544166_support.png" alt="" desc="A round icon with a navy blue background, flat design, featuring a stylized life preserver ring." />School Safety</h3>
+<h3 style="vertical-align: middle;"><img style="display: inline; padding-right: 15px; width: 75px;" src="http://www.wrdsb.ca/wp-content/uploads/1466544166_support.png" alt="" desc="A round icon with a navy blue background, flat design, featuring a stylized life preserver ring." />School Safety</h3>
 
 <div class="clearfix"></div>
 
@@ -189,7 +189,7 @@ Template Name: SYI - Elementary
   </li>
 </ul>
 
-<h3 style="vertical-align: middle;"><img style="display: inline; padding-right: 15px; width: 75px;" src="http://wplabs.wrdsb.ca/theme/wp-content/uploads/sites/13/2016/07/1466544295_rgb.png" alt="" desc="A round icon with a navy blue background, flat design, featuring three stylized intersecting rings." />Get Involved</h3>
+<h3 style="vertical-align: middle;"><img style="display: inline; padding-right: 15px; width: 75px;" src="http://www.wrdsb.ca/wp-content/uploads/1466544295_rgb.png" alt="" desc="A round icon with a navy blue background, flat design, featuring three stylized intersecting rings." />Get Involved</h3>
 
 <div class="clearfix"></div>
 
@@ -213,11 +213,11 @@ Template Name: SYI - Elementary
   </li>
 </ul>
 
-<h3 style="vertical-align: middle;"><img style="display: inline; padding-right: 15px; width: 75px;" src="http://wplabs.wrdsb.ca/theme/wp-content/uploads/sites/13/2016/07/1466544244_globe.png" alt="" desc="A round icon with a pale blue background, flat design, featuring a stylized earth with continents surrounding the Atlantic Ocean." />International Languages</h3>
+<h3 style="vertical-align: middle;"><img style="display: inline; padding-right: 15px; width: 75px;" src="http://www.wrdsb.ca/wp-content/uploads/1466544244_globe.png" alt="" desc="A round icon with a pale blue background, flat design, featuring a stylized earth with continents surrounding the Atlantic Ocean." />International Languages</h3>
 
 <p>The <a href="http://www.wrdsb.ca/learning/programs/continuing-education-2/international-languages/" target="_blank">International Languages</a> program provides opportunities for students to learn a language at the elementary or secondary school (high school credit) level, at a variety of sites around the Region.</p>
 
-<h3 style="vertical-align: middle;"><img style="display: inline; padding-right: 15px; width: 75px;" src="http://wplabs.wrdsb.ca/theme/wp-content/uploads/sites/13/2016/07/1466544269_schooolbus.png" alt="" desc="A round icon with a navy blue background, flat design, featuring a stylized school bus." />Busing</h3>
+<h3 style="vertical-align: middle;"><img style="display: inline; padding-right: 15px; width: 75px;" src="http://www.wrdsb.ca/wp-content/uploads/1466544269_schooolbus.png" alt="" desc="A round icon with a navy blue background, flat design, featuring a stylized school bus." />Busing</h3>
 
 <div class="clearfix"></div>
 
