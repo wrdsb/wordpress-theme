@@ -1,3 +1,11 @@
+## 0.8.7
+Content
++ updated SYI page templates to remove PDFs and dated information
+
+## 0.8.6
+Content
++ add kindergarten link back onto school websites
+
 ## 0.8.5
 Fix
 + favicon function extended for child theme support
