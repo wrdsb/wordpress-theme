@@ -1,3 +1,7 @@
+## 0.8.9
+Fix
++ update URL for schools.json list to use AWS S3 bucket
+
 ## 0.8.8
 Fix
 + pull images for SYI page templates from corp site instead of dev site
@@ -62,7 +66,7 @@ Content
 + added Phase 9 schools to school-day function
 
 ## 0.7.14
-Content 
+Content
 + removed Kindergarten Button
 + added SCIS 2016 Survey Button
 

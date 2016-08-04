@@ -20,7 +20,7 @@ Template Name: School List
 				// all schools that shouldn't display
               	$hidden_schools  = array ('ALC','ALI','ALR','ALU','ANC','BAD','BLV','BRI','CAS','CLC','CLN','DKS','ELE','HAR','HMR','LAF','LNA','LUC','LUT','MBR','MCQ','NWL','PYS','RMT','SBL','SBM','SMH','TBR','UHS','UTR','WNB','WSR','WSS','XSE','XSS');
 
-				$json = file_get_contents('http://ec-iappsrv1.wrdsb.ca/api/school');
+				$json = file_get_contents('https://s3.amazonaws.com/wrdsb-theme/json/schools.json');
 				//for testing only
 				//$json = file_get_contents('/nas/content/live/wrdsb/wp-content/themes/school-list/inc/allschools.json');
 				$schools = json_decode($json);
@@ -48,9 +48,9 @@ Template Name: School List
 								$code = strtolower($school->alpha_code);
 
 								if (
-									!in_array ($school->alpha_code, $hidden_schools)  && 
+									!in_array ($school->alpha_code, $hidden_schools)  &&
 									($school->school_type_code=='Elem')
-									)								
+									)
 									{
 
 						?>
@@ -63,7 +63,7 @@ Template Name: School List
 								<?php echo $phone; ?>
 							</td>
 						</tr>
-						<?php	
+						<?php
 								}
 							}
 						?>
@@ -90,7 +90,7 @@ Template Name: School List
 								$phone = substr($phone,0,3).'-'.substr($phone,3,3).'-'.substr($phone,6,4);
 
 								if (
-									!in_array ($school->alpha_code, $hidden_schools)  && 
+									!in_array ($school->alpha_code, $hidden_schools)  &&
 									($school->school_type_code=='Sec')
 									)
 
@@ -105,7 +105,7 @@ Template Name: School List
 								<?php echo $phone; ?>
 							</td>
 						</tr>
-						<?php	
+						<?php
 								}
 							}
 						?>
@@ -116,7 +116,7 @@ Template Name: School List
 
 		<div class="col-md-12 visible-xs">
 			<p><a href="#secondaryschools_xs">Skip to Secondary Schools</a></p>
-		
+
 			<h2 id="elementaryschools_xs">Elementary Schools</h2>
 
 			<?php
@@ -128,16 +128,16 @@ Template Name: School List
 				$code = strtolower($school->alpha_code);
 
 				if (
-					!in_array ($school->alpha_code, $hidden_schools)  && 
+					!in_array ($school->alpha_code, $hidden_schools)  &&
 					($school->school_type_code=='Elem')
-					)								
+					)
 					{
 				?>
 				<p style="margin-bottom: 25px;"><strong><a href="<?php echo $website; ?>" target="_blank"><?php echo $school->full_name ?></a></strong></br />
 					<?php echo $school->street_address.'<br />'.$school->city.' ON '.$postal_code . ' <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&hl=en&q='.$school->street_address.'+'.$school->city.'+Ontario" target="_blank">MAP</a> ]</span>';?><br />
 					<!-- <a href="mailto:<?php echo $code; ?>@wrdsb.on.ca"><?php echo $code; ?>@wrdsb.on.ca</a><br /> -->
 					<?php echo $phone; ?></p>
-				<?php	
+				<?php
 					}
 				}
 				?>
@@ -152,7 +152,7 @@ Template Name: School List
 				$phone = substr($phone,0,3).'-'.substr($phone,3,3).'-'.substr($phone,6,4);
 
 				if (
-					!in_array ($school->alpha_code, $hidden_schools)  && 
+					!in_array ($school->alpha_code, $hidden_schools)  &&
 					($school->school_type_code=='Sec')
 					)
 
@@ -162,7 +162,7 @@ Template Name: School List
 							<?php echo $school->street_address.'<br />'.$school->city.' ON '.$postal_code . ' <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&hl=en&q='.$school->street_address.'+'.$school->city.'+Ontario" target="_blank">MAP</a> ]</span>';?><br />
 							<!-- <a href="mailto:<?php echo $code; ?>@wrdsb.on.ca"><?php echo $code; ?>@wrdsb.on.ca</a><br /> -->
 							<?php echo $phone; ?></p>
-				<?php	
+				<?php
 					}
 				}
 				?>
