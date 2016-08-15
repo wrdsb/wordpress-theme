@@ -93,9 +93,9 @@ Template Name: SYI - Elementary
 
 <h2>Boardwide Information</h2>
 
-<h3 style="vertical-align: middle;"><img style="display: inline; padding-right: 15px; width: 75px;" src="http://www.wrdsb.ca/wp-content/uploads/1466544194_compose.png" alt="" desc="A round icon with a green background, flat design, featuring a stylized piece of paper with rounded corners and a large stylized pencil diagonally across it." />Signature Required</h3>
+<h3 style="vertical-align: middle;"><img style="display: inline; padding-right: 15px; width: 75px;" src="http://www.wrdsb.ca/wp-content/uploads/1466544194_compose.png" alt="" desc="A round icon with a green background, flat design, featuring a stylized piece of paper with rounded corners and a large stylized pencil diagonally across it." />Action Required</h3>
 
-<p class="note">These items come home with each student in paper form. <strong>Please complete, sign and return them to your child&rsquo;s school office when you receive them.</strong> You can also request these documents from your child&rsquo;s school office, or print them where provided and send them in.</p>
+<p class="note">Some of these items come home with each student in paper form. <strong>Please complete, sign and return any paper forms to your child&rsquo;s school office when you receive them.</strong> You can also request these documents from your child&rsquo;s school office, or print them where provided and send them in.</p>
 
 <ul>
   <li><strong>Data Verification Form (DVF)</strong>
@@ -106,6 +106,9 @@ Template Name: SYI - Elementary
   </li>
   <li><strong><a href="http://www.wrdsb.ca/wp-content/uploads/IS-09-L-E.pdf" target="_blank">Release of Student Information Form &#8211; IS-09-L-E</a></strong>
     <p>The form allows the school/teachers to take photographs and recordings of your child. It is available for translation using Google Translator: <a href="http://www.wrdsb.ca/is-09-l-e/" target="_blank">Release of Student Information &#8211; IS-09-L-E</a></p>
+  </li>
+  <li><strong><a target="_blank" href="https://www.wrdsb.ca/our-schools/using-school-day/">School-Day</a></strong>
+    <p>All WRDSB schools now use School-Day, an online cashless system to minimize cash-handling, reduce paper usage, and streamline office efficiencies. Learn <a target="_blank" href="https://www.wrdsb.ca/our-schools/using-school-day/#signup">how to sign up for School-Day!</a></p>
   </li>
   <li><strong><a target="_blank" href="http://www.stswr.ca/do-not-ride-form/">Do Not Ride Form</a></strong>
     <p>This form must be completed annually by parents of children who qualify for busing but will not ride because the parent has made alternative arrangements.</p>
