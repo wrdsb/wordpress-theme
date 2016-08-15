@@ -70,7 +70,7 @@ Content
 + added Phase 9 schools to school-day function
 
 ## 0.7.14
-Content 
+Content
 + removed Kindergarten Button
 + added SCIS 2016 Survey Button
 
