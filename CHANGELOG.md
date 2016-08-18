@@ -1,3 +1,7 @@
+## 0.9.1
+Fix
++ adapt School-Day iframe to properly fill the sidebar space
+
 ## 0.9.0
 Content
 + replace School-Day banner with form on all school sites

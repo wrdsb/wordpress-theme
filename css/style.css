@@ -29,6 +29,15 @@
 
 /*** General Styles ***/
 
+/** School-Day **/
+
+#school-day { /* iframe pulling School-Day code */
+	width: 100%; 
+	max-width: 344px; 
+	height: 161px; 
+	border: 0;
+}
+
 /** Register Button **/
 
 div.register {
