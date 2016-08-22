@@ -41,13 +41,13 @@ Template Name: Staff List
                       <?php echo get_user_option('wrdsb_job_title', $user->ID); ?>
                     </td>
                     <?php if ($wrdsb_contact_options == 'Email') { ?>
-                      <td><?php echo $user->user_email; ?></td>
+                      <td><?php echo str_replace("googleapps.wrdsb.ca", "wrdsb.on.ca", $user->user_email); ?></td>
                       <td>&nbsp;</td>
                     <?php } elseif ($wrdsb_contact_options == 'Voicemail') { ?>
                       <td>&nbsp;</td>
                       <td><?php echo $wrdsb_voicemail; ?></td>
                     <?php } else { ?>
-                      <td><?php echo $user->user_email; ?></td>
+                      <td><?php echo str_replace("googleapps.wrdsb.ca", "wrdsb.on.ca", $user->user_email); ?></td>
                       <td><?php echo $wrdsb_voicemail; ?></td>
                     <?php } ?>
                     <?php if (strpos($wrdsb_website_url, 'wrdsb.ca') !== FALSE) { ?>
