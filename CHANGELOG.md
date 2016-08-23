@@ -1,6 +1,8 @@
 ## 0.9.1
 Fix
 + adapt School-Day iframe to properly fill the sidebar space
++ convert email addresses in staff lists to @wrdsb.on.ca
++ add CHI to the school function (new school Chicopee Hills 2017)
 
 ## 0.9.0
 Content
