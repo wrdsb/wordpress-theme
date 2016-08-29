@@ -1,3 +1,7 @@
+## 0.9.2
+Fix
++ remove V prefix from voicemails in staff_list.php
+
 ## 0.9.1
 Fix
 + adapt School-Day iframe to properly fill the sidebar space
