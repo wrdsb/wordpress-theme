@@ -34,7 +34,7 @@ Template Name: Staff List
                 <?php if ((get_user_option('wrdsb_display_in_staff_list', $user->ID) == 1) && ($user->ID != 1)) { ?>
                   <?php $wrdsb_contact_options = get_user_option('wrdsb_contact_options', $user->ID); ?>
                   <?php $wrdsb_voicemail = get_user_option('wrdsb_voicemail', $user->ID); ?>
-                  <?php if ($wrdsb_voicemail[0] === 'V') {$wrdsb_voicemail = ltrim($wrdsb_voicemail, 'V';} ?>
+                  <?php if ($wrdsb_voicemail[0] === 'V') {$wrdsb_voicemail = ltrim($wrdsb_voicemail, 'V');} ?>
                   <?php $wrdsb_website_url = get_user_option('wrdsb_website_url', $user->ID); ?>
                   <tr>
                     <td><?php echo $user->last_name; ?>, <?php echo $user->first_name; ?></td>
