@@ -1,3 +1,7 @@
+## 0.9.3
+Fix
++ replace http references with https
+
 ## 0.9.2
 Fix
 + remove V prefix from voicemails in staff_list.php
