@@ -20,14 +20,14 @@
       //if (is_front_page() && wrdsb_i_am_a_school_with_kindergarten()) { }
 
       if (is_front_page() && wrdsb_i_am_a_school_with_kindergarten()) { ?>
-        <p><a href="http://www.wrdsb.ca/kindergarten/its-time-to-register/" onclick="ga('send', 'event', 'school-banners', 'click-banner', 'kindiereg', 'http://www.wrdsb.ca/kindergarten/its-time-to-register/',{'nonInteraction':1});"><img src="http://www.wrdsb.ca/wp-content/uploads/register_for_kindergarten_2.jpg" alt="Register for Kindergarten at the WRDSB"/></a></p>   
+        <p><a href="https://www.wrdsb.ca/kindergarten/its-time-to-register/" onclick="ga('send', 'event', 'school-banners', 'click-banner', 'kindiereg', 'https://www.wrdsb.ca/kindergarten/its-time-to-register/',{'nonInteraction':1});"><img src="https://www.wrdsb.ca/wp-content/uploads/register_for_kindergarten_2.jpg" alt="Register for Kindergarten at the WRDSB"/></a></p>   
       <?php
       }
 
       if (is_front_page() && wrdsb_i_am_a_school()) { ?>
-        <p><a href="http://myway.wrdsb.ca/" onclick="ga('send', 'event', 'school-banners', 'click-banner', 'myway', 'http://myway.wrdsb.ca/',{'nonInteraction':1});"><img src="http://www.wrdsb.ca/wp-content/uploads/myway_banner_344x100.jpg" alt="MyWay Logo"/></a></p>
-        <p><a href="<?php echo site_url();?>/about/school-year-information" onclick="ga('send', 'event', 'school-banners', 'click-banner', 'syi', '/about/school-year-information',{'nonInteraction':1});"><img src="http://www.wrdsb.ca/wp-content/uploads/schoolyearinformation_344x100.jpg" alt="School Year Information Logo"/></a></p>
-        <p><a href="https://www.canadahelps.org/dn/15506" target="_blank" onclick="ga('send', 'event', 'school-banners', 'click-banner', 'wefi', 'https://www.canadahelps.org/dn/15506',{'nonInteraction':1});"><img src="http://www.wrdsb.ca/wefi/wp-content/uploads/sites/19/wefi_donate.jpg" alt="Donate Online! Waterloo Education Foundation Inc. (WEFI)"></a></p>
+        <p><a href="https://myway.wrdsb.ca/" onclick="ga('send', 'event', 'school-banners', 'click-banner', 'myway', 'https://myway.wrdsb.ca/',{'nonInteraction':1});"><img src="https://www.wrdsb.ca/wp-content/uploads/myway_banner_344x100.jpg" alt="MyWay Logo"/></a></p>
+        <p><a href="<?php echo site_url();?>/about/school-year-information" onclick="ga('send', 'event', 'school-banners', 'click-banner', 'syi', '/about/school-year-information',{'nonInteraction':1});"><img src="https://www.wrdsb.ca/wp-content/uploads/schoolyearinformation_344x100.jpg" alt="School Year Information Logo"/></a></p>
+        <p><a href="https://www.canadahelps.org/dn/15506" target="_blank" onclick="ga('send', 'event', 'school-banners', 'click-banner', 'wefi', 'https://www.canadahelps.org/dn/15506',{'nonInteraction':1});"><img src="https://www.wrdsb.ca/wefi/wp-content/uploads/sites/19/wefi_donate.jpg" alt="Donate Online! Waterloo Education Foundation Inc. (WEFI)"></a></p>
         <iframe id="school-day" src="https://www.school-day.com/pg/school/sso/index.php"></iframe>
         <p class="fineprint">Learn <a target="_blank" href="https://www.wrdsb.ca/our-schools/using-school-day/#signup">how to sign up for School-Day</a>!</p>
 	    <?php
@@ -44,14 +44,14 @@
       //if (is_front_page() && wrdsb_i_am_a_school_with_kindergarten()) { }
 
       if (is_front_page() && wrdsb_i_am_a_school_with_kindergarten()) { ?>
-        <p><a href="http://www.wrdsb.ca/kindergarten/its-time-to-register/" onclick="ga('send', 'event', 'school-banners', 'click-banner', 'kindiereg', 'http://www.wrdsb.ca/kindergarten/its-time-to-register/',{'nonInteraction':1});"><img src="http://www.wrdsb.ca/wp-content/uploads/register_for_kindergarten_2.jpg" alt="Register for Kindergarten at the WRDSB"/></a></p>   
+        <p><a href="https://www.wrdsb.ca/kindergarten/its-time-to-register/" onclick="ga('send', 'event', 'school-banners', 'click-banner', 'kindiereg', 'https://www.wrdsb.ca/kindergarten/its-time-to-register/',{'nonInteraction':1});"><img src="https://www.wrdsb.ca/wp-content/uploads/register_for_kindergarten_2.jpg" alt="Register for Kindergarten at the WRDSB"/></a></p>   
       <?php
       }
 
       if (is_front_page() && wrdsb_i_am_a_school()) { ?>
-        <p><a href="http://myway.wrdsb.ca/" onclick="ga('send', 'event', 'school-banners', 'click-banner', 'myway', 'http://myway.wrdsb.ca/',{'nonInteraction':1});"><img src="http://www.wrdsb.ca/wp-content/uploads/myway_banner_344x100.jpg" alt="MyWay Logo"/></a></p>
-        <p><a href="/about/school-year-information" onclick="ga('send', 'event', 'school-banners', 'click-banner', 'syi', '/about/school-year-information',{'nonInteraction':1});"><img src="http://www.wrdsb.ca/wp-content/uploads/schoolyearinformation_344x100.jpg" alt="School Year Information Logo"/></a></p>
-        <p><a href="https://www.canadahelps.org/dn/15506" target="_blank" onclick="ga('send', 'event', 'school-banners', 'click-banner', 'wefi', 'https://www.canadahelps.org/dn/15506',{'nonInteraction':1});"><img src="http://www.wrdsb.ca/wefi/wp-content/uploads/sites/19/wefi_donate.jpg" alt="Donate Online! Waterloo Education Foundation Inc. (WEFI)"></a></p>
+        <p><a href="https://myway.wrdsb.ca/" onclick="ga('send', 'event', 'school-banners', 'click-banner', 'myway', 'https://myway.wrdsb.ca/',{'nonInteraction':1});"><img src="https://www.wrdsb.ca/wp-content/uploads/myway_banner_344x100.jpg" alt="MyWay Logo"/></a></p>
+        <p><a href="/about/school-year-information" onclick="ga('send', 'event', 'school-banners', 'click-banner', 'syi', '/about/school-year-information',{'nonInteraction':1});"><img src="https://www.wrdsb.ca/wp-content/uploads/schoolyearinformation_344x100.jpg" alt="School Year Information Logo"/></a></p>
+        <p><a href="https://www.canadahelps.org/dn/15506" target="_blank" onclick="ga('send', 'event', 'school-banners', 'click-banner', 'wefi', 'https://www.canadahelps.org/dn/15506',{'nonInteraction':1});"><img src="https://www.wrdsb.ca/wefi/wp-content/uploads/sites/19/wefi_donate.jpg" alt="Donate Online! Waterloo Education Foundation Inc. (WEFI)"></a></p>
         <iframe id="school-day" src="https://www.school-day.com/pg/school/sso/index.php"></iframe>
         <p class="fineprint">Learn <a target="_blank" href="https://www.wrdsb.ca/our-schools/using-school-day/#signup">how to sign up for School-Day</a>!</p>
      <?php
