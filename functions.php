@@ -842,7 +842,7 @@ if (!function_exists( 'my_login_logo' )) {
   function my_login_logo() { ?>
       <style type="text/css">
           .login h1 a {
-              background-image: url(http://www.wrdsb.ca/wp-content/themes/wordpress-theme/images/WRDSB_Logo.svg);
+              background-image: url(https://www.wrdsb.ca/wp-content/themes/wordpress-theme/images/WRDSB_Logo.svg);
               padding-bottom: 30px;
               background-size: 150px 150px;
               height: 150px;
