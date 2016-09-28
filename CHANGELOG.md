@@ -1,3 +1,10 @@
+## 0.9.4
+Fix
++ fix alert styles
++ remove unused widget areas
++ describe purpose for centrally managed widget areas
++ describe purpose for site managed widget areas
+
 ## 0.9.3
 Fix
 + replace http references with https
