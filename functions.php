@@ -190,33 +190,33 @@ function wrdsb_widgets_init() {
     'after_title'   => '</span></div>',
   ) );
   register_sidebar( array(
-    'name'          => __( 'Footer Left', 'wrdsb' ),
+    'name'          => __( 'Do Not Use: Footer Left', 'wrdsb' ),
     'id'            => 'footer-left',
-    'description'   => __( 'Appears in the footer section of the site.', 'wrdsb' ),
+    'description'   => __( 'Appears in the second footer section of the site. This area is controlled centrally, widgets placed here will not display.', 'wrdsb' ),
     'before_widget' => '',
     'after_widget'  => '',
-    'before_title'  => '<h4>',
-    'after_title'   => '</h4>',
+    'before_title'  => '<h1>',
+    'after_title'   => '</h1>',
   ) );
   register_sidebar( array(
-    'name'          => __( 'Footer Centre', 'wrdsb' ),
+    'name'          => __( 'Do Not Use: Footer Centre', 'wrdsb' ),
     'id'            => 'footer-centre',
-    'description'   => __( 'Appears in the footer section of the site.', 'wrdsb' ),
+    'description'   => __( 'Appears in the third footer section of the site. This area is controlled centrally, widgets placed here will not display.', 'wrdsb' ),
     'before_widget' => '',
     'after_widget'  => '',
-    'before_title'  => '<h4>',
-    'after_title'   => '</h4>',
+    'before_title'  => '<h1>',
+    'after_title'   => '</h1>',
   ) );
   register_sidebar( array(
     'name'          => __( 'Footer Right', 'wrdsb' ),
     'id'            => 'footer-right',
-    'description'   => __( 'Appears in the footer section of the site.', 'wrdsb' ),
+    'description'   => __( 'Appears in the fourth footer section of the site.', 'wrdsb' ),
     'before_widget' => '',
     'after_widget'  => '',
-    'before_title'  => '<h4>',
-    'after_title'   => '</h4>',
+    'before_title'  => '<h1>',
+    'after_title'   => '</h1>',
   ) );
-  register_sidebar( array(
+/*  register_sidebar( array(
     'name'          => __( 'Content Left', 'wrdsb' ),
     'id'            => 'content-left',
     'description'   => __( 'Appears at the bottom of the page/post content.', 'wrdsb' ),
@@ -242,7 +242,7 @@ function wrdsb_widgets_init() {
     //'after_widget'  => '</aside>',
     //'before_title'  => '<h1 class="widget-title">',
     //'after_title'   => '</h1>',
-  ) );
+  ) ); */
 }
 add_action( 'widgets_init', 'wrdsb_widgets_init' );
 
