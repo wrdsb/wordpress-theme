@@ -1,3 +1,7 @@
+## 0.10.0
+Feature Change
++ remove customized login code to revert to default WordPress options
+
 ## 0.9.4
 Fix
 + fix alert styles
