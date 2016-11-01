@@ -22,7 +22,7 @@
   <!-- Bootstrap -->
   <link href="https://s3.amazonaws.com/wrdsb-theme/css/bootstrap.css" rel="stylesheet" media="all">
   <link href="https://s3.amazonaws.com/wrdsb-theme/css/bootstrap-theme.css" rel="stylesheet">
-  <link href="https://s3.amazonaws.com/wrdsb-theme/test/style.css" rel="stylesheet">
+  <link href="https://s3.amazonaws.com/wrdsb-theme/css/style.css" rel="stylesheet">
   <link href="https://s3.amazonaws.com/wrdsb-theme/css/icon-styles.css" rel="stylesheet">
 
   <link href="https://s3.amazonaws.com/wrdsb-theme/images/icon-60x60.png" rel="apple-touch-icon" />
