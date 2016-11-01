@@ -117,6 +117,9 @@
       </div>
 
       <?php trackback_rdf(); ?> 
+
+          <a class="totop" href="#top"><div>to top</div></a>
+
     </div>
 
     <?php
@@ -148,5 +151,7 @@
 
 </div>
 </div>
+
+          <a class="totop" href="#top"><div>to top</div></a>
 
 <?php get_footer();

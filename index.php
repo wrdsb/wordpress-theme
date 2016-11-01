@@ -71,7 +71,6 @@
         }
       endwhile;
     ?>
-
     </div> <!-- end content area -->
 
     <?php
@@ -105,5 +104,7 @@
 
   </div>
 </div>
+
+          <a class="totop" href="#top"><div>to top</div></a>
 
 <?php get_footer();

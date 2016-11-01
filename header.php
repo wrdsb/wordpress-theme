@@ -20,25 +20,25 @@
   <?php } ?>
 
   <!-- Bootstrap -->
-  <link href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.css" rel="stylesheet" media="all">
-  <link href="<?php echo get_template_directory_uri(); ?>/css/bootstrap-theme.css" rel="stylesheet">
-  <link href="<?php echo get_template_directory_uri(); ?>/css/style.css" rel="stylesheet">
-  <link href="<?php echo get_template_directory_uri(); ?>/css/icon-styles.css" rel="stylesheet">
+  <link href="https://s3.amazonaws.com/wrdsb-theme/css/bootstrap.css" rel="stylesheet" media="all">
+  <link href="https://s3.amazonaws.com/wrdsb-theme/css/bootstrap-theme.css" rel="stylesheet">
+  <link href="https://s3.amazonaws.com/wrdsb-theme/test/style.css" rel="stylesheet">
+  <link href="https://s3.amazonaws.com/wrdsb-theme/css/icon-styles.css" rel="stylesheet">
 
-  <link href="<?php echo get_template_directory_uri(); ?>/images/icon-60x60.png" rel="apple-touch-icon" />
-  <link href="<?php echo get_template_directory_uri(); ?>/images/icon-76x76.png" rel="apple-touch-icon" sizes="76x76" />
-  <link href="<?php echo get_template_directory_uri(); ?>/images/icon-120x120.png" rel="apple-touch-icon" sizes="120x120" />
-  <link href="<?php echo get_template_directory_uri(); ?>/images/icon-152x152.png" rel="apple-touch-icon" sizes="152x152" />
+  <link href="https://s3.amazonaws.com/wrdsb-theme/images/icon-60x60.png" rel="apple-touch-icon" />
+  <link href="https://s3.amazonaws.com/wrdsb-theme/images/icon-76x76.png" rel="apple-touch-icon" sizes="76x76" />
+  <link href="https://s3.amazonaws.com/wrdsb-theme/images/icon-120x120.png" rel="apple-touch-icon" sizes="120x120" />
+  <link href="https://s3.amazonaws.com/wrdsb-theme/images/icon-152x152.png" rel="apple-touch-icon" sizes="152x152" />
 
-  <link href="<?php echo get_template_directory_uri(); ?>/css/addtohomescreen.css" rel="stylesheet">
+  <link href="https://s3.amazonaws.com/wrdsb-theme/css/addtohomescreen.css" rel="stylesheet">
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
-  <script src="<?php echo get_template_directory_uri(); ?>/js/addtohomescreen.min.js"></script>
-  <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.floatThead.min.js"></script>
+  <script src="https://s3.amazonaws.com/wrdsb-theme/js/addtohomescreen.min.js"></script>
+  <script src="https://s3.amazonaws.com/wrdsb-theme/js/jquery.floatThead.min.js"></script>
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -115,7 +115,7 @@
   <?php } ?>
 </head>
 
-<body>
+<body id="top">
   <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -151,9 +151,7 @@
             </div>
             <div class="searchbox">
               <form action="<?php echo home_url(); ?>/" method="get">
-                <fieldset>
                   <input type="text" name="s" id="search" value="<?php the_search_query(); ?>" placeholder="Search" />
-                </fieldset>
               <!--<span class="icon-search"></span>-->
               </form>
             </div>
