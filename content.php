@@ -87,4 +87,3 @@ if ( has_excerpt ()) {
                 the_tags('',' &middot; ','');
                 echo '</p>';
 	}
-?>
