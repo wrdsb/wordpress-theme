@@ -119,6 +119,6 @@
   </div>
 </div>
 
-          <a class="totop" href="#top"><div>to top</div></a>
-
-<?php get_footer();
+<?php 
+// <a class="totop" href="#top"><div>to top</div></a>
+get_footer();
