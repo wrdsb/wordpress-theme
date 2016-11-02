@@ -89,18 +89,19 @@ include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 
                 // create link text
 		$admin_link  = '<a href="'.$siteurl.'/wp-login.php">Log into '.$sitename.'</a>';
-		$staff_admin_link = ' &middot; Go to <a href="https://staff.wrdsb.ca/">Staff Intranet</a>';
+		$staff_admin_link = ' &middot; Go to <a href="https://staff.wrdsb.ca/" target="_blank" javascript="ga(' . "'send', 'event', 'Page', 'click_banner', 'staff intranet', event.target.href,{'nonInteraction':1});" . '">Staff Intranet</a>';
 		$school_handbook_link = '';
 
                 // customize links for school network
-                if ($host[0] == 'schools') {
-			$fulldomain = explode('.',$_SERVER['HTTP_HOST']);
+    //if (($host[0] === 'schools' && wrdsb_i_am_a_school) || $host[0] === 'wplabs') { // for testing school pages
+    if ($host[0] === 'schools' && wrdsb_i_am_a_school) {
+  	  $fulldomain = explode('.',$_SERVER['HTTP_HOST']);
 			$admin_link  = '<a href="https://schools.wrdsb.ca/'.$fulldomain[0].'/wp-login.php">Log into '.$sitename.'</a>';
 			$school_handbook_link = ' &middot; Go to <a target="_blank" href="https://staff.wrdsb.ca/' .$fulldomain[0].'">'.strtoupper($fulldomain[0]).' School Handbook</a>';
-                }
+    }
       
                 // customize links for staff network
-                if ($host[0] == 'staff') {
+                if ($host[0] === 'staff') {
 			$staff_admin_link = '';
                 }
 
