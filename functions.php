@@ -562,7 +562,6 @@ function wrdsb_i_am_a_school() {
   $parsed_url = parse_url(site_url());
   $host = explode('.', $parsed_url['host']);
   $alpha_codes = array(
-    "schools",
     "abe",
     "alp",
     "ark",
@@ -579,7 +578,6 @@ function wrdsb_i_am_a_school() {
     "cha",
     "chc",
     "chi",
-    "chinese",
     "cle",
     "cnc",
     "cnw",
@@ -592,7 +590,6 @@ function wrdsb_i_am_a_school() {
     "dks",
     "doo",
     "dpk",
-    "dsps",
     "eci",
     "eds",
     "elg",
@@ -608,10 +605,7 @@ function wrdsb_i_am_a_school() {
     "fra",
     "gci",
     "gcp",
-    "german",
-    "gnss",
     "gps",
-    "greek",
     "grc",
     "gvc",
     "gvn",
@@ -662,7 +656,6 @@ function wrdsb_i_am_a_school() {
     "rye",
     "sab",
     "sag",
-    "serbian",
     "she",
     "shl",
     "sil",
@@ -691,6 +684,30 @@ function wrdsb_i_am_a_school() {
     "wsm",
     "wsv",
     "wtt"
+  );
+  if (in_array(($host[0]), $alpha_codes)) {
+    return TRUE;
+  }
+}
+
+function wrdsb_i_am_a_school_exception() {
+  $parsed_url = parse_url(site_url());
+  $host = explode('.', $parsed_url['host']);
+  $alpha_codes = array(
+    "schools",
+    "cln",
+    "alc",
+    "alu",
+    "inl",
+    "ins",
+    "rmt",
+    "chinese",
+    "dsps",
+    "german",
+    "gnss",
+    "greek",
+    "serbian",
+    "experiential-learning"
   );
   if (in_array(($host[0]), $alpha_codes)) {
     return TRUE;

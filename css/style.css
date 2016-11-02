@@ -67,7 +67,6 @@ fieldset legend {
 	font-weight: bold;
 	background-color: #efefef;
     border-radius: 4px;
-
 }
 
 /** School-Day **/
@@ -972,6 +971,28 @@ content: "Example";
 
 
 	/*** __special ***/
+
+	a.totop div {
+		text-align: center;
+		font-size: .8em;
+		clear: both;
+		padding-bottom: 2em;
+		margin-top: 3em;
+		text-transform: uppercase;
+		background-image: url('https://www.wrdsb.ca/wp-content/uploads/totop.gif');
+		background-repeat: no-repeat;
+		background-position: center;
+		opacity: 0.6;
+	}
+
+	a.totop {
+		font-weight: bold;
+		text-decoration: none; 
+	}
+
+	a.totop:hover, a.totop div:hover {
+		opacity: 1.0;
+	}
 
 	.left, .alignleft {
 		float: left;

@@ -115,7 +115,6 @@
 	<p class="editpost"><?php edit_post_link(__('Edit'));?></p>
 	</div>
       </div>
-
       <?php trackback_rdf(); ?> 
     </div>
 
@@ -149,4 +148,6 @@
 </div>
 </div>
 
-<?php get_footer();
+<?php 
+// <a class="totop" href="#top"><div>to top</div></a>
+get_footer();
