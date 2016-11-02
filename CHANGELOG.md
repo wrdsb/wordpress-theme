@@ -1,3 +1,13 @@
+## 0.10.1
+Fix
++ Add Alternative Education Schools to the school list template
++ Create a modified sidebar for school websites that aren't physical schools (experiential learning, language schools, et al)
++ Remove fieldset from search in header (only one field, unnecessary)
++ Update asset links to AWS instead of WordPress to reduce load
++ Add tracking code to staff intranet link to track usage
++ Adjust administrative link bar to not display school handbook for schools that aren't physical schools
++ Create new function for school exceptions
+
 ## 0.10.0
 Feature Change
 + remove customized login code to revert to default WordPress options
