@@ -128,24 +128,24 @@ Template Name: School List
 							<td><strong><a href="https://www.wrdsb.ca/alternative-education/choices/" target="_blank">Choices for Youth</a> Cambridge</strong><br>
 								256 Hespeler Road<br>Cambridge ON N1R 3H3 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=256 Hespeler Road+Cambridge+Ontario" target="_blank">MAP</a> ]</span></td>
 							<td><!-- <a href="mailto:wpk@wrdsb.on.ca">wpk@wrdsb.on.ca</a><br />-->
-								519-662-9041</td>
+								519-622-9041</td>
 						</tr>
 						<tr>
 							<td><strong><a href="https://www.wrdsb.ca/alternative-education/choices/" target="_blank">Choices for Youth</a> Waterloo</strong><br>
 								151 Weber St S<br>Waterloo ON N2J 2A9 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=151 Weber St S+Waterloo+Ontario" target="_blank">MAP</a> ]</span></td>
 							<td><!-- <a href="mailto:wpk@wrdsb.on.ca">wpk@wrdsb.on.ca</a><br />-->
-								519-885-0123</td>
+								519-885-0800</td>
 						</tr>
 							<td><strong><a href="https://www.wrdsb.ca/alternative-education/u-turn/" target="_blank">UTurn</a> Cambridge</strong><br>
 								256 Hespeler Road<br>Cambridge ON N1R 3H3 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=256 Hespeler Road+Cambridge+Ontario" target="_blank">MAP</a> ]</span></td>
 							<td><!-- <a href="mailto:wpk@wrdsb.on.ca">wpk@wrdsb.on.ca</a><br />-->
-								519-662-9041</td>
+								519-622-9041</td>
 						</tr>
 						<tr>
 							<td><strong><a href="https://www.wrdsb.ca/alternative-education/u-turn/" target="_blank">UTurn</a> Waterloo</strong><br>
 								151 Weber St S<br>Waterloo ON N2J 2A9 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=151 Weber St S+Waterloo+Ontario" target="_blank">MAP</a> ]</span></td>
 							<td><!-- <a href="mailto:wpk@wrdsb.on.ca">wpk@wrdsb.on.ca</a><br />-->
-								519-885-0123</td>
+								519-885-0800</td>
 						</tr>
 					</tbody>
 				</table>
