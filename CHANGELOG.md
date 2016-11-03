@@ -1,3 +1,7 @@
+## 0.10.2
+Fix
++ Phone numbers fixed for Alternative Education
+
 ## 0.10.1
 Fix
 + Add Alternative Education Schools to the school list template
