@@ -22,7 +22,7 @@ Template Name: School List
 
               	$alt_con_ed_schools = array('ALC', 'ALU', 'CLN', 'INL', 'INS', 'RMT');
 
-				$json = file_get_contents('https://s3.amazonaws.com/wrdsb-theme/json/schools.json');
+				$json = file_get_contents('https://s3.amazonaws.com/wrdsb-ui-assets/json/schools.json');
 				//for testing only
 				//$json = file_get_contents('/nas/content/live/wrdsb/wp-content/themes/school-list/inc/allschools.json');
 				$schools = json_decode($json);
