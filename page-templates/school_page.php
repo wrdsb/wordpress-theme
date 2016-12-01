@@ -22,7 +22,7 @@ Template Name: School List
 
               	$alt_con_ed_schools = array('ALC', 'ALU', 'CLN', 'INL', 'INS', 'RMT');
 
-				$json = file_get_contents('https://s3.amazonaws.com/wrdsb-ui-assets/json/schools.json');
+				$json = file_get_contents('https://s3.amazonaws.com/wrdsb-ui-assets/0/0.10.4/json/schools.json');
 				//for testing only
 				//$json = file_get_contents('/nas/content/live/wrdsb/wp-content/themes/school-list/inc/allschools.json');
 				$schools = json_decode($json);
@@ -149,6 +149,25 @@ Template Name: School List
 						</tr>
 					</tbody>
 				</table>
+
+							<h2 id="alt-con-ed_xs">Continuing Education</h2>
+			<h3 id="language_schools">International Languages</h3>
+			
+			<p style="margin-bottom: 25px;"><strong><a href="https://chinese.wrdsb.ca/" target="_blank">Chinese Language School</a></strong><br>
+			300 Hazel Street<br>Waterloo ON N2L 3P2 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=300 Hazel Street+Waterloo+Ontario" target="_blank">MAP</a> ]</span><br>
+			519-884-9590</p>
+
+			<p style="margin-bottom: 25px;"><strong><a href="https://german.wrdsb.ca/" target="_blank">Concordia German Language School</a></strong><br>
+			175 Indian Road<br>Kitchener ON N2B 2S7 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=175 Indian Road+Kitchener+Ontario" target="_blank">MAP</a> ]</span><br>
+			519-576-5150 x5070</p>
+
+			<p style="margin-bottom: 25px;"><strong><a href="https://greek.wrdsb.ca/" target="_blank">Greek Language School</a></strong><br>
+			153 Montcalm Drive<br>Kitchener ON N1R 3H3 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=153%20Montcalm%20Drive+Kitchener,%20Ontario+Ontario" target="_blank">MAP</a> ]</span><br>
+			519-893-1140</p>
+
+			<p style="margin-bottom: 25px;"><strong><a href="https://serbian.wrdsb.ca/" target="_blank">Serbian Language School</a></strong><br>
+			191 Hickson Drive<br>Kitchener ON N2B 2H8 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=191 Hickson Drive+Kitchener+Ontario" target="_blank">MAP</a> ]</span><br>
+			519-578-3750</p>
 			</div>
 		</div>
 
@@ -221,6 +240,25 @@ Template Name: School List
 			<p style="margin-bottom: 25px;"><strong><a href="https://www.wrdsb.ca/alternative-education/u-turn/" target="_blank">UTurn</a> Waterloo</strong><br>
 			151 Weber St S<br>Waterloo ON N2J 2A9 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=151 Weber St S+Waterloo+Ontario" target="_blank">MAP</a> ]</span><br>
 			519-885-0123</p>
+
+			<h2 id="alt-con-ed_xs">Continuing Education</h2>
+			<h3 id="language_schools">International Languages</h3>
+			
+			<p style="margin-bottom: 25px;"><strong><a href="https://chinese.wrdsb.ca/" target="_blank">Chinese Language School</a></strong><br>
+			300 Hazel Street<br>Waterloo ON N2L 3P2 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=300 Hazel Street+Waterloo+Ontario" target="_blank">MAP</a> ]</span><br>
+			519-884-9590</p>
+
+			<p style="margin-bottom: 25px;"><strong><a href="https://german.wrdsb.ca/" target="_blank">Concordia German Language School</a></strong><br>
+			175 Indian Road<br>Kitchener ON N2B 2S7 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=175 Indian Road+Kitchener+Ontario" target="_blank">MAP</a> ]</span><br>
+			519-576-5150 x5070</p>
+
+			<p style="margin-bottom: 25px;"><strong><a href="https://greek.wrdsb.ca/" target="_blank">Greek Language School</a></strong><br>
+			153 Montcalm Drive<br>Kitchener ON N1R 3H3 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=153%20Montcalm%20Drive+Kitchener,%20Ontario+Ontario" target="_blank">MAP</a> ]</span><br>
+			519-893-1140</p>
+
+			<p style="margin-bottom: 25px;"><strong><a href="https://serbian.wrdsb.ca/" target="_blank">Serbian Language School</a></strong><br>
+			191 Hickson Drive<br>Kitchener ON N2B 2H8 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=191 Hickson Drive+Kitchener+Ontario" target="_blank">MAP</a> ]</span><br>
+			519-578-3750</p>
 
 		</div>
 	</div>

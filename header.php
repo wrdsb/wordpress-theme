@@ -29,12 +29,10 @@
   <link href="https://s3.amazonaws.com/wrdsb-ui-assets/images/icon-152x152.png" rel="apple-touch-icon" sizes="152x152" />
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 
-  <script src="https://s3.amazonaws.com/wrdsb-ui-assets/js/addtohomescreen.min.js"></script>
-  <script src="https://s3.amazonaws.com/wrdsb-ui-assets/js/jquery.floatThead.min.js"></script>
+  <script src="https://s3.amazonaws.com/wrdsb-ui-assets/0/0.10.4/js/addtohomescreen.min.js"></script>
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -44,19 +42,6 @@
   <![endif]-->
 
   <script>
-    // addToHomescreen.removeSession();     // use this to remove the localStorage variable
-    var ath = addToHomescreen({
-        appID: 'ca.wrdsb',
-        message: 'To add this website to Home Screen: tap %icon and then <strong>Add to Home Screen</strong>',
-        //debug: 'ios',           // activate debug mode in ios emulation
-        skipFirstVisit: true,  // show at first access
-        //startDelay: 1,          // display the message right away
-        //lifespan: 15,            // do not automatically kill the call out
-        //displayPace: 0,         // do not obey the display pace
-        maxDisplayCount: 1      // do not obey the max display count
-    });
-    // ath.clearSession();      // reset the user session
-
     $(document).ready(function(){
       $('table.table-fixed-head').floatThead({
         useAbsolutePositioning: false
