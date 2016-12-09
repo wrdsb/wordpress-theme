@@ -444,6 +444,7 @@ function the_breadcrumb() {
 function wrdsb_secondary_school_colours() {
   $parsed_url = parse_url(site_url());
   $host = explode('.', $parsed_url['host']);
+  $asset_version = "0/0.10.4";
   switch ($host[0]) {
     case "bci":
       echo '<!-- Site specific styles for BCI -->'."\r\n";

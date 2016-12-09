@@ -1,3 +1,9 @@
+## 0.11.0
+
++ replace links to assets
++ move CSS and Javascript assets to AWS
++ move core images to AWS
+
 ## 0.10.3
 Content 
 + implement request 5922 Vote CTA for school banner section
