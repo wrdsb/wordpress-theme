@@ -117,7 +117,6 @@
       </div>
       <?php trackback_rdf(); ?> 
     </div>
-
     <?php
     # Both sidebars
     # right column
