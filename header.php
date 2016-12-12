@@ -19,21 +19,26 @@
     <title><?php wp_title(''); ?> (<?php bloginfo('name'); ?>)</title>
   <?php } ?>
 
-  <!-- All Styles -->
-  <link href="https://s3.amazonaws.com/wrdsb-ui-assets/0/master.css" rel="stylesheet" media="all">
+  <!-- Bootstrap -->
+  <link href="https://s3.amazonaws.com/wrdsb-theme/css/bootstrap.css" rel="stylesheet" media="all">
+  <link href="https://s3.amazonaws.com/wrdsb-theme/css/bootstrap-theme.css" rel="stylesheet">
+  <link href="https://s3.amazonaws.com/wrdsb-theme/css/style.css" rel="stylesheet">
+  <link href="https://s3.amazonaws.com/wrdsb-theme/css/icon-styles.css" rel="stylesheet">
 
-  <!-- Homepage Icon -->
-  <link href="https://s3.amazonaws.com/wrdsb-ui-assets/images/icon-60x60.png" rel="apple-touch-icon" />
-  <link href="https://s3.amazonaws.com/wrdsb-ui-assets/images/icon-76x76.png" rel="apple-touch-icon" sizes="76x76" />
-  <link href="https://s3.amazonaws.com/wrdsb-ui-assets/images/icon-120x120.png" rel="apple-touch-icon" sizes="120x120" />
-  <link href="https://s3.amazonaws.com/wrdsb-ui-assets/images/icon-152x152.png" rel="apple-touch-icon" sizes="152x152" />
+  <link href="https://s3.amazonaws.com/wrdsb-theme/images/icon-60x60.png" rel="apple-touch-icon" />
+  <link href="https://s3.amazonaws.com/wrdsb-theme/images/icon-76x76.png" rel="apple-touch-icon" sizes="76x76" />
+  <link href="https://s3.amazonaws.com/wrdsb-theme/images/icon-120x120.png" rel="apple-touch-icon" sizes="120x120" />
+  <link href="https://s3.amazonaws.com/wrdsb-theme/images/icon-152x152.png" rel="apple-touch-icon" sizes="152x152" />
+
+  <link href="https://s3.amazonaws.com/wrdsb-theme/css/addtohomescreen.css" rel="stylesheet">
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
-  <script src="https://s3.amazonaws.com/wrdsb-ui-assets/0/0.10.4/js/addtohomescreen.min.js"></script>
-
+  <script src="https://s3.amazonaws.com/wrdsb-theme/js/addtohomescreen.min.js"></script>
+  <script src="https://s3.amazonaws.com/wrdsb-theme/js/jquery.floatThead.min.js"></script>
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
