@@ -4,6 +4,9 @@
 + move CSS and Javascript assets to AWS
 + move core images to AWS
 + add Chicopee Hills as a new school
++ add Groh PS as a new school
++ update school list
+- remove vote banners from school sites (ref: 5922 Vote CTA)
 
 ## 0.10.3
 Content 

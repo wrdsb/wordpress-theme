@@ -151,10 +151,8 @@ Template Name: School List
 				</table>
 			</div>
 
-							<h2 id="alt-con-ed_xs">Continuing Education</h2>
+			<h2 id="alt-con-ed_xs">Continuing Education</h2>
 			<h3 id="language_schools">International Languages</h3>
-			
-			<h2 id="alt-con-ed">Alternative Education</h2>
 			<div class="table-responsive" >
 				<table class="table table-striped table-fixed-head">
 					<thead>
@@ -190,7 +188,6 @@ Template Name: School List
 
 			<h2 id="new_schools">New Schools Opening in 2017</h2>
 
-			<h2 id="alt-con-ed">Alternative Education</h2>
 			<div class="table-responsive" >
 				<table class="table table-striped table-fixed-head">
 					<thead>
@@ -201,9 +198,14 @@ Template Name: School List
 					</thead>
 					<tbody>
 						<tr>
-							<td><strong><a href="https://chi.wrdsb.ca/" target="_blank">Chicopee Hills Public School</a></strong><!--<br>
-			191 Hickson Drive<br>Kitchener ON N2B 2H8 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=191 Hickson Drive+Kitchener+Ontario" target="_blank">MAP</a> ]</span>--></td>
-							<td><!--519-578-3750--></td>
+							<td><strong><a href="https://chi.wrdsb.ca/" target="_blank">Chicopee Hills Public School</a></strong><br>
+							800 Fairway Road North<br>Kitchener ON <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=800 Fairway North+Kitchener+Ontario" target="_blank">MAP</a> ]</span></td>
+							<td>N/A</td>
+						</tr>
+						<tr>
+							<td><strong>Groh Public School</a></strong><br>
+							225 Thomas Slee Drive<br>Kitchener ON N2P 0B8 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=225 Thomas Slee Drive+Kitchener+Ontario" target="_blank">MAP</a> ]</span></td>
+							<td>N/A</td>
 						</tr>
 					</tbody>
 				</table>
@@ -304,9 +306,13 @@ Template Name: School List
 
 			<h2 id="new_schools_xs">New Schools Opening in 2017</h2>
 
-			<p style="margin-bottom: 25px;"><strong><a href="https://chi.wrdsb.ca/" target="_blank">Chicopee Hills Public School</a></strong><!--<br>
-			191 Hickson Drive<br>Kitchener ON N2B 2H8 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=191 Hickson Drive+Kitchener+Ontario" target="_blank">MAP</a> ]</span><br>
-			519-578-3750--></p>
+			<p style="margin-bottom: 25px;"><strong><a href="https://chi.wrdsb.ca/" target="_blank">Chicopee Hills Public School</a></strong><br>
+			800 Fairway Road North<br>Kitchener ON <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=800 Fairway North+Kitchener+Ontario" target="_blank">MAP</a> ]</span><br>
+			<!--phone--></p>
+
+			<p style="margin-bottom: 25px;"><strong>Groh Public School</strong><br>
+			225 Thomas Slee Drive<br>Kitchener ON N2P 0B8 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=225 Thomas Slee Drive+Kitchener+Ontario" target="_blank">MAP</a> ]</span><br>
+			<!--phone--></p>
 
 		</div>
 	</div>
