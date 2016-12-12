@@ -149,25 +149,67 @@ Template Name: School List
 						</tr>
 					</tbody>
 				</table>
+			</div>
 
 							<h2 id="alt-con-ed_xs">Continuing Education</h2>
 			<h3 id="language_schools">International Languages</h3>
 			
-			<p style="margin-bottom: 25px;"><strong><a href="https://chinese.wrdsb.ca/" target="_blank">Chinese Language School</a></strong><br>
-			300 Hazel Street<br>Waterloo ON N2L 3P2 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=300 Hazel Street+Waterloo+Ontario" target="_blank">MAP</a> ]</span><br>
-			519-884-9590</p>
+			<h2 id="alt-con-ed">Alternative Education</h2>
+			<div class="table-responsive" >
+				<table class="table table-striped table-fixed-head">
+					<thead>
+						<tr>
+							<th class="text-left">Address</th>
+							<th class="text-left">Phone</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><strong><a href="https://chinese.wrdsb.ca/" target="_blank">Chinese Language School</a></strong><br>
+			300 Hazel Street<br>Waterloo ON N2L 3P2 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=300 Hazel Street+Waterloo+Ontario" target="_blank">MAP</a> ]</span></td>
+							<td>519-884-9590</td>
+						</tr>
+						<tr>
+							<td><strong><a href="https://german.wrdsb.ca/" target="_blank">Concordia German Language School</a></strong><br>
+			175 Indian Road<br>Kitchener ON N2B 2S7 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=175 Indian Road+Kitchener+Ontario" target="_blank">MAP</a> ]</span></td>
+							<td>519-576-5150 x5070</td>
+						</tr>
+						<tr>
+							<td><strong><a href="https://greek.wrdsb.ca/" target="_blank">Greek Language School</a></strong><br>
+			153 Montcalm Drive<br>Kitchener ON N1R 3H3 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=153%20Montcalm%20Drive+Kitchener,%20Ontario+Ontario" target="_blank">MAP</a> ]</span></td>
+							<td>519-893-1140</td>
+						</tr>
+						<tr>
+							<td><strong><a href="https://serbian.wrdsb.ca/" target="_blank">Serbian Language School</a></strong><br>
+			191 Hickson Drive<br>Kitchener ON N2B 2H8 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=191 Hickson Drive+Kitchener+Ontario" target="_blank">MAP</a> ]</span></td>
+							<td>519-578-3750</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
 
-			<p style="margin-bottom: 25px;"><strong><a href="https://german.wrdsb.ca/" target="_blank">Concordia German Language School</a></strong><br>
-			175 Indian Road<br>Kitchener ON N2B 2S7 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=175 Indian Road+Kitchener+Ontario" target="_blank">MAP</a> ]</span><br>
-			519-576-5150 x5070</p>
+			<h2 id="new_schools">New Schools Opening in 2017</h2>
 
-			<p style="margin-bottom: 25px;"><strong><a href="https://greek.wrdsb.ca/" target="_blank">Greek Language School</a></strong><br>
-			153 Montcalm Drive<br>Kitchener ON N1R 3H3 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=153%20Montcalm%20Drive+Kitchener,%20Ontario+Ontario" target="_blank">MAP</a> ]</span><br>
-			519-893-1140</p>
+			<h2 id="alt-con-ed">Alternative Education</h2>
+			<div class="table-responsive" >
+				<table class="table table-striped table-fixed-head">
+					<thead>
+						<tr>
+							<th class="text-left">Address</th>
+							<th class="text-left">Phone</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><strong><a href="https://chi.wrdsb.ca/" target="_blank">Chicopee Hills Public School</a></strong><!--<br>
+			191 Hickson Drive<br>Kitchener ON N2B 2H8 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=191 Hickson Drive+Kitchener+Ontario" target="_blank">MAP</a> ]</span>--></td>
+							<td><!--519-578-3750--></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
 
-			<p style="margin-bottom: 25px;"><strong><a href="https://serbian.wrdsb.ca/" target="_blank">Serbian Language School</a></strong><br>
-			191 Hickson Drive<br>Kitchener ON N2B 2H8 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=191 Hickson Drive+Kitchener+Ontario" target="_blank">MAP</a> ]</span><br>
-			519-578-3750</p>
+
 			</div>
 		</div>
 
@@ -259,6 +301,12 @@ Template Name: School List
 			<p style="margin-bottom: 25px;"><strong><a href="https://serbian.wrdsb.ca/" target="_blank">Serbian Language School</a></strong><br>
 			191 Hickson Drive<br>Kitchener ON N2B 2H8 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=191 Hickson Drive+Kitchener+Ontario" target="_blank">MAP</a> ]</span><br>
 			519-578-3750</p>
+
+			<h2 id="new_schools_xs">New Schools Opening in 2017</h2>
+
+			<p style="margin-bottom: 25px;"><strong><a href="https://chi.wrdsb.ca/" target="_blank">Chicopee Hills Public School</a></strong><!--<br>
+			191 Hickson Drive<br>Kitchener ON N2B 2H8 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=191 Hickson Drive+Kitchener+Ontario" target="_blank">MAP</a> ]</span><br>
+			519-578-3750--></p>
 
 		</div>
 	</div>

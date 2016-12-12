@@ -3,6 +3,7 @@
 + replace links to assets
 + move CSS and Javascript assets to AWS
 + move core images to AWS
++ add Chicopee Hills as a new school
 
 ## 0.10.3
 Content 
