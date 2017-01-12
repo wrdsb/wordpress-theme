@@ -39,7 +39,6 @@
 
   <script src="https://s3.amazonaws.com/wrdsb-theme/js/addtohomescreen.min.js"></script>
   <script src="https://s3.amazonaws.com/wrdsb-theme/js/jquery.floatThead.min.js"></script>
-
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -48,19 +47,6 @@
   <![endif]-->
 
   <script>
-    // addToHomescreen.removeSession();     // use this to remove the localStorage variable
-    var ath = addToHomescreen({
-        appID: 'ca.wrdsb',
-        message: 'To add this website to Home Screen: tap %icon and then <strong>Add to Home Screen</strong>',
-        //debug: 'ios',           // activate debug mode in ios emulation
-        skipFirstVisit: true,  // show at first access
-        //startDelay: 1,          // display the message right away
-        //lifespan: 15,            // do not automatically kill the call out
-        //displayPace: 0,         // do not obey the display pace
-        maxDisplayCount: 1      // do not obey the max display count
-    });
-    // ath.clearSession();      // reset the user session
-
     $(document).ready(function(){
       $('table.table-fixed-head').floatThead({
         useAbsolutePositioning: false
@@ -142,12 +128,6 @@
         </div>
         
         <div class="col-md-3 col-sm-4">
-          <div class="social-icons">
-            <!--<a href="#"><span class="icon-facebook" title="Facebook"></span></a>-->
-            <!--<a href="#"><span class="icon-twitter" title="Twitter"></span></a>-->
-            <!--<a href="#"><span class="icon-youtube" title="Youtube"></span></a>-->
-          </div>
-
           <div class="staff-shortcuts">
             <div class="staff-shortcut-list">
               <a href="#contact">Contact Information</a>
@@ -155,13 +135,7 @@
             <div class="searchbox">
               <form action="<?php echo home_url(); ?>/" method="get">
                   <input type="text" name="s" id="search" value="<?php the_search_query(); ?>" placeholder="Search" />
-              <!--<span class="icon-search"></span>-->
               </form>
-            </div>
-
-            <div class="accessability">
-              <!--<a href="#" id="inc_font" title="Increase Font Size">A</a>-->
-              <!--<a href="#" id="dec_font" title="Decrease Font Size">A</a>-->
             </div>
           </div>
         </div>
