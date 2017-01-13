@@ -1,3 +1,9 @@
+## 0.11.1
++ add Groh PS to functions list
++ update school list with Groh Address
++ update school list with Continuing Education addresses and websites
+- remove International Languages from Continuing Education area of school list
+
 ## 0.11.0
 
 + replace links to assets
