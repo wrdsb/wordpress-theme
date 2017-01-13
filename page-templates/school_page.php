@@ -152,7 +152,6 @@ Template Name: School List
 			</div>
 
 			<h2 id="alt-con-ed_xs">Continuing Education</h2>
-			<h3 id="language_schools">International Languages</h3>
 			<div class="table-responsive" >
 				<table class="table table-striped table-fixed-head">
 					<thead>
@@ -163,24 +162,29 @@ Template Name: School List
 					</thead>
 					<tbody>
 						<tr>
-							<td><strong><a href="https://chinese.wrdsb.ca/" target="_blank">Chinese Language School</a></strong><br>
-			300 Hazel Street<br>Waterloo ON N2L 3P2 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=300 Hazel Street+Waterloo+Ontario" target="_blank">MAP</a> ]</span></td>
-							<td>519-884-9590</td>
+							<td><strong><a href="https://www.wrdsb.ca/continuing-education/" target="_blank">Main Office</a></strong><br>
+							151 Weber St. S.<br>Waterloo ON N2J 2A9 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=151 Weber St. S.+Waterloo+Ontario" target="_blank">MAP</a> ]</span></td>
+							<td>519-885-0800</td>
 						</tr>
 						<tr>
-							<td><strong><a href="https://german.wrdsb.ca/" target="_blank">Concordia German Language School</a></strong><br>
-			175 Indian Road<br>Kitchener ON N2B 2S7 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=175 Indian Road+Kitchener+Ontario" target="_blank">MAP</a> ]</span></td>
-							<td>519-576-5150 x5070</td>
+							<td><strong><a href="https://www.wrdsb.ca/continuing-education/night-school/" target="_blank">Night School</a></strong><br>
+							151 Weber St. S.<br>Waterloo ON N2J 2A9 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=151 Weber St. S.+Waterloo+Ontario" target="_blank">MAP</a> ]</span></td>
+							<td>519-885-0800</td>
 						</tr>
 						<tr>
-							<td><strong><a href="https://greek.wrdsb.ca/" target="_blank">Greek Language School</a></strong><br>
-			153 Montcalm Drive<br>Kitchener ON N1R 3H3 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=153%20Montcalm%20Drive+Kitchener,%20Ontario+Ontario" target="_blank">MAP</a> ]</span></td>
-							<td>519-893-1140</td>
+							<td><strong><a href="https://www.wrdsb.ca/continuing-education/summer-school/" target="_blank">Summer School</a></strong><br>
+							151 Weber St. S.<br>Waterloo ON N2J 2A9 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=151 Weber St. S.+Waterloo+Ontario" target="_blank">MAP</a> ]</span></td>
+							<td>519-885-0800</td>
 						</tr>
 						<tr>
-							<td><strong><a href="https://serbian.wrdsb.ca/" target="_blank">Serbian Language School</a></strong><br>
-			191 Hickson Drive<br>Kitchener ON N2B 2H8 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=191 Hickson Drive+Kitchener+Ontario" target="_blank">MAP</a> ]</span></td>
-							<td>519-578-3750</td>
+							<td><strong><a href="https://www.wrdsb.ca/continuing-education/international-language/" target="_blank">International Languages</a></strong><br>
+							151 Weber St. S.<br>Waterloo ON N2J 2A9 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=151 Weber St. S.+Waterloo+Ontario" target="_blank">MAP</a> ]</span></td>
+							<td>519-885-0800</td>
+						</tr>
+						<tr>
+							<td><strong><a href="https://www.wrdsb.ca/esu/" target="_blank">Essential Skills Upgrading</a></strong><br>
+							151 Weber St. S.<br>Waterloo ON N2J 2A9 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=151 Weber St. S.+Waterloo+Ontario" target="_blank">MAP</a> ]</span></td>
+							<td>519-885-4356</td>
 						</tr>
 					</tbody>
 				</table>
@@ -203,7 +207,7 @@ Template Name: School List
 							<td>N/A</td>
 						</tr>
 						<tr>
-							<td><strong>Groh Public School</a></strong><br>
+							<td><strong><a href="https://gro.wrdsb.ca/" target="_blank">Groh Public School</a></strong><br>
 							225 Thomas Slee Drive<br>Kitchener ON N2P 0B8 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=225 Thomas Slee Drive+Kitchener+Ontario" target="_blank">MAP</a> ]</span></td>
 							<td>N/A</td>
 						</tr>
@@ -284,35 +288,22 @@ Template Name: School List
 			<p style="margin-bottom: 25px;"><strong><a href="https://www.wrdsb.ca/alternative-education/u-turn/" target="_blank">UTurn</a> Waterloo</strong><br>
 			151 Weber St S<br>Waterloo ON N2J 2A9 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=151 Weber St S+Waterloo+Ontario" target="_blank">MAP</a> ]</span><br>
 			519-885-0123</p>
-
+	
 			<h2 id="alt-con-ed_xs">Continuing Education</h2>
-			<h3 id="language_schools">International Languages</h3>
-			
-			<p style="margin-bottom: 25px;"><strong><a href="https://chinese.wrdsb.ca/" target="_blank">Chinese Language School</a></strong><br>
-			300 Hazel Street<br>Waterloo ON N2L 3P2 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=300 Hazel Street+Waterloo+Ontario" target="_blank">MAP</a> ]</span><br>
-			519-884-9590</p>
+			<p style="margin-bottom: 25px;"><strong><a href="https://www.wrdsb.ca/continuing-education/" target="_blank">Main Office</a></strong><br>
+			151 Weber St. S.<br>Waterloo ON N2J 2A9 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=151 Weber St. S.+Waterloo+Ontario" target="_blank">MAP</a> ]</span><br>519-885-0800</p>
 
-			<p style="margin-bottom: 25px;"><strong><a href="https://german.wrdsb.ca/" target="_blank">Concordia German Language School</a></strong><br>
-			175 Indian Road<br>Kitchener ON N2B 2S7 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=175 Indian Road+Kitchener+Ontario" target="_blank">MAP</a> ]</span><br>
-			519-576-5150 x5070</p>
+			<p style="margin-bottom: 25px;"><strong><a href="https://www.wrdsb.ca/continuing-education/night-school/" target="_blank">Night School</a></strong><br>
+			151 Weber St. S.<br>Waterloo ON N2J 2A9 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=151 Weber St. S.+Waterloo+Ontario" target="_blank">MAP</a> ]</span><br>519-885-0800</p>
 
-			<p style="margin-bottom: 25px;"><strong><a href="https://greek.wrdsb.ca/" target="_blank">Greek Language School</a></strong><br>
-			153 Montcalm Drive<br>Kitchener ON N1R 3H3 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=153%20Montcalm%20Drive+Kitchener,%20Ontario+Ontario" target="_blank">MAP</a> ]</span><br>
-			519-893-1140</p>
+			<p style="margin-bottom: 25px;"><strong><a href="https://www.wrdsb.ca/continuing-education/summer-school/" target="_blank">Summer School</a></strong><br>
+			151 Weber St. S.<br>Waterloo ON N2J 2A9 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=151 Weber St. S.+Waterloo+Ontario" target="_blank">MAP</a> ]</span><br>519-885-0800</p>
 
-			<p style="margin-bottom: 25px;"><strong><a href="https://serbian.wrdsb.ca/" target="_blank">Serbian Language School</a></strong><br>
-			191 Hickson Drive<br>Kitchener ON N2B 2H8 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=191 Hickson Drive+Kitchener+Ontario" target="_blank">MAP</a> ]</span><br>
-			519-578-3750</p>
+			<p style="margin-bottom: 25px;"><strong><a href="https://www.wrdsb.ca/continuing-education/international-language/" target="_blank">International Languages</a></strong><br>
+			151 Weber St. S.<br>Waterloo ON N2J 2A9 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=151 Weber St. S.+Waterloo+Ontario" target="_blank">MAP</a> ]</span><br>519-885-0800</p>
 
-			<h2 id="new_schools_xs">New Schools Opening in 2017</h2>
-
-			<p style="margin-bottom: 25px;"><strong><a href="https://chi.wrdsb.ca/" target="_blank">Chicopee Hills Public School</a></strong><br>
-			800 Fairway Road North<br>Kitchener ON <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=800 Fairway North+Kitchener+Ontario" target="_blank">MAP</a> ]</span><br>
-			<!--phone--></p>
-
-			<p style="margin-bottom: 25px;"><strong>Groh Public School</strong><br>
-			225 Thomas Slee Drive<br>Kitchener ON N2P 0B8 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=225 Thomas Slee Drive+Kitchener+Ontario" target="_blank">MAP</a> ]</span><br>
-			<!--phone--></p>
+			<p style="margin-bottom: 25px;"><strong><a href="https://www.wrdsb.ca/esu/" target="_blank">Essential Skills Upgrading</a></strong><br>
+			151 Weber St. S.<br>Waterloo ON N2J 2A9 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=151 Weber St. S.+Waterloo+Ontario" target="_blank">MAP</a> ]</span><br>519-885-4356</p>
 
 		</div>
 	</div>
