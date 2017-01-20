@@ -19,18 +19,19 @@
     <title><?php wp_title(''); ?> (<?php bloginfo('name'); ?>)</title>
   <?php } ?>
 
+<?php
+
+$asset_version  = '0/0.10.5';
+
+?>
+
   <!-- Bootstrap -->
-  <link href="https://s3.amazonaws.com/wrdsb-theme/css/bootstrap.css" rel="stylesheet" media="all">
-  <link href="https://s3.amazonaws.com/wrdsb-theme/css/bootstrap-theme.css" rel="stylesheet">
-  <link href="https://s3.amazonaws.com/wrdsb-theme/css/style.css" rel="stylesheet">
-  <link href="https://s3.amazonaws.com/wrdsb-theme/css/icon-styles.css" rel="stylesheet">
+  <link href="https://s3.amazonaws.com/wrdsb-ui-assets/0/master_test.css" rel="stylesheet">
 
-  <link href="https://s3.amazonaws.com/wrdsb-theme/images/icon-60x60.png" rel="apple-touch-icon" />
-  <link href="https://s3.amazonaws.com/wrdsb-theme/images/icon-76x76.png" rel="apple-touch-icon" sizes="76x76" />
-  <link href="https://s3.amazonaws.com/wrdsb-theme/images/icon-120x120.png" rel="apple-touch-icon" sizes="120x120" />
-  <link href="https://s3.amazonaws.com/wrdsb-theme/images/icon-152x152.png" rel="apple-touch-icon" sizes="152x152" />
-
-  <link href="https://s3.amazonaws.com/wrdsb-theme/css/addtohomescreen.css" rel="stylesheet">
+  <link href="https://s3.amazonaws.com/wrdsb-ui-assets/<?php echo $asset_version; ?>/images/icon-60x60.png" rel="apple-touch-icon" />
+  <link href="https://s3.amazonaws.com/wrdsb-ui-assets/<?php echo $asset_version; ?>/images/icon-76x76.png" rel="apple-touch-icon" sizes="76x76" />
+  <link href="https://s3.amazonaws.com/wrdsb-ui-assets/<?php echo $asset_version; ?>/images/icon-120x120.png" rel="apple-touch-icon" sizes="120x120" />
+  <link href="https://s3.amazonaws.com/wrdsb-ui-assets/<?php echo $asset_version; ?>/images/icon-152x152.png" rel="apple-touch-icon" sizes="152x152" />
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
