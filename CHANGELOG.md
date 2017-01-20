@@ -1,3 +1,9 @@
+## 0.11.2
+- remove Customizer Additional CSS function
++ add Print Style Sheet
++ consolidate CSS to reference master.cs in UI
++ fix references to CSS throughout code
+
 ## 0.11.1
 + add Groh PS to functions list
 + update school list with Groh Address
