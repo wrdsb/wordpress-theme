@@ -1,3 +1,6 @@
+## 0.11.2
++ add function to remove Advanced CSS from Customizer
+
 ## 0.11.1
 + add Groh PS to functions list
 + update school list with Groh Address
