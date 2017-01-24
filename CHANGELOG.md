@@ -1,3 +1,6 @@
+## 0.11.3
+- remove duplicate myway banner
+
 ## 0.11.2
 + add function to remove Advanced CSS from Customizer
 
