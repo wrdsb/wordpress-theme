@@ -1,3 +1,7 @@
+## 0.12.0
++ accessibility changes
++ remove h2 and h3 from site header, replaced with #sitename and #sitedescription
+
 ## 0.11.2
 + add function to remove Advanced CSS from Customizer
 

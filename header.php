@@ -19,18 +19,12 @@
     <title><?php wp_title(''); ?> (<?php bloginfo('name'); ?>)</title>
   <?php } ?>
 
-  <!-- Bootstrap -->
-  <link href="https://s3.amazonaws.com/wrdsb-theme/css/bootstrap.css" rel="stylesheet" media="all">
-  <link href="https://s3.amazonaws.com/wrdsb-theme/css/bootstrap-theme.css" rel="stylesheet">
-  <link href="https://s3.amazonaws.com/wrdsb-theme/css/style.css" rel="stylesheet">
-  <link href="https://s3.amazonaws.com/wrdsb-theme/css/icon-styles.css" rel="stylesheet">
+  <link href="https://s3.amazonaws.com/wrdsb-ui-assets/1/1.0.0/master.css" rel="stylesheet" media="all">
 
-  <link href="https://s3.amazonaws.com/wrdsb-theme/images/icon-60x60.png" rel="apple-touch-icon" />
-  <link href="https://s3.amazonaws.com/wrdsb-theme/images/icon-76x76.png" rel="apple-touch-icon" sizes="76x76" />
-  <link href="https://s3.amazonaws.com/wrdsb-theme/images/icon-120x120.png" rel="apple-touch-icon" sizes="120x120" />
-  <link href="https://s3.amazonaws.com/wrdsb-theme/images/icon-152x152.png" rel="apple-touch-icon" sizes="152x152" />
-
-  <link href="https://s3.amazonaws.com/wrdsb-theme/css/addtohomescreen.css" rel="stylesheet">
+  <link href="https://s3.amazonaws.com/wrdsb-ui-assets/1/1.0.0/images/icon-60x60.png" rel="apple-touch-icon" />
+  <link href="https://s3.amazonaws.com/wrdsb-ui-assets/1/1.0.0/images/icon-76x76.png" rel="apple-touch-icon" sizes="76x76" />
+  <link href="https://s3.amazonaws.com/wrdsb-ui-assets/1/1.0.0/images/icon-120x120.png" rel="apple-touch-icon" sizes="120x120" />
+  <link href="https://s3.amazonaws.com/wrdsb-ui-assets/1/1.0.0/images/icon-152x152.png" rel="apple-touch-icon" sizes="152x152" />
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -105,6 +99,57 @@
 </head>
 
 <body id="top">
+
+<style type="text/css">
+#sitename {
+  font-size: 30px;
+  font-weight:bold;
+}
+
+#sitedescription {
+  font-size: 22px;
+  letter-spacing: 0;
+}
+
+#logo a #sitename, #logo a #sitedescription {
+  color:#005daa;
+}
+
+#logo a #sitename {
+  margin:0;
+  top:40px;
+  position:absolute;
+}
+
+#logo a #sitedescription {
+  margin:0;
+  top:75px;
+  position:absolute;
+}
+
+  @media (min-width: 992px) and (max-width: 1199px) {
+    #logo a #sitename {
+      font-size:26px;
+      top:44px;
+    }
+    #logo a #sitedescription {
+      font-size:20px;
+      top:78px;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    #logo a #sitename {
+      font-size:22px;
+      top:28px;
+    }
+    #logo a #sitedescription {
+      display:none;
+    }
+  }
+
+  </style>
+
   <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -119,20 +164,22 @@
       <div class="row">
         
         <div class="col-md-9 col-sm-8">
-          <div id="logo">
+          <div id="logo" role="logo" aria-labelledby="logo">
             <a href="<?php echo home_url(); ?>/"><span><?php echo get_bloginfo('name'); ?></span>
-              <h2><?php echo get_bloginfo('name'); ?></h2>
-              <h3><?php echo get_bloginfo('description'); ?></h3>
+              <p id="sitename"><?php echo get_bloginfo('name'); ?></p>
+              <?php if (get_bloginfo('description') != '') { ?>
+              <p id="sitedescription"><?php echo get_bloginfo('description'); ?></p>
+              <?php } ?>
             </a>
           </div>
         </div>
         
         <div class="col-md-3 col-sm-4">
-          <div class="staff-shortcuts">
+          <div class="staff-shortcuts" role="contact" aria-labelledby="staff-short-cut-list">
             <div class="staff-shortcut-list">
               <a href="#contact">Contact Information</a>
             </div>
-            <div class="searchbox">
+            <div class="searchbox" role="search" aria-labelledby="search">
               <form action="<?php echo home_url(); ?>/" method="get">
                   <input type="text" name="s" id="search" value="<?php the_search_query(); ?>" placeholder="Search" />
               </form>
@@ -142,7 +189,7 @@
       </div>
     </div>
 
-    <div class="navbar my-navbar" role="navigation">
+    <div class="navbar my-navbar" role="navigation" aria-label="Primary">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle togglesearch" data-toggle="collapse" data-target=".navbar-search">
             <span class="sr-only">Toggle navigation</span>
@@ -169,7 +216,7 @@
           <a class="navbar-brand" href="<?php echo home_url(); ?>/"><?php echo $newstrl; ?></a>
         </div>
             
-        <div class="collapse navbar-search">
+        <div class="collapse navbar-search" role="search" aria-label="Secondary">
           <p class="text-center"><input type="text" class="" /><span class="icon-search"></span></p>
         </div>
 
