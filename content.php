@@ -38,7 +38,7 @@ else :
 endif; ?>
 
 <?php if ('post' == get_post_type()) { ?>
-  <p class="postdate gray-dark small">Posted <?php echo get_the_date(); ?></p>
+  <p class="postdate">Posted <?php echo get_the_date(); ?></p>
 <?php } ?>
 
 <?php 
@@ -71,17 +71,17 @@ if ( has_excerpt ()) {
 
 	if (!isset($display_cats) && isset($display_tags)) {
 		echo '<div class="clearfix"></div>';
-		echo '<p class="categories gray-dark small">Tags: ';
+		echo '<p class="categories">Tags: ';
                 the_tags('',' &middot; ','');
                 echo '</p>';
 	} elseif (isset($display_cats) && !isset($display_tags)) {
 		echo '<div class="clearfix"></div>';
-		echo '<p class="categories gray-dark small">Categories: ';
+		echo '<p class="categories">Categories: ';
                 the_category(' &middot; ');
                 echo '</p>';
 	} elseif (isset($display_cats) && isset($display_tags)) {
 		echo '<div class="clearfix"></div>';
-		echo '<p class="categories gray-dark small">Categories: ';
+		echo '<p class="categories">Categories: ';
                 the_category(' &middot; ');
                 echo ' Tags: ';
                 the_tags('',' &middot; ','');

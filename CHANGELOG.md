@@ -1,6 +1,12 @@
 ## 0.12.0
 + accessibility changes
 + remove h2 and h3 from site header, replaced with #sitename and #sitedescription
++ add sections with roles, aria_label and aria_labelledby attributes
++ add roles, aria_label and aria_labelledby attributes for all areas in header.php and footer.php
++ search field aria and role
++ sidenav aria and role
++ admin bar aria and role
++ breadcrumb area and role
 
 ## 0.11.2
 + add function to remove Advanced CSS from Customizer

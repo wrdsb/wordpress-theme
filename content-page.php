@@ -24,17 +24,17 @@
 	}
 	if (!isset($display_cats) && isset($display_tags)) {
 		echo '<div class="clearfix"></div>';
-		echo '<p class="categories gray-dark small">Tags: ';
+		echo '<p class="categories">Tags: ';
                 the_tags('',' &middot; ','');
                 echo '</p>';
 	} elseif (isset($display_cats) && !isset($display_tags)) {
 		echo '<div class="clearfix"></div>';
-		echo '<p class="categories gray-dark small">Categories: ';
+		echo '<p class="categories">Categories: ';
                 the_category(' &middot; ');
                 echo '</p>';
 	} elseif (isset($display_cats) && isset($display_tags)) {
 		echo '<div class="clearfix"></div>';
-		echo '<p class="categories gray-dark small">Categories: ';
+		echo '<p class="categories">Categories: ';
                 the_category(' &middot; ');
                 echo ' Tags: ';
                 the_tags('',' &middot; ','');
