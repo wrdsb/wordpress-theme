@@ -1,3 +1,6 @@
+## 0.11.4
++ add instagram follow button to footer
+
 ## 0.11.3
 - remove duplicate myway banner
 
