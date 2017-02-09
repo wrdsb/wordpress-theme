@@ -397,8 +397,8 @@ require get_template_directory() . '/inc/customizer.php';
 
 function the_breadcrumb() {
   global $post;
-  echo '<div class="container container-breadcrumb" id="breadcrumbs" role="navigation" aria_label="Tertiary">';
-  echo '<ol class="breadcrumb">';
+  echo '<div class="container container-breadcrumb" role="navigation" aria_labelledby="breadcrumb">';
+  echo '<ol id="breadcrumb">';
   if (!is_front_page()) {
     echo '<li>';
     echo '<a href="';
@@ -444,7 +444,7 @@ function the_breadcrumb() {
 function wrdsb_secondary_school_colours() {
   $parsed_url = parse_url(site_url());
   $host = explode('.', $parsed_url['host']);
-  $asset_version = "0/0.10.4";
+  $asset_version = "1/1.0.1";
   switch ($host[0]) {
     case "bci":
       echo '<!-- Site specific styles for BCI -->'."\r\n";
@@ -860,9 +860,7 @@ function custom_upload_mimes ( $existing_mimes=array() ) {
 // Favicon
 if ( ! function_exists ('favicon_link' ) ) {
   function favicon_link() {
-    echo '<link rel="shortcut icon" type="image/x-icon" href="';
-    bloginfo('stylesheet_directory');
-    echo '/favicon.png" />' . "\n";
+    echo '<link rel="shortcut icon" type="image/x-icon" href="https://s3.amazonaws.com/wrdsb-ui-assets/'.$asset_version.'/images/favicon.png" />' . "\n";
   }
   add_action( 'wp_head', 'favicon_link' );
 }

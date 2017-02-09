@@ -123,7 +123,7 @@
     <div class="header">
       <div class="row">
         <div class="col-md-9 col-sm-8">
-          <div id="logo" role="logo" aria-labelledby="logo">
+          <div id="logo" role="logo" aria-label="Site Identity">
             <a href="<?php echo home_url(); ?>/"><span><?php echo get_bloginfo('name'); ?></span>
               <p id="sitename"><?php echo get_bloginfo('name'); ?></p>
               <?php if (get_bloginfo('description') != '') { ?>
@@ -133,13 +133,13 @@
           </div>
         </div>
         <div class="col-md-3 col-sm-4">
-          <div class="staff-shortcuts" role="contact" aria-labelledby="staff-short-cut-list">
-            <div class="staff-shortcut-list">
+          <div class="staff-shortcuts" role="contact" aria-labelledby="staff-shortcut-list">
+            <div id="staff-shortcut-list">
               <a href="#contact">Contact Information</a>
             </div>
             <div class="searchbox" role="search" aria-labelledby="search">
-              <form action="<?php echo home_url(); ?>/" method="get">
-                <input type="text" name="s" id="search" value="<?php the_search_query(); ?>" placeholder="Search" />
+              <form id="search" action="<?php echo home_url(); ?>/" method="get">
+                <input type="text" name="s" value="<?php the_search_query(); ?>" placeholder="Search" />
               </form>
             </div>
           </div>
@@ -148,11 +148,9 @@
     </div>
 
     <div class="navbar my-navbar" role="navigation" aria-labelledby="navbar-header">
-        <div class="navbar-header">
+        <div id="navbar-header">
           <button type="button" class="navbar-toggle togglesearch" data-toggle="collapse" data-target=".navbar-search">
             <span class="sr-only">Toggle navigation</span>
-            <span class="icon-search"></span>
-            <span class="icon-search"></span>
             <span class="icon-search"></span>
           </button>
 
@@ -177,11 +175,13 @@
           <a class="navbar-brand" href="<?php echo home_url(); ?>/"><?php echo $newstrl; ?></a>
         </div>
             
-        <div class="collapse navbar-search" role="search" aria-label="Secondary">
-          <p class="text-center"><input type="text" class="" /><span class="icon-search"></span></p>
+        <div class="collapse navbar-search" role="mobile search" aria-labelledby="mobileSearch">
+              <form id="mobileSearch" action="<?php echo home_url(); ?>/" method="get">
+                <input type="text" name="s" id="search" value="<?php the_search_query(); ?>" placeholder="Search" />
+              </form>
         </div>
 
-        <div id="menu" role="navigation" aria_labelledby="navbar-collapse" aria_label="Primary">
+        <div id="menu" role="navigation" aria_label="Menu">
 
         <?php if (has_nav_menu('top')) {
           wp_nav_menu(array('theme_location' => 'top', 'menu_class' => 'nav nav-justified', 'container_class' => 'collapse navbar-collapse'));
@@ -193,18 +193,10 @@
   </div><!-- /.container-top -->
 
   <?php if (is_front_page()) { 
-    // if we have featured content, include the featured content template
-    // get_template_part( 'featured-content' ); ?>
-    <!--<div class="container" role="jumbotron" aria-labelledby="jumbotron">-->
-      <!--<div class="jumbotron">-->
-        <!--<h1>Jumbotron!</h1>-->
-      <!--</div>-->
-    <!--</div>-->
 
-    <?php
     // if we have an alert
     if (function_exists('stswr_alerts_get_current_alert') && stswr_alerts_get_current_alert('id') !== '0') {
-        echo '<div class="container" role="stswr_alerts" aria-labelledby="alerts"><div class="alerts">';
+        echo '<div class="container" role="stswr_alerts" aria-labelledby="alerts"><div id="alerts">';
         echo '<h1>'.stswr_alerts_get_current_alert('title').'</h1>';
         echo stswr_alerts_get_current_alert('body-html');
         echo '</div></div>';
@@ -212,7 +204,7 @@
 
     // if there is no alert, but a header image
     else if (get_header_image()) { ?>
-      <div class="container" role="headerimage">
+      <div class="container" role="headerimage" aria_label="Header Image">
         <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
       </div>
     <?php   

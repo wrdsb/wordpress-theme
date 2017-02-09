@@ -5,7 +5,7 @@
   if (is_active_sidebar('sidebar-left') || has_nav_menu('left')) {$has_left = TRUE;}
   if (is_active_sidebar('sidebar-right') || has_nav_menu('right')) {$has_right = TRUE;}
 ?>
-<div class="container">
+<div class="container" role="content" aria_label="Main Content">
   <div class="row">
     <?php
     # Both sidebars
@@ -66,7 +66,7 @@
       <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
       <div <?php if(is_home() && $post==$posts[0] && !is_paged()) echo ' firstpost';?>>
         <h1><?php the_title(); ?></h1>
-        <small class="gray-dark"> <?php the_time('F jS') ?>, <?php the_time('Y') ?></small>
+        <p class="postdate"> <?php the_time('F jS') ?>, <?php the_time('Y') ?></p>
 
         <p><?php the_content(__('Read more'));?></p>
 
@@ -87,17 +87,17 @@
 	}
 	if (!isset($display_cats) && isset($display_tags)) {
 		echo '<div class="clearfix"></div>';
-		echo '<p class="categories gray-dark small">Tags: ';
+		echo '<p class="categories">Tags: ';
                 the_tags('',' &middot; ','');
                 echo '</p>';
 	} elseif (isset($display_cats) && !isset($display_tags)) {
 		echo '<div class="clearfix"></div>';
-		echo '<p class="categories gray-dark small">Categories: ';
+		echo '<p class="categories">Categories: ';
                 the_category(' &middot; ');
                 echo '</p>';
 	} elseif (isset($display_cats) && isset($display_tags)) {
 		echo '<div class="clearfix"></div>';
-		echo '<p class="categories gray-dark small">Categories: ';
+		echo '<p class="categories">Categories: ';
                 the_category(' &middot; ');
                 echo ' Tags: ';
                 the_tags('',' &middot; ','');

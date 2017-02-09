@@ -17,7 +17,7 @@ include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
       <div class="container">
         <div class="row">
           <div class="col-sm-6 col-md-3">
-            <section role="contact_wrdsb">
+            <section role="contact_wrdsb" aria_label="Contact the WRDSB">
               <!-- automate address -->
               <?php
               // from plugin wrdsb_schools_contact.php
@@ -44,7 +44,7 @@ include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
             </section>
           </div>
           <div class="col-sm-6 col-md-3">
-            <section role="wrdsb_contact_you">
+            <section role="wrdsb_contact_you" aria_label="Let the WRDSB Contact You">
               <h1>Let Us Email You!</h1>
               <p>Families and students, with <a href="https://www.wrdsb.ca/about-the-wrdsb/communications-engagement-department/casl/" target="_blank">CASL</a> we need to get your permission to email you about your child. Here is how!</p>
               <h2>Parents/Guardians</h2>
@@ -54,7 +54,7 @@ include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
             </section>
           </div>
           <div class="col-sm-6 col-md-3">
-            <section role="subscription">
+            <section role="subscription" aria_label="Subscription Options">
               <h1>Stay Connected</h1>
               <?php if ( is_plugin_active( 'wordpress-plugin-mailgun-subscriptions/mailgun-subscriptions.php' ) ) {
                 if ( is_active_sidebar( 'footer-centre' ) ) :
@@ -69,7 +69,7 @@ include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
             </section>
           </div>
           <div class="col-sm-6 col-md-3">
-            <section role="custom_footer">
+            <section role="custom_footer" aria_label="Site Specific Footer Content">
             <?php if ( is_active_sidebar( 'footer-right' ) ) : ?>
               <?php dynamic_sidebar( 'footer-right' ); ?>
             <?php endif; ?>

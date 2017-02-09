@@ -8,7 +8,7 @@
 */
 ?>
 <?php if ( is_active_sidebar( 'sidebar-left' ) ) : ?>
-  <div class="sidebar-left widget-area" role="complementary">
+  <div class="sidebar-left widget-area" role="sidebar" aria_label="Left Sidebar">
     <?php dynamic_sidebar( 'sidebar-left' ); ?>
   </div><!-- #primary-sidebar -->
 <?php endif; ?>

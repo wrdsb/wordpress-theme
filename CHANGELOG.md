@@ -1,4 +1,5 @@
-## 0.12.0
+## 1.0.0
++ Royal Blue Tang
 + accessibility changes
 + remove h2 and h3 from site header, replaced with #sitename and #sitedescription
 + add sections with roles, aria_label and aria_labelledby attributes
@@ -7,6 +8,9 @@
 + sidenav aria and role
 + admin bar aria and role
 + breadcrumb area and role
++ aria and role for page templates
++ .alerts to #alerts for STSWR Alerts Section
++ aria and role for header image
 
 ## 0.11.2
 + add function to remove Advanced CSS from Customizer

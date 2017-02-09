@@ -5,7 +5,7 @@ Template Name: Search Page
 ?>
 <?php get_header(); ?>
 
-<div class="container">
+<div class="container" role="content" aria_label="Search Results">
   <div class="row">
     <div class="col-sm-12 col-lg-12">
 
@@ -16,7 +16,7 @@ Template Name: Search Page
         <?php while (have_posts()): the_post(); ?>
           <h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
           <?php if ('post' == get_post_type()) { ?>
-            <small class="gray-dark">Posted <?php echo get_the_date(); ?></small>
+            <p class="postdate">Posted <?php echo get_the_date(); ?></p>
           <?php } ?>
           <?php the_excerpt(); ?>
         <?php endwhile; ?>

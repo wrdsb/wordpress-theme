@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="container">
+<div class="container" role="content" aria_label="Main Content">
   <div class="row">
 
     <?php
