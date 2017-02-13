@@ -397,8 +397,8 @@ require get_template_directory() . '/inc/customizer.php';
 
 function the_breadcrumb() {
   global $post;
-  echo '<div class="container container-breadcrumb" role="navigation" aria_labelledby="breadcrumb">';
-  echo '<ol id="breadcrumb">';
+  echo '<div class="container container-breadcrumb" role="navigation" aria_label="Breadcrumbs">';
+  echo '<ol class="breadcrumb">';
   if (!is_front_page()) {
     echo '<li>';
     echo '<a href="';
