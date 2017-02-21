@@ -5,7 +5,7 @@ Template Name: No Sidebars
 ?>
 <?php get_header(); ?>
 
-<div class="container" role="content" aria_label="Main Content">
+<div class="container" role="main">
   <div class="row">
     <div class="col-sm-12">
       <?php // check if the post has a Post Thumbnail assigned to it.

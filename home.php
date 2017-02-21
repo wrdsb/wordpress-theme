@@ -13,7 +13,7 @@
     # Both sidebars
     # left column
     if (($has_left === TRUE) and ($has_right === TRUE)):
-      echo '<div class="col-sm-3 col-md-2 col-lg-2">';
+      echo '<div class="col-sm-3 col-md-2 col-lg-2" role="complementary">';
 
       if (is_front_page() && wrdsb_i_am_a_school_exception()) { ?>
         <p><a href="https://myway.wrdsb.ca/" onclick="ga('send', 'event', 'schoolBanners', 'click_banner', 'myway', 'https://myway.wrdsb.ca/',{'nonInteraction':1});"><img src="https://www.wrdsb.ca/wp-content/uploads/myway_banner_344x100.jpg" alt="MyWay Logo"/></a></p>
@@ -50,7 +50,7 @@
       echo '</div>';
     # Just left sidebar
     elseif (($has_left === TRUE) and ($has_right === FALSE)):
-      echo '<div class="col-sm-3 col-lg-3">';
+      echo '<div class="col-sm-3 col-lg-3" role="complementary">';
 
       if (is_front_page() && wrdsb_i_am_a_school_exception()) { ?>
         <p><a href="https://myway.wrdsb.ca/" onclick="ga('send', 'event', 'schoolBanners', 'click_banner', 'myway', 'https://myway.wrdsb.ca/',{'nonInteraction':1});"><img src="https://www.wrdsb.ca/wp-content/uploads/myway_banner_344x100.jpg" alt="MyWay Logo"/></a></p>
@@ -98,19 +98,18 @@
     # Both sidebars
     # content area
     if (($has_left === TRUE) and ($has_right === TRUE)):
-      echo '<div class="col-sm-6 col-md-8 col-lg-8">';
+      echo '<div class="col-sm-6 col-md-8 col-lg-8" role="main">';
     # Just left sidebar
     elseif (($has_left === TRUE) and ($has_right === FALSE)):
-      echo '<div class="col-sm-9 col-lg-9">';
+      echo '<div class="col-sm-9 col-lg-9" role="main">';
     # Just right sidebar
     elseif (($has_left === FALSE) and ($has_right === TRUE)):
-      echo '<div class="col-sm-9">';
+      echo '<div class="col-sm-9" role="main">';
     # No sidebars
     elseif (($has_left === FALSE) and ($has_right === FALSE)):
-      echo '<div class="col-sm-12 col-lg-12">';
+      echo '<div class="col-sm-12 col-lg-12" role="main">';
     endif
     ?>
-
             <h1>News &amp; Announcements</h1>
             <?php
               // Start the Loop.
@@ -135,7 +134,7 @@
     # Both sidebars
     # right column
     if (($has_left === TRUE) and ($has_right === TRUE)):
-      echo '<div class="col-sm-3 col-md-2 col-lg-2">';
+      echo '<div class="col-sm-3 col-md-2 col-lg-2" role="complementary">';
 
       get_sidebar('right');
       echo '</div>';
@@ -143,7 +142,7 @@
       # Nothing to do
     # Just right sidebar
     elseif (($has_left === FALSE) and ($has_right === TRUE)):
-      echo '<div class="col-sm-3">';
+      echo '<div class="col-sm-3" role="complementary">';
       get_sidebar('right');
       echo '</div>';
     # No sidebars

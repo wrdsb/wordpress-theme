@@ -5,7 +5,7 @@ Template Name: Search Page
 ?>
 <?php get_header(); ?>
 
-<div class="container" role="content" aria_label="Search Results">
+<div class="container" role="main">
   <div class="row">
     <div class="col-sm-12 col-lg-12">
 

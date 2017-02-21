@@ -9,7 +9,7 @@
  * @since WRDSB 1.0
 */
 ?>
-<div class="navbar my-sub-navbar" role="navigation" aria_label="Section Navigation">
+<div class="navbar my-sub-navbar" role="complementary">
   
   <?php 
   # If we have a menu in the 'left' menu location ... 

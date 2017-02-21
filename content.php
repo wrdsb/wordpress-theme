@@ -71,17 +71,17 @@ if ( has_excerpt ()) {
 
 	if (!isset($display_cats) && isset($display_tags)) {
 		echo '<div class="clearfix"></div>';
-		echo '<p class="categories">Tags: ';
+		echo '<p class="categories" role="menubar">Tags: ';
                 the_tags('',' &middot; ','');
                 echo '</p>';
 	} elseif (isset($display_cats) && !isset($display_tags)) {
 		echo '<div class="clearfix"></div>';
-		echo '<p class="categories">Categories: ';
+		echo '<p class="categories" role="menubar">Categories: ';
                 the_category(' &middot; ');
                 echo '</p>';
 	} elseif (isset($display_cats) && isset($display_tags)) {
 		echo '<div class="clearfix"></div>';
-		echo '<p class="categories">Categories: ';
+		echo '<p class="categories" role="menubar">Categories: ';
                 the_category(' &middot; ');
                 echo ' Tags: ';
                 the_tags('',' &middot; ','');

@@ -123,8 +123,8 @@
     <div class="header">
       <div class="row">
         <div class="col-md-9 col-sm-8">
-          <div id="logo" role="logo" aria-label="Site Identity">
-            <a href="<?php echo home_url(); ?>/"><span><?php echo get_bloginfo('name'); ?></span>
+          <div id="logo" role="heading">
+            <a aria-labelledby="logo" href="<?php echo home_url(); ?>/"><span><?php echo get_bloginfo('name'); ?></span>
               <p id="sitename"><?php echo get_bloginfo('name'); ?></p>
               <?php if (get_bloginfo('description') != '') { ?>
               <p id="sitedescription"><?php echo get_bloginfo('description'); ?></p>
@@ -133,13 +133,13 @@
           </div>
         </div>
         <div class="col-md-3 col-sm-4">
-          <div class="staff-shortcuts" role="contact" aria-labelledby="staff-shortcut-list">
+          <div class="staff-shortcuts" role="complementary" aria-labelledby="staff-shortcut-list">
             <div id="staff-shortcut-list">
               <a href="#contact">Contact Information</a>
             </div>
             <div class="searchbox" role="search" aria-labelledby="search">
-              <form id="search" action="<?php echo home_url(); ?>/" method="get">
-                <input type="text" name="s" value="<?php the_search_query(); ?>" placeholder="Search" />
+              <form action="<?php echo home_url(); ?>/" method="get">
+                <input arialabel="Search" type="text" name="s" id="search" value="<?php the_search_query(); ?>" placeholder="Search" />
               </form>
             </div>
           </div>
@@ -175,9 +175,9 @@
           <a class="navbar-brand" href="<?php echo home_url(); ?>/"><?php echo $newstrl; ?></a>
         </div>
             
-        <div class="collapse navbar-search" role="mobile search" aria-labelledby="mobileSearch">
-              <form id="mobileSearch" action="<?php echo home_url(); ?>/" method="get">
-                <input type="text" name="s" id="search" value="<?php the_search_query(); ?>" placeholder="Search" />
+        <div class="collapse navbar-search" role="search" aria-labelledby="mobileSearch">
+              <form action="<?php echo home_url(); ?>/" method="get">
+                <input arialabel="Search" type="text" name="s" id="mobileSearch" value="<?php the_search_query(); ?>" placeholder="Search" />
               </form>
         </div>
 
@@ -196,7 +196,7 @@
 
     // if we have an alert
     if (function_exists('stswr_alerts_get_current_alert') && stswr_alerts_get_current_alert('id') !== '0') {
-        echo '<div class="container" role="stswr_alerts" aria-labelledby="alerts"><div id="alerts">';
+        echo '<div class="container" role="alert" aria-labelledby="alerts"><div id="alerts">';
         echo '<h1>'.stswr_alerts_get_current_alert('title').'</h1>';
         echo stswr_alerts_get_current_alert('body-html');
         echo '</div></div>';
@@ -204,7 +204,7 @@
 
     // if there is no alert, but a header image
     else if (get_header_image()) { ?>
-      <div class="container" role="headerimage" aria_label="Header Image">
+      <div class="container" role="Img" aria_label="Header Image">
         <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
       </div>
     <?php   

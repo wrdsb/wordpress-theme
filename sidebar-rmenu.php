@@ -14,7 +14,7 @@
   <?php if (has_nav_menu('right')) {
   //wp_nav_menu(array('theme_location' => 'right', 'menu_class' => '', 'container' => false));
   ?>
-<div class="navbar my-sub-navbar" role="navigation">
+<div class="navbar my-sub-navbar" role="complementary">
   <div class="sub-navbar-header">
     <button type="button" class="navbar-toggle toggle-subnav" data-toggle="collapse" data-target=".sub-navbar-collapse">
       <span class="sr-only">Toggle navigation</span>

@@ -47,7 +47,7 @@ iframe {
 <body>
 <div class="container">
   <div class="row">
-    <div class="col-sm-12" role="content" aria_label="Main Content">
+    <div class="col-sm-12" role="main">
       
       <?php
         // Start the Loop.

@@ -397,7 +397,7 @@ require get_template_directory() . '/inc/customizer.php';
 
 function the_breadcrumb() {
   global $post;
-  echo '<div class="container container-breadcrumb" role="navigation" aria_label="Breadcrumbs">';
+  echo '<div class="container container-breadcrumb" role="navigation">';
   echo '<ol class="breadcrumb">';
   if (!is_front_page()) {
     echo '<li>';
@@ -525,7 +525,7 @@ function wrdsb_add_excerpts_to_pages() {
 // Replaces the excerpt "[...]" more text with a link
 function new_excerpt_more($more) {
   global $post;
-  return ' [...]<p class="readmore"><a href="'. get_permalink($post->ID) . '"><strong>Read more about</strong> <cite>'. get_the_title($post->ID) .'</cite> &#187;</a></p>';
+  return ' [...]<p class="readmore" role="complementary"><a href="'. get_permalink($post->ID) . '"><strong>Read more about</strong> <cite>'. get_the_title($post->ID) .'</cite> &#187;</a></p>';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 
