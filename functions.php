@@ -397,7 +397,7 @@ require get_template_directory() . '/inc/customizer.php';
 
 function the_breadcrumb() {
   global $post;
-  echo '<div class="container container-breadcrumb">';
+  echo '<div class="container container-breadcrumb" role="navigation">';
   echo '<ol class="breadcrumb">';
   if (!is_front_page()) {
     echo '<li>';
@@ -444,7 +444,7 @@ function the_breadcrumb() {
 function wrdsb_secondary_school_colours() {
   $parsed_url = parse_url(site_url());
   $host = explode('.', $parsed_url['host']);
-  $asset_version = "0/0.10.4";
+  $asset_version = "1/1.0.1";
   switch ($host[0]) {
     case "bci":
       echo '<!-- Site specific styles for BCI -->'."\r\n";
@@ -525,7 +525,7 @@ function wrdsb_add_excerpts_to_pages() {
 // Replaces the excerpt "[...]" more text with a link
 function new_excerpt_more($more) {
   global $post;
-  return ' [...]<p class="readmore"><a href="'. get_permalink($post->ID) . '"><strong>Read more about</strong> <cite>'. get_the_title($post->ID) .'</cite> &#187;</a></p>';
+  return ' [...]<p class="readmore" role="complementary"><a href="'. get_permalink($post->ID) . '"><strong>Read more about</strong> <cite>'. get_the_title($post->ID) .'</cite> &#187;</a></p>';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 
@@ -860,9 +860,7 @@ function custom_upload_mimes ( $existing_mimes=array() ) {
 // Favicon
 if ( ! function_exists ('favicon_link' ) ) {
   function favicon_link() {
-    echo '<link rel="shortcut icon" type="image/x-icon" href="';
-    bloginfo('stylesheet_directory');
-    echo '/favicon.png" />' . "\n";
+    echo '<link rel="shortcut icon" type="image/x-icon" href="https://s3.amazonaws.com/wrdsb-ui-assets/'.$asset_version.'/images/favicon.png" />' . "\n";
   }
   add_action( 'wp_head', 'favicon_link' );
 }

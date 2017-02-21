@@ -5,13 +5,13 @@ Template Name: No Sidebars
 ?>
 <?php get_header(); ?>
 
-<div class="container">
+<div class="container" role="main">
   <div class="row">
     <div class="col-sm-12">
       <?php // check if the post has a Post Thumbnail assigned to it.
         if ( has_post_thumbnail() ) {
-          echo '<div class="featuredimage">';
-          the_post_thumbnail('wrdsb-full-width');
+          echo '<div class="featuredimage" role="presentation">';
+          the_post_thumbnail('wrdsb-full-width','alt');
           echo '</div>';
         }
       ?>

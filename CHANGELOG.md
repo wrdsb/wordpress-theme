@@ -1,7 +1,18 @@
+## 1.0.0
++ Royal Blue Tang
++ accessibility changes
++ remove h2 and h3 from site header, replaced with #sitename and #sitedescription
++ add roles, aria_label and aria_labelledby attributes where required
++ .alerts to #alerts for STSWR Alerts Section'
++ add alt text for featured images
+
 ## 0.11.4
 + add instagram follow button to footer
 
 ## 0.11.3
++ remove duplicate myway banner
+
+## 0.11.2		
 - remove duplicate myway banner
 
 ## 0.11.2

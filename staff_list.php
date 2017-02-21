@@ -6,7 +6,7 @@ Template Name: Staff List
 <?php $user_query = new WP_User_Query(array('blog_id' => $GLOBALS['blog_id'])); ?>
 <?php get_header(); ?>
 
-<div class="container">
+<div class="container" role="main">
   <div class="row">
     <div class="col-md-12">
     <?php
