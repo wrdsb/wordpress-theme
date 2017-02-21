@@ -9,12 +9,12 @@
  * @since WRDSB 1.0
 */
 ?>
-<div class="navbar my-sub-navbar" role="complementary">
+<div class="navbar my-sub-navbar" id="section_navigation" role="navigation">
   
   <?php 
   # If we have a menu in the 'left' menu location ... 
   if (has_nav_menu('left')): ?>
-  <div class="sub-navbar-header">
+  <div class="sub-navbar-header" aria-labelledby="section_navigation">
     <button type="button" class="navbar-toggle toggle-subnav" data-toggle="collapse" data-target=".sub-navbar-collapse">
       <span class="sr-only">Toggle navigation</span>
       <span class="icon-bar"></span>

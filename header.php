@@ -135,11 +135,11 @@
         <div class="col-md-3 col-sm-4">
           <div class="staff-shortcuts" role="complementary" aria-labelledby="staff-shortcut-list">
             <div id="staff-shortcut-list">
-              <a href="#contact">Contact Information</a>
+              <a href="#address">Contact Information</a>
             </div>
             <div class="searchbox" role="search" aria-labelledby="search">
               <form action="<?php echo home_url(); ?>/" method="get">
-                <input arialabel="Search" type="text" name="s" id="search" value="<?php the_search_query(); ?>" placeholder="Search" />
+                <input aria-label="Search" type="text" name="s" id="search" value="<?php the_search_query(); ?>" placeholder="Search" />
               </form>
             </div>
           </div>
@@ -177,7 +177,7 @@
             
         <div class="collapse navbar-search" role="search" aria-labelledby="mobileSearch">
               <form action="<?php echo home_url(); ?>/" method="get">
-                <input arialabel="Search" type="text" name="s" id="mobileSearch" value="<?php the_search_query(); ?>" placeholder="Search" />
+                <input aria-label="Search" type="text" name="s" id="mobileSearch" value="<?php the_search_query(); ?>" placeholder="Search" />
               </form>
         </div>
 

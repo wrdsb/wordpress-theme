@@ -49,15 +49,15 @@
 
     <?php // check if the post has a Post Thumbnail assigned to it.
       if ( has_post_thumbnail() ) {
-        echo '<div class="featuredimage" role="img">';
+        echo '<div class="featuredimage" role="presentation">';
         if (($has_left == TRUE) and ($has_right == TRUE)):
-          the_post_thumbnail('wrdsb-two-sidebars');
+          the_post_thumbnail('wrdsb-two-sidebars','alt');
         elseif (($has_left == TRUE) and ($has_right == FALSE)):
-          the_post_thumbnail('wrdsb-one-sidebar');
+          the_post_thumbnail('wrdsb-one-sidebar','alt');
         elseif (($has_left == FALSE) and ($has_right == TRUE)):
-          the_post_thumbnail('wrdsb-one-sidebar');
+          the_post_thumbnail('wrdsb-one-sidebar','alt');
         elseif (($has_left == FALSE) and ($has_right == FALSE)):
-          the_post_thumbnail('wrdsb-full-width');
+          the_post_thumbnail('wrdsb-full-width','alt');
         endif;
         echo '</div>';
       }

@@ -5,7 +5,13 @@
 + add roles, aria_label and aria_labelledby attributes
 + .alerts to #alerts for STSWR Alerts Section
 
-## 0.11.2
+## 0.11.4
++ add instagram follow button to footer
+
+## 0.11.3
++ remove duplicate myway banner
+
+## 0.11.2		
 + add function to remove Advanced CSS from Customizer
 
 ## 0.11.1

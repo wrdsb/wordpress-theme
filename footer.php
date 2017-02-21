@@ -13,7 +13,7 @@
  */
 include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 ?>
-    <div id="footer" class="footer" id="contact" role="contentinfo">
+    <div id="footer" class="footer" role="contentinfo">
       <div class="container">
         <div class="row">
           <div class="col-sm-6 col-md-3" aria-labelledby="address">
@@ -47,7 +47,7 @@ include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
               <h2>Parents/Guardians</h2>
               <p><a href="https://secure.wrdsb.ca/subscribe/">Add your email address</a> to your contact record in our student information system!</p>
               <h2>Students 18+</h2>
-              <p><a href="https://secure.wrdsb.ca/subscribe/over_eighteen.aspx">Add your email address</a> to your contact record in our student information system!</p>
+              <p>If you are a student over 18, you can <a href="https://secure.wrdsb.ca/subscribe/over_eighteen.aspx">add your personal email address</a> to your contact record. </p>
           </div>
           <div class="col-sm-6 col-md-3" aria-labelledby="connect-wrdsb">
               <h1 role="form" id="connect-wrdsb">Stay Connected</h1>
