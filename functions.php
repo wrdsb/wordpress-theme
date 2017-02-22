@@ -396,6 +396,7 @@ require get_template_directory() . '/inc/customizer.php';
 
 
 function the_breadcrumb() {
+  if (is_singular('sfwd-lessons') or is_singular('sfwd-quiz')) {return;}
   global $post;
   echo '<div class="container container-breadcrumb" role="navigation">';
   echo '<ol class="breadcrumb">';
@@ -407,8 +408,28 @@ function the_breadcrumb() {
     echo 'Home';
     echo '</a>';
     echo '</li>';
-    if (is_single()) {
+    if (is_singular('post')) {
       echo '<li><a href="'.wrdsb_posts_page_url().'">News</a></li>';
+      echo '<li>';
+      the_title();
+      echo '</li>';
+    } elseif (is_singular('certification')) {
+      echo '<li>Certifications</li>';
+      echo '<li>';
+      the_title();
+      echo '</li>';
+    } elseif (is_singular('co-op-certification')) {
+      echo '<li>Co-op Certifications</li>';
+      echo '<li>';
+      the_title();
+      echo '</li>';
+    } elseif (is_singular('shsm')) {
+      echo '<li>SHSM</li>';
+      echo '<li>';
+      the_title();
+      echo '</li>';
+    } elseif (is_singular('sfwd-courses')) {
+      echo '<li>Courses</li>';
       echo '<li>';
       the_title();
       echo '</li>';
