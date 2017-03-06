@@ -1,3 +1,7 @@
+## 1.0.2
++ learndash page types
++ system memo prototype
+
 ## 1.0.0
 + Royal Blue Tang
 + accessibility changes
