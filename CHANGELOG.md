@@ -1,3 +1,7 @@
+## 1.0.2
++ learndash page types
++ system memo prototype
+
 ## 1.0.1
 + subscription widget fix in footer
 
