@@ -2,6 +2,9 @@
 + learndash page types
 + system memo prototype
 
+## 1.0.1
++ subscription widget fix in footer
+
 ## 1.0.0
 + Royal Blue Tang
 + accessibility changes
