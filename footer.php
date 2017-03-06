@@ -62,9 +62,7 @@ include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
           <div class="col-sm-6 col-md-3" aria-labelledby="connect-wrdsb">
               <h1 role="form" id="connect-wrdsb">Stay Connected</h1>
               <?php if ( is_plugin_active( 'wordpress-plugin-mailgun-subscriptions/mailgun-subscriptions.php' ) ) {
-                if ( is_active_sidebar( 'footer-centre' ) ) :
-                  dynamic_sidebar( 'footer-centre' );
-                endif;
+                the_widget( 'Mailgun_Subscriptions\Widget' );
               } else {
                 the_widget( 'WRDSB_Subscribe_By_Email_Widget' );
               } ?>
