@@ -1,3 +1,6 @@
+## 1.0.3
++ fix contact link to footer
+
 ## 1.0.2
 + learndash page types
 + system memo prototype
