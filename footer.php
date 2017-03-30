@@ -16,7 +16,7 @@ include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
     <div id="footer" class="footer" role="contentinfo">
       <div class="container">
         <div class="row">
-          <div class="col-sm-6 col-md-3" aria-labelledby="address">
+          <div id="address" class="col-sm-6 col-md-3" aria-labelledby="address">
               <!-- automate address -->
               <?php
               // from plugin wrdsb_schools_contact.php
@@ -25,7 +25,7 @@ include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
               }
               else { ?>
               <address>
-                <h1 id="address">Waterloo Region District School Board</h1>
+                <h1>Waterloo Region District School Board</h1>
               	<p>51 Ardelt Avenue<br />
                 Kitchener, ON N2C 2R5</p>
                 <p>Switchboard: 519-570-0003<br />
