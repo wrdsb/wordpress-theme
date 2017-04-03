@@ -1,3 +1,6 @@
+## 1.0.4
++ Safe, Caring & Inclusive Schools Survey Button
+
 ## 1.0.3
 + fix contact link to footer
 
