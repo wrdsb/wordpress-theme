@@ -1,3 +1,7 @@
+## 1.0.6
++ student trustee logo
++ fix space
+
 ## 1.0.5
 + postal code for CHI
 

@@ -26,6 +26,11 @@
       <?php
       }
 
+      if (is_front_page() && wrdsb_i_am_a_school_secondary()) { ?>
+        <p><a href="http://www.wrdsb.ca/board-meetings/student-trustees/becoming-a-student-trustee/" javascript="ga('send', 'event', 'school-banner', 'click-banner', 'Student Trustee Application 2017');"><img src="https://www.wrdsb.ca/wp-content/uploads/student-trustee-button.png" height="100" width="263" alt="Become a Student Trustee!" /></a></p>
+      <?php
+      }
+
       if (is_front_page() && wrdsb_i_am_a_school()) { ?>
         <p><a href="https://www.wrdsb.ca/blog/2017/04/03/safe-caring-inclusive-school-surveys-for-parentsguardians/" target="_blank" javascript="ga('send', 'event', 'school-banners', 'click-banner', 'SCIS Survey 2017');"><img src="https://www.wrdsb.ca/wp-content/uploads/scis_button2.png" alt="Take our SCIS survey until May 12, 2017" /></a></p>
         <p><a href="https://myway.wrdsb.ca/" onclick="ga('send', 'event', 'schoolBanners', 'click_banner', 'myway'"><img src="https://www.wrdsb.ca/wp-content/uploads/myway_banner_344x100.jpg" alt="MyWay Logo"/></a></p>
@@ -36,10 +41,7 @@
 	    <?php
       }
 
-      //if (is_front_page() && wrdsb_i_am_a_school_secondary()) { }
-
       get_sidebar('left');
-
 
     if (is_front_page() && wrdsb_i_am_a_school_exception()) { ?>
       <p><a href="https://www.canadahelps.org/dn/15506" target="_blank" onclick="ga('send', 'event', 'schoolBanners', 'click_banner', 'wefi', 'https://www.canadahelps.org/dn/15506',{'nonInteraction':1});"><img src="https://www.wrdsb.ca/wefi/wp-content/uploads/sites/19/wefi_donate.jpg" alt="Donate Online! Waterloo Education Foundation Inc. (WEFI)"></a></p>
@@ -64,6 +66,11 @@
       <?php
       }
 
+      if (is_front_page() && wrdsb_i_am_a_school_secondary()) { ?>
+        <p><a href="http://www.wrdsb.ca/board-meetings/student-trustees/becoming-a-student-trustee/" javascript="ga('send', 'event', 'school-banner', 'click-banner', 'Student Trustee Application 2017');"><img src="https://www.wrdsb.ca/wp-content/uploads/student-trustee-button.png" height="100" width="263" alt="Become a Student Trustee!" /></a></p>
+      <?php
+      }
+
       if (is_front_page() && wrdsb_i_am_a_school()) { ?>
         <p><a href="https://www.wrdsb.ca/blog/2017/04/03/safe-caring-inclusive-school-surveys-for-parentsguardians/" target="_blank" javascript="ga('send', 'event', 'school-banners', 'click-banner', 'SCIS Survey 2017');"><img src="https://www.wrdsb.ca/wp-content/uploads/scis_button2.png" alt="Take our SCIS survey until May 12, 2017" /></a></p>
         <p><a href="https://myway.wrdsb.ca/" onclick="ga('send', 'event', 'schoolBanners', 'click_banner', 'myway'"><img src="https://www.wrdsb.ca/wp-content/uploads/myway_banner_344x100.jpg" alt="MyWay Logo"/></a></p>
@@ -74,18 +81,14 @@
       <?php
       }
 
-      //if (is_front_page() && wrdsb_i_am_a_school_secondary()) { }
-
     get_sidebar('left');
-
-    
+ 
       if (is_front_page() && wrdsb_i_am_a_school_exception()) { ?>
          <p><a href="https://www.canadahelps.org/dn/15506" target="_blank" onclick="ga('send', 'event', 'schoolBanners', 'click_banner', 'wefi', 'https://www.canadahelps.org/dn/15506',{'nonInteraction':1});"><img src="https://www.wrdsb.ca/wefi/wp-content/uploads/sites/19/wefi_donate.jpg" alt="Donate Online! Waterloo Education Foundation Inc. (WEFI)"></a></p>
       <?php 
       }
 
-
-      echo '</div>';
+    echo '</div>';
     # Just right sidebar
     elseif (($has_left === FALSE) and ($has_right === TRUE)):
       # Nothing to do
@@ -93,9 +96,7 @@
     elseif (($has_left === FALSE) and ($has_right === FALSE)):
       # Nothing to do
     endif
-    ?>
 
-    <?php
     # Both sidebars
     # content area
     if (($has_left === TRUE) and ($has_right === TRUE)):
