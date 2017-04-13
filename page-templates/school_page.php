@@ -203,7 +203,7 @@ Template Name: School List
 					<tbody>
 						<tr>
 							<td><strong><a href="https://chi.wrdsb.ca/" target="_blank">Chicopee Hills Public School</a></strong><br>
-							800 Fairway Road North<br>Kitchener ON  N2A 0J6<span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=800 Fairway North+Kitchener+Ontario" target="_blank">MAP</a> ]</span></td>
+							800 Fairway Road North<br>Kitchener ON  N2A 0J6 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=800 Fairway North+Kitchener+Ontario" target="_blank">MAP</a> ]</span></td>
 							<td>N/A</td>
 						</tr>
 						<tr>
@@ -308,7 +308,7 @@ Template Name: School List
 			<h2 id="new_schools_xs">New Schools Opening in 2017</h2>
 
 			<p style="margin-bottom: 25px;"><strong><a href="https://chi.wrdsb.ca/" target="_blank">Chicopee Hills Public School</a></strong><br>
-			800 Fairway Road North<br>Kitchener ON  N2A 0J6<span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=800 Fairway North+Kitchener+Ontario" target="_blank">MAP</a> ]</span></p>
+			800 Fairway Road North<br>Kitchener ON  N2A 0J6 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=800 Fairway North+Kitchener+Ontario" target="_blank">MAP</a> ]</span></p>
 
 			<p style="margin-bottom: 25px;"><strong><a href="https://gro.wrdsb.ca/" target="_blank">Groh Public School</a></strong><br>
 			225 Thomas Slee Drive<br>Kitchener ON  N2P 0B8 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=225 Thomas Slee Drive+Kitchener+Ontario" target="_blank">MAP</a> ]</span></p>
