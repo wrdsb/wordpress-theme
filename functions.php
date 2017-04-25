@@ -394,6 +394,16 @@ require get_template_directory() . '/inc/customizer.php';
   //require get_template_directory() . '/inc/featured-content.php';
 //}
 
+/* Custom Global Variables */
+
+function wrdsb_global_vars() {
+  global $wrdsbvars;
+  $wrdsbvars['asset_version'] = "1/1.0.1";
+  // to use: $GLOBALS['wrdsbvars']['asset_version']
+}
+add_action ( 'parse_query','wrdsb_global_vars' );
+
+/* Breadcrumb Links */
 
 function the_breadcrumb() {
   if (is_singular('sfwd-lessons') or is_singular('sfwd-quiz')) {return;}
@@ -462,78 +472,79 @@ function the_breadcrumb() {
   echo '</div>';
 }
 
+/* Custom Styles for Secondary */
+
 function wrdsb_secondary_school_colours() {
   $parsed_url = parse_url(site_url());
   $host = explode('.', $parsed_url['host']);
-  $asset_version = "1/1.0.1";
   switch ($host[0]) {
     case "bci":
       echo '<!-- Site specific styles for BCI -->'."\r\n";
-      echo '<link href="https://s3.amazonaws.com/wrdsb-ui-assets/'.$asset_version.'/css/bci.css" rel="stylesheet">';
+      echo '<link href="https://s3.amazonaws.com/wrdsb-ui-assets/'.$GLOBALS['wrdsbvars']['asset_version'].'/css/bci.css" rel="stylesheet">';
       break;
     case "chc":
       echo '<!-- Site specific styles for CHC -->'."\r\n";
-      echo '<link href="https://s3.amazonaws.com/wrdsb-ui-assets/'.$asset_version.'/css/chc.css" rel="stylesheet">';
+      echo '<link href="https://s3.amazonaws.com/wrdsb-ui-assets/'.$GLOBALS['wrdsbvars']['asset_version'].'/css/chc.css" rel="stylesheet">';
       break;
     case "eci":
       echo '<!-- Site specific styles for ECI -->'."\r\n";
-      echo '<link href="https://s3.amazonaws.com/wrdsb-ui-assets/'.$asset_version.'/css/eci.css" rel="stylesheet">';
+      echo '<link href="https://s3.amazonaws.com/wrdsb-ui-assets/'.$GLOBALS['wrdsbvars']['asset_version'].'/css/eci.css" rel="stylesheet">';
       break;
     case "eds":
       echo '<!-- Site specific styles for EDS -->'."\r\n";
-      echo '<link href="https://s3.amazonaws.com/wrdsb-ui-assets/'.$asset_version.'/css/eds.css" rel="stylesheet">';
+      echo '<link href="https://s3.amazonaws.com/wrdsb-ui-assets/'.$GLOBALS['wrdsbvars']['asset_version'].'/css/eds.css" rel="stylesheet">';
       break;
     case "fhc":
       echo '<!-- Site specific styles for FHC -->'."\r\n";
-      echo '<link href="https://s3.amazonaws.com/wrdsb-ui-assets/'.$asset_version.'/css/fhc.css" rel="stylesheet">';
+      echo '<link href="https://s3.amazonaws.com/wrdsb-ui-assets/'.$GLOBALS['wrdsbvars']['asset_version'].'/css/fhc.css" rel="stylesheet">';
       break;
     case "gci":
       echo '<!-- Site specific styles for GCI -->'."\r\n";
-      echo '<link href="https://s3.amazonaws.com/wrdsb-ui-assets/'.$asset_version.'/css/gci.css" rel="stylesheet">';
+      echo '<link href="https://s3.amazonaws.com/wrdsb-ui-assets/'.$GLOBALS['wrdsbvars']['asset_version'].'/css/gci.css" rel="stylesheet">';
       break;
     case "gnss":
       echo '<!-- Site specific styles for GNSS -->'."\r\n";
-      echo '<link href="https://s3.amazonaws.com/wrdsb-ui-assets/'.$asset_version.'/css/gnss.css" rel="stylesheet">';
+      echo '<link href="https://s3.amazonaws.com/wrdsb-ui-assets/'.$GLOBALS['wrdsbvars']['asset_version'].'/css/gnss.css" rel="stylesheet">';
       break;
     case "gps":
       echo '<!-- Site specific styles for GPS -->'."\r\n";
-      echo '<link href="https://s3.amazonaws.com/wrdsb-ui-assets/'.$asset_version.'/css/gps.css" rel="stylesheet">';
+      echo '<link href="https://s3.amazonaws.com/wrdsb-ui-assets/'.$GLOBALS['wrdsbvars']['asset_version'].'/css/gps.css" rel="stylesheet">';
       break;
     case "grc":
       echo '<!-- Site specific styles for GRC -->'."\r\n";
-      echo '<link href="https://s3.amazonaws.com/wrdsb-ui-assets/'.$asset_version.'/css/grc.css" rel="stylesheet">';
+      echo '<link href="https://s3.amazonaws.com/wrdsb-ui-assets/'.$GLOBALS['wrdsbvars']['asset_version'].'/css/grc.css" rel="stylesheet">';
       break;
     case "hrh":
       echo '<!-- Site specific styles for HRH -->'."\r\n";
-      echo '<link href="https://s3.amazonaws.com/wrdsb-ui-assets/'.$asset_version.'/css/hrh.css" rel="stylesheet">';
+      echo '<link href="https://s3.amazonaws.com/wrdsb-ui-assets/'.$GLOBALS['wrdsbvars']['asset_version'].'/css/hrh.css" rel="stylesheet">';
       break;
     case "jam":
       echo '<!-- Site specific styles for JAM -->'."\r\n";
-      echo '<link href="https://s3.amazonaws.com/wrdsb-ui-assets/'.$asset_version.'/css/jam.css" rel="stylesheet">';
+      echo '<link href="https://s3.amazonaws.com/wrdsb-ui-assets/'.$GLOBALS['wrdsbvars']['asset_version'].'/css/jam.css" rel="stylesheet">';
       break;
     case "jhs":
       echo '<!-- Site specific styles for JHS -->'."\r\n";
-      echo '<link href="https://s3.amazonaws.com/wrdsb-ui-assets/'.$asset_version.'/css/jhs.css" rel="stylesheet">';
+      echo '<link href="https://s3.amazonaws.com/wrdsb-ui-assets/'.$GLOBALS['wrdsbvars']['asset_version'].'/css/jhs.css" rel="stylesheet">';
       break;
     case "kci":
       echo '<!-- Site specific styles for KCI -->'."\r\n";
-      echo '<link href="https://s3.amazonaws.com/wrdsb-ui-assets/'.$asset_version.'/css/kci.css" rel="stylesheet">';
+      echo '<link href="https://s3.amazonaws.com/wrdsb-ui-assets/'.$GLOBALS['wrdsbvars']['asset_version'].'/css/kci.css" rel="stylesheet">';
       break;
     case "phs":
       echo '<!-- Site specific styles for PHS -->'."\r\n";
-      echo '<link href="https://s3.amazonaws.com/wrdsb-ui-assets/'.$asset_version.'/css/phs.css" rel="stylesheet">';
+      echo '<link href="https://s3.amazonaws.com/wrdsb-ui-assets/'.$GLOBALS['wrdsbvars']['asset_version'].'/css/phs.css" rel="stylesheet">';
       break;
     case "sss":
       echo '<!-- Site specific styles for SSS -->'."\r\n";
-      echo '<link href="https://s3.amazonaws.com/wrdsb-ui-assets/'.$asset_version.'/css/sss.css" rel="stylesheet">';
+      echo '<link href="https://s3.amazonaws.com/wrdsb-ui-assets/'.$GLOBALS['wrdsbvars']['asset_version'].'/css/sss.css" rel="stylesheet">';
       break;
     case "wci":
       echo '<!-- Site specific styles for WCI -->'."\r\n";
-      echo '<link href="https://s3.amazonaws.com/wrdsb-ui-assets/'.$asset_version.'/css/wci.css" rel="stylesheet">';
+      echo '<link href="https://s3.amazonaws.com/wrdsb-ui-assets/'.$GLOBALS['wrdsbvars']['asset_version'].'/css/wci.css" rel="stylesheet">';
       break;
     case "wod":
       echo '<!-- Site specific styles for WOD -->'."\r\n";
-      echo '<link href="https://s3.amazonaws.com/wrdsb-ui-assets/'.$asset_version.'/css/wod.css" rel="stylesheet">';
+      echo '<link href="https://s3.amazonaws.com/wrdsb-ui-assets/'.$GLOBALS['wrdsbvars']['asset_version'].'/css/wod.css" rel="stylesheet">';
       break;
   }
 }
@@ -881,7 +892,7 @@ function custom_upload_mimes ( $existing_mimes=array() ) {
 // Favicon
 if ( ! function_exists ('favicon_link' ) ) {
   function favicon_link() {
-    echo '<link rel="shortcut icon" type="image/x-icon" href="https://s3.amazonaws.com/wrdsb-ui-assets/'.$asset_version.'/images/favicon.png" />' . "\n";
+    echo '<link rel="shortcut icon" type="image/x-icon" href="https://s3.amazonaws.com/wrdsb-ui-assets/'.$GLOBALS['wrdsbvars']['asset_version'].'/images/favicon.png" />' . "\n";
   }
   add_action( 'wp_head', 'favicon_link' );
 }

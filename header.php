@@ -17,16 +17,14 @@
   <title><?php bloginfo('name'); ?></title>
   <?php } else { ?>
   <title><?php wp_title(''); ?> (<?php bloginfo('name'); ?>)</title>
-  <?php } 
-  $asset_version = "1/1.0.0";
-  ?>
+  <?php } ?>
 
   <link href="https://s3.amazonaws.com/wrdsb-ui-assets/1/master.css" rel="stylesheet" media="all">
 
-  <link href="https://s3.amazonaws.com/wrdsb-ui-assets/<?php echo $asset_version; ?>/images/icon-60x60.png" rel="apple-touch-icon" />
-  <link href="https://s3.amazonaws.com/wrdsb-ui-assets/<?php echo $asset_version; ?>/images/icon-76x76.png" rel="apple-touch-icon" sizes="76x76" />
-  <link href="https://s3.amazonaws.com/wrdsb-ui-assets/<?php echo $asset_version; ?>/images/icon-120x120.png" rel="apple-touch-icon" sizes="120x120" />
-  <link href="https://s3.amazonaws.com/wrdsb-ui-assets/<?php echo $asset_version; ?>/images/icon-152x152.png" rel="apple-touch-icon" sizes="152x152" />
+  <link href="https://s3.amazonaws.com/wrdsb-ui-assets/<?php echo $GLOBALS['wrdsbvars']['asset_version']; ?>/images/icon-60x60.png" rel="apple-touch-icon" />
+  <link href="https://s3.amazonaws.com/wrdsb-ui-assets/<?php echo $GLOBALS['wrdsbvars']['asset_version']; ?>/images/icon-76x76.png" rel="apple-touch-icon" sizes="76x76" />
+  <link href="https://s3.amazonaws.com/wrdsb-ui-assets/<?php echo $GLOBALS['wrdsbvars']['asset_version']; ?>/images/icon-120x120.png" rel="apple-touch-icon" sizes="120x120" />
+  <link href="https://s3.amazonaws.com/wrdsb-ui-assets/<?php echo $GLOBALS['wrdsbvars']['asset_version']; ?>/images/icon-152x152.png" rel="apple-touch-icon" sizes="152x152" />
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

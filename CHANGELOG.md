@@ -1,3 +1,6 @@
+## 1.0.7
++ make $asset_version global variable
+
 ## 1.0.6
 + student trustee logo
 + fix space
