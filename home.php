@@ -26,7 +26,6 @@
       }
 
       if (is_front_page() && wrdsb_i_am_a_school_secondary()) { ?>
-        <p><a href="http://www.wrdsb.ca/board-meetings/student-trustees/becoming-a-student-trustee/" javascript="ga('send', 'event', 'school-banner', 'click-banner', 'Student Trustee Application 2017');"><img src="https://www.wrdsb.ca/wp-content/uploads/student-trustee-button.png" height="100" width="263" alt="Become a Student Trustee!" /></a></p>
       <?php
       }
 
@@ -65,7 +64,6 @@
       }
 
       if (is_front_page() && wrdsb_i_am_a_school_secondary()) { ?>
-        <p><a href="http://www.wrdsb.ca/board-meetings/student-trustees/becoming-a-student-trustee/" javascript="ga('send', 'event', 'school-banner', 'click-banner', 'Student Trustee Application 2017');"><img src="https://www.wrdsb.ca/wp-content/uploads/student-trustee-button.png" height="100" width="263" alt="Become a Student Trustee!" /></a></p>
       <?php
       }
 

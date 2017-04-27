@@ -409,12 +409,14 @@ require get_template_directory() . '/inc/customizer.php';
 
 /* Custom Global Variables */
 
+if ( ! function_exists ('wrdsb_global_vars' ) ) {
 function wrdsb_global_vars() {
   global $wrdsbvars;
   $wrdsbvars['asset_version'] = "1/1.0.1";
   // to use: $GLOBALS['wrdsbvars']['asset_version']
 }
 add_action ( 'parse_query','wrdsb_global_vars' );
+}
 
 /* Breadcrumb Links */
 
