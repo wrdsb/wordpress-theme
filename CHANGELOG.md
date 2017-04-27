@@ -1,3 +1,6 @@
+## 1.0.8
++ remove ability for local control over favicon
+
 ## 1.0.7
 + make $asset_version global variable
 

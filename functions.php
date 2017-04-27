@@ -66,6 +66,19 @@ function wrdsb_setup() {
     'right' => __('Right Sidebar Menu Region', 'wrdsb'),
   ) );
 
+  /**
+ * Remove the additional CSS section, introduced in 4.7, from the Customizer.
+ * @param $wp_customize WP_Customize_Manager
+ */
+
+function wrdsb_edit_customizer( $wp_customize ) {
+  global $wp_customize;
+  $wp_customize->remove_section( 'custom_css' );
+  $wp_customize->remove_control( 'site_icon' );
+}
+// Remove Customizer Additional CSS
+add_action( 'customize_register', 'wrdsb_edit_customizer', 20 );
+
   // Add ID and CLASS attributes to the first <ul> occurence in wp_page_menu
   function add_menuclass( $ulclass ) {
     return preg_replace( '/<ul>/', '<ul class="nav nav-justified">', $ulclass, 1 );
@@ -895,14 +908,4 @@ if ( ! function_exists ('favicon_link' ) ) {
     echo '<link rel="shortcut icon" type="image/x-icon" href="https://s3.amazonaws.com/wrdsb-ui-assets/'.$GLOBALS['wrdsbvars']['asset_version'].'/images/favicon.png" />' . "\n";
   }
   add_action( 'wp_head', 'favicon_link' );
-}
-
-// Remove Customizer Additional CSS
-add_action( 'customize_register', 'prefix_remove_css_section', 15 );
-/**
- * Remove the additional CSS section, introduced in 4.7, from the Customizer.
- * @param $wp_customize WP_Customize_Manager
- */
-function prefix_remove_css_section( $wp_customize ) {
-  $wp_customize->remove_section( 'custom_css' );
 }
