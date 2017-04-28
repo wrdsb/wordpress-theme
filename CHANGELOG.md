@@ -1,5 +1,7 @@
-## 1.0.8
+## 1.0.9
 + remove school trustee button
+
+## 1.0.8
 + remove ability for local control over favicon
 
 ## 1.0.7
