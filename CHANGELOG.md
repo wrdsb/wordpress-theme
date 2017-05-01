@@ -1,3 +1,6 @@
+## 1.0.10
++ repair SCIS button
+
 ## 1.0.9
 + remove school trustee button
 
