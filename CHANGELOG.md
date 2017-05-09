@@ -1,7 +1,11 @@
+
 ## 1.1.0
 + add senior public school function
 + add school exception function
 + remove school campaign buttons from theme
+
+## 1.0.10
++ repair SCIS button
 
 ## 1.0.9
 + remove school trustee button
