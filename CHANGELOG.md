@@ -1,3 +1,7 @@
+## 1.1.0
++ delete school year information page templates
++ change links
+
 ## 1.0.11
 + remove SCIS button
 
