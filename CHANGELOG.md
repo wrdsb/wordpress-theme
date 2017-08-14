@@ -1,3 +1,6 @@
+## 1.2.0
++ fix school list layout and data
+
 ## 1.1.0
 + delete school year information page templates
 + change links

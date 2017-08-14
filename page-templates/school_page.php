@@ -21,8 +21,10 @@ Template Name: School List
               	$hidden_schools  = array ('ALC','ALI','ALR','ALU','ANC','BAD','BLV','BRI','CAS','CLC','CLN','DKS','ELE','HAR','HMR','LAF','LNA','LUC','LUT','MBR','MCQ','NWL','PYS','RMT','SBL','SBM','SMH','TBR','UHS','UTR','WNB','WSR','WSS','XSE','XSS');
 
               	$alt_con_ed_schools = array('ALC', 'ALU', 'CLN', 'INL', 'INS', 'RMT');
+              	$con_ed_schools = array('INE','INS','INL','NSC','NSN','NSS','ODC','ODW','SEC','SEN','SEO','SES','SCC','SCE','SCN','SCO','SCS','SBL','SBM');
 
-				$json = file_get_contents('https://s3.amazonaws.com/wrdsb-ui-assets/0/0.10.4/json/schools.json');
+              	$json_address='https://s3.amazonaws.com/wrdsb-ui-assets/'.$GLOBALS['wrdsbvars']['asset_version'].'/json/schools.json';
+				$json = file_get_contents($json_address);
 				//for testing only
 				//$json = file_get_contents('/nas/content/live/wrdsb/wp-content/themes/school-list/inc/allschools.json');
 				$schools = json_decode($json);
@@ -61,7 +63,7 @@ Template Name: School List
 								<?php echo $school->street_address .'<br />'.$school->city.' ON  '.$postal_code . ' <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&hl=en&q='.$school->street_address.'+'.$school->city.'+Ontario" target="_blank">MAP</a> ]</span>'; ?>
 							</td>
 							<td>
-								<!-- <a href="mailto:<?php echo $code; ?>@wrdsb.on.ca"><?php echo $code; ?>@wrdsb.on.ca</a><br />-->
+								<!-- <a href="mailto:<?php echo $code; ?>@wrdsb.ca"><?php echo $code; ?>@wrdsb.ca</a><br />-->
 								<?php echo $phone; ?>
 							</td>
 						</tr>
@@ -103,7 +105,7 @@ Template Name: School List
 								<?php echo $school->street_address .'<br />'.$school->city.' ON  '.$postal_code . ' <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&hl=en&q='.$school->street_address.'+'.$school->city.'+Ontario" target="_blank">MAP</a> ]</span>'; ?>
 							</td>
 							<td>
-								<!-- <a href="mailto:<?php echo $code; ?>@wrdsb.on.ca"><?php echo $code; ?>@wrdsb.on.ca</a><br />-->
+								<!-- <a href="mailto:<?php echo $code; ?>@wrdsb.ca"><?php echo $code; ?>@wrdsb.ca</a><br />-->
 								<?php echo $phone; ?>
 							</td>
 						</tr>
@@ -114,6 +116,57 @@ Template Name: School List
 					</tbody>
 				</table>
 			</div>
+
+			<h2 id="environmental-education">Outdoor and Environmental Education</h2>
+
+			<div class="table-responsive" >
+				<table class="table table-striped table-fixed-head">
+					<thead>
+						<tr>
+							<th class="text-left">Address</th>
+							<th class="text-left">Phone</th>
+						</tr>
+					</thead>
+					<tbody>
+						<?php
+							foreach($schools as $school) {
+								if ($school->street_address === '') {
+									$address = ''; }
+								else {
+									$address = '</strong><br />' . $school->street_address .'<br />' . $school->city . ' ON  ' . $postal_code . ' <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&hl=en&q=' . $school->street_address . '+' . $school->city . '+Ontario" target="_blank">MAP</a> ]</span>';
+								}
+								$website = strtolower($school->website);
+								$postal_code  = substr($school->postal_code,0,3). ' ' .substr($school->postal_code,3,3);
+								if ($school->phone != '') {
+									$phone = $school->phone;
+									$phone = substr($phone,0,3).'-'.substr($phone,3,3).'-'.substr($phone,6,4);
+								} else {
+									$phone = '';
+								}
+								$code = strtolower($school->alpha_code);
+
+								if (
+									!in_array ($school->alpha_code, $hidden_schools)  &&
+									($school->school_type_code=='EnvEd')
+									)
+									{
+						?>
+						<tr>
+							<td><strong><a href="<?php echo $website; ?>" target="_blank"><?php echo $school->full_name; ?></a></strong><?php echo $address; ?>
+							</td>
+							<td>
+								<!-- <a href="mailto:<?php echo $code; ?>@wrdsb.ca"><?php echo $code; ?>@wrdsb.ca</a><br />-->
+								<?php echo $phone; ?>
+							</td>
+						</tr>
+						<?php
+								}
+							}
+						?>
+					</tbody>
+				</table>
+			</div>
+
 			<h2 id="alt-con-ed">Alternative Education</h2>
 			<div class="table-responsive" >
 				<table class="table table-striped table-fixed-head">
@@ -124,29 +177,37 @@ Template Name: School List
 						</tr>
 					</thead>
 					<tbody>
+						<?php
+							foreach($schools as $school) {
+								if ($school->street_address != '') {
+									$address = '</strong><br />' . $school->street_address .'<br />' . $school->city . ' ON  ' . $postal_code . ' <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&hl=en&q=' . $school->street_address . '+' . $school->city . '+Ontario" target="_blank">MAP</a> ]</span>';
+								}
+								$website = strtolower($school->website);
+								$postal_code  = substr($school->postal_code,0,3). ' ' .substr($school->postal_code,3,3);
+								if ($school->phone != '') {
+									$phone = $school->phone;
+									$phone = substr($phone,0,3).'-'.substr($phone,3,3).'-'.substr($phone,6,4);
+								}
+								$code = strtolower($school->alpha_code);
+
+								if (
+									!in_array ($school->alpha_code, $hidden_schools)  &&
+									($school->school_type_code=='AlternativeEducation')
+									)
+									{
+						?>
 						<tr>
-							<td><strong><a href="https://www.wrdsb.ca/alternative-education/choices/" target="_blank">Choices for Youth</a> Cambridge</strong><br>
-								256 Hespeler Road<br>Cambridge ON  N1R 3H3 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=256 Hespeler Road+Cambridge+Ontario" target="_blank">MAP</a> ]</span></td>
-							<td><!-- <a href="mailto:wpk@wrdsb.on.ca">wpk@wrdsb.on.ca</a><br />-->
-								519-622-9041</td>
+							<td><strong><a href="<?php echo $website; ?>" target="_blank"><?php echo $school->full_name; ?></a></strong><?php echo $address; ?>
+							</td>
+							<td>
+								<!-- <a href="mailto:<?php echo $code; ?>@wrdsb.ca"><?php echo $code; ?>@wrdsb.ca</a><br />-->
+								<?php echo $phone; ?>
+							</td>
 						</tr>
-						<tr>
-							<td><strong><a href="https://www.wrdsb.ca/alternative-education/choices/" target="_blank">Choices for Youth</a> Waterloo</strong><br>
-								151 Weber St S<br>Waterloo ON  N2J 2A9 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=151 Weber St S+Waterloo+Ontario" target="_blank">MAP</a> ]</span></td>
-							<td><!-- <a href="mailto:wpk@wrdsb.on.ca">wpk@wrdsb.on.ca</a><br />-->
-								519-885-0800</td>
-						</tr>
-							<td><strong><a href="https://www.wrdsb.ca/alternative-education/u-turn/" target="_blank">UTurn</a> Cambridge</strong><br>
-								256 Hespeler Road<br>Cambridge ON  N1R 3H3 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=256 Hespeler Road+Cambridge+Ontario" target="_blank">MAP</a> ]</span></td>
-							<td><!-- <a href="mailto:wpk@wrdsb.on.ca">wpk@wrdsb.on.ca</a><br />-->
-								519-622-9041</td>
-						</tr>
-						<tr>
-							<td><strong><a href="https://www.wrdsb.ca/alternative-education/u-turn/" target="_blank">UTurn</a> Waterloo</strong><br>
-								151 Weber St S<br>Waterloo ON  N2J 2A9 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=151 Weber St S+Waterloo+Ontario" target="_blank">MAP</a> ]</span></td>
-							<td><!-- <a href="mailto:wpk@wrdsb.on.ca">wpk@wrdsb.on.ca</a><br />-->
-								519-885-0800</td>
-						</tr>
+						<?php
+								}
+							}
+						?>
 					</tbody>
 				</table>
 			</div>
@@ -161,61 +222,41 @@ Template Name: School List
 						</tr>
 					</thead>
 					<tbody>
+						<?php
+							foreach($schools as $school) {
+								if ($school->street_address != '') {
+									$address = '</strong><br />' . $school->street_address .'<br />' . $school->city . ' ON  ' . $postal_code . ' <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&hl=en&q=' . $school->street_address . '+' . $school->city . '+Ontario" target="_blank">MAP</a> ]</span>';
+								}
+								$website = strtolower($school->website);
+								$postal_code  = substr($school->postal_code,0,3). ' ' .substr($school->postal_code,3,3);
+								if ($school->phone != '') {
+									$phone = $school->phone;
+									$phone = substr($phone,0,3).'-'.substr($phone,3,3).'-'.substr($phone,6,4);
+								}
+								$code = strtolower($school->alpha_code);
+
+								if (
+									!in_array ($school->alpha_code, $hidden_schools)  &&
+									!in_array($school->alpha_code, $con_ed_schools) &&
+									($school->school_type_code=='ConEd')
+									)
+									{
+						?>
 						<tr>
-							<td><strong><a href="https://www.wrdsb.ca/continuing-education/" target="_blank">Main Office</a></strong><br>
-							151 Weber St. S.<br>Waterloo ON  N2J 2A9 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=151 Weber St. S.+Waterloo+Ontario" target="_blank">MAP</a> ]</span></td>
-							<td>519-885-0800</td>
+							<td><strong><a href="<?php echo $website; ?>" target="_blank"><?php echo $school->full_name; ?></a></strong><?php echo $address; ?>
+							</td>
+							<td>
+								<!-- <a href="mailto:<?php echo $code; ?>@wrdsb.ca"><?php echo $code; ?>@wrdsb.ca</a><br />-->
+								<?php echo $phone; ?>
+							</td>
 						</tr>
-						<tr>
-							<td><strong><a href="https://www.wrdsb.ca/continuing-education/night-school/" target="_blank">Night School</a></strong><br>
-							151 Weber St. S.<br>Waterloo ON  N2J 2A9 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=151 Weber St. S.+Waterloo+Ontario" target="_blank">MAP</a> ]</span></td>
-							<td>519-885-0800</td>
-						</tr>
-						<tr>
-							<td><strong><a href="https://www.wrdsb.ca/continuing-education/summer-school/" target="_blank">Summer School</a></strong><br>
-							151 Weber St. S.<br>Waterloo ON  N2J 2A9 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=151 Weber St. S.+Waterloo+Ontario" target="_blank">MAP</a> ]</span></td>
-							<td>519-885-0800</td>
-						</tr>
-						<tr>
-							<td><strong><a href="https://www.wrdsb.ca/continuing-education/international-language/" target="_blank">International Languages</a></strong><br>
-							151 Weber St. S.<br>Waterloo ON  N2J 2A9 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=151 Weber St. S.+Waterloo+Ontario" target="_blank">MAP</a> ]</span></td>
-							<td>519-885-0800</td>
-						</tr>
-						<tr>
-							<td><strong><a href="https://www.wrdsb.ca/esu/" target="_blank">Essential Skills Upgrading</a></strong><br>
-							151 Weber St. S.<br>Waterloo ON  N2J 2A9 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=151 Weber St. S.+Waterloo+Ontario" target="_blank">MAP</a> ]</span></td>
-							<td>519-885-4356</td>
-						</tr>
+						<?php
+								}
+							}
+						?>
 					</tbody>
 				</table>
-			</div>
-
-			<h2 id="new_schools">New Schools Opening in 2017</h2>
-
-			<div class="table-responsive" >
-				<table class="table table-striped table-fixed-head">
-					<thead>
-						<tr>
-							<th class="text-left">Address</th>
-							<th class="text-left">Phone</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td><strong><a href="https://chi.wrdsb.ca/" target="_blank">Chicopee Hills Public School</a></strong><br>
-							800 Fairway Road North<br>Kitchener ON  N2A 0J6 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=800 Fairway North+Kitchener+Ontario" target="_blank">MAP</a> ]</span></td>
-							<td>N/A</td>
-						</tr>
-						<tr>
-							<td><strong><a href="https://gro.wrdsb.ca/" target="_blank">Groh Public School</a></strong><br>
-							225 Thomas Slee Drive<br>Kitchener ON  N2P 0B8 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=225 Thomas Slee Drive+Kitchener+Ontario" target="_blank">MAP</a> ]</span></td>
-							<td>N/A</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-
-
+		</div>
 			</div>
 		</div>
 
@@ -238,9 +279,9 @@ Template Name: School List
 					)
 					{
 				?>
-				<p style="margin-bottom: 25px;"><strong><a href="<?php echo $website; ?>" target="_blank"><?php echo $school->full_name ?></a></strong></br />
+				<p style="margin-bottom: 25px;"><strong><a href="<?php echo $website; ?>" target="_blank"><?php echo $school->full_name ?></a></strong><br />
 					<?php echo $school->street_address.'<br />'.$school->city.' ON  '.$postal_code . ' <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&hl=en&q='.$school->street_address.'+'.$school->city.'+Ontario" target="_blank">MAP</a> ]</span>';?><br />
-					<!-- <a href="mailto:<?php echo $code; ?>@wrdsb.on.ca"><?php echo $code; ?>@wrdsb.on.ca</a><br /> -->
+					<!-- <a href="mailto:<?php echo $code; ?>@wrdsb.ca"><?php echo $code; ?>@wrdsb.ca</a><br /> -->
 					<?php echo $phone; ?></p>
 				<?php
 					}
@@ -263,55 +304,93 @@ Template Name: School List
 
 					{
 				?>
-					<p style="margin-bottom: 25px;"><strong><a href="<?php echo $website; ?>" target="_blank"><?php echo $school->full_name ?></a></strong></br />
+					<p style="margin-bottom: 25px;"><strong><a href="<?php echo $website; ?>" target="_blank"><?php echo $school->full_name ?></a></strong><br />
 							<?php echo $school->street_address.'<br />'.$school->city.' ON  '.$postal_code . ' <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&hl=en&q='.$school->street_address.'+'.$school->city.'+Ontario" target="_blank">MAP</a> ]</span>';?><br />
-							<!-- <a href="mailto:<?php echo $code; ?>@wrdsb.on.ca"><?php echo $code; ?>@wrdsb.on.ca</a><br /> -->
+							<!-- <a href="mailto:<?php echo $code; ?>@wrdsb.ca"><?php echo $code; ?>@wrdsb.ca</a><br /> -->
 							<?php echo $phone; ?></p>
 				<?php
 					}
 				}
 				?>
+
+			<h2 id="environmental-education_xs">Outdoor and Environmental Education</h2>
+			
+			<?php
+			foreach($schools as $school) {
+				if ($school->street_address === '') {
+					$address = ''; }
+				else {
+					$address = '</strong><br />' . $school->street_address .'<br />' . $school->city . ' ON  ' . $postal_code . ' <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&hl=en&q=' . $school->street_address . '+' . $school->city . '+Ontario" target="_blank">MAP</a> ]</span>';
+				}
+				$website = strtolower($school->website);
+				$postal_code  = substr($school->postal_code,0,3). ' ' .substr($school->postal_code,3,3);
+				if ($school->phone != '') {
+					$phone = $school->phone;
+					$phone = substr($phone,0,3).'-'.substr($phone,3,3).'-'.substr($phone,6,4);
+				} else {
+					$phone = '';
+				}
+				$code = strtolower($school->alpha_code);
+				if (
+					!in_array ($school->alpha_code, $hidden_schools)  &&
+					($school->school_type_code=='EnvEd')
+					)
+					{ 
+				?>
+					<p style="margin-bottom: 25px;"><strong><a href="<?php echo $website; ?>" target="_blank"><?php echo $school->full_name ?></a></strong><?php echo $address; ?><?php echo $phone; ?></p>
+				<?php
+					}
+				}
+				?>
+
 			<h2 id="alt-con-ed_xs">Alternative Education</h2>
 			
-			<p style="margin-bottom: 25px;"><strong><a href="https://www.wrdsb.ca/alternative-education/choices/" target="_blank">Choices for Youth</a> Cambridge</strong><br>
-			256 Hespeler Road<br>Cambridge ON  N1R 3H3 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=256 Hespeler Road+Cambridge+Ontario" target="_blank">MAP</a> ]</span><br>
-			519-662-9041</p>
+				<?php
+			foreach($schools as $school) {
+				$website = strtolower($school->website);
+				$postal_code  = substr($school->postal_code,0,3). ' ' .substr($school->postal_code,3,3);
+				$phone = $school->phone;
+				$phone = substr($phone,0,3).'-'.substr($phone,3,3).'-'.substr($phone,6,4);
 
-			<p style="margin-bottom: 25px;"><strong><a href="https://www.wrdsb.ca/alternative-education/choices/" target="_blank">Choices for Youth</a> Waterloo</strong><br>
-			151 Weber St S<br>Waterloo ON  N2J 2A9 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=151 Weber St S+Waterloo+Ontario" target="_blank">MAP</a> ]</span><br>
-			519-885-0123</p>
+			if (
+				!in_array ($school->alpha_code, $hidden_schools)  && ($school->school_type_code=='AlternativeEducation')
+				)
+					{
+				?>
+					<p style="margin-bottom: 25px;"><strong><a href="<?php echo $website; ?>" target="_blank"><?php echo $school->full_name ?></a></strong><br />
+							<?php echo $school->street_address.'<br />'.$school->city.' ON  '.$postal_code . ' <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&hl=en&q='.$school->street_address.'+'.$school->city.'+Ontario" target="_blank">MAP</a> ]</span>';?><br />
+							<!-- <a href="mailto:<?php echo $code; ?>@wrdsb.ca"><?php echo $code; ?>@wrdsb.ca</a><br /> -->
+							<?php echo $phone; ?></p>
+				<?php
+					}
+				}
+				?>
 
-			<p style="margin-bottom: 25px;"><strong><a href="https://www.wrdsb.ca/alternative-education/u-turn/" target="_blank">UTurn</a> Cambridge</strong><br>
-			256 Hespeler Road<br>Cambridge ON  N1R 3H3 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=256 Hespeler Road+Cambridge+Ontario" target="_blank">MAP</a> ]</span><br>
-			519-662-9041</p>
-
-			<p style="margin-bottom: 25px;"><strong><a href="https://www.wrdsb.ca/alternative-education/u-turn/" target="_blank">UTurn</a> Waterloo</strong><br>
-			151 Weber St S<br>Waterloo ON  N2J 2A9 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=151 Weber St S+Waterloo+Ontario" target="_blank">MAP</a> ]</span><br>
-			519-885-0123</p>
 	
 			<h2 id="alt-con-ed_xs">Continuing Education</h2>
-			<p style="margin-bottom: 25px;"><strong><a href="https://www.wrdsb.ca/continuing-education/" target="_blank">Main Office</a></strong><br>
-			151 Weber St. S.<br>Waterloo ON  N2J 2A9 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=151 Weber St. S.+Waterloo+Ontario" target="_blank">MAP</a> ]</span><br>519-885-0800</p>
 
-			<p style="margin-bottom: 25px;"><strong><a href="https://www.wrdsb.ca/continuing-education/night-school/" target="_blank">Night School</a></strong><br>
-			151 Weber St. S.<br>Waterloo ON  N2J 2A9 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=151 Weber St. S.+Waterloo+Ontario" target="_blank">MAP</a> ]</span><br>519-885-0800</p>
+				<?php
+			foreach($schools as $school) {
+				$website = strtolower($school->website);
+				$postal_code  = substr($school->postal_code,0,3). ' ' .substr($school->postal_code,3,3);
+				$phone = $school->phone;
+				$phone = substr($phone,0,3).'-'.substr($phone,3,3).'-'.substr($phone,6,4);
 
-			<p style="margin-bottom: 25px;"><strong><a href="https://www.wrdsb.ca/continuing-education/summer-school/" target="_blank">Summer School</a></strong><br>
-			151 Weber St. S.<br>Waterloo ON  N2J 2A9 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=151 Weber St. S.+Waterloo+Ontario" target="_blank">MAP</a> ]</span><br>519-885-0800</p>
-
-			<p style="margin-bottom: 25px;"><strong><a href="https://www.wrdsb.ca/continuing-education/international-language/" target="_blank">International Languages</a></strong><br>
-			151 Weber St. S.<br>Waterloo ON  N2J 2A9 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=151 Weber St. S.+Waterloo+Ontario" target="_blank">MAP</a> ]</span><br>519-885-0800</p>
-
-			<p style="margin-bottom: 25px;"><strong><a href="https://www.wrdsb.ca/esu/" target="_blank">Essential Skills Upgrading</a></strong><br>
-			151 Weber St. S.<br>Waterloo ON  N2J 2A9 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=151 Weber St. S.+Waterloo+Ontario" target="_blank">MAP</a> ]</span><br>519-885-4356</p>
-
-			<h2 id="new_schools_xs">New Schools Opening in 2017</h2>
-
-			<p style="margin-bottom: 25px;"><strong><a href="https://chi.wrdsb.ca/" target="_blank">Chicopee Hills Public School</a></strong><br>
-			800 Fairway Road North<br>Kitchener ON  N2A 0J6 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=800 Fairway North+Kitchener+Ontario" target="_blank">MAP</a> ]</span></p>
-
-			<p style="margin-bottom: 25px;"><strong><a href="https://gro.wrdsb.ca/" target="_blank">Groh Public School</a></strong><br>
-			225 Thomas Slee Drive<br>Kitchener ON  N2P 0B8 <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=225 Thomas Slee Drive+Kitchener+Ontario" target="_blank">MAP</a> ]</span></p>
+				if (
+					!in_array ($school->alpha_code, $hidden_schools)  &&
+					!in_array($school->alpha_code, $con_ed_schools) &&
+					($school->school_type_code=='ConEd')
+					)
+					{
+				?>
+					<p style="margin-bottom: 25px;"><strong><a href="<?php echo $website; ?>" target="_blank"><?php echo $school->full_name ?></a></strong><br />
+							<?php echo $school->street_address.'<br />'.$school->city.' ON  '.$postal_code . ' <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&hl=en&q='.$school->street_address.'+'.$school->city.'+Ontario" target="_blank">MAP</a> ]</span>';?><br />
+							<!-- <a href="mailto:<?php echo $code; ?>@wrdsb.ca"><?php echo $code; ?>@wrdsb.ca</a><br /> -->
+							<?php echo $phone; ?></p>
+				<?php
+					}
+				}
+				?>
 
 		</div>
 	</div>
