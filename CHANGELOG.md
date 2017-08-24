@@ -1,3 +1,6 @@
+## 1.2.1
++ temporarily remove voicemail column from staff list
+
 ## 1.2.0
 + fix school list layout and data
 
