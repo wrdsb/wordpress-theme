@@ -25,33 +25,48 @@ Template Name: Staff List
                 <th class="text-left" data-field="name" data-sortable="true">Name</th>
                 <th class="text-left" data-field="role" data-sortable="true">Role</th>
                 <th class="text-left" data-field="email" data-sortable="true">Email</th>
-                <th class="text-left" data-field="voicemail" data-sortable="true">Voicemail</th>
+                <?php /* <th class="text-left" data-field="voicemail" data-sortable="true">Voicemail</th> */ ?>
                 <th class="text-left" data-field="website" data-sortable="true">Website</th>
               </tr>
             </thead>
             <tbody>
-              <?php foreach($user_query->results as $user) { ?>
-                <?php if ((get_user_option('wrdsb_display_in_staff_list', $user->ID) == 1) && ($user->ID != 1)) { ?>
-                  <?php $wrdsb_contact_options = get_user_option('wrdsb_contact_options', $user->ID); ?>
-                  <?php $wrdsb_voicemail = get_user_option('wrdsb_voicemail', $user->ID); ?>
-                  <?php if ($wrdsb_voicemail[0] === 'V') {$wrdsb_voicemail = ltrim($wrdsb_voicemail, 'V');} ?>
-                  <?php $wrdsb_website_url = get_user_option('wrdsb_website_url', $user->ID); ?>
+              <?php 
+              foreach($user_query->results as $user) {  
+                if ((get_user_option('wrdsb_display_in_staff_list', $user->ID) == 1) && ($user->ID != 1)) { 
+                  $wrdsb_contact_options = get_user_option('wrdsb_contact_options', $user->ID);
+                  $wrdsb_voicemail = get_user_option('wrdsb_voicemail', $user->ID);
+                  if ($wrdsb_voicemail[0] === 'V') {
+                    $wrdsb_voicemail = ltrim($wrdsb_voicemail, 'V');
+                  }
+                  $wrdsb_website_url = get_user_option('wrdsb_website_url', $user->ID); 
+                ?>
                   <tr>
                     <td><?php echo $user->last_name; ?>, <?php echo $user->first_name; ?></td>
-                    <td>
-                      <?php echo get_user_option('wrdsb_job_title', $user->ID); ?>
-                    </td>
-                    <?php if ($wrdsb_contact_options == 'Email') { ?>
-                      <td><?php echo str_replace("googleapps.wrdsb.ca", "wrdsb.on.ca", $user->user_email); ?></td>
+                    <td><?php echo get_user_option('wrdsb_job_title', $user->ID); ?></td>
+                    <?php 
+                    /* Email and Voicemail Columns */
+
+                    // if set to Email Only 
+                    if ($wrdsb_contact_options == 'Email') { ?>
+                      <td><?php echo $user->user_email; ?></td>
+                    <?php /*  <td>&nbsp;</td> */ ?>
+                    
+                    <?php // if set to Voicemail Only
+                    } elseif ($wrdsb_contact_options == 'Voicemail') { ?>
                       <td>&nbsp;</td>
-                    <?php } elseif ($wrdsb_contact_options == 'Voicemail') { ?>
-                      <td>&nbsp;</td>
-                      <td><?php echo $wrdsb_voicemail; ?></td>
-                    <?php } else { ?>
-                      <td><?php echo str_replace("googleapps.wrdsb.ca", "wrdsb.on.ca", $user->user_email); ?></td>
-                      <td><?php echo $wrdsb_voicemail; ?></td>
+                      <?php //<td>echo $wrdsb_voicemail;</td> */?>
+                    
+                    <?php // if set to Both
+                    } else { ?>
+                      <td><?php echo $user->user_email; ?></td>
+                      <?php //<td>echo $wrdsb_voicemail;</td> */?>
+                      <?php /* code for VM */ //echo $wrdsb_voicemail; ?>
                     <?php } ?>
-                    <?php if (strpos($wrdsb_website_url, 'wrdsb.ca') !== FALSE) { ?>
+                    <?php 
+                    /* Website Link */
+
+                    // if a website is listed 
+                    if (strpos($wrdsb_website_url, 'wrdsb.ca') !== FALSE) { ?>
                       <td><a href="<?php echo $wrdsb_website_url; ?>"><?php echo $wrdsb_website_url; ?></a></td>
                     <?php } else { ?>
                       <td>&nbsp;</td>
@@ -71,7 +86,7 @@ Template Name: Staff List
                   <?php echo $user->last_name; ?>, <?php echo $user->first_name; ?>
                   <br /><em><?php echo $user->wrdsb_job_title; ?></em>
                   <br />Email: <?php echo $user->user_email; ?>
-                  <br />Ext: <?php echo $user->wrdsb_voicemail; ?>
+                  <?php /* <br />Ext: echo $user->wrdsb_voicemail; */ ?>
                   <br />Website: <a href="<?php echo $user->user_url; ?>"><?php echo $user->user_url; ?></a>
                 </p>
               </li>
