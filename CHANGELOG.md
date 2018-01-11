@@ -1,3 +1,6 @@
+## 1.2.2
++ update asset version
+
 ## 1.2.1
 + temporarily remove voicemail column from staff list
 
