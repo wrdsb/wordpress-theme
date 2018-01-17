@@ -412,7 +412,7 @@ require get_template_directory() . '/inc/customizer.php';
 if ( ! function_exists ('wrdsb_global_vars' ) ) {
 function wrdsb_global_vars() {
   global $wrdsbvars;
-  $wrdsbvars['asset_version'] = "1/1.0.2";
+  $wrdsbvars['asset_version'] = "1/1.0.3";
   // to use: $GLOBALS['wrdsbvars']['asset_version']
 }
 add_action ( 'parse_query','wrdsb_global_vars' );
@@ -668,6 +668,7 @@ function wrdsb_i_am_a_school() {
     "jfc",
     "jhs",
     "jma",
+    "jme",
     "jst",
     "jwg",
     "kci",
@@ -835,6 +836,7 @@ function wrdsb_i_am_a_school_with_kindergarten() {
     "jdp",
     "jfc",
     "jma",
+    "jme",
     "jst",
     "jwg",
     "kea",
