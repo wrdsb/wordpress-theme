@@ -1,3 +1,7 @@
+## 1.2.3
++ update asset version
++ update schools functions
+
 ## 1.2.2
 + update asset version
 
