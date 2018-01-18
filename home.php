@@ -16,13 +16,12 @@
       echo '<div class="col-sm-3 col-md-2 col-lg-2" role="complementary">';
 
       if (is_front_page() && wrdsb_i_am_a_school_exception()) { ?>
-        <p><a href="https://www.wrdsb.ca/blog/2017/04/03/safe-caring-inclusive-school-surveys-for-parentsguardians/" target="_blank" javascript="ga('send', 'event', 'school-banners', 'click-banner', 'SCIS Survey 2017');"><img src="https://www.wrdsb.ca/wp-content/uploads/scis_button2.png" alt="Take our SCIS survey until May 12, 2017" /></a></p>
         <p><a href="https://myway.wrdsb.ca/" onclick="ga('send', 'event', 'schoolBanners', 'click_banner', 'myway', 'https://myway.wrdsb.ca/',{'nonInteraction':1});"><img src="https://www.wrdsb.ca/wp-content/uploads/myway_banner_344x100.jpg" alt="MyWay Logo"/></a></p>
       <?php 
       }
 
       if (is_front_page() && wrdsb_i_am_a_school_with_kindergarten()) { ?>
-        <p><a href="https://www.wrdsb.ca/kindergarten/its-time-to-register/" onclick="ga('send', 'event', 'schoolBanners', 'click_banner', 'kindiereg', 'https://www.wrdsb.ca/kindergarten/its-time-to-register/',{'nonInteraction':1});"><img src="https://www.wrdsb.ca/wp-content/uploads/register_for_kindergarten_2.jpg" alt="Register for Kindergarten at the WRDSB"/></a></p>   
+        <p><a href="https://www.wrdsb.ca/kindergarten/its-time-to-register/?utm_source=schools-button&utm_medium=referral&utm_campaign=kindergarten"><img src="https://www.wrdsb.ca/wp-content/uploads/REGISTER-ONLINE.png" alt="Register for Kindergarten at the WRDSB"/></a></p>   
       <?php
       }
 
@@ -60,7 +59,7 @@
       }
 
       if (is_front_page() && wrdsb_i_am_a_school_with_kindergarten()) { ?>
-        <p><a href="https://www.wrdsb.ca/kindergarten/its-time-to-register/" onclick="ga('send', 'event', 'schoolBanners', 'click_banner', 'kindiereg', 'https://www.wrdsb.ca/kindergarten/its-time-to-register/',{'nonInteraction':1});"><img src="https://www.wrdsb.ca/wp-content/uploads/register_for_kindergarten_2.jpg" alt="Register for Kindergarten at the WRDSB"/></a></p>   
+        <p><a href="https://www.wrdsb.ca/kindergarten/its-time-to-register/?utm_source=schools-button&utm_medium=referral&utm_campaign=kindergarten"><img src="https://www.wrdsb.ca/wp-content/uploads/REGISTER-ONLINE.png" alt="Register for Kindergarten at the WRDSB"/></a></p>
       <?php
       }
 
