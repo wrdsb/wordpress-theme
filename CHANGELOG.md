@@ -1,3 +1,6 @@
+## 1.2.4
++ add kindergarten registration
+
 ## 1.2.3
 + update asset version
 + update schools functions
