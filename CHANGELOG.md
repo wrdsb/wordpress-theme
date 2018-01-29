@@ -1,3 +1,7 @@
+## 1.2.5
++ remove parent email into trillium form from footer
++ add footer option for customization
+
 ## 1.2.4
 + add kindergarten registration
 
