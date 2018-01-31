@@ -51,14 +51,6 @@ include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
               </div>
             <?php } ?>
           </div>
-          <div class="col-sm-6 col-md-3" aria-labelledby="wrdsb-email-you">
-              <h1 id="wrdsb-email-you">Let Us Email You!</h1>
-              <p>Families and students, with <a href="https://www.wrdsb.ca/about-the-wrdsb/communications-engagement-department/casl/" target="_blank">CASL</a> we need to get your permission to email you about your child. Here is how!</p>
-              <h2>Parents/Guardians</h2>
-              <p><a href="https://secure.wrdsb.ca/subscribe/">Add your email address</a> to your contact record in our student information system!</p>
-              <h2>Students 18+</h2>
-              <p>If you are a student over 18, you can <a href="https://secure.wrdsb.ca/subscribe/over_eighteen.aspx">add your personal email address</a> to your contact record. </p>
-          </div>
           <div class="col-sm-6 col-md-3" aria-labelledby="connect-wrdsb">
               <h1 role="form" id="connect-wrdsb">Stay Connected</h1>
               <?php if ( is_plugin_active( 'wordpress-plugin-mailgun-subscriptions/mailgun-subscriptions.php' ) ) {
@@ -69,6 +61,8 @@ include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
               <p>You will need to subscribe to get the news feeds from each website separately.</p>
               <h2>Other Ways to Get News</h2>
               <p><a href="https://www.wrdsb.ca/our-schools/communicating-with-your-school/subscribing/" target="_blank">See all subscription options</a>.</p>
+          </div>
+          <div class="col-sm-6 col-md-3" role="region">
           </div>
           <div class="col-sm-6 col-md-3" role="region">
             <?php if ( is_active_sidebar( 'footer-right' ) ) : ?>
