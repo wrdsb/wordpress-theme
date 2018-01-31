@@ -212,9 +212,9 @@ function wrdsb_widgets_init() {
     'after_title'   => '</h1>',
   ) );
   register_sidebar( array(
-    'name'          => __( 'Do Not Use: Footer Centre', 'wrdsb' ),
+    'name'          => __( 'Footer Centre', 'wrdsb' ),
     'id'            => 'footer-centre',
-    'description'   => __( 'Appears in the third footer section of the site. This area is controlled centrally, widgets placed here will not display.', 'wrdsb' ),
+    'description'   => __( 'Appears in the third footer section of the site.', 'wrdsb' ),
     'before_widget' => '',
     'after_widget'  => '',
     'before_title'  => '<h1>',
