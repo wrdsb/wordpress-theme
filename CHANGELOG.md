@@ -1,3 +1,6 @@
+## 1.2.6
++ add calendar page template
+
 ## 1.2.4
 + add kindergarten registration
 
