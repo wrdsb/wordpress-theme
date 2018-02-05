@@ -52,14 +52,14 @@ include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
             <?php } ?>
           </div>
           <div class="col-sm-6 col-md-3" aria-labelledby="connect-wrdsb">
-              <h1 role="form" id="connect-wrdsb">Stay Connected</h1>
+              <h1 role="form" id="connect-wrdsb">Stay connected</h1>
               <?php if ( is_plugin_active( 'wordpress-plugin-mailgun-subscriptions/mailgun-subscriptions.php' ) ) {
                 the_widget( 'Mailgun_Subscriptions\Widget' );
               } else {
                 the_widget( 'WRDSB_Subscribe_By_Email_Widget' );
               } ?>
-              <p>You will need to subscribe to get the news feeds from each website separately.</p>
-              <h2>Other Ways to Get News</h2>
+              <p>Each WRDSB website requires a separate subscription.</p>
+              <h2>Other ways to get news</h2>
               <p><a href="https://www.wrdsb.ca/our-schools/communicating-with-your-school/subscribing/" target="_blank">See all subscription options</a>.</p>
           </div>
           <div class="col-sm-6 col-md-3" role="region">

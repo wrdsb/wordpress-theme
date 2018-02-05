@@ -1,3 +1,6 @@
+## 1.2.6
++ update wording in footer
+
 ## 1.2.5
 + remove parent email into trillium form from footer
 + add footer option for customization
