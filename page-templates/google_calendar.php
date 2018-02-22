@@ -18,9 +18,10 @@ Template Name: Google Calendar
 	        endwhile;
 
 	        function display_calendars() {
-					$parsed_url = parse_url(site_url());
+					//$parsed_url = parse_url(site_url());
+					$parsed_url = parse_url(network_site_url());
 					$host = explode('.', $parsed_url['host']);
-					$subdomain = explode('/',$_SERVER['REQUEST_URI']);							              	
+					$subdomain = explode('/',$_SERVER['REQUEST_URI']); // wplabs only
 		      		$json_address='https://s3.amazonaws.com/wrdsb-ui-assets/'.$GLOBALS['wrdsbvars']['asset_version'].'/json/school-calendars.json';
 					$json = file_get_contents($json_address);
 					$schools = json_decode($json);
@@ -73,7 +74,7 @@ Template Name: Google Calendar
 					<?php 
 							}
 						}
-					} else if ( $host[0] === 'staff' && wrdsb_i_am_a_school() && !wrdsb_i_am_a_school_secondary()  ) {
+					} else if ( $host[0] === 'schools' && wrdsb_i_am_a_school() && !wrdsb_i_am_a_school_secondary()  ) {
 
 						foreach ( $schools as $school ) {
 					
