@@ -733,7 +733,9 @@ function wrdsb_i_am_a_school() {
     "wsh",
     "wsm",
     "wsv",
-    "wtt"
+    "wtt",
+    "dsps",
+    "gnss"
   );
   if (in_array(($host[0]), $alpha_codes)) {
     return TRUE;
@@ -783,7 +785,8 @@ function wrdsb_i_am_a_school_secondary() {
     "phs",
     "sss",
     "wci",
-    "wod"
+    "wod",
+    "gnss"
   );
   if (in_array(($host[0]), $alpha_codes)) {
     return TRUE;
