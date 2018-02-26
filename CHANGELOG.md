@@ -1,5 +1,8 @@
+## 1.2.7
++ add calendar page template for schools
+
 ## 1.2.6
-+ add calendar page template
++ update wording in footer
 
 ## 1.2.5
 + remove parent email into trillium form from footer

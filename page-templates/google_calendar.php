@@ -18,16 +18,18 @@ Template Name: Google Calendar
 	        endwhile;
 
 	        function display_calendars() {
-					//$parsed_url = parse_url(site_url());
-					$parsed_url = parse_url(network_site_url());
-					$host = explode('.', $parsed_url['host']);
-					$subdomain = explode('/',$_SERVER['REQUEST_URI']); // wplabs and staff site only
+					//$parsed_url = parse_url(network_site_url());
+					//$host = explode('.', $parsed_url['host']); // wplabs only for testing
+					//$subdomain = explode('/',$_SERVER['REQUEST_URI']); // wplabs and staff site only
 					$fulldomain = explode('.',$_SERVER['HTTP_HOST']); // schools
 		      		$json_address='https://s3.amazonaws.com/wrdsb-ui-assets/'.$GLOBALS['wrdsbvars']['asset_version'].'/json/school-calendars.json';
 					$json = file_get_contents($json_address);
 					$schools = json_decode($json);
 
-					if ( $host[0] === 'staff' && wrdsb_i_am_a_school() && !wrdsb_i_am_a_school_secondary() ) {
+/*					// disabled as school handbooks may be removed by Communications
+					// unknown issue not permitting secondary schools to display left unfixed [SZC]
+
+					if ( wrdsb_i_am_a_staff_site() && !wrdsb_i_am_a_school_secondary() ) {
 
 						foreach ( $schools as $school ) {
 					
@@ -51,7 +53,7 @@ Template Name: Google Calendar
 					<?php 
 							}
 						}
-					} else if ( $host[0] === 'staff' && wrdsb_i_am_a_school_secondary() ) {
+					} else if ( wrdsb_i_am_a_staff_site() && wrdsb_i_am_a_school_secondary() ) {
 
 						foreach ( $schools as $school ) {
 					
@@ -68,14 +70,14 @@ Template Name: Google Calendar
 								&amp;src=<?php echo $staff_calendar_id;?>
 								&amp;src=<?php echo $public_calendar_id;?>
 								&amp;src=pp2nfhd2jnee8dfvvgqhmfd374%40group.calendar.google.com
-								&amp;src=googleapps.wrdsb.ca_0jfcu96cgct7pcuuo2e84anov0@group.calendar.google.com
 								&amp;src=googleapps.wrdsb.ca_p103vo5u34ilmtf0mvr600q60s@group.calendar.google.com
 								&amp;src=googleapps.wrdsb.ca_lj8usonv13of47900al71a4rr8@group.calendar.google.com" 
 								style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
 					<?php 
 							}
 						}
-					} else if ( $host[0] === 'schools' && !wrdsb_i_am_a_school_secondary() ) {
+					} else */
+					if ( wrdsb_i_am_a_school_site() && !wrdsb_i_am_a_school_secondary() ) {
 
 						foreach ( $schools as $school ) {
 					
@@ -97,7 +99,7 @@ Template Name: Google Calendar
 					<?php 
 							}
 						}
-					} else if ( $host[0] === 'schools' && wrdsb_i_am_a_school_secondary() ) {
+					} else if ( wrdsb_i_am_a_school_site() && wrdsb_i_am_a_school_secondary() ) {
 
 						foreach ( $schools as $school ) {
 					
@@ -119,6 +121,8 @@ Template Name: Google Calendar
 					<?php 
 							}
 						}
+/*
+					// for testing only
 					} else if ( $host[0] === 'wplabs' ) {
 
 						foreach ( $schools as $school ) {
@@ -141,7 +145,7 @@ Template Name: Google Calendar
 								style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
 						<?php 
 						} // end foreach
-					} // end display code
+					} // end display code */
 				} // end if statement for install check
 			} // end function
 			display_calendars(); ?> 
