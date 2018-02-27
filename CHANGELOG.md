@@ -1,3 +1,6 @@
+## 1.2.7
++ add calendar page template for schools
+
 ## 1.2.6
 + update wording in footer
 
