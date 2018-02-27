@@ -18,8 +18,8 @@ Template Name: Google Calendar
 	        endwhile;
 
 	        function display_calendars() {
-					//$parsed_url = parse_url(network_site_url());
-					//$host = explode('.', $parsed_url['host']); // wplabs only for testing
+					$parsed_url = parse_url(network_site_url());
+					$host = explode('.', $parsed_url['host']); // wplabs only for testing
 					//$subdomain = explode('/',$_SERVER['REQUEST_URI']); // wplabs and staff site only
 					$fulldomain = explode('.',$_SERVER['HTTP_HOST']); // schools
 		      		$json_address='https://s3.amazonaws.com/wrdsb-ui-assets/'.$GLOBALS['wrdsbvars']['asset_version'].'/json/school-calendars.json';
@@ -77,13 +77,14 @@ Template Name: Google Calendar
 							}
 						}
 					} else */
-					if ( wrdsb_i_am_a_school_site() && !wrdsb_i_am_a_school_secondary() ) {
+					if ( $host[0] === 'schools' && !wrdsb_i_am_a_school_secondary() ) {
 
 						foreach ( $schools as $school ) {
 					
 							if ( $school->schoolcode === $fulldomain[0] ) {	
 								$staff_calendar_id = $school->staff_calendar_id;
 								$public_calendar_id = $school->public_calendar_id;
+								$school_name = $school->full_name;
 								?>
 								<!-- Elementary Public -->
 
@@ -96,16 +97,19 @@ Template Name: Google Calendar
 								&amp;src=googleapps.wrdsb.ca_p103vo5u34ilmtf0mvr600q60s@group.calendar.google.com
 								&amp;src=googleapps.wrdsb.ca_tfmv2qk1779181ronae9uk6988@group.calendar.google.com" 
 								style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+
+								<div class="alert alert-info">Not using Google Calendar? Add the <?php echo $school_name; ?> calendar to your calendar using: <a class="btn btn-default" href="https://calendar.google.com/calendar/ical/<?php echo $public_calendar_id; ?>/public/basic.ics">ICAL</a> <a class="btn btn-default" href="https://calendar.google.com/calendar/embed?src=<?php echo $public_calendar_id; ?>&amp;ctz=America/Toronto" target="_blank" rel="noopener noreferrer">HTML</a></div>
 					<?php 
 							}
 						}
-					} else if ( wrdsb_i_am_a_school_site() && wrdsb_i_am_a_school_secondary() ) {
+					} else if ( $host[0] === 'schools' && wrdsb_i_am_a_school_secondary() ) {
 
 						foreach ( $schools as $school ) {
 					
 							if ( $school->schoolcode === $fulldomain[0] ) {	
 								$staff_calendar_id = $school->staff_calendar_id;
 								$public_calendar_id = $school->public_calendar_id;
+								$school_name = $school->full_name;
 								?>
 								<!-- Secondary Public -->
 
@@ -118,6 +122,8 @@ Template Name: Google Calendar
 								&amp;src=googleapps.wrdsb.ca_p103vo5u34ilmtf0mvr600q60s@group.calendar.google.com
 								&amp;src=googleapps.wrdsb.ca_lj8usonv13of47900al71a4rr8@group.calendar.google.com" 
 								style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+
+								<div class="alert alert-info">Not using Google Calendar? Add the <?php echo $school_name; ?> calendar to your calendar using: <a class="btn btn-default" href="https://calendar.google.com/calendar/ical/<?php echo $public_calendar_id; ?>/public/basic.ics">ICAL</a> <a class="btn btn-default" href="https://calendar.google.com/calendar/embed?src=<?php echo $public_calendar_id; ?>&amp;ctz=America/Toronto" target="_blank" rel="noopener noreferrer">HTML</a></div>
 					<?php 
 							}
 						}

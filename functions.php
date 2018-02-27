@@ -765,9 +765,7 @@ function wrdsb_i_am_a_school_exception() {
     "ins",
     "rmt",
     "chinese",
-    "dsps",
     "german",
-    "gnss",
     "greek",
     "serbian",
     "experiential-learning"
