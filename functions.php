@@ -606,6 +606,17 @@ function wrdsb_i_am_a_staff_site() {
   }
 }
 
+function wrdsb_i_am_a_school_site() {
+  $parsed_url = parse_url(site_url());
+  $host = explode('.', $parsed_url['host']);
+  $my_domains = array(
+    "schools",
+  );
+  if (in_array(($host[0]), $my_domains)) {
+    return TRUE;
+  }
+}
+
 function wrdsb_i_am_a_school() {
   $parsed_url = parse_url(site_url());
   $host = explode('.', $parsed_url['host']);
@@ -733,7 +744,9 @@ function wrdsb_i_am_a_school() {
     "wsh",
     "wsm",
     "wsv",
-    "wtt"
+    "wtt",
+    "dsps",
+    "gnss"
   );
   if (in_array(($host[0]), $alpha_codes)) {
     return TRUE;
@@ -752,9 +765,7 @@ function wrdsb_i_am_a_school_exception() {
     "ins",
     "rmt",
     "chinese",
-    "dsps",
     "german",
-    "gnss",
     "greek",
     "serbian",
     "experiential-learning"
@@ -783,7 +794,8 @@ function wrdsb_i_am_a_school_secondary() {
     "phs",
     "sss",
     "wci",
-    "wod"
+    "wod",
+    "gnss"
   );
   if (in_array(($host[0]), $alpha_codes)) {
     return TRUE;
