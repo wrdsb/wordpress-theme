@@ -1,3 +1,7 @@
+## 1.2.8
++ repair staff list display options to honour preferences
++ fix staff list display for mobile screens
+
 ## 1.2.7
 + add calendar page template for schools
 
