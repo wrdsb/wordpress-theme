@@ -1,3 +1,6 @@
+## 1.3.0
++ add comments.php
+
 ## 1.2.8
 + repair staff list display options to honour preferences
 + fix staff list display for mobile screens
