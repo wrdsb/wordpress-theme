@@ -115,17 +115,19 @@ Template Name: Staff List
                   }
 
                   if ($wrdsb_contact_options === 'Email') {
-                    $staff_contact = "Email: " . $user->user_email . "<br />";
+                    $staff_contact = "<strong>Email:</strong> " . $user->user_email . "<br />";
                   } else if ($wrdsb_contact_options === 'Voicemail') {
-                    $staff_contact = "Email: " . $user->user_voicemail . "<br />";
+                    $staff_contact = "<strong>Email:</strong> " . $user->user_voicemail . "<br />";
                   } else if ($wrdsb_contact_options === 'Both') {
-                    $staff_contact = "Email: " . $user->user_email . "<br />";
+                    $staff_contact = "<strong>Email:</strong> " . $user->user_email . "<br />";
                     //$staff_contact .= "Voicemail: " . $wrdsb_voicemail . "<br />";
+                  } else {
+                    $staff_contact = '';
                   }
 
                   $wrdsb_website_url = get_user_option('wrdsb_website_url', $user->ID);
                   if (strpos($wrdsb_website_url, 'wrdsb.ca') !== FALSE) {
-                      $staff_website = 'Website: <a href="' . $wrdsb_website_url . '" target="_blank" rel="noopener noferrer">' . $wrdsb_website_url . '</a>';
+                      $staff_website = '<strong>Website:</strong> <a href="' . $wrdsb_website_url . '" target="_blank" rel="noopener noferrer">' . $wrdsb_website_url . '</a>';
                     } else {
                       $staff_website = '';
                     }

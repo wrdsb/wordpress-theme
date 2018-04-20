@@ -1,3 +1,6 @@
+## 1.3.1
++ fix staff list display for mobile screens (email address display)
+
 ## 1.3.0
 + add comments.php
 
