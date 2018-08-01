@@ -1,3 +1,7 @@
+## 1.3.2
++ replace calendar ids for Holidays, Events, Elementary, Secondary calenders, per Communications request
++ pull calendar ids into an array to streamline code
+
 ## 1.3.1
 + fix staff list display for mobile screens (email address display)
 
