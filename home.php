@@ -26,6 +26,10 @@
       }
 
       if (is_front_page() && wrdsb_i_am_a_school_secondary()) { ?>
+        <div class="register" style="background-color:#FFDD4F;margin-top: 15px;color: #000;-webkit-box-shadow: 5px 5px 20px -7px rgba(255, 221, 79, 1);-moz-box-shadow: 5px 5px 20px -7px rgba(255, 221, 79, 1);box_shadow: 5px 5px 20px -7px rgba(255, 221, 79, 1);">
+         <a href="https://www.wrdsb.ca/about-the-wrdsb/policiesprocedures/release-of-student-information/consent-for-information-sharing-for-adult-students/" style="color: #000;">Are you turning 18 this year?</a>
+        </div>
+       
       <?php
       }
 
@@ -64,6 +68,10 @@
       }
 
       if (is_front_page() && wrdsb_i_am_a_school_secondary()) { ?>
+        <div class="register" style="background-color:#FFDD4F;margin-top: 15px;color: #000;-webkit-box-shadow: 5px 5px 20px -7px rgba(255, 221, 79, 1);-moz-box-shadow: 5px 5px 20px -7px rgba(255, 221, 79, 1);box_shadow: 5px 5px 20px -7px rgba(255, 221, 79, 1);">
+         <a href="https://www.wrdsb.ca/about-the-wrdsb/policiesprocedures/release-of-student-information/consent-for-information-sharing-for-adult-students/" style="color: #000;">Are you turning 18 this year?</a>
+        </div>
+
       <?php
       }
 
