@@ -20,7 +20,7 @@ Template Name: School List
 				// all schools that shouldn't display
               	$hidden_schools  = array ('ALC','ALI','ALR','ALU','ANC','BAD','BLV','BRI','CAS','CLC','CLN','DKS','ELE','HAR','HMR','LAF','LNA','LUC','LUT','MBR','MCQ','NWL','PYS','SBL','SBM','SMH','TBR','UHS','UTR','WNB','WSR','WSS','XSE','XSS');
 
-              	$alt_con_ed_schools = array('ALC', 'ALU', 'CLN', 'INL', 'INS', 'RMT');
+              	$alt_con_ed_schools = array('ALC', 'ALU', 'CLN', 'INL', 'INS');
               	$con_ed_schools = array('INE','INS','INL','NSC','NSN','NSS','ODC','ODW','SEC','SEN','SEO','SES','SCC','SCE','SCN','SCO','SCS','SBL','SBM');
 
               	$json_address='https://s3.amazonaws.com/wrdsb-ui-assets/'.$GLOBALS['wrdsbvars']['asset_version'].'/json/schools.json';
