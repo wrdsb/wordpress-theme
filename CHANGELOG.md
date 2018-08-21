@@ -1,3 +1,6 @@
+## 1.3.4
++ ensure RMT displays in school list
+
 ## 1.3.3
 + Add 18+ button per request 20230
 
