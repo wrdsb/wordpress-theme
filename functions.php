@@ -617,6 +617,10 @@ function wrdsb_i_am_a_school_site() {
   }
 }
 
+function wrdsb_get_school_code() {
+  return get_option('wrdsb_school_code', false);
+}
+
 function wrdsb_i_am_a_school() {
   $parsed_url = parse_url(site_url());
   $host = explode('.', $parsed_url['host']);
