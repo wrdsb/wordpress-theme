@@ -56,7 +56,7 @@ include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
               <?php if (wrdsb_get_school_code()) { ?>
                 <h1>Trillium Data</h1>
                 <ul>
-                  <li><a href="<?php echo get_site_url(); ?>/trillium/classes">Class Lists</a></li>
+                  <li><a href="<?php echo get_site_url(); ?>/trillium/classes">Class lists</a></li>
                 </ul>
               <?php } ?>
             <?php } else { ?>

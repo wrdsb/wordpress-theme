@@ -1,3 +1,7 @@
+## 1.4.0
++ add new function to return school code if available
++ add link to class lists if a school handbook on the staff intranet
+
 ## 1.3.4
 + ensure RMT displays in school list
 
