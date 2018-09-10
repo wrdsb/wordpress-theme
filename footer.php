@@ -52,6 +52,14 @@ include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
             <?php } ?>
           </div>
           <div class="col-sm-6 col-md-3" aria-labelledby="connect-wrdsb">
+            <?php if (wrdsb_i_am_a_staff_site()) { ?>
+              <?php if (wrdsb_get_school_code()) { ?>
+                <h1>Trillium Data</h1>
+                <ul>
+                  <li><a href="<?php echo get_site_url(); ?>/trillium/classes">Class lists</a></li>
+                </ul>
+              <?php } ?>
+            <?php } else { ?>
               <h1 role="form" id="connect-wrdsb">Stay connected</h1>
               <?php if ( is_plugin_active( 'wordpress-plugin-mailgun-subscriptions/mailgun-subscriptions.php' ) ) {
                 the_widget( 'Mailgun_Subscriptions\Widget' );
@@ -61,6 +69,7 @@ include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
               <p>Each WRDSB website requires a separate subscription.</p>
               <h2>Other ways to get news</h2>
               <p><a href="https://www.wrdsb.ca/our-schools/communicating-with-your-school/subscribing/" target="_blank">See all subscription options</a>.</p>
+            <?php } ?>
           </div>
           <div class="col-sm-6 col-md-3" role="region">
           </div>
