@@ -3,7 +3,14 @@
 Template Name: Staff List
 */
 ?>
-<?php $user_query = new WP_User_Query(array('blog_id' => $GLOBALS['blog_id'])); ?>
+<?php $user_query = new WP_User_Query(
+  array(
+    'blog_id' => $GLOBALS['blog_id'],
+    'meta_key' => 'last_name',
+    'orderby' => 'meta_value',
+    'order' => 'ASC'
+  )
+); ?>
 <?php get_header(); ?>
 
 <div class="container" role="main">
