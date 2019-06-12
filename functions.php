@@ -590,8 +590,13 @@ function wrdsb_i_am_a_corporate_site() {
   $my_domains = array(
     "www",
   );
+  $domain = 'wrdsb';
+  $url = site_url();
+
   if (in_array(($host[0]), $my_domains)) {
-    return TRUE;
+    if (strpos($url, $domain) !== false) {
+      return TRUE;
+    }
   }
 }
 
