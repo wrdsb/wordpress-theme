@@ -1,3 +1,7 @@
+## 1.5.1
++ adjust placement of FB code in <head> and <body>
++ add conditions to FB Pixel code
+
 ## 1.5.0
 + add Facebook Pixel code per request 27655
 + adjust function i_am_a_corporate_site to exclude stswr
