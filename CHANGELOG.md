@@ -1,3 +1,7 @@
+## 1.5.0
++ add Facebook Pixel code per request 27655
++ adjust function i_am_a_corporate_site to exclude stswr
+
 ## 1.4.0
 + add new function to return school code if available
 + add link to class lists if a school handbook on the staff intranet
