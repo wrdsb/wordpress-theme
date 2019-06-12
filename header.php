@@ -104,29 +104,22 @@
 
   if (wrdsb_i_am_a_corporate_site()) {
   ?>
-          <!-- Facebook Code -->
-
-          <div id="fb-root"></div>
-          <script>(function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.5&appId=609688172419098";
-            fjs.parentNode.insertBefore(js, fjs);
-          }(document, \'script\', \'facebook-jssdk\'));</script>
-
           <!-- Facebook Pixel Code -->
           <script>
           !function(f,b,e,v,n,t,s)
           {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
           n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-          if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version=\'2.0\';
+          if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
           n.queue=[];t=b.createElement(e);t.async=!0;
           t.src=v;s=b.getElementsByTagName(e)[0];
-          s.parentNode.insertBefore(t,s)}(window,document,\'script\',
-          \'https://connect.facebook.net/en_US/fbevents.js\');
-           fbq(\'init\', \'2048554848748568\'); 
-          fbq(\'track\', \'PageView\');
+          s.parentNode.insertBefore(t,s)}(window,document,'script',
+          'https://connect.facebook.net/en_US/fbevents.js');
+          fbq('init', '2048554848748568'); 
+          fbq('track', 'PageView');
+          fbq('track', 'Lead');
+          fbq('track', 'ViewContent');
+          fbq('track', 'SubmitApplication');
+          fbq('track', 'Search');
           </script>
           <noscript>
            <img height="1" width="1" 
@@ -138,6 +131,21 @@
 </head>
 
 <body id="top">
+
+<?php    if (wrdsb_i_am_a_corporate_site()) {
+  ?>
+          <!-- Facebook Code -->
+
+          <div id="fb-root"></div>
+          <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.5&appId=609688172419098";
+            fjs.parentNode.insertBefore(js, fjs);
+          }(document, \'script\', \'facebook-jssdk\'));</script>
+<? } ?>
+
 
 <!-- header -->
   <div class="container container-top">
