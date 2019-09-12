@@ -1,3 +1,6 @@
+## 1.6.0
++ new masthead and header fonts
+
 ## 1.5.2
 + update FB JS SDK
 
