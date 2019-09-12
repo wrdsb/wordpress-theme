@@ -1,3 +1,6 @@
+## 1.5.2
++ update FB JS SDK
+
 ## 1.5.1
 + adjust placement of FB code in <head> and <body>
 + add conditions to FB Pixel code
