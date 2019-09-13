@@ -118,7 +118,7 @@
       echo '<div class="col-sm-12 col-lg-12" role="main">';
     endif
     ?>
-            <h1>News &amp; Announcements</h1>
+            <h1>News &amp;<br />Announcements</h1>
             <?php
               // Start the Loop.
               while ( have_posts() ) : the_post();

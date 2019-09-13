@@ -19,8 +19,9 @@
   <title><?php wp_title(''); ?> (<?php bloginfo('name'); ?>)</title>
   <?php } ?>
 
-  <link href="https://s3.amazonaws.com/wrdsb-ui-assets/1/master.css" rel="stylesheet" media="all">
+  <link href="https://s3.amazonaws.com/wrdsb-ui-assets/1/master.css" rel="stylesheet" media="all" />
 
+  <!-- icons -->
   <link href="https://s3.amazonaws.com/wrdsb-ui-assets/<?php echo $GLOBALS['wrdsbvars']['asset_version']; ?>/images/icon-60x60.png" rel="apple-touch-icon" />
   <link href="https://s3.amazonaws.com/wrdsb-ui-assets/<?php echo $GLOBALS['wrdsbvars']['asset_version']; ?>/images/icon-76x76.png" rel="apple-touch-icon" sizes="76x76" />
   <link href="https://s3.amazonaws.com/wrdsb-ui-assets/<?php echo $GLOBALS['wrdsbvars']['asset_version']; ?>/images/icon-120x120.png" rel="apple-touch-icon" sizes="120x120" />
@@ -136,49 +137,256 @@
   ?>
           <!-- Facebook Code -->
 
-          <!-- deprecated 2019-09-12 SZC
-          <div id="fb-root"></div>
-          <script>(function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.5&appId=609688172419098";
-            fjs.parentNode.insertBefore(js, fjs);
-          }(document, \'script\', \'facebook-jssdk\'));</script> --->
-
           <div id="fb-root"></div>
           <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v4.0"></script>
 <? } ?>
 
 
+<style type="text/css">
+
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic|Open+Sans+Condensed:300&display=swap');
+
+#masthead {
+  background-color: #005fae;
+}
+
+#navbar { 
+  background-color: #62bb46; 
+}
+
+#masthead .row {
+  margin: 0;
+}
+
+.my-navbar {
+  background-color:#62bb46;
+  border-radius:0;
+  border-top:0;
+  border-left:0;
+  border-right:0;
+  border-bottom:0;
+  margin-bottom:10px;
+}
+.my-sub-navbar {
+  background-color:#fff;
+  border-radius:0px;
+  border-left:0px;
+  border-right:0px;
+  border-bottom:0px;
+  margin-bottom:0px;
+/*  min-height:1px; */
+}
+.my-sub-navbar .navbar-brand {
+  float:none;
+}
+.nav-justified > li > a {
+  line-height:28px;
+  color:#fff;
+  font-weight:bold;
+  font-size:16px;
+}
+.nav >li > a:hover, .nav >li > a:focus {
+  background-color:#5cd635;
+}
+.nav >li.active,
+.nav >li.current-page-ancestor,
+.nav >li.current_page_ancestor,
+.nav >li.current-menu-item,
+.nav >li.current_page_item {
+  background-color:#5cd635;
+}
+
+.nav_current_page_children_container {
+  background-color:#e6eff6;
+  padding-bottom: 5px;
+}
+
+*** LOGO ***/
+
+#logo {
+  margin-top:14px;
+}
+#logo a {
+  display:inline-block;
+  width:100%;
+  height:110px;
+  background:url("https://wrdsb-ui-assets.s3.amazonaws.com/1/1.1.0/images/WRDSB+Secondary+Logo.svg") no-repeat;
+  background-size:400px 110px;
+  /*margin-left:120px;*/
+  text-decoration:none;
+  color:#000;
+}
+/*a.logo {
+  background:url("https://s3.amazonaws.com/wrdsb-ui-assets/1/1.0.2/images/WRDSB_Logo.svg") no-repeat;
+  background-size:50px 50px;
+  padding-left:60px;
+}*/
+
+#logo a:hover, #logo a:active, #logo a:focus {
+  text-decoration:none;
+}
+
+#logo a span {
+  display:none;
+}
+
+#logo a #sitename {
+  font-weight:bold;
+  margin:0;
+  top:48px;
+  position:absolute;
+}
+#logo a #sitedescription {
+  margin:0;
+  top:86px;
+  position:absolute;
+  letter-spacing:2px;
+}
+
+  #sitename {
+    font-size: 30px;
+    font-weight:bold;
+  }
+
+  #sitedescription {
+    font-size: 22px;
+    letter-spacing: 0;
+  }
+
+#logo a #sitename, #logo a #sitedescription {
+    color:#005daa;
+  }
+
+  #logo a #sitename {
+    margin:0;
+    top:40px;
+    position:absolute;
+  }
+
+  #logo a #sitedescription {
+    margin:0;
+    top:75px;
+    position:absolute;
+  }
+
+  @media (min-width: 992px) and (max-width: 1199px) {
+    #logo a #sitename {
+      font-size:26px;
+      top:44px;
+    }
+    #logo a #sitedescription {
+      font-size:20px;
+      top:78px;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    #logo a #sitename {
+      font-size:22px;
+      top:28px;
+    }
+    #logo a #sitedescription {
+      display:none;
+    }
+  }
+
+#staff-shortcut-list a {
+  color: #fff;
+  background-image: url(https://wrdsb-ui-assets.s3.amazonaws.com/1/1.1.0/images/Pointer.svg);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  margin-left: -1px;
+  font-size: 16px;
+}
+
+h1 {
+  font-family: 'Open Sans Condensed', sans-serif !important;
+  font-weight: bold;
+  font-size: 40px;
+  color: #62bb46;
+}
+
+h2 {
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 22px;
+  color: #005fae;
+}
+
+p, li, td {
+  font-size: 16px;
+  line-height: 150%;
+}
+
+p.fineprint, p.categories, p.tags, p.postdate {
+  font-size: 13px;
+}
+
+.staff-shortcuts {
+  margin-top:40px;
+  position: inherit;
+}
+
+.staff-shortcuts a {
+  margin:0 8px;
+}
+.searchbox {
+  /*float:left;*/
+  /*width:100%;*/
+  margin-top:8px;
+  float: none;
+}
+.searchbox input {
+  /*width:170px;
+  float:left;*/
+  width: 266px;
+  color:#666;
+  padding: 2px 4px;
+  margin:0 0 15px 0;
+  float: none;
+}
+.staff-shortcuts .icon-search {
+  /*display:inline-block;
+  position:relative; */
+  left:-22px;
+  top:6px;
+}
+
+</style>
+
 <!-- header -->
-  <div class="container container-top">
+<div id="masthead">
+  <div class="container-top">
     <div class="header">
+          <div class="container">
       <div class="row">
-        <div class="col-md-9 col-sm-8">
-          <div id="logo" role="heading">
-            <a aria-labelledby="logo" href="<?php echo home_url(); ?>/"><span><?php echo get_bloginfo('name'); ?></span>
-              <p id="sitename"><?php echo get_bloginfo('name'); ?></p>
-              <?php if (get_bloginfo('description') != '') { ?>
-              <p id="sitedescription"><?php echo get_bloginfo('description'); ?></p>
-              <?php } ?>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-4">
-          <div class="staff-shortcuts" role="complementary" aria-labelledby="staff-shortcut-list">
-            <div id="staff-shortcut-list">
-              <a href="#address">Contact Information</a>
+        <div class="col-md-9 col-sm-6">
+            <div id="logo" role="heading">
+              <a aria-labelledby="logo" href="<?php echo home_url(); ?>/"><span><?php echo get_bloginfo('name'); ?></span>
+                <?php if (wrdsb_i_am_a_corporate_site() != true) { ?>
+                <p id="sitename"><?php /*echo get_bloginfo('name'); */?></p>
+                <?php if (get_bloginfo('description') != '') { ?>
+                <p id="sitedescription"><?php echo get_bloginfo('description'); ?></p>
+                <?php } }?>
+              </a>
             </div>
-            <div class="searchbox" role="search" aria-labelledby="search">
-              <form action="<?php echo home_url(); ?>/" method="get">
-                <input aria-label="Search" type="text" name="s" id="search" value="<?php the_search_query(); ?>" placeholder="Search" />
-              </form>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="staff-shortcuts" role="complementary" aria-labelledby="staff-shortcut-list">
+              <div class="searchbox" role="search" aria-labelledby="search">
+                <form action="<?php echo home_url(); ?>/" method="get">
+                  <input aria-label="Search" type="text" name="s" id="search" value="<?php the_search_query(); ?>" placeholder="Search" />
+                </form>
+              </div>
+              
+              <div id="staff-shortcut-list">
+                <a href="#address">Contact Information</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
     <div class="navbar my-navbar" role="navigation" aria-labelledby="navbar-header">
         <div id="navbar-header">
@@ -214,7 +422,7 @@
               </form>
         </div>
 
-        <div id="menu" role="navigation" aria_label="Menu">
+        <div id="menu" class="container" role="navigation" aria_label="Menu">
 
         <?php if (has_nav_menu('top')) {
           wp_nav_menu(array('theme_location' => 'top', 'menu_class' => 'nav nav-justified', 'container_class' => 'collapse navbar-collapse'));
