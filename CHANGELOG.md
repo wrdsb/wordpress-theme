@@ -1,3 +1,9 @@
+## 2.0.0
++ new masthead code
++ fixed search for mobile
++ updated link to ui assets
++ h1 on own visual line (sidebars lowered)
+
 ## 1.5.2
 + update FB JS SDK
 

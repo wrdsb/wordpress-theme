@@ -13,8 +13,13 @@ Template Name: Staff List
 ); ?>
 <?php get_header(); ?>
 
-<div class="container" role="main">
-  <div class="row">
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12" role="complementary">
+            <h1><?php echo get_the_title($post->ID);?></h1>
+        </div>
+    </div>
+    <div class="row">
     <div class="col-md-12">
     <?php
       // Start the content loop.

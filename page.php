@@ -1,7 +1,11 @@
 <?php get_header(); ?>
-
 <div class="container">
-  <div class="row">
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12" role="complementary">
+            <h1><?php echo get_the_title($post->ID);?></h1>
+        </div>
+    </div>
+    <div class="row">
 
     <?php
     $has_left = !is_front_page() ? TRUE: FALSE; // if not front page, has a left sidebar
