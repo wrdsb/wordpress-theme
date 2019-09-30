@@ -6,7 +6,12 @@
   if (is_active_sidebar('sidebar-right') || has_nav_menu('right')) {$has_right = TRUE;}
 ?>
 <div class="container">
-  <div class="row">
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12" role="complementary">
+            <h1><?php echo get_the_title($post->ID);?></h1>
+        </div>
+    </div>
+    <div class="row">
     <?php
     # Both sidebars
    # left column
