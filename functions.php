@@ -588,7 +588,7 @@ function wrdsb_i_am_a_corporate_site() {
   $parsed_url = parse_url(site_url());
   $host = explode('.', $parsed_url['host']);
   $my_domains = array(
-    "www",
+    "www","wwwwrdsbdev"
   );
   $domain = 'wrdsb';
   $url = site_url();
@@ -615,7 +615,7 @@ function wrdsb_i_am_a_school_site() {
   $parsed_url = parse_url(site_url());
   $host = explode('.', $parsed_url['host']);
   $my_domains = array(
-    "schools",
+    "schools"
   );
   if (in_array(($host[0]), $my_domains)) {
     return TRUE;

@@ -1,7 +1,19 @@
 <?php get_header(); ?>
 
-      <div class="container">
-        <div class="row">
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12" role="complementary">
+<?php if ( $paged < 2 ) : ?>
+  <h1><?php single_tag_title('Tag: '); ?></h1>
+  <div id="tag-description">
+  <?php echo tag_description(); ?> 
+  </div>
+<?php else : ?>
+  <h1><?php single_tag_title('Category: '); ?></h1>
+<?php endif; ?>
+        </div>
+    </div>
+    <div class="row">
 
     <?php $has_left = FALSE; ?>
     <?php $has_right = FALSE; ?>
@@ -45,15 +57,6 @@
       echo '<div class="col-sm-12 col-lg-12">';
     endif
     ?>
-
-<?php if ( $paged < 2 ) : ?>
-	<h1><?php single_tag_title('Tag: '); ?></h1>
-	<div id="tag-description">
-	<?php echo tag_description(); ?> 
-	</div>
-<?php else : ?>
-	<h1><?php single_tag_title('Category: '); ?></h1>
-<?php endif; ?>
 
  <?php
     // Start the Loop.
