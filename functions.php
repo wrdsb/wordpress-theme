@@ -412,7 +412,7 @@ require get_template_directory() . '/inc/customizer.php';
 if ( ! function_exists ('wrdsb_global_vars' ) ) {
 function wrdsb_global_vars() {
   global $wrdsbvars;
-  $wrdsbvars['asset_version'] = "1/1.0.3";
+  $wrdsbvars['asset_version'] = "public/2/2.0.0";
   // to use: $GLOBALS['wrdsbvars']['asset_version']
 }
 add_action ( 'parse_query','wrdsb_global_vars' );
