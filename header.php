@@ -18,7 +18,7 @@
       <?php } else { ?>
       <title><?php wp_title(''); ?> (<?php bloginfo('name'); ?>)</title>
       <?php } ?>
-      <link href="https://s3.amazonaws.com/wrdsb-ui-assets/public/2/master.css" rel="stylesheet" media="all" />
+      <link href="https://s3.amazonaws.com/wrdsb-ui-assets/public/master.css" rel="stylesheet" media="all" />
        <!-- icons -->
       <link href="https://s3.amazonaws.com/wrdsb-ui-assets/<?php echo $GLOBALS['wrdsbvars']['asset_version']; ?>/images/icon-60x60.png" rel="apple-touch-icon" />
       <link href="https://s3.amazonaws.com/wrdsb-ui-assets/<?php echo $GLOBALS['wrdsbvars']['asset_version']; ?>/images/icon-76x76.png" rel="apple-touch-icon" sizes="76x76" />
@@ -104,7 +104,20 @@
       &noscript=1"/>
       </noscript>
       <!-- End Facebook Pixel Code -->
-      <? } ?>
+      <? }
+      if (wrdsb_i_am_a_corporate_site() != true)
+                    // if I am not a corporate site, e.g., if I am a school site
+                    { ?>
+      <style type="text/css">
+      #logo a {
+        background:url("https://wrdsb-ui-assets.s3.amazonaws.com/intranet/2/2.2.0/images/wrdsb_primary+logo_rev.svg") no-repeat;
+        background-size:75px 75px;
+        text-decoration:none;
+        color:#fff;
+        margin-top: 15px;
+      }
+      </style>
+      <?php } ?>
     </head>
     <body id="top">
       <?php    if (wrdsb_i_am_a_corporate_site()) {
