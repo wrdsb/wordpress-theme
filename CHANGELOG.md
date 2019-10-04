@@ -1,3 +1,6 @@
+## 2.0.1
++ removed extra title from single.php (news posts full page)
+
 ## 2.0.0
 + new masthead code
 + fixed search for mobile
