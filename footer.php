@@ -13,6 +13,11 @@
  */
 include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 ?>
+
+<div id="print_warning" class="printonly">
+    <p>This information expires once printed. Please always refer to the online version for the most current information.</p>
+</div>
+
     <div id="footer" class="footer" role="contentinfo">
       <div class="container">
         <div class="row">
@@ -26,7 +31,7 @@ include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
               else { ?>
               <address>
                 <h1>Waterloo Region District School Board</h1>
-              	<p>51 Ardelt Avenue<br />
+              	<p>51 Ardelt Avenue <span class="smallcaps">[ <a href="https://goo.gl/maps/Xfv11oCvxTioX31d8" target="_blank" rel="noopener no-repeat" />map</a> ]</span><br />
                 Kitchener, ON N2C 2R5</p>
                 <p>Switchboard: 519-570-0003<br />
                 <a href="https://www.wrdsb.ca/about-the-wrdsb/contact/">Contact the WRDSB</a></p>
