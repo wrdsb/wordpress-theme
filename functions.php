@@ -576,6 +576,21 @@ function new_excerpt_more($more) {
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 
+function get_our_excerpt($our_post_id, $global_post_id)
+{
+    global $post;
+    $our_excerpt = get_the_excerpt($our_post_id);
+
+    if (strpos($our_excerpt, 'Read more about') !== false) {
+        $our_excerpt = str_replace(get_permalink($global_post_id), get_permalink($our_post_id), $our_excerpt);
+        $our_excerpt = str_replace(get_the_title($global_post_id), get_the_title($our_post_id), $our_excerpt);
+    } else {
+        $our_excerpt = $our_excerpt . '<p class="readmore" role="complementary"><a href="' . get_permalink($our_post_id) . '"><strong>Read more about</strong> <cite>' . get_the_title($our_post_id) . '</cite> &#187;</a></p>';
+    }
+
+    return $our_excerpt;
+}
+
 function wrdsb_posts_page_url() {
   if (get_option('show_on_front') == 'page') {
     return get_permalink(get_option('page_for_posts'));
@@ -588,7 +603,7 @@ function wrdsb_i_am_a_corporate_site() {
   $parsed_url = parse_url(site_url());
   $host = explode('.', $parsed_url['host']);
   $my_domains = array(
-    "www"/*,"wwwwrdsbdev"*/
+    "www","wwwwrdsbdev"
   );
   $domain = 'wrdsb';
   $url = site_url();
@@ -777,7 +792,8 @@ function wrdsb_i_am_a_school_exception() {
     "german",
     "greek",
     "serbian",
-    "experiential-learning"
+    "experiential-learning",
+    "environmental-education"
   );
   if (in_array(($host[0]), $alpha_codes)) {
     return TRUE;

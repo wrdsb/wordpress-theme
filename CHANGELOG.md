@@ -1,3 +1,7 @@
+## 2.1.0
++ changed WEFI button for school sites
++ added Google Maps link to Education Centre address in footer for corporate site
+
 ## 2.0.1
 + removed extra title from single.php (news posts full page)
 
