@@ -23,17 +23,14 @@ if (is_single()) :
 else :
 	// check if the post has a Post Thumbnail assigned to it.
 	if ( has_post_thumbnail()) :
-		// link Post Thumbnail to Post
-		// $post is from functions.php ?>
-		<a href="<?php echo get_permalink($post->ID) ?>"><?php echo the_post_thumbnail('wrdsb-full-width') ?></a>
-<?php
-        endif;
+         // link Post Thumbnail to Post
+        // $post is from functions.php
+        echo '<div class="featuredimage" role="presentation"><a href="'. get_permalink($post->ID) .'">'. the_post_thumbnail('wrdsb-full-width','alt') .'</a></div>';
+    endif;
 endif;
-?>
 
-<?php if (is_single()) :
-  the_title( '<h1>', '</h1>' );
-else :
+// change the heading value for news posts
+if (!is_single()) :
   the_title( '<h2 class="news"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 endif; ?>
 
