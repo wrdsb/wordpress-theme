@@ -21,6 +21,7 @@
       echo '<div class="col-sm-3 col-md-2 col-lg-2" role="complementary">';
 
       if (is_front_page() && wrdsb_i_am_a_school_exception()) { ?>
+        <p><a href="https://www.wrdsb.ca/labour/" onclick="ga('send', 'event', 'schoolBanners', 'click_banner', 'labour', 'https://www.wrdsb.ca/labour/',{'nonInteraction':1});"><img src="https://www.wrdsb.ca/wp-content/uploads/Labour-Update.png" alt="Labour Updates" /></a></p>
         <p><a href="https://myway.wrdsb.ca/" onclick="ga('send', 'event', 'schoolBanners', 'click_banner', 'myway', 'https://myway.wrdsb.ca/',{'nonInteraction':1});"><img src="https://www.wrdsb.ca/wp-content/uploads/myway_banner_344x100.jpg" alt="MyWay Logo"/></a></p>
       <?php 
       }
@@ -39,6 +40,7 @@
       }
 
       if (is_front_page() && wrdsb_i_am_a_school()) { ?>
+        <p><a href="https://www.wrdsb.ca/labour/" onclick="ga('send', 'event', 'schoolBanners', 'click_banner', 'labour', 'https://www.wrdsb.ca/labour/',{'nonInteraction':1});"><img src="https://www.wrdsb.ca/wp-content/uploads/Labour-Update.png" alt="Labour Updates" /></a></p>
         <p><a href="https://myway.wrdsb.ca/" onclick="ga('send', 'event', 'schoolBanners', 'click_banner', 'myway'"><img src="https://www.wrdsb.ca/wp-content/uploads/myway_banner_344x100.jpg" alt="MyWay Logo"/></a></p>
         <p><a href="https://schools.wrdsb.ca/school-year-information/" onclick="ga('send', 'event', 'schoolBanners', 'click_banner', 'syi', '/about/school-year-information',{'nonInteraction':1});"><img src="https://www.wrdsb.ca/wp-content/uploads/schoolyearinformation_344x100.jpg" alt="School Year Information" target="_blank" rel="noopener" /></a></p>
         <p><a href="http://www.wefihelps.org/" target="_blank" onclick="ga('send', 'event', 'schoolBanners', 'click_banner', 'wefi', 'http://www.wefihelps.org/',{'nonInteraction':1});"><img src="https://wrdsb-ui-assets.s3.amazonaws.com/public/2/2.0.0/images/wefi.png" alt="Waterloo Education Foundation Inc. (WEFI)"></a></p>
@@ -63,6 +65,7 @@
       echo '<div class="col-sm-3 col-lg-3" role="complementary">';
 
       if (is_front_page() && wrdsb_i_am_a_school_exception()) { ?>
+        <p><a href="https://www.wrdsb.ca/labour/" onclick="ga('send', 'event', 'schoolBanners', 'click_banner', 'labour', 'https://www.wrdsb.ca/labour/',{'nonInteraction':1});"><img src="https://www.wrdsb.ca/wp-content/uploads/Labour-Update.png" alt="Labour Updates" /></a></p>
         <p><a href="https://myway.wrdsb.ca/" onclick="ga('send', 'event', 'schoolBanners', 'click_banner', 'myway', 'https://myway.wrdsb.ca/',{'nonInteraction':1});"><img src="https://www.wrdsb.ca/wp-content/uploads/myway_banner_344x100.jpg" alt="MyWay Logo"/></a></p>
       <?php 
       }
@@ -81,6 +84,7 @@
       }
 
       if (is_front_page() && wrdsb_i_am_a_school()) { ?>
+        <p><a href="https://www.wrdsb.ca/labour/" onclick="ga('send', 'event', 'schoolBanners', 'click_banner', 'labour', 'https://www.wrdsb.ca/labour/',{'nonInteraction':1});"><img src="https://www.wrdsb.ca/wp-content/uploads/Labour-Update.png" alt="Labour Updates" /></a></p>
         <p><a href="https://myway.wrdsb.ca/" onclick="ga('send', 'event', 'schoolBanners', 'click_banner', 'myway'"><img src="https://www.wrdsb.ca/wp-content/uploads/myway_banner_344x100.jpg" alt="MyWay Logo"/></a></p>
         <p><a href="https://schools.wrdsb.ca/school-year-information/" onclick="ga('send', 'event', 'schoolBanners', 'click_banner', 'syi', '/about/school-year-information',{'nonInteraction':1});"><img src="https://www.wrdsb.ca/wp-content/uploads/schoolyearinformation_344x100.jpg" alt="School Year Information" target="_blank" rel="noopener" /></a></p>
         <p><a href="http://www.wefihelps.org/" target="_blank" onclick="ga('send', 'event', 'schoolBanners', 'click_banner', 'wefi', 'http://www.wefihelps.org/',{'nonInteraction':1});"><img src="https://wrdsb-ui-assets.s3.amazonaws.com/public/2/2.0.0/images/wefi.png" alt="Waterloo Education Foundation Inc. (WEFI)"></a></p>

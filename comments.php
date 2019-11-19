@@ -1,14 +1,11 @@
 <?php 
-
 if(!empty($_SERVER['SCRIPT_FILENAME']) && 'comments.php' == basename($_SERVER['SCRIPT_FILENAME'])) :
     die('Whoa! This page cannot be viewed independently. If you wish to post a comment, please navigate to the entry you wish to comment on and use the included form present on that page. Sorry for the inconvenience!');
 endif;
-
 if(!empty($post->post_password)) :
     if($_COOKIE['wp-postpass_' . COOKIEHASH] != $post->post_password) :
     endif;
 endif;
-
 /**
  * The template for displaying Comments.
  *
