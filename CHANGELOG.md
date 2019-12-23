@@ -1,4 +1,8 @@
-## 2.2.0
+##2.3.0
++ added severe weather button and link for schools
++ fix pointer to master.css for ui
+
+##2.2.0
 + added labour button and link for schools
 
 ## 2.1.0

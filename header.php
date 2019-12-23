@@ -18,7 +18,7 @@
       <?php } else { ?>
       <title><?php wp_title(''); ?> (<?php bloginfo('name'); ?>)</title>
       <?php } ?>
-      <link href="https://s3.amazonaws.com/wrdsb-ui-assets/public/master_test.css" rel="stylesheet" media="all" />
+      <link href="https://s3.amazonaws.com/wrdsb-ui-assets/public/master.css" rel="stylesheet" media="all" />
        <!-- icons -->
       <link href="https://s3.amazonaws.com/wrdsb-ui-assets/<?php echo $GLOBALS['wrdsbvars']['asset_version']; ?>/images/icon-60x60.png" rel="apple-touch-icon" />
       <link href="https://s3.amazonaws.com/wrdsb-ui-assets/<?php echo $GLOBALS['wrdsbvars']['asset_version']; ?>/images/icon-76x76.png" rel="apple-touch-icon" sizes="76x76" />
