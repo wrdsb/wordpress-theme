@@ -21,29 +21,33 @@
       echo '<div class="col-sm-3 col-md-2 col-lg-2" role="complementary">';
 
       if (is_front_page() && wrdsb_i_am_a_school_exception()) { ?>
-        <p><a href="https://myway.wrdsb.ca/" onclick="ga('send', 'event', 'schoolBanners', 'click_banner', 'myway', 'https://myway.wrdsb.ca/',{'nonInteraction':1});"><img src="https://www.wrdsb.ca/wp-content/uploads/myway_banner_344x100.jpg" alt="MyWay Logo"/></a></p>
+        <p><a href="https://www.wrdsb.ca/our-schools/student-transportation/severe-weather/" onclick="ga('send','event','schoolBanners', 'click_banner','severe weather', 'https://www.wrdsb.ca/our-schools/student-transportation/severe-weather/',{'nonInteraction':1});" target="_blank" rel="noopener"><img src="https://wrdsb-ui-assets.s3.amazonaws.com/public/2/2.2.0/images/Severe+Weather+Information%40344.png" alt="Severe Weather Information" /></a></p>
+        <p><a href="https://www.wrdsb.ca/labour/" onclick="ga('send', 'event', 'schoolBanners', 'click_banner', 'labour', 'https://www.wrdsb.ca/labour/',{'nonInteraction':1});" target="_blank" rel="noopener"><img src="https://www.wrdsb.ca/wp-content/uploads/Labour-Update.png" alt="Labour Updates" /></a></p>
+        <p><a href="https://myway.wrdsb.ca/" onclick="ga('send', 'event', 'schoolBanners', 'click_banner', 'myway', 'https://myway.wrdsb.ca/',{'nonInteraction':1});" target="_blank" rel="noopener"><img src="https://www.wrdsb.ca/wp-content/uploads/myway_banner_344x100.jpg" alt="MyWay Logo"/></a></p>
       <?php 
       }
 
       if (is_front_page() && wrdsb_i_am_a_school_with_kindergarten()) { ?>
-        <p><a href="https://www.wrdsb.ca/kindergarten/its-time-to-register/?utm_source=schools-button&utm_medium=referral&utm_campaign=kindergarten"><img src="https://www.wrdsb.ca/wp-content/uploads/REGISTER-ONLINE.png" alt="Register for Kindergarten at the WRDSB"/></a></p>   
+        <p><a href="https://www.wrdsb.ca/kindergarten/its-time-to-register/?utm_source=schools-button&utm_medium=referral&utm_campaign=kindergarten" target="_blank" rel="noopener"><img src="https://www.wrdsb.ca/wp-content/uploads/REGISTER-ONLINE.png" alt="Register for Kindergarten at the WRDSB"/></a></p>   
       <?php
       }
 
       if (is_front_page() && wrdsb_i_am_a_school_secondary()) { ?>
         <div class="register" style="background-color:#FFDD4F;margin-top: 15px;color: #000;-webkit-box-shadow: 5px 5px 20px -7px rgba(255, 221, 79, 1);-moz-box-shadow: 5px 5px 20px -7px rgba(255, 221, 79, 1);box_shadow: 5px 5px 20px -7px rgba(255, 221, 79, 1);">
-         <a href="https://www.wrdsb.ca/about-the-wrdsb/policiesprocedures/release-of-student-information/consent-for-information-sharing-for-adult-students/" style="color: #000;">Are you turning 18 this year?</a>
+         <a href="https://www.wrdsb.ca/about-the-wrdsb/policiesprocedures/release-of-student-information/consent-for-information-sharing-for-adult-students/" style="color: #000;" target="_blank" rel="noopener">Are you turning 18 this year?</a>
         </div>
        
       <?php
       }
 
       if (is_front_page() && wrdsb_i_am_a_school()) { ?>
-        <p><a href="https://myway.wrdsb.ca/" onclick="ga('send', 'event', 'schoolBanners', 'click_banner', 'myway'"><img src="https://www.wrdsb.ca/wp-content/uploads/myway_banner_344x100.jpg" alt="MyWay Logo"/></a></p>
-        <p><a href="https://schools.wrdsb.ca/school-year-information/" onclick="ga('send', 'event', 'schoolBanners', 'click_banner', 'syi', '/about/school-year-information',{'nonInteraction':1});"><img src="https://www.wrdsb.ca/wp-content/uploads/schoolyearinformation_344x100.jpg" alt="School Year Information" target="_blank" rel="noopener" /></a></p>
-        <p><a href="http://www.wefihelps.org/" target="_blank" onclick="ga('send', 'event', 'schoolBanners', 'click_banner', 'wefi', 'http://www.wefihelps.org/',{'nonInteraction':1});"><img src="https://wrdsb-ui-assets.s3.amazonaws.com/public/2/2.0.0/images/wefi.png" alt="Waterloo Education Foundation Inc. (WEFI)"></a></p>
+        <p><a href="https://www.wrdsb.ca/our-schools/student-transportation/severe-weather/" onclick="ga('send','event','schoolBanners', 'click_banner','severe weather', 'https://www.wrdsb.ca/our-schools/student-transportation/severe-weather/',{'nonInteraction':1});" target="_blank" rel="noopener"><img src="https://wrdsb-ui-assets.s3.amazonaws.com/public/2/2.2.0/images/Severe+Weather+Information%40344.png" alt="Severe Weather Information" /></a></p>
+        <p><a href="https://www.wrdsb.ca/labour/" onclick="ga('send', 'event', 'schoolBanners', 'click_banner', 'labour', 'https://www.wrdsb.ca/labour/',{'nonInteraction':1});" target="_blank" rel="noopener"><img src="https://www.wrdsb.ca/wp-content/uploads/Labour-Update.png" alt="Labour Updates" /></a></p>
+        <p><a href="https://myway.wrdsb.ca/" onclick="ga('send', 'event', 'schoolBanners', 'click_banner', 'myway'" target="_blank" rel="noopener"><img src="https://www.wrdsb.ca/wp-content/uploads/myway_banner_344x100.jpg" alt="MyWay Logo"/></a></p>
+        <p><a href="https://schools.wrdsb.ca/school-year-information/" onclick="ga('send', 'event', 'schoolBanners', 'click_banner', 'syi', '/about/school-year-information',{'nonInteraction':1});" target="_blank" rel="noopener"><img src="https://www.wrdsb.ca/wp-content/uploads/schoolyearinformation_344x100.jpg" alt="School Year Information" target="_blank" rel="noopener" /></a></p>
+        <p><a href="http://www.wefihelps.org/" onclick="ga('send', 'event', 'schoolBanners', 'click_banner', 'wefi', 'http://www.wefihelps.org/',{'nonInteraction':1});" target="_blank" rel="noopener"><img src="https://wrdsb-ui-assets.s3.amazonaws.com/public/2/2.0.0/images/wefi.png" alt="Waterloo Education Foundation Inc. (WEFI)"></a></p>
         <iframe id="school-day" src="https://www.school-day.com/pg/school/sso/index.php"></iframe>
-        <p class="fineprint">Learn <a target="_blank" href="https://www.wrdsb.ca/our-schools/using-school-day/#signup">how to sign up for School-Day</a>!</p>
+        <p class="fineprint">Learn <a target="_blank" rel="noopener" href="https://www.wrdsb.ca/our-schools/using-school-day/#signup">how to sign up for School-Day</a>!</p>
 	    <?php
       }
 
@@ -51,7 +55,7 @@
 
 
     if (is_front_page() && wrdsb_i_am_a_school_exception()) { ?>
-        <p><a href="http://www.wefihelps.org/" target="_blank" onclick="ga('send', 'event', 'schoolBanners', 'click_banner', 'wefi', 'http://www.wefihelps.org/',{'nonInteraction':1});"><img src="https://wrdsb-ui-assets.s3.amazonaws.com/public/2/2.0.0/images/wefi.png" alt="Waterloo Education Foundation Inc. (WEFI)"></a></p>
+        <p><a href="http://www.wefihelps.org/" target="_blank" rel="noopener" onclick="ga('send', 'event', 'schoolBanners', 'click_banner', 'wefi', 'http://www.wefihelps.org/',{'nonInteraction':1});"><img src="https://wrdsb-ui-assets.s3.amazonaws.com/public/2/2.0.0/images/wefi.png" alt="Waterloo Education Foundation Inc. (WEFI)"></a></p>
      <?php 
       }
 
@@ -63,27 +67,31 @@
       echo '<div class="col-sm-3 col-lg-3" role="complementary">';
 
       if (is_front_page() && wrdsb_i_am_a_school_exception()) { ?>
-        <p><a href="https://myway.wrdsb.ca/" onclick="ga('send', 'event', 'schoolBanners', 'click_banner', 'myway', 'https://myway.wrdsb.ca/',{'nonInteraction':1});"><img src="https://www.wrdsb.ca/wp-content/uploads/myway_banner_344x100.jpg" alt="MyWay Logo"/></a></p>
+        <p><a href="https://www.wrdsb.ca/our-schools/student-transportation/severe-weather/" onclick="ga('send','event','schoolBanners', 'click_banner','severe weather', 'https://www.wrdsb.ca/our-schools/student-transportation/severe-weather/',{'nonInteraction':1});" target="_blank" rel="noopener"><img src="https://wrdsb-ui-assets.s3.amazonaws.com/public/2/2.2.0/images/Severe+Weather+Information%40344.png" alt="Severe Weather Information" /></a></p>
+        <p><a href="https://www.wrdsb.ca/labour/" onclick="ga('send', 'event', 'schoolBanners', 'click_banner', 'labour', 'https://www.wrdsb.ca/labour/',{'nonInteraction':1});" target="_blank" rel="noopener"><img src="https://www.wrdsb.ca/wp-content/uploads/Labour-Update.png" alt="Labour Updates" /></a></p>
+        <p><a href="https://myway.wrdsb.ca/" onclick="ga('send', 'event', 'schoolBanners', 'click_banner', 'myway', 'https://myway.wrdsb.ca/',{'nonInteraction':1});" target="_blank" rel="noopener"><img src="https://www.wrdsb.ca/wp-content/uploads/myway_banner_344x100.jpg" alt="MyWay Logo"/></a></p>
       <?php 
       }
 
       if (is_front_page() && wrdsb_i_am_a_school_with_kindergarten()) { ?>
-        <p><a href="https://www.wrdsb.ca/kindergarten/its-time-to-register/?utm_source=schools-button&utm_medium=referral&utm_campaign=kindergarten"><img src="https://www.wrdsb.ca/wp-content/uploads/REGISTER-ONLINE.png" alt="Register for Kindergarten at the WRDSB"/></a></p>
+        <p><a href="https://www.wrdsb.ca/kindergarten/its-time-to-register/?utm_source=schools-button&utm_medium=referral&utm_campaign=kindergarten" target="_blank" rel="noopener"><img src="https://www.wrdsb.ca/wp-content/uploads/REGISTER-ONLINE.png" alt="Register for Kindergarten at the WRDSB"/></a></p>
       <?php
       }
 
       if (is_front_page() && wrdsb_i_am_a_school_secondary()) { ?>
         <div class="register" style="background-color:#FFDD4F;margin-top: 15px;color: #000;-webkit-box-shadow: 5px 5px 20px -7px rgba(255, 221, 79, 1);-moz-box-shadow: 5px 5px 20px -7px rgba(255, 221, 79, 1);box_shadow: 5px 5px 20px -7px rgba(255, 221, 79, 1);">
-         <a href="https://www.wrdsb.ca/about-the-wrdsb/policiesprocedures/release-of-student-information/consent-for-information-sharing-for-adult-students/" style="color: #000;">Are you turning 18 this year?</a>
+         <a href="https://www.wrdsb.ca/about-the-wrdsb/policiesprocedures/release-of-student-information/consent-for-information-sharing-for-adult-students/" style="color: #000;" target="_blank" rel="noopener">Are you turning 18 this year?</a>
         </div>
 
       <?php
       }
 
       if (is_front_page() && wrdsb_i_am_a_school()) { ?>
-        <p><a href="https://myway.wrdsb.ca/" onclick="ga('send', 'event', 'schoolBanners', 'click_banner', 'myway'"><img src="https://www.wrdsb.ca/wp-content/uploads/myway_banner_344x100.jpg" alt="MyWay Logo"/></a></p>
+        <p><a href="https://www.wrdsb.ca/our-schools/student-transportation/severe-weather/" onclick="ga('send','event','schoolBanners', 'click_banner','severe weather', 'https://www.wrdsb.ca/our-schools/student-transportation/severe-weather/',{'nonInteraction':1});" target="_blank" rel="noopener"><img src="https://wrdsb-ui-assets.s3.amazonaws.com/public/2/2.2.0/images/Severe+Weather+Information%40344.png" alt="Severe Weather Information" /></a></p>
+        <p><a href="https://www.wrdsb.ca/labour/" onclick="ga('send', 'event', 'schoolBanners', 'click_banner', 'labour', 'https://www.wrdsb.ca/labour/',{'nonInteraction':1});" target="_blank" rel="noopener"><img src="https://www.wrdsb.ca/wp-content/uploads/Labour-Update.png" alt="Labour Updates" /></a></p>
+        <p><a href="https://myway.wrdsb.ca/" onclick="ga('send', 'event', 'schoolBanners', 'click_banner', 'myway'" target="_blank" rel="noopener"><img src="https://www.wrdsb.ca/wp-content/uploads/myway_banner_344x100.jpg" alt="MyWay Logo"/></a></p>
         <p><a href="https://schools.wrdsb.ca/school-year-information/" onclick="ga('send', 'event', 'schoolBanners', 'click_banner', 'syi', '/about/school-year-information',{'nonInteraction':1});"><img src="https://www.wrdsb.ca/wp-content/uploads/schoolyearinformation_344x100.jpg" alt="School Year Information" target="_blank" rel="noopener" /></a></p>
-        <p><a href="http://www.wefihelps.org/" target="_blank" onclick="ga('send', 'event', 'schoolBanners', 'click_banner', 'wefi', 'http://www.wefihelps.org/',{'nonInteraction':1});"><img src="https://wrdsb-ui-assets.s3.amazonaws.com/public/2/2.0.0/images/wefi.png" alt="Waterloo Education Foundation Inc. (WEFI)"></a></p>
+        <p><a href="http://www.wefihelps.org/" onclick="ga('send', 'event', 'schoolBanners', 'click_banner', 'wefi', 'http://www.wefihelps.org/',{'nonInteraction':1});" target="_blank" rel="noopener"><img src="https://wrdsb-ui-assets.s3.amazonaws.com/public/2/2.0.0/images/wefi.png" alt="Waterloo Education Foundation Inc. (WEFI)"></a></p>
         <iframe id="school-day" src="https://www.school-day.com/pg/school/sso/index.php"></iframe>
         <p class="fineprint">Learn <a target="_blank" href="https://www.wrdsb.ca/our-schools/using-school-day/#signup">how to sign up for School-Day</a>!</p>
       <?php
@@ -92,7 +100,7 @@
       get_sidebar('left');
     
       if (is_front_page() && wrdsb_i_am_a_school_exception()) { ?>
-        <p><a href="http://www.wefihelps.org/" target="_blank" onclick="ga('send', 'event', 'schoolBanners', 'click_banner', 'wefi', 'http://www.wefihelps.org/',{'nonInteraction':1});"><img src="https://wrdsb-ui-assets.s3.amazonaws.com/public/2/2.0.0/images/wefi.png" alt="Waterloo Education Foundation Inc. (WEFI)"></a></p>
+        <p><a href="http://www.wefihelps.org/" onclick="ga('send', 'event', 'schoolBanners', 'click_banner', 'wefi', 'http://www.wefihelps.org/',{'nonInteraction':1});" target="_blank" rel="noopener"><img src="https://wrdsb-ui-assets.s3.amazonaws.com/public/2/2.0.0/images/wefi.png" alt="Waterloo Education Foundation Inc. (WEFI)"></a></p>
       <?php 
       }
 

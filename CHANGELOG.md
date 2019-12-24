@@ -1,3 +1,10 @@
+##2.3.0
++ added severe weather button and link for schools
++ fix pointer to master.css for ui
+
+##2.2.0
++ added labour button and link for schools
+
 ## 2.1.0
 + changed WEFI button for school sites
 + added Google Maps link to Education Centre address in footer for corporate site
