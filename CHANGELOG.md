@@ -1,6 +1,6 @@
 ## 2.4.0
-+ added new function for schools without before and after programs wrdsb_i_am_a_school_no_beforeafter()
-+ added button for Before and After school registration to schools WITH the program
++ added new function for elementary schools with before and after programs wrdsb_i_am_a_school_beforeafter()
++ added button for Before and After school registration to schools with the program
 
 ## 2.3.0
 + added severe weather button and link for schools
