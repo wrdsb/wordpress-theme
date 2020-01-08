@@ -27,6 +27,11 @@
       <?php 
       }
 
+      if (is_front_page() && wrdsb_i_am_a_school_beforeafter()) { ?>
+        <p><a href="https://www.wrdsb.ca/beforeafter/register-for-programs/?utm_source=schools-button&utm_medium=referral&utm_campaign=beforeafter2020" target="_blank" rel="noopener"><img src="https://www.wrdsb.ca/wp-content/uploads/Before-and-After-School-Programs@1140.png" alt="Register for Before and After School Programs at the WRDSB"/></a></p>
+      <?php
+      }
+
       if (is_front_page() && wrdsb_i_am_a_school_with_kindergarten()) { ?>
         <p><a href="https://www.wrdsb.ca/kindergarten/its-time-to-register/?utm_source=schools-button&utm_medium=referral&utm_campaign=kindergarten" target="_blank" rel="noopener"><img src="https://www.wrdsb.ca/wp-content/uploads/REGISTER-ONLINE.png" alt="Register for Kindergarten at the WRDSB"/></a></p>   
       <?php
@@ -71,6 +76,11 @@
         <p><a href="https://www.wrdsb.ca/labour/" onclick="ga('send', 'event', 'schoolBanners', 'click_banner', 'labour', 'https://www.wrdsb.ca/labour/',{'nonInteraction':1});" target="_blank" rel="noopener"><img src="https://www.wrdsb.ca/wp-content/uploads/Labour-Update.png" alt="Labour Updates" /></a></p>
         <p><a href="https://myway.wrdsb.ca/" onclick="ga('send', 'event', 'schoolBanners', 'click_banner', 'myway', 'https://myway.wrdsb.ca/',{'nonInteraction':1});" target="_blank" rel="noopener"><img src="https://www.wrdsb.ca/wp-content/uploads/myway_banner_344x100.jpg" alt="MyWay Logo"/></a></p>
       <?php 
+      }
+
+      if (is_front_page() && wrdsb_i_am_a_school_beforeafter()) { ?>
+        <p><a href="https://www.wrdsb.ca/beforeafter/register-for-programs/?utm_source=schools-button&utm_medium=referral&utm_campaign=beforeafter2020" target="_blank" rel="noopener"><img src="https://www.wrdsb.ca/wp-content/uploads/Before-and-After-School-Programs@1140.png" alt="Register for Before and After School Programs at the WRDSB"/></a></p>
+      <?php
       }
 
       if (is_front_page() && wrdsb_i_am_a_school_with_kindergarten()) { ?>
