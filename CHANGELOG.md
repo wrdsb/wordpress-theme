@@ -1,8 +1,12 @@
-##2.3.0
+## 2.4.0
++ added new function for elementary schools with before and after programs wrdsb_i_am_a_school_beforeafter()
++ added button for Before and After school registration to schools with the program
+
+## 2.3.0
 + added severe weather button and link for schools
 + fix pointer to master.css for ui
 
-##2.2.0
+## 2.2.0
 + added labour button and link for schools
 
 ## 2.1.0
