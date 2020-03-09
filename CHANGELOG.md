@@ -1,3 +1,6 @@
+## 2.4.1
++ added COVID-19 button to school sites home.php
+
 ## 2.4.0
 + added new function for elementary schools with before and after programs wrdsb_i_am_a_school_beforeafter()
 + added button for Before and After school registration to schools with the program
