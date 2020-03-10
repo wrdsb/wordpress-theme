@@ -1,3 +1,6 @@
+## 2.4.2
++ added GTM plugin function
+
 ## 2.4.1
 + added COVID-19 button to school sites home.php
 

@@ -120,6 +120,7 @@
       <?php } ?>
     </head>
     <body id="top">
+      <?php if ( function_exists( 'gtm4wp_the_gtm_tag' ) ) { gtm4wp_the_gtm_tag(); } ?>
       <?php    if (wrdsb_i_am_a_corporate_site()) {
       ?>
       <!-- Facebook Code -->
