@@ -770,7 +770,8 @@ function wrdsb_i_am_a_school() {
     "wsv",
     "wtt",
     "dsps",
-    "gnss"
+    "gnss",
+    "wplabs"
   );
   if (in_array(($host[0]), $alpha_codes)) {
     return TRUE;
@@ -800,6 +801,17 @@ function wrdsb_i_am_a_school_exception() {
   if (in_array(($host[0]), $alpha_codes)) {
     return TRUE;
   }
+}
+
+function wrdsb_athome() {
+  $parsed_url = parse_url(site_url());
+  $host = explode('.', $parsed_url['host']);
+  $alpha_codes = array(
+    "athome"
+  );
+  if (in_array(($host[0]), $alpha_codes)) {
+    return TRUE;
+  }  
 }
 
 function wrdsb_i_am_a_school_beforeafter() {
