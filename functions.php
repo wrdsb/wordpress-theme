@@ -851,7 +851,6 @@ function wrdsb_i_am_a_school_beforeafter() {
     "flo",
     "fra",
     "gcp",
-    "grc",
     "gro",
     "gvc",
     "gvn",
