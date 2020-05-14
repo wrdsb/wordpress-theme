@@ -1,3 +1,12 @@
+## 2.6.0
++ added tech@home button to school sites
+- labour button from school sites
+
+## 2.5.0
++ added wrdsb_athome() function
++ added WRDSB@Home button to school sites
+- removed severe weather button from school sites for now
+
 ## 2.4.2
 + added GTM plugin function
 
