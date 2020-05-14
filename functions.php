@@ -779,6 +779,7 @@ function wrdsb_i_am_a_school() {
 }
 
 function wrdsb_i_am_a_school_exception() {
+  /** schools.wrdsb.ca/NAME **/
   $parsed_url = parse_url(site_url());
   $host = explode('.', $parsed_url['host']);
   $alpha_codes = array(
@@ -796,20 +797,23 @@ function wrdsb_i_am_a_school_exception() {
     "experiential-learning",
     "environmental-education",
     "technological-education",
-    "shsm"
+    "shsm",
+    "athome"
   );
-  if (in_array(($host[0]), $alpha_codes)) {
+  if (in_array(($host[3]), $alpha_codes)) {
     return TRUE;
   }
 }
 
 function wrdsb_athome() {
+  /** athome.wrdsb.ca **/
   $parsed_url = parse_url(site_url());
   $host = explode('.', $parsed_url['host']);
-  $alpha_codes = array(
-    "athome"
+  $subdir = array(
+    "athome",
+    "theme"
   );
-  if (in_array(($host[0]), $alpha_codes)) {
+  if (in_array(($host[3]), $subdir)) {
     return TRUE;
   }  
 }

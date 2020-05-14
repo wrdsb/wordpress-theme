@@ -23,8 +23,9 @@
       if (is_front_page() && wrdsb_i_am_a_school()) { // corp buttons ?>
 
         <p><a href="https://schools.wrdsb.ca/athome/" onclick="ga('send','event','schoolBanners', 'click_banner','WRDSB@Home', 'https://schools.wrdsb.ca/athome/',{'nonInteraction':1});" target="_blank" rel="noopener"><img src="http://schools.wrdsb.ca/athome/files/2020/03/Website-Button.jpg" alt="WRDSB@Home" /></a></p>
+        <p><a href="https://tech.wrdsb.ca/" onclick="ga('send','event','schoolBanners', 'click_banner','Tech@Home', 'https://tech.wrdsb.ca/',{'nonInteraction':1});" target="_blank" rel="noopener"><img src="https://www.wrdsb.ca/wp-content/uploads/Tech_at_Home_Button.jpg" alt="Tech@Home" /></a></p>
         <p><a href="https://www.wrdsb.ca/blog/tags/coronavirus/" onclick="ga('send','event','schoolBanners', 'click_banner','COVID-19', 'https://www.wrdsb.ca/blog/tags/coronavirus/',{'nonInteraction':1});" target="_blank" rel="noopener"><img src="http://schools.wrdsb.ca/wp-content/uploads/2020/03/COVID-Website-Button.jpg" alt="COVID-19 Information" /></a></p>
-        <p><a href="https://www.wrdsb.ca/labour/" onclick="ga('send', 'event', 'schoolBanners', 'click_banner', 'labour', 'https://www.wrdsb.ca/labour/',{'nonInteraction':1});" target="_blank" rel="noopener"><img src="https://www.wrdsb.ca/wp-content/uploads/Labour-Update.png" alt="Labour Updates" /></a></p>
+        <!--p><a href="https://www.wrdsb.ca/labour/" onclick="ga('send', 'event', 'schoolBanners', 'click_banner', 'labour', 'https://www.wrdsb.ca/labour/',{'nonInteraction':1});" target="_blank" rel="noopener"><img src="https://www.wrdsb.ca/wp-content/uploads/Labour-Update.png" alt="Labour Updates" /></a></p-->
         <!--p><a href="https://www.wrdsb.ca/our-schools/student-transportation/severe-weather/" onclick="ga('send','event','schoolBanners', 'click_banner','severe weather', 'https://www.wrdsb.ca/our-schools/student-transportation/severe-weather/',{'nonInteraction':1});" target="_blank" rel="noopener"><img src="https://wrdsb-ui-assets.s3.amazonaws.com/public/2/2.2.0/images/Severe+Weather+Information%40344.png" alt="Severe Weather Information" /></a></p-->
 
 
@@ -82,8 +83,9 @@
       if (is_front_page() && wrdsb_i_am_a_school()) { // corp buttons ?>
 
         <p><a href="https://schools.wrdsb.ca/athome/" onclick="ga('send','event','schoolBanners', 'click_banner','WRDSB@Home', 'https://schools.wrdsb.ca/athome/',{'nonInteraction':1});" target="_blank" rel="noopener"><img src="http://schools.wrdsb.ca/athome/files/2020/03/Website-Button.jpg" alt="WRDSB@Home" /></a></p>
+        <p><a href="https://tech.wrdsb.ca/" onclick="ga('send','event','schoolBanners', 'click_banner','Tech@Home', 'https://tech.wrdsb.ca/',{'nonInteraction':1});" target="_blank" rel="noopener"><img src="https://www.wrdsb.ca/wp-content/uploads/Tech_at_Home_Button.jpg" alt="Tech@Home" /></a></p>
         <p><a href="https://www.wrdsb.ca/blog/tags/coronavirus/" onclick="ga('send','event','schoolBanners', 'click_banner','COVID-19', 'https://www.wrdsb.ca/blog/tags/coronavirus/',{'nonInteraction':1});" target="_blank" rel="noopener"><img src="http://schools.wrdsb.ca/wp-content/uploads/2020/03/COVID-Website-Button.jpg" alt="COVID-19 Information" /></a></p>
-        <p><a href="https://www.wrdsb.ca/labour/" onclick="ga('send', 'event', 'schoolBanners', 'click_banner', 'labour', 'https://www.wrdsb.ca/labour/',{'nonInteraction':1});" target="_blank" rel="noopener"><img src="https://www.wrdsb.ca/wp-content/uploads/Labour-Update.png" alt="Labour Updates" /></a></p>
+        <!--p><a href="https://www.wrdsb.ca/labour/" onclick="ga('send', 'event', 'schoolBanners', 'click_banner', 'labour', 'https://www.wrdsb.ca/labour/',{'nonInteraction':1});" target="_blank" rel="noopener"><img src="https://www.wrdsb.ca/wp-content/uploads/Labour-Update.png" alt="Labour Updates" /></a></p-->
         <!--p><a href="https://www.wrdsb.ca/our-schools/student-transportation/severe-weather/" onclick="ga('send','event','schoolBanners', 'click_banner','severe weather', 'https://www.wrdsb.ca/our-schools/student-transportation/severe-weather/',{'nonInteraction':1});" target="_blank" rel="noopener"><img src="https://wrdsb-ui-assets.s3.amazonaws.com/public/2/2.2.0/images/Severe+Weather+Information%40344.png" alt="Severe Weather Information" /></a></p-->
 
 
