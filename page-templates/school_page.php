@@ -50,6 +50,12 @@ Template Name: School List
 								$phone = $school->phone;
 								$phone = substr($phone,0,3).'-'.substr($phone,3,3).'-'.substr($phone,6,4);
 								$code = strtolower($school->alpha_code);
+								if ($code != '') {
+									$email = '<a href="mailto:'. $code . '@wrdsb.ca">' . $code . '@wrdsb.ca</a>';
+								} else {
+									$email = '';
+								}
+
 
 								if (
 									!in_array ($school->alpha_code, $hidden_schools)  &&
@@ -61,9 +67,10 @@ Template Name: School List
 						<tr>
 							<td><strong><a href="<?php echo $website; ?>" target="_blank"><?php echo $school->full_name; ?></a></strong><br />
 								<?php echo $school->street_address .'<br />'.$school->city.' ON  '.$postal_code . ' <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&hl=en&q='.$school->street_address.'+'.$school->city.'+Ontario" target="_blank">MAP</a> ]</span>'; ?>
+								<br/>
+								<?php echo $email; ?>
 							</td>
 							<td>
-								<!-- <a href="mailto:<?php echo $code; ?>@wrdsb.ca"><?php echo $code; ?>@wrdsb.ca</a><br />-->
 								<?php echo $phone; ?>
 							</td>
 						</tr>
@@ -92,6 +99,12 @@ Template Name: School List
 								$postal_code  = substr($school->postal_code,0,3). ' ' .substr($school->postal_code,3,3);
 								$phone = $school->phone;
 								$phone = substr($phone,0,3).'-'.substr($phone,3,3).'-'.substr($phone,6,4);
+								$code = strtolower($school->alpha_code);
+								if ($code != '') {
+									$email = '<a href="mailto:'. $code . '@wrdsb.ca">' . $code . '@wrdsb.ca</a>';
+								} else {
+									$email = '';
+								}
 
 								if (
 									!in_array ($school->alpha_code, $hidden_schools)  &&
@@ -103,9 +116,9 @@ Template Name: School List
 						<tr>
 							<td><strong><a href="<?php echo $website; ?>" target="_blank"><?php echo $school->full_name; ?></a></strong><br />
 								<?php echo $school->street_address .'<br />'.$school->city.' ON  '.$postal_code . ' <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&hl=en&q='.$school->street_address.'+'.$school->city.'+Ontario" target="_blank">MAP</a> ]</span>'; ?>
+								<br /><?php echo $email; ?>
 							</td>
 							<td>
-								<!-- <a href="mailto:<?php echo $code; ?>@wrdsb.ca"><?php echo $code; ?>@wrdsb.ca</a><br />-->
 								<?php echo $phone; ?>
 							</td>
 						</tr>
@@ -144,6 +157,11 @@ Template Name: School List
 									$phone = '';
 								}
 								$code = strtolower($school->alpha_code);
+								if ($code != '') {
+									$email = '<a href="mailto:'. $code . '@wrdsb.ca">' . $code . '@wrdsb.ca</a>';
+								} else {
+									$email = '';
+								}
 
 								if (
 									!in_array ($school->alpha_code, $hidden_schools)  &&
@@ -152,10 +170,11 @@ Template Name: School List
 									{
 						?>
 						<tr>
-							<td><strong><a href="<?php echo $website; ?>" target="_blank"><?php echo $school->full_name; ?></a></strong><?php echo $address; ?>
+							<td><strong><a href="<?php echo $website; ?>" target="_blank"><?php echo $school->full_name; ?></a></strong><?php echo $address; ?><br />
+							<?php echo $email; ?>
 							</td>
-							<td>
-								<!-- <a href="mailto:<?php echo $code; ?>@wrdsb.ca"><?php echo $code; ?>@wrdsb.ca</a><br />-->
+							<td style="width: 25%;">
+
 								<?php echo $phone; ?>
 							</td>
 						</tr>
@@ -189,6 +208,11 @@ Template Name: School List
 									$phone = substr($phone,0,3).'-'.substr($phone,3,3).'-'.substr($phone,6,4);
 								}
 								$code = strtolower($school->alpha_code);
+								if ($code != '') {
+									$email = '<a href="mailto:'. $code . '@wrdsb.ca">' . $code . '@wrdsb.ca</a>';
+								} else {
+									$email = '';
+								}
 
 								if (
 									!in_array ($school->alpha_code, $hidden_schools)  &&
@@ -198,9 +222,9 @@ Template Name: School List
 						?>
 						<tr>
 							<td><strong><a href="<?php echo $website; ?>" target="_blank"><?php echo $school->full_name; ?></a></strong><?php echo $address; ?>
+							<br /><?php echo $email; ?>
 							</td>
 							<td>
-								<!-- <a href="mailto:<?php echo $code; ?>@wrdsb.ca"><?php echo $code; ?>@wrdsb.ca</a><br />-->
 								<?php echo $phone; ?>
 							</td>
 						</tr>
@@ -234,6 +258,11 @@ Template Name: School List
 									$phone = substr($phone,0,3).'-'.substr($phone,3,3).'-'.substr($phone,6,4);
 								}
 								$code = strtolower($school->alpha_code);
+								if ($code != '') {
+									$email = '<a href="mailto:'. $code . '@wrdsb.ca">' . $code . '@wrdsb.ca</a>';
+								} else {
+									$email = '';
+								}
 
 								if (
 									!in_array ($school->alpha_code, $hidden_schools)  &&
@@ -244,9 +273,9 @@ Template Name: School List
 						?>
 						<tr>
 							<td><strong><a href="<?php echo $website; ?>" target="_blank"><?php echo $school->full_name; ?></a></strong><?php echo $address; ?>
+							<br /><?php echo $email; ?>
 							</td>
 							<td>
-								<!-- <a href="mailto:<?php echo $code; ?>@wrdsb.ca"><?php echo $code; ?>@wrdsb.ca</a><br />-->
 								<?php echo $phone; ?>
 							</td>
 						</tr>
@@ -272,6 +301,11 @@ Template Name: School List
 				$phone = $school->phone;
 				$phone = substr($phone,0,3).'-'.substr($phone,3,3).'-'.substr($phone,6,4);
 				$code = strtolower($school->alpha_code);
+				if ($code != '') {
+					$email = '<a href="mailto:'. $code . '@wrdsb.ca">' . $code . '@wrdsb.ca</a>';
+				} else {
+					$email = '';
+				}
 
 				if (
 					!in_array ($school->alpha_code, $hidden_schools)  &&
@@ -281,7 +315,7 @@ Template Name: School List
 				?>
 				<p style="margin-bottom: 25px;"><strong><a href="<?php echo $website; ?>" target="_blank"><?php echo $school->full_name ?></a></strong><br />
 					<?php echo $school->street_address.'<br />'.$school->city.' ON  '.$postal_code . ' <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&hl=en&q='.$school->street_address.'+'.$school->city.'+Ontario" target="_blank">MAP</a> ]</span>';?><br />
-					<!-- <a href="mailto:<?php echo $code; ?>@wrdsb.ca"><?php echo $code; ?>@wrdsb.ca</a><br /> -->
+						<?php echo $email; ?><br />
 					<?php echo $phone; ?></p>
 				<?php
 					}
@@ -296,6 +330,12 @@ Template Name: School List
 				$postal_code  = substr($school->postal_code,0,3). ' ' .substr($school->postal_code,3,3);
 				$phone = $school->phone;
 				$phone = substr($phone,0,3).'-'.substr($phone,3,3).'-'.substr($phone,6,4);
+				$code = strtolower($school->alpha_code);
+				if ($code != '') {
+					$email = '<a href="mailto:'. $code . '@wrdsb.ca">' . $code . '@wrdsb.ca</a>';
+				} else {
+					$email = '';
+				}
 
 				if (
 					!in_array ($school->alpha_code, $hidden_schools)  &&
@@ -306,7 +346,7 @@ Template Name: School List
 				?>
 					<p style="margin-bottom: 25px;"><strong><a href="<?php echo $website; ?>" target="_blank"><?php echo $school->full_name ?></a></strong><br />
 							<?php echo $school->street_address.'<br />'.$school->city.' ON  '.$postal_code . ' <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&hl=en&q='.$school->street_address.'+'.$school->city.'+Ontario" target="_blank">MAP</a> ]</span>';?><br />
-							<!-- <a href="mailto:<?php echo $code; ?>@wrdsb.ca"><?php echo $code; ?>@wrdsb.ca</a><br /> -->
+								<?php echo $email; ?><br />
 							<?php echo $phone; ?></p>
 				<?php
 					}
@@ -331,13 +371,18 @@ Template Name: School List
 					$phone = '';
 				}
 				$code = strtolower($school->alpha_code);
+				if ($code != '') {
+					$email = '<a href="mailto:'. $code . '@wrdsb.ca">' . $code . '@wrdsb.ca</a>';
+				} else {
+					$email = '';
+				}
 				if (
 					!in_array ($school->alpha_code, $hidden_schools)  &&
 					($school->school_type_code=='EnvEd')
 					)
 					{ 
 				?>
-					<p style="margin-bottom: 25px;"><strong><a href="<?php echo $website; ?>" target="_blank"><?php echo $school->full_name ?></a></strong><?php echo $address; ?><?php echo $phone; ?></p>
+					<p style="margin-bottom: 25px;"><strong><a href="<?php echo $website; ?>" target="_blank"><?php echo $school->full_name ?></a></strong><br /><?php echo $address; ?><br /><?php echo $email; ?><br/><?php echo $phone; ?></p>
 				<?php
 					}
 				}
@@ -351,6 +396,12 @@ Template Name: School List
 				$postal_code  = substr($school->postal_code,0,3). ' ' .substr($school->postal_code,3,3);
 				$phone = $school->phone;
 				$phone = substr($phone,0,3).'-'.substr($phone,3,3).'-'.substr($phone,6,4);
+				$code = strtolower($school->alpha_code);
+				if ($code != '') {
+					$email = '<a href="mailto:'. $code . '@wrdsb.ca">' . $code . '@wrdsb.ca</a>';
+				} else {
+					$email = '';
+				}
 
 			if (
 				!in_array ($school->alpha_code, $hidden_schools)  && ($school->school_type_code=='AlternativeEducation')
@@ -359,7 +410,7 @@ Template Name: School List
 				?>
 					<p style="margin-bottom: 25px;"><strong><a href="<?php echo $website; ?>" target="_blank"><?php echo $school->full_name ?></a></strong><br />
 							<?php echo $school->street_address.'<br />'.$school->city.' ON  '.$postal_code . ' <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&hl=en&q='.$school->street_address.'+'.$school->city.'+Ontario" target="_blank">MAP</a> ]</span>';?><br />
-							<!-- <a href="mailto:<?php echo $code; ?>@wrdsb.ca"><?php echo $code; ?>@wrdsb.ca</a><br /> -->
+								<?php echo $email; ?><br />
 							<?php echo $phone; ?></p>
 				<?php
 					}
@@ -375,6 +426,12 @@ Template Name: School List
 				$postal_code  = substr($school->postal_code,0,3). ' ' .substr($school->postal_code,3,3);
 				$phone = $school->phone;
 				$phone = substr($phone,0,3).'-'.substr($phone,3,3).'-'.substr($phone,6,4);
+				$code = strtolower($school->alpha_code);
+				if ($code != '') {
+					$email = '<a href="mailto:'. $code . '@wrdsb.ca">' . $code . '@wrdsb.ca</a>';
+				} else {
+					$email = '';
+				}
 
 				if (
 					!in_array ($school->alpha_code, $hidden_schools)  &&
@@ -385,7 +442,7 @@ Template Name: School List
 				?>
 					<p style="margin-bottom: 25px;"><strong><a href="<?php echo $website; ?>" target="_blank"><?php echo $school->full_name ?></a></strong><br />
 							<?php echo $school->street_address.'<br />'.$school->city.' ON  '.$postal_code . ' <span class="smallcaps">[ <a href="http://maps.google.com/maps?f=q&hl=en&q='.$school->street_address.'+'.$school->city.'+Ontario" target="_blank">MAP</a> ]</span>';?><br />
-							<!-- <a href="mailto:<?php echo $code; ?>@wrdsb.ca"><?php echo $code; ?>@wrdsb.ca</a><br /> -->
+								<?php echo $email; ?><br /> 
 							<?php echo $phone; ?></p>
 				<?php
 					}
