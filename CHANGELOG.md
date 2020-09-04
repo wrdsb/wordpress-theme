@@ -1,3 +1,9 @@
+## 2.8.0
++ school button for return to school
+
+## 2.7.0
++ uncomment the general email address for the schools
+
 ## 2.6.0
 + added tech@home button to school sites
 - labour button from school sites
