@@ -1,3 +1,6 @@
+## 2.9.0
++ school button for daily symptom checklist
+
 ## 2.8.0
 + school button for return to school
 
