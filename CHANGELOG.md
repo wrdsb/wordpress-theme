@@ -1,3 +1,6 @@
+## 2.10.0
++ move school button for daily symptom checklist higher per Lila
+
 ## 2.9.0
 + school button for daily symptom checklist
 
