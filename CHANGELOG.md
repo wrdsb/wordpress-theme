@@ -1,3 +1,6 @@
+## 2.10.1
++ change url for daily symptom checklist to the provincial site
+
 ## 2.10.0
 + move school button for daily symptom checklist higher per Lila
 
