@@ -20,11 +20,11 @@
     if (($has_left === TRUE) and ($has_right === TRUE)):
       echo '<div class="col-sm-3 col-md-2 col-lg-2" role="complementary">';
 
-      if (is_front_page() && wrdsb_i_am_a_school()) { // corp buttons ?>
+      if (is_front_page() && (wrdsb_i_am_a_school_ace() || wrdsb_i_am_a_school())) { // corp buttons ?>
 
         <p><a href="https://www.wrdsb.ca/returntoschool/" onclick="ga('send','event','schoolBanners','click_banner','returntoschool'" target="_blank" rel="noopener"><img src="https://www.wrdsb.ca/wp-content/uploads/Return-to-School.png" alt="Return to School" /></a></p>
         <p><a href="https://bit.ly/2H7fdi6" onclick="ga('send','event','schoolBanners','click_banner','dailyscreeningchecklist'" target="_blank" rel="noopener"><img src="https://www.wrdsb.ca/wp-content/uploads/Daily-Screening-Checklist.png" alt="Daily Screening Checklist" /></a></p>
-        <p><a href="https://www.wrdsb.ca/blog/tags/coronavirus/" onclick="ga('send','event','schoolBanners', 'click_banner','COVID-19', 'https://www.wrdsb.ca/blog/tags/coronavirus/',{'nonInteraction':1});" target="_blank" rel="noopener"><img src="http://schools.wrdsb.ca/wp-content/uploads/2020/03/COVID-Website-Button.jpg" alt="COVID-19 Information" /></a></p>
+        <p><a href="https://www.wrdsb.ca/our-schools/health-and-wellness/public-health-information/novel-coronavirus-covid-19-information/" onclick="ga('send','event','schoolBanners', 'click_banner','COVID-19', 'https://www.wrdsb.ca/blog/tags/coronavirus/',{'nonInteraction':1});" target="_blank" rel="noopener"><img src="http://schools.wrdsb.ca/wp-content/uploads/2020/03/COVID-Website-Button.jpg" alt="COVID-19 Information" /></a></p>
         <p><a href="https://schools.wrdsb.ca/athome/" onclick="ga('send','event','schoolBanners', 'click_banner','WRDSB@Home', 'https://schools.wrdsb.ca/athome/',{'nonInteraction':1});" target="_blank" rel="noopener"><img src="http://schools.wrdsb.ca/athome/files/2020/03/Website-Button.jpg" alt="WRDSB@Home" /></a></p>
         <p><a href="https://tech.wrdsb.ca/" onclick="ga('send','event','schoolBanners', 'click_banner','Tech@Home', 'https://tech.wrdsb.ca/',{'nonInteraction':1});" target="_blank" rel="noopener"><img src="https://www.wrdsb.ca/wp-content/uploads/Tech_at_Home_Button.jpg" alt="Tech@Home" /></a></p>
 
@@ -60,7 +60,7 @@
       <?php
       }
 
-      if (is_front_page() && wrdsb_i_am_a_school()) { ?>
+      if (is_front_page() && (wrdsb_i_am_a_school_ace() || wrdsb_i_am_a_school())) { ?>
         <p><a href="https://myway.wrdsb.ca/" onclick="ga('send', 'event', 'schoolBanners', 'click_banner', 'myway'" target="_blank" rel="noopener"><img src="https://www.wrdsb.ca/wp-content/uploads/myway_banner_344x100.jpg" alt="MyWay"/></a></p>
         <p><a href="https://schools.wrdsb.ca/school-year-information/" onclick="ga('send', 'event', 'schoolBanners', 'click_banner', 'syi', '/about/school-year-information',{'nonInteraction':1});" target="_blank" rel="noopener"><img src="https://www.wrdsb.ca/wp-content/uploads/schoolyearinformation_344x100.jpg" alt="School Year Information" target="_blank" rel="noopener" /></a></p>
         <p><a href="http://www.wefihelps.org/" onclick="ga('send', 'event', 'schoolBanners', 'click_banner', 'wefi', 'http://www.wefihelps.org/',{'nonInteraction':1});" target="_blank" rel="noopener"><img src="https://wrdsb-ui-assets.s3.amazonaws.com/public/2/2.0.0/images/wefi.png" alt="Waterloo Education Foundation Inc. (WEFI)"></a></p>
@@ -84,11 +84,11 @@
     elseif (($has_left === TRUE) and ($has_right === FALSE)):
       echo '<div class="col-sm-3 col-lg-3" role="complementary">';
 
-      if (is_front_page() && wrdsb_i_am_a_school()) { // corp buttons ?>
+      if (is_front_page() && (wrdsb_i_am_a_school_ace() || wrdsb_i_am_a_school())) { // corp buttons ?>
 
         <p><a href="https://www.wrdsb.ca/returntoschool/" onclick="ga('send','event','schoolBanners','click_banner','returntoschool'" target="_blank" rel="noopener"><img src="https://www.wrdsb.ca/wp-content/uploads/Return-to-School.png" alt="Return to School" /></a></p>
         <p><a href="https://bit.ly/2H7fdi6" onclick="ga('send','event','schoolBanners','click_banner','dailyscreeningchecklist'" target="_blank" rel="noopener"><img src="https://www.wrdsb.ca/wp-content/uploads/Daily-Screening-Checklist.png" alt="Daily Screening Checklist" /></a></p>
-        <p><a href="https://www.wrdsb.ca/blog/tags/coronavirus/" onclick="ga('send','event','schoolBanners', 'click_banner','COVID-19', 'https://www.wrdsb.ca/blog/tags/coronavirus/',{'nonInteraction':1});" target="_blank" rel="noopener"><img src="http://schools.wrdsb.ca/wp-content/uploads/2020/03/COVID-Website-Button.jpg" alt="COVID-19 Information" /></a></p>
+        <p><a href="https://www.wrdsb.ca/our-schools/health-and-wellness/public-health-information/novel-coronavirus-covid-19-information/" onclick="ga('send','event','schoolBanners', 'click_banner','COVID-19', 'https://www.wrdsb.ca/blog/tags/coronavirus/',{'nonInteraction':1});" target="_blank" rel="noopener"><img src="http://schools.wrdsb.ca/wp-content/uploads/2020/03/COVID-Website-Button.jpg" alt="COVID-19 Information" /></a></p>
         <p><a href="https://schools.wrdsb.ca/athome/" onclick="ga('send','event','schoolBanners', 'click_banner','WRDSB@Home', 'https://schools.wrdsb.ca/athome/',{'nonInteraction':1});" target="_blank" rel="noopener"><img src="http://schools.wrdsb.ca/athome/files/2020/03/Website-Button.jpg" alt="WRDSB@Home" /></a></p>
         <p><a href="https://tech.wrdsb.ca/" onclick="ga('send','event','schoolBanners', 'click_banner','Tech@Home', 'https://tech.wrdsb.ca/',{'nonInteraction':1});" target="_blank" rel="noopener"><img src="https://www.wrdsb.ca/wp-content/uploads/Tech_at_Home_Button.jpg" alt="Tech@Home" /></a></p>
 
@@ -123,7 +123,7 @@
       <?php
       }
 
-      if (is_front_page() && wrdsb_i_am_a_school()) { ?>
+      if (is_front_page() && (wrdsb_i_am_a_school_ace() || wrdsb_i_am_a_school())) { ?>
         <p><a href="https://myway.wrdsb.ca/" onclick="ga('send', 'event', 'schoolBanners', 'click_banner', 'myway'" target="_blank" rel="noopener"><img src="https://www.wrdsb.ca/wp-content/uploads/myway_banner_344x100.jpg" alt="MyWay Logo"/></a></p>
         <p><a href="https://schools.wrdsb.ca/school-year-information/" onclick="ga('send', 'event', 'schoolBanners', 'click_banner', 'syi', '/about/school-year-information',{'nonInteraction':1});"><img src="https://www.wrdsb.ca/wp-content/uploads/schoolyearinformation_344x100.jpg" alt="School Year Information" target="_blank" rel="noopener" /></a></p>
         <p><a href="http://www.wefihelps.org/" onclick="ga('send', 'event', 'schoolBanners', 'click_banner', 'wefi', 'http://www.wefihelps.org/',{'nonInteraction':1});" target="_blank" rel="noopener"><img src="https://wrdsb-ui-assets.s3.amazonaws.com/public/2/2.0.0/images/wefi.png" alt="Waterloo Education Foundation Inc. (WEFI)"></a></p>
