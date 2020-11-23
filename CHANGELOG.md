@@ -1,3 +1,9 @@
+## 2.11.1
++ change COVID link now that we have a dedicated landing page
+
+## 2.11.0
++ function for alternative and continuing education sites to be treated as schools
+
 ## 2.10.1
 + change url for daily symptom checklist to the provincial site
 
