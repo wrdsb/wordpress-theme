@@ -20,27 +20,12 @@
     if (($has_left === TRUE) and ($has_right === TRUE)):
       echo '<div class="col-sm-3 col-md-2 col-lg-2" role="complementary">';
 
-     if (is_front_page() && wrdsb_i_am_a_school_grade_8()) { ?>
-
-        <p><a href="https://schools.wrdsb.ca/school-year-information/action-required/future-grade-nines/" onclick="ga('send','event','schoolBanners','click_banner','future-grade-nines'" target="_blank" rel="noopener"><img src="https://www.wrdsb.ca/wp-content/uploads/Button-2.jpg" alt="Future Grade Nines" /></a></p>    
-
-      <?php } if (is_front_page() && wrdsb_i_am_a_school_secondary()) { 
-
-          $parsed_url = parse_url(site_url());
-          $host = explode('.', $parsed_url['host']);
-          $abc = $host[0];
-
-        ?>
-
-        <p><a href="https://<?php echo $abc;?>.wrdsb.ca/future-grade-nines/" onclick="ga('send','event','schoolBanners','click_banner','future-grade-nines'" target="_blank" rel="noopener"><img src="https://www.wrdsb.ca/wp-content/uploads/Button-2.jpg" alt="Future Grade Nines" /></a></p>    
-
-      <?php }
-    
      if (is_front_page() && wrdsb_i_am_a_school()) { // corp buttons ?>
 
         <p><a href="https://www.wrdsb.ca/returntoschool/" onclick="ga('send','event','schoolBanners','click_banner','returntoschool'" target="_blank" rel="noopener"><img src="https://www.wrdsb.ca/wp-content/uploads/Return-to-School.png" alt="Return to School" /></a></p>
         <p><a href="https://bit.ly/2H7fdi6" onclick="ga('send','event','schoolBanners','click_banner','dailyscreeningchecklist'" target="_blank" rel="noopener"><img src="https://www.wrdsb.ca/wp-content/uploads/Daily-Screening-Checklist.png" alt="Daily Screening Checklist" /></a></p>
         <p><a href="https://www.wrdsb.ca/our-schools/health-and-wellness/public-health-information/novel-coronavirus-covid-19-information/" onclick="ga('send','event','schoolBanners', 'click_banner','COVID-19', 'https://www.wrdsb.ca/our-schools/health-and-wellness/public-health-information/novel-coronavirus-covid-19-information/',{'nonInteraction':1});" target="_blank" rel="noopener"><img src="http://schools.wrdsb.ca/wp-content/uploads/2020/03/COVID-Website-Button.jpg" alt="COVID-19 Information" /></a></p>
+        <?php echo $grade_nine_button; ?>
         <p><a href="https://schools.wrdsb.ca/athome/" onclick="ga('send','event','schoolBanners', 'click_banner','WRDSB@Home', 'https://schools.wrdsb.ca/athome/',{'nonInteraction':1});" target="_blank" rel="noopener"><img src="http://schools.wrdsb.ca/athome/files/2020/03/Website-Button.jpg" alt="WRDSB@Home" /></a></p>
         <p><a href="https://tech.wrdsb.ca/" onclick="ga('send','event','schoolBanners', 'click_banner','Tech@Home', 'https://tech.wrdsb.ca/',{'nonInteraction':1});" target="_blank" rel="noopener"><img src="https://www.wrdsb.ca/wp-content/uploads/Tech_at_Home_Button.jpg" alt="Tech@Home" /></a></p>
 
@@ -91,34 +76,31 @@
      <?php 
       }
 
-
     echo '</div>';
     
     # Just left sidebar
     elseif (($has_left === TRUE) and ($has_right === FALSE)):
       echo '<div class="col-sm-3 col-lg-3" role="complementary">';
 
-      if (is_front_page() && wrdsb_i_am_a_school_grade_8()) { ?>
-
-        <p><a href="https://schools.wrdsb.ca/school-year-information/action-required/future-grade-nines/" onclick="ga('send','event','schoolBanners','click_banner','future-grade-nines'" target="_blank" rel="noopener"><img src="https://www.wrdsb.ca/wp-content/uploads/Button-2.jpg" alt="Future Grade Nines" /></a></p>    
-
-      <?php } if (is_front_page() && wrdsb_i_am_a_school_secondary()) { 
-
-          $parsed_url = parse_url(site_url());
-          $host = explode('.', $parsed_url['host']);
-          $abc = $host[0];
-
-        ?>
-
-        <p><a href="https://<?php echo $abc;?>.wrdsb.ca/future-grade-nines/" onclick="ga('send','event','schoolBanners','click_banner','future-grade-nines'" target="_blank" rel="noopener"><img src="https://www.wrdsb.ca/wp-content/uploads/Button-2.jpg" alt="Future Grade Nines" /></a></p>    
-
-      <?php }
+    if (is_front_page() && wrdsb_i_am_a_school_secondary()) { 
+        $parsed_url = parse_url(site_url());
+        $host = explode('.', $parsed_url['host']);
+        $abc = $host[0];
+        $grade_nine_button = '<p><a href="https://' .$abc.'.wrdsb.ca/future-grade-nines/" onclick="ga(\'send\',\'event\',\'schoolBanners\',\'click_banner\',\'future-grade-nines\'" target="_blank" rel="noopener"><img src="https://www.wrdsb.ca/wp-content/uploads/Button-2.jpg" alt="Future Grade Nines" /></a></p>';
+      } else if (is_front_page() && wrdsb_i_am_a_school_grade_8()) {
+        $grade_nine_button = <<<EOT
+        <p><a href="https://schools.wrdsb.ca/school-year-information/action-required/future-grade-nines/" onclick="ga('send','event','schoolBanners','click_banner','future-grade-nines'" target="_blank" rel="noopener"><img src="https://www.wrdsb.ca/wp-content/uploads/Button-2.jpg" alt="Future Grade Nines" /></a></p>
+EOT;
+      } else {
+        $grade_nine_button = '';
+      }
 
       if (is_front_page() && wrdsb_i_am_a_school()) { // corp buttons ?>
 
         <p><a href="https://www.wrdsb.ca/returntoschool/" onclick="ga('send','event','schoolBanners','click_banner','returntoschool'" target="_blank" rel="noopener"><img src="https://www.wrdsb.ca/wp-content/uploads/Return-to-School.png" alt="Return to School" /></a></p>
         <p><a href="https://bit.ly/2H7fdi6" onclick="ga('send','event','schoolBanners','click_banner','dailyscreeningchecklist'" target="_blank" rel="noopener"><img src="https://www.wrdsb.ca/wp-content/uploads/Daily-Screening-Checklist.png" alt="Daily Screening Checklist" /></a></p>
         <p><a href="https://www.wrdsb.ca/our-schools/health-and-wellness/public-health-information/novel-coronavirus-covid-19-information/" onclick="ga('send','event','schoolBanners', 'click_banner','COVID-19', 'https://www.wrdsb.ca/our-schools/health-and-wellness/public-health-information/novel-coronavirus-covid-19-information/',{'nonInteraction':1});" target="_blank" rel="noopener"><img src="http://schools.wrdsb.ca/wp-content/uploads/2020/03/COVID-Website-Button.jpg" alt="COVID-19 Information" /></a></p>
+        <?php echo $grade_nine_button; ?>
         <p><a href="https://schools.wrdsb.ca/athome/" onclick="ga('send','event','schoolBanners', 'click_banner','WRDSB@Home', 'https://schools.wrdsb.ca/athome/',{'nonInteraction':1});" target="_blank" rel="noopener"><img src="http://schools.wrdsb.ca/athome/files/2020/03/Website-Button.jpg" alt="WRDSB@Home" /></a></p>
         <p><a href="https://tech.wrdsb.ca/" onclick="ga('send','event','schoolBanners', 'click_banner','Tech@Home', 'https://tech.wrdsb.ca/',{'nonInteraction':1});" target="_blank" rel="noopener"><img src="https://www.wrdsb.ca/wp-content/uploads/Tech_at_Home_Button.jpg" alt="Tech@Home" /></a></p>
 
