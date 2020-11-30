@@ -1,3 +1,9 @@
+## 2.11.3
+- removing code from bad branch
+
+## 2.11.2
++ fixing errant copy paste order
+
 ## 2.11.1
 + change COVID link now that we have a dedicated landing page
 
