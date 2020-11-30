@@ -1,3 +1,7 @@
+## 2.12.0
++ new function for schools with grade 8
++ Future Grade Nines buttons for schools with grade 8 and separately for secondary schools (persistent URL)
+
 ## 2.11.4
 + repair repo
 

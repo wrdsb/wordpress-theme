@@ -20,7 +20,23 @@
     if (($has_left === TRUE) and ($has_right === TRUE)):
       echo '<div class="col-sm-3 col-md-2 col-lg-2" role="complementary">';
 
-      if (is_front_page() && wrdsb_i_am_a_school()) { // corp buttons ?>
+     if (is_front_page() && wrdsb_i_am_a_school_grade_8()) { ?>
+
+        <p><a href="https://schools.wrdsb.ca/school-year-information/action-required/future-grade-nines/" onclick="ga('send','event','schoolBanners','click_banner','future-grade-nines'" target="_blank" rel="noopener"><img src="https://www.wrdsb.ca/wp-content/uploads/Button-2.jpg" alt="Future Grade Nines" /></a></p>    
+
+      <?php } if (is_front_page() && wrdsb_i_am_a_school_secondary()) { 
+
+          $parsed_url = parse_url(site_url());
+          $host = explode('.', $parsed_url['host']);
+          $abc = $host[0];
+
+        ?>
+
+        <p><a href="https://<?php echo $abc;?>.wrdsb.ca/future-grade-nines/" onclick="ga('send','event','schoolBanners','click_banner','future-grade-nines'" target="_blank" rel="noopener"><img src="https://www.wrdsb.ca/wp-content/uploads/Button-2.jpg" alt="Future Grade Nines" /></a></p>    
+
+      <?php }
+    
+     if (is_front_page() && wrdsb_i_am_a_school()) { // corp buttons ?>
 
         <p><a href="https://www.wrdsb.ca/returntoschool/" onclick="ga('send','event','schoolBanners','click_banner','returntoschool'" target="_blank" rel="noopener"><img src="https://www.wrdsb.ca/wp-content/uploads/Return-to-School.png" alt="Return to School" /></a></p>
         <p><a href="https://bit.ly/2H7fdi6" onclick="ga('send','event','schoolBanners','click_banner','dailyscreeningchecklist'" target="_blank" rel="noopener"><img src="https://www.wrdsb.ca/wp-content/uploads/Daily-Screening-Checklist.png" alt="Daily Screening Checklist" /></a></p>
@@ -81,6 +97,22 @@
     # Just left sidebar
     elseif (($has_left === TRUE) and ($has_right === FALSE)):
       echo '<div class="col-sm-3 col-lg-3" role="complementary">';
+
+      if (is_front_page() && wrdsb_i_am_a_school_grade_8()) { ?>
+
+        <p><a href="https://schools.wrdsb.ca/school-year-information/action-required/future-grade-nines/" onclick="ga('send','event','schoolBanners','click_banner','future-grade-nines'" target="_blank" rel="noopener"><img src="https://www.wrdsb.ca/wp-content/uploads/Button-2.jpg" alt="Future Grade Nines" /></a></p>    
+
+      <?php } if (is_front_page() && wrdsb_i_am_a_school_secondary()) { 
+
+          $parsed_url = parse_url(site_url());
+          $host = explode('.', $parsed_url['host']);
+          $abc = $host[0];
+
+        ?>
+
+        <p><a href="https://<?php echo $abc;?>.wrdsb.ca/future-grade-nines/" onclick="ga('send','event','schoolBanners','click_banner','future-grade-nines'" target="_blank" rel="noopener"><img src="https://www.wrdsb.ca/wp-content/uploads/Button-2.jpg" alt="Future Grade Nines" /></a></p>    
+
+      <?php }
 
       if (is_front_page() && wrdsb_i_am_a_school()) { // corp buttons ?>
 
