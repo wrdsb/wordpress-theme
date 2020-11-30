@@ -770,7 +770,8 @@ function wrdsb_i_am_a_school() {
     "wsv",
     "wtt",
     "dsps",
-    "gnss"
+    "gnss",
+    "wplabs"
   );
   if (in_array(($host[0]), $alpha_codes)) {
     return TRUE;
@@ -782,6 +783,7 @@ function wrdsb_i_am_a_school_exception() {
   $parsed_url = parse_url(site_url());
   $host = explode('.', $parsed_url['host']);
   $alpha_codes = array(
+    "schools",
     "cln",
     "alc",
     "alu",
@@ -791,14 +793,9 @@ function wrdsb_i_am_a_school_exception() {
     "chinese",
     "german",
     "greek",
-    "serbian",
-    "experiential-learning",
-    "environmental-education",
-    "technological-education",
-    "shsm",
-    "athome"
+    "serbian"
   );
-  if (in_array(($host[4]), $alpha_codes)) {
+  if (in_array(($host[0]), $alpha_codes)) {
     return TRUE;
   }
 }
