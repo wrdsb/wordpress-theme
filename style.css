@@ -1,5 +1,5 @@
 /*
-Theme Name: WRDSB
+Theme Name: WRDSB Drop Down Navigation
 Theme URI: https://github.com/wrdsb/wordpress-theme
 Author: Suzanne Carter, Rizwan Kiyani, James Schumann
 Description: The WRDSB's default WordPress theme
@@ -14,3 +14,8 @@ GitHub Branch: master
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+
+.navbar.my-navbar a:hover {
+    display: block;
+    background-color: #ddd;
+}

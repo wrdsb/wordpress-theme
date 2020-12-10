@@ -10,6 +10,7 @@
   ?><!DOCTYPE html>
   <html lang="en">
     <head>
+      <link rel="stylesheet" type="text/css" href="style.css">
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -116,6 +117,21 @@
         color:#fff;
         margin-top: 15px;
       }
+
+      /* ul li:hover ul {
+        padding: 15px auto 0;
+        display: inline-block;
+        position: absolute;
+        top: 18px;
+        left: 0;
+      } */
+
+      .sub-menu-columns ul.sub-menu li {
+	      clear: initial;
+	      float: left;
+	      width: 50%;
+      }
+
       </style>
       <?php } ?>
     </head>
@@ -200,8 +216,17 @@
         </div>
         <div id="menu" class="container" role="navigation" aria_label="Menu">
           <?php if (has_nav_menu('top')) {
-          wp_nav_menu(array('theme_location' => 'top', 'menu_class' => 'nav nav-justified', 'container_class' => 'collapse navbar-collapse'));
-          } else {
+          //wp_nav_menu(array('theme_location' => 'top', 'menu_class' => 'nav nav-justified', 'container_class' => 'collapse navbar-collapse'));
+          wp_nav_menu( array(
+            'menu'              => 'header', // match name to yours
+            'theme_location'    => 'top',
+            'container'         => 'div', // no need to wrap `wp_nav_menu` manually
+            'container_class'   => 'collapse navbar-collapse',
+            'menu_class'        => 'nav nav-justified',
+            'fallback_cb'       => false,
+            'walker'            => new WP_Bootstrap_Navwalker() // Use different Walker
+        ));
+        } else {
           wp_page_menu(array('depth' => 1, 'show_home' => true, 'menu_class' => 'collapse navbar-collapse' ));
           } ?>
         </div>
