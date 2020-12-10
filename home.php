@@ -48,7 +48,7 @@
       $parsed_url = parse_url(site_url());
       $host = explode('.', $parsed_url['host']);
       $abc = $host[0];
-      $grade_nine_button_secondary = '<p><a href="https://' .$abc.'.wrdsb.ca/future-grade-nines/" onclick="ga(\'send\',\'event\',\'schoolBanners\',\'click_banner\',\'future-grade-nines\'" target="_blank" rel="noopener"><img src="https://www.wrdsb.ca/wp-content/uploads/Button-2.jpg" alt="Future Grade Nines" /></a></p>';
+      $grade_nine_button_secondary = '<p><a href="https://' .$abc.'.wrdsb.ca/future-grade-nines/" onclick="ga(\'send\',\'event\',\'schoolBanners\',\'click_banner\',\'future-grade-nines\'"><img src="https://www.wrdsb.ca/wp-content/uploads/Button-2.jpg" alt="Future Grade Nines" /></a></p>';
       $button_sdlp = '<p><a href="https://www.wrdsb.ca/returntoschool/distance-learning-programs/secondary-distance-learning-program/" onclick="ga(\'send\',\'event\',\'schoolBanners\',\'click_banner\',\'secondary-distance-learning-program\'" target="_blank" rel="noopener"><img src="https://www.wrdsb.ca/wp-content/uploads/SDLP-Button.png" alt="Secondary Distance Learning Program" /></a></p>';
       $button_eighteen = '<div class="register" style="background-color:#FFDD4F;margin-top: 15px;color: #000;-webkit-box-shadow: 5px 5px 20px -7px rgba(255, 221, 79, 1);-moz-box-shadow: 5px 5px 20px -7px rgba(255, 221, 79, 1);box_shadow: 5px 5px 20px -7px rgba(255, 221, 79, 1);"><a href="https://www.wrdsb.ca/about-the-wrdsb/policiesprocedures/release-of-student-information/consent-for-information-sharing-for-adult-students/" style="color: #000;" target="_blank" rel="noopener">Are you turning 18 soon?</a></div>';
      }
