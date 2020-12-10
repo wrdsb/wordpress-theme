@@ -1,3 +1,6 @@
+## 2.13.0
++ rejigging home buttons
+
 ## 2.12.0
 + new function for schools with grade 8
 + Future Grade Nines buttons for schools with grade 8 and separately for secondary schools (persistent URL)
