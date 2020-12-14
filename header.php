@@ -117,21 +117,6 @@
         color:#fff;
         margin-top: 15px;
       }
-
-      /* ul li:hover ul {
-        padding: 15px auto 0;
-        display: inline-block;
-        position: absolute;
-        top: 18px;
-        left: 0;
-      } */
-
-      .sub-menu-columns ul.sub-menu li {
-	      clear: initial;
-	      float: left;
-	      width: 50%;
-      }
-
       </style>
       <?php } ?>
     </head>
@@ -146,92 +131,15 @@
  
       <!-- header -->
       <div id="masthead">
-        <div class="container-top">
-          <div class="header">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-9 col-sm-8">
-                  <div id="logo" role="heading">
-                    <a aria-labelledby="logo" href="<?php echo home_url(); ?>/"><span><?php echo get_bloginfo('name'); ?></span>
-                    <?php if (wrdsb_i_am_a_corporate_site() != true)
-                    // if I am not a corporate site, e.g., if I am a school site
-                    { ?>
-                    <p id="sitename"><?php echo get_bloginfo('name');?></p>
-                    <?php if (get_bloginfo('description') != '') { ?>
-                    <p id="sitedescription"><?php echo get_bloginfo('description'); ?></p>
-                    <?php } else { ?>
-                      <p id="sitedescription">Innovating tomorrow by educating today</p>
-                    <?php }
-                     }
-                      ?>
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-4">
-                <div class="staff-shortcuts" role="complementary" aria-labelledby="staff-shortcut-list">
-                  <div class="searchbox" role="search" aria-labelledby="search">
-                    <form action="<?php echo home_url(); ?>/" method="get">
-                      <input aria-label="Search" type="text" name="s" id="search" value="<?php the_search_query(); ?>" placeholder="Search" />
-                    </form>
-                  </div>
-                  
-                  <div id="staff-shortcut-list">
-                    <a href="#address">Contact Information</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="navbar my-navbar" role="navigation" aria-labelledby="navbar-header">
-        <div id="navbar-header">
-          <button type="button" class="navbar-toggle togglesearch" data-toggle="collapse" data-target=".navbar-search">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-search"><img src="https://wrdsb-ui-assets.s3.amazonaws.com/public/2/2.0.0/images/search.gif" style="width: 25px; height: 25px;" /></span>
-          </button>
-          <button type="button" class="navbar-toggle togglenav" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          </button>
-          <?php $strl = get_bloginfo('name');
-          $tempstrl = explode(" ", $strl);
-          $newstrl = '';
-          foreach($tempstrl as $a) {
-          if ($a=='District' or $a=='Public' or $a=='Collegiate' or $a=='Secondary' or $a=='High') {
-          $newstrl.= "<br />";
-          }
-          $newstrl.=" ".$a;
-          }
-          ?>
-          <a class="navbar-brand" href="<?php echo home_url(); ?>/"><?php echo $newstrl; ?></a>
-        </div>
         
-        <div class="collapse navbar-search" role="search" aria-labelledby="mobileSearch">
-          <form action="<?php echo home_url(); ?>/" method="get">
-            <input aria-label="Search" type="text" name="s" id="mobileSearch" value="<?php the_search_query(); ?>" placeholder="Search" />
-          </form>
-        </div>
+      </div>
         <div id="menu" class="container" role="navigation" aria_label="Menu">
           <?php if (has_nav_menu('top')) {
-          //wp_nav_menu(array('theme_location' => 'top', 'menu_class' => 'nav nav-justified', 'container_class' => 'collapse navbar-collapse'));
-          wp_nav_menu( array(
-            'menu'              => 'header', // match name to yours
-            'theme_location'    => 'top',
-            'container'         => 'div', // no need to wrap `wp_nav_menu` manually
-            'container_class'   => 'collapse navbar-collapse',
-            'menu_class'        => 'nav nav-justified',
-            'fallback_cb'       => false,
-            'walker'            => new WP_Bootstrap_Navwalker() // Use different Walker
-        ));
+          wp_nav_menu(array('theme_location' => 'top', 'menu_class' => 'nav nav-justified', 'container_class' => 'collapse navbar-collapse'));
         } else {
           wp_page_menu(array('depth' => 1, 'show_home' => true, 'menu_class' => 'collapse navbar-collapse' ));
           } ?>
         </div>
-        </div><!-- /.navbar -->
-        </div><!-- /.container-top -->
         <?php if (is_front_page()) {
         // if we have an alert
         if (function_exists('stswr_alerts_get_current_alert') && stswr_alerts_get_current_alert('id') !== '0') {
