@@ -603,7 +603,7 @@ function wrdsb_i_am_a_corporate_site() {
   $parsed_url = parse_url(site_url());
   $host = explode('.', $parsed_url['host']);
   $my_domains = array(
-    "www","wwwwrdsbdev"
+    "www","wwwwrdsbdev", "wplabs"
   );
   $domain = 'wrdsb';
   $url = site_url();
