@@ -1,3 +1,6 @@
+## 2.14.0
++ added shortcode to www home page for carousel
+
 ## 2.13.1
 - removed new tab attribute from Future Grade Nines links on schools
 
