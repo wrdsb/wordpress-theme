@@ -1,3 +1,6 @@
+### 2.16.0
++ changes to home page of corp only
+
 ## 2.14.0
 + added shortcode to www home page for carousel
 
