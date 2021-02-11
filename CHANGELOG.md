@@ -1,3 +1,7 @@
+## 2.15.0
++ added new button for secondary schools
++ updated daily screening image for all schools Ticket #46226
+
 ## 2.14.0
 + added shortcode to www home page for carousel
 
