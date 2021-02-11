@@ -17,7 +17,7 @@
 
     //-- Buttons for all schools --
 
-    $button_daily_screening = '<p><a href="https://bit.ly/2H7fdi6" onclick="ga(\'send\',\'event\',\'schoolBanners\',\'click_banner\',\'dailyscreeningchecklist\'" target="_blank" rel="noopener"><img src="https://www.wrdsb.ca/wp-content/uploads/Daily-Screening-Checklist.png" alt="Daily Screening Checklist" /></a></p>';
+    $button_daily_screening = '<p><a href="https://bit.ly/2H7fdi6" onclick="ga(\'send\',\'event\',\'schoolBanners\',\'click_banner\',\'ontarioschoolscreener\'" target="_blank" rel="noopener"><img src="https://www.wrdsb.ca/wp-content/uploads/Ontario-School-Screener.png" alt="Ontario School Screener" /></a></p>';
 
     $button_covid = '<p><a href="https://www.wrdsb.ca/our-schools/health-and-wellness/public-health-information/novel-coronavirus-covid-19-information/" onclick="ga(\'send\',\'event\',\'schoolBanners\', \'click_banner\',\'COVID-19\', \'https://www.wrdsb.ca/our-schools/health-and-wellness/public-health-information/novel-coronavirus-covid-19-information/\',{\'nonInteraction\':1});" target="_blank" rel="noopener"><img src="http://schools.wrdsb.ca/wp-content/uploads/2020/03/COVID-Website-Button.jpg" alt="COVID-19 Information" /></a></p>';
 
@@ -48,6 +48,7 @@
       $parsed_url = parse_url(site_url());
       $host = explode('.', $parsed_url['host']);
       $abc = $host[0];
+      $button_screening_secondary = '<p><a href="https://screen.wrdsb.ca/" onclick="ga(\'send\',\'event\',\'schoolBanners\',\'click_banner\',\'secondaryscreening\'" target="_blank" rel="noopener"><img src="https://www.wrdsb.ca/wp-content/uploads/Secondary-Student-Verification-Portal-1.png" alt="Secondary Student Verification Portal" /></a></p>';
       $grade_nine_button_secondary = '<p><a href="https://' .$abc.'.wrdsb.ca/future-grade-nines/" onclick="ga(\'send\',\'event\',\'schoolBanners\',\'click_banner\',\'future-grade-nines\'"><img src="https://www.wrdsb.ca/wp-content/uploads/Button-2.jpg" alt="Future Grade Nines" /></a></p>';
       $button_sdlp = '<p><a href="https://www.wrdsb.ca/returntoschool/distance-learning-programs/secondary-distance-learning-program/" onclick="ga(\'send\',\'event\',\'schoolBanners\',\'click_banner\',\'secondary-distance-learning-program\'" target="_blank" rel="noopener"><img src="https://www.wrdsb.ca/wp-content/uploads/SDLP-Button.png" alt="Secondary Distance Learning Program" /></a></p>';
       $button_eighteen = '<div class="register" style="background-color:#FFDD4F;margin-top: 15px;color: #000;-webkit-box-shadow: 5px 5px 20px -7px rgba(255, 221, 79, 1);-moz-box-shadow: 5px 5px 20px -7px rgba(255, 221, 79, 1);box_shadow: 5px 5px 20px -7px rgba(255, 221, 79, 1);"><a href="https://www.wrdsb.ca/about-the-wrdsb/policiesprocedures/release-of-student-information/consent-for-information-sharing-for-adult-students/" style="color: #000;" target="_blank" rel="noopener">Are you turning 18 soon?</a></div>';
@@ -77,6 +78,7 @@
 
       // corp buttons 
         echo $grade_nine_button_secondary;
+        echo $button_screening_secondary;
         echo $button_daily_screening;
         echo $button_covid;
         echo $grade_nine_button_grade_eight;
@@ -136,6 +138,7 @@
       // corp buttons
 
         echo $grade_nine_button_secondary;
+        echo $button_screening_secondary;
         echo $button_daily_screening;
         echo $button_covid;
         echo $grade_nine_button_grade_eight;
