@@ -609,7 +609,7 @@ function wrdsb_i_am_a_corporate_site() {
   $parsed_url = parse_url(site_url());
   $host = explode('.', $parsed_url['host']);
   $my_domains = array(
-    "www","wwwwrdsbdev"
+    "www","wwwwrdsbdev", "wplabs"
   );
   $domain = 'wrdsb';
   $url = site_url();
@@ -784,6 +784,56 @@ function wrdsb_i_am_a_school() {
   }
 }
 
+function wrdsb_i_am_a_school_grade_8() {
+  $parsed_url = parse_url(site_url());
+  $host = explode('.', $parsed_url['host']);
+  $alpha_codes = array(
+    "ark",
+    "ave",
+    "bdn",
+    "bre",
+    "cdc",
+    "cnw",
+    "chi",
+    "cle",
+    "con",
+    "crl",
+    "doo",
+    "est",
+    "flo",
+    "fgl",
+    "gro",
+    "hes",
+    "jme",
+    "jst",
+    "lrw",
+    "lau",
+    "lbp",
+    "lnh",
+    "lin",
+    "mcg",
+    "mrg",
+    "mof",
+    "nlw",
+    "pkm",
+    "qsm",
+    "sil",
+    "sta",
+    "stj",
+    "stn",
+    "stw",
+    "sun",
+    "vis",
+    "wel",
+    "wsh",
+    "wgd",
+    "wpk"
+  );
+  if (in_array(($host[0]), $alpha_codes)) {
+    return TRUE;
+  }
+}
+
 function wrdsb_i_am_a_school_exception() {
   /** schools.wrdsb.ca/NAME **/
   $parsed_url = parse_url(site_url());
@@ -913,6 +963,7 @@ function wrdsb_i_am_a_school_beforeafter() {
 }
 
 function wrdsb_i_am_a_school_secondary() {
+  global $abc;
   $parsed_url = parse_url(site_url());
   $host = explode('.', $parsed_url['host']);
   $alpha_codes = array(
@@ -932,7 +983,8 @@ function wrdsb_i_am_a_school_secondary() {
     "sss",
     "wci",
     "wod",
-    "gnss"
+    "gnss",
+    "wplabs"
   );
   if (in_array(($host[0]), $alpha_codes)) {
     return TRUE;

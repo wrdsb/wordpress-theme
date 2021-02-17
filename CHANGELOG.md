@@ -1,14 +1,25 @@
-## 2.11.3
-- removing code from bad branch
+## 2.16.0
++ added code to support Max Mega Menu Pro
 
-## 2.11.2
-+ fixing errant copy paste order
+## 2.15.0
++ added new button for secondary schools
++ updated daily screening image for all schools Ticket #46226
 
-## 2.11.1
-+ change COVID link now that we have a dedicated landing page
+## 2.14.0
++ added shortcode to www home page for carousel
 
-## 2.11.0
-+ function for alternative and continuing education sites to be treated as schools
+## 2.13.1
+- removed new tab attribute from Future Grade Nines links on schools
+
+## 2.13.0
++ rejigging home buttons
+
+## 2.12.0
++ new function for schools with grade 8
++ Future Grade Nines buttons for schools with grade 8 and separately for secondary schools (persistent URL)
+
+## 2.11.4
++ repair repo
 
 ## 2.10.1
 + change url for daily symptom checklist to the provincial site
