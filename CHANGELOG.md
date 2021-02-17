@@ -1,3 +1,6 @@
+## 2.16.0
++ added code to support Max Mega Menu Pro
+
 ## 2.15.0
 + added new button for secondary schools
 + updated daily screening image for all schools Ticket #46226

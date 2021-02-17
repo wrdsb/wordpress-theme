@@ -10,6 +10,7 @@
   ?><!DOCTYPE html>
   <html lang="en">
     <head>
+      <link rel="stylesheet" type="text/css" href="style.css">
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -130,88 +131,19 @@
  
       <!-- header -->
       <div id="masthead">
-        <div class="container-top">
-          <div class="header">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-9 col-sm-8">
-                  <div id="logo" role="heading">
-                    <a aria-labelledby="logo" href="<?php echo home_url(); ?>/"><span><?php echo get_bloginfo('name'); ?></span>
-                    <?php if (wrdsb_i_am_a_corporate_site() != true)
-                    // if I am not a corporate site, e.g., if I am a school site
-                    { ?>
-                    <p id="sitename"><?php echo get_bloginfo('name');?></p>
-                    <?php if (get_bloginfo('description') != '') { ?>
-                    <p id="sitedescription"><?php echo get_bloginfo('description'); ?></p>
-                    <?php } else { ?>
-                      <p id="sitedescription">Innovating tomorrow by educating today</p>
-                    <?php }
-                     }
-                      ?>
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-4">
-                <div class="staff-shortcuts" role="complementary" aria-labelledby="staff-shortcut-list">
-                  <div class="searchbox" role="search" aria-labelledby="search">
-                    <form action="<?php echo home_url(); ?>/" method="get">
-                      <input aria-label="Search" type="text" name="s" id="search" value="<?php the_search_query(); ?>" placeholder="Search" />
-                    </form>
-                  </div>
-                  
-                  <div id="staff-shortcut-list">
-                    <a href="#address">Contact Information</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="navbar my-navbar" role="navigation" aria-labelledby="navbar-header">
-        <div id="navbar-header">
-          <button type="button" class="navbar-toggle togglesearch" data-toggle="collapse" data-target=".navbar-search">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-search"><img src="https://wrdsb-ui-assets.s3.amazonaws.com/public/2/2.0.0/images/search.gif" style="width: 25px; height: 25px;" /></span>
-          </button>
-          <button type="button" class="navbar-toggle togglenav" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          </button>
-          <?php $strl = get_bloginfo('name');
-          $tempstrl = explode(" ", $strl);
-          $newstrl = '';
-          foreach($tempstrl as $a) {
-          if ($a=='District' or $a=='Public' or $a=='Collegiate' or $a=='Secondary' or $a=='High') {
-          $newstrl.= "<br />";
-          }
-          $newstrl.=" ".$a;
-          }
-          ?>
-          <a class="navbar-brand" href="<?php echo home_url(); ?>/"><?php echo $newstrl; ?></a>
-        </div>
         
-        <div class="collapse navbar-search" role="search" aria-labelledby="mobileSearch">
-          <form action="<?php echo home_url(); ?>/" method="get">
-            <input aria-label="Search" type="text" name="s" id="mobileSearch" value="<?php the_search_query(); ?>" placeholder="Search" />
-          </form>
-        </div>
+      </div>
         <div id="menu" class="container" role="navigation" aria_label="Menu">
           <?php if (has_nav_menu('top')) {
           wp_nav_menu(array('theme_location' => 'top', 'menu_class' => 'nav nav-justified', 'container_class' => 'collapse navbar-collapse'));
-          } else {
+        } else {
           wp_page_menu(array('depth' => 1, 'show_home' => true, 'menu_class' => 'collapse navbar-collapse' ));
           } ?>
         </div>
-        </div><!-- /.navbar -->
-        </div><!-- /.container-top -->
 
         <?php if (is_home() && is_front_page() && wrdsb_i_am_a_corporate_site()) {
           echo do_shortcode('[slick-slider design="prodesign-28" read_more_text="Learn more" link_target="blank" sliderheight="300" dots_design="design-6" autoplay_interval="5000" speed="900" fade="true" focus_pause="true" category="www"]');
         } ?>
-
 
         <?php if (is_front_page()) {
 
