@@ -1,3 +1,9 @@
+## 2.16.1
+- function navwalker
+- file navwalker
+- link to style sheet
+- dev name for theme
+
 ## 2.16.0
 + added code to support Max Mega Menu Pro
 
