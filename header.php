@@ -10,7 +10,6 @@
   ?><!DOCTYPE html>
   <html lang="en">
     <head>
-      <link rel="stylesheet" type="text/css" href="style.css">
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -133,7 +132,7 @@
       <div id="masthead">
         
       </div>
-        <div id="menu" class="container" role="navigation" aria_label="Menu">
+        <div id="menu" role="navigation" aria_label="Menu">
           <?php if (has_nav_menu('top')) {
           wp_nav_menu(array('theme_location' => 'top', 'menu_class' => 'nav nav-justified', 'container_class' => 'collapse navbar-collapse'));
         } else {
