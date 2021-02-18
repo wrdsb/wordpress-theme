@@ -132,7 +132,7 @@
       <div id="masthead">
         
       </div>
-        <div id="menu" class="container" role="navigation" aria_label="Menu">
+        <div id="menu" role="navigation" aria_label="Menu">
           <?php if (has_nav_menu('top')) {
           wp_nav_menu(array('theme_location' => 'top', 'menu_class' => 'nav nav-justified', 'container_class' => 'collapse navbar-collapse'));
         } else {
