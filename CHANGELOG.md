@@ -3,6 +3,7 @@
 - file navwalker
 - link to style sheet
 - dev name for theme
+- class="container" from menu so it is full-width
 
 ## 2.16.0
 + added code to support Max Mega Menu Pro
