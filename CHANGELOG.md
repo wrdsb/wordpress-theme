@@ -1,3 +1,6 @@
+## 2.16.2
++ MMM theme
+
 ## 2.16.1
 - function navwalker
 - file navwalker
