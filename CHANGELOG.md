@@ -1,3 +1,7 @@
+## 2.15.1
++ flip images for ontario screening and secondary student verification portal on secondary sites ticket #46853
++ based on 2.15.0 release because the menu changes are out of sync
+
 ## 2.16.1
 - function navwalker
 - file navwalker

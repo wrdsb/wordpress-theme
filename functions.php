@@ -37,7 +37,6 @@ if ( ! function_exists( 'wrdsb_setup' ) ) :
  *
  * @since WRDSB 1.0
  */
-
 function wrdsb_setup() {
 
   /*
