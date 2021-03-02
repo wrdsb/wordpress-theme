@@ -1112,8 +1112,12 @@ if ( ! function_exists ('favicon_link' ) ) {
 
 function megamenu_add_theme_wrdsb_1614659524($themes) {
   $parsed_url=parse_url(site_url());
-  $host = explode('/', $parsed_url['path']);
-  switch ($host[1]) {
+  $schoolSite = explode('/', $parsed_url['path']);
+  $menuAlign = "center";
+  if(wrdsb_i_am_a_corporate_site()==true){
+    $menuAlign = "right";
+  }
+  switch ($schoolSite[1]) {
     case "gnss":
       $background = "rgb(85, 0, 85)";
       $backgroundHover = "rgb(153, 153, 153)";
@@ -1217,7 +1221,7 @@ function megamenu_add_theme_wrdsb_1614659524($themes) {
           'container_background_to' => $background,
           'container_padding_left' => '20px',
           'container_padding_right' => '20px',
-          'menu_item_align' => 'right',
+          'menu_item_align' => $menuAlign,
           'menu_item_background_hover_from' => $backgroundHover,
           'menu_item_background_hover_to' => $backgroundHover,
           'menu_item_link_font' => 'Lato',
