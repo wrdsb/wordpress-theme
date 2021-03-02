@@ -1,6 +1,5 @@
-## 2.15.1
-+ flip images for ontario screening and secondary student verification portal on secondary sites ticket #46853
-+ based on 2.15.0 release because the menu changes are out of sync
+## 2.16.2
++ MMM theme
 
 ## 2.16.1
 - function navwalker
@@ -11,6 +10,11 @@
 
 ## 2.16.0
 + added code to support Max Mega Menu Pro
+
+## 2.15.1
++ flip images for ontario screening and secondary student verification portal on secondary sites ticket #46853
++ based on 2.15.0 release because the menu changes are out of sync
++ change happened after 2.16.1 release
 
 ## 2.15.0
 + added new button for secondary schools
