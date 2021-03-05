@@ -207,6 +207,7 @@
           </div>
         </div>
       </div>
+
       <?php endif; ?>
 
 <!-- ---------------------------MMM DISABLED NAVBAR----------------------------------------------------------------- -->
@@ -237,12 +238,14 @@
             ?>
             <a class="navbar-brand" href="<?php echo home_url(); ?>/"><?php echo $newstrl; ?></a>
           </div>
+
         
         <div class="collapse navbar-search" role="search" aria-labelledby="mobileSearch">
           <form action="<?php echo home_url(); ?>/" method="get">
             <input aria-label="Search" type="text" name="s" id="mobileSearch" value="<?php the_search_query(); ?>" placeholder="Search" />
           </form>
         </div>
+
         <div id="menu" role="navigation" aria_label="Menu">
           <?php if (has_nav_menu('top')) {
           wp_nav_menu(array('theme_location' => 'top', 'menu_class' => 'nav nav-justified', 'container_class' => 'collapse navbar-collapse'));
@@ -251,6 +254,7 @@
           } ?>
         </div>
         </div><!-- /.navbar -->
+
         <?php endif; ?>
         </div><!-- /#masthead -->
 <!-- ---------------------------MMM ENABLED NAVBAR----------------------------------------------------------------- -->
@@ -297,7 +301,6 @@
 <!-- ----------------------------------------MEGAMENU END-------------------------------------------------------------- -->
 
 
-
         <?php if (is_home() && is_front_page() && wrdsb_i_am_a_corporate_site()) {
           echo do_shortcode('[slick-slider design="prodesign-28" read_more_text="Learn more" link_target="blank" sliderheight="300" dots_design="design-6" autoplay_interval="5000" speed="900" fade="true" focus_pause="true" category="www"]');
         } ?>
@@ -325,5 +328,6 @@
         } ?>
         <?php if (!is_front_page()) { ?>
         <?php the_breadcrumb(); ?>
+
         <?php } ?>
-        
+      
