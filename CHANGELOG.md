@@ -1,5 +1,6 @@
-## 2.16.2
-+ MMM theme
+## 2.17.0
++ MMM theme to control colours for schools
++ conditions for different header based on corporate or !corporate install for public sites
 
 ## 2.16.1
 - function navwalker
