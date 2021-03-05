@@ -1109,6 +1109,67 @@ if ( ! function_exists ('favicon_link' ) ) {
   add_action( 'wp_head', 'favicon_link' );
 }
 
+function getNavbarBackgroundColor(){
+  $parsed_url = parse_url(site_url());
+  $host = explode('.', $parsed_url['host']);
+  switch($host[0]){
+    case "gnss":
+      $background = "rgb(85, 0, 85)";
+    break;
+    case "bci":
+      $background = "#006699";
+      break;
+    case "chc":
+      $background = "#060";
+      break;
+    case "eci":
+      $background = "#670001";
+      break;
+    case "eds":
+      $background = "#074611";
+      break;
+    case "fhc":
+      $background = "#221B13";
+      break;
+    case "gci":
+      $background = "#010A59";
+      break; 
+    case "gps":
+      $background = "#6F0B09";
+      break;
+    case "grc":
+      $background = "#1B2B9C";
+      break;
+    case "hrh":
+      $background = "#543C76";
+      break;
+    case "jam":
+      $background = "#4480B2";
+      break;
+    case "jhs":
+      $background = "#6B8AA7";
+      break;
+    case "kci":
+      $background = "#660202";
+      break;
+    case "phs":
+      $background = "#29090C";
+    case "sss":
+      $background = "#99140c";
+      break;
+    case "wci":
+      $background = "#0a1241";
+      break;
+    case "wod":
+      $background = "#221b13";
+      break;
+    default:
+      $background="rgb(0, 95, 174)";
+      break;
+  }
+  return $background;
+}
+
 function megamenu_add_theme_wrdsb_1614659524($themes) {
   $parsed_url=parse_url(site_url());
   $schoolSite = explode('/', $parsed_url['path']);
@@ -1122,88 +1183,83 @@ function megamenu_add_theme_wrdsb_1614659524($themes) {
       $backgroundHover = "rgb(153, 153, 153)";
       $subMenuHover= "rgb(112, 240, 72)";
     break;
-    case "dsps":
-      $background = "rgb(85, 0, 85)";
-      $backgroundHover = "rgb(153, 153, 153)";
-      $subMenuHover= "rgb(112, 240, 72)";
-    break;
     case "bci":
-        $background = "rgb(0, 102, 153)";
+        $background = "#006699";
         $backgroundHover = "rgb(102, 102, 102)";
         $subMenuHover= "rgb(112, 240, 72)";
       break;
     case "chc":
-      $background = "rgb(0, 102, 0)";
+      $background = "#060";
       $backgroundHover = "rgb(102, 102, 102)";
       $subMenuHover= "rgb(112, 240, 72)";
       break;
     case "eci":
-      $background = "rgb(103, 0, 1)";
+      $background = "#670001";
       $backgroundHover = "rgb(102, 102, 102)";
       $subMenuHover= "rgb(112, 240, 72)";
       break;
     case "eds":
-      $background = "rgb(7, 70, 17)";
+      $background = "#074611";
       $backgroundHover = "rgb(102, 102, 102)";
       $subMenuHover= "'rgb(112, 240, 72)";
       break;
     case "fhc":
-      $background = "rgb(34, 27, 19)";
+      $background = "#221B13";
       $backgroundHover = "rgb(102, 102, 102)";
       $subMenuHover= "rgb(112, 240, 72)";
       break;
     case "gci":
-      $background = "rgb(1, 10, 89)";
+      $background = "#010A59";
       $backgroundHover = "rgb(209, 179, 23)";
       $subMenuHover= "rgb(209, 179, 23)";
       break; 
     case "gps":
-      $background = "rgb(111, 11, 9)";
+      $background = "#6F0B09";
       $backgroundHover = "rgb(15, 0, 5)";
       $subMenuHover= "rgb(98, 187, 70)";
       break;
     case "grc":
-      $background = "rgb(27, 43, 156)";
+      $background = "#1B2B9C";
       $backgroundHover = "rgb(153, 153, 153)";
       $subMenuHover= "rgb(98, 187, 70)";
       break;
     case "hrh":
-      $background = "rgb(84, 60, 118)";
+      $background = "#543C76";
       $backgroundHover = "rgb(153, 153, 153)";
       $subMenuHover= "rgb(84, 60, 118)";
       break;
     case "jam":
-      $background = "rgb(68, 128, 178)";
+      $background = "#4480B2";
       $backgroundHover = "rgb(48, 102, 155)";
       $subMenuHover= "rgb(98, 187, 70)";
       break;
     case "jhs":
-      $background = "rgb(107, 138, 167)";
+      $background = "#6B8AA7";
       $backgroundHover = "rgb(28, 47, 116)";
       $subMenuHover= "rgb(98, 187, 70)";
       break;
     case "kci":
-      $background = "rgb(102, 2, 2)";
+      $background = "#660202";
       $backgroundHover = "rgb(213, 166, 58)";
       $subMenuHover= "rgb(102, 2, 2)";
       break;
     case "phs":
-      $background = "rgb(41, 9, 12)";
+      $background = "#29090C";
       $backgroundHover = "rgb(102, 102, 102)";
       $subMenuHover= "rgb(98, 187, 70)";
       break;
     case "sss":
-      $background = "rgb(239, 62, 51)";
+      $background = "#99140c";
       $backgroundHover = "rgb(51, 51, 51)";
       $subMenuHover= "rgb(98, 187, 70)";
       break;
     case "wci":
-      $background = "rgb(10, 18, 65)";
+      $background = "#0a1241";
       $backgroundHover = "rgb(163, 0, 1)";
       $subMenuHover= "rgb(98, 187, 70)";
       break;
     case "wod":
-      $background = "rgb(18, 24, 10)";
+      $background = "#221b13";
       $backgroundHover = "rgb(102, 102, 102)";
       $subMenuHover= "rgb(98, 187, 70)";
       break;
@@ -1218,8 +1274,8 @@ function megamenu_add_theme_wrdsb_1614659524($themes) {
           'title' => 'WRDSB',
           'container_background_from' => $background,
           'container_background_to' => $background,
-          'container_padding_left' => '20px',
-          'container_padding_right' => '20px',
+          'container_padding_left' => '0px',
+          'container_padding_right' => '0px',
           'menu_item_align' => $menuAlign,
           'menu_item_background_hover_from' => $backgroundHover,
           'menu_item_background_hover_to' => $backgroundHover,
@@ -1259,7 +1315,7 @@ function megamenu_add_theme_wrdsb_1614659524($themes) {
           'flyout_link_color' => '#666',
           'flyout_link_color_hover' => '#666',
           'flyout_link_family' => 'inherit',
-          'responsive_breakpoint' => '1200px',
+          'responsive_breakpoint' => '768px',
           'toggle_background_from' => $background,
           'toggle_background_to' => $background,
           'toggle_bar_height' => '80px',
@@ -1276,10 +1332,20 @@ function megamenu_add_theme_wrdsb_1614659524($themes) {
           'mobile_menu_item_link_color_hover' => '#ffffff',
           'mobile_menu_item_background_hover_from' => $backgroundHover,
           'mobile_menu_item_background_hover_to' => $backgroundHover,
-          'custom_css' => '/** Push menu onto new line **/ 
-  #{$wrap} { 
-      clear: both; 
-  }',
+          'custom_css' => '@media only screen and (max-width : 1200px) {
+            #{$wrap} #{$menu} > li.mega-menu-item > a.mega-menu-link {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+         
+        /* Set top level menu item padding when screen width below 900px */
+        @media only screen and (max-width : 900px) {
+            #{$wrap} #{$menu} > li.mega-menu-item > a.mega-menu-link {
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+        }',
           'sticky_menu_item_link_height' => '40px',
           'tabbed_link_background_from' => '#f1f1f1',
           'tabbed_link_background_to' => '#f1f1f1',
