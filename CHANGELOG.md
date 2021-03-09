@@ -1,3 +1,7 @@
+## 2.17.1
++ added support for sites when MMM is network disabled.
++ updated colors for "eds" and "gci"
+
 ## 2.17.0
 + MMM theme to control colours for schools
 + conditions for different header based on corporate or !corporate install for public sites
