@@ -1211,7 +1211,7 @@ function megamenu_add_theme_wrdsb_1614659524($themes) {
     case "gci":
       $background = "#010A59";
       $backgroundHover = "rgb(209, 179, 23)";
-      $subMenuHover= "rgb(209, 179, 23)";
+      $subMenuHover= "#010A59";
       break; 
     case "gps":
       $background = "#6F0B09";
