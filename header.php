@@ -19,7 +19,8 @@
       <title><?php wp_title(''); ?> (<?php bloginfo('name'); ?>)</title>
       <?php } ?>
       <link href="https://s3.amazonaws.com/wrdsb-ui-assets/public/master.css" rel="stylesheet" media="all" />
-      <?php if(max_mega_menu_is_enabled('top') ) :?>
+  
+      <?php if ( function_exists('max_mega_menu_is_enabled') && max_mega_menu_is_enabled('top') ) : ?>
       <style type="text/css">
       <?php if (wrdsb_i_am_a_corporate_site()):?>
         .my-navbar{
@@ -165,10 +166,10 @@
       <div id="fb-root"></div>
       <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v4.0"></script>
       <? } ?>
- 
+      
       <!-- header -->
       <div id="masthead">
-      <?php if (!wrdsb_i_am_a_corporate_site()): ?>
+      <?php if (!wrdsb_i_am_a_corporate_site() || (wrdsb_i_am_a_corporate_site() && !function_exists('max_mega_menu_is_enabled'))): ?>
         <div class="container-top">
           <div class="header">
             <div class="container">
@@ -207,11 +208,10 @@
           </div>
         </div>
       </div>
-
       <?php endif; ?>
 
 <!-- ---------------------------MMM DISABLED NAVBAR----------------------------------------------------------------- -->
-      <?php if (!max_mega_menu_is_enabled('top') ) : ?>
+      <?php if (!function_exists('max_mega_menu_is_enabled') || !max_mega_menu_is_enabled('top') ) : ?>
         <div class="navbar my-navbar" role="navigation" aria-labelledby="navbar-header">
         
           <div id="navbar-header">
@@ -238,14 +238,12 @@
             ?>
             <a class="navbar-brand" href="<?php echo home_url(); ?>/"><?php echo $newstrl; ?></a>
           </div>
-
         
         <div class="collapse navbar-search" role="search" aria-labelledby="mobileSearch">
           <form action="<?php echo home_url(); ?>/" method="get">
             <input aria-label="Search" type="text" name="s" id="mobileSearch" value="<?php the_search_query(); ?>" placeholder="Search" />
           </form>
         </div>
-
         <div id="menu" role="navigation" aria_label="Menu">
           <?php if (has_nav_menu('top')) {
           wp_nav_menu(array('theme_location' => 'top', 'menu_class' => 'nav nav-justified', 'container_class' => 'collapse navbar-collapse'));
@@ -254,12 +252,11 @@
           } ?>
         </div>
         </div><!-- /.navbar -->
-
         <?php endif; ?>
         </div><!-- /#masthead -->
 <!-- ---------------------------MMM ENABLED NAVBAR----------------------------------------------------------------- -->
 
-        <?php if (max_mega_menu_is_enabled('top') ) : ?>
+        <?php if (function_exists('max_mega_menu_is_enabled') && max_mega_menu_is_enabled('top') ) : ?>
         <div class="navbar my-navbar" role="navigation" aria-labelledby="navbar-header">
         
           <div id="navbar-header">
@@ -301,6 +298,7 @@
 <!-- ----------------------------------------MEGAMENU END-------------------------------------------------------------- -->
 
 
+
         <?php if (is_home() && is_front_page() && wrdsb_i_am_a_corporate_site()) {
           echo do_shortcode('[slick-slider design="prodesign-28" read_more_text="Learn more" link_target="blank" sliderheight="300" dots_design="design-6" autoplay_interval="5000" speed="900" fade="true" focus_pause="true" category="www"]');
         } ?>
@@ -328,6 +326,5 @@
         } ?>
         <?php if (!is_front_page()) { ?>
         <?php the_breadcrumb(); ?>
-
         <?php } ?>
-      
+        
