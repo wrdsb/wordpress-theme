@@ -1,5 +1,38 @@
-### 2.16.0
-+ changes to home page of corp only
+## 2.18.0
++ featured news area
++ quick links area
++ featured video area
++ featured items area
++ social media area
++ google calendar area
++ new default "all news" page for the corporate site only
+
+## 2.17.1
++ added support for sites when MMM is network disabled.
++ updated colors for "eds" and "gci"
+
+## 2.17.0
++ MMM theme to control colours for schools
++ conditions for different header based on corporate or !corporate install for public sites
+
+## 2.16.1
+- function navwalker
+- file navwalker
+- link to style sheet
+- dev name for theme
+- class="container" from menu so it is full-width
+
+## 2.16.0
++ added code to support Max Mega Menu Pro
+
+## 2.15.1
++ flip images for ontario screening and secondary student verification portal on secondary sites ticket #46853
++ based on 2.15.0 release because the menu changes are out of sync
++ change happened after 2.16.1 release
+
+## 2.15.0
++ added new button for secondary schools
++ updated daily screening image for all schools Ticket #46226
 
 ## 2.14.0
 + added shortcode to www home page for carousel

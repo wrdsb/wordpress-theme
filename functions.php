@@ -55,6 +55,8 @@ function wrdsb_setup() {
   // Enable support for Featured Images (Post Thumbnails) in pages and posts, and declare sizes.
   add_theme_support( 'post-thumbnails' );
   set_post_thumbnail_size( 165, 9999);
+  add_image_size( 'wrdsb-card', 355, 150);
+  add_image_size( 'wrdsb-sticky-card', 355, 150);
   add_image_size( 'wrdsb-full-width', 1140, 9999);
   add_image_size( 'wrdsb-one-sidebar', 945, 9999);
   add_image_size( 'wrdsb-two-sidebars', 750, 9999);
@@ -203,9 +205,9 @@ function wrdsb_widgets_init() {
     'after_title'   => '</span></div>',
   ) );
   register_sidebar( array(
-    'name'          => __( 'Do Not Use: Footer Left', 'wrdsb' ),
+    'name'          => __( 'Communications', 'wrdsb' ),
     'id'            => 'footer-left',
-    'description'   => __( 'Appears in the second footer section of the site. This area is controlled centrally, widgets placed here will not display.', 'wrdsb' ),
+    'description'   => __( 'Appears in the second footer section of the site. This area is controlled by Communications, <strong>widgets placed here will not display</strong>.', 'wrdsb' ),
     'before_widget' => '',
     'after_widget'  => '',
     'before_title'  => '<h1>',
@@ -228,6 +230,33 @@ function wrdsb_widgets_init() {
     'after_widget'  => '',
     'before_title'  => '<h1>',
     'after_title'   => '</h1>',
+  ) );
+  register_sidebar(array(
+    'name'          => __( 'Corp Only: Quick Links', 'wrdsb' ),
+    'id'            => 'quicklinkscorp',
+    'description'   => __( 'Appears mid-page for the corporate home page only. <strong>Widgets placed here for other sites will not display.</strong>', 'wrdsb'),
+    'before_widget' => '<div class = "quicklinkscorp">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h2>',
+    'after_title'   => '</h2>',
+  ) );
+  register_sidebar(array(
+    'name'          => __( 'Corp Only: Featured Items', 'wrdsb' ),
+    'id'            => 'featitemscorp',
+    'description'   => __( 'Appears mid-page for the corporate home page only. <strong>Widgets placed here for other sites will not display.</strong>', 'wrdsb'),
+    'before_widget' => '<div id="featureditemscorp">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h2>',
+    'after_title'   => '</h2>',
+  ) );
+  register_sidebar(array(
+    'name'          => __( 'Corp Only: Featured Video', 'wrdsb' ),
+    'id'            => 'featvideocorp',
+    'description'   => __( 'Appears mid-page for the corporate home page only. <strong>Widgets placed here for other sites will not display.</strong>', 'wrdsb'),
+    'before_widget' => '<div id="featuredvideocorp">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h2>',
+    'after_title'   => '</h2>',
   ) );
 /*  register_sidebar( array(
     'name'          => __( 'Content Left', 'wrdsb' ),
@@ -569,12 +598,29 @@ function wrdsb_add_excerpts_to_pages() {
   add_post_type_support('page', 'excerpt');
 }
 
+if (!wrdsb_i_am_a_corporate_site()) {
+
 // Replaces the excerpt "[...]" more text with a link
 function new_excerpt_more($more) {
   global $post;
   return ' [...]<p class="readmore" role="complementary"><a href="'. get_permalink($post->ID) . '"><strong>Read more about</strong> <cite>'. get_the_title($post->ID) .'</cite> &#187;</a></p>';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
+
+} else {
+
+// replaces the excerpt "[...]" more text for corp only
+function new_excerpt_corp($more) {
+  global $post;
+  return '[...]';
+}
+add_filter('excerpt_more', 'new_excerpt_corp');
+
+function wrdsb_corp_custom_excerpt_length( $length ) {
+    return 20;
+}
+add_filter( 'excerpt_length', 'wrdsb_corp_custom_excerpt_length', 999 );
+}
 
 function get_our_excerpt($our_post_id, $global_post_id)
 {
@@ -770,8 +816,8 @@ function wrdsb_i_am_a_school() {
     "wsv",
     "wtt",
     "dsps",
-    "gnss",
-    "wplabs"
+    "gnss"/*,
+    "wplabs"*/
   );
   if (in_array(($host[0]), $alpha_codes)) {
     return TRUE;
@@ -977,8 +1023,8 @@ function wrdsb_i_am_a_school_secondary() {
     "sss",
     "wci",
     "wod",
-    "gnss",
-    "wplabs"
+    "gnss"/*,
+    "wplabs"*/
   );
   if (in_array(($host[0]), $alpha_codes)) {
     return TRUE;
@@ -1108,3 +1154,356 @@ if ( ! function_exists ('favicon_link' ) ) {
   }
   add_action( 'wp_head', 'favicon_link' );
 }
+
+function getNavbarBackgroundColor(){
+  $parsed_url = parse_url(site_url());
+  $host = explode('.', $parsed_url['host']);
+  switch($host[0]){
+    case "gnss":
+      $background = "rgb(85, 0, 85)";
+    break;
+    case "bci":
+      $background = "#006699";
+      break;
+    case "chc":
+      $background = "#060";
+      break;
+    case "eci":
+      $background = "#670001";
+      break;
+    case "eds":
+      $background = "#074611";
+      break;
+    case "fhc":
+      $background = "#221B13";
+      break;
+    case "gci":
+      $background = "#010A59";
+      break; 
+    case "gps":
+      $background = "#6F0B09";
+      break;
+    case "grc":
+      $background = "#1B2B9C";
+      break;
+    case "hrh":
+      $background = "#543C76";
+      break;
+    case "jam":
+      $background = "#4480B2";
+      break;
+    case "jhs":
+      $background = "#6B8AA7";
+      break;
+    case "kci":
+      $background = "#660202";
+      break;
+    case "phs":
+      $background = "#29090C";
+    case "sss":
+      $background = "#99140c";
+      break;
+    case "wci":
+      $background = "#0a1241";
+      break;
+    case "wod":
+      $background = "#221b13";
+      break;
+    default:
+      $background="rgb(0, 95, 174)";
+      break;
+  }
+  return $background;
+}
+
+function megamenu_add_theme_wrdsb_1614659524($themes) {
+  $parsed_url=parse_url(site_url());
+  $schoolSite = explode('/', $parsed_url['path']);
+  $menuAlign = "center";
+  if(wrdsb_i_am_a_corporate_site()==true){
+    $menuAlign = "right";
+  }
+  switch ($schoolSite[1]) {
+    case "gnss":
+      $background = "rgb(85, 0, 85)";
+      $backgroundHover = "rgb(153, 153, 153)";
+      $subMenuHover= "rgb(112, 240, 72)";
+    break;
+    case "bci":
+        $background = "#006699";
+        $backgroundHover = "rgb(102, 102, 102)";
+        $subMenuHover= "rgb(112, 240, 72)";
+      break;
+    case "chc":
+      $background = "#060";
+      $backgroundHover = "rgb(102, 102, 102)";
+      $subMenuHover= "rgb(112, 240, 72)";
+      break;
+    case "eci":
+      $background = "#670001";
+      $backgroundHover = "rgb(102, 102, 102)";
+      $subMenuHover= "rgb(112, 240, 72)";
+      break;
+    case "eds":
+      $background = "#074611";
+      $backgroundHover = "rgb(102, 102, 102)";
+      $subMenuHover= "rgb(112, 240, 72)";
+      break;
+    case "fhc":
+      $background = "#221B13";
+      $backgroundHover = "rgb(102, 102, 102)";
+      $subMenuHover= "rgb(112, 240, 72)";
+      break;
+    case "gci":
+      $background = "#010A59";
+      $backgroundHover = "rgb(209, 179, 23)";
+      $subMenuHover= "#010A59";
+      break; 
+    case "gps":
+      $background = "#6F0B09";
+      $backgroundHover = "rgb(15, 0, 5)";
+      $subMenuHover= "rgb(98, 187, 70)";
+      break;
+    case "grc":
+      $background = "#1B2B9C";
+      $backgroundHover = "rgb(153, 153, 153)";
+      $subMenuHover= "rgb(98, 187, 70)";
+      break;
+    case "hrh":
+      $background = "#543C76";
+      $backgroundHover = "rgb(153, 153, 153)";
+      $subMenuHover= "rgb(84, 60, 118)";
+      break;
+    case "jam":
+      $background = "#4480B2";
+      $backgroundHover = "rgb(48, 102, 155)";
+      $subMenuHover= "rgb(98, 187, 70)";
+      break;
+    case "jhs":
+      $background = "#6B8AA7";
+      $backgroundHover = "rgb(28, 47, 116)";
+      $subMenuHover= "rgb(98, 187, 70)";
+      break;
+    case "kci":
+      $background = "#660202";
+      $backgroundHover = "rgb(213, 166, 58)";
+      $subMenuHover= "rgb(102, 2, 2)";
+      break;
+    case "phs":
+      $background = "#29090C";
+      $backgroundHover = "rgb(102, 102, 102)";
+      $subMenuHover= "rgb(98, 187, 70)";
+      break;
+    case "sss":
+      $background = "#99140c";
+      $backgroundHover = "rgb(51, 51, 51)";
+      $subMenuHover= "rgb(98, 187, 70)";
+      break;
+    case "wci":
+      $background = "#0a1241";
+      $backgroundHover = "rgb(163, 0, 1)";
+      $subMenuHover= "rgb(98, 187, 70)";
+      break;
+    case "wod":
+      $background = "#221b13";
+      $backgroundHover = "rgb(102, 102, 102)";
+      $subMenuHover= "rgb(98, 187, 70)";
+      break;
+    default:
+      $background = "rgb(0, 95, 174)";
+      $backgroundHover = "rgb(3, 77, 139)";
+      $subMenuHover= "rgb(112, 240, 72)";
+      break;
+
+    }
+      $themes["wrdsb_1614659524"] = array(
+          'title' => 'WRDSB',
+          'container_background_from' => $background,
+          'container_background_to' => $background,
+          'container_padding_left' => '0px',
+          'container_padding_right' => '0px',
+          'menu_item_align' => $menuAlign,
+          'menu_item_background_hover_from' => $backgroundHover,
+          'menu_item_background_hover_to' => $backgroundHover,
+          'menu_item_link_font' => 'Lato',
+          'menu_item_link_font_size' => '18px',
+          'menu_item_link_height' => '80px',
+          'menu_item_link_text_align' => 'center',
+          'menu_item_link_padding_left' => '20px',
+          'menu_item_link_padding_right' => '20px',
+          'panel_background_from' => $backgroundHover,
+          'panel_background_to' => $backgroundHover,
+          'panel_header_color' => 'rgb(255, 255, 255)',
+          'panel_header_text_transform' => 'none',
+          'panel_header_font' => 'Lato',
+          'panel_padding_top' => '30px',
+          'panel_padding_bottom' => '30px',
+          'panel_widget_padding_top' => '0',
+          'panel_widget_padding_bottom' => '0',
+          'panel_font_size' => '14px',
+          'panel_font_color' => '#666',
+          'panel_font_family' => 'inherit',
+          'panel_second_level_font_color' => 'rgb(255, 255, 255)',
+          'panel_second_level_font_color_hover' => $subMenuHover,
+          'panel_second_level_text_transform' => 'none',
+          'panel_second_level_font' => 'Lato',
+          'panel_second_level_font_size' => '16px',
+          'panel_second_level_font_weight' => 'bold',
+          'panel_second_level_font_weight_hover' => 'bold',
+          'panel_second_level_text_decoration' => 'none',
+          'panel_second_level_text_decoration_hover' => 'none',
+          'panel_third_level_font_color' => 'rgb(255, 255, 255)',
+          'panel_third_level_font_color_hover' => $subMenuHover,
+          'panel_third_level_font' => 'Lato',
+          'panel_third_level_font_size' => '16px',
+          'panel_third_level_padding_left' => '15px',
+          'flyout_link_size' => '14px',
+          'flyout_link_color' => '#666',
+          'flyout_link_color_hover' => '#666',
+          'flyout_link_family' => 'inherit',
+          'responsive_breakpoint' => '768px',
+          'toggle_background_from' => $background,
+          'toggle_background_to' => $background,
+          'toggle_bar_height' => '80px',
+          'toggle_bar_border_radius_top_left' => '0px',
+          'toggle_bar_border_radius_top_right' => '0px',
+          'toggle_bar_border_radius_bottom_left' => '0px',
+          'toggle_bar_border_radius_bottom_right' => '0px',
+          'mobile_menu_force_width' => 'on',
+          'mobile_background_from' => $background,
+          'mobile_background_to' => $background,
+          'mobile_menu_item_link_font_size' => '14px',
+          'mobile_menu_item_link_color' => '#ffffff',
+          'mobile_menu_item_link_text_align' => 'left',
+          'mobile_menu_item_link_color_hover' => '#ffffff',
+          'mobile_menu_item_background_hover_from' => $backgroundHover,
+          'mobile_menu_item_background_hover_to' => $backgroundHover,
+          'custom_css' => '@media only screen and (max-width : 1200px) {
+            #{$wrap} #{$menu} > li.mega-menu-item > a.mega-menu-link {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+         
+        /* Set top level menu item padding when screen width below 900px */
+        @media only screen and (max-width : 900px) {
+            #{$wrap} #{$menu} > li.mega-menu-item > a.mega-menu-link {
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+        }',
+          'sticky_menu_item_link_height' => '40px',
+          'tabbed_link_background_from' => '#f1f1f1',
+          'tabbed_link_background_to' => '#f1f1f1',
+          'tabbed_link_color' => '#666',
+          'tabbed_link_family' => 'inherit',
+          'tabbed_link_size' => '14px',
+          'tabbed_link_weight' => 'normal',
+          'tabbed_link_padding_top' => '0px',
+          'tabbed_link_padding_right' => '10px',
+          'tabbed_link_padding_bottom' => '0px',
+          'tabbed_link_padding_left' => '10px',
+          'tabbed_link_height' => '35px',
+          'tabbed_link_text_decoration' => 'none',
+          'tabbed_link_text_transform' => 'none',
+          'tabbed_link_background_hover_from' => '#dddddd',
+          'tabbed_link_background_hover_to' => '#dddddd',
+          'tabbed_link_weight_hover' => 'normal',
+          'tabbed_link_text_decoration_hover' => 'none',
+          'tabbed_link_color_hover' => '#666',
+      );
+      return $themes;
+  }
+  add_filter("megamenu_themes", "megamenu_add_theme_wrdsb_1614659524");
+
+function megamenu_override_default_theme($value) {
+  // change 'primary' to your menu location ID
+  if ( !isset($value['top']['theme']) ) {
+    $value['top']['theme'] = 'wrdsb_1614659524'; // change my_custom_theme_key to the ID of your exported theme
+  }
+
+  return $value;
+}
+add_filter('default_option_megamenu_settings', 'megamenu_override_default_theme');
+
+// make the sticky posts part of the number per page calculation 2021-03-16
+
+add_action('pre_get_posts', 'count_stickies');
+function count_stickies($query) {
+
+    if ($query->is_main_query() && is_home() && wrdsb_i_am_a_corporate_site()) {
+
+        // set the number of posts per page
+        $posts_per_page = 4;
+        // get sticky posts array
+        $sticky_posts = get_option( 'sticky_posts' );
+
+        // if we have any sticky posts and we are at the first page
+        if (is_array($sticky_posts) && !$query->is_paged()) {
+
+            // counnt the number of sticky posts
+            $sticky_count = count($sticky_posts);
+
+            // and if the number of sticky posts is less than
+            // the number we want to set:
+            if ($sticky_count < $posts_per_page) {
+                $query->set('posts_per_page', $posts_per_page - $sticky_count);
+
+            // if the number of sticky posts is greater than or equal
+            // the number of pages we want to set:
+            } else {
+                $query->set('posts_per_page', 1);
+            }
+
+        // fallback in case we have no sticky posts
+        // and we are not on the first page
+        } else {
+            $query->set('posts_per_page', $posts_per_page);
+        }
+    }
+}
+
+function wrdsb_postsbycategory() {
+
+  // available categories 
+ $categories = get_categories( array(
+    'orderby' => 'name',
+    'order'   => 'ASC',
+    'parent'  => 0
+) );
+
+  foreach ($categories as $wrdsb_category) {
+
+    // the query
+    $the_query = new WP_Query( array( 'category_name' => $wrdsb_category, 'posts_per_page' => 10 ) ); 
+
+    // The Loop
+    if ( $the_query->have_posts() ) {
+      $string = '<h2>'.$wrdsb_category.'</h2>';
+      $string .= '<ul class="postsbycategory widget_recent_entries">';
+      while ( $the_query->have_posts() ) {
+          $the_query->the_post();
+          $date = get_the_time(get_option('date_format'), $post->ID);
+          if ( has_post_thumbnail() ) {
+          $string .= '<li>';
+          $string .= '<a href="' . get_the_permalink() .'" rel="bookmark">' . get_the_post_thumbnail($post_id, array( 50, 50) ) . get_the_title() .'</a> • ' . $date . '</li>';
+          } else { 
+          // if no featured image is found
+          $string .= '<li><a href="' . get_the_permalink() .'" rel="bookmark">' . get_the_title() .'</a> • ' . $date . '</li>';
+          }
+      }
+    } else {
+    // no posts found
+    }
+    $string .= '</ul>';
+    return $string;
+
+    /* Restore original Post Data */
+    wp_reset_postdata();
+  
+  }
+}
+// Add a shortcode
+//add_shortcode('categoryposts', 'wpcat_postsbycategory'); 
+// Enable shortcodes in text widgets
+//add_filter('widget_text', 'do_shortcode');
