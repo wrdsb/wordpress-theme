@@ -26,11 +26,23 @@
         .my-navbar{
           margin-bottom:0px;
         }
-      <?endif;?>
+       @media (max-width:1100px){
+        #navbar-header{
+          background:url("https://www.wrdsb.ca/wp-content/uploads/WRDSBSecondaryLogo.svg") no-repeat !important;
+          background-size:257px 40px !important;
+          background-position:10px 23px !important;
+          }
+        
+        .togglesearch{
+          display:block;
+          background-color:transparent;
+        }
+        }
+      <?php endif;?>
       #navbar-header{
-        background-color: <?php echo getNavbarBackgroundColor() ?>;
+        background-color: <?php echo getNavbarBackgroundColor() ?> !important;
         height:80px !important;
-        background-position:4px 15px !important;
+        background-position:4px 15px;
       }
 
       #navbar-header a.navbar-brand {
@@ -41,7 +53,7 @@
         top:17px;
         right: 50px;
       }
-      @media (max-width:768px){
+      @media (max-width:1100px){
       .mobileMenu{
         float: right;
         z-index:10;
@@ -282,8 +294,10 @@
             $newstrl.=" ".$a;
             }
             ?>
+           <?php if (!wrdsb_i_am_a_corporate_site()):?>
             <a class="navbar-brand" href="<?php echo home_url(); ?>/"><?php echo $newstrl; ?></a>
-          </div>
+           <?php endif; ?>
+         </div>
         
         
         <div class="collapse navbar-search" role="search" aria-labelledby="mobileSearch">
