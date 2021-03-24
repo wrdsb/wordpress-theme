@@ -1,3 +1,8 @@
+## 2.18.1
++ update styles
++ update link
+- right sidebar for corporate home page
+
 ## 2.18.0
 + featured news area
 + quick links area

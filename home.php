@@ -14,6 +14,7 @@
     if (is_active_sidebar('sidebar-left') || has_nav_menu('left')) {$has_left = TRUE;}
     if (is_active_sidebar('sidebar-right') || has_nav_menu('right')) {$has_right = TRUE;}
     if (is_front_page() && (wrdsb_i_am_a_school() || wrdsb_i_am_a_school_exception())) {$has_left = TRUE;} 
+    if (is_front_page() && wrdsb_i_am_a_corporate_site()) {$has_right = FALSE;}
 
     //-- Buttons for all schools --
 
@@ -232,7 +233,7 @@
 
       // Include the post format-specific content template.
       include get_template_directory() . '/content-corp.php';
-       
+
     }
 
   ?>

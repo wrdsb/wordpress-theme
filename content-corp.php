@@ -24,6 +24,11 @@
 					text-transform: uppercase;
 					text-align: left;
 					color: #131212;
+					font-weight: bold;
+					font-family: helvetica neue, sans-serif;
+					font-size: 24px;
+					margin-top: 0 !important;
+					padding-top: 15px;
 					/*padding: 0 0 0 1.25rem;*/
 				}
 
@@ -96,13 +101,13 @@
 				}
 
 				.news-corp-container > ul > li {
-				  border: 2px solid #ededed;
+				  border: 5px solid #ededed;
 				  list-style-type: none;
 				  background-color: #fdfdfd;
 				}
 
 				.news-corp-container > ul > li:hover {
-				  border: 2px solid #62bb46;
+				  border: 5px solid #62bb46;
 				  list-style-type: none;
 				}
 
@@ -178,7 +183,7 @@
 						max-width: 233px;
 						max-height: 163px;
 						margin: 5px;
-						border: 3px solid #e1e1e1;
+						border: 5px solid #e1e1e1;
 					}
 				}
 
@@ -188,12 +193,12 @@
 						min-width: 233px;
 						min-height: 163px;
 						margin: 5px;
-						border: 3px solid #e1e1e1;
+						border: 5px solid #e1e1e1;
 					}
 				}
 
 				.item:hover {
-					border: 3px solid #62bb46;
+					border: 5px solid #62bb46;
 				}
 
 				.item h3 {
@@ -209,7 +214,7 @@
         		#quicklinksarea {
         			background-color: #f8f8f8;
         			text-align: center;
-        			padding: 10px 15px;
+        			padding: 0 15px 10px 15px;
         			min-height: 250px;
         		}
 
@@ -218,14 +223,27 @@
         			padding-bottom: 15px;
         		}
 
-				.quicklink {
-					float: left;
-					width: 210px;
-					margin: 5px;
-					padding: 15px;
-					text-align: center;
-					vertical-align: middle;
-					border: 5px solid #f8f8f8;
+				@media (min-width: 501px) {
+					.quicklink {
+						float: left;
+						width: 210px;
+						margin: 5px;
+						padding: 15px;
+						text-align: center;
+						vertical-align: middle;
+						border: 5px solid #f8f8f8;
+					}
+				}
+
+				@media (max-width: 500px) {
+					.quicklink {
+						width: 210px;
+						margin: auto;
+						padding: 15px;
+						text-align: center;
+						vertical-align: middle;
+						border: 5px solid #f8f8f8;
+					}
 				}
 
 				.quicklink:hover {
@@ -270,7 +288,7 @@
 				</ul>
 			</section>
 
-			<div class="seeall"><a href="https://wplabs.wrdsb.ca/theme/template-test-pages/news/">See All</a></div>
+			<div class="seeall"><a href="https://www.wrdsb.ca/news-and-announcements/">See All</a></div>
 
 
 			<!-- quick links (5) -->
@@ -427,7 +445,7 @@
 				<!-- featured items (6) -->
 
 				<div class="featureditems-corp-container col-lg-8 col-md-8 col-sm-6" id="featureditemsarea">
-					<h2 class="newcorp">Featured Items</h2>
+					<h2 class="newcorp" style="padding-left: 11px;">Featured Items</h2>
 					
 					<?php /* if ( is_active_sidebar ('featitemscorp') ):?>
 
@@ -508,7 +526,7 @@
 
 			<!-- Google Calendar -->
 
-			<h2>Upcoming Events</h2>
+			<h2 class="newcorp">Upcoming Events</h2>
 
 			<iframe src="https://calendar.google.com/calendar/embed?
 			showTitle=0
