@@ -297,8 +297,7 @@
            <?php if (!wrdsb_i_am_a_corporate_site()):?>
             <a class="navbar-brand" href="<?php echo home_url(); ?>/"><?php echo $newstrl; ?></a>
            <?php endif; ?>
-         </div>
-        
+         </div>       
         
         <div class="collapse navbar-search" role="search" aria-labelledby="mobileSearch">
           <form action="<?php echo home_url(); ?>/" method="get">
