@@ -55,6 +55,8 @@ function wrdsb_setup() {
   // Enable support for Featured Images (Post Thumbnails) in pages and posts, and declare sizes.
   add_theme_support( 'post-thumbnails' );
   set_post_thumbnail_size( 165, 9999);
+  add_image_size( 'wrdsb-card', 355, 150);
+  add_image_size( 'wrdsb-sticky-card', 355, 150);
   add_image_size( 'wrdsb-full-width', 1140, 9999);
   add_image_size( 'wrdsb-one-sidebar', 945, 9999);
   add_image_size( 'wrdsb-two-sidebars', 750, 9999);
@@ -203,9 +205,9 @@ function wrdsb_widgets_init() {
     'after_title'   => '</span></div>',
   ) );
   register_sidebar( array(
-    'name'          => __( 'Do Not Use: Footer Left', 'wrdsb' ),
+    'name'          => __( 'Communications', 'wrdsb' ),
     'id'            => 'footer-left',
-    'description'   => __( 'Appears in the second footer section of the site. This area is controlled centrally, widgets placed here will not display.', 'wrdsb' ),
+    'description'   => __( 'Appears in the second footer section of the site. This area is controlled by Communications, <strong>widgets placed here will not display</strong>.', 'wrdsb' ),
     'before_widget' => '',
     'after_widget'  => '',
     'before_title'  => '<h1>',
@@ -228,6 +230,33 @@ function wrdsb_widgets_init() {
     'after_widget'  => '',
     'before_title'  => '<h1>',
     'after_title'   => '</h1>',
+  ) );
+  register_sidebar(array(
+    'name'          => __( 'Corp Only: Quick Links', 'wrdsb' ),
+    'id'            => 'quicklinkscorp',
+    'description'   => __( 'Appears mid-page for the corporate home page only. <strong>Widgets placed here for other sites will not display.</strong>', 'wrdsb'),
+    'before_widget' => '<div class = "quicklinkscorp">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h2>',
+    'after_title'   => '</h2>',
+  ) );
+  register_sidebar(array(
+    'name'          => __( 'Corp Only: Featured Items', 'wrdsb' ),
+    'id'            => 'featitemscorp',
+    'description'   => __( 'Appears mid-page for the corporate home page only. <strong>Widgets placed here for other sites will not display.</strong>', 'wrdsb'),
+    'before_widget' => '<div id="featureditemscorp">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h2>',
+    'after_title'   => '</h2>',
+  ) );
+  register_sidebar(array(
+    'name'          => __( 'Corp Only: Featured Video', 'wrdsb' ),
+    'id'            => 'featvideocorp',
+    'description'   => __( 'Appears mid-page for the corporate home page only. <strong>Widgets placed here for other sites will not display.</strong>', 'wrdsb'),
+    'before_widget' => '<div id="featuredvideocorp">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h2>',
+    'after_title'   => '</h2>',
   ) );
 /*  register_sidebar( array(
     'name'          => __( 'Content Left', 'wrdsb' ),
@@ -569,12 +598,29 @@ function wrdsb_add_excerpts_to_pages() {
   add_post_type_support('page', 'excerpt');
 }
 
+if (!wrdsb_i_am_a_corporate_site()) {
+
 // Replaces the excerpt "[...]" more text with a link
 function new_excerpt_more($more) {
   global $post;
   return ' [...]<p class="readmore" role="complementary"><a href="'. get_permalink($post->ID) . '"><strong>Read more about</strong> <cite>'. get_the_title($post->ID) .'</cite> &#187;</a></p>';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
+
+} else {
+
+// replaces the excerpt "[...]" more text for corp only
+function new_excerpt_corp($more) {
+  global $post;
+  return '[...]';
+}
+add_filter('excerpt_more', 'new_excerpt_corp');
+
+function wrdsb_corp_custom_excerpt_length( $length ) {
+    return 20;
+}
+add_filter( 'excerpt_length', 'wrdsb_corp_custom_excerpt_length', 999 );
+}
 
 function get_our_excerpt($our_post_id, $global_post_id)
 {
@@ -770,8 +816,8 @@ function wrdsb_i_am_a_school() {
     "wsv",
     "wtt",
     "dsps",
-    "gnss",
-    "wplabs"
+    "gnss"/*,
+    "wplabs"*/
   );
   if (in_array(($host[0]), $alpha_codes)) {
     return TRUE;
@@ -977,8 +1023,8 @@ function wrdsb_i_am_a_school_secondary() {
     "sss",
     "wci",
     "wod",
-    "gnss",
-    "wplabs"
+    "gnss"/*,
+    "wplabs"*/
   );
   if (in_array(($host[0]), $alpha_codes)) {
     return TRUE;
@@ -1379,3 +1425,85 @@ function megamenu_override_default_theme($value) {
   return $value;
 }
 add_filter('default_option_megamenu_settings', 'megamenu_override_default_theme');
+
+// make the sticky posts part of the number per page calculation 2021-03-16
+
+add_action('pre_get_posts', 'count_stickies');
+function count_stickies($query) {
+
+    if ($query->is_main_query() && is_home() && wrdsb_i_am_a_corporate_site()) {
+
+        // set the number of posts per page
+        $posts_per_page = 4;
+        // get sticky posts array
+        $sticky_posts = get_option( 'sticky_posts' );
+
+        // if we have any sticky posts and we are at the first page
+        if (is_array($sticky_posts) && !$query->is_paged()) {
+
+            // counnt the number of sticky posts
+            $sticky_count = count($sticky_posts);
+
+            // and if the number of sticky posts is less than
+            // the number we want to set:
+            if ($sticky_count < $posts_per_page) {
+                $query->set('posts_per_page', $posts_per_page - $sticky_count);
+
+            // if the number of sticky posts is greater than or equal
+            // the number of pages we want to set:
+            } else {
+                $query->set('posts_per_page', 1);
+            }
+
+        // fallback in case we have no sticky posts
+        // and we are not on the first page
+        } else {
+            $query->set('posts_per_page', $posts_per_page);
+        }
+    }
+}
+
+function wrdsb_postsbycategory() {
+
+  // available categories 
+ $categories = get_categories( array(
+    'orderby' => 'name',
+    'order'   => 'ASC',
+    'parent'  => 0
+) );
+
+  foreach ($categories as $wrdsb_category) {
+
+    // the query
+    $the_query = new WP_Query( array( 'category_name' => $wrdsb_category, 'posts_per_page' => 10 ) ); 
+
+    // The Loop
+    if ( $the_query->have_posts() ) {
+      $string = '<h2>'.$wrdsb_category.'</h2>';
+      $string .= '<ul class="postsbycategory widget_recent_entries">';
+      while ( $the_query->have_posts() ) {
+          $the_query->the_post();
+          $date = get_the_time(get_option('date_format'), $post->ID);
+          if ( has_post_thumbnail() ) {
+          $string .= '<li>';
+          $string .= '<a href="' . get_the_permalink() .'" rel="bookmark">' . get_the_post_thumbnail($post_id, array( 50, 50) ) . get_the_title() .'</a> • ' . $date . '</li>';
+          } else { 
+          // if no featured image is found
+          $string .= '<li><a href="' . get_the_permalink() .'" rel="bookmark">' . get_the_title() .'</a> • ' . $date . '</li>';
+          }
+      }
+    } else {
+    // no posts found
+    }
+    $string .= '</ul>';
+    return $string;
+
+    /* Restore original Post Data */
+    wp_reset_postdata();
+  
+  }
+}
+// Add a shortcode
+//add_shortcode('categoryposts', 'wpcat_postsbycategory'); 
+// Enable shortcodes in text widgets
+//add_filter('widget_text', 'do_shortcode');

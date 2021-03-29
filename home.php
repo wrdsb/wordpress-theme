@@ -3,7 +3,7 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-12 col-md-12 col-lg-12" role="complementary">
-            <h1>News &amp;<br />Announcements</h1>
+          <h1 style="text-transform: uppercase;">News and Announcements</h1>
         </div>
     </div>
     <div class="row">
@@ -14,6 +14,7 @@
     if (is_active_sidebar('sidebar-left') || has_nav_menu('left')) {$has_left = TRUE;}
     if (is_active_sidebar('sidebar-right') || has_nav_menu('right')) {$has_right = TRUE;}
     if (is_front_page() && (wrdsb_i_am_a_school() || wrdsb_i_am_a_school_exception())) {$has_left = TRUE;} 
+    if (is_front_page() && wrdsb_i_am_a_corporate_site()) {$has_right = FALSE;}
 
     //-- Buttons for all schools --
 
@@ -215,18 +216,26 @@
       echo '<div class="col-sm-12 col-lg-12" role="main">';
     endif;
 
-    // Start the Loop.
-    while ( have_posts() ) : the_post();
-      // Include the post format-specific content template.
-      get_template_part( 'content', get_post_format() );
-      // If comments are open or we have at least one comment, load up the comment template.
-      if ( comments_open() || get_comments_number() ) {
-        comments_template();
-      }
-    endwhile;
+   /* if not corp */ 
 
-    // Previous/next post navigation.
-    wrdsb_paging_nav();
+    if (!wrdsb_i_am_a_corporate_site()) {
+
+      // Start the Loop.
+      while ( have_posts() ) : the_post();
+        // Include the post format-specific content template.
+        get_template_part( 'content', get_post_format() );
+      endwhile;
+
+      // Previous/next post navigation.
+      wrdsb_paging_nav();
+
+    } else {
+
+      // Include the post format-specific content template.
+      include get_template_directory() . '/content-corp.php';
+
+    }
+
   ?>
 
     </div> <!-- end content area -->

@@ -1,3 +1,17 @@
+## 2.18.1
++ update styles
++ update link
+- right sidebar for corporate home page
+
+## 2.18.0
++ featured news area
++ quick links area
++ featured video area
++ featured items area
++ social media area
++ google calendar area
++ new default "all news" page for the corporate site only
+
 ## 2.17.1
 + added support for sites when MMM is network disabled.
 + updated colors for "eds" and "gci"
