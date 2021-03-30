@@ -1,3 +1,6 @@
+## 2.18.2
++ widget areas in corp home page
+
 ## 2.18.1
 + update styles
 + update link
