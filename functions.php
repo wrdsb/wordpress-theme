@@ -1220,7 +1220,7 @@ function megamenu_add_theme_wrdsb_1614659524($themes) {
   $parsed_url=parse_url(site_url());
   $schoolSite = explode('/', $parsed_url['path']);
   $menuAlign = "center";
-  if(wrdsb_i_am_a_corporate_site()==true){
+  if(wrdsb_i_am_a_corporate_site()){
     $menuAlign = "right";
   }
   switch ($schoolSite[1]) {
