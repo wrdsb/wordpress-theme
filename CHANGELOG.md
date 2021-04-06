@@ -1,3 +1,6 @@
+## 2.18.2
++ add student census button
+
 ## 2.18.1
 + update styles
 + update link
