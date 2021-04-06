@@ -43,6 +43,8 @@
 
     $button_kindergarten = '<p><a href="https://www.wrdsb.ca/kindergarten/its-time-to-register/?utm_source=schools-button&utm_medium=referral&utm_campaign=kindergarten" target="_blank" rel="noopener"><img src="https://www.wrdsb.ca/wp-content/uploads/REGISTER-ONLINE.png" alt="Register for Kindergarten at the WRDSB"/></a></p>';
 
+    $button_student_census = '<p><a href="https://www.wrdsb.ca/studentcensus/?utm_source=schools-button&utm_medium=referral&utm_campaign=student-census" target="_blank" rel="noopener"><img src="https://schools.wrdsb.ca/wp-content/uploads/2021/04/Student-Census-Logo_Button-10.jpg" alt="WRDSB Student Census"/></a></p>';
+
     // schools that are only secondary
 
     if (is_front_page() && wrdsb_i_am_a_school_secondary()) { 
@@ -83,6 +85,7 @@
         echo $button_screening_secondary;
         echo $button_covid;
         echo $grade_nine_button_grade_eight;
+        echo $button_student_census;
         echo $button_return_to_school;
         echo $button_sdlp;
         echo $button_wrdsb_at_home;
@@ -94,6 +97,16 @@
       if (is_front_page() && wrdsb_i_am_a_school_exception()) {
 
         echo $button_myway;
+        echo $button_daily_screening;
+        echo $button_screening_secondary;
+        echo $button_covid;
+        echo $grade_nine_button_grade_eight;
+        echo $button_student_census;
+        echo $button_return_to_school;
+        echo $button_sdlp;
+        echo $button_wrdsb_at_home;
+        echo $button_tech_at_home;
+        echo $button_eighteen;
 
       }
 
@@ -136,23 +149,34 @@
 
       if (is_front_page() && wrdsb_i_am_a_school()) { 
 
-      // corp buttons
-
+      // corp buttons 
         echo $grade_nine_button_secondary;
         echo $button_daily_screening;
         echo $button_screening_secondary;
         echo $button_covid;
         echo $grade_nine_button_grade_eight;
+        echo $button_student_census;
         echo $button_return_to_school;
         echo $button_sdlp;
         echo $button_wrdsb_at_home;
         echo $button_tech_at_home;
+        echo $button_eighteen;
 
       }
 
       if (is_front_page() && wrdsb_i_am_a_school_exception()) {
 
         echo $button_myway;
+        echo $button_daily_screening;
+        echo $button_screening_secondary;
+        echo $button_covid;
+        echo $grade_nine_button_grade_eight;
+        echo $button_student_census;
+        echo $button_return_to_school;
+        echo $button_sdlp;
+        echo $button_wrdsb_at_home;
+        echo $button_tech_at_home;
+        echo $button_eighteen;
 
       }
 
@@ -165,12 +189,6 @@
       if (is_front_page() && wrdsb_i_am_a_school_with_kindergarten()) { 
 
         echo $button_kindergarten;
-
-      }
-
-      if (is_front_page() && wrdsb_i_am_a_school_secondary()) {
-
-        echo $button_eighteen;
 
       }
 
@@ -187,6 +205,7 @@
 
       if (is_front_page() && wrdsb_i_am_a_school_exception()) { 
 
+        echo $button_return_to_school;
         echo $button_wefi;
 
       }
