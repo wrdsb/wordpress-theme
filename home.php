@@ -135,7 +135,6 @@
 
     if (is_front_page() && wrdsb_i_am_a_school_exception()) { 
 
-        echo $button_return_to_school;
         echo $button_wefi;
 
       }
@@ -205,7 +204,6 @@
 
       if (is_front_page() && wrdsb_i_am_a_school_exception()) { 
 
-        echo $button_return_to_school;
         echo $button_wefi;
 
       }
