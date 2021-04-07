@@ -5,7 +5,7 @@ wordpress-theme
 
 This WordPress Theme is the Official WordPress theme for the WRDSB.
 
-It is used for all WRDSB Websites using WordPress. All websites refer to this instance of the Theme (it is the cardinal copy).
+It is used for all WRDSB Public Websites using WordPress. All websites refer to this instance of the Theme (it is the cardinal copy).
 
 ## Report issues
 
@@ -16,7 +16,7 @@ Public comments and issues are welcome in the issue queue!
 
 Documentation and credentials for editing, upgrading, and deploying 
 the WRDSB WordPress Theme within the WRDSB Networks are available 
-in the Software Development Handbook.
+in the WordPress Team Workspace.
 
 ## Installation and Upgrading
 
