@@ -290,216 +290,40 @@
 
 			<div class="seeall"><a href="https://www.wrdsb.ca/news-and-announcements/">See All</a></div>
 
+			<?php // Quick Links Area ?>
 
-			<!-- quick links (5) -->
-
+			<?php if ( is_active_sidebar( 'quicklinkscorp' ) ) : ?>
 			<div class="quicklinks-corp-container" id="quicklinksarea">
-
-			<h2 class="newcorp">Quicklinks</h2>
-
-			<!--
-
-			https://www.wrdsb.ca/wp-content/uploads/Turning-18@2x.png
-
-			100x132
-
-			https://www.wrdsb.ca/wp-content/uploads/Turning-18@1x.png
-
-			50x66
-			
-			https://www.wrdsb.ca/wp-content/uploads/Register@1x.png
-
-			60x60
-
-			https://www.wrdsb.ca/wp-content/uploads/Register@2x.png
-
-			120x120
-
-			https://www.wrdsb.ca/wp-content/uploads/School-Finder@2x.png
-
-			116x114
-
-			https://www.wrdsb.ca/wp-content/uploads/School-Finder@1x.png
-
-			58x57
-
-			https://www.wrdsb.ca/wp-content/uploads/Calendar@1x.png
-
-			64x64
-
-			https://www.wrdsb.ca/wp-content/uploads/Calendar@2x.png
-
-			128x128
-
-			https://www.wrdsb.ca/wp-content/uploads/Communicating@1x.png
-
-			60x60
-			
-			https://www.wrdsb.ca/wp-content/uploads/Communicating@2x.png
-
-			120x120
-
-
-			https://www.wrdsb.ca/wp-content/uploads/Register.svg
-
-			https://www.wrdsb.ca/wp-content/uploads/Calendar.svg
-
-			https://www.wrdsb.ca/wp-content/uploads/Communicating.svg
-
-			https://www.wrdsb.ca/wp-content/uploads/Turning-18.svg
-
-			https://www.wrdsb.ca/wp-content/uploads/School-Finder.svg
-
-
--->
-
-
-
-			<?php // hardcoded POC ?>
-
-			<div class="quicklinks">
-
-				<div class="quicklink first">
-					<a href="https://schools.wrdsb.ca/school-year-information/calendars-and-important-dates/">
-					<figure>
-						<img src="https://www.wrdsb.ca/wp-content/uploads/Calendar.svg" alt="" />
-						<figurecaption>School Year Calendar</figurecaption>
-					</figure>
-					</a>
+				<h2 class="newcorp">Quicklinks</h2>	
+			  	<div class="quicklinks" role="complementary">
+			    	<?php dynamic_sidebar( 'quicklinkscorp' ); ?>
 				</div>
-				<div class="quicklink">
-					<a href="https://www.wrdsb.ca/register/">
-					<figure>
-						<img src="https://www.wrdsb.ca/wp-content/uploads/Register.svg" alt="" />
-						<figurecaption>Register for Schools and Programs</figurecaption>
-					</figure>
-					</a>
-				</div>
-				<div class="quicklink">
-					<a href="https://bpweb.stswr.ca/">
-					<figure>
-						<img src="https://www.wrdsb.ca/wp-content/uploads/School-Finder.svg" alt="" />
-						<figurecaption>School Finder</figurecaption>
-					</figure>
-					</a>
-				</div>
-				<div class="quicklink">
-					<a href="https://www.wrdsb.ca/our-schools/communicating-with-your-school/">
-					<figure>
-						<img src="https://www.wrdsb.ca/wp-content/uploads/Communicating.svg" alt="" />
-						<figurecaption>Communicating with your School</figurecaption>
-					</figure>
-					</a>
-				</div>
-				<div class="quicklink">
-					<a href="https://www.wrdsb.ca/about-the-wrdsb/policiesprocedures/release-of-student-information/consent-for-information-sharing-for-adult-students/">
-					<figure>
-						<img src="https://www.wrdsb.ca/wp-content/uploads/Turning-18.svg" alt="" />
-						<figurecaption>Turning 18 this year?</figurecaption>
-					</figure>
-					</a>
-				</div>
+			  	<div class="clearfix"></div>
 			</div>
-				<div class="clearfix"></div>
-			<?php //if ( !function_exists('quicklinkscorp') || !dynamic_sidebar("Quick Links Corp") ) : ?>
-			<?php //endif;
-
-			/* if ( is_active_sidebar ('quicklinkscorp') ):?>
-
-				<div id="quicklinkscorp" class="quicklinkscorp" role="complementary">
-					<?php dynamic_sidebar( 'quicklinkscorp' ); ?>
-				</div><!-- #quicklinks -->
-			<?php endif; */ ?>	
-
-			</div>
-
+			<?php endif; ?>
 
 			<!-- featured video and items (2) -->
 
 			<div id="featuredarea">
 
-				<?php /*<div class="col-md-6 hidden-xs"></div>
-				<div class="col-md-6 hidden-xs"></div>
-				<div class="col-md-12 visible-xs"></div> */ ?>
+				<?php // Featured Video ?>
 
-				<!-- featured video (1) -->
-
+				<?php if ( is_active_sidebar( 'featvideocorp' ) ) : ?>
 				<div class="featuredvideo-corp-container col-lg-4 col-md-4 col-sm-6" id="featuredvideoarea">
-
-					<h2 class="newcorp">Featured Video</h2>
-
-					<?php /*if ( is_active_sidebar ('featvideocorp') ):?>
-					<div id="featvideocorp" class="featvideocorp" role="complementary">
-						<?php dynamic_sidebar( 'featvideocorp' ); ?>
-					</div><!-- #quicklinks -->
-					<?php endif; */?>	
-
-					<iframe style="margin-top: 8px;" width="100%" height="200" src="https://www.youtube.com/embed/AF9b_32vQtE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-					<h3>Day in the Life: Elementary</h3>
-
-					<p>The upcoming school year will be different from what we are used to. To help ease the worry and anxiety for both students and their families, we have put together this guide for families.</p>
-
+					<h2 class="newcorp">Featured Video</h2>	
+				    <?php dynamic_sidebar( 'featvideocorp' ); ?>
 				</div>
+				<?php endif; ?>
 
-				<!-- featured items (6) -->
+				<?php // Featured Items ?>
 
+				<?php if ( is_active_sidebar( 'featitemscorp' ) ) : ?>
 				<div class="featureditems-corp-container col-lg-8 col-md-8 col-sm-6" id="featureditemsarea">
-					<h2 class="newcorp" style="padding-left: 11px;">Featured Items</h2>
-					
-					<?php /* if ( is_active_sidebar ('featitemscorp') ):?>
-
-					<div id="featitemscorp" class="featitemscorp" role="complementary">
-						<?php dynamic_sidebar( 'featitemscorp' ); ?>
-					</div><!-- #quicklinks -->
-					<?php endif; */?>	
-								<?php // hardcoded POC ?>
-
-					<div class="item"><a href="https://bit.ly/2H7fdi6" target="_blank" rel="noopener">
-						<figure>
-							<img src="https://www.wrdsb.ca/wp-content/uploads/Featured-Item-Daily-Screening-Checklist.jpg" alt="Ontario School Screener Daily Screening Checklist" />
-							<figurecaption><h3>Daily Screening</h3></figurecaption>
-						</figure>
-					</a></div>
-
-					<div class="item"><a href="https://www.wrdsb.ca/covid/">
-							<figure>
-								<img src="https://www.wrdsb.ca/wp-content/uploads/Featured-Item-Covid-19.png" alt="COVID-19 News" />
-								<figurecaption><h3>COVID-19 news</h3></figurecaption>
-							</figure>
-						</a></div>
-
-					<div class="item"><a href="https://www.wrdsb.ca/returntoschool/">
-							<figure>
-								<img src="https://www.wrdsb.ca/wp-content/uploads/Featured-Item-Return-to-School.jpg" alt="Return to School" />
-								<figurecaption><h3>Learning support</h3></figurecaption>
-							</figure>
-						</a></div>
-
-					<div class="item"><a href="https://bit.ly/3blPs7s" target="_blank" rel="noopener">
-							<figure>
-								<img src="https://www.wrdsb.ca/wp-content/uploads/Featured-Item-WRDSB@Home.jpg" alt="WRDSB@Home" />
-								<figurecaption><h3>Lessons and activities</h3></figurecaption>
-							</figure>
-						</a></div>
-
-					<div class="item"><a href="https://tech.wrdsb.ca/" target="_blank" rel="noopener">
-							<figure>
-								<img src="https://www.wrdsb.ca/wp-content/uploads/Featured-Item-TECH@Home.jpg" alt="Tech@Home" />
-								<figurecaption><h3>Tech Support</h3></figurecaption>
-							</figure>
-						</a></div>
-
-					<div class="item"><a href="https://www.wrdsb.ca/wefi/give-the-gift/" target="_blank" rel="noopener" >
-							<figure>
-								<img src="https://www.wrdsb.ca/wp-content/uploads/Featured-Item-WEFI.jpg" alt="Waterloo Education Foundation Inc. (WEFI)" />
-								<figurecaption><h3>Make a donation</h3></figurecaption>
-							</figure>
-						</a></div>
-
+					<h2 class="newcorp" style="padding-left: 11px;">Featured Items</h2>	
+				    <?php dynamic_sidebar( 'featitemscorp' ); ?>
 					<div class="clearfix"></div>
-
 				</div>
+				<?php endif; ?>
 
 			<div class="clearfix"></div>
 
