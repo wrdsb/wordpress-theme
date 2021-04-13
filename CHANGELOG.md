@@ -1,5 +1,8 @@
-## 2.18.2
+## 2.18.3
 + widget areas in corp home page
+
+## 2.18.2
++ add student census button
 
 ## 2.18.1
 + update styles
