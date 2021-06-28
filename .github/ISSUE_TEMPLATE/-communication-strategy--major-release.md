@@ -2,7 +2,7 @@
 name: "[Communication Strategy] Major Release"
 about: The communication strategy for a major release of the public theme
 title: "[Communication Strategy] Major Release"
-labels: deployment, Communication Strategy
+labels: Communication Strategy, deployment
 assignees: suzannezc
 
 ---
