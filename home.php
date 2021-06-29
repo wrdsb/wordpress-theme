@@ -85,7 +85,6 @@
         echo $button_screening_secondary;
         echo $button_covid;
         echo $grade_nine_button_grade_eight;
-        echo $button_student_census;
         echo $button_return_to_school;
         echo $button_sdlp;
         echo $button_wrdsb_at_home;
@@ -101,7 +100,6 @@
         echo $button_screening_secondary;
         echo $button_covid;
         echo $grade_nine_button_grade_eight;
-        echo $button_student_census;
         echo $button_return_to_school;
         echo $button_sdlp;
         echo $button_wrdsb_at_home;
@@ -154,7 +152,6 @@
         echo $button_screening_secondary;
         echo $button_covid;
         echo $grade_nine_button_grade_eight;
-        echo $button_student_census;
         echo $button_return_to_school;
         echo $button_sdlp;
         echo $button_wrdsb_at_home;
@@ -170,7 +167,6 @@
         echo $button_screening_secondary;
         echo $button_covid;
         echo $grade_nine_button_grade_eight;
-        echo $button_student_census;
         echo $button_return_to_school;
         echo $button_sdlp;
         echo $button_wrdsb_at_home;
