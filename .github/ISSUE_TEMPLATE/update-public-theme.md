@@ -34,6 +34,8 @@ assignees: suzannezc
 - [ ] [Submit Change Management Request](https://itservicedesk.wrdsb.ca/ITServiceDesk.WebAccess/wd/object/create.rails?class_name=ChangeManagement.Change&lifecycle_name=NewProcess211)
 - [ ] add issue url to Description of CMR "Changes tracked in GitHub: URL"
 - [ ] record the number in a comment on this issue
+- [ ] provide screenshots of problem and resolution
+- [ ] provide rationale for update
 
 ### Deploy the changes
 
