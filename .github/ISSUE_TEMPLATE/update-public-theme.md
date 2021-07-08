@@ -48,3 +48,26 @@ assignees: suzannezc
 > - [ ] teachers.wrdsb.ca
 > - [ ] schools.wrdsb.ca
 > - [ ] www.wrdsb.ca
+
+### Complete change process -- successful
+
+- [ ] report change state (success, partial, failed) in CMR noted in comments
+- [ ] determine if more steps required (if not successful deployment)
+- [ ] if successful, 
+- [ ] provide screenshots of success in CMR
+- [ ] provide email from client approving changes in production in CMR
+- [ ] close any related tickets
+
+### Complete change process -- partial success
+
+- [ ] report change partial success in CMR noted in comments
+- [ ] provide screenshots of success in CMR
+- [ ] provide details of why the change was not fully implemented and next steps if required
+- [ ] provide email from client approving changes in production in CMR
+- [ ] close any related tickets
+
+### Complete change process -- failed
+
+- [ ] report change state failed in CMR noted in comments
+- [ ] determine and report next steps
+- [ ] provide screenshots of failure and rollback/recovery in CMR
