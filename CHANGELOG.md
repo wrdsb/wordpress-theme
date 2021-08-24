@@ -1,3 +1,6 @@
+## 2.18.5
+- remove secondary screening button
+
 ## 2.18.4
 - remove student census button
 
