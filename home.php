@@ -82,7 +82,6 @@
       // corp buttons 
         echo $grade_nine_button_secondary;
         echo $button_daily_screening;
-        echo $button_screening_secondary;
         echo $button_covid;
         echo $grade_nine_button_grade_eight;
         echo $button_return_to_school;
@@ -97,7 +96,6 @@
 
         echo $button_myway;
         echo $button_daily_screening;
-        echo $button_screening_secondary;
         echo $button_covid;
         echo $grade_nine_button_grade_eight;
         echo $button_return_to_school;
@@ -149,7 +147,6 @@
       // corp buttons 
         echo $grade_nine_button_secondary;
         echo $button_daily_screening;
-        echo $button_screening_secondary;
         echo $button_covid;
         echo $grade_nine_button_grade_eight;
         echo $button_return_to_school;
@@ -164,7 +161,6 @@
 
         echo $button_myway;
         echo $button_daily_screening;
-        echo $button_screening_secondary;
         echo $button_covid;
         echo $grade_nine_button_grade_eight;
         echo $button_return_to_school;
