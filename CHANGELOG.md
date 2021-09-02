@@ -1,3 +1,7 @@
+## 2.18.6
++ add secondary screening button back on
++ replace image for secondary remote learning program (from secondary distance learning program)
+
 ## 2.18.5
 - remove secondary screening button
 
