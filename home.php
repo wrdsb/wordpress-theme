@@ -18,6 +18,8 @@
 
     //-- Buttons for all schools --
 
+    $button_ventilation_report = '<p><a href="https://www.wrdsb.ca/our-schools/health-and-wellness/public-health-information/novel-coronavirus-covid-19-information/ventilation-in-wrdsb-schools/" onclick="ga(\'send\',\'event\',\'schoolBanners\',\'click_banner\',\'ventilation-report\'" target="_blank" rel="noopener"><img src="https://www.wrdsb.ca/wp-content/uploads/Ventilation-Report_WebLegacy.png" /></a></p>';
+
     $button_daily_screening = '<p><a href="https://bit.ly/2H7fdi6" onclick="ga(\'send\',\'event\',\'schoolBanners\',\'click_banner\',\'ontarioschoolscreener\'" target="_blank" rel="noopener"><img src="https://www.wrdsb.ca/wp-content/uploads/Ontario-School-Screener.png" alt="Ontario School Screener" /></a></p>';
 
     $button_covid = '<p><a href="https://www.wrdsb.ca/our-schools/health-and-wellness/public-health-information/novel-coronavirus-covid-19-information/" onclick="ga(\'send\',\'event\',\'schoolBanners\', \'click_banner\',\'COVID-19\', \'https://www.wrdsb.ca/our-schools/health-and-wellness/public-health-information/novel-coronavirus-covid-19-information/\',{\'nonInteraction\':1});" target="_blank" rel="noopener"><img src="http://schools.wrdsb.ca/wp-content/uploads/2020/03/COVID-Website-Button.jpg" alt="COVID-19 Information" /></a></p>';
@@ -84,6 +86,7 @@
         echo $button_daily_screening;
         echo $button_screening_secondary;
         echo $button_covid;
+        echo $button_ventilation_report;
         echo $grade_nine_button_grade_eight;
         echo $button_return_to_school;
         echo $button_sdlp;
@@ -99,6 +102,7 @@
         echo $button_daily_screening;
         echo $button_screening_secondary;
         echo $button_covid;
+        echo $button_ventilation_report;
         echo $grade_nine_button_grade_eight;
         echo $button_return_to_school;
         echo $button_sdlp;
@@ -151,6 +155,7 @@
         echo $button_daily_screening;
         echo $button_screening_secondary;
         echo $button_covid;
+        echo $button_ventilation_report;
         echo $grade_nine_button_grade_eight;
         echo $button_return_to_school;
         echo $button_sdlp;
@@ -166,6 +171,7 @@
         echo $button_daily_screening;
         echo $button_screening_secondary;
         echo $button_covid;
+        echo $button_ventilation_report;
         echo $grade_nine_button_grade_eight;
         echo $button_return_to_school;
         echo $button_sdlp;
