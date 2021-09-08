@@ -86,9 +86,9 @@
         echo $button_daily_screening;
         echo $button_screening_secondary;
         echo $button_covid;
-        echo $button_ventilation_report;
         echo $grade_nine_button_grade_eight;
         echo $button_return_to_school;
+        echo $button_ventilation_report;
         echo $button_sdlp;
         echo $button_wrdsb_at_home;
         echo $button_tech_at_home;
@@ -102,9 +102,9 @@
         echo $button_daily_screening;
         echo $button_screening_secondary;
         echo $button_covid;
-        echo $button_ventilation_report;
         echo $grade_nine_button_grade_eight;
         echo $button_return_to_school;
+        echo $button_ventilation_report;
         echo $button_sdlp;
         echo $button_wrdsb_at_home;
         echo $button_tech_at_home;
@@ -155,9 +155,9 @@
         echo $button_daily_screening;
         echo $button_screening_secondary;
         echo $button_covid;
-        echo $button_ventilation_report;
         echo $grade_nine_button_grade_eight;
         echo $button_return_to_school;
+        echo $button_ventilation_report;
         echo $button_sdlp;
         echo $button_wrdsb_at_home;
         echo $button_tech_at_home;
@@ -171,9 +171,9 @@
         echo $button_daily_screening;
         echo $button_screening_secondary;
         echo $button_covid;
-        echo $button_ventilation_report;
         echo $grade_nine_button_grade_eight;
         echo $button_return_to_school;
+        echo $button_ventilation_report;
         echo $button_sdlp;
         echo $button_wrdsb_at_home;
         echo $button_tech_at_home;
