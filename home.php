@@ -82,11 +82,11 @@
       if (is_front_page() && wrdsb_i_am_a_school()) { 
 
       // corp buttons 
-        echo $grade_nine_button_secondary;
+        //echo $grade_nine_button_secondary;
         echo $button_daily_screening;
         echo $button_screening_secondary;
         echo $button_covid;
-        echo $grade_nine_button_grade_eight;
+        //echo $grade_nine_button_grade_eight;
         echo $button_return_to_school;
         echo $button_ventilation_report;
         echo $button_sdlp;
@@ -102,7 +102,7 @@
         echo $button_daily_screening;
         echo $button_screening_secondary;
         echo $button_covid;
-        echo $grade_nine_button_grade_eight;
+        //echo $grade_nine_button_grade_eight;
         echo $button_return_to_school;
         echo $button_ventilation_report;
         echo $button_sdlp;
@@ -151,11 +151,11 @@
       if (is_front_page() && wrdsb_i_am_a_school()) { 
 
       // corp buttons 
-        echo $grade_nine_button_secondary;
+        //echo $grade_nine_button_secondary;
         echo $button_daily_screening;
         echo $button_screening_secondary;
         echo $button_covid;
-        echo $grade_nine_button_grade_eight;
+        //echo $grade_nine_button_grade_eight;
         echo $button_return_to_school;
         echo $button_ventilation_report;
         echo $button_sdlp;
@@ -171,7 +171,7 @@
         echo $button_daily_screening;
         echo $button_screening_secondary;
         echo $button_covid;
-        echo $grade_nine_button_grade_eight;
+        //echo $grade_nine_button_grade_eight;
         echo $button_return_to_school;
         echo $button_ventilation_report;
         echo $button_sdlp;
