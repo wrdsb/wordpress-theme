@@ -867,7 +867,8 @@ function wrdsb_i_am_a_school_grade_8() {
     "wel",
     "wsh",
     "wgd",
-    "wpk"
+    "wpk",
+    "dsps"
   );
   if (in_array(($host[0]), $alpha_codes)) {
     return TRUE;
