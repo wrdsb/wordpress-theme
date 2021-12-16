@@ -875,25 +875,19 @@ function wrdsb_i_am_a_school_grade_8() {
   }
 }
 
-function wrdsb_i_am_a_school_exception() {
+function wrdsb_i_am_a_school_programme() {
   /** schools.wrdsb.ca/NAME **/
   $parsed_url = parse_url(site_url());
   $host = explode('.', $parsed_url['host']);
-  $alpha_codes = array(
-    "schools",
-    "cln",
-    "alc",
-    "alu",
-    "inl",
-    "ins",
-    "rmt",
-    "chinese",
-    "german",
-    "greek",
-    "serbian"
-  );
-  if (in_array(($host[0]), $alpha_codes)) {
-    return TRUE;
+  if ($host[0] == 'wrdsbschooldev') {
+    $check_url = 'https://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+    $programmes = array("alternative-education","continuing-education");
+    foreach ($programmes as $programme) {
+      $inside = strpos($check_url, $programme);
+      if ($inside !== false) {
+        return TRUE;
+      }
+    }
   }
 }
 

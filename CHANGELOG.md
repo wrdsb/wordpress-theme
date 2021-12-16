@@ -1,3 +1,8 @@
+## 2.19.0
+# ensure Alternative and Continuing Education have secondary covid button
+# new function to find programmes in the schools install
+# update home.php to display the correct set of images
+
 ## 2.18.10
 + replace future grade nines button
 
