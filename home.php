@@ -103,10 +103,10 @@
         echo $button_covid;
         echo $button_return_to_school;
         echo $button_ventilation_report;
-        echo $button_sdlp;
+        //echo $button_sdlp;
         echo $button_wrdsb_at_home;
         echo $button_tech_at_home;
-        echo $button_eighteen;
+        //echo $button_eighteen;
       }
 
 
@@ -170,10 +170,10 @@
         echo $button_covid;
         echo $button_return_to_school;
         echo $button_ventilation_report;
-        echo $button_sdlp;
+        //echo $button_sdlp;
         echo $button_wrdsb_at_home;
         echo $button_tech_at_home;
-        echo $button_eighteen;
+        //echo $button_eighteen;
       }
 
       if (is_front_page() && wrdsb_i_am_a_school_beforeafter()) { 
