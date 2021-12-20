@@ -49,7 +49,7 @@
 
     // schools that are only secondary
 
-    if (is_front_page() && wrdsb_i_am_a_school_secondary()) { 
+    if ((is_front_page() && wrdsb_i_am_a_school_secondary()) || (is_front_page() && wrdsb_i_am_a_school_programme())) { 
       $parsed_url = parse_url(site_url());
       $host = explode('.', $parsed_url['host']);
       $abc = $host[0];
@@ -96,21 +96,19 @@
 
       }
 
-      if (is_front_page() && wrdsb_i_am_a_school_exception()) {
-
+      if (is_front_page() && wrdsb_i_am_a_school_programme()) {
         echo $button_myway;
         echo $button_daily_screening;
         echo $button_screening_secondary;
         echo $button_covid;
-        echo $grade_nine_button_grade_eight;
         echo $button_return_to_school;
         echo $button_ventilation_report;
-        echo $button_sdlp;
+        //echo $button_sdlp;
         echo $button_wrdsb_at_home;
         echo $button_tech_at_home;
-        echo $button_eighteen;
-
+        //echo $button_eighteen;
       }
+
 
       if (is_front_page() && wrdsb_i_am_a_school_beforeafter()) { 
 
@@ -165,20 +163,17 @@
 
       }
 
-      if (is_front_page() && wrdsb_i_am_a_school_exception()) {
-
+      if (is_front_page() && wrdsb_i_am_a_school_programme()) {
         echo $button_myway;
         echo $button_daily_screening;
         echo $button_screening_secondary;
         echo $button_covid;
-        echo $grade_nine_button_grade_eight;
         echo $button_return_to_school;
         echo $button_ventilation_report;
-        echo $button_sdlp;
+        //echo $button_sdlp;
         echo $button_wrdsb_at_home;
         echo $button_tech_at_home;
-        echo $button_eighteen;
-
+        //echo $button_eighteen;
       }
 
       if (is_front_page() && wrdsb_i_am_a_school_beforeafter()) { 
