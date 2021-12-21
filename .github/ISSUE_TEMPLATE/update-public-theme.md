@@ -25,7 +25,7 @@ assignees: suzannezc
 > - [ ] screenshot errors and resolutions
 - [ ] Git commit(s) all code including CHANGELOG.md and style.css version information
 - [ ] Git push branch
-- [ ] Pull request(s) to Develop and Master Branches
+- [ ] Pull request(s) to Production branch
 - [ ] Tag Release, number and name are the same, details contain CHANGELOG.md details
 - [ ] Delete branch
 
@@ -47,6 +47,7 @@ assignees: suzannezc
 > - [ ] wifidocs.wrdsb.ca
 > - [ ] teachers.wrdsb.ca
 > - [ ] schools.wrdsb.ca
+> - [ ] tech.wrdsb.ca
 > - [ ] www.wrdsb.ca
 
 ### Complete change process -- successful
