@@ -1,3 +1,6 @@
+## 2.19.1
+# update i_am_a_school_programme() to look at schools instead of wrdsbschooldev
+
 ## 2.19.0
 # ensure Alternative and Continuing Education have secondary covid button
 # new function to find programmes in the schools install
