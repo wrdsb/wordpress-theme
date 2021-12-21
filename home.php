@@ -13,7 +13,7 @@
     $has_right = FALSE;
     if (is_active_sidebar('sidebar-left') || has_nav_menu('left')) {$has_left = TRUE;}
     if (is_active_sidebar('sidebar-right') || has_nav_menu('right')) {$has_right = TRUE;}
-    if (is_front_page() && (wrdsb_i_am_a_school() || wrdsb_i_am_a_school_exception())) {$has_left = TRUE;} 
+    if (is_front_page() && (wrdsb_i_am_a_school() || wrdsb_i_am_a_school_programme())) {$has_left = TRUE;} 
     if (is_front_page() && wrdsb_i_am_a_corporate_site()) {$has_right = FALSE;}
 
     //-- Buttons for all schools --
@@ -93,7 +93,6 @@
         echo $button_wrdsb_at_home;
         echo $button_tech_at_home;
         echo $button_eighteen;
-
       }
 
       if (is_front_page() && wrdsb_i_am_a_school_programme()) {
@@ -103,10 +102,8 @@
         echo $button_covid;
         echo $button_return_to_school;
         echo $button_ventilation_report;
-        //echo $button_sdlp;
         echo $button_wrdsb_at_home;
         echo $button_tech_at_home;
-        //echo $button_eighteen;
       }
 
 
@@ -133,7 +130,7 @@
 
       get_sidebar('left');
 
-    if (is_front_page() && wrdsb_i_am_a_school_exception()) { 
+    if (is_front_page() && wrdsb_i_am_a_school_programme()) { 
 
         echo $button_wefi;
 
@@ -170,10 +167,8 @@
         echo $button_covid;
         echo $button_return_to_school;
         echo $button_ventilation_report;
-        //echo $button_sdlp;
         echo $button_wrdsb_at_home;
         echo $button_tech_at_home;
-        //echo $button_eighteen;
       }
 
       if (is_front_page() && wrdsb_i_am_a_school_beforeafter()) { 
@@ -199,7 +194,7 @@
 
       get_sidebar('left');
 
-      if (is_front_page() && wrdsb_i_am_a_school_exception()) { 
+      if (is_front_page() && wrdsb_i_am_a_school_programme()) { 
 
         echo $button_wefi;
 
