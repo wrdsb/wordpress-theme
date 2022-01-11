@@ -38,6 +38,172 @@
           background-color:transparent;
         }
         }
+
+        /* Kindergarten 2022 Mobile Panels */
+
+        .mobile-panel {
+          background-repeat: no-repeat;
+          width:  320px;
+          display: block;
+          font-family: 'Roboto Slab', roboto, serif !important;
+          font-size: 14px !important;
+          font-weight: 300;
+        }
+        .mobile-panel-1 {
+          background-image: url('https://www.wrdsb.ca/kindergarten/wp-content/uploads/sites/11/mobile-panel-1.jpg');
+          height: 914px;
+        }
+        .mobile-panel-2 {
+          background-image: url('https://www.wrdsb.ca/kindergarten/wp-content/uploads/sites/11/mobile-panel-2.jpg');
+          height:  /*519px;*/ 419px;
+          background-position: 0 -100px;
+        }
+        .mobile-panel-3 {
+          background-image: url('https://www.wrdsb.ca/kindergarten/wp-content/uploads/sites/11/mobile-panel-3.jpg');
+          height:  435px;
+        }
+        .mobile-panel-4 {
+          background-image: url('https://www.wrdsb.ca/kindergarten/wp-content/uploads/sites/11/mobile-panel-4.jpg');
+          height:  1129px;
+        }
+        .mobile-panel-5 {
+          background-image: url('https://www.wrdsb.ca/kindergarten/wp-content/uploads/sites/11/mobile-panel-5.jpg');
+          height:  355px;
+        }
+        .mobile-panel-6 {
+          background-image: url('https://www.wrdsb.ca/kindergarten/wp-content/uploads/sites/11/mobile-panel-6.jpg');
+          height:  410px;
+        }
+        .mobile-panel-7 {
+          background-image: url('https://www.wrdsb.ca/kindergarten/wp-content/uploads/sites/11/mobile-panel-7.jpg');
+          height:  495px;
+        }
+        .mobile-panel-8 {
+          background-image: url('https://www.wrdsb.ca/kindergarten/wp-content/uploads/sites/11/mobile-panel-8.jpg');
+          height:  661px;
+        }
+        .mobile-panel-9 {
+          background-image: url('https://www.wrdsb.ca/kindergarten/wp-content/uploads/sites/11/mobile-panel-9.jpg');
+          height:  1537px;
+        }
+        .mobile-panel-10 {
+          background-image: url('https://www.wrdsb.ca/kindergarten/wp-content/uploads/sites/11/mobile-panel-10.jpg');
+          height:  536px;
+        }
+
+        .mobile-panel-11 {
+          background-image: url('https://www.wrdsb.ca/kindergarten/wp-content/uploads/sites/11/mobile-panel-11.png');
+          height:  1000px;
+        }
+
+        h2.mobile {
+          font-size:  30px;
+          font-weight:  500;
+          line-height: 130%;
+          margin-top:  0;
+          font-family: 'Roboto Slab', roboto, serif !important;  
+        }
+
+        /* Kindergarten 2022 Desktop Panels */
+
+        .dt-panel {
+          background-repeat: no-repeat;
+          width: 1440px;
+          display: block;
+          font-family: 'Roboto Slab', roboto, serif;" 
+        }
+        .dt-panel-1 {
+          background-image: url('https://www.wrdsb.ca/kindergarten/wp-content/uploads/sites/11/dt-panel-1.jpg');
+          height: 400px;
+        }
+        .dt-panel-2 {
+          background-image: url('https://www.wrdsb.ca/kindergarten/wp-content/uploads/sites/11/dt-panel-2.jpg');
+          height:  220px;
+        }
+        .dt-panel-3 {
+          background-image: url('https://www.wrdsb.ca/kindergarten/wp-content/uploads/sites/11/dt-panel-3.jpg');
+          height:  419px;
+        }
+        .dt-panel-4 {
+          background-image: url('https://www.wrdsb.ca/kindergarten/wp-content/uploads/sites/11/dt-panel-4.jpg');
+          height:  /*1439px;*/ 1292px;
+          background-position: 0 -147px;
+        }
+        .dt-panel-5 {
+          background-image: url('https://www.wrdsb.ca/kindergarten/wp-content/uploads/sites/11/dt-panel-5.jpg');
+          height:  374px;
+        }
+        .dt-panel-6 {
+          background-image: url('https://www.wrdsb.ca/kindergarten/wp-content/uploads/sites/11/dt-panel-6.jpg');
+          height:  385px;
+        }
+        .dt-panel-7 {
+          background-image: url('https://www.wrdsb.ca/kindergarten/wp-content/uploads/sites/11/dt-panel-7.jpg');
+          height:  482px;
+          background-position: 0 -1px;
+        }
+        .dt-panel-8 {
+          background-image: url('https://www.wrdsb.ca/kindergarten/wp-content/uploads/sites/11/dt-panel-8.jpg');
+          height:  544px;
+        }
+        .dt-panel-9 {
+          background-image: url('https://www.wrdsb.ca/kindergarten/wp-content/uploads/sites/11/dt-panel-9.jpg');
+          height:  1197px;
+        }
+        .dt-panel-10 {
+          background-image: url('https://www.wrdsb.ca/kindergarten/wp-content/uploads/sites/11/dt-panel-10.jpg');
+          height:  606px;
+        }
+        .dt-panel-11 {
+          background-image: url('https://www.wrdsb.ca/kindergarten/wp-content/uploads/sites/11/dt-panel-11.jpg');
+          height:  323px;
+        }
+
+        h2.dt {
+          font-size:  50px;
+          font-weight:  500;
+          line-height: 100%;
+          margin-top:  0;
+          font-family: 'Roboto Slab', roboto, serif !important;"  
+        }
+
+        ul.acorn li {
+          background: url('https://www.wrdsb.ca/kindergarten/wp-content/uploads/sites/11/Acorn-2.png') left top no-repeat;
+          list-style-type:  none;
+          margin-left:  0;
+          padding-left:  100px;
+          padding-top:  10px;
+          padding-bottom:  25px;
+          font-size:  24px;
+          color:  #171717;
+        }
+
+        p {
+          color:  #171717;
+          font-size:  24px;
+        }
+
+
+        dl.dt {
+          border:  0;
+          padding:  0 15px 0 0;
+          font-size: 24px;
+        }
+
+        dl.dt dt {
+          font-weight:  500;
+          float: left;
+          clear:  left;
+          width:  400px;
+        }
+
+        dl.dt dd {
+          margin-left:  425px;
+          padding-bottom:  50px;
+          margin-top:  0;
+          padding:  0;
+        }
+
       <?php endif;?>
       #navbar-header{
         background-color: <?php echo getNavbarBackgroundColor() ?> !important;

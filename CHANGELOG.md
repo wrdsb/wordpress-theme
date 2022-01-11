@@ -1,3 +1,6 @@
+## 2.20.0
+# add styles for 2022 Kindergarten Promotion
+
 ## 2.19.1
 # update i_am_a_school_programme() to look at schools instead of wrdsbschooldev
 
