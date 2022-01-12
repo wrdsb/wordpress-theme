@@ -1,3 +1,6 @@
+## 2.20.1
+# add missing links for google font
+
 ## 2.20.0
 # add styles for 2022 Kindergarten Promotion
 

@@ -21,6 +21,9 @@
       <link href="https://s3.amazonaws.com/wrdsb-ui-assets/public/master.css" rel="stylesheet" media="all" />
   
       <?php if ( function_exists('max_mega_menu_is_enabled') && max_mega_menu_is_enabled('top') ) : ?>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap" rel="stylesheet">
       <style type="text/css">
       <?php if (wrdsb_i_am_a_corporate_site()):?>
         .my-navbar{
