@@ -181,7 +181,7 @@
           color:  #171717;
         }
 
-        p {
+        .mobile p, .dt p {
           color:  #171717;
           font-size:  24px;
         }

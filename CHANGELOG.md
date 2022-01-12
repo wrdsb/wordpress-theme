@@ -1,16 +1,19 @@
+## 2.20.2
++ fix font size for p to be relative to .mobile and .dt
+
 ## 2.20.1
-# add missing links for google font
++ add missing links for google font
 
 ## 2.20.0
-# add styles for 2022 Kindergarten Promotion
++ add styles for 2022 Kindergarten Promotion
 
 ## 2.19.1
-# update i_am_a_school_programme() to look at schools instead of wrdsbschooldev
++ update i_am_a_school_programme() to look at schools instead of wrdsbschooldev
 
 ## 2.19.0
-# ensure Alternative and Continuing Education have secondary covid button
-# new function to find programmes in the schools install
-# update home.php to display the correct set of images
++ ensure Alternative and Continuing Education have secondary covid button
++ new function to find programmes in the schools install
++ update home.php to display the correct set of images
 
 ## 2.18.10
 + replace future grade nines button
