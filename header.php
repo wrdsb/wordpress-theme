@@ -482,7 +482,7 @@
 
 
         <?php if (is_home() && is_front_page() && wrdsb_i_am_a_corporate_site()) {
-          echo do_shortcode('[slick-slider design="prodesign-28" read_more_text="Learn more" link_target="blank" sliderheight="300" dots_design="design-6" autoplay_interval="5000" speed="900" fade="true" focus_pause="true" category="www"]');
+          echo do_shortcode('[slick-slider design="prodesign-28" read_more_text="Learn more" link_target="blank" sliderheight="300" dots_design="design-6" autoplay_interval="5000" speed="900" fade="true" focus_pause="true" category="15096"]');
         } ?>
 
 
