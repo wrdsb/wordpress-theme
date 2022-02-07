@@ -1,3 +1,6 @@
+## 2.20.3
++ change category from www to 15096 for slider shortcode call in header.php to fix missing slider (plugin changed requirements?)
+
 ## 2.20.2
 + fix font size for p to be relative to .mobile and .dt
 
