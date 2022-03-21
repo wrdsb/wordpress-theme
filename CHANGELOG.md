@@ -1,3 +1,6 @@
+## 2.20.4
+- remove Secondary Verification Portal button, request #58661
+
 ## 2.20.3
 + change category from www to 15096 for slider shortcode call in header.php to fix missing slider (plugin changed requirements?)
 
