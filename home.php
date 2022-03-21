@@ -84,7 +84,7 @@
       // corp buttons 
         echo $grade_nine_button_secondary;
         echo $button_daily_screening;
-        echo $button_screening_secondary;
+        //echo $button_screening_secondary;
         echo $button_covid;
         echo $grade_nine_button_grade_eight;
         echo $button_return_to_school;
@@ -98,7 +98,7 @@
       if (is_front_page() && wrdsb_i_am_a_school_programme()) {
         echo $button_myway;
         echo $button_daily_screening;
-        echo $button_screening_secondary;
+        //echo $button_screening_secondary;
         echo $button_covid;
         echo $button_return_to_school;
         echo $button_ventilation_report;
@@ -148,7 +148,7 @@
       // corp buttons 
         echo $grade_nine_button_secondary;
         echo $button_daily_screening;
-        echo $button_screening_secondary;
+        //echo $button_screening_secondary;
         echo $button_covid;
         echo $grade_nine_button_grade_eight;
         echo $button_return_to_school;
@@ -163,7 +163,7 @@
       if (is_front_page() && wrdsb_i_am_a_school_programme()) {
         echo $button_myway;
         echo $button_daily_screening;
-        echo $button_screening_secondary;
+        //echo $button_screening_secondary;
         echo $button_covid;
         echo $button_return_to_school;
         echo $button_ventilation_report;
