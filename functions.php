@@ -574,6 +574,10 @@ function wrdsb_secondary_school_colours() {
       echo '<!-- Site specific styles for KCI -->'."\r\n";
       echo '<link href="https://s3.amazonaws.com/wrdsb-ui-assets/'.$GLOBALS['wrdsbvars']['asset_version'].'/css/kci.css" rel="stylesheet">';
       break;
+    case "lhs":
+      echo '<!-- Site specific styles for LHS -->'."\r\n";
+      echo '<link href="https://s3.amazonaws.com/wrdsb-ui-assets/'.$GLOBALS['wrdsbvars']['asset_version'].'/css/lhs.css" rel="stylesheet">';
+      break;
     case "phs":
       echo '<!-- Site specific styles for PHS -->'."\r\n";
       echo '<link href="https://s3.amazonaws.com/wrdsb-ui-assets/'.$GLOBALS['wrdsbvars']['asset_version'].'/css/phs.css" rel="stylesheet">';
@@ -758,6 +762,7 @@ function wrdsb_i_am_a_school() {
     "lau",
     "lbp",
     "lex",
+    "lhs",
     "lin",
     "lkw",
     "lnh",
@@ -1017,6 +1022,7 @@ function wrdsb_i_am_a_school_secondary() {
     "jam",
     "jhs",
     "kci",
+    "lhs",
     "phs",
     "sss",
     "wci",
@@ -1196,8 +1202,12 @@ function getNavbarBackgroundColor(){
     case "kci":
       $background = "#660202";
       break;
+    case "lhs":
+      $background = "#4480B2";
+      break;
     case "phs":
       $background = "#29090C";
+      break;
     case "sss":
       $background = "#99140c";
       break;
@@ -1286,6 +1296,11 @@ function megamenu_add_theme_wrdsb_1614659524($themes) {
       $background = "#660202";
       $backgroundHover = "rgb(213, 166, 58)";
       $subMenuHover= "rgb(102, 2, 2)";
+      break;
+    case "lhs":
+      $background = "#4480B2";
+      $backgroundHover = "rgb(48, 102, 155)";
+      $subMenuHover= "rgb(98, 187, 70)";
       break;
     case "phs":
       $background = "#29090C";
