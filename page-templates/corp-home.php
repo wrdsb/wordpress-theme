@@ -68,46 +68,46 @@ Template Name: Corporate News Page 2021
     endif
     ?>
 
-        	<?php /*<style type="text/css">
-        		section {
-        			border: 1px solid #eee;
-        			margin-bottom: 25px;
-        			padding: 25px;
-        			background-color: #f8f8f8;
-        		}
+            <?php /*<style type="text/css">
+                section {
+                    border: 1px solid #eee;
+                    margin-bottom: 25px;
+                    padding: 25px;
+                    background-color: #f8f8f8;
+                }
 
-        		        		.seeall {
-        			margin: .5rem auto 1.5rem auto;
-        			text-align: center;
-        			width: 50%;
-        			background-color: #005fae;
-        			padding: 15px;
-        			color: #e1e1e1;
-        		}
+                                .seeall {
+                    margin: .5rem auto 1.5rem auto;
+                    text-align: center;
+                    width: 50%;
+                    background-color: #005fae;
+                    padding: 15px;
+                    color: #e1e1e1;
+                }
 
-        		.seeall a {
-        			color: #fff;
-        			background-color: #005fae;
-        			font-weight: bold;
-        		}
-        		article {
-        			width: 480px;
-        			float: left;
-        			padding-right: 50px;
-        		}
+                .seeall a {
+                    color: #fff;
+                    background-color: #005fae;
+                    font-weight: bold;
+                }
+                article {
+                    width: 480px;
+                    float: left;
+                    padding-right: 50px;
+                }
 
-        		h1, h2, h3 {
-        			text-transform: uppercase;
-        		}
-        		.displayImage {
-        			float: right;
-        			padding-left: 15px;
-        			padding-bottom: 15px;
-        		}
-        	</style> 
-        	<article>
+                h1, h2, h3 {
+                    text-transform: uppercase;
+                }
+                .displayImage {
+                    float: right;
+                    padding-left: 15px;
+                    padding-bottom: 15px;
+                }
+            </style> 
+            <article>
 
-		<?php
+        <?php
 
   // available categories 
 $categories = get_categories( array(
@@ -118,33 +118,33 @@ $categories = get_categories( array(
 
 foreach ($categories as $category) {
 
-	// the query
-	$the_query = new WP_Query( array( 'category_name' => $category->name, 'posts_per_page' => 5) ); 
+    // the query
+    $the_query = new WP_Query( array( 'category_name' => $category->name, 'posts_per_page' => 5) ); 
 
-	  // The Loop
-	if ( $the_query->have_posts() ) {
-		echo '<h2>' . $category->name . '('. $category->count .')</h2>';
-		if ($category->description != '' ) {
-			echo '<p>'. $category->description . '</p>';
-		}
-		while ( $the_query->have_posts() ) {
+      // The Loop
+    if ( $the_query->have_posts() ) {
+        echo '<h2>' . $category->name . '('. $category->count .')</h2>';
+        if ($category->description != '' ) {
+            echo '<p>'. $category->description . '</p>';
+        }
+        while ( $the_query->have_posts() ) {
           $the_query->the_post();
           $date 	= get_the_time(get_option('date_format'), $post->ID);
           $catlink 	= get_category_link( $category->term_id );
-          	echo '<section>';
+              echo '<section>';
           if ( has_post_thumbnail() ) {
-          	$displayImage = '<div class="displayImage">'.get_the_post_thumbnail().'</div>';
+              $displayImage = '<div class="displayImage">'.get_the_post_thumbnail().'</div>';
           } else {
-          	$displayImage = '';
+              $displayImage = '';
           }
-	        echo '<h3>'.get_the_title().'</h3>';
-	        echo $displayImage;
-	        echo '<p>'. get_the_excerpt().'</p>';
-	        echo '<p class="readmore"><a href="' . get_the_permalink() .'" rel="bookmark">' . get_the_title() .'</a> • ' . $date . '</p>';
-	        echo '</section>';
+            echo '<h3>'.get_the_title().'</h3>';
+            echo $displayImage;
+            echo '<p>'. get_the_excerpt().'</p>';
+            echo '<p class="readmore"><a href="' . get_the_permalink() .'" rel="bookmark">' . get_the_title() .'</a> • ' . $date . '</p>';
+            echo '</section>';
       }
-		echo '<p class="seeall">See all news from the <a href="'.$catlink.'">'.$category->name.'</a> category.</p>';
-	} else {
+        echo '<p class="seeall">See all news from the <a href="'.$catlink.'">'.$category->name.'</a> category.</p>';
+    } else {
     // no posts found
     }
 
@@ -152,7 +152,7 @@ foreach ($categories as $category) {
     wp_reset_postdata();
 
  }
-      	?>
+          ?>
 
       </article>
 
@@ -171,17 +171,17 @@ $the_query = new WP_Query( array('posts_per_page' => 100) ); ?>
     <!-- the loop -->
     <?php while ( $the_query->have_posts() ) : $the_query->the_post();
 
-    	echo '<section>';
+        echo '<section>';
           if ( has_post_thumbnail() ) {
-          	$displayImage = '<div class="displayImage">'.get_the_post_thumbnail().'</div>';
+              $displayImage = '<div class="displayImage">'.get_the_post_thumbnail().'</div>';
           } else {
-          	$displayImage = '';
+              $displayImage = '';
           }
-	        echo '<h3>'.get_the_title().'</h3>';
-	        echo $displayImage;
-	        echo '<p>'. get_the_excerpt().'</p>';
-	        echo '<p class="readmore"><a href="' . get_the_permalink() .'" rel="bookmark">' . get_the_title() .'</a> • ' . $date . '</p>';
-	        echo '</section>';
+            echo '<h3>'.get_the_title().'</h3>';
+            echo $displayImage;
+            echo '<p>'. get_the_excerpt().'</p>';
+            echo '<p class="readmore"><a href="' . get_the_permalink() .'" rel="bookmark">' . get_the_title() .'</a> • ' . $date . '</p>';
+            echo '</section>';
 
         //<h2><?php the_title();</h2>
     endwhile; ?>
@@ -202,76 +202,110 @@ $the_query = new WP_Query( array('posts_per_page' => 100) ); ?>
 <?php
 
 // the query
-$the_query = new WP_Query( array('posts_per_page' => 10) );
+$paged = get_query_var( 'paged', 1 );
+$the_query = new WP_Query( array('posts_per_page' => 10, 'paged' => $paged) );
 if ( $the_query->have_posts() ) : 
-	while ( $the_query->have_posts() ) : $the_query->the_post();
-		// check if the post has a Post Thumbnail assigned to it.
-		if ( has_post_thumbnail()) :
-	         // link Post Thumbnail to Post
-	        // $post is from functions.php
-	        echo '<div class="featuredimage" role="presentation"><a href="'. get_permalink($post->ID) .'">'. the_post_thumbnail('wrdsb-full-width','alt') .'</a></div>';
-	    endif;
+    while ( $the_query->have_posts() ) : $the_query->the_post();
+        // check if the post has a Post Thumbnail assigned to it.
+        if ( has_post_thumbnail()) :
+             // link Post Thumbnail to Post
+            // $post is from functions.php
+            echo '<div class="featuredimage" role="presentation"><a href="'. get_permalink($post->ID) .'">'. the_post_thumbnail('wrdsb-full-width','alt') .'</a></div>';
+        endif;
 
-		// change the heading value for news posts
-		the_title( '<h2 class="news"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+        // change the heading value for news posts
+        the_title( '<h2 class="news"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 
-		if ('post' == get_post_type()) { ?>
-  			<p class="postdate">Posted <?php echo get_the_date(); ?></p>
-		<?php } 
+        if ('post' == get_post_type()) { ?>
+              <p class="postdate">Posted <?php echo get_the_date(); ?></p>
+        <?php } 
 
-		if ( has_excerpt ()) {
-			the_excerpt();
-			echo '<p class="readmore"><a href="'. get_permalink($post->ID) . '"><strong>Read more about</strong> <cite>'. get_the_title($post->ID) .'</cite> &#187;</a></p>';
-		} else {
-			the_excerpt();
-		}
+        if ( has_excerpt ()) {
+            the_excerpt();
+            echo '<p class="readmore"><a href="'. get_permalink($post->ID) . '"><strong>Read more about</strong> <cite>'. get_the_title($post->ID) .'</cite> &#187;</a></p>';
+        } else {
+            the_excerpt();
+        }
 
-		$igc=0;
-		foreach((get_the_category()) as $category) {
-		    if (strtolower($category->cat_name) != 'uncategorized') {
-				$igc = 1;
-			}
-		}
+        $igc=0;
+        foreach((get_the_category()) as $category) {
+            if (strtolower($category->cat_name) != 'uncategorized') {
+                $igc = 1;
+            }
+        }
 
-		if ($igc == 1) {
-			$display_cats = 1;
-		}
+        if ($igc == 1) {
+            $display_cats = 1;
+        }
 
-		$number_of_tags = count(get_the_tags());
+        $number_of_tags = count(get_the_tags());
 
-		//if ($number_of_tags > 0) {
-		/*if (get_the_tags()) {
-			$display_tags = 1;
-		}
-		*/
+        //if ($number_of_tags > 0) {
+        /*if (get_the_tags()) {
+            $display_tags = 1;
+        }
+        */
 
-		if ($number_of_tags != 0) {
-			$display_tags;
-		}
+        if ($number_of_tags != 0) {
+            $display_tags;
+        }
 
-		if (!isset($display_cats) && isset($display_tags)) {
-			echo '<div class="clearfix"></div>';
-			echo '<p class="categories" role="menubar">Tags: ';
-	                the_tags('',' &middot; ','');
-	                echo '</p>';
-		} elseif (isset($display_cats) && !isset($display_tags)) {
-			echo '<div class="clearfix"></div>';
-			echo '<p class="categories" role="menubar">Categories: ';
-	                the_category(' &middot; ');
-	                echo '</p>';
-		} elseif (isset($display_cats) && isset($display_tags)) {
-			echo '<div class="clearfix"></div>';
-			echo '<p class="categories" role="menubar">Categories: ';
-	                the_category(' &middot; ');
-	                echo ' Tags: ';
-	                the_tags('',' &middot; ','');
-	                echo '</p>';
-		} 
+        if (!isset($display_cats) && isset($display_tags)) {
+            echo '<div class="clearfix"></div>';
+            echo '<p class="categories" role="menubar">Tags: ';
+                    the_tags('',' &middot; ','');
+                    echo '</p>';
+        } elseif (isset($display_cats) && !isset($display_tags)) {
+            echo '<div class="clearfix"></div>';
+            echo '<p class="categories" role="menubar">Categories: ';
+                    the_category(' &middot; ');
+                    echo '</p>';
+        } elseif (isset($display_cats) && isset($display_tags)) {
+            echo '<div class="clearfix"></div>';
+            echo '<p class="categories" role="menubar">Categories: ';
+                    the_category(' &middot; ');
+                    echo ' Tags: ';
+                    the_tags('',' &middot; ','');
+                    echo '</p>';
+        } 
 
     endwhile;
 
     // Previous/next post navigation.
-    wrdsb_paging_nav();
+    if ( !$the_query->max_num_pages < 2 ) {
+        $paged        = get_query_var( 'paged' ) ? intval( get_query_var( 'paged' ) ) : 1;
+        $pagenum_link = html_entity_decode( get_pagenum_link() );
+        $query_args   = array();
+        $url_parts    = explode( '?', $pagenum_link );
+
+        if ( isset( $url_parts[1] ) ) {
+            wp_parse_str( $url_parts[1], $query_args );
+        }
+      
+        $pagenum_link = remove_query_arg( array_keys( $query_args ), $pagenum_link );
+        $pagenum_link = trailingslashit( $pagenum_link ) . '%_%';
+      
+        $format  = $GLOBALS['wp_rewrite']->using_index_permalinks() && ! strpos( $pagenum_link, 'home.php' ) ? 'home.php/' : '';
+        $format .= $GLOBALS['wp_rewrite']->using_permalinks() ? user_trailingslashit( 'page/%#%', 'paged' ) : '?paged=%#%';
+      
+        // Set up paginated links.
+        $links = paginate_links( array(
+            'base'     => $pagenum_link,
+            'format'   => $format,
+            'total'    => $the_query->max_num_pages,
+            'current'  => $paged,
+            'mid_size' => 1,
+            'add_args' => array_map( 'urlencode', $query_args ),
+            'prev_text' => __( '&larr; Previous', 'wrdsb' ),
+            'next_text' => __( 'Next &rarr;', 'wrdsb' ),
+        ));
+      
+        if ( $links ) {
+            echo '<p>';
+            echo $links;
+            echo '</p>';
+        }
+    }
 
 endif;
 
